@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Atul Pandey
 
-### 💻 Technology | 🤖 Artificial Intelligence | 🛡️ Cybersecurity | 🔐 Cryptography | ☁️ Cloud Computing | ⚛️ Quantum Computing
+### 💻 Technology | 🤖 AI | 🛡️ Cybersecurity | 🔐 Cryptography | ☁️ Cloud Computing | ⚛️ Quantum Computing
 
 ## 💻 My Favorite Tools and Technologies
 
