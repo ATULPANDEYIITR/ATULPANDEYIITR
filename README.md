@@ -138,33 +138,66 @@
 </tr>
 </table>
 
-<p align="center">
-<pre>
-                              👨‍💻 ATUL PANDEY
-                                    │
-             ┌──────────────────────┼──────────────────────┐
-             │                      │                      │
-             ▼                      ▼                      ▼
-        💻 TECHNOLOGY          🤖 ARTIFICIAL AI       🛡️ SECURITY
-             │                      │                      │
-             ▼                      ▼                      ▼
-        🐍 Python              🧠 Machine Learning     🔐 Cryptography
-        🧮 Algorithms          ✨ Generative AI        🛡️ Cybersecurity
-        🗄️ Databases          🧠 LLMs                 🔑 Security
-        🌐 Networks            🔎 RAG                  🔒 Privacy
-             │                      │                      │
-             └──────────────────────┼──────────────────────┘
-                                    ▼
-                             ☁️ CLOUD COMPUTING
-                                    │
-                                    ▼
-                           ⚛️ EMERGING TECHNOLOGY
-                                    │
-                   ┌────────────────┼────────────────┐
-                   ▼                ▼                ▼
-              ⛓️ Blockchain     ⚛️ Quantum        📡 IoT
-</pre>
-</p>
+<h2 align="center">🧠 Technology Ecosystem</h2>
+
+<table align="center">
+<tr>
+
+<td align="center" width="250">
+
+<h3>💻 Technology</h3>
+
+🐍 Python<br>
+🧮 Algorithms<br>
+🗄️ Databases<br>
+🌐 Networks
+
+</td>
+
+<td align="center" width="250">
+
+<h3>🤖 Artificial AI</h3>
+
+🧠 Machine Learning<br>
+✨ Generative AI<br>
+🧠 LLMs<br>
+🔎 RAG
+
+</td>
+
+<td align="center" width="250">
+
+<h3>🛡️ Security</h3>
+
+🔐 Cryptography<br>
+🛡️ Cybersecurity<br>
+🔑 Security<br>
+🔒 Privacy
+
+</td>
+
+</tr>
+
+<tr>
+<td colspan="3" align="center">
+
+<h3>☁️ Cloud Computing</h3>
+
+Cloud Architecture • Cloud Infrastructure • Distributed Systems
+
+</td>
+</tr>
+
+<tr>
+<td colspan="3" align="center">
+
+<h3>⚛️ Emerging Technology</h3>
+
+⛓️ Blockchain &nbsp;&nbsp;&nbsp; ⚛️ Quantum Computing &nbsp;&nbsp;&nbsp; 📡 IoT
+
+</td>
+</tr>
+</table>
 
 My GitHub is my **digital laboratory** where I continuously:
 
