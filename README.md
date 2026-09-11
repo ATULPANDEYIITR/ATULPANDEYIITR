@@ -5,44 +5,77 @@
 ## 💻 My Favorite Tools and Technologies
 
 <p align="center">
+
   <img src="https://skillicons.dev/icons?i=python,cpp,c,cs,java,go,r,rust,swift,kotlin,scala,dart,lua,perl&perline=14" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,bash,powershell,regex,wasm,zig,fortran,haskell,elixir,clojure,crystal&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=javascript,typescript,html,css,bash,powershell,php,ruby,wasm,solidity&perline=14" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,pandas,numpy,matlab,anaconda,jupyter,python,flask,django,fastapi,qt&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,pandas,numpy,matlab,anaconda,jupyter,keras&perline=10" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=keras,react,nextjs,nodejs,express,nestjs,graphql,apollo,threejs,flutter,androidstudio,electron,tauri,unity&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=flask,django,fastapi,react,nextjs,nodejs,express,nestjs,graphql,apollo&perline=10" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb,redis,cassandra,dynamodb,elasticsearch,prisma,sequelize,graphql,postgres,mysql,mongodb&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=threejs,flutter,androidstudio,electron,unity,qt,arduino,raspberrypi&perline=8" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,gitlab,bitbucket,githubactions,jenkins,docker,kubernetes,terraform,ansible,nginx,postman,vscode,pycharm&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb,redis,cassandra,dynamodb,elasticsearch,prisma,sequelize&perline=10" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=aws,azure,gcp,firebase,heroku,openstack,openshift,cloudflare,netlify,vercel,linux,ubuntu,debian,redhat&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=git,github,gitlab,bitbucket,githubactions,jenkins,docker,kubernetes,terraform,ansible&perline=10" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=kali,arch,bsd,windows,linux,bash,powershell,git,docker,kubernetes,nginx,ansible,terraform,jenkins&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=nginx,postman,vscode,pycharm,neovim,vim,linux,ubuntu,debian,redhat&perline=10" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=solidity,ipfs,ethereum,arduino,raspberrypi,ros,qt,latex,matlab,python,rust,cpp,c,java&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=aws,azure,gcp,firebase,heroku,openstack,openshift,cloudflare,netlify,vercel&perline=10" />
+
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=latex,jupyter,anaconda,matlab,python,cpp,rust,go,git,github,vscode,neovim,vim,obsidian&perline=14" />
+
+  <img src="https://skillicons.dev/icons?i=kali,arch,windows,linux,bash,powershell,docker,kubernetes,nginx,ansible&perline=10" />
+
 </p>
+
+<p align="center">
+
+  <img src="https://skillicons.dev/icons?i=solidity,ethereum,arduino,raspberrypi,latex,matlab,python,rust,cpp,java&perline=10" />
+
+</p>
+
+<p align="center">
+
+  <img src="https://skillicons.dev/icons?i=latex,jupyter,anaconda,matlab,python,cpp,rust,go,git,github&perline=10" />
+
+</p>
+
 
 <p align="center">
 <pre>
