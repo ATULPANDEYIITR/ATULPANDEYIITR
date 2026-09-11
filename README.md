@@ -1563,20 +1563,6 @@ I am interested in learning from people working on:
 
 # 📫 Connect with me
 
-<p align="center">
-<pre>
-                         📫 CONNECT
-                            │
-          ┌─────────────────┼─────────────────┐
-          ▼                 ▼                 ▼
-       📧 EMAIL          💼 LINKEDIN        🐙 GITHUB
-          │                 │                 │
-          ▼                 ▼                 ▼
-atulpandey.iitr@       linkedin.com/       github.com/
-gmail.com              in/atul---pandey   ATULPANDEYIITR
-</pre>
-</p>
-
 📧 **Email:** atulpandey.iitr@gmail.com
 
 💼 **LinkedIn:** https://linkedin.com/in/atul---pandey
@@ -1586,23 +1572,6 @@ gmail.com              in/atul---pandey   ATULPANDEYIITR
 ---
 
 # 📬 Contact
-
-<p align="center">
-<pre>
-                     📬 PROFESSIONAL CONTACT
-                              │
-                 ┌────────────┼────────────┐
-                 ▼            ▼            ▼
-             💼 Technical   🔬 Research   🤝 Collaboration
-                 │            │            │
-                 ▼            ▼            ▼
-              Email        Discussion     Projects
-                 │            │            │
-                 └────────────┼────────────┘
-                              ▼
-                       📧 GET IN TOUCH
-</pre>
-</p>
 
 📧 **Email:** atulpandey.iitr@gmail.com
 
