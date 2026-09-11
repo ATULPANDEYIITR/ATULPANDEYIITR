@@ -2,6 +2,48 @@
 
 ### 💻 Technology | 🤖 Artificial Intelligence | 🛡️ Cybersecurity | 🔐 Cryptography | ☁️ Cloud Computing | ⚛️ Quantum Computing
 
+## 💻 My Favorite Tools and Technologies
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,c,cs,java,go,r,rust,swift,kotlin,scala,dart,lua,perl&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,bash,powershell,regex,wasm,zig,fortran,haskell,elixir,clojure,crystal&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv,pandas,numpy,matlab,anaconda,jupyter,python,flask,django,fastapi,qt&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=keras,react,nextjs,nodejs,express,nestjs,graphql,apollo,threejs,flutter,androidstudio,electron,tauri,unity&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb,redis,cassandra,dynamodb,elasticsearch,prisma,sequelize,graphql,postgres,mysql,mongodb&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=git,github,gitlab,bitbucket,githubactions,jenkins,docker,kubernetes,terraform,ansible,nginx,postman,vscode,pycharm&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=aws,azure,gcp,firebase,heroku,openstack,openshift,cloudflare,netlify,vercel,linux,ubuntu,debian,redhat&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=kali,arch,bsd,windows,linux,bash,powershell,git,docker,kubernetes,nginx,ansible,terraform,jenkins&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=solidity,ipfs,ethereum,arduino,raspberrypi,ros,qt,latex,matlab,python,rust,cpp,c,java&perline=14" />
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=latex,jupyter,anaconda,matlab,python,cpp,rust,go,git,github,vscode,neovim,vim,obsidian&perline=14" />
+</p>
+
 <p align="center">
 <pre>
                               👨‍💻 ATUL PANDEY
