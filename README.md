@@ -1040,242 +1040,193 @@ Emerging Tech
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=100&section=footer">
 </p>
 
-### 📚 Continuous Learning
+# Continuous Learning
 
 <p align="center">
-
-<b>
-A CONTINUOUS CYCLE OF LEARNING, BUILDING & IMPROVEMENT
-</b>
-
+  <img src="https://skillicons.dev/icons?i=python,git,github,linux,docker,postgresql" height="48">
 </p>
 
-<br>
+<p align="center">
+  <b>CONTINUOUS LEARNING • BUILDING • EXPERIMENTATION • IMPROVEMENT</b>
+</p>
 
 <table align="center">
 <tr>
 
 <td align="center" width="14%">
-
-### 🧠
-### LEARN
-
-Discover  
-new concepts
-
+<img src="https://skillicons.dev/icons?i=book" width="52"><br>
+<b>LEARN</b><br>
+Concepts
 </td>
 
 <td align="center" width="14%">
-
-### 🔍
-### UNDERSTAND
-
-Study  
-the foundations
-
+<img src="https://skillicons.dev/icons?i=search" width="52"><br>
+<b>UNDERSTAND</b><br>
+Foundations
 </td>
 
 <td align="center" width="14%">
-
-### 💻
-### IMPLEMENT
-
-Turn ideas  
-into code
-
+<img src="https://skillicons.dev/icons?i=python" width="52"><br>
+<b>IMPLEMENT</b><br>
+Code
 </td>
 
 <td align="center" width="14%">
-
-### 🧪
-### EXPERIMENT
-
-Test  
-different ideas
-
+<img src="https://skillicons.dev/icons?i=labview" width="52"><br>
+<b>EXPERIMENT</b><br>
+Testing
 </td>
 
 <td align="center" width="14%">
-
-### 📖
-### DOCUMENT
-
-Capture  
-knowledge
-
+<img src="https://skillicons.dev/icons?i=git" width="52"><br>
+<b>DOCUMENT</b><br>
+Knowledge
 </td>
 
 <td align="center" width="14%">
-
-### 🏗️
-### BUILD
-
-Create  
-real systems
-
+<img src="https://skillicons.dev/icons?i=docker" width="52"><br>
+<b>BUILD</b><br>
+Systems
 </td>
 
 <td align="center" width="14%">
-
-### 🚀
-### IMPROVE
-
-Reflect  
-iterate & grow
-
+<img src="https://skillicons.dev/icons?i=github" width="52"><br>
+<b>IMPROVE</b><br>
+Iteration
 </td>
 
 </tr>
 </table>
 
-<br>
-
 <p align="center">
-
-🧠
-<b>LEARN</b>
-&nbsp; → &nbsp;
-🔍
-<b>UNDERSTAND</b>
-&nbsp; → &nbsp;
-💻
-<b>IMPLEMENT</b>
-&nbsp; → &nbsp;
-🧪
-<b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-📖
-<b>DOCUMENT</b>
-&nbsp; → &nbsp;
-🏗️
-<b>BUILD</b>
-&nbsp; → &nbsp;
-🚀
-<b>IMPROVE</b>
-&nbsp; ↻
+  <b>LEARN → UNDERSTAND → IMPLEMENT → EXPERIMENT → DOCUMENT → BUILD → IMPROVE</b>
 </p>
 
-<br>
-
 <p align="center">
-
-<strong>↻ REPEAT • REFINE • EXPAND • EXPLORE</strong>
-
+  <b>REPEAT • REFINE • EXPAND • EXPLORE</b>
 </p>
 
-# 🧠 Areas of Interest
+---
+
+# Areas of Interest
 
 <p align="center">
-
-<b>RESEARCH • ENGINEERING • SYSTEMS • EMERGING TECHNOLOGIES</b>
-
-<br>
-
-<i>
-Exploring how intelligent, secure, scalable and distributed systems are designed.
-</i>
-
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,linux,docker,postgresql,git,github" height="52">
 </p>
 
-<br>
+<p align="center">
+  <b>RESEARCH • ENGINEERING • SYSTEMS • EMERGING TECHNOLOGIES</b>
+</p>
 
 <table align="center">
 <tr>
 
 <td align="center" width="16%">
 
-### 🤖
-
-<b>ARTIFICIAL<br>INTELLIGENCE</b>
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch" height="60">
 
 <br><br>
 
-Machine Learning  
-Deep Learning  
-Generative AI  
-LLMs  
-RAG  
+<b>ARTIFICIAL INTELLIGENCE</b>
+
+<br><br>
+
+Machine Learning<br>
+Deep Learning<br>
+Generative AI<br>
+LLMs<br>
+RAG<br>
 AI Agents
 
 </td>
 
 <td align="center" width="16%">
 
-### 🛡️
-
-<b>CYBER<br>SECURITY</b>
+<img src="https://skillicons.dev/icons?i=kali,linux" height="60">
 
 <br><br>
 
-Cryptography  
-Threat Detection  
-Authentication  
-Security Engineering  
+<b>CYBER SECURITY</b>
+
+<br><br>
+
+Cryptography<br>
+Threat Detection<br>
+Authentication<br>
+Security Engineering<br>
 AI Security
 
 </td>
 
 <td align="center" width="16%">
 
-### 💻
-
-<b>SOFTWARE<br>ENGINEERING</b>
+<img src="https://skillicons.dev/icons?i=python,git,github,vscode" height="60">
 
 <br><br>
 
-Python  
-SQL  
-APIs  
-Algorithms  
-Data Structures  
+<b>SOFTWARE ENGINEERING</b>
+
+<br><br>
+
+Python<br>
+SQL<br>
+APIs<br>
+Algorithms<br>
+Data Structures<br>
 System Design
 
 </td>
 
 <td align="center" width="16%">
 
-### ☁️
-
-<b>CLOUD &<br>DISTRIBUTED</b>
+<img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,aws" height="60">
 
 <br><br>
 
-Linux  
-Docker  
-DevOps  
-Cloud Computing  
+<b>CLOUD & DISTRIBUTED</b>
+
+<br><br>
+
+Linux<br>
+Docker<br>
+DevOps<br>
+Cloud Computing<br>
 Distributed Systems
 
 </td>
 
 <td align="center" width="16%">
 
-### ⚛️
-
-<b>QUANTUM<br>COMPUTING</b>
+<img src="https://skillicons.dev/icons?i=qiskit" height="60">
 
 <br><br>
 
-Qubits  
-Quantum Gates  
-Circuits  
-Quantum Algorithms  
+<b>QUANTUM COMPUTING</b>
+
+<br><br>
+
+Qubits<br>
+Quantum Gates<br>
+Circuits<br>
+Quantum Algorithms<br>
 Quantum Systems
 
 </td>
 
 <td align="center" width="16%">
 
-### 🌐
-
-<b>EMERGING<br>TECHNOLOGIES</b>
+<img src="https://skillicons.dev/icons?i=bitcoin,solidity,arduino,raspberrypi" height="60">
 
 <br><br>
 
-Blockchain  
-IoT  
-Edge Computing  
-Web3  
+<b>EMERGING TECHNOLOGIES</b>
+
+<br><br>
+
+Blockchain<br>
+IoT<br>
+Edge Computing<br>
+Web3<br>
 Intelligent Systems
 
 </td>
@@ -1283,289 +1234,159 @@ Intelligent Systems
 </tr>
 </table>
 
-<br>
+---
+
+# Technology Connections
 
 <p align="center">
-
-### 🔗 How these interests connect
-
+  <img src="https://skillicons.dev/icons?i=postgresql,tensorflow" height="55">
 </p>
+
+<p align="center">
+  <b>DATA → DATABASES → AI</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=solidity,ethereum" height="55">
+</p>
+
+<p align="center">
+  <b>CRYPTOGRAPHY → BLOCKCHAIN → CONSENSUS</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,aws" height="55">
+</p>
+
+<p align="center">
+  <b>NETWORKS → CLOUD → DISTRIBUTED SYSTEMS</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=arduino,raspberrypi,aws" height="55">
+</p>
+
+<p align="center">
+  <b>IoT → EDGE COMPUTING → CLOUD</b>
+</p>
+
+---
+
+# Cross-Domain Exploration
 
 <table align="center">
 <tr>
 
 <td align="center">
 
-📊 <b>DATA</b>
+<img src="https://skillicons.dev/icons?i=tensorflow,kali,linux,docker" height="55">
 
-<br>
+<br><br>
 
-↓
-
-<br>
-
-🗄️ <b>DATABASES</b>
-
-<br>
-
-↓
-
-<br>
-
-🤖 <b>AI</b>
+<b>AI × SECURITY × CLOUD × DISTRIBUTED SYSTEMS</b>
 
 </td>
 
 <td align="center">
 
-🔐 <b>CRYPTOGRAPHY</b>
+<img src="https://skillicons.dev/icons?i=postgresql,arduino,raspberrypi" height="55">
 
-<br>
+<br><br>
 
-↓
-
-<br>
-
-⛓️ <b>BLOCKCHAIN</b>
-
-<br>
-
-↓
-
-<br>
-
-🤝 <b>CONSENSUS</b>
+<b>DATA × INTELLIGENCE × EDGE × IoT</b>
 
 </td>
 
 <td align="center">
 
-🌐 <b>NETWORKS</b>
+<img src="https://skillicons.dev/icons?i=bitcoin,ethereum,solidity" height="55">
 
-<br>
+<br><br>
 
-↓
-
-<br>
-
-☁️ <b>CLOUD</b>
-
-<br>
-
-↓
-
-<br>
-
-⚙️ <b>DISTRIBUTED SYSTEMS</b>
+<b>BLOCKCHAIN × CRYPTOGRAPHY × CONSENSUS × SMART CONTRACTS</b>
 
 </td>
 
 <td align="center">
 
-📡 <b>IoT</b>
+<img src="https://skillicons.dev/icons?i=qiskit,python" height="55">
 
-<br>
+<br><br>
 
-↓
-
-<br>
-
-⚡ <b>EDGE COMPUTING</b>
-
-<br>
-
-↓
-
-<br>
-
-☁️ <b>CLOUD</b>
+<b>QUANTUM × MATHEMATICS × ALGORITHMS × RESEARCH</b>
 
 </td>
 
 </tr>
 </table>
 
-<br>
-
 <p align="center">
-
-### 🧩 Cross-Domain Exploration
-
+  <img src="https://skillicons.dev/icons?i=python,git,github,tensorflow,docker,kali,qiskit" height="50">
 </p>
 
 <p align="center">
-
-🤖 AI
-&nbsp; × &nbsp;
-🛡️ Security
-&nbsp; × &nbsp;
-☁️ Cloud
-&nbsp; × &nbsp;
-🌐 Distributed Systems
-
-<br><br>
-
-📊 Data
-&nbsp; × &nbsp;
-🤖 Intelligence
-&nbsp; × &nbsp;
-⚡ Edge Computing
-&nbsp; × &nbsp;
-📡 IoT
-
-<br><br>
-
-⛓️ Blockchain
-&nbsp; × &nbsp;
-🔐 Cryptography
-&nbsp; × &nbsp;
-🤝 Consensus
-&nbsp; × &nbsp;
-📜 Smart Contracts
-
-<br><br>
-
-⚛️ Quantum Computing
-&nbsp; × &nbsp;
-🧮 Mathematics
-&nbsp; × &nbsp;
-💻 Algorithms
-&nbsp; × &nbsp;
-🔬 Research
-
+  <b>UNDERSTAND → EXPLORE → BUILD → CONNECT</b>
 </p>
 
-<br>
+<p align="center">
+  <b>CORE THEME</b><br>
+  Intelligence • Security • Computation • Data • Infrastructure • Emerging Technology
+</p>
+
+---
+
+# My Technology Map
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,postgresql,git,github,tensorflow,docker,kali,qiskit" height="52">
+</p>
+
+<p align="center">
+  <b>MY TECHNOLOGY ECOSYSTEM</b>
+</p>
 
 <table align="center">
-<tr>
-
-<td align="center">
-
-🔍 <b>UNDERSTAND</b>
-
-<br>
-Foundations & Theory
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🧪 <b>EXPLORE</b>
-
-<br>
-Research & Experiments
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🏗️ <b>BUILD</b>
-
-<br>
-Systems & Applications
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🌐 <b>CONNECT</b>
-
-<br>
-Cross-Domain Ideas
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-<b>🎯 Core Theme</b>
-
-<br><br>
-
-<i>
-Understanding the intersection of intelligence, security, computation,
-data, infrastructure and emerging technologies.
-</i>
-
-</p>
-
-# 🧭 My Technology Map
-
-<p align="center">
-
-🌐 <b>MY TECHNOLOGY ECOSYSTEM</b> 🌐
-
-<br>
-
-<i>
-From mathematical foundations to intelligent, secure and emerging systems.
-</i>
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center" colspan="3">
-
-# 🧠 ⚡ TECHNOLOGY CORE ⚡ 🧠
-
-<b>UNDERSTAND → ENGINEER → INTEGRATE → EXPLORE</b>
-
-</td>
-
-</tr>
-
 <tr>
 
 <td align="center" width="30%">
 
-## 🧮 FOUNDATIONS
+<img src="https://skillicons.dev/icons?i=python" height="58">
 
-🔢 Mathematics  
-🧩 Algorithms  
-📊 Complexity  
-🏗️ Architecture  
-🧠 Computational Thinking
+<br><br>
 
-<br>
+<b>FOUNDATIONS</b>
 
-💬 <b>"START WITH WHY"</b>
+<br><br>
+
+Mathematics<br>
+Algorithms<br>
+Complexity<br>
+Architecture<br>
+Computational Thinking
 
 </td>
 
 <td align="center" width="5%">
 
-### ⟷
+<b>→</b>
 
 </td>
 
 <td align="center" width="30%">
 
-## 💻 SOFTWARE
+<img src="https://skillicons.dev/icons?i=python,postgresql,git,github" height="58">
 
-🐍 Python  
-🗄️ Databases  
-🌐 APIs  
-⚙️ System Design  
-🔧 Git & GitHub
+<br><br>
 
-<br>
+<b>SOFTWARE</b>
 
-💬 <b>"TURN IDEAS INTO CODE"</b>
+<br><br>
+
+Python<br>
+Databases<br>
+APIs<br>
+System Design<br>
+Git & GitHub
 
 </td>
 
@@ -1575,41 +1396,44 @@ From mathematical foundations to intelligent, secure and emerging systems.
 
 <td align="center">
 
-## 🤖 INTELLIGENCE
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch" height="58">
 
-🧠 Artificial Intelligence  
-📈 Machine Learning  
-🧬 Deep Learning  
-✨ Generative AI  
-💬 LLMs  
-🔎 RAG  
-🤝 AI Agents
+<br><br>
 
-<br>
+<b>INTELLIGENCE</b>
 
-🚀 <b>"MAKE SYSTEMS THINK"</b>
+<br><br>
 
-</td>
-
-<td align="center">
-
-# ⚡
+Machine Learning<br>
+Deep Learning<br>
+Generative AI<br>
+LLMs<br>
+RAG<br>
+AI Agents
 
 </td>
 
 <td align="center">
 
-## ☁️ INFRASTRUCTURE
+<b>+</b>
 
-🐧 Linux  
-🐳 Docker  
-☁️ Cloud  
-⚙️ DevOps  
-🌐 Distributed Systems
+</td>
 
-<br>
+<td align="center">
 
-🚀 <b>"MAKE SYSTEMS SCALE"</b>
+<img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,aws" height="58">
+
+<br><br>
+
+<b>INFRASTRUCTURE</b>
+
+<br><br>
+
+Linux<br>
+Docker<br>
+Cloud<br>
+DevOps<br>
+Distributed Systems
 
 </td>
 
@@ -1619,471 +1443,166 @@ From mathematical foundations to intelligent, secure and emerging systems.
 
 <td align="center" colspan="3">
 
-## 🛡️ SECURITY
-
-🔐 Cryptography  
-🛡️ Cybersecurity  
-🎯 Threat Modeling  
-🤖 AI Security  
-🏗️ Security Architecture
-
-<br>
-
-💬 <b>"TRUST NOTHING • VERIFY EVERYTHING"</b>
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-⬇️ &nbsp; ✦ &nbsp; ✦ &nbsp; ✦ &nbsp; ⬇️
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center" width="33%">
-
-### ⛓️
-
-## BLOCKCHAIN
-
-🔗 Distributed Ledgers  
-🤝 Consensus  
-📜 Smart Contracts  
-🔐 Cryptography
-
-</td>
-
-<td align="center" width="33%">
-
-### ⚛️
-
-## QUANTUM
-
-🧮 Qubits  
-⚡ Quantum Gates  
-🔬 Circuits  
-🧠 Quantum Algorithms
-
-</td>
-
-<td align="center" width="33%">
-
-### 📡
-
-## IoT
-
-📡 Connected Devices  
-⚡ Edge Computing  
-🌐 Networks  
-🤖 Intelligent Systems
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-# 🌌 EMERGING SYSTEMS
-
-</p>
-
-<p align="center">
-
-⛓️ <b>BLOCKCHAIN</b>
-&nbsp;&nbsp; × &nbsp;&nbsp;
-⚛️ <b>QUANTUM</b>
-&nbsp;&nbsp; × &nbsp;&nbsp;
-📡 <b>IoT</b>
-&nbsp;&nbsp; × &nbsp;&nbsp;
-🤖 <b>AI</b>
-&nbsp;&nbsp; × &nbsp;&nbsp;
-☁️ <b>CLOUD</b>
-&nbsp;&nbsp; × &nbsp;&nbsp;
-🛡️ <b>SECURITY</b>
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-🧮  
-<b>FOUNDATIONS</b>
-
-<br>
-
-Mathematics  
-Algorithms
-
-</td>
-
-<td align="center">➜</td>
-
-<td align="center">
-
-💻  
-<b>ENGINEERING</b>
-
-<br>
-
-Software  
-Systems  
-Data
-
-</td>
-
-<td align="center">➜</td>
-
-<td align="center">
-
-🤖  
-<b>INTELLIGENCE</b>
-
-<br>
-
-AI  
-ML  
-LLMs
-
-</td>
-
-<td align="center">➜</td>
-
-<td align="center">
-
-☁️  
-<b>INFRASTRUCTURE</b>
-
-<br>
-
-Cloud  
-DevOps  
-Distributed
-
-</td>
-
-<td align="center">➜</td>
-
-<td align="center">
-
-🌌  
-<b>EMERGING</b>
-
-<br>
-
-Quantum  
-Blockchain  
-IoT
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════╗
-
-<br>
-
-🧠 <b>FOUNDATIONS</b>
-&nbsp; → &nbsp;
-💻 <b>BUILD</b>
-&nbsp; → &nbsp;
-🤖 <b>INTELLIGENCE</b>
-&nbsp; → &nbsp;
-☁️ <b>SCALE</b>
-&nbsp; → &nbsp;
-🛡️ <b>SECURE</b>
-&nbsp; → &nbsp;
-🌌 <b>EXPLORE</b>
-
-<br>
-
-╚══════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<p align="center">
-
-### 🧭 THE MAP IS CONNECTED
+<img src="https://skillicons.dev/icons?i=kali,linux" height="58">
 
 <br><br>
 
-🧮 Mathematics  
-↕  
-⚙️ Algorithms  
-↕  
-💻 Software  
-↕  
-🗄️ Data  
-↕  
-🤖 Intelligence  
-↕  
-🛡️ Security  
-↕  
-☁️ Infrastructure  
-↕  
-🌐 Distributed Systems  
-↕  
-🌌 Emerging Technologies
+<b>SECURITY</b>
 
-</p>
+<br><br>
 
-<br>
-
-<p align="center">
-
-💡 <b>One technology rarely exists alone.</b>
-
-<br>
-
-<i>
-I explore the connections between concepts, tools, systems and emerging technologies.
-</i>
-
-</p>
-
-# 📚 Current Learning Journey
-
-<p align="center">
-
-<b>🚀 CURRENTLY EXPLORING • BUILDING • EXPERIMENTING</b>
-
-<br>
-
-<i>
-A focused learning roadmap across programming, intelligence, security,
-infrastructure, cryptography and quantum computing.
-</i>
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center" width="16%">
-
-### 🐍
-
-## PYTHON
-
-<br>
-
-🧱 Fundamentals  
-↓  
-⚙️ Programming  
-↓  
-🧩 Algorithms  
-↓  
-🤖 Automation  
-↓  
-📊 Data  
-↓  
-🏗️ Applications
-
-</td>
-
-<td align="center" width="16%">
-
-### 🤖
-
-## AI
-
-<br>
-
-🧠 ML / DL  
-↓  
-🕸️ Neural Networks  
-↓  
-🔄 Transformers  
-↓  
-💬 LLMs  
-↓  
-🔎 RAG  
-↓  
-🤝 Agents
-
-</td>
-
-<td align="center" width="16%">
-
-### 🛡️
-
-## SECURITY
-
-<br>
-
-🔐 Security Basics  
-↓  
-🎯 Threat Modeling  
-↓  
-🔑 Cryptography  
-↓  
-🔍 Security Analysis  
-↓  
-⚙️ Automation
-
-</td>
-
-<td align="center" width="16%">
-
-### ☁️
-
-## CLOUD
-
-<br>
-
-🏗️ Architecture  
-↓  
-📦 Containers  
-↓  
-🐳 Docker  
-↓  
-🌐 Distributed Systems  
-↓  
-⚙️ Infrastructure
-
-</td>
-
-<td align="center" width="16%">
-
-### 🔐
-
-## CRYPTO
-
-<br>
-
-🧮 Mathematics  
-↓  
-⚙️ Algorithms  
-↓  
-🔒 Encryption  
-↓  
-✍️ Digital Signatures  
-↓  
-🛡️ Secure Systems
-
-</td>
-
-<td align="center" width="16%">
-
-### ⚛️
-
-## QUANTUM
-
-<br>
-
-🧮 Foundations  
-↓  
-⚛️ Qubits  
-↓  
-🔗 Quantum Gates  
-↓  
-🧠 Algorithms  
-↓  
-🛡️ Post-Quantum Security
+Cryptography • Cybersecurity • Threat Modeling • AI Security • Security Architecture
 
 </td>
 
 </tr>
 </table>
 
-<br>
-
 <p align="center">
-
-### 🗺️ The Learning Route
-
+  <img src="https://skillicons.dev/icons?i=bitcoin,ethereum,solidity,qiskit,arduino,raspberrypi" height="55">
 </p>
 
 <p align="center">
-
-🐍 <b>PYTHON</b>
-&nbsp; → &nbsp;
-🧠 <b>COMPUTATION</b>
-&nbsp; → &nbsp;
-🤖 <b>AI</b>
-&nbsp; → &nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; → &nbsp;
-☁️ <b>SCALE</b>
-&nbsp; → &nbsp;
-⚛️ <b>QUANTUM</b>
-
+  <b>BLOCKCHAIN • QUANTUM • IoT • EMERGING SYSTEMS</b>
 </p>
 
-<br>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,git,github,tensorflow,docker,kali,qiskit,bitcoin,arduino" height="52">
+</p>
+
+<p align="center">
+  <b>FOUNDATIONS → ENGINEERING → INTELLIGENCE → INFRASTRUCTURE → SECURITY → EMERGING SYSTEMS</b>
+</p>
+
+<p align="center">
+  <b>THE MAP IS CONNECTED</b>
+</p>
+
+<p align="center">
+  Mathematics • Algorithms • Software • Data • Intelligence • Security • Infrastructure • Distributed Systems • Emerging Technologies
+</p>
+
+---
+
+# Current Learning Journey
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,kali,linux,docker,qiskit" height="58">
+</p>
+
+<p align="center">
+  <b>CURRENTLY EXPLORING • BUILDING • EXPERIMENTING</b>
+</p>
 
 <table align="center">
 <tr>
 
-<td align="center">
+<td align="center" width="16%">
 
-### 🧮 FOUNDATION
+<img src="https://skillicons.dev/icons?i=python" height="65">
 
-Mathematics  
-Programming  
-Algorithms  
-Computer Science
+<br><br>
 
-</td>
+<b>PYTHON</b>
 
-<td align="center">→</td>
+<br><br>
 
-<td align="center">
-
-### 🏗️ ENGINEERING
-
-Software  
-Data  
-Cloud  
-Distributed Systems
+Fundamentals<br>
+Programming<br>
+Algorithms<br>
+Automation<br>
+Data<br>
+Applications
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="16%">
 
-<td align="center">
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch" height="65">
 
-### 🧠 INTELLIGENCE
+<br><br>
 
-ML  
-Deep Learning  
-LLMs  
-RAG  
+<b>AI</b>
+
+<br><br>
+
+ML / DL<br>
+Neural Networks<br>
+Transformers<br>
+LLMs<br>
+RAG<br>
 Agents
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="16%">
 
-<td align="center">
+<img src="https://skillicons.dev/icons?i=kali,linux" height="65">
 
-### 🛡️ TRUST
+<br><br>
 
-Security  
-Cryptography  
-AI Security  
+<b>SECURITY</b>
+
+<br><br>
+
+Security<br>
+Threat Modeling<br>
+Cryptography<br>
+Analysis<br>
+Automation
+
+</td>
+
+<td align="center" width="16%">
+
+<img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,aws" height="65">
+
+<br><br>
+
+<b>CLOUD</b>
+
+<br><br>
+
+Architecture<br>
+Containers<br>
+Docker<br>
+Distributed Systems<br>
+Infrastructure
+
+</td>
+
+<td align="center" width="16%">
+
+<img src="https://skillicons.dev/icons?i=python,openssl" height="65">
+
+<br><br>
+
+<b>CRYPTO</b>
+
+<br><br>
+
+Mathematics<br>
+Algorithms<br>
+Encryption<br>
+Digital Signatures<br>
+Secure Systems
+
+</td>
+
+<td align="center" width="16%">
+
+<img src="https://skillicons.dev/icons?i=qiskit" height="65">
+
+<br><br>
+
+<b>QUANTUM</b>
+
+<br><br>
+
+Foundations<br>
+Qubits<br>
+Gates<br>
+Algorithms<br>
 Post-Quantum Security
 
 </td>
@@ -2091,12 +1610,12 @@ Post-Quantum Security
 </tr>
 </table>
 
-<br>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,kali,docker,qiskit" height="52">
+</p>
 
 <p align="center">
-
-### 🔬 Active Exploration
-
+  <b>PYTHON → COMPUTATION → AI → SECURITY → CLOUD → QUANTUM</b>
 </p>
 
 <table align="center">
@@ -2104,261 +1623,320 @@ Post-Quantum Security
 
 <td align="center">
 
-📖 <b>LEARN</b>
-
-<br>
-
-Study concepts  
-and foundations
-
-</td>
-
-<td align="center">
-
-🧪 <b>EXPERIMENT</b>
-
-<br>
-
-Test ideas  
-through code
-
-</td>
-
-<td align="center">
-
-🏗️ <b>BUILD</b>
-
-<br>
-
-Create practical  
-systems
-
-</td>
-
-<td align="center">
-
-🔍 <b>ANALYZE</b>
-
-<br>
-
-Understand limits  
-and failures
-
-</td>
-
-<td align="center">
-
-🔄 <b>ITERATE</b>
-
-<br>
-
-Improve through  
-continuous practice
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╭──────────────────────────────────────────────────────────────╮
-
-<br>
-
-🧠 <b>LEARN</b>
-&nbsp; → &nbsp;
-💻 <b>IMPLEMENT</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-💥 <b>BREAK</b>
-&nbsp; → &nbsp;
-🔧 <b>IMPROVE</b>
-&nbsp; → &nbsp;
-🏗️ <b>BUILD</b>
-
-<br>
-
-╰──────────────────────────────────────────────────────────────╯
-
-</p>
-
-<br>
-
-<p align="center">
-
-🚀 <b>Current direction:</b>
+<img src="https://skillicons.dev/icons?i=python" height="48">
 
 <br><br>
 
-<b>
-Programming → Intelligent Systems → Secure Systems → Scalable Infrastructure → Quantum Computing
-</b>
+<b>FOUNDATION</b>
 
-</p>
+<br><br>
 
-# 🗺️ 120-Day Technology Journey
-
-<p align="center">
-
-<b>120 DAYS • 4 PHASES • ONE CONTINUOUS TECHNOLOGY JOURNEY</b>
-
-<br>
-
-<i>
-From mathematical foundations to advanced intelligent, secure and emerging systems.
-</i>
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
-
-# 🧮
-
-## PHASE 01
-
-### FOUNDATIONS
-
-**Days 01–30**
-
-<br>
-
-🧮 Mathematics  
-🐍 Python  
-🧠 Computer Science  
-⚙️ Programming  
-💻 Computational Thinking
-
-<br>
-
-🎯 <b>BUILD THE BASE</b>
+Mathematics<br>
+Programming<br>
+Algorithms<br>
+Computer Science
 
 </td>
 
-<td align="center" width="25%">
+<td align="center">
 
-# 🗄️
+<img src="https://skillicons.dev/icons?i=git,github,docker,postgresql" height="48">
 
-## PHASE 02
+<br><br>
 
-### SYSTEMS
+<b>ENGINEERING</b>
 
-**Days 31–60**
+<br><br>
 
-<br>
-
-💻 Algorithms  
-🗄️ Databases  
-🌐 Networks  
-🐧 Linux  
-☁️ Cloud
-
-<br>
-
-🎯 <b>UNDERSTAND THE SYSTEM</b>
+Software<br>
+Data<br>
+Cloud<br>
+Distributed Systems
 
 </td>
 
-<td align="center" width="25%">
+<td align="center">
 
-# 🛡️
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch" height="48">
 
-## PHASE 03
+<br><br>
 
-### SECURITY
+<b>INTELLIGENCE</b>
 
-**Days 61–90**
+<br><br>
 
-<br>
-
-🛡️ Cybersecurity  
-🔐 Cryptography  
-⛓️ Blockchain  
-🤝 Distributed Systems  
-🔒 Secure Architecture
-
-<br>
-
-🎯 <b>MAKE IT TRUSTWORTHY</b>
+ML<br>
+Deep Learning<br>
+LLMs<br>
+RAG<br>
+Agents
 
 </td>
 
-<td align="center" width="25%">
+<td align="center">
 
-# 🤖
+<img src="https://skillicons.dev/icons?i=kali,linux,qiskit" height="48">
 
-## PHASE 04
+<br><br>
 
-### INTELLIGENCE
+<b>TRUST</b>
 
-**Days 91–120**
+<br><br>
 
-<br>
-
-🤖 Artificial Intelligence  
-🧠 LLMs  
-🔎 RAG  
-🤝 AI Agents  
-⚛️ Quantum Computing
-
-<br>
-
-🎯 <b>EXPLORE WHAT'S NEXT</b>
+Security<br>
+Cryptography<br>
+AI Security<br>
+Post-Quantum Security
 
 </td>
 
 </tr>
 </table>
 
-<br>
+---
+
+# Active Exploration
+
+<table align="center">
+<tr>
+
+<td align="center" width="20%">
+
+<img src="https://skillicons.dev/icons?i=book" height="55">
+
+<br><br>
+
+<b>LEARN</b>
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://skillicons.dev/icons?i=python" height="55">
+
+<br><br>
+
+<b>EXPERIMENT</b>
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://skillicons.dev/icons?i=docker" height="55">
+
+<br><br>
+
+<b>BUILD</b>
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://skillicons.dev/icons?i=github" height="55">
+
+<br><br>
+
+<b>ANALYZE</b>
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://skillicons.dev/icons?i=git" height="55">
+
+<br><br>
+
+<b>ITERATE</b>
+
+</td>
+
+</tr>
+</table>
 
 <p align="center">
-
-🧭
-<b>01</b>
-&nbsp;━━━━━━━━━━➜━━━━━━━━━━&nbsp;
-<b>02</b>
-&nbsp;━━━━━━━━━━➜━━━━━━━━━━&nbsp;
-<b>03</b>
-&nbsp;━━━━━━━━━━➜━━━━━━━━━━&nbsp;
-<b>04</b>
-&nbsp;━━━━━━━━━━➜━━━━━━━━━━&nbsp;
-🚀
-
+  <img src="https://skillicons.dev/icons?i=python,git,github,docker,tensorflow,kali" height="52">
 </p>
+
+<p align="center">
+  <b>LEARN → IMPLEMENT → EXPERIMENT → BREAK → IMPROVE → BUILD</b>
+</p>
+
+<p align="center">
+  <b>PROGRAMMING → INTELLIGENT SYSTEMS → SECURE SYSTEMS → SCALABLE INFRASTRUCTURE → QUANTUM COMPUTING</b>
+</p>
+
+---
+
+# 120-Day Technology Journey
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,postgresql,linux,kali,tensorflow,qiskit" height="58">
+</p>
+
+<p align="center">
+  <b>120 DAYS • 4 PHASES • ONE CONTINUOUS TECHNOLOGY JOURNEY</b>
+</p>
+
+<table align="center">
+<tr>
+
+<td align="center" width="25%">
+
+<img src="https://skillicons.dev/icons?i=python" height="70">
+
+<br><br>
+
+<b>PHASE 01</b>
 
 <br>
 
-## 🧭 The Roadmap
+<b>FOUNDATIONS</b>
+
+<br><br>
+
+<b>DAYS 01–30</b>
+
+<br><br>
+
+Mathematics<br>
+Python<br>
+Computer Science<br>
+Programming<br>
+Computational Thinking
+
+<br><br>
+
+<b>BUILD THE BASE</b>
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://skillicons.dev/icons?i=postgresql,linux,docker" height="70">
+
+<br><br>
+
+<b>PHASE 02</b>
+
+<br>
+
+<b>SYSTEMS</b>
+
+<br><br>
+
+<b>DAYS 31–60</b>
+
+<br><br>
+
+Algorithms<br>
+Databases<br>
+Networks<br>
+Linux<br>
+Cloud
+
+<br><br>
+
+<b>UNDERSTAND THE SYSTEM</b>
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://skillicons.dev/icons?i=kali,linux,solidity" height="70">
+
+<br><br>
+
+<b>PHASE 03</b>
+
+<br>
+
+<b>SECURITY</b>
+
+<br><br>
+
+<b>DAYS 61–90</b>
+
+<br><br>
+
+Cybersecurity<br>
+Cryptography<br>
+Blockchain<br>
+Distributed Systems<br>
+Secure Architecture
+
+<br><br>
+
+<b>MAKE IT TRUSTWORTHY</b>
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://skillicons.dev/icons?i=tensorflow,qiskit" height="70">
+
+<br><br>
+
+<b>PHASE 04</b>
+
+<br>
+
+<b>INTELLIGENCE</b>
+
+<br><br>
+
+<b>DAYS 91–120</b>
+
+<br><br>
+
+Artificial Intelligence<br>
+LLMs<br>
+RAG<br>
+AI Agents<br>
+Quantum Computing
+
+<br><br>
+
+<b>EXPLORE WHAT'S NEXT</b>
+
+</td>
+
+</tr>
+</table>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,postgresql,kali,tensorflow,qiskit" height="52">
+</p>
+
+<p align="center">
+  <b>01 → 02 → 03 → 04</b>
+</p>
+
+---
+
+# The Roadmap
 
 <table align="center">
 <tr>
 
 <td align="center">
 
-### 🧮 FOUNDATION
+<img src="https://skillicons.dev/icons?i=python" height="55">
 
-**01 → 30**
+<br><br>
+
+<b>FOUNDATION</b>
 
 <br>
 
-Mathematics  
-Python  
+01 → 30
+
+<br><br>
+
+Mathematics<br>
+Python<br>
 Computer Science
 
-<br>
-
-⬇️
-
-<br>
+<br><br>
 
 <b>THINK</b>
 
@@ -2366,23 +1944,25 @@ Computer Science
 
 <td align="center">
 
-### ⚙️ ENGINEERING
+<img src="https://skillicons.dev/icons?i=git,postgresql,linux,docker" height="55">
 
-**31 → 60**
+<br><br>
+
+<b>ENGINEERING</b>
 
 <br>
 
-Algorithms  
-Databases  
-Networks  
-Linux  
+31 → 60
+
+<br><br>
+
+Algorithms<br>
+Databases<br>
+Networks<br>
+Linux<br>
 Cloud
 
-<br>
-
-⬇️
-
-<br>
+<br><br>
 
 <b>BUILD</b>
 
@@ -2390,22 +1970,24 @@ Cloud
 
 <td align="center">
 
-### 🛡️ SECURITY
+<img src="https://skillicons.dev/icons?i=kali,linux,solidity" height="55">
 
-**61 → 90**
+<br><br>
+
+<b>SECURITY</b>
 
 <br>
 
-Cybersecurity  
-Cryptography  
-Blockchain  
+61 → 90
+
+<br><br>
+
+Cybersecurity<br>
+Cryptography<br>
+Blockchain<br>
 Distributed Systems
 
-<br>
-
-⬇️
-
-<br>
+<br><br>
 
 <b>PROTECT</b>
 
@@ -2413,23 +1995,25 @@ Distributed Systems
 
 <td align="center">
 
-### 🤖 INTELLIGENCE
+<img src="https://skillicons.dev/icons?i=tensorflow,qiskit" height="55">
 
-**91 → 120**
+<br><br>
+
+<b>INTELLIGENCE</b>
 
 <br>
 
-AI  
-LLMs  
-RAG  
-Agents  
+91 → 120
+
+<br><br>
+
+AI<br>
+LLMs<br>
+RAG<br>
+Agents<br>
 Quantum
 
-<br>
-
-⬇️
-
-<br>
+<br><br>
 
 <b>EXPLORE</b>
 
@@ -2438,444 +2022,484 @@ Quantum
 </tr>
 </table>
 
-<br>
+---
+
+# Technology Trail
 
 <p align="center">
-
-### 🗺️ Technology Trail
-
+  <img src="https://skillicons.dev/icons?i=python" height="50">
 </p>
 
 <p align="center">
-
-🧮 Mathematics
-&nbsp; → &nbsp;
-🐍 Python
-&nbsp; → &nbsp;
-🧠 Computer Science
-&nbsp; → &nbsp;
-⚙️ Algorithms
-
-<br>
-
-⬇️
-
-<br>
-
-🗄️ Databases
-&nbsp; → &nbsp;
-🌐 Networks
-&nbsp; → &nbsp;
-🐧 Linux
-&nbsp; → &nbsp;
-☁️ Cloud
-
-<br>
-
-⬇️
-
-<br>
-
-🛡️ Security
-&nbsp; → &nbsp;
-🔐 Cryptography
-&nbsp; → &nbsp;
-⛓️ Blockchain
-&nbsp; → &nbsp;
-🌐 Distributed Systems
-
-<br>
-
-⬇️
-
-<br>
-
-🤖 AI
-&nbsp; → &nbsp;
-🧠 LLMs
-&nbsp; → &nbsp;
-🔎 RAG
-&nbsp; → &nbsp;
-🤝 AI Agents
-
-<br>
-
-⬇️
-
-<br>
-
-⚛️ Quantum
-&nbsp; → &nbsp;
-🚀 <b>ADVANCED SYSTEMS</b>
-
+  <b>MATHEMATICS → PYTHON → COMPUTER SCIENCE → ALGORITHMS</b>
 </p>
 
-<br>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgresql,linux,docker,aws" height="50">
+</p>
+
+<p align="center">
+  <b>DATABASES → NETWORKS → LINUX → CLOUD</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=kali,solidity,linux" height="50">
+</p>
+
+<p align="center">
+  <b>SECURITY → CRYPTOGRAPHY → BLOCKCHAIN → DISTRIBUTED SYSTEMS</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch" height="50">
+</p>
+
+<p align="center">
+  <b>AI → LLMs → RAG → AI AGENTS</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=qiskit" height="50">
+</p>
+
+<p align="center">
+  <b>QUANTUM → ADVANCED SYSTEMS</b>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,git,github,tensorflow,docker,kali,qiskit" height="55">
+</p>
+
+<p align="center">
+  <b>LEARN → BUILD → EXPERIMENT → ANALYZE → ADVANCE</b>
+</p>
+
+<p align="center">
+  <b>FOUNDATIONS → SYSTEMS → SECURITY → INTELLIGENCE → EMERGING TECHNOLOGY</b>
+</p>
+
+<p align="center">
+  <b>120-DAY MISSION</b>
+</p>
+
+<p align="center">
+  Understand the foundations → Build systems → Secure systems → Add intelligence → Explore emerging technology
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,tensorflow,kali,docker,qiskit" height="58">
+</p>
+
+<p align="center">
+  <i>The destination is the ability to understand, build and connect complex systems.</i>
+</p>
+
+---
+
+# Technology Stack I Am Building
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,postgresql,git,github,linux,docker,kali,tensorflow,qiskit,bitcoin,arduino" height="58">
+</p>
 
 <table align="center">
 <tr>
 
-<td align="center">
+<td align="center" width="25%">
 
-### 🧠 LEARN
+<img src="https://skillicons.dev/icons?i=python" height="58">
 
-Understand  
-the foundations
+<br><br>
 
-</td>
+<b>FOUNDATION</b>
 
-<td align="center">→</td>
+<br><br>
 
-<td align="center">
-
-### 💻 BUILD
-
-Implement  
-what I learn
+Mathematics<br>
+Algorithms<br>
+Complexity<br>
+Architecture<br>
+Computer Science
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="25%">
 
-<td align="center">
+<img src="https://skillicons.dev/icons?i=python,postgresql,git,github,vscode" height="58">
 
-### 🧪 EXPERIMENT
+<br><br>
 
-Test  
-new ideas
+<b>DEVELOPMENT</b>
 
-</td>
+<br><br>
 
-<td align="center">→</td>
-
-<td align="center">
-
-### 🔍 ANALYZE
-
-Study  
-results & failures
+Python<br>
+PostgreSQL<br>
+Git<br>
+GitHub<br>
+VS Code<br>
+Jupyter
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="25%">
+
+<img src="https://skillicons.dev/icons?i=postgresql,numpy,pandas" height="58">
+
+<br><br>
+
+<b>DATA & COMPUTATION</b>
+
+<br><br>
+
+Databases<br>
+Data Processing<br>
+Numerical Computing<br>
+Statistics<br>
+Analysis
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,aws" height="58">
+
+<br><br>
+
+<b>INFRASTRUCTURE</b>
+
+<br><br>
+
+Linux<br>
+Docker<br>
+Cloud<br>
+DevOps
+
+</td>
+
+</tr>
+
+<tr>
 
 <td align="center">
 
-### 🚀 ADVANCE
+<img src="https://skillicons.dev/icons?i=linux,docker" height="58">
 
-Move toward  
-complex systems
+<br><br>
+
+<b>DISTRIBUTED SYSTEMS</b>
+
+<br><br>
+
+Networks<br>
+Distributed Systems<br>
+APIs<br>
+Scalability<br>
+System Design
+
+</td>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=kali,linux" height="58">
+
+<br><br>
+
+<b>SECURITY</b>
+
+<br><br>
+
+Cybersecurity<br>
+Cryptography<br>
+Threat Modeling<br>
+Security Architecture<br>
+AI Security
+
+</td>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch" height="58">
+
+<br><br>
+
+<b>INTELLIGENCE</b>
+
+<br><br>
+
+Machine Learning<br>
+Deep Learning<br>
+GenAI<br>
+LLMs<br>
+RAG<br>
+AI Agents
+
+</td>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=bitcoin,solidity,qiskit,arduino,raspberrypi" height="58">
+
+<br><br>
+
+<b>EMERGING TECHNOLOGIES</b>
+
+<br><br>
+
+Blockchain<br>
+Web3<br>
+Quantum Computing<br>
+IoT<br>
+Emerging Systems
 
 </td>
 
 </tr>
 </table>
 
-<br>
-
 <p align="center">
-
-╔════════════════════════════════════════════════════════════╗
-
-<br>
-
-🧮 <b>FOUNDATIONS</b>
-&nbsp; →
-&nbsp;
-💻 <b>SYSTEMS</b>
-&nbsp; →
-&nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; →
-&nbsp;
-🤖 <b>INTELLIGENCE</b>
-&nbsp; →
-&nbsp;
-⚛️ <b>EMERGING TECHNOLOGY</b>
-
-<br>
-
-╚════════════════════════════════════════════════════════════╝
-
+  <img src="https://skillicons.dev/icons?i=python,git,postgresql,linux,docker,kali,tensorflow,qiskit,bitcoin,arduino" height="55">
 </p>
 
-<br>
+<p align="center">
+  <b>FOUNDATION → DEVELOP → PROCESS → SCALE → DISTRIBUTE → SECURE → INTELLIGENT → EXPLORE</b>
+</p>
 
 <p align="center">
+  <b>BUILDING THE STACK LAYER BY LAYER</b>
+</p>
 
-### 🎯 120-Day Mission
+---
+
+# Technologies & Tools
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,numpy,pandas,sklearn,jupyter,git,github,vscode,postgresql,linux,docker,kali,aws" height="55">
+</p>
+
+<table align="center">
+<tr>
+
+<td align="center" width="33%">
+
+<img src="https://skillicons.dev/icons?i=python,bash" height="58">
 
 <br><br>
 
-<b>
-Understand the foundations → Build systems → Secure systems → Add intelligence → Explore emerging technology
-</b>
+<b>PROGRAMMING</b>
 
 <br><br>
 
-🚀 <b>DAY 01</b>
-&nbsp; ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-&nbsp;
-<b>DAY 120</b> 🚀
+Python<br>
+SQL<br>
+Bash<br>
+Automation
 
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://skillicons.dev/icons?i=numpy,pandas,sklearn,jupyter" height="58">
+
+<br><br>
+
+<b>AI & DATA</b>
+
+<br><br>
+
+NumPy<br>
+Pandas<br>
+Scikit-learn<br>
+Jupyter<br>
+LLMs<br>
+RAG
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode" height="58">
+
+<br><br>
+
+<b>DEVELOPMENT</b>
+
+<br><br>
+
+Git<br>
+GitHub<br>
+VS Code<br>
+APIs<br>
+Testing<br>
+Documentation
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=postgresql" height="58">
+
+<br><br>
+
+<b>DATABASES</b>
+
+<br><br>
+
+PostgreSQL<br>
+SQL<br>
+Querying<br>
+Data Modeling<br>
+Database Integration
+
+</td>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=linux,docker,kubernetes,aws" height="58">
+
+<br><br>
+
+<b>INFRASTRUCTURE</b>
+
+<br><br>
+
+Linux<br>
+Docker<br>
+Cloud<br>
+DevOps<br>
+Networking
+
+</td>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=kali,linux" height="58">
+
+<br><br>
+
+<b>SECURITY</b>
+
+<br><br>
+
+Cryptography<br>
+Cybersecurity<br>
+Threat Modeling<br>
+Security Architecture<br>
+AI Security
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=numpy,pandas,sklearn" height="58">
+
+<br><br>
+
+<b>ANALYTICS</b>
+
+<br><br>
+
+Statistics<br>
+Data Analysis<br>
+Mathematics<br>
+Visualization<br>
+Modeling
+
+</td>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=bitcoin,solidity,qiskit,arduino,raspberrypi" height="58">
+
+<br><br>
+
+<b>EMERGING TECHNOLOGY</b>
+
+<br><br>
+
+Blockchain<br>
+Quantum Computing<br>
+IoT<br>
+Distributed Systems<br>
+Emerging Systems
+
+</td>
+
+<td align="center">
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode" height="58">
+
+<br><br>
+
+<b>WORKFLOW</b>
+
+<br><br>
+
+Version Control<br>
+Experimentation<br>
+Documentation<br>
+Project Building<br>
+Iteration
+
+</td>
+
+</tr>
+</table>
+
+---
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,git,github,jupyter,docker,tensorflow,kali,aws" height="58">
 </p>
 
-<br>
+<p align="center">
+  <b>LEARN → UNDERSTAND → CODE → EXPERIMENT</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=postgresql,numpy,pandas,kali,docker,github" height="55">
+</p>
+
+<p align="center">
+  <b>STORE → ANALYZE → SECURE → DEPLOY</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,docker,github,tensorflow,qiskit" height="55">
+</p>
+
+<p align="center">
+  <b>BUILD → IMPROVE</b>
+</p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,postgresql,git,github,linux,docker,kali,tensorflow,qiskit,bitcoin,arduino" height="60">
+</p>
+
+<p align="center">
+  <b>LEARN → BUILD → EXPERIMENT → ANALYZE → SECURE → DEPLOY → IMPROVE</b>
+</p>
+
+# Technology Domains
 
 <p align="center">
 
-<i>
-The destination is not a technology stack.
-The destination is the ability to understand, build and connect complex systems.
-</i>
-
-</p>
-
-# 🧱 Technology Stack I Am Building
-
-<p align="center">
-<pre>
-
-╔══════════════════════════════════════════════════════════════╗
-║                    🧱 MY TECHNOLOGY STACK                    ║
-╚══════════════════════════════════════════════════════════════╝
-
-                              │
-                              ▼
-
-┌──────────────────────────────────────────────────────────────┐
-│ 🧮 FOUNDATION                                                │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ 🧮 Mathematics      💻 Algorithms      📊 Complexity         │
-│ 🏗️ Architecture     🧠 Computer Science                     │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-
-                              │
-                              ▼
-
-┌──────────────────────────────────────────────────────────────┐
-│ 💻 DEVELOPMENT                                               │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ 🐍 Python          🐘 PostgreSQL        🧰 Git                │
-│ 🐙 GitHub          💻 VS Code           📓 Jupyter            │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-
-                              │
-                              ▼
-
-┌──────────────────────────────────────────────────────────────┐
-│ 🗄️ DATA & COMPUTATION                                        │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ 🗄️ Databases      📊 Data Processing    🔢 Numerical         │
-│ 🧮 Statistics      ⚙️ Computation        🔍 Analysis          │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-
-                              │
-                              ▼
-
-┌──────────────────────────────────────────────────────────────┐
-│ ☁️ INFRASTRUCTURE                                            │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ 🐧 Linux    🐳 Docker    ☁️ Cloud    ⚙️ DevOps               │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-
-                              │
-                              ▼
-
-┌──────────────────────────────────────────────────────────────┐
-│ 🌐 DISTRIBUTED SYSTEMS                                       │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ 🌐 Networks       🧩 Distributed Systems                     │
-│ ⚡ APIs           🔄 Scalability       🏗️ System Design      │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-
-                              │
-                              ▼
-
-┌──────────────────────────────────────────────────────────────┐
-│ 🛡️ SECURITY                                                  │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ 🛡️ Cybersecurity      🔐 Cryptography                        │
-│ 🎯 Threat Modeling     🔒 Security Architecture              │
-│ 🤖 AI Security         🧪 Security Analysis                   │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-
-                              │
-                              ▼
-
-┌──────────────────────────────────────────────────────────────┐
-│ 🤖 INTELLIGENCE                                              │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ 🤖 Machine Learning     🧠 Deep Learning                      │
-│ ✨ GenAI                🧠 LLMs                               │
-│ 🔎 RAG                 🤝 AI Agents                           │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-
-                              │
-                              ▼
-
-┌──────────────────────────────────────────────────────────────┐
-│ ⛓️ EMERGING TECHNOLOGIES                                    │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ ⛓️ Blockchain       🔐 Web3       ⚛️ Quantum Computing       │
-│ 📡 IoT              🧬 Emerging Systems                       │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-
-                              │
-                              ▼
-
-╔══════════════════════════════════════════════════════════════╗
-║                    🚀 ADVANCED SYSTEMS                       ║
-╠══════════════════════════════════════════════════════════════╣
-║                                                              ║
-║     🧠 Intelligent + 🛡️ Secure + ☁️ Scalable + ⚛️ Emerging   ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-
-</pre>
-</p>
-
-<p align="center">
-
-🧮 <b>FOUNDATION</b>
-&nbsp; → &nbsp;
-💻 <b>DEVELOP</b>
-&nbsp; → &nbsp;
-🗄️ <b>PROCESS</b>
-&nbsp; → &nbsp;
-☁️ <b>SCALE</b>
-&nbsp; → &nbsp;
-🌐 <b>DISTRIBUTE</b>
-&nbsp; → &nbsp;
-🛡️ <b>SECURE</b>
-&nbsp; → &nbsp;
-🤖 <b>INTELLIGENT</b>
-&nbsp; → &nbsp;
-⚛️ <b>EXPLORE</b>
-
-</p>
-
-<p align="center">
-
-<b>🧱 Building the stack layer by layer.</b>
-
-<br>
-
-<i>Understand → Build → Integrate → Secure → Scale → Explore</i>
-
-</p>
-
-# 🛠️ Technologies & Tools
-
-<p align="center">
-<pre>
-
-╔════════════════════════════════════════════════════════════════════╗
-║                       🛠️ MY DIGITAL TOOLBOX                       ║
-╚════════════════════════════════════════════════════════════════════╝
-
-
-┌─────────────────────────┐   ┌─────────────────────────┐   ┌─────────────────────────┐
-│ 🐍 PROGRAMMING          │   │ 🤖 AI & DATA             │   │ 💻 DEVELOPMENT          │
-├─────────────────────────┤   ├─────────────────────────┤   ├─────────────────────────┤
-│ 🐍 Python                │   │ 🔢 NumPy                 │   │ 🧰 Git                   │
-│ 🗃️ SQL                   │   │ 🐼 Pandas                │   │ 🐙 GitHub                │
-│ 💻 Programming           │   │ 🤖 Scikit-learn           │   │ 💻 VS Code               │
-│ 🖥️ Bash                  │   │ 📓 Jupyter                │   │ 🔌 APIs                  │
-│ ⚙️ Automation            │   │ 🧠 LLMs                   │   │ 🧪 Testing                │
-└─────────────────────────┘   │ 🔎 RAG                    │   │ 📚 Documentation         │
-                              └─────────────────────────┘   └─────────────────────────┘
-
-
-┌─────────────────────────┐   ┌─────────────────────────┐   ┌─────────────────────────┐
-│ 🗄️ DATABASES             │   │ ☁️ INFRASTRUCTURE        │   │ 🛡️ SECURITY              │
-├─────────────────────────┤   ├─────────────────────────┤   ├─────────────────────────┤
-│ 🐘 PostgreSQL            │   │ 🐧 Linux                 │   │ 🔐 Cryptography          │
-│ 🗃️ SQL                   │   │ 🐳 Docker                │   │ 🛡️ Cybersecurity         │
-│ 🔍 Querying              │   │ ☁️ Cloud                 │   │ 🎯 Threat Modeling       │
-│ 🧩 Data Modeling         │   │ ⚙️ DevOps                │   │ 🔒 Security Architecture │
-│ 🔗 Database Integration  │   │ 🌐 Networking             │   │ 🤖 AI Security            │
-└─────────────────────────┘   └─────────────────────────┘   └─────────────────────────┘
-
-
-┌─────────────────────────┐   ┌─────────────────────────┐   ┌─────────────────────────┐
-│ 📊 ANALYTICS             │   │ ⚛️ EMERGING TECHNOLOGY   │   │ 🔧 WORKFLOW              │
-├─────────────────────────┤   ├─────────────────────────┤   ├─────────────────────────┤
-│ 📈 Statistics            │   │ ⛓️ Blockchain             │   │ 🔄 Version Control       │
-│ 📊 Data Analysis         │   │ ⚛️ Quantum Computing      │   │ 🧪 Experimentation       │
-│ 🧮 Mathematics           │   │ 📡 IoT                    │   │ 📝 Documentation         │
-│ 🔍 Visualization         │   │ 🌐 Distributed Systems    │   │ 🏗️ Project Building     │
-│ 📐 Modeling              │   │ 🚀 Emerging Systems        │   │ 🔁 Iteration             │
-└─────────────────────────┘   └─────────────────────────┘   └─────────────────────────┘
-
-
-                              │
-                              ▼
-
-╔════════════════════════════════════════════════════════════════════╗
-║                        🚀 MY WORKFLOW                              ║
-╠════════════════════════════════════════════════════════════════════╣
-║                                                                    ║
-║   🧠 LEARN  →  🔍 UNDERSTAND  →  💻 CODE  →  🧪 EXPERIMENT        ║
-║                                                                    ║
-║                         ↓                                          ║
-║                                                                    ║
-║   🗄️ STORE  →  📊 ANALYZE  →  🛡️ SECURE  →  ☁️ DEPLOY            ║
-║                                                                    ║
-║                         ↓                                          ║
-║                                                                    ║
-║                    🏗️ BUILD  →  🚀 IMPROVE                        ║
-║                                                                    ║
-╚════════════════════════════════════════════════════════════════════╝
-
-
-<p align="center">
-
-🧠 <b>LEARN</b>
-&nbsp;→&nbsp;
-💻 <b>BUILD</b>
-&nbsp;→&nbsp;
-🧪 <b>EXPERIMENT</b>
-&nbsp;→&nbsp;
-📊 <b>ANALYZE</b>
-&nbsp;→&nbsp;
-🛡️ <b>SECURE</b>
-&nbsp;→&nbsp;
-☁️ <b>DEPLOY</b>
-&nbsp;→&nbsp;
-🚀 <b>IMPROVE</b>
-
-</p>
-
-</pre>
-</p>
-
-# 🌐 Technology Domains
-
-<p align="center">
-
-<table>
+<table align="center">
 <tr>
 
 <td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/python" width="55"><br>
-<b>🐍 Python</b><br><br>
+<img src="https://cdn.simpleicons.org/python" width="60"><br>
+<b>PYTHON</b><br><br>
 Programming<br>
 Automation<br>
 Algorithms<br>
@@ -2883,10 +2507,10 @@ Data
 </td>
 
 <td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/tensorflow" width="55"><br>
-<b>🤖 AI & ML</b><br><br>
+<img src="https://cdn.simpleicons.org/tensorflow" width="60"><br>
+<b>AI & MACHINE LEARNING</b><br><br>
 ML<br>
-DL<br>
+Deep Learning<br>
 GenAI<br>
 LLMs<br>
 RAG<br>
@@ -2894,8 +2518,8 @@ Agents
 </td>
 
 <td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/linux" width="55"><br>
-<b>☁️ Cloud & Systems</b><br><br>
+<img src="https://cdn.simpleicons.org/linux" width="60"><br>
+<b>CLOUD & SYSTEMS</b><br><br>
 Linux<br>
 Cloud<br>
 Containers<br>
@@ -2904,8 +2528,8 @@ Distributed Systems
 </td>
 
 <td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/kalilinux" width="55"><br>
-<b>🛡️ Security</b><br><br>
+<img src="https://cdn.simpleicons.org/kalilinux" width="60"><br>
+<b>SECURITY</b><br><br>
 Cybersecurity<br>
 Cryptography<br>
 Threat Modeling<br>
@@ -2913,8 +2537,8 @@ AI Security
 </td>
 
 <td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/postgresql" width="55"><br>
-<b>🗄️ Data</b><br><br>
+<img src="https://cdn.simpleicons.org/postgresql" width="60"><br>
+<b>DATA</b><br><br>
 SQL<br>
 PostgreSQL<br>
 Databases<br>
@@ -2926,45 +2550,45 @@ Statistics
 
 <tr>
 
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/bitcoin" width="55"><br>
-<b>⛓️ Blockchain</b><br><br>
+<td align="center">
+<img src="https://cdn.simpleicons.org/bitcoin" width="60"><br>
+<b>BLOCKCHAIN</b><br><br>
 Cryptography<br>
 Consensus<br>
 Distributed Ledgers<br>
 Smart Contracts
 </td>
 
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/quantum" width="55"><br>
-<b>⚛️ Quantum</b><br><br>
+<td align="center">
+<img src="https://cdn.simpleicons.org/qiskit" width="60"><br>
+<b>QUANTUM</b><br><br>
 Qubits<br>
 Quantum Gates<br>
 Circuits<br>
 Algorithms
 </td>
 
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/arduino" width="55"><br>
-<b>📡 IoT</b><br><br>
+<td align="center">
+<img src="https://cdn.simpleicons.org/arduino" width="60"><br>
+<b>IOT</b><br><br>
 Devices<br>
 Sensors<br>
 Edge Computing<br>
 Connectivity
 </td>
 
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/docker" width="55"><br>
-<b>🐳 DevOps</b><br><br>
+<td align="center">
+<img src="https://cdn.simpleicons.org/docker" width="60"><br>
+<b>DEVOPS</b><br><br>
 Docker<br>
 CI/CD<br>
 Automation<br>
 Deployment
 </td>
 
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/github" width="55"><br>
-<b>💻 Development</b><br><br>
+<td align="center">
+<img src="https://cdn.simpleicons.org/github" width="60"><br>
+<b>DEVELOPMENT</b><br><br>
 Git<br>
 GitHub<br>
 APIs<br>
@@ -2979,499 +2603,60 @@ Software Engineering
 <br>
 
 <p align="center">
-
-╔══════════════════════════════════════════════════════════════╗
-<br>
-<b>🧠 MY TECHNOLOGY DOMAIN CONNECTIONS</b>
-<br>
-╚══════════════════════════════════════════════════════════════╝
-
+<b>TECHNOLOGY DOMAIN CONNECTIONS</b>
 </p>
 
 <p align="center">
-
-🧮 <b>MATHEMATICS</b>
-&nbsp; → &nbsp;
-💻 <b>PROGRAMMING</b>
-&nbsp; → &nbsp;
-🗄️ <b>DATA</b>
-&nbsp; → &nbsp;
-🤖 <b>AI</b>
-
-<br><br>
-
-🌐 <b>NETWORKS</b>
-&nbsp; → &nbsp;
-☁️ <b>CLOUD</b>
-&nbsp; → &nbsp;
-🐳 <b>CONTAINERS</b>
-&nbsp; → &nbsp;
-🧩 <b>DISTRIBUTED SYSTEMS</b>
-
-<br><br>
-
-🔐 <b>CRYPTOGRAPHY</b>
-&nbsp; → &nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; → &nbsp;
-⛓️ <b>BLOCKCHAIN</b>
-
-<br><br>
-
-📡 <b>IoT</b>
-&nbsp; → &nbsp;
-⚡ <b>EDGE</b>
-&nbsp; → &nbsp;
-☁️ <b>CLOUD</b>
-&nbsp; → &nbsp;
-🤖 <b>INTELLIGENT SYSTEMS</b>
-
-<br><br>
-
-🧮 <b>MATHEMATICS</b>
-&nbsp; → &nbsp;
-⚛️ <b>QUANTUM</b>
-&nbsp; → &nbsp;
-🔬 <b>QUANTUM ALGORITHMS</b>
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-### 🧠 Intelligence
 
 <img src="https://cdn.simpleicons.org/python" width="35">
-<img src="https://cdn.simpleicons.org/tensorflow" width="35">
-<img src="https://cdn.simpleicons.org/pytorch" width="35">
-
-</td>
-
-<td align="center">
-
-### 🛡️ Trust
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="35">
-<img src="https://cdn.simpleicons.org/gnupg" width="35">
-
-</td>
-
-<td align="center">
-
-### ☁️ Scale
-
-<img src="https://cdn.simpleicons.org/docker" width="35">
-<img src="https://cdn.simpleicons.org/kubernetes" width="35">
-<img src="https://cdn.simpleicons.org/linux" width="35">
-
-</td>
-
-<td align="center">
-
-### 🌐 Systems
-
+<b>PROGRAMMING</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
 <img src="https://cdn.simpleicons.org/postgresql" width="35">
-<img src="https://cdn.simpleicons.org/github" width="35">
+<b>DATA</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="35">
+<b>AI</b>
 
-</td>
+<br><br>
 
-<td align="center">
+<img src="https://cdn.simpleicons.org/linux" width="35">
+<b>NETWORKS</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="35">
+<b>CLOUD</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kubernetes" width="35">
+<b>DISTRIBUTED SYSTEMS</b>
 
-### ⚛️ Emerging
+<br><br>
+
+<img src="https://cdn.simpleicons.org/letsencrypt" width="35">
+<b>CRYPTOGRAPHY</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="35">
+<b>SECURITY</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/bitcoin" width="35">
+<b>BLOCKCHAIN</b>
+
+<br><br>
 
 <img src="https://cdn.simpleicons.org/arduino" width="35">
-<img src="https://cdn.simpleicons.org/quantum" width="35">
-
-</td>
-
-</tr>
-</table>
-
-<p align="center">
-
-<b>🌐 Exploring connected technology domains through mathematics, computation, intelligence, security and systems.</b>
-
-</p>
-
-# 🧩 Concepts I'm Learning From First Principles
-
-<p align="center">
-<pre>
-
-╔════════════════════════════════════════════════════════════════════╗
-║                    🧩 FIRST-PRINCIPLES LAB                       ║
-║              UNDERSTAND THE "WHY" BEFORE THE "HOW"              ║
-╚════════════════════════════════════════════════════════════════════╝
-
-                              │
-                              ▼
-
-┌──────────────────────┐  ┌──────────────────────┐  ┌──────────────────────┐
-│      🧮 MATH         │  │   💻 COMPUTING       │  │       🤖 AI           │
-├──────────────────────┤  ├──────────────────────┤  ├──────────────────────┤
-│ 🔢 Number Theory     │  │ 🏗️ Architecture      │  │ 📊 Machine Learning  │
-│ 🔢 Prime Numbers     │  │ 🖥️ Operating Systems │  │ 🧠 Neural Networks   │
-│ ➗ Modular Math      │  │ 🌐 Networks           │  │ 🧠 Deep Learning     │
-│ 🔢 GCD               │  │ ⚙️ Algorithms         │  │ 🔄 Transformers      │
-│ 📐 Euclidean Algo    │  │ 🗂️ Data Structures    │  │ 🎯 Attention         │
-│ 📈 Complexity        │  │ 🗄️ Databases          │  │ 🧩 Foundation Models │
-└──────────────────────┘  │ 🌐 Distributed        │  │ 💬 LLMs              │
-                          │    Systems             │  └──────────────────────┘
-                          └──────────────────────┘
-
-          │                       │                       │
-          └───────────────────────┼───────────────────────┘
-                                  │
-                                  ▼
-
-╔════════════════════════════════════════════════════════════════════╗
-║                       🧠 CORE MECHANISMS                          ║
-╠════════════════════════════════════════════════════════════════════╣
-║                                                                    ║
-║  🧮 MATHEMATICS → 💻 COMPUTATION → 📊 DATA → 🤖 INTELLIGENCE      ║
-║                                                                    ║
-║       Understand the underlying principles before abstraction.     ║
-║                                                                    ║
-╚════════════════════════════════════════════════════════════════════╝
-
-                                  │
-                                  ▼
-
-┌────────────────────────────────────────────────────────────────────┐
-│                         🛡️ SECURITY                                │
-├────────────────────────────────────────────────────────────────────┤
-│                                                                    │
-│  🔐 Cryptography                                                   │
-│          ↓                                                         │
-│  🔑 Authentication                                                 │
-│          ↓                                                         │
-│  🛂 Authorization                                                  │
-│          ↓                                                         │
-│  🎯 Threat Modeling                                                │
-│          ↓                                                         │
-│  🏗️ Secure Architecture                                            │
-│          ↓                                                         │
-│  🛡️ Trusted Systems                                                │
-│                                                                    │
-└────────────────────────────────────────────────────────────────────┘
-
-                                  │
-                                  ▼
-
-┌────────────────────────────────────────────────────────────────────┐
-│                          ⚛️ QUANTUM                               │
-├────────────────────────────────────────────────────────────────────┤
-│                                                                    │
-│  ⚛️ Qubits                                                         │
-│       ↓                                                            │
-│  🚪 Quantum Gates                                                  │
-│       ↓                                                            │
-│  🔬 Quantum Circuits                                               │
-│       ↓                                                            │
-│  📏 Measurement                                                    │
-│       ↓                                                            │
-│  🧮 Quantum Algorithms                                              │
-│       ↓                                                            │
-│  🔐 Post-Quantum Cryptography                                      │
-│                                                                    │
-└────────────────────────────────────────────────────────────────────┘
-
-                                  │
-                                  ▼
-
-╔════════════════════════════════════════════════════════════════════╗
-║                     🔬 FIRST-PRINCIPLES LOOP                      ║
-╠════════════════════════════════════════════════════════════════════╣
-║                                                                    ║
-║  ❓ WHY? → 🔍 HOW? → 🧩 BREAK IT DOWN → 💻 IMPLEMENT              ║
-║                                                                    ║
-║             ↓                                                      ║
-║                                                                    ║
-║  🧪 EXPERIMENT → ⚠️ FIND LIMITS → 🔧 FIX → 🏗️ REBUILD            ║
-║                                                                    ║
-║             ↓                                                      ║
-║                                                                    ║
-║                    🧠 UNDERSTAND DEEPLY                            ║
-║                                                                    ║
-╚════════════════════════════════════════════════════════════════════╝
-
-
-<p align="center">
-
-🧮 <b>FUNDAMENTALS</b>
-&nbsp; → &nbsp;
-💻 <b>MECHANISMS</b>
-&nbsp; → &nbsp;
-🧩 <b>ABSTRACTIONS</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENTS</b>
-&nbsp; → &nbsp;
-🏗️ <b>SYSTEMS</b>
-
-</p>
-
-<p align="center">
-
-<b>🔬 Don't just learn how a system works.</b><br>
-<i>Understand the principles that make it work.</i>
-
-</p>
-
-</pre>
-</p>
-
-# 🏗️ From Theory → Implementation
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/academia" width="50"><br>
-<b>🧠 THEORY</b><br>
-Concepts<br>
-Principles<br>
-Mathematics
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/googlescholar" width="50"><br>
-<b>🔍 UNDERSTAND</b><br>
-Research<br>
-Reasoning<br>
-Mechanisms
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/python" width="50"><br>
-<b>💻 IMPLEMENT</b><br>
-Code<br>
-Algorithms<br>
-Systems
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/jupyter" width="50"><br>
-<b>🧪 EXPERIMENT</b><br>
-Test<br>
-Measure<br>
-Iterate
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<p align="center">
-
-⬇️
-
-</p>
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/googleanalytics" width="50"><br>
-<b>📊 ANALYZE</b><br>
-Results<br>
-Performance<br>
-Limitations
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/readthedocs" width="50"><br>
-<b>📚 DOCUMENT</b><br>
-Findings<br>
-Methods<br>
-Lessons
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/github" width="50"><br>
-<b>🏗️ BUILD</b><br>
-Projects<br>
-Applications<br>
-Systems
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/rocket" width="50"><br>
-<b>🚀 APPLY</b><br>
-Real Problems<br>
-Integration<br>
-Impact
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 THEORY → ENGINEERING PIPELINE</b>
-<br>
-╚══════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<p align="center">
-
-🧮 <b>MATHEMATICS</b>
-&nbsp; → &nbsp;
-🔐 <b>CRYPTOGRAPHY</b>
-&nbsp; → &nbsp;
-🐍 <b>PYTHON</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-
-<br>
-
-⬇️
-
-<br>
-
-📊 <b>ANALYZE</b>
-&nbsp; → &nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; → &nbsp;
-⛓️ <b>BLOCKCHAIN</b>
-&nbsp; → &nbsp;
-🚀 <b>APPLICATION</b>
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/python" width="45"><br>
-<b>🐍 Python</b><br>
-Implementation
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/postgresql" width="45"><br>
-<b>🐘 PostgreSQL</b><br>
-Data & Storage
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/docker" width="45"><br>
-<b>🐳 Docker</b><br>
-Deployment
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/github" width="45"><br>
-<b>🐙 GitHub</b><br>
-Version Control
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/linux" width="45"><br>
-<b>🐧 Linux</b><br>
-Systems
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-<b>🧠 THINK</b>
-&nbsp; → &nbsp;
-<b>🔍 UNDERSTAND</b>
-&nbsp; → &nbsp;
-<b>💻 IMPLEMENT</b>
-&nbsp; → &nbsp;
-<b>🧪 TEST</b>
-&nbsp; → &nbsp;
-<b>📊 ANALYZE</b>
-&nbsp; → &nbsp;
-<b>🏗️ BUILD</b>
-&nbsp; → &nbsp;
-<b>🚀 APPLY</b>
+<b>IOT</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="35">
+<b>EDGE</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/linux" width="35">
+<b>SYSTEMS</b>
 
 <br><br>
 
-<i>Turning concepts into experiments, experiments into systems, and systems into applications.</i>
-
-</p>
-
-# 🧪 Technology Experiments
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/python" width="55"><br>
-<b>🐍 PYTHON LAB</b><br><br>
-⚙️ Algorithms<br>
-🤖 Automation<br>
-📊 Data Processing<br>
-🧩 Problem Solving
-</td>
-
-<td align="center">
-<b>→</b>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/tensorflow" width="55"><br>
-<b>🤖 AI LAB</b><br><br>
-🧠 Machine Learning<br>
-🔗 LLMs<br>
-🔎 RAG<br>
-🤝 AI Agents
-</td>
-
-<td align="center">
-<b>→</b>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/letsencrypt" width="55"><br>
-<b>🔐 CRYPTO LAB</b><br><br>
-#️⃣ Hashing<br>
-🔒 Encryption<br>
-✍️ Digital Signatures<br>
-🔑 Key Exchange
-</td>
-
-</tr>
-</table>
+<img src="https://cdn.simpleicons.org/qiskit" width="35">
+<b>QUANTUM</b>
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/letsencrypt" width="35">
+<b>POST-QUANTUM SECURITY</b>
 
 </p>
 
@@ -3479,777 +2664,95 @@ Systems
 
 <p align="center">
 
-⬇️
+<img src="https://cdn.simpleicons.org/python" width="40">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="40">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/pytorch" width="40">
+&nbsp;&nbsp;&nbsp;&nbsp;
 
-<br>
+<img src="https://cdn.simpleicons.org/kalilinux" width="40">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/gnupg" width="40">
+&nbsp;&nbsp;&nbsp;&nbsp;
 
-<b>🧪 EXPERIMENT → 📊 MEASURE → 🔍 ANALYZE → 🛠️ IMPROVE</b>
+<img src="https://cdn.simpleicons.org/docker" width="40">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kubernetes" width="40">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/linux" width="40">
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="https://cdn.simpleicons.org/postgresql" width="40">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="40">
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="https://cdn.simpleicons.org/arduino" width="40">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="40">
 
 </p>
 
+<p align="center">
+<b>Mathematics · Computation · Data · Intelligence · Security · Systems</b>
+</p>
+
+# Concepts I'm Learning
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="55">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/linux" width="55">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="55">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="55">
+
+</p>
+
+<p align="center">
+<b>FIRST-PRINCIPLES LEARNING</b>
 <br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/postgresql" width="50"><br>
-<b>🗄️ DATA LAB</b><br><br>
-🗃️ Databases<br>
-🔍 SQL<br>
-📈 Analytics<br>
-🧩 Data Modeling
-</td>
-
-<td align="center">
-<b>→</b>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/docker" width="50"><br>
-<b>☁️ CLOUD LAB</b><br><br>
-🐳 Containers<br>
-🌐 Networking<br>
-⚙️ DevOps<br>
-📡 Distributed Systems
-</td>
-
-<td align="center">
-<b>→</b>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/kalilinux" width="50"><br>
-<b>🛡️ SECURITY LAB</b><br><br>
-🔐 Security Testing<br>
-🎯 Threat Modeling<br>
-🔎 Security Analysis<br>
-🤖 AI Security
-</td>
-
-<td align="center">
-<b>→</b>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/qiskit" width="50"><br>
-<b>⚛️ QUANTUM LAB</b><br><br>
-⚛️ Qubits<br>
-🔗 Quantum Gates<br>
-🧩 Circuits<br>
-🧮 Algorithms
-</td>
-
-</tr>
-</table>
+Understand the mechanism before the abstraction.
+</p>
 
 <br>
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════╗
+<img src="https://cdn.simpleicons.org/python" width="45">
 <br>
-<b>🔬 MY EXPERIMENT LOOP</b>
+<b>MATHEMATICS & COMPUTATION</b>
 <br>
-╚══════════════════════════════════════════════════════════════════╝
+Number Theory · Algorithms · Complexity · Architecture
 
 <br><br>
 
-🧠 <b>QUESTION</b>
-&nbsp; → &nbsp;
-💡 <b>HYPOTHESIS</b>
-&nbsp; → &nbsp;
-💻 <b>IMPLEMENT</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
 <br>
-
-⬇️
-
+<b>INTELLIGENCE</b>
 <br>
-
-📊 <b>MEASURE</b>
-&nbsp; → &nbsp;
-🔍 <b>ANALYZE</b>
-&nbsp; → &nbsp;
-🐞 <b>BREAK</b>
-&nbsp; → &nbsp;
-🛠️ <b>IMPROVE</b>
-
-<br>
-
-⬇️
-
-<br>
-
-🏗️ <b>BUILD</b>
-&nbsp; → &nbsp;
-📚 <b>DOCUMENT</b>
-&nbsp; → &nbsp;
-🚀 <b>APPLY</b>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center">
-🧮<br>
-<b>FUNDAMENTALS</b><br>
-Mathematics<br>
-Algorithms
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💻<br>
-<b>IMPLEMENTATION</b><br>
-Python<br>
-Systems
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧪<br>
-<b>EXPERIMENTATION</b><br>
-Models<br>
-Prototypes
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-📊<br>
-<b>ANALYSIS</b><br>
-Performance<br>
-Security
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🏗️<br>
-<b>APPLICATION</b><br>
-Real Systems<br>
-Projects
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>🐍 CODE</b>
-&nbsp; → &nbsp;
-<b>🧪 EXPERIMENT</b>
-&nbsp; → &nbsp;
-<b>📊 MEASURE</b>
-&nbsp; → &nbsp;
-<b>🔍 UNDERSTAND</b>
-&nbsp; → &nbsp;
-<b>🏗️ BUILD</b>
-&nbsp; → &nbsp;
-<b>🚀 DISCOVER</b>
+Machine Learning · Neural Networks · Transformers · LLMs
 
 <br><br>
 
-<i>Every experiment is a small step from theory toward a working system.</i>
-
-</p>
-
-# 🧪 My Digital Laboratory
-
-<p align="center">
-
-<table>
-<tr>
-<td align="center" colspan="7">
-
-<img src="https://cdn.simpleicons.org/github" width="65">
-
-<h2>🧪 DIGITAL LABORATORY</h2>
-
-<b>RESEARCH • EXPERIMENTATION • ENGINEERING • DISCOVERY</b>
-
-</td>
-</tr>
-
-<tr>
-<td align="center">
-🔭<br>
-<b>EXPLORE</b><br>
-Ideas<br>
-Problems<br>
-Questions
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧩<br>
-<b>DECOMPOSE</b><br>
-Break Down<br>
-Analyze<br>
-Understand
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧠<br>
-<b>LEARN</b><br>
-Principles<br>
-Concepts<br>
-Foundations
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💡<br>
-<b>DESIGN</b><br>
-Hypothesis<br>
-Approach<br>
-Experiment
-</td>
-
-</tr>
-</table>
-
-</p>
-
+<img src="https://cdn.simpleicons.org/kalilinux" width="45">
 <br>
-
-<p align="center">
-
-╔════════════════════════════════════════════════════════════════════╗
+<b>SECURITY</b>
 <br>
-<b>⚙️ LAB CORE</b>
-<br>
-<i>Where ideas become experiments and experiments become systems</i>
-<br>
-╚════════════════════════════════════════════════════════════════════╝
+Cryptography · Authentication · Authorization · Threat Modeling
 
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/python" width="55"><br>
-<b>💻 CODE</b><br><br>
-Algorithms<br>
-Automation<br>
-Data<br>
-Prototypes
-</td>
-
-<td align="center">
-<b>→</b>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/jupyter" width="55"><br>
-<b>🧪 EXPERIMENT</b><br><br>
-Models<br>
-Tests<br>
-Simulations<br>
-Prototypes
-</td>
-
-<td align="center">
-<b>→</b>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/googleanalytics" width="55"><br>
-<b>📊 ANALYZE</b><br><br>
-Results<br>
-Metrics<br>
-Performance<br>
-Limitations
-</td>
-
-<td align="center">
-<b>→</b>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/github" width="55"><br>
-<b>📚 DOCUMENT</b><br><br>
-Findings<br>
-Methods<br>
-Lessons<br>
-Results
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-⬇️
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/postgresql" width="50"><br>
-<b>🗄️ DATA</b><br>
-Store<br>
-Query<br>
-Analyze
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/docker" width="50"><br>
-<b>☁️ SYSTEMS</b><br>
-Package<br>
-Deploy<br>
-Scale
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/kalilinux" width="50"><br>
-<b>🛡️ SECURITY</b><br>
-Test<br>
-Harden<br>
-Protect
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/tensorflow" width="50"><br>
-<b>🤖 INTELLIGENCE</b><br>
-Models<br>
-Reasoning<br>
-Automation
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/qiskit" width="50"><br>
-<b>⚛️ EMERGING</b><br>
-Quantum<br>
-Blockchain<br>
-New Systems
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 EXPERIMENT ENGINE</b>
-<br>
-╠════════════════════════════════════════════════════════════════════╣
-<br>
-<b>QUESTION</b> → <b>HYPOTHESIS</b> → <b>IMPLEMENT</b> → <b>TEST</b>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-↓
-<br>
-<b>MEASURE</b> → <b>ANALYZE</b> → <b>BREAK</b> → <b>FIX</b>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-↓
-<br>
-<b>DOCUMENT</b> → <b>BUILD</b> → <b>DEPLOY</b> → <b>SHARE</b>
-<br>
-╚════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-🔭<br>
-<b>EXPLORE</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧠<br>
-<b>UNDERSTAND</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💻<br>
-<b>IMPLEMENT</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧪<br>
-<b>EXPERIMENT</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-📊<br>
-<b>ANALYZE</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🏗️<br>
-<b>BUILD</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🚀<br>
-<b>SHARE</b>
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-<b>🧠 THINK → 🔬 EXPERIMENT → 💻 ENGINEER → 🏗️ BUILD → 🌐 APPLY</b>
-
-<br><br>
-
-<i>My GitHub is not just a collection of repositories.<br>
-It is a laboratory for turning questions into knowledge and knowledge into working systems.</i>
-
-</p>
-
-# 🔍 Questions I'm Exploring
-
-<p align="center">
-
-<table>
-<tr>
-<td align="center" colspan="9">
-
-<img src="https://cdn.simpleicons.org/github" width="65">
-
-<h2>🔬 RESEARCH & QUESTION OBSERVATORY</h2>
-
-<b>ASK → INVESTIGATE → EXPERIMENT → UNDERSTAND → BUILD</b>
-
-</td>
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🧠 THE RESEARCH CORE</b>
-<br>
-<i>Questions that connect theory, technology, experimentation and real-world systems</i>
-<br>
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="60">
-
-<h3>🤖 AI & INTELLIGENCE</h3>
-
-<b>How do intelligent systems work?</b>
-
-<br><br>
-
-🧠 How do LLMs reason?
-
-<br>
-
-🔎 How can RAG improve knowledge retrieval?
-
-<br>
-
-🤝 How can AI agents act autonomously?
-
-<br>
-
-🧩 Where do AI systems fail?
-
-<br>
-
-🛡️ How can AI remain safe?
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="60">
-
-<h3>🛡️ SECURITY & TRUST</h3>
-
-<b>How do we make systems trustworthy?</b>
-
-<br><br>
-
-🔐 How does cryptography protect systems?
-
-<br>
-
-⚛️ How does PQC change security?
-
-<br>
-
-🤖 How can AI improve cybersecurity?
-
-<br>
-
-🎯 How do attacks exploit weaknesses?
-
-<br>
-
-🏗️ How can secure systems be designed?
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/docker" width="60">
-
-<h3>☁️ CLOUD & SYSTEMS</h3>
-
-<b>How do large systems operate?</b>
-
-<br><br>
-
-📈 How do systems scale?
-
-<br>
-
-🌐 How do distributed systems communicate?
-
-<br>
-
-⚙️ How is reliability engineered?
-
-<br>
-
-🐳 How do containers enable deployment?
-
-<br>
-
-🔄 How can systems recover from failure?
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="60">
-
-<h3>⚛️ QUANTUM & EMERGING</h3>
-
-<b>What changes beyond classical computing?</b>
-
-<br><br>
-
-⚛️ How do quantum algorithms work?
-
-<br>
-
-🧮 What problems can quantum computing solve?
-
-<br>
-
-🔐 What happens to classical cryptography?
-
-<br>
-
-🛡️ How does quantum computing affect security?
-
-<br>
-
-🚀 What technologies emerge next?
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 FROM QUESTION → RESEARCH → SYSTEM</b>
-<br>
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center">
-❓<br>
-<b>QUESTION</b><br>
-What am I trying<br>
-to understand?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-📚<br>
-<b>RESEARCH</b><br>
-What does theory<br>
-tell me?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧩<br>
-<b>DECOMPOSE</b><br>
-What are the<br>
-core mechanisms?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💻<br>
-<b>IMPLEMENT</b><br>
-Can I reproduce<br>
-it in code?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧪<br>
-<b>EXPERIMENT</b><br>
-What happens<br>
-in practice?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-📊<br>
-<b>ANALYZE</b><br>
-What did<br>
-I discover?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🏗️<br>
-<b>BUILD</b><br>
-Can it become<br>
-a system?
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>⚛️ ONE EXAMPLE: QUANTUM → CRYPTOGRAPHY → SECURITY</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
 <br><br>
 
 <img src="https://cdn.simpleicons.org/qiskit" width="45">
-
-<b>QUANTUM ALGORITHMS</b>
-
-&nbsp; → &nbsp;
-
-🧮 <b>MATHEMATICAL PRINCIPLES</b>
-
-&nbsp; → &nbsp;
-
-🔐 <b>CLASSICAL CRYPTOGRAPHY</b>
-
-&nbsp; → &nbsp;
-
-🛡️ <b>POST-QUANTUM CRYPTOGRAPHY</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🔬 <b>UNDERSTAND THE THREAT</b>
-
-&nbsp; → &nbsp;
-
-🧪 <b>EXPERIMENT WITH ALGORITHMS</b>
-
-&nbsp; → &nbsp;
-
-💻 <b>IMPLEMENT</b>
-
-&nbsp; → &nbsp;
-
-📊 <b>ANALYZE SECURITY</b>
-
-&nbsp; → &nbsp;
-
-🏗️ <b>BUILD SECURE SYSTEMS</b>
+<br>
+<b>QUANTUM COMPUTING</b>
+<br>
+Qubits · Gates · Circuits · Measurement · Algorithms
 
 </p>
 
@@ -4257,347 +2760,144 @@ a system?
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🌐 CROSS-DOMAIN QUESTIONS</b>
-<br>
-╚══════════════════════════════════════════════════════════════════════════════╝
+<img src="https://cdn.simpleicons.org/python" width="38">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="38">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="38">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="38">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="38">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="38">
 
 </p>
 
-<table align="center">
-<tr>
+<p align="center">
+<b>FUNDAMENTALS → MECHANISMS → ABSTRACTIONS → EXPERIMENTS → SYSTEMS</b>
+</p>
 
-<td align="center">
-🤖 AI
-<br>×
-<br>🛡️ Security
-<br><br>
-<b>Can intelligent systems<br>make cybersecurity<br>more adaptive?</b>
-</td>
+<p align="center">
+<i>Understand the principles that make technology work.</i>
+</p>
 
-<td align="center">
-🤖 AI
-<br>×
-<br>☁️ Cloud
-<br><br>
-<b>How can AI systems<br>scale reliably?</b>
-</td>
-
-<td align="center">
-🔐 Cryptography
-<br>×
-<br>⚛️ Quantum
-<br><br>
-<b>How should security<br>evolve for quantum computing?</b>
-</td>
-
-<td align="center">
-📊 Data
-<br>×
-<br>🤖 AI
-<br><br>
-<b>How does better data<br>create better intelligence?</b>
-</td>
-
-</tr>
-</table>
-
-<br>
+# From Theory → Implementation
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔭 MY QUESTION LOOP</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
+<img src="https://cdn.simpleicons.org/academia" width="55">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/googlescholar" width="55">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="55">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="55">
 
-❓ <b>ASK</b>
-&nbsp; → &nbsp;
-🔍 <b>INVESTIGATE</b>
-&nbsp; → &nbsp;
-🧠 <b>UNDERSTAND</b>
-&nbsp; → &nbsp;
-🧩 <b>DECOMPOSE</b>
+</p>
 
-<br><br>
-
-⬇️
-
-<br><br>
-
-💻 <b>IMPLEMENT</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-📊 <b>MEASURE</b>
-&nbsp; → &nbsp;
-💥 <b>BREAK</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🛠️ <b>FIX</b>
-&nbsp; → &nbsp;
-📚 <b>DOCUMENT</b>
-&nbsp; → &nbsp;
-🏗️ <b>BUILD</b>
-&nbsp; → &nbsp;
-🚀 <b>APPLY</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
-
+<p align="center">
+<b>THEORY → UNDERSTAND → IMPLEMENT → EXPERIMENT</b>
 </p>
 
 <br>
 
 <p align="center">
 
-<b>🔬 I DON'T JUST ASK "WHAT IS IT?"</b>
-
-<br><br>
-
-❓ <b>WHY DOES IT WORK?</b>
-&nbsp; • &nbsp;
-🧠 <b>HOW DOES IT WORK?</b>
-&nbsp; • &nbsp;
-💥 <b>WHERE DOES IT FAIL?</b>
-&nbsp; • &nbsp;
-💻 <b>CAN I BUILD IT?</b>
-&nbsp; • &nbsp;
-🌐 <b>HOW DOES IT CONNECT?</b>
-
-<br><br>
-
-<i>Every question is a starting point for research, experimentation and engineering.</i>
+<img src="https://cdn.simpleicons.org/googleanalytics" width="55">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/readthedocs" width="55">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="55">
+&nbsp;&nbsp;→&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/rocket" width="55">
 
 </p>
 
-# 🔬 Deep-Dive Topics
-
 <p align="center">
-
-<table>
-<tr>
-<td align="center" colspan="5">
-
-<img src="https://cdn.simpleicons.org/github" width="65">
-
-<h2>🔬 DEEP-DIVE RESEARCH LAB</h2>
-
-<b>FOUNDATIONS • MECHANISMS • ARCHITECTURE • SECURITY • SYSTEMS</b>
-
-</td>
-</tr>
-</table>
-
+<b>ANALYZE → DOCUMENT → BUILD → APPLY</b>
 </p>
 
 <br>
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🧠 TECHNICAL RESEARCH CORE</b>
-<br>
-<i>Going beneath the abstraction layer to understand how systems actually work.</i>
-<br>
-╚══════════════════════════════════════════════════════════════════════════════╝
+<img src="https://cdn.simpleicons.org/python" width="45">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="45">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="45">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="45">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/linux" width="45">
 
 </p>
 
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="60">
-
-<h3>🤖 AI</h3>
-
-<b>INTELLIGENCE</b>
-
-<br><br>
-
-🧠 Transformers<br>
-🎯 Attention Mechanisms<br>
-🔗 LLMs<br>
-🔎 RAG<br>
-🗄️ Vector Databases<br>
-🤝 AI Agents
-
-</td>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="60">
-
-<h3>🛡️ CYBERSECURITY</h3>
-
-<b>TRUST</b>
-
-<br><br>
-
-🎯 Threat Modeling<br>
-🏗️ Security Architecture<br>
-🔐 Cryptography<br>
-🤖 AI Security<br>
-⚛️ Post-Quantum Cryptography<br>
-🔎 Security Analysis
-
-</td>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/linux" width="60">
-
-<h3>⚙️ COMPUTING</h3>
-
-<b>FOUNDATIONS</b>
-
-<br><br>
-
-🧩 Computer Architecture<br>
-🐧 Operating Systems<br>
-🌐 Networks<br>
-🔄 Distributed Systems<br>
-☁️ Cloud Computing<br>
-📈 Scalability
-
-</td>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/python" width="60">
-
-<h3>💻 SOFTWARE</h3>
-
-<b>ENGINEERING</b>
-
-<br><br>
-
-🐍 Python<br>
-🔌 APIs<br>
-🗄️ Databases<br>
-🏗️ System Design<br>
-🧪 Testing<br>
-⚙️ CI/CD
-
-</td>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/ethereum" width="60">
-
-<h3>⛓️ DECENTRALIZED</h3>
-
-<b>DISTRIBUTION</b>
-
-<br><br>
-
-🔐 Cryptography<br>
-📚 Distributed Ledgers<br>
-🤝 Consensus<br>
-⛓️ Blockchain Architecture<br>
-📜 Smart Contracts<br>
-🌐 Decentralization
-
-</td>
-
-</tr>
-</table>
+<p align="center">
+<b>Implementation · Data · Deployment · Version Control · Systems</b>
+</p>
 
 <br>
 
 <p align="center">
 
-⬇️
+<img src="https://cdn.simpleicons.org/academia" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googlescholar" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/rocket" width="38">
+
+</p>
+
+<p align="center">
+<b>THINK → UNDERSTAND → IMPLEMENT → TEST → ANALYZE → BUILD → APPLY</b>
+</p>
+
+<p align="center">
+<i>Turning concepts into experiments, experiments into systems, and systems into applications.</i>
+</p>
+
+# Technology Experiments
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="65">
+
+<br>
+<b>PYTHON LAB</b>
+<br><br>
+Algorithms · Automation · Data · Problem Solving
 
 </p>
 
 <p align="center">
 
-╔════════════════════════════════════════════════════════════════════╗
+<img src="https://cdn.simpleicons.org/tensorflow" width="65">
+
 <br>
-<b>🔍 THE DEEP-DIVE METHOD</b>
-<br>
-╚════════════════════════════════════════════════════════════════════╝
+<b>AI LAB</b>
+<br><br>
+Machine Learning · LLMs · RAG · AI Agents
 
 </p>
 
-<table align="center">
-<tr>
-
-<td align="center">
-❓<br>
-<b>QUESTION</b><br>
-What problem<br>
-are we solving?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧮<br>
-<b>FOUNDATION</b><br>
-What mathematics<br>
-makes it possible?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-⚙️<br>
-<b>MECHANISM</b><br>
-What happens<br>
-under the hood?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💻<br>
-<b>IMPLEMENTATION</b><br>
-Can I reproduce<br>
-the mechanism?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧪<br>
-<b>EXPERIMENT</b><br>
-What happens<br>
-in practice?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💥<br>
-<b>LIMITS</b><br>
-Where does<br>
-it fail?
-</td>
-
-</tr>
-</table>
-
-<br>
-
 <p align="center">
 
-<b>FOUNDATION → MECHANISM → IMPLEMENTATION → EXPERIMENT → LIMITATIONS → SYSTEM</b>
+<img src="https://cdn.simpleicons.org/letsencrypt" width="65">
+
+<br>
+<b>CRYPTO LAB</b>
+<br><br>
+Hashing · Encryption · Signatures · Key Exchange
 
 </p>
 
@@ -4605,232 +2905,193 @@ it fail?
 
 <p align="center">
 
-╔════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🧩 CROSS-DOMAIN DEEP DIVES</b>
-<br>
-╚════════════════════════════════════════════════════════════════════╝
+<img src="https://cdn.simpleicons.org/postgresql" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="55">
 
 </p>
 
-<table align="center">
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="42">
-
-<br>
-
-<b>🤖 AI × 🛡️ SECURITY</b>
-
-<br><br>
-
-AI Security<br>
-Adversarial ML<br>
-LLM Security<br>
-Agent Security
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="42">
-
-<br>
-
-<b>⚛️ QUANTUM × 🔐 CRYPTO</b>
-
-<br><br>
-
-Quantum Algorithms<br>
-Cryptographic Threats<br>
-PQC<br>
-Secure Systems
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/docker" width="42">
-
-<br>
-
-<b>🤖 AI × ☁️ CLOUD</b>
-
-<br><br>
-
-AI Infrastructure<br>
-Distributed AI<br>
-Model Deployment<br>
-Scalable Systems
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/ethereum" width="42">
-
-<br>
-
-<b>⛓️ BLOCKCHAIN × 🌐 SYSTEMS</b>
-
-<br><br>
-
-Consensus<br>
-Distributed Ledgers<br>
-Cryptography<br>
-Decentralized Architecture
-
-</td>
-
-</tr>
-</table>
+<p align="center">
+<b>DATA LAB → CLOUD LAB → SECURITY LAB → QUANTUM LAB</b>
+</p>
 
 <br>
 
 <p align="center">
 
-╔════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 UNDER THE HOOD</b>
-<br>
-╠════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-🧠 <b>ABSTRACTION</b>
-&nbsp; → &nbsp;
-🔍 <b>DECOMPOSITION</b>
-&nbsp; → &nbsp;
-⚙️ <b>MECHANISM</b>
-&nbsp; → &nbsp;
-💻 <b>IMPLEMENTATION</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-📊 <b>MEASURE</b>
-&nbsp; → &nbsp;
-💥 <b>BREAK</b>
-&nbsp; → &nbsp;
-🛠️ <b>IMPROVE</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🏗️ <b>ARCHITECTURE</b>
-&nbsp; → &nbsp;
-🌐 <b>SYSTEM</b>
-&nbsp; → &nbsp;
-🚀 <b>APPLICATION</b>
-
-<br><br>
-
-╚════════════════════════════════════════════════════════════════════╝
+<img src="https://cdn.simpleicons.org/python" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="38">
 
 </p>
 
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/python" width="45"><br>
-<b>IMPLEMENT</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/jupyter" width="45"><br>
-<b>EXPERIMENT</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/postgresql" width="45"><br>
-<b>DATA</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/docker" width="45"><br>
-<b>DEPLOY</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/kalilinux" width="45"><br>
-<b>SECURE</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/github" width="45"><br>
-<b>DOCUMENT</b>
-</td>
-
-</tr>
-</table>
+<p align="center">
+<b>EXPERIMENT → MEASURE → ANALYZE → IMPROVE</b>
+</p>
 
 <br>
 
 <p align="center">
 
-<b>🔬 GO DEEPER THAN THE TOOL</b>
-
-<br><br>
-
-❓ <b>WHY?</b>
-&nbsp; • &nbsp;
-⚙️ <b>HOW?</b>
-&nbsp; • &nbsp;
-🧩 <b>WHAT IS UNDER THE HOOD?</b>
-&nbsp; • &nbsp;
-💥 <b>WHERE DOES IT BREAK?</b>
-&nbsp; • &nbsp;
-🏗️ <b>CAN I BUILD IT?</b>
-
-<br><br>
-
-<i>Understand the principles. Reproduce the mechanism. Test the limits. Build the system.</i>
+<img src="https://cdn.simpleicons.org/python" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="40">
 
 </p>
 
-# 🔗 Technology Connections
+<p align="center">
+<b>CODE → EXPERIMENT → MEASURE → UNDERSTAND → BUILD → DISCOVER</b>
+</p>
+
+<p align="center">
+<i>Every experiment moves theory toward a working system.</i>
+</p>
+
+# My Digital Laboratory
 
 <p align="center">
 
-<table>
-<tr>
-<td align="center" colspan="11">
+<img src="https://cdn.simpleicons.org/github" width="75">
+
+<br><br>
+
+<b>DIGITAL LABORATORY</b>
+
+<br>
+
+RESEARCH · EXPERIMENTATION · ENGINEERING · DISCOVERY
+
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="50">
+<br>
+<b>EXPLORE</b>
+<br>
+Ideas · Problems · Questions
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/python" width="50">
+<br>
+<b>DECOMPOSE</b>
+<br>
+Break Down · Analyze · Understand
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/googlescholar" width="50">
+<br>
+<b>LEARN</b>
+<br>
+Principles · Concepts · Foundations
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/jupyter" width="50">
+<br>
+<b>DESIGN</b>
+<br>
+Hypothesis · Approach · Experiment
+
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="55">
+
+</p>
+
+<p align="center">
+<b>CODE → EXPERIMENT → ANALYZE → DOCUMENT</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/postgresql" width="50">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="50">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="50">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="50">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="50">
+
+</p>
+
+<p align="center">
+<b>DATA → SYSTEMS → SECURITY → INTELLIGENCE → EMERGING TECHNOLOGY</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="38">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="38">
+
+</p>
+
+<p align="center">
+<b>EXPLORE → UNDERSTAND → IMPLEMENT → EXPERIMENT → ANALYZE → BUILD → SHARE</b>
+</p>
+
+<p align="center">
+<i>My GitHub is a laboratory for turning questions into knowledge and knowledge into working systems.</i>
+</p>
+
+# Questions I'm Exploring
+
+<p align="center">
 
 <img src="https://cdn.simpleicons.org/github" width="70">
 
-<h1>⚡ TECHNOLOGY NEXUS</h1>
-
-<b>MATHEMATICS • COMPUTATION • DATA • INTELLIGENCE • SECURITY • SYSTEMS</b>
-
 <br><br>
 
-<code>CONNECT → COMBINE → EXPERIMENT → ENGINEER → INTELLIGENCE</code>
+<b>RESEARCH & QUESTION OBSERVATORY</b>
 
-</td>
-</tr>
-</table>
+<br>
+
+ASK · INVESTIGATE · EXPERIMENT · UNDERSTAND · BUILD
 
 </p>
 
@@ -4838,244 +3099,41 @@ Decentralized Architecture
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
+<img src="https://cdn.simpleicons.org/tensorflow" width="65">
 <br>
-<b>🌐 THE CONNECTION MATRIX</b>
-<br>
-<i>Technologies become powerful when they interact.</i>
-<br>
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/python" width="55">
-
-<br>
-
-<b>🐍 PYTHON</b>
-
+<b>AI & INTELLIGENCE</b>
 <br><br>
-
-Programming<br>
-Algorithms<br>
-Automation<br>
-Experiments
-
-</td>
-
-<td align="center">
-<b>⟷</b>
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/numpy" width="55">
-
-<br>
-
-<b>📊 DATA</b>
-
-<br><br>
-
-Statistics<br>
-Numerical Computing<br>
-Analytics<br>
-Modeling
-
-</td>
-
-<td align="center">
-<b>⟷</b>
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="55">
-
-<br>
-
-<b>🤖 AI</b>
-
-<br><br>
-
-ML<br>
-Deep Learning<br>
-LLMs<br>
-Agents
-
-</td>
-
-<td align="center">
-<b>⟷</b>
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/postgresql" width="55">
-
-<br>
-
-<b>🗄️ DATABASES</b>
-
-<br><br>
-
-SQL<br>
-Storage<br>
-Retrieval<br>
-Data Systems
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-⬇️
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-⬇️
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-⬇️
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-🧮<br>
-<b>MATHEMATICS</b><br><br>
-Logic<br>
-Probability<br>
-Number Theory<br>
-Linear Algebra
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/letsencrypt" width="50">
-
-<br>
-
-<b>🔐 CRYPTOGRAPHY</b><br><br>
-Hashing<br>
-Encryption<br>
-Signatures<br>
-Key Exchange
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/ethereum" width="50">
-
-<br>
-
-<b>⛓️ BLOCKCHAIN</b><br><br>
-Ledgers<br>
-Consensus<br>
-Smart Contracts<br>
-Decentralization
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/docker" width="50">
-
-<br>
-
-<b>☁️ CLOUD</b><br><br>
-Containers<br>
-Deployment<br>
-Scalability<br>
-Infrastructure
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🧠 INTELLIGENCE LAYER</b>
-<br>
-╚════════════════════════════════════════════════════════════════════╝
+LLMs · RAG · Agents · Reliability · AI Safety
 
 </p>
 
 <p align="center">
 
-<table>
-<tr>
+<img src="https://cdn.simpleicons.org/kalilinux" width="65">
+<br>
+<b>SECURITY & TRUST</b>
+<br><br>
+Cryptography · PQC · Threats · Secure Architecture
 
-<td align="center">
-<img src="https://cdn.simpleicons.org/postgresql" width="45"><br>
-<b>DATA</b>
-</td>
+</p>
 
-<td align="center">→</td>
+<p align="center">
 
-<td align="center">
-🧠<br>
-<b>KNOWLEDGE</b>
-</td>
+<img src="https://cdn.simpleicons.org/docker" width="65">
+<br>
+<b>CLOUD & SYSTEMS</b>
+<br><br>
+Scale · Distributed Systems · Containers · Reliability
 
-<td align="center">→</td>
+</p>
 
-<td align="center">
-<img src="https://cdn.simpleicons.org/tensorflow" width="45"><br>
-<b>MODELS</b>
-</td>
+<p align="center">
 
-<td align="center">→</td>
-
-<td align="center">
-🔎<br>
-<b>RAG</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🤖<br>
-<b>AGENTS</b>
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🏗️<br>
-<b>SYSTEMS</b>
-</td>
-
-</tr>
-</table>
+<img src="https://cdn.simpleicons.org/qiskit" width="65">
+<br>
+<b>QUANTUM & EMERGING TECHNOLOGY</b>
+<br><br>
+Quantum Algorithms · Optimization · Cryptography · New Architectures
 
 </p>
 
@@ -5083,773 +3141,766 @@ Infrastructure
 
 <p align="center">
 
-╔════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🌐 SYSTEM CONNECTIONS</b>
-<br>
-╚════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-🧮 <b>MATH</b>
-<br>↓<br>
-🔐 <b>CRYPTOGRAPHY</b>
-<br>↓<br>
-⛓️ <b>BLOCKCHAIN</b>
-<br>↓<br>
-🌐 <b>DISTRIBUTED SYSTEMS</b>
-
-</td>
-
-<td align="center">
-
-🐍 <b>PYTHON</b>
-<br>↓<br>
-📊 <b>DATA</b>
-<br>↓<br>
-🤖 <b>MACHINE LEARNING</b>
-<br>↓<br>
-🧠 <b>INTELLIGENCE</b>
-
-</td>
-
-<td align="center">
-
-🗄️ <b>DATABASES</b>
-<br>↓<br>
-🔎 <b>RETRIEVAL</b>
-<br>↓<br>
-📚 <b>KNOWLEDGE</b>
-<br>↓<br>
-🤖 <b>RAG / AGENTS</b>
-
-</td>
-
-<td align="center">
-
-🌐 <b>NETWORKS</b>
-<br>↓<br>
-☁️ <b>CLOUD</b>
-<br>↓<br>
-🐳 <b>CONTAINERS</b>
-<br>↓<br>
-⚙️ <b>SCALABLE SYSTEMS</b>
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-⬇️
+<img src="https://cdn.simpleicons.org/googlescholar" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="45">
 
 </p>
 
 <p align="center">
-
-╔════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🛡️ TRUST + SCALE + INTELLIGENCE</b>
-<br>
-╠════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-🔐 <b>CRYPTOGRAPHY</b>
-&nbsp; + &nbsp;
-🛡️ <b>CYBERSECURITY</b>
-&nbsp; + &nbsp;
-☁️ <b>CLOUD</b>
-&nbsp; + &nbsp;
-🌐 <b>DISTRIBUTED SYSTEMS</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-📊 <b>DATA</b>
-&nbsp; + &nbsp;
-🤖 <b>AI</b>
-&nbsp; + &nbsp;
-🧠 <b>KNOWLEDGE</b>
-&nbsp; + &nbsp;
-🤝 <b>AGENTS</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🚀 <b>SECURE • SCALABLE • INTELLIGENT SYSTEMS</b>
-
-<br><br>
-
-╚════════════════════════════════════════════════════════════════════╝
-
+<b>QUESTION → RESEARCH → IMPLEMENT → EXPERIMENT → ANALYZE → BUILD</b>
 </p>
 
 <br>
 
 <p align="center">
 
-╔════════════════════════════════════════════════════════════════════╗
-<br>
-<b>⚛️ EMERGING CONNECTIONS</b>
-<br>
-╚════════════════════════════════════════════════════════════════════╝
+<img src="https://cdn.simpleicons.org/qiskit" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/letsencrypt" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="45">
 
 </p>
 
-<table align="center">
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/qiskit" width="50"><br>
-<b>QUANTUM</b><br><br>
-Quantum Algorithms<br>
-↓<br>
-Cryptography<br>
-↓<br>
-Post-Quantum Security
-</td>
-
-<td align="center">⟷</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/ethereum" width="50"><br>
-<b>BLOCKCHAIN</b><br><br>
-Cryptography<br>
-↓<br>
-Consensus<br>
-↓<br>
-Distributed Trust
-</td>
-
-<td align="center">⟷</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/tensorflow" width="50"><br>
-<b>AI AGENTS</b><br><br>
-Models<br>
-↓<br>
-Tools<br>
-↓<br>
-Autonomous Systems
-</td>
-
-<td align="center">⟷</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/docker" width="50"><br>
-<b>DISTRIBUTED AI</b><br><br>
-Models<br>
-↓<br>
-Infrastructure<br>
-↓<br>
-Scalable Intelligence
-</td>
-
-</tr>
-</table>
-
-<br>
-
 <p align="center">
-
-╔════════════════════════════════════════════════════════════════════╗
-<br>
-<b>⚡ THE NEXUS</b>
-<br>
-╠════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-🧮 <b>MATH</b>
-&nbsp; ⟷ &nbsp;
-🐍 <b>CODE</b>
-&nbsp; ⟷ &nbsp;
-📊 <b>DATA</b>
-&nbsp; ⟷ &nbsp;
-🤖 <b>AI</b>
-
-<br><br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↕
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-↕
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-↕
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-↕
-
-<br><br>
-
-🔐 <b>CRYPTO</b>
-&nbsp; ⟷ &nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; ⟷ &nbsp;
-☁️ <b>CLOUD</b>
-&nbsp; ⟷ &nbsp;
-🌐 <b>DISTRIBUTED SYSTEMS</b>
-
-<br><br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↘
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-⬇
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-↙
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-↘
-
-<br><br>
-
-🏗️ <b>ARCHITECTURE</b>
-&nbsp; → &nbsp;
-🧠 <b>INTELLIGENCE</b>
-&nbsp; → &nbsp;
-🚀 <b>INTELLIGENT SYSTEMS</b>
-
-<br><br>
-
-╚════════════════════════════════════════════════════════════════════╝
-
+<b>QUANTUM → CRYPTOGRAPHY → SECURITY</b>
 </p>
 
 <br>
 
 <p align="center">
 
-<b>🔗 CONNECT THEORIES → CONNECT TECHNOLOGIES → CONNECT SYSTEMS → CREATE NEW POSSIBILITIES</b>
+<img src="https://cdn.simpleicons.org/tensorflow" width="42">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="42">
 
-<br><br>
+    
 
-<i>The interesting problems live at the intersections.</i>
+<img src="https://cdn.simpleicons.org/tensorflow" width="42">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="42">
+
+    
+
+<img src="https://cdn.simpleicons.org/letsencrypt" width="42">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="42">
+
+    
+
+<img src="https://cdn.simpleicons.org/postgresql" width="42">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="42">
 
 </p>
 
-# 💡 Ideas I'm Exploring
-
 <p align="center">
-
-<table>
-<tr>
-<td align="center" colspan="9">
-
-<img src="https://cdn.simpleicons.org/github" width="65">
-
-<h2>💡 INNOVATION RADAR</h2>
-
-<b>IDEAS • HYPOTHESES • EXPERIMENTS • SYSTEMS • POSSIBILITIES</b>
-
-<br><br>
-
-<code>OBSERVE → IMAGINE → EXPERIMENT → VALIDATE → BUILD</code>
-
-</td>
-</tr>
-</table>
-
+<b>AI × SECURITY · AI × CLOUD · CRYPTOGRAPHY × QUANTUM · DATA × AI</b>
 </p>
 
 <br>
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════╗
+<img src="https://cdn.simpleicons.org/github" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googlescholar" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="40">
+
+</p>
+
+<p align="center">
+<b>ASK → INVESTIGATE → UNDERSTAND → IMPLEMENT → EXPERIMENT → MEASURE → BUILD</b>
+</p>
+
+<p align="center">
+<i>Every question is a starting point for research, experimentation and engineering.</i>
+</p>
+
+# Deep-Dive Topics
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="70">
+
+<br><br>
+
+<b>DEEP-DIVE RESEARCH LAB</b>
+
 <br>
-<b>🚀 IDEAS IN MOTION</b>
-<br>
-<i>Exploring how emerging technologies can become useful systems.</i>
-<br>
-╚══════════════════════════════════════════════════════════════════════╝
+
+FOUNDATIONS · MECHANISMS · ARCHITECTURE · SECURITY · SYSTEMS
 
 </p>
 
 <br>
 
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
+<p align="center">
 
 <img src="https://cdn.simpleicons.org/tensorflow" width="60">
-
-<h3>🤖 AI & INTELLIGENCE</h3>
-
-<b>BUILDING INTELLIGENT SYSTEMS</b>
-
+<br>
+<b>AI</b>
 <br><br>
+Transformers · Attention · LLMs · RAG · Vector Databases · Agents
 
-🤝 AI Agents<br>
-🏢 Enterprise AI<br>
-🔎 RAG Systems<br>
-⚙️ AI Automation<br>
-🧠 Intelligent Assistants<br>
-📚 Knowledge Systems
+</p>
 
-</td>
-
-<td align="center" width="25%">
+<p align="center">
 
 <img src="https://cdn.simpleicons.org/kalilinux" width="60">
-
-<h3>🛡️ SECURITY & TRUST</h3>
-
-<b>BUILDING TRUSTWORTHY SYSTEMS</b>
-
+<br>
+<b>CYBERSECURITY</b>
 <br><br>
-
-📋 Security Log Analysis<br>
-🎯 Threat Detection<br>
-🤖 AI Security<br>
-🔐 Cryptographic Systems<br>
-🔎 Security Intelligence<br>
-🛡️ Automated Defense
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/docker" width="60">
-
-<h3>☁️ CLOUD & INFRASTRUCTURE</h3>
-
-<b>BUILDING SYSTEMS AT SCALE</b>
-
-<br><br>
-
-🤖 AI Infrastructure<br>
-📈 Scalable Systems<br>
-🐳 Containerized Systems<br>
-⚙️ Intelligent Automation<br>
-🌐 Distributed Architecture<br>
-🔄 Reliable Infrastructure
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="60">
-
-<h3>⚛️ EMERGING COMPUTING</h3>
-
-<b>EXPLORING WHAT COMES NEXT</b>
-
-<br><br>
-
-⚛️ Quantum Computing<br>
-🔐 Post-Quantum Cryptography<br>
-🧮 Quantum Optimization<br>
-⛓️ Blockchain<br>
-🌐 Decentralization<br>
-🧩 Emerging Architectures
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🧠 FROM IDEA → SYSTEM</b>
-<br>
-╚══════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center">
-💡<br>
-<b>IDEA</b><br>
-What could<br>
-be possible?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-❓<br>
-<b>QUESTION</b><br>
-What problem<br>
-does it solve?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧠<br>
-<b>HYPOTHESIS</b><br>
-Why might<br>
-it work?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💻<br>
-<b>PROTOTYPE</b><br>
-Can I<br>
-build it?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧪<br>
-<b>EXPERIMENT</b><br>
-Does it<br>
-actually work?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-📊<br>
-<b>VALIDATE</b><br>
-What are the<br>
-results?
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🏗️<br>
-<b>SYSTEM</b><br>
-Can it become<br>
-something useful?
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-⬇️
+Threat Modeling · Architecture · Cryptography · AI Security · PQC
 
 </p>
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════╗
+<img src="https://cdn.simpleicons.org/linux" width="60">
 <br>
-<b>🌐 CROSS-DOMAIN IDEAS</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════╣
+<b>COMPUTING</b>
 <br><br>
-
-🤖 <b>AI</b>
-&nbsp; × &nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; → &nbsp;
-<b>Intelligent Threat Detection</b>
-
-<br><br>
-
-🤖 <b>AI</b>
-&nbsp; × &nbsp;
-☁️ <b>CLOUD</b>
-&nbsp; → &nbsp;
-<b>Scalable AI Infrastructure</b>
-
-<br><br>
-
-🤖 <b>AI</b>
-&nbsp; × &nbsp;
-🔎 <b>RAG</b>
-&nbsp; × &nbsp;
-🏢 <b>ENTERPRISE</b>
-&nbsp; → &nbsp;
-<b>Knowledge Intelligence Systems</b>
-
-<br><br>
-
-⚛️ <b>QUANTUM</b>
-&nbsp; × &nbsp;
-🔐 <b>CRYPTOGRAPHY</b>
-&nbsp; → &nbsp;
-<b>Post-Quantum Security</b>
-
-<br><br>
-
-⛓️ <b>BLOCKCHAIN</b>
-&nbsp; × &nbsp;
-🔐 <b>CRYPTOGRAPHY</b>
-&nbsp; × &nbsp;
-🌐 <b>DISTRIBUTED SYSTEMS</b>
-&nbsp; → &nbsp;
-<b>Decentralized Trust Systems</b>
-
-<br><br>
-
-🤖 <b>AI</b>
-&nbsp; × &nbsp;
-⚛️ <b>QUANTUM</b>
-&nbsp; → &nbsp;
-<b>Next-Generation Optimization</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════╝
+Architecture · Operating Systems · Networks · Distributed Systems · Cloud
 
 </p>
-
-<br>
 
 <p align="center">
-
-╔══════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 IDEA MATURITY PIPELINE</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-💭 <b>CONCEPT</b>
-&nbsp; → &nbsp;
-🔍 <b>RESEARCH</b>
-&nbsp; → &nbsp;
-🧠 <b>HYPOTHESIS</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-📊 <b>VALIDATE</b>
-&nbsp; → &nbsp;
-🛠️ <b>REFINE</b>
-&nbsp; → &nbsp;
-💻 <b>PROTOTYPE</b>
-&nbsp; → &nbsp;
-🏗️ <b>BUILD</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🚀 <b>DEPLOY</b>
-&nbsp; → &nbsp;
-📈 <b>MEASURE</b>
-&nbsp; → &nbsp;
-🔄 <b>ITERATE</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-💡<br>
-<b>IDEAS</b><br>
-Possibilities
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🔬<br>
-<b>RESEARCH</b><br>
-Evidence
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🧪<br>
-<b>EXPERIMENTS</b><br>
-Learning
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💻<br>
-<b>PROTOTYPES</b><br>
-Implementation
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🏗️<br>
-<b>SYSTEMS</b><br>
-Engineering
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🚀<br>
-<b>IMPACT</b><br>
-Application
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-<b>💡 IMAGINE → 🔍 INVESTIGATE → 🧪 EXPERIMENT → 🏗️ BUILD → 🚀 EXPLORE</b>
-
-<br><br>
-
-<i>Ideas are starting points. Experiments reveal what is possible.</i>
-
-</p>
-
-# 🧰 Things I've Built From Scratch
-
-<p align="center">
-
-<table>
-<tr>
-<td align="center" colspan="9">
-
-<img src="https://cdn.simpleicons.org/github" width="65">
-
-<h2>⚙️ ENGINEERING BUILD FOUNDRY</h2>
-
-<b>IDEA → DESIGN → CODE → TEST → BUILD → DEPLOY</b>
-
-<br><br>
-
-<code>BUILDING SYSTEMS FROM FIRST PRINCIPLES</code>
-
-</td>
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🏗️ WHAT I BUILD</b>
-<br>
-<i>Turning concepts, algorithms and technical ideas into working systems.</i>
-<br>
-╚══════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
 
 <img src="https://cdn.simpleicons.org/python" width="60">
+<br>
+<b>SOFTWARE ENGINEERING</b>
+<br><br>
+Python · APIs · Databases · System Design · Testing · CI/CD
 
-<h3>🐍 PYTHON SYSTEMS</h3>
+</p>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/ethereum" width="60">
+<br>
+<b>DECENTRALIZED SYSTEMS</b>
+<br><br>
+Cryptography · Ledgers · Consensus · Blockchain · Smart Contracts
+
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/googlescholar" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="45">
+
+</p>
+
+<p align="center">
+<b>FOUNDATION → MECHANISM → IMPLEMENTATION → EXPERIMENT → SYSTEM</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="45">
+
+    
+
+<img src="https://cdn.simpleicons.org/qiskit" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/letsencrypt" width="45">
+
+    
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="45">
+
+    
+
+<img src="https://cdn.simpleicons.org/ethereum" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/linux" width="45">
+
+</p>
+
+<p align="center">
+<b>AI × SECURITY · QUANTUM × CRYPTO · AI × CLOUD · BLOCKCHAIN × SYSTEMS</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="42">
+
+</p>
+
+<p align="center">
+<b>IMPLEMENT → EXPERIMENT → DATA → DEPLOY → SECURE → DOCUMENT</b>
+</p>
+
+<p align="center">
+<b>GO DEEPER THAN THE TOOL</b>
+<br><br>
+WHY · HOW · MECHANISM · LIMITATIONS · IMPLEMENTATION
+</p>
+
+<p align="center">
+<i>Understand the principles. Reproduce the mechanism. Test the limits. Build the system.</i>
+</p>
+
+# Technology Connections
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="75">
+
+<br><br>
+
+<b>TECHNOLOGY NEXUS</b>
+
+<br>
+
+MATHEMATICS · COMPUTATION · DATA · INTELLIGENCE · SECURITY · SYSTEMS
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/python" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/numpy" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="40">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="40">
+
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="55">
+<br>
+<b>PYTHON</b>
+<br>
+Programming · Algorithms · Automation · Experiments
+
+   ↔   
+
+<img src="https://cdn.simpleicons.org/numpy" width="55">
+<br>
+<b>DATA</b>
+<br>
+Statistics · Numerical Computing · Analytics · Modeling
+
+   ↔   
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
+<br>
+<b>AI</b>
+<br>
+ML · Deep Learning · LLMs · Agents
+
+   ↔   
+
+<img src="https://cdn.simpleicons.org/postgresql" width="55">
+<br>
+<b>DATABASES</b>
+<br>
+SQL · Storage · Retrieval · Data Systems
+
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/letsencrypt" width="50">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/ethereum" width="50">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="50">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/kubernetes" width="50">
+
+</p>
+
+<p align="center">
+<b>CRYPTOGRAPHY → BLOCKCHAIN → CLOUD → DISTRIBUTED SYSTEMS</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/postgresql" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="45">
+
+</p>
+
+<p align="center">
+<b>DATA → KNOWLEDGE → MODELS → SYSTEMS</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/linux" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/kubernetes" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="42">
+
+</p>
+
+<p align="center">
+<b>NETWORKS → CLOUD → CONTAINERS → SCALABLE INTELLIGENCE</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/qiskit" width="50">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/letsencrypt" width="50">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="50">
+
+</p>
+
+<p align="center">
+<b>QUANTUM → CRYPTOGRAPHY → POST-QUANTUM SECURITY</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="45">
+
+</p>
+
+<p align="center">
+<b>INTELLIGENCE → DATA → INFRASTRUCTURE → APPLICATION</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/qiskit" width="50">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/ethereum" width="50">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="50">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="50">
+
+</p>
+
+<p align="center">
+<b>QUANTUM · BLOCKCHAIN · AI · DISTRIBUTED COMPUTING</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="42">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="42">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="42">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="42">
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/letsencrypt" width="42">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="42">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/linux" width="42">
+&nbsp;↔&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="42">
+
+</p>
+
+<p align="center">
+<b>CONNECT THEORIES → CONNECT TECHNOLOGIES → CONNECT SYSTEMS</b>
+</p>
+
+<p align="center">
+<i>The interesting problems live at the intersections.</i>
+</p>
+
+# Ideas I'm Exploring
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="75">
+
+<br><br>
+
+<b>INNOVATION RADAR</b>
+
+<br>
+
+IDEAS · HYPOTHESES · EXPERIMENTS · SYSTEMS · POSSIBILITIES
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="42">
+&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="42">
+&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="42">
+&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="42">
+
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="65">
+<br>
+<b>AI & INTELLIGENCE</b>
+<br><br>
+AI Agents · Enterprise AI · RAG · Automation · Knowledge Systems
+
+</p>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/kalilinux" width="65">
+<br>
+<b>SECURITY & TRUST</b>
+<br><br>
+Threat Detection · AI Security · Cryptography · Security Intelligence
+
+</p>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/docker" width="65">
+<br>
+<b>CLOUD & INFRASTRUCTURE</b>
+<br><br>
+AI Infrastructure · Scalable Systems · Containers · Distributed Systems
+
+</p>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/qiskit" width="65">
+<br>
+<b>EMERGING COMPUTING</b>
+<br><br>
+Quantum Computing · PQC · Optimization · Blockchain · New Architectures
+
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googlescholar" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="45">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="45">
+
+</p>
+
+<p align="center">
+<b>IDEA → RESEARCH → PROTOTYPE → EXPERIMENT → VALIDATE → BUILD → DEPLOY</b>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="45">
+
+    
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="45">
+
+    
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="45">
+
+</p>
+
+<p align="center">
+<b>AI × SECURITY</b>
+<br>
+Intelligent Threat Detection
+</p>
+
+<p align="center">
+<b>AI × CLOUD</b>
+<br>
+Scalable AI Infrastructure
+</p>
+
+<p align="center">
+<b>AI × DATA</b>
+<br>
+Knowledge Intelligence Systems
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/qiskit" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/letsencrypt" width="45">
+
+    
+
+<img src="https://cdn.simpleicons.org/ethereum" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/letsencrypt" width="45">
+
+    
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;×&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="45">
+
+</p>
+
+<p align="center">
+<b>QUANTUM × CRYPTOGRAPHY</b>
+<br>
+Post-Quantum Security
+</p>
+
+<p align="center">
+<b>BLOCKCHAIN × CRYPTOGRAPHY</b>
+<br>
+Decentralized Trust Systems
+</p>
+
+<p align="center">
+<b>AI × QUANTUM</b>
+<br>
+Next-Generation Optimization
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googlescholar" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/googleanalytics" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="42">
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="42">
+
+</p>
+
+<p align="center">
+<b>OBSERVE → IMAGINE → INVESTIGATE → EXPERIMENT → VALIDATE → BUILD</b>
+</p>
+
+<p align="center">
+<i>Ideas are starting points. Experiments reveal what is possible.</i>
+</p>
+
+# Things I've Built From Scratch
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github/ffffff" width="72">
+
+<h1 align="center">ENGINEERING BUILD FOUNDRY</h1>
+
+<p align="center">
+<b>BUILDING SYSTEMS FROM FIRST PRINCIPLES</b>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/IDEA-DESIGN-8A2BE2?style=for-the-badge">
+<img src="https://img.shields.io/badge/CODE-TEST-7A5CFA?style=for-the-badge">
+<img src="https://img.shields.io/badge/BUILD-DEPLOY-4B0082?style=for-the-badge">
+</p>
+
+</p>
+
+<br>
+
+<p align="center">
+<img src="https://cdn.simpleicons.org/python" width="55">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="55">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="55">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/linux" width="55">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="55">
+</p>
+
+<h2 align="center">WHAT I BUILD</h2>
+
+<p align="center">
+<b>CODE • DATA • SECURITY • INTELLIGENCE • SYSTEMS</b>
+</p>
+
+<br>
+
+<table align="center">
+<tr>
+
+<td align="center" width="25%">
+
+<img src="https://cdn.simpleicons.org/python" width="70">
+
+<h3>PYTHON SYSTEMS</h3>
 
 <b>CODE • AUTOMATION • COMPUTATION</b>
 
 <br><br>
 
-⚙️ Programs<br>
-🧩 Algorithms<br>
-🔄 Automation<br>
-📊 Data Processing<br>
-🧪 Experiments<br>
-🛠️ Utilities
+Python<br>
+Algorithms<br>
+Automation<br>
+Data Processing<br>
+Experiments<br>
+Utilities
 
 </td>
 
 <td align="center" width="25%">
 
-<img src="https://cdn.simpleicons.org/letsencrypt" width="60">
+<img src="https://cdn.simpleicons.org/letsencrypt" width="70">
 
-<h3>🔐 CRYPTOGRAPHIC BUILDS</h3>
+<h3>CRYPTOGRAPHIC BUILDS</h3>
 
 <b>MATHEMATICS • ALGORITHMS • TRUST</b>
 
 <br><br>
 
-#️⃣ Hashing<br>
-🔒 Encryption<br>
-✍️ Digital Signatures<br>
-🔑 Key Exchange<br>
-🧮 Cryptographic Algorithms<br>
-🛡️ Secure Experiments
+Hashing<br>
+Encryption<br>
+Digital Signatures<br>
+Key Exchange<br>
+Cryptographic Algorithms<br>
+Secure Experiments
 
 </td>
 
 <td align="center" width="25%">
 
-<img src="https://cdn.simpleicons.org/kalilinux" width="60">
+<img src="https://cdn.simpleicons.org/kalilinux" width="70">
 
-<h3>🛡️ SECURITY SYSTEMS</h3>
+<h3>SECURITY SYSTEMS</h3>
 
 <b>ANALYSIS • DEFENSE • ENGINEERING</b>
 
 <br><br>
 
-📋 Log Analysis<br>
-🔎 Security Analysis<br>
-🎯 Threat Detection<br>
-🧰 Security Tools<br>
-🤖 AI Security Experiments<br>
-🏗️ Secure Architecture
+Log Analysis<br>
+Security Analysis<br>
+Threat Detection<br>
+Security Tools<br>
+AI Security<br>
+Secure Architecture
 
 </td>
 
 <td align="center" width="25%">
 
-<img src="https://cdn.simpleicons.org/tensorflow" width="60">
+<img src="https://cdn.simpleicons.org/tensorflow" width="70">
 
-<h3>🤖 AI / ML BUILDS</h3>
+<h3>AI / ML BUILDS</h3>
 
 <b>MODELS • DATA • INTELLIGENCE</b>
 
 <br><br>
 
-🧠 ML Experiments<br>
-📊 Data Pipelines<br>
-🔎 RAG Systems<br>
-🤝 AI Agents<br>
-🧪 Model Experiments<br>
-⚙️ AI Automation
+Machine Learning<br>
+Data Pipelines<br>
+RAG Systems<br>
+AI Agents<br>
+Model Experiments<br>
+AI Automation
 
 </td>
 
@@ -5859,1007 +3910,63 @@ Application
 <br>
 
 <p align="center">
-
-⬇️
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center">
 
 <img src="https://cdn.simpleicons.org/postgresql" width="55">
-
-<br>
-
-<b>🗄️ DATA & DATABASES</b>
-
-<br><br>
-
-🗃️ Database Systems<br>
-🔍 SQL Applications<br>
-📊 Analytics<br>
-🧩 Data Modeling<br>
-🔗 Data Integration
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/sqlite" width="55">
+&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://cdn.simpleicons.org/linux" width="55">
-
-<br>
-
-<b>⚙️ SYSTEMS</b>
-
-<br><br>
-
-🐧 Linux<br>
-🌐 Networking<br>
-🏗️ System Design<br>
-🔄 Distributed Systems<br>
-☁️ Infrastructure
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
+&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://cdn.simpleicons.org/docker" width="55">
-
-<br>
-
-<b>☁️ DEPLOYMENT</b>
-
-<br><br>
-
-🐳 Containers<br>
-⚙️ DevOps<br>
-☁️ Cloud<br>
-🔄 CI/CD<br>
-📈 Scalability
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
+&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://cdn.simpleicons.org/github" width="55">
 
-<br>
-
-<b>🚀 PROJECT DELIVERY</b>
-
-<br><br>
-
-📦 Repositories<br>
-📝 Documentation<br>
-🔀 Version Control<br>
-🧪 Testing<br>
-🌐 Deployment
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔧 FROM ZERO → WORKING SYSTEM</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-💡 <b>IDEA</b>
-&nbsp; → &nbsp;
-🧠 <b>DESIGN</b>
-&nbsp; → &nbsp;
-💻 <b>IMPLEMENT</b>
-&nbsp; → &nbsp;
-🧪 <b>TEST</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🐞 <b>BREAK</b>
-&nbsp; → &nbsp;
-🔍 <b>DEBUG</b>
-&nbsp; → &nbsp;
-🛠️ <b>IMPROVE</b>
-&nbsp; → &nbsp;
-📊 <b>VALIDATE</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🏗️ <b>BUILD</b>
-&nbsp; → &nbsp;
-📚 <b>DOCUMENT</b>
-&nbsp; → &nbsp;
-☁️ <b>DEPLOY</b>
-&nbsp; → &nbsp;
-🚀 <b>APPLY</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════╝
-
 </p>
 
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🧩 BUILDING ACROSS LAYERS</b>
-<br>
-╚══════════════════════════════════════════════════════════════════════╝
-
-</p>
+<h2 align="center">DATA • SYSTEMS • DEPLOYMENT • DELIVERY</h2>
 
 <table align="center">
 <tr>
-
-<td align="center">
-🧮<br>
-<b>FOUNDATION</b><br>
-Mathematics<br>
-Algorithms<br>
-Logic
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-💻<br>
-<b>IMPLEMENTATION</b><br>
-Python<br>
-APIs<br>
-Algorithms
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🗄️<br>
-<b>DATA</b><br>
-SQL<br>
-Databases<br>
-Analytics
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🤖<br>
-<b>INTELLIGENCE</b><br>
-ML<br>
-LLMs<br>
-Agents
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-🛡️<br>
-<b>TRUST</b><br>
-Security<br>
-Cryptography<br>
-Privacy
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-☁️<br>
-<b>SCALE</b><br>
-Cloud<br>
-Containers<br>
-Distributed Systems
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-<b>🧮 UNDERSTAND → 💻 IMPLEMENT → 🧪 EXPERIMENT → 🐞 BREAK → 🛠️ FIX → 🏗️ BUILD</b>
-
-<br><br>
-
-<i>I learn by building, test my understanding through implementation, and turn experiments into working systems.</i>
-
-</p>
-
-# 🚧 Currently Building
-
-<p align="center">
-
-<table>
-<tr>
-<td align="center" colspan="11">
-
-<img src="https://cdn.simpleicons.org/github" width="70">
-
-<h1>🚧 LIVE ENGINEERING WORKSPACE</h1>
-
-<b>LEARNING • EXPERIMENTING • ENGINEERING • DOCUMENTING • BUILDING</b>
-
-<br><br>
-
-<code>ACTIVE WORK • ACTIVE EXPERIMENTS • ACTIVE LEARNING</code>
-
-</td>
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>⚡ CURRENT DEVELOPMENT BOARD</b>
-<br>
-<i>Multiple technical tracks progressing in parallel and connecting into larger systems.</i>
-<br>
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/python" width="65">
-
-<h2>🐍 PYTHON</h2>
-
-<b>PROGRAMMING FOUNDATION</b>
-
-<br><br>
-
-📚 Python Fundamentals<br>
-🧩 Data Structures<br>
-⚙️ Algorithms<br>
-🔄 Automation<br>
-📊 Data Processing<br>
-🔌 APIs<br>
-🧪 Experiments<br>
-🏗️ Application Building
-
-<br><br>
-
-<b>STATUS</b><br>
-🟢 ACTIVE
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/letsencrypt" width="65">
-
-<h2>🔐 CRYPTO</h2>
-
-<b>TRUST & MATHEMATICAL SECURITY</b>
-
-<br><br>
-
-🧮 Number Theory<br>
-#️⃣ Hash Functions<br>
-🔒 Encryption<br>
-✍️ Digital Signatures<br>
-🔑 Key Exchange<br>
-🤝 Cryptographic Protocols<br>
-⛓️ Blockchain Cryptography<br>
-⚛️ Post-Quantum Cryptography
-
-<br><br>
-
-<b>STATUS</b><br>
-🟢 ACTIVE
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="65">
-
-<h2>🛡️ SECURITY</h2>
-
-<b>DEFENSIVE ENGINEERING</b>
-
-<br><br>
-
-🎯 Threat Modeling<br>
-📋 Log Analysis<br>
-🔎 Security Analysis<br>
-🔐 Secure Architecture<br>
-🤖 AI Security<br>
-🧪 Security Experiments<br>
-🌐 Network Security<br>
-⚙️ Security Automation
-
-<br><br>
-
-<b>STATUS</b><br>
-🟢 ACTIVE
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="65">
-
-<h2>🤖 AI</h2>
-
-<b>INTELLIGENT SYSTEMS</b>
-
-<br><br>
-
-📊 Machine Learning<br>
-🧠 Deep Learning<br>
-🔗 Transformers<br>
-💬 LLMs<br>
-🔎 RAG<br>
-🗄️ Vector Databases<br>
-🤝 AI Agents<br>
-⚙️ AI Automation
-
-<br><br>
-
-<b>STATUS</b><br>
-🟢 ACTIVE
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-⬇️
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center" width="33%">
-
-<img src="https://cdn.simpleicons.org/docker" width="60">
-
-<h2>☁️ CLOUD & SYSTEMS</h2>
-
-<b>BUILDING FOR SCALE</b>
-
-<br><br>
-
-🐧 Linux<br>
-🐳 Docker<br>
-🌐 Networking<br>
-🏗️ System Architecture<br>
-🔄 Distributed Systems<br>
-☁️ Cloud Computing<br>
-⚙️ DevOps<br>
-📈 Scalability
-
-<br><br>
-
-<b>STATUS</b><br>
-🟡 EXPLORING
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="60">
-
-<h2>⚛️ QUANTUM</h2>
-
-<b>EMERGING COMPUTATION</b>
-
-<br><br>
-
-⚛️ Qubits<br>
-🔗 Quantum Gates<br>
-🧩 Quantum Circuits<br>
-📐 Quantum Mathematics<br>
-🧮 Quantum Algorithms<br>
-🔐 Quantum Cryptography<br>
-🛡️ Post-Quantum Security<br>
-🚀 Emerging Applications
-
-<br><br>
-
-<b>STATUS</b><br>
-🟡 EXPLORING
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://cdn.simpleicons.org/postgresql" width="60">
-
-<h2>🗄️ DATA SYSTEMS</h2>
-
-<b>KNOWLEDGE & INFORMATION</b>
-
-<br><br>
-
-🗃️ PostgreSQL<br>
-🔍 SQL<br>
-📊 Data Analysis<br>
-🧩 Data Modeling<br>
-📚 Knowledge Systems<br>
-🔎 Information Retrieval<br>
-🧠 Knowledge Bases<br>
-🔗 Data Integration
-
-<br><br>
-
-<b>STATUS</b><br>
-🟢 ACTIVE
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🧭 ACTIVE LEARNING ARCHITECTURE</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-🧮 <b>MATHEMATICS</b>
-&nbsp; → &nbsp;
-🐍 <b>PROGRAMMING</b>
-&nbsp; → &nbsp;
-⚙️ <b>COMPUTING</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🗄️ <b>DATA</b>
-&nbsp; → &nbsp;
-🤖 <b>AI</b>
-&nbsp; → &nbsp;
-🧠 <b>INTELLIGENCE</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🔐 <b>CRYPTOGRAPHY</b>
-&nbsp; → &nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; → &nbsp;
-☁️ <b>SECURE INFRASTRUCTURE</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-⛓️ <b>BLOCKCHAIN</b>
-&nbsp; → &nbsp;
-🌐 <b>DISTRIBUTED SYSTEMS</b>
-&nbsp; → &nbsp;
-⚛️ <b>QUANTUM</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 WHAT IS HAPPENING INSIDE THE WORKSPACE?</b>
-<br>
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-❓<br>
-<b>RESEARCH</b>
-
-<br><br>
-
-Reading concepts<br>
-Studying architectures<br>
-Understanding foundations<br>
-Comparing approaches
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🧩<br>
-<b>DECOMPOSE</b>
-
-<br><br>
-
-Break systems apart<br>
-Identify components<br>
-Trace dependencies<br>
-Understand mechanisms
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-💻<br>
-<b>IMPLEMENT</b>
-
-<br><br>
-
-Write code<br>
-Build algorithms<br>
-Create prototypes<br>
-Connect components
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🧪<br>
-<b>EXPERIMENT</b>
-
-<br><br>
-
-Test assumptions<br>
-Run experiments<br>
-Measure behavior<br>
-Explore edge cases
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-📊<br>
-<b>ANALYZE</b>
-
-<br><br>
-
-Evaluate results<br>
-Find limitations<br>
-Debug failures<br>
-Improve designs
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-⬇️
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-📚<br>
-<b>DOCUMENT</b>
-
-<br><br>
-
-Notes<br>
-Experiments<br>
-Architecture<br>
-Lessons learned
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🏗️<br>
-<b>BUILD</b>
-
-<br><br>
-
-Projects<br>
-Applications<br>
-Tools<br>
-Working systems
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-☁️<br>
-<b>DEPLOY</b>
-
-<br><br>
-
-Containers<br>
-Cloud<br>
-APIs<br>
-Infrastructure
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🚀<br>
-<b>APPLY</b>
-
-<br><br>
-
-Real problems<br>
-Practical systems<br>
-Cross-domain solutions<br>
-New experiments
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔗 HOW THE CURRENT WORK CONNECTS</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-🐍 <b>PYTHON</b>
-&nbsp; + &nbsp;
-🗄️ <b>DATA</b>
-&nbsp; → &nbsp;
-🤖 <b>AI / ML</b>
-
-<br><br>
-
-🤖 <b>AI</b>
-&nbsp; + &nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; → &nbsp;
-🔐 <b>AI SECURITY</b>
-
-<br><br>
-
-🔐 <b>CRYPTOGRAPHY</b>
-&nbsp; + &nbsp;
-⛓️ <b>BLOCKCHAIN</b>
-&nbsp; → &nbsp;
-🌐 <b>DISTRIBUTED TRUST</b>
-
-<br><br>
-
-🤖 <b>AI</b>
-&nbsp; + &nbsp;
-☁️ <b>CLOUD</b>
-&nbsp; → &nbsp;
-⚙️ <b>SCALABLE INTELLIGENCE</b>
-
-<br><br>
-
-⚛️ <b>QUANTUM</b>
-&nbsp; + &nbsp;
-🔐 <b>CRYPTOGRAPHY</b>
-&nbsp; → &nbsp;
-🛡️ <b>POST-QUANTUM SECURITY</b>
-
-<br><br>
-
-🗄️ <b>DATA</b>
-&nbsp; + &nbsp;
-🔎 <b>RETRIEVAL</b>
-&nbsp; + &nbsp;
-🤖 <b>LLMs</b>
-&nbsp; → &nbsp;
-🧠 <b>KNOWLEDGE SYSTEMS</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>📚 KNOWLEDGE BASE</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-📝 <b>LEARNING NOTES</b>
-&nbsp; • &nbsp;
-🧪 <b>EXPERIMENT LOGS</b>
-&nbsp; • &nbsp;
-🏗️ <b>PROJECT DOCUMENTATION</b>
-
-<br><br>
-
-📐 <b>ARCHITECTURE NOTES</b>
-&nbsp; • &nbsp;
-🔬 <b>RESEARCH QUESTIONS</b>
-&nbsp; • &nbsp;
-📊 <b>EXPERIMENT RESULTS</b>
-
-<br><br>
-
-🐞 <b>FAILURES</b>
-&nbsp; • &nbsp;
-🛠️ <b>SOLUTIONS</b>
-&nbsp; • &nbsp;
-💡 <b>NEW IDEAS</b>
-
-<br><br>
-
-<b>EVERY EXPERIMENT BECOMES KNOWLEDGE.</b>
-
-<br>
-
-<b>EVERY PIECE OF KNOWLEDGE CAN BECOME A SYSTEM.</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>🚧 CURRENTLY BUILDING</b>
-
-<br><br>
-
-🧠 <b>LEARN</b>
-&nbsp; → &nbsp;
-🔍 <b>UNDERSTAND</b>
-&nbsp; → &nbsp;
-💻 <b>IMPLEMENT</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-📊 <b>ANALYZE</b>
-&nbsp; → &nbsp;
-📚 <b>DOCUMENT</b>
-&nbsp; → &nbsp;
-🏗️ <b>BUILD</b>
-&nbsp; → &nbsp;
-🚀 <b>APPLY</b>
-
-<br><br>
-
-<i>Building the foundation today for more intelligent, secure, scalable and emerging systems tomorrow.</i>
-
-</p>
-
-# 🚀 Top Projects
-
-<p align="center">
-
-<table>
-<tr>
-<td align="center" colspan="9">
-
-<img src="https://cdn.simpleicons.org/github" width="70">
-
-<h1>🚀 PROJECT PORTFOLIO COMMAND CENTER</h1>
-
-<b>BUILD • ENGINEER • EXPERIMENT • INTEGRATE • DELIVER</b>
-
-<br><br>
-
-<code>FROM CODE → TO SYSTEMS → TO REAL-WORLD APPLICATIONS</code>
-
-</td>
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🏗️ PROJECT ECOSYSTEM</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-                         🚀 <b>PROJECT PORTFOLIO</b>
-<br>
-                                  │
-<br>
-             ┌────────────────────┼────────────────────┐
-             │                    │                    │
-             ▼                    ▼                    ▼
-<br>
-       🧠 <b>COMPUTATION</b>      🤖 <b>INTELLIGENCE</b>      🛡️ <b>TRUST</b>
-<br>
-             │                    │                    │
-             ▼                    ▼                    ▼
-<br>
-       🐍 Python              🧠 AI / ML             🔐 Cryptography
-       🧩 Algorithms          💬 LLMs                🛡️ Cybersecurity
-       🗄️ Databases          🔎 RAG                 ⛓️ Blockchain
-       ⚙️ Software            🤝 AI Agents           🔑 Secure Systems
-<br>
-             │                    │                    │
-             └────────────────────┼────────────────────┘
-                                  │
-                                  ▼
-<br>
-                         ⚙️ <b>SYSTEMS</b>
-<br>
-                                  │
-                  ┌───────────────┼───────────────┐
-                  │               │               │
-                  ▼               ▼               ▼
-<br>
-              ☁️ Cloud        🌐 Distributed     🐳 DevOps
-              Linux           Systems             Containers
-              APIs            Architecture       Deployment
-<br>
-                  └───────────────┼───────────────┘
-                                  │
-                                  ▼
-<br>
-                       ⚛️ <b>EMERGING TECHNOLOGY</b>
-<br>
-                                  │
-                     ┌────────────┼────────────┐
-                     ▼            ▼            ▼
-<br>
-                 ⚛️ Quantum    ⛓️ Web3       📡 IoT
-<br>
-                                  │
-                                  ▼
-<br>
-                         🌍 <b>REAL-WORLD SYSTEMS</b>
-
-<br><br>
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<p align="center">
-
-## 🧠 Computation & Software
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/python" width="65">
-
-<h3>🐍 Python Projects</h3>
-
-<b>BUILDING THE CORE</b>
-
-<br><br>
-
-💻 Applications<br>
-🧩 Algorithms<br>
-⚙️ Automation<br>
-📊 Data Processing<br>
-🔌 APIs<br>
-🧪 Experiments
-
-</td>
 
 <td align="center" width="25%">
 
 <img src="https://cdn.simpleicons.org/postgresql" width="65">
 
-<h3>🗄️ Data Projects</h3>
+<h3>DATA</h3>
 
-<b>TURNING DATA INTO SYSTEMS</b>
-
-<br><br>
-
-🗃️ PostgreSQL<br>
-🔍 SQL<br>
-📊 Analytics<br>
-🧩 Data Modeling<br>
-🔄 Data Pipelines<br>
-🧠 Knowledge Systems
+SQL<br>
+Databases<br>
+Analytics<br>
+Data Modeling<br>
+Data Integration
 
 </td>
 
 <td align="center" width="25%">
 
-<img src="https://cdn.simpleicons.org/git" width="65">
+<img src="https://cdn.simpleicons.org/linux" width="65">
 
-<h3>⚙️ Engineering Projects</h3>
+<h3>SYSTEMS</h3>
 
-<b>SOFTWARE ENGINEERING</b>
+Linux<br>
+Networking<br>
+System Design<br>
+Distributed Systems<br>
+Infrastructure
 
-<br><br>
+</td>
 
-🏗️ Architecture<br>
-🔌 APIs<br>
-🧪 Testing<br>
-📦 Modular Design<br>
-🔄 Version Control<br>
-📚 Documentation
+<td align="center" width="25%">
+
+<img src="https://cdn.simpleicons.org/docker" width="65">
+
+<h3>DEPLOYMENT</h3>
+
+Docker<br>
+DevOps<br>
+Cloud<br>
+CI/CD<br>
+Scalability
 
 </td>
 
@@ -6867,18 +3974,13 @@ New experiments
 
 <img src="https://cdn.simpleicons.org/github" width="65">
 
-<h3>🌐 Open Projects</h3>
+<h3>DELIVERY</h3>
 
-<b>BUILD • SHARE • ITERATE</b>
-
-<br><br>
-
-📂 GitHub Repositories<br>
-🔀 Git Workflows<br>
-📝 Documentation<br>
-🐞 Issue Tracking<br>
-🚀 Releases<br>
-🔄 Iteration
+Repositories<br>
+Documentation<br>
+Version Control<br>
+Testing<br>
+Deployment
 
 </td>
 
@@ -6889,138 +3991,155 @@ New experiments
 
 <p align="center">
 
-## 🤖 Intelligence & Data
+<img src="https://cdn.simpleicons.org/python" width="48">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="48">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="48">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="48">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="48">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="48">
 
 </p>
 
-<table align="center">
-<tr>
-
-<td align="center" width="33%">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="65">
-
-<h3>🤖 AI / ML Projects</h3>
-
-<b>INTELLIGENT SYSTEMS</b>
-
-<br><br>
-
-📊 Machine Learning<br>
-🧠 Deep Learning<br>
-🔗 Neural Networks<br>
-🧩 Model Experiments<br>
-📈 Evaluation<br>
-⚙️ AI Applications
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://cdn.simpleicons.org/openai" width="65">
-
-<h3>💬 LLM Projects</h3>
-
-<b>GENERATIVE INTELLIGENCE</b>
-
-<br><br>
-
-🧠 LLMs<br>
-🔎 RAG<br>
-📚 Knowledge Bases<br>
-🤝 AI Agents<br>
-🔌 Tool Integration<br>
-⚙️ AI Automation
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://cdn.simpleicons.org/pandas" width="65">
-
-<h3>📊 Data Intelligence</h3>
-
-<b>DATA → KNOWLEDGE → DECISIONS</b>
-
-<br><br>
-
-📥 Data Collection<br>
-🧹 Data Processing<br>
-🔬 Analysis<br>
-📈 Modeling<br>
-🧠 Intelligence<br>
-🎯 Decision Support
-
-</td>
-
-</tr>
-</table>
+<p align="center">
+<b>UNDERSTAND • IMPLEMENT • EXPERIMENT • BUILD • DEPLOY</b>
+</p>
 
 <br>
 
+# Currently Building
+
 <p align="center">
 
-## 🛡️ Security & Trust
+<img src="https://cdn.simpleicons.org/github/ffffff" width="75">
 
+<h1 align="center">LIVE ENGINEERING WORKSPACE</h1>
+
+<p align="center">
+<b>LEARNING • EXPERIMENTING • ENGINEERING • DOCUMENTING</b>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/ACTIVE-PYTHON-3776AB?style=for-the-badge">
+<img src="https://img.shields.io/badge/ACTIVE-AI%2FML-8A2BE2?style=for-the-badge">
+<img src="https://img.shields.io/badge/ACTIVE-SECURITY-111111?style=for-the-badge">
+<img src="https://img.shields.io/badge/ACTIVE-DATA-336791?style=for-the-badge">
+</p>
+
+</p>
+
+<br>
+
+<h2 align="center">CURRENT DEVELOPMENT BOARD</h2>
+
+<p align="center">
+<b>PARALLEL TECHNICAL TRACKS</b>
 </p>
 
 <table align="center">
 <tr>
 
-<td align="center" width="33%">
+<td align="center" width="25%">
 
-<img src="https://cdn.simpleicons.org/kalilinux" width="65">
+<img src="https://cdn.simpleicons.org/python" width="72">
 
-<h3>🛡️ Cybersecurity Projects</h3>
+<h2>PYTHON</h2>
+
+<b>PROGRAMMING FOUNDATION</b>
+
+<br><br>
+
+Python Fundamentals<br>
+Data Structures<br>
+Algorithms<br>
+Automation<br>
+Data Processing<br>
+APIs<br>
+Experiments<br>
+Applications
+
+<br><br>
+
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-00C853?style=for-the-badge">
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://cdn.simpleicons.org/letsencrypt" width="72">
+
+<h2>CRYPTO</h2>
+
+<b>MATHEMATICAL SECURITY</b>
+
+<br><br>
+
+Number Theory<br>
+Hash Functions<br>
+Encryption<br>
+Digital Signatures<br>
+Key Exchange<br>
+Cryptographic Protocols<br>
+Blockchain Cryptography<br>
+Post-Quantum Cryptography
+
+<br><br>
+
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-00C853?style=for-the-badge">
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://cdn.simpleicons.org/kalilinux" width="72">
+
+<h2>SECURITY</h2>
 
 <b>DEFENSIVE ENGINEERING</b>
 
 <br><br>
 
-🔍 Security Analysis<br>
-📋 Log Analysis<br>
-🎯 Threat Modeling<br>
-🌐 Network Security<br>
-🧪 Security Experiments<br>
-⚙️ Security Automation
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://cdn.simpleicons.org/letsencrypt" width="65">
-
-<h3>🔐 Cryptography Projects</h3>
-
-<b>MATHEMATICS → SECURITY</b>
+Threat Modeling<br>
+Log Analysis<br>
+Security Analysis<br>
+Secure Architecture<br>
+AI Security<br>
+Network Security<br>
+Security Experiments<br>
+Security Automation
 
 <br><br>
 
-#️⃣ Hashing<br>
-🔒 Encryption<br>
-✍️ Digital Signatures<br>
-🔑 Key Exchange<br>
-🧮 Cryptographic Algorithms<br>
-⚛️ Post-Quantum Cryptography
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-00C853?style=for-the-badge">
 
 </td>
 
-<td align="center" width="33%">
+<td align="center" width="25%">
 
-<img src="https://cdn.simpleicons.org/ethereum" width="65">
+<img src="https://cdn.simpleicons.org/tensorflow" width="72">
 
-<h3>⛓️ Blockchain Projects</h3>
+<h2>AI</h2>
 
-<b>DECENTRALIZED SYSTEMS</b>
+<b>INTELLIGENT SYSTEMS</b>
 
 <br><br>
 
-🔐 Cryptography<br>
-📚 Distributed Ledgers<br>
-🤝 Consensus<br>
-📝 Smart Contracts<br>
-🌐 Decentralization<br>
-⚙️ Web3 Systems
+Machine Learning<br>
+Deep Learning<br>
+Transformers<br>
+LLMs<br>
+RAG<br>
+Vector Databases<br>
+AI Agents<br>
+AI Automation
+
+<br><br>
+
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-00C853?style=for-the-badge">
 
 </td>
 
@@ -7029,69 +4148,81 @@ New experiments
 
 <br>
 
-<p align="center">
-
-## ☁️ Systems & Infrastructure
-
-</p>
-
 <table align="center">
 <tr>
 
 <td align="center" width="33%">
 
-<img src="https://cdn.simpleicons.org/linux" width="65">
+<img src="https://cdn.simpleicons.org/docker" width="70">
 
-<h3>🐧 Systems Projects</h3>
-
-<b>UNDERSTANDING THE MACHINE</b>
-
-<br><br>
-
-🐧 Linux<br>
-🧠 Operating Systems<br>
-🌐 Networking<br>
-⚙️ System Architecture<br>
-🔄 Processes<br>
-💾 System Resources
-
-</td>
-
-<td align="center" width="33%">
-
-<img src="https://cdn.simpleicons.org/docker" width="65">
-
-<h3>☁️ Cloud & DevOps</h3>
+<h2>CLOUD & SYSTEMS</h2>
 
 <b>BUILDING FOR SCALE</b>
 
 <br><br>
 
-🐳 Docker<br>
-☁️ Cloud Infrastructure<br>
-🔄 CI/CD<br>
-⚙️ DevOps<br>
-📦 Containers<br>
-📈 Scalability
+Linux<br>
+Docker<br>
+Networking<br>
+System Architecture<br>
+Distributed Systems<br>
+Cloud Computing<br>
+DevOps<br>
+Scalability
+
+<br><br>
+
+<img src="https://img.shields.io/badge/STATUS-EXPLORING-FFB300?style=for-the-badge">
 
 </td>
 
 <td align="center" width="33%">
 
-<img src="https://cdn.simpleicons.org/kubernetes" width="65">
+<img src="https://cdn.simpleicons.org/qiskit" width="70">
 
-<h3>🌐 Distributed Systems</h3>
+<h2>QUANTUM</h2>
 
-<b>ENGINEERING AT SCALE</b>
+<b>EMERGING COMPUTATION</b>
 
 <br><br>
 
-🔗 Distributed Architecture<br>
-📡 Services<br>
-🌐 APIs<br>
-⚖️ Load Distribution<br>
-🔄 Fault Tolerance<br>
-📈 Scalability
+Qubits<br>
+Quantum Gates<br>
+Quantum Circuits<br>
+Quantum Mathematics<br>
+Quantum Algorithms<br>
+Quantum Cryptography<br>
+Post-Quantum Security<br>
+Emerging Applications
+
+<br><br>
+
+<img src="https://img.shields.io/badge/STATUS-EXPLORING-FFB300?style=for-the-badge">
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/postgresql" width="70">
+
+<h2>DATA SYSTEMS</h2>
+
+<b>KNOWLEDGE & INFORMATION</b>
+
+<br><br>
+
+PostgreSQL<br>
+SQL<br>
+Data Analysis<br>
+Data Modeling<br>
+Knowledge Systems<br>
+Information Retrieval<br>
+Knowledge Bases<br>
+Data Integration
+
+<br><br>
+
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-00C853?style=for-the-badge">
 
 </td>
 
@@ -7102,67 +4233,592 @@ New experiments
 
 <p align="center">
 
-## ⚛️ Emerging Technology
+<img src="https://cdn.simpleicons.org/python" width="45">
+&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="45">
+&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="45">
+&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="45">
+&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="45">
+&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="45">
+&nbsp;
+<img src="https://cdn.simpleicons.org/kubernetes" width="45">
 
 </p>
+
+<h2 align="center">ACTIVE LEARNING ARCHITECTURE</h2>
+
+<p align="center">
+<b>MATHEMATICS</b>
+</p>
+
+<p align="center">
+<img src="https://cdn.simpleicons.org/python" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/letsencrypt" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="55">
+</p>
+
+<p align="center">
+<b>PROGRAMMING • DATA • AI • CRYPTOGRAPHY • SECURITY • CLOUD • QUANTUM</b>
+</p>
+
+<br>
+
+<h2 align="center">WORKSPACE</h2>
+
+<table align="center">
+<tr>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="55">
+
+<h3>RESEARCH</h3>
+
+Concepts<br>
+Architectures<br>
+Foundations
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/python" width="55">
+
+<h3>IMPLEMENT</h3>
+
+Code<br>
+Algorithms<br>
+Prototypes
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="55">
+
+<h3>EXPERIMENT</h3>
+
+Testing<br>
+Measurement<br>
+Validation
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/github" width="55">
+
+<h3>DOCUMENT</h3>
+
+Notes<br>
+Results<br>
+Architecture
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/docker" width="55">
+
+<h3>DEPLOY</h3>
+
+Containers<br>
+Cloud<br>
+Infrastructure
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/ethereum" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="52">
+
+</p>
+
+<h2 align="center">HOW THE CURRENT WORK CONNECTS</h2>
 
 <table align="center">
 <tr>
 
 <td align="center" width="33%">
 
-<img src="https://cdn.simpleicons.org/qiskit" width="65">
+<img src="https://cdn.simpleicons.org/python" width="55">
++
+<img src="https://cdn.simpleicons.org/postgresql" width="55">
 
-<h3>⚛️ Quantum Projects</h3>
-
-<b>EXPLORING NEW COMPUTATION</b>
-
-<br><br>
-
-⚛️ Qubits<br>
-🔗 Quantum Gates<br>
-🧩 Quantum Circuits<br>
-🧮 Quantum Algorithms<br>
-🔐 Quantum Cryptography<br>
-🛡️ Post-Quantum Security
+<h3>AI / ML</h3>
 
 </td>
 
 <td align="center" width="33%">
 
-<img src="https://cdn.simpleicons.org/arduino" width="65">
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
++
+<img src="https://cdn.simpleicons.org/kalilinux" width="55">
 
-<h3>📡 IoT Projects</h3>
-
-<b>COMPUTATION IN THE PHYSICAL WORLD</b>
-
-<br><br>
-
-📡 Sensors<br>
-⚙️ Embedded Systems<br>
-🌐 Connectivity<br>
-📊 Data Collection<br>
-☁️ Edge → Cloud<br>
-🤖 Intelligent Devices
+<h3>AI SECURITY</h3>
 
 </td>
 
 <td align="center" width="33%">
 
-<img src="https://cdn.simpleicons.org/ethereum" width="65">
+<img src="https://cdn.simpleicons.org/letsencrypt" width="55">
++
+<img src="https://cdn.simpleicons.org/ethereum" width="55">
 
-<h3>🌍 Emerging Systems</h3>
+<h3>DISTRIBUTED TRUST</h3>
 
-<b>EXPERIMENTING WITH WHAT'S NEXT</b>
+</td>
 
-<br><br>
+</tr>
 
-⛓️ Blockchain<br>
-⚛️ Quantum Computing<br>
-🤖 Autonomous Systems<br>
-🧠 AI Agents<br>
-🌐 Distributed Intelligence<br>
-🔐 Future Security
+<tr>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
++
+<img src="https://cdn.simpleicons.org/docker" width="55">
+
+<h3>SCALABLE AI</h3>
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/qiskit" width="55">
++
+<img src="https://cdn.simpleicons.org/letsencrypt" width="55">
+
+<h3>POST-QUANTUM SECURITY</h3>
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/postgresql" width="55">
++
+<img src="https://cdn.simpleicons.org/openai" width="55">
+
+<h3>KNOWLEDGE SYSTEMS</h3>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<h2 align="center">KNOWLEDGE BASE</h2>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="52">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="52">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="52">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="52">
+
+</p>
+
+<p align="center">
+<b>LEARNING NOTES • EXPERIMENT LOGS • PROJECT DOCUMENTATION</b>
+</p>
+
+<p align="center">
+<b>ARCHITECTURE • RESEARCH • RESULTS • SOLUTIONS • IDEAS</b>
+</p>
+
+<p align="center">
+<i>Every experiment becomes knowledge. Every piece of knowledge can become a system.</i>
+</p>
+
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/brain" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="48">
+
+</p>
+
+<p align="center">
+<b>LEARN • UNDERSTAND • IMPLEMENT • EXPERIMENT • ANALYZE • DOCUMENT • BUILD • APPLY</b>
+</p>
+
+<br>
+
+# Top Projects
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github/ffffff" width="78">
+
+<h1 align="center">PROJECT PORTFOLIO COMMAND CENTER</h1>
+
+<p align="center">
+<b>BUILD • ENGINEER • EXPERIMENT • INTEGRATE • DELIVER</b>
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/COMPUTATION-ENGINEERING-7B2CBF?style=for-the-badge">
+<img src="https://img.shields.io/badge/INTELLIGENCE-AI%2FML-5A189A?style=for-the-badge">
+<img src="https://img.shields.io/badge/TRUST-SECURITY-240046?style=for-the-badge">
+</p>
+
+</p>
+
+<br>
+
+<h2 align="center">PROJECT ECOSYSTEM</h2>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="55">
+&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="55">
+&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
+&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="55">
+&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="55">
+&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="55">
+&nbsp;
+<img src="https://cdn.simpleicons.org/arduino" width="55">
+&nbsp;
+<img src="https://cdn.simpleicons.org/ethereum" width="55">
+&nbsp;
+<img src="https://cdn.simpleicons.org/kubernetes" width="55">
+
+</p>
+
+<p align="center">
+<b>COMPUTATION • INTELLIGENCE • TRUST • SYSTEMS • EMERGING TECHNOLOGY</b>
+</p>
+
+<br>
+
+<h2 align="center">COMPUTATION & SOFTWARE</h2>
+
+<table align="center">
+<tr>
+
+<td align="center" width="25%">
+
+<img src="https://cdn.simpleicons.org/python" width="70">
+
+<h3>PYTHON</h3>
+
+Applications<br>
+Algorithms<br>
+Automation<br>
+Data Processing<br>
+APIs<br>
+Experiments
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://cdn.simpleicons.org/postgresql" width="70">
+
+<h3>DATA</h3>
+
+PostgreSQL<br>
+SQL<br>
+Analytics<br>
+Data Modeling<br>
+Data Pipelines<br>
+Knowledge Systems
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://cdn.simpleicons.org/git" width="70">
+
+<h3>ENGINEERING</h3>
+
+Architecture<br>
+APIs<br>
+Testing<br>
+Modular Design<br>
+Version Control<br>
+Documentation
+
+</td>
+
+<td align="center" width="25%">
+
+<img src="https://cdn.simpleicons.org/github" width="70">
+
+<h3>OPEN PROJECTS</h3>
+
+Repositories<br>
+Git Workflows<br>
+Documentation<br>
+Issue Tracking<br>
+Releases<br>
+Iteration
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<h2 align="center">INTELLIGENCE & DATA</h2>
+
+<table align="center">
+<tr>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="70">
+
+<h3>AI / ML</h3>
+
+Machine Learning<br>
+Deep Learning<br>
+Neural Networks<br>
+Model Experiments<br>
+Evaluation<br>
+AI Applications
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/openai" width="70">
+
+<h3>LLM SYSTEMS</h3>
+
+LLMs<br>
+RAG<br>
+Knowledge Bases<br>
+AI Agents<br>
+Tool Integration<br>
+AI Automation
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/pandas" width="70">
+
+<h3>DATA INTELLIGENCE</h3>
+
+Data Collection<br>
+Data Processing<br>
+Analysis<br>
+Modeling<br>
+Intelligence<br>
+Decision Support
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<h2 align="center">SECURITY & TRUST</h2>
+
+<table align="center">
+<tr>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/kalilinux" width="70">
+
+<h3>CYBERSECURITY</h3>
+
+Security Analysis<br>
+Log Analysis<br>
+Threat Modeling<br>
+Network Security<br>
+Security Experiments<br>
+Security Automation
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/letsencrypt" width="70">
+
+<h3>CRYPTOGRAPHY</h3>
+
+Hashing<br>
+Encryption<br>
+Digital Signatures<br>
+Key Exchange<br>
+Cryptographic Algorithms<br>
+Post-Quantum Cryptography
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/ethereum" width="70">
+
+<h3>BLOCKCHAIN</h3>
+
+Cryptography<br>
+Distributed Ledgers<br>
+Consensus<br>
+Smart Contracts<br>
+Decentralization<br>
+Web3 Systems
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<h2 align="center">SYSTEMS & INFRASTRUCTURE</h2>
+
+<table align="center">
+<tr>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/linux" width="70">
+
+<h3>SYSTEMS</h3>
+
+Linux<br>
+Operating Systems<br>
+Networking<br>
+System Architecture<br>
+Processes<br>
+System Resources
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/docker" width="70">
+
+<h3>CLOUD & DEVOPS</h3>
+
+Docker<br>
+Cloud Infrastructure<br>
+CI/CD<br>
+DevOps<br>
+Containers<br>
+Scalability
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/kubernetes" width="70">
+
+<h3>DISTRIBUTED SYSTEMS</h3>
+
+Distributed Architecture<br>
+Services<br>
+APIs<br>
+Load Distribution<br>
+Fault Tolerance<br>
+Scalability
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<h2 align="center">EMERGING TECHNOLOGY</h2>
+
+<table align="center">
+<tr>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/qiskit" width="70">
+
+<h3>QUANTUM</h3>
+
+Qubits<br>
+Quantum Gates<br>
+Quantum Circuits<br>
+Quantum Algorithms<br>
+Quantum Cryptography<br>
+Post-Quantum Security
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/arduino" width="70">
+
+<h3>IoT</h3>
+
+Sensors<br>
+Embedded Systems<br>
+Connectivity<br>
+Data Collection<br>
+Edge Computing<br>
+Intelligent Devices
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/ethereum" width="70">
+
+<h3>EMERGING SYSTEMS</h3>
+
+Blockchain<br>
+Quantum Computing<br>
+Autonomous Systems<br>
+AI Agents<br>
+Distributed Intelligence<br>
+Future Security
 
 </td>
 
@@ -7173,58 +4829,123 @@ New experiments
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
+<img src="https://cdn.simpleicons.org/python" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/kubernetes" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/arduino" width="48">
+&nbsp;
+<img src="https://cdn.simpleicons.org/ethereum" width="48">
+
+</p>
+
+<h2 align="center">CROSS-DOMAIN PROJECTS</h2>
+
+<table align="center">
+<tr>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
 <br>
-<b>🏗️ PROJECT ENGINEERING PIPELINE</b>
+<img src="https://cdn.simpleicons.org/kalilinux" width="55">
+
+<h3>AI SECURITY</h3>
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
 <br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
+<img src="https://cdn.simpleicons.org/postgresql" width="55">
 
-💡 <b>IDEA</b>
-&nbsp; → &nbsp;
-🔎 <b>RESEARCH</b>
-&nbsp; → &nbsp;
-📐 <b>DESIGN</b>
-&nbsp; → &nbsp;
-💻 <b>IMPLEMENT</b>
-&nbsp; → &nbsp;
-🧪 <b>TEST</b>
+<h3>INTELLIGENT DATA</h3>
 
-<br><br>
+</td>
 
-⬇️
+<td align="center" width="20%">
 
-<br><br>
+<img src="https://cdn.simpleicons.org/letsencrypt" width="55">
+<br>
+<img src="https://cdn.simpleicons.org/ethereum" width="55">
 
-🐞 <b>BREAK</b>
-&nbsp; → &nbsp;
-🛠️ <b>DEBUG</b>
-&nbsp; → &nbsp;
-📊 <b>MEASURE</b>
-&nbsp; → &nbsp;
-🔄 <b>IMPROVE</b>
-&nbsp; → &nbsp;
-✅ <b>VALIDATE</b>
+<h3>DECENTRALIZED TRUST</h3>
 
-<br><br>
+</td>
 
-⬇️
+<td align="center" width="20%">
 
-<br><br>
+<img src="https://cdn.simpleicons.org/tensorflow" width="55">
+<br>
+<img src="https://cdn.simpleicons.org/docker" width="55">
 
-📚 <b>DOCUMENT</b>
-&nbsp; → &nbsp;
-📦 <b>PACKAGE</b>
-&nbsp; → &nbsp;
-☁️ <b>DEPLOY</b>
-&nbsp; → &nbsp;
-🚀 <b>DELIVER</b>
-&nbsp; → &nbsp;
-🔄 <b>ITERATE</b>
+<h3>SCALABLE AI</h3>
 
-<br><br>
+</td>
 
-╚══════════════════════════════════════════════════════════════════════════════╝
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/qiskit" width="55">
+<br>
+<img src="https://cdn.simpleicons.org/letsencrypt" width="55">
+
+<h3>POST-QUANTUM SECURITY</h3>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<h2 align="center">PROJECT PHILOSOPHY</h2>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="48">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="48">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="48">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="48">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="48">
+
+</p>
+
+<p align="center">
+<b>UNDERSTAND • BUILD • TEST • CONNECT • APPLY</b>
+</p>
+
+<p align="center">
+<i>Every project is an experiment. Every working system becomes part of the portfolio.</i>
+</p>
+
+<br>
+
+# Daily Learning Log
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="65">
+
+<h1 align="center">DAILY LEARNING LAB</h1>
+
+<p align="center">
+<b>STUDY • UNDERSTAND • BUILD • EXPERIMENT • DOCUMENT • IMPROVE</b>
+</p>
 
 </p>
 
@@ -7232,189 +4953,28 @@ New experiments
 
 <p align="center">
 
-## 🔗 Cross-Domain Projects
+<img src="https://cdn.simpleicons.org/bookstack" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/brain" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/python" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter" width="55">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="55">
 
 </p>
 
 <table align="center">
 <tr>
 
-<td align="center">
+<td align="center" width="20%">
 
-🤖 <b>AI</b>
-<br>
-+
-<br>
-🛡️ <b>SECURITY</b>
-<br><br>
-⬇️
-<br>
-<b>AI SECURITY SYSTEMS</b>
+<img src="https://cdn.simpleicons.org/bookstack" width="60">
 
-</td>
+<h3>01</h3>
 
-<td align="center">
-
-🤖 <b>AI</b>
-<br>
-+
-<br>
-🗄️ <b>DATA</b>
-<br><br>
-⬇️
-<br>
-<b>INTELLIGENT DATA SYSTEMS</b>
-
-</td>
-
-<td align="center">
-
-🔐 <b>CRYPTO</b>
-<br>
-+
-<br>
-⛓️ <b>BLOCKCHAIN</b>
-<br><br>
-⬇️
-<br>
-<b>DECENTRALIZED TRUST</b>
-
-</td>
-
-<td align="center">
-
-🤖 <b>AI</b>
-<br>
-+
-<br>
-☁️ <b>CLOUD</b>
-<br><br>
-⬇️
-<br>
-<b>SCALABLE AI SYSTEMS</b>
-
-</td>
-
-<td align="center">
-
-⚛️ <b>QUANTUM</b>
-<br>
-+
-<br>
-🔐 <b>CRYPTO</b>
-<br><br>
-⬇️
-<br>
-<b>POST-QUANTUM SECURITY</b>
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🎯 WHAT EACH PROJECT REPRESENTS</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-🧠 <b>UNDERSTANDING</b>
-&nbsp; → &nbsp;
-💻 <b>IMPLEMENTATION</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENTATION</b>
-
-<br><br>
-
-⚙️ <b>ENGINEERING</b>
-&nbsp; → &nbsp;
-🛡️ <b>SECURITY</b>
-&nbsp; → &nbsp;
-📈 <b>SCALABILITY</b>
-
-<br><br>
-
-📚 <b>KNOWLEDGE</b>
-&nbsp; → &nbsp;
-🏗️ <b>WORKING SYSTEM</b>
-&nbsp; → &nbsp;
-🌍 <b>REAL-WORLD APPLICATION</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>🚀 PROJECT PHILOSOPHY</b>
-
-<br><br>
-
-<code>DON'T JUST STUDY TECHNOLOGY.</code>
-
-<br>
-
-<code>UNDERSTAND IT → BUILD WITH IT → TEST IT → CONNECT IT → APPLY IT.</code>
-
-<br><br>
-
-<b>Every project is an experiment.<br>
-Every experiment is an opportunity to understand.<br>
-Every working system becomes part of the portfolio.</b>
-
-</p>
-
-# 📅 Daily learning log
-
-<p align="center">
-
-<table>
-<tr>
-<td align="center" colspan="7">
-
-<img src="https://cdn.simpleicons.org/github" width="58">
-
-<h2>📅 DAILY LEARNING LAB</h2>
-
-<b>STUDY • UNDERSTAND • BUILD • EXPERIMENT • DOCUMENT • COMMIT • IMPROVE</b>
-
-<br><br>
-
-<code>ONE DAY → ONE CONCEPT → ONE EXPERIMENT → ONE DOCUMENTED STEP FORWARD</code>
-
-</td>
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center" width="14%">
-
-<img src="https://cdn.simpleicons.org/bookstack" width="42">
-
-<br><br>
-
-<b>01</b>
-
-<br>
-
-📖 STUDY
+<b>STUDY</b>
 
 <br><br>
 
@@ -7424,19 +4984,13 @@ Research
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="20%">
 
-<td align="center" width="14%">
+<img src="https://cdn.simpleicons.org/brain" width="60">
 
-<img src="https://cdn.simpleicons.org/brain" width="42">
+<h3>02</h3>
 
-<br><br>
-
-<b>02</b>
-
-<br>
-
-🧠 UNDERSTAND
+<b>UNDERSTAND</b>
 
 <br><br>
 
@@ -7446,19 +5000,13 @@ Mechanisms
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="20%">
 
-<td align="center" width="14%">
+<img src="https://cdn.simpleicons.org/python" width="60">
 
-<img src="https://cdn.simpleicons.org/python" width="42">
+<h3>03</h3>
 
-<br><br>
-
-<b>03</b>
-
-<br>
-
-💻 BUILD
+<b>BUILD</b>
 
 <br><br>
 
@@ -7468,19 +5016,13 @@ Problem Solving
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="20%">
 
-<td align="center" width="14%">
+<img src="https://cdn.simpleicons.org/jupyter" width="60">
 
-<img src="https://cdn.simpleicons.org/jupyter" width="42">
+<h3>04</h3>
 
-<br><br>
-
-<b>04</b>
-
-<br>
-
-🧪 EXPERIMENT
+<b>EXPERIMENT</b>
 
 <br><br>
 
@@ -7490,19 +5032,13 @@ Break & Fix
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="20%">
 
-<td align="center" width="14%">
+<img src="https://cdn.simpleicons.org/github" width="60">
 
-<img src="https://cdn.simpleicons.org/github" width="42">
+<h3>05</h3>
 
-<br><br>
-
-<b>05</b>
-
-<br>
-
-📝 DOCUMENT
+<b>DOCUMENT</b>
 
 <br><br>
 
@@ -7515,106 +5051,150 @@ Findings
 </tr>
 </table>
 
+<br>
+
+<p align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/letsencrypt" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/kalilinux" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/qiskit" width="52">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github" width="52">
+
+</p>
+
+<p align="center">
+<b>ONE CONCEPT • ONE EXPERIMENT • ONE DOCUMENTED STEP</b>
 </p>
 
 <br>
 
 <p align="center">
 
-## 🔄 Daily execution cycle
+<img src="https://img.shields.io/badge/LEARN-BUILD-6A0DAD?style=for-the-badge">
+<img src="https://img.shields.io/badge/EXPERIMENT-DOCUMENT-4B0082?style=for-the-badge">
+<img src="https://img.shields.io/badge/IMPROVE-REPEAT-240046?style=for-the-badge">
 
 </p>
 
+## Daily execution cycle
+
 <p align="center">
 
-<table>
+<table align="center">
 <tr>
 
-<td align="center">
+<td align="center" width="18%">
 
-<img src="https://cdn.simpleicons.org/notion" width="40">
+<img src="https://cdn.simpleicons.org/notion" width="48">
 
-<br>
+<br><br>
 
 <b>CAPTURE</b>
 
 <br><br>
 
-📌 Topic<br>
-❓ Question<br>
-🎯 Objective
+Topic<br>
+Question<br>
+Objective
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="5%">
 
-<td align="center">
+<img src="https://cdn.simpleicons.org/arrowright" width="22">
 
-<img src="https://cdn.simpleicons.org/python" width="40">
+</td>
 
-<br>
+<td align="center" width="18%">
+
+<img src="https://cdn.simpleicons.org/python" width="48">
+
+<br><br>
 
 <b>IMPLEMENT</b>
 
 <br><br>
 
-💻 Code<br>
-🧩 Logic<br>
-⚙️ Application
+Code<br>
+Logic<br>
+Application
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="5%">
 
-<td align="center">
+<img src="https://cdn.simpleicons.org/arrowright" width="22">
 
-<img src="https://cdn.simpleicons.org/jupyter" width="40">
+</td>
 
-<br>
+<td align="center" width="18%">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="48">
+
+<br><br>
 
 <b>VALIDATE</b>
 
 <br><br>
 
-🧪 Test<br>
-📊 Observe<br>
-🐞 Debug
+Test<br>
+Observe<br>
+Debug
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="5%">
 
-<td align="center">
+<img src="https://cdn.simpleicons.org/arrowright" width="22">
 
-<img src="https://cdn.simpleicons.org/github" width="40">
+</td>
 
-<br>
+<td align="center" width="18%">
+
+<img src="https://cdn.simpleicons.org/github" width="48">
+
+<br><br>
 
 <b>PUBLISH</b>
 
 <br><br>
 
-📝 Document<br>
-🔄 Commit<br>
-🚀 Share
+Document<br>
+Commit<br>
+Share
 
 </td>
 
-<td align="center">→</td>
+<td align="center" width="5%">
 
-<td align="center">
+<img src="https://cdn.simpleicons.org/arrowright" width="22">
 
-<img src="https://cdn.simpleicons.org/githubactions" width="40">
+</td>
 
-<br>
+<td align="center" width="18%">
+
+<img src="https://cdn.simpleicons.org/githubactions" width="48">
+
+<br><br>
 
 <b>IMPROVE</b>
 
 <br><br>
 
-🔍 Review<br>
-🔧 Refine<br>
-📈 Progress
+Review<br>
+Refine<br>
+Progress
 
 </td>
 
@@ -7627,62 +5207,113 @@ Findings
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
+<img src="https://cdn.simpleicons.org/github" width="38">
+
+<br><br>
+
+<b>WHAT GETS DOCUMENTED EVERY DAY</b>
+
+<br><br>
+
+<table align="center">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="32">
+
+<br><br>
+
+<b>TOPIC</b>
+
 <br>
-<b>📊 WHAT GETS DOCUMENTED EVERY DAY</b>
+
+Core concept<br>
+Questions
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="32">
+
+<br><br>
+
+<b>IMPLEMENTATION</b>
+
 <br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
 
-📖 <b>TOPIC</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-🧠 <b>CORE CONCEPT</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-❓ <b>QUESTIONS</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-💻 <b>IMPLEMENTATION</b>
+Code<br>
+Application
 
-<br><br>
+</td>
 
-🧪 <b>EXPERIMENT</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-📊 <b>RESULT</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-🐞 <b>FAILURE</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-💡 <b>INSIGHT</b>
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="32">
 
 <br><br>
 
-📝 <b>NOTES</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-🔗 <b>CODE</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-🔄 <b>COMMIT</b>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-📈 <b>PROGRESS</b>
+<b>EXPERIMENT</b>
+
+<br>
+
+Test<br>
+Result
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="32">
 
 <br><br>
-╚══════════════════════════════════════════════════════════════════════════════╝
+
+<b>DOCUMENTATION</b>
+
+<br>
+
+Notes<br>
+Code
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/githubactions" width="32">
+
+<br><br>
+
+<b>ITERATION</b>
+
+<br>
+
+Commit<br>
+Progress
+
+</td>
+
+</tr>
+</table>
 
 </p>
 
 <br>
 
-# 📖 My technical knowledge base
+# My technical knowledge base
 
 <p align="center">
 
-<table>
+<table align="center">
 <tr>
 
 <td align="center" colspan="3">
 
-<img src="https://cdn.simpleicons.org/github" width="52">
+<img src="https://cdn.simpleicons.org/github" width="58">
 
-<br>
+<br><br>
 
-<h2>📖 TECHNICAL KNOWLEDGE ARCHITECTURE</h2>
+<h2>TECHNICAL KNOWLEDGE ARCHITECTURE</h2>
 
 <b>FOUNDATIONS → ENGINEERING → INTELLIGENCE → SECURITY → INFRASTRUCTURE → EMERGING SYSTEMS</b>
 
@@ -7696,18 +5327,22 @@ Findings
 
 <img src="https://cdn.simpleicons.org/wolframmathematica" width="58">
 
-<h3>🧮 FOUNDATIONS</h3>
+<br><br>
 
-<b>THEORY & COMPUTATIONAL THINKING</b>
+<b>FOUNDATIONS</b>
+
+<br>
+
+THEORY AND COMPUTATIONAL THINKING
 
 <br><br>
 
-📐 Mathematics<br>
-🧩 Algorithms<br>
-📊 Statistics<br>
-🧠 Logic<br>
-⏱️ Complexity<br>
-💡 Computational Thinking
+Mathematics<br>
+Algorithms<br>
+Statistics<br>
+Logic<br>
+Complexity<br>
+Computational Thinking
 
 </td>
 
@@ -7715,18 +5350,22 @@ Findings
 
 <img src="https://cdn.simpleicons.org/python" width="58">
 
-<h3>💻 ENGINEERING</h3>
+<br><br>
 
-<b>BUILDING SOFTWARE SYSTEMS</b>
+<b>ENGINEERING</b>
+
+<br>
+
+BUILDING SOFTWARE SYSTEMS
 
 <br><br>
 
-🐍 Python<br>
-🗄️ Databases<br>
-🔌 APIs<br>
-🏗️ System Design<br>
-🧪 Testing<br>
-⚙️ Software Engineering
+Python<br>
+Databases<br>
+APIs<br>
+System Design<br>
+Testing<br>
+Software Engineering
 
 </td>
 
@@ -7734,18 +5373,22 @@ Findings
 
 <img src="https://cdn.simpleicons.org/tensorflow" width="58">
 
-<h3>🤖 INTELLIGENCE</h3>
+<br><br>
 
-<b>DATA → MODELS → INTELLIGENT SYSTEMS</b>
+<b>INTELLIGENCE</b>
+
+<br>
+
+DATA → MODELS → INTELLIGENT SYSTEMS
 
 <br><br>
 
-📊 Machine Learning<br>
-🧠 Deep Learning<br>
-🔗 Neural Networks<br>
-💬 LLMs<br>
-🔎 RAG<br>
-🤝 AI Agents
+Machine Learning<br>
+Deep Learning<br>
+Neural Networks<br>
+LLMs<br>
+RAG<br>
+AI Agents
 
 </td>
 
@@ -7757,18 +5400,22 @@ Findings
 
 <img src="https://cdn.simpleicons.org/kalilinux" width="58">
 
-<h3>🛡️ SECURITY & TRUST</h3>
+<br><br>
 
-<b>PROTECTING SYSTEMS & DATA</b>
+<b>SECURITY AND TRUST</b>
+
+<br>
+
+PROTECTING SYSTEMS AND DATA
 
 <br><br>
 
-🔐 Cryptography<br>
-🛡️ Cybersecurity<br>
-🎯 Threat Modeling<br>
-🔑 Authentication<br>
-🔒 Secure Architecture<br>
-🤖 AI Security
+Cryptography<br>
+Cybersecurity<br>
+Threat Modeling<br>
+Authentication<br>
+Secure Architecture<br>
+AI Security
 
 </td>
 
@@ -7776,18 +5423,22 @@ Findings
 
 <img src="https://cdn.simpleicons.org/docker" width="58">
 
-<h3>☁️ INFRASTRUCTURE</h3>
+<br><br>
 
-<b>RUNNING & SCALING SYSTEMS</b>
+<b>INFRASTRUCTURE</b>
+
+<br>
+
+RUNNING AND SCALING SYSTEMS
 
 <br><br>
 
-🐧 Linux<br>
-🐳 Docker<br>
-☁️ Cloud<br>
-🔄 DevOps<br>
-🌐 Networking<br>
-📈 Distributed Systems
+Linux<br>
+Docker<br>
+Cloud<br>
+DevOps<br>
+Networking<br>
+Distributed Systems
 
 </td>
 
@@ -7795,18 +5446,22 @@ Findings
 
 <img src="https://cdn.simpleicons.org/qiskit" width="58">
 
-<h3>⚛️ EMERGING TECHNOLOGY</h3>
+<br><br>
 
-<b>EXPLORING NEXT-GENERATION COMPUTING</b>
+<b>EMERGING TECHNOLOGY</b>
+
+<br>
+
+EXPLORING NEXT-GENERATION COMPUTING
 
 <br><br>
 
-⚛️ Quantum Computing<br>
-⛓️ Blockchain<br>
-📡 IoT<br>
-🤖 Autonomous Systems<br>
-🌐 Distributed Intelligence<br>
-🔐 Post-Quantum Security
+Quantum Computing<br>
+Blockchain<br>
+IoT<br>
+Autonomous Systems<br>
+Distributed Intelligence<br>
+Post-Quantum Security
 
 </td>
 
@@ -7820,53 +5475,49 @@ Findings
 
 <p align="center">
 
-## 🧩 Knowledge connection map
+<b>KNOWLEDGE CONNECTION MAP</b>
 
-</p>
+<br><br>
 
-<p align="center">
-
-<table>
+<table align="center">
 <tr>
 
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="38">
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="42">
 
-<br>
+<br><br>
+
 <b>MATHEMATICS</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/python" width="38">
+<img src="https://cdn.simpleicons.org/python" width="42">
 
-<br>
+<br><br>
+
 <b>COMPUTATION</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/postgresql" width="38">
+<img src="https://cdn.simpleicons.org/postgresql" width="42">
 
-<br>
+<br><br>
+
 <b>DATA</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/tensorflow" width="38">
+<img src="https://cdn.simpleicons.org/tensorflow" width="42">
 
-<br>
+<br><br>
+
 <b>INTELLIGENCE</b>
 
 </td>
@@ -7877,42 +5528,40 @@ Findings
 
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/letsencrypt" width="38">
+<img src="https://cdn.simpleicons.org/letsencrypt" width="42">
 
-<br>
+<br><br>
+
 <b>CRYPTOGRAPHY</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/kalilinux" width="38">
+<img src="https://cdn.simpleicons.org/kalilinux" width="42">
 
-<br>
+<br><br>
+
 <b>SECURITY</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/linux" width="38">
+<img src="https://cdn.simpleicons.org/linux" width="42">
 
-<br>
+<br><br>
+
 <b>SYSTEMS</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/docker" width="38">
+<img src="https://cdn.simpleicons.org/docker" width="42">
 
-<br>
+<br><br>
+
 <b>SCALE</b>
 
 </td>
@@ -7923,41 +5572,40 @@ Findings
 
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/qiskit" width="38">
+<img src="https://cdn.simpleicons.org/qiskit" width="42">
 
-<br>
+<br><br>
+
 <b>QUANTUM</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/ethereum" width="38">
+<img src="https://cdn.simpleicons.org/ethereum" width="42">
 
-<br>
+<br><br>
+
 <b>DECENTRALIZATION</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/arduino" width="38">
+<img src="https://cdn.simpleicons.org/arduino" width="42">
 
-<br>
+<br><br>
+
 <b>CONNECTED DEVICES</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-🚀
-<br>
+<img src="https://cdn.simpleicons.org/github" width="42">
+
+<br><br>
+
 <b>EMERGING SYSTEMS</b>
 
 </td>
@@ -7972,59 +5620,51 @@ Findings
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🧠 KNOWLEDGE IS BUILT IN LAYERS</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="38">
 
-🧮 <b>FOUNDATIONS</b>
-<br>
-Mathematics • Logic • Algorithms • Complexity
+  
 
-<br><br>
-↓
-<br><br>
+<b>FOUNDATIONS</b>
 
-💻 <b>ENGINEERING</b>
-<br>
-Programming • Software • Databases • APIs • Systems
+  →  
 
-<br><br>
-↓
-<br><br>
+<img src="https://cdn.simpleicons.org/python" width="38">
 
-🤖 <b>INTELLIGENCE</b>
-<br>
-Data • ML • DL • LLMs • RAG • Agents
+  
 
-<br><br>
-↓
-<br><br>
+<b>ENGINEERING</b>
 
-🛡️ <b>TRUST</b>
-<br>
-Cryptography • Cybersecurity • Secure Architecture
+  →  
 
-<br><br>
-↓
-<br><br>
+<img src="https://cdn.simpleicons.org/tensorflow" width="38">
 
-☁️ <b>SCALE</b>
-<br>
-Linux • Cloud • Docker • DevOps • Distributed Systems
+  
 
-<br><br>
-↓
-<br><br>
+<b>INTELLIGENCE</b>
 
-⚛️ <b>EMERGING SYSTEMS</b>
-<br>
-Quantum • Blockchain • IoT • Next-Generation Computing
+  →  
 
-<br><br>
-╚══════════════════════════════════════════════════════════════════════════════╝
+<img src="https://cdn.simpleicons.org/kalilinux" width="38">
+
+  
+
+<b>TRUST</b>
+
+  →  
+
+<img src="https://cdn.simpleicons.org/docker" width="38">
+
+  
+
+<b>SCALE</b>
+
+  →  
+
+<img src="https://cdn.simpleicons.org/qiskit" width="38">
+
+  
+
+<b>EMERGING SYSTEMS</b>
 
 </p>
 
@@ -8032,37 +5672,54 @@ Quantum • Blockchain • IoT • Next-Generation Computing
 
 <p align="center">
 
-<b>📚 KNOWLEDGE LOOP</b>
+<b>KNOWLEDGE LOOP</b>
 
 <br><br>
 
-<img src="https://cdn.simpleicons.org/bookstack" width="35">
-&nbsp;
+<img src="https://cdn.simpleicons.org/bookstack" width="38">
+
+  
+
 <b>LEARN</b>
-&nbsp;→&nbsp;
 
-<img src="https://cdn.simpleicons.org/python" width="35">
-&nbsp;
+  →  
+
+<img src="https://cdn.simpleicons.org/python" width="38">
+
+  
+
 <b>IMPLEMENT</b>
-&nbsp;→&nbsp;
 
-<img src="https://cdn.simpleicons.org/jupyter" width="35">
-&nbsp;
+  →  
+
+<img src="https://cdn.simpleicons.org/jupyter" width="38">
+
+  
+
 <b>EXPERIMENT</b>
-&nbsp;→&nbsp;
 
-<img src="https://cdn.simpleicons.org/github" width="35">
-&nbsp;
+  →  
+
+<img src="https://cdn.simpleicons.org/github" width="38">
+
+  
+
 <b>DOCUMENT</b>
-&nbsp;→&nbsp;
 
-<img src="https://cdn.simpleicons.org/githubactions" width="35">
-&nbsp;
+  →  
+
+<img src="https://cdn.simpleicons.org/githubactions" width="38">
+
+  
+
 <b>ITERATE</b>
-&nbsp;→&nbsp;
 
-<img src="https://cdn.simpleicons.org/github" width="35">
-&nbsp;
+  →  
+
+<img src="https://cdn.simpleicons.org/github" width="38">
+
+  
+
 <b>BUILD</b>
 
 <br><br>
@@ -8075,7 +5732,11 @@ Quantum • Blockchain • IoT • Next-Generation Computing
 
 <p align="center">
 
-<b>📖 THE KNOWLEDGE BASE IS NOT A COLLECTION OF NOTES.</b>
+<img src="https://cdn.simpleicons.org/bookstack" width="48">
+
+<br><br>
+
+<b>THE KNOWLEDGE BASE IS NOT A COLLECTION OF NOTES.</b>
 
 <br>
 
@@ -8085,55 +5746,52 @@ Quantum • Blockchain • IoT • Next-Generation Computing
 
 ---
 
-# 🔬 Research & Exploration
+# Research & Exploration
 
 <p align="center">
 
-<table>
+<table align="center">
 <tr>
-<td align="center" colspan="7">
+
+<td align="center" colspan="4">
 
 <img src="https://cdn.simpleicons.org/github" width="62">
 
-<h1>🔬 RESEARCH & EXPLORATION OBSERVATORY</h1>
+<br><br>
 
-<b>QUESTION • INVESTIGATE • UNDERSTAND • EXPERIMENT • ANALYZE • DISCOVER</b>
+<h1>RESEARCH AND EXPLORATION OBSERVATORY</h1>
+
+<b>QUESTION → INVESTIGATE → UNDERSTAND → EXPERIMENT → ANALYZE → DISCOVER</b>
 
 <br><br>
 
-<code>FROM A QUESTION → TO EVIDENCE → TO UNDERSTANDING → TO NEW POSSIBILITIES</code>
+<code>QUESTION → EVIDENCE → UNDERSTANDING → NEW POSSIBILITIES</code>
 
 </td>
+
 </tr>
-</table>
 
-</p>
-
-<br>
-
-<p align="center">
-
-<table>
 <tr>
 
 <td align="center" width="25%">
 
 <img src="https://cdn.simpleicons.org/tensorflow" width="62">
 
-<h3>🤖 AI & INTELLIGENCE</h3>
+<br><br>
 
-<b>EXPLORING MACHINE INTELLIGENCE</b>
+<b>AI AND INTELLIGENCE</b>
 
 <br><br>
 
-🧠 Machine Learning<br>
-🔗 Deep Learning<br>
-💬 LLMs<br>
-🔎 RAG<br>
-🤝 AI Agents<br>
-🧩 Reasoning & Evaluation<br>
-⚙️ AI Systems<br>
-🛡️ AI Safety
+Machine Learning<br>
+Deep Learning<br>
+LLMs<br>
+RAG<br>
+AI Agents<br>
+Reasoning<br>
+Evaluation<br>
+AI Systems<br>
+AI Safety
 
 </td>
 
@@ -8141,20 +5799,20 @@ Quantum • Blockchain • IoT • Next-Generation Computing
 
 <img src="https://cdn.simpleicons.org/kalilinux" width="62">
 
-<h3>🛡️ SECURITY & TRUST</h3>
+<br><br>
 
-<b>UNDERSTANDING SYSTEM RESILIENCE</b>
+<b>SECURITY AND TRUST</b>
 
 <br><br>
 
-🔐 Cryptography<br>
-🎯 Threat Modeling<br>
-🛡️ Cybersecurity<br>
-🤖 AI Security<br>
-🔑 Authentication<br>
-🏗️ Secure Architecture<br>
-⚛️ Post-Quantum Security<br>
-🔍 Security Analysis
+Cryptography<br>
+Threat Modeling<br>
+Cybersecurity<br>
+AI Security<br>
+Authentication<br>
+Secure Architecture<br>
+Post-Quantum Security<br>
+Security Analysis
 
 </td>
 
@@ -8162,20 +5820,20 @@ Quantum • Blockchain • IoT • Next-Generation Computing
 
 <img src="https://cdn.simpleicons.org/qiskit" width="62">
 
-<h3>⚛️ QUANTUM COMPUTING</h3>
+<br><br>
 
-<b>EXPLORING NEW COMPUTATIONAL MODELS</b>
+<b>QUANTUM COMPUTING</b>
 
 <br><br>
 
-⚛️ Qubits<br>
-🔗 Quantum Gates<br>
-🧩 Quantum Circuits<br>
-🧮 Quantum Algorithms<br>
-📐 Quantum Complexity<br>
-🔬 Quantum Systems<br>
-🔐 Quantum Cryptography<br>
-🛡️ Post-Quantum Cryptography
+Qubits<br>
+Quantum Gates<br>
+Quantum Circuits<br>
+Quantum Algorithms<br>
+Quantum Complexity<br>
+Quantum Systems<br>
+Quantum Cryptography<br>
+Post-Quantum Cryptography
 
 </td>
 
@@ -8183,24 +5841,25 @@ Quantum • Blockchain • IoT • Next-Generation Computing
 
 <img src="https://cdn.simpleicons.org/docker" width="62">
 
-<h3>☁️ SYSTEMS & SCALE</h3>
+<br><br>
 
-<b>UNDERSTANDING COMPLEX SYSTEMS</b>
+<b>SYSTEMS AND SCALE</b>
 
 <br><br>
 
-🌐 Distributed Systems<br>
-🏗️ System Architecture<br>
-☁️ Cloud Computing<br>
-🐳 Containers<br>
-🐧 Linux<br>
-🔌 APIs<br>
-📈 Scalability<br>
-⚙️ Reliability
+Distributed Systems<br>
+System Architecture<br>
+Cloud Computing<br>
+Containers<br>
+Linux<br>
+APIs<br>
+Scalability<br>
+Reliability
 
 </td>
 
 </tr>
+
 </table>
 
 </p>
@@ -8209,211 +5868,274 @@ Quantum • Blockchain • IoT • Next-Generation Computing
 
 <p align="center">
 
-## 🧭 Research investigation framework
-
-</p>
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center">
-
-🔍
-<br>
-<b>01</b>
-<br><br>
-<b>QUESTION</b>
-<br><br>
-What am I trying<br>
-to understand?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-📚
-<br>
-<b>02</b>
-<br><br>
-<b>LITERATURE</b>
-<br><br>
-What is already<br>
-known?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🧠
-<br>
-<b>03</b>
-<br><br>
-<b>DECOMPOSE</b>
-<br><br>
-What are the<br>
-underlying mechanisms?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-💻
-<br>
-<b>04</b>
-<br><br>
-<b>IMPLEMENT</b>
-<br><br>
-Can I reproduce<br>
-the concept?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🧪
-<br>
-<b>05</b>
-<br><br>
-<b>EXPERIMENT</b>
-<br><br>
-What happens when<br>
-I test it?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-📊
-<br>
-<b>06</b>
-<br><br>
-<b>ANALYZE</b>
-<br><br>
-What does the<br>
-evidence show?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-📖
-<br>
-<b>07</b>
-<br><br>
-<b>DOCUMENT</b>
-<br><br>
-What did I<br>
-actually learn?
-
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 RESEARCH LAB STRUCTURE</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-                         🔬 <b>RESEARCH QUESTION</b>
-<br>
-                                  │
-<br>
-                         ┌────────┴────────┐
-                         │                 │
-                         ▼                 ▼
-<br>
-                  📚 <b>THEORY</b>       📊 <b>EVIDENCE</b>
-<br>
-                         │                 │
-                         └────────┬────────┘
-                                  ▼
-<br>
-                         🧠 <b>UNDERSTANDING</b>
-<br>
-                                  │
-                                  ▼
-<br>
-                         💻 <b>IMPLEMENTATION</b>
-<br>
-                                  │
-                                  ▼
-<br>
-                         🧪 <b>EXPERIMENTATION</b>
-<br>
-                                  │
-                         ┌────────┴────────┐
-                         │                 │
-                         ▼                 ▼
-<br>
-                    📈 <b>RESULTS</b>    🐞 <b>FAILURES</b>
-                         │                 │
-                         └────────┬────────┘
-                                  ▼
-<br>
-                         📊 <b>ANALYSIS</b>
-                                  │
-                                  ▼
-                         📝 <b>DOCUMENTATION</b>
-                                  │
-                                  ▼
-                         💡 <b>NEW QUESTIONS</b>
-                                  │
-                                  └──────────────→ 🔬
+<b>RESEARCH INVESTIGATION FRAMEWORK</b>
 
 <br><br>
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-<p align="center">
-
-## 🧩 Cross-domain research
-
-</p>
 
 <table align="center">
 <tr>
 
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/tensorflow" width="42">
+<img src="https://cdn.simpleicons.org/google" width="40">
+
+<br><br>
+
+<b>QUESTION</b>
+
+<br><br>
+
+What am I trying<br>
+to understand?
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="40">
+
+<br><br>
+
+<b>LITERATURE</b>
+
+<br><br>
+
+What is already<br>
+known?
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="40">
+
+<br><br>
+
+<b>DECOMPOSE</b>
+
+<br><br>
+
+What mechanisms<br>
+are underneath?
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="40">
+
+<br><br>
+
+<b>IMPLEMENT</b>
+
+<br><br>
+
+Can the concept<br>
+be reproduced?
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="40">
+
+<br><br>
+
+<b>EXPERIMENT</b>
+
+<br><br>
+
+What happens<br>
+when tested?
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/pandas" width="40">
+
+<br><br>
+
+<b>ANALYZE</b>
+
+<br><br>
+
+What does the<br>
+evidence show?
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="40">
+
+<br><br>
+
+<b>DOCUMENT</b>
+
+<br><br>
+
+What was<br>
+actually learned?
+
+</td>
+
+</tr>
+</table>
+
+</p>
+
+<br>
+
+<p align="center">
+
+<b>RESEARCH LAB STRUCTURE</b>
+
+<br><br>
+
+<table align="center">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/google" width="44">
+
+<br><br>
+
+<b>RESEARCH QUESTION</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="44">
+
+<br><br>
+
+<b>THEORY</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/pandas" width="44">
+
+<br><br>
+
+<b>EVIDENCE</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="44">
+
+<br><br>
+
+<b>UNDERSTANDING</b>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="44">
+
+<br><br>
+
+<b>IMPLEMENTATION</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="44">
+
+<br><br>
+
+<b>EXPERIMENTATION</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/pandas" width="44">
+
+<br><br>
+
+<b>RESULTS</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="44">
+
+<br><br>
+
+<b>DOCUMENTATION</b>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center" colspan="2">
+
+<img src="https://cdn.simpleicons.org/githubactions" width="44">
+
+<br><br>
+
+<b>ITERATION</b>
+
+</td>
+
+<td align="center" colspan="2">
+
+<img src="https://cdn.simpleicons.org/google" width="44">
+
+<br><br>
+
+<b>NEW QUESTIONS</b>
+
+</td>
+
+</tr>
+
+</table>
+
+</p>
+
+<br>
+
+<p align="center">
+
+<b>CROSS-DOMAIN RESEARCH</b>
+
+<br><br>
+
+<table align="center">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/tensorflow" width="44">
 
 <br><br>
 
 <b>AI</b>
 
-<br>
+<br><br>
 
 ×
 
-<br>
+<br><br>
 
-<img src="https://cdn.simpleicons.org/kalilinux" width="42">
+<img src="https://cdn.simpleicons.org/kalilinux" width="44">
 
 <br><br>
 
@@ -8431,19 +6153,19 @@ Secure AI Architecture
 
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/qiskit" width="42">
+<img src="https://cdn.simpleicons.org/qiskit" width="44">
 
 <br><br>
 
 <b>QUANTUM</b>
 
-<br>
+<br><br>
 
 ×
 
-<br>
+<br><br>
 
-<img src="https://cdn.simpleicons.org/letsencrypt" width="42">
+<img src="https://cdn.simpleicons.org/letsencrypt" width="44">
 
 <br><br>
 
@@ -8461,19 +6183,19 @@ Future Security
 
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/tensorflow" width="42">
+<img src="https://cdn.simpleicons.org/tensorflow" width="44">
 
 <br><br>
 
 <b>AI</b>
 
-<br>
+<br><br>
 
 ×
 
-<br>
+<br><br>
 
-<img src="https://cdn.simpleicons.org/docker" width="42">
+<img src="https://cdn.simpleicons.org/docker" width="44">
 
 <br><br>
 
@@ -8491,19 +6213,19 @@ Distributed Intelligence
 
 <td align="center">
 
-<img src="https://cdn.simpleicons.org/ethereum" width="42">
+<img src="https://cdn.simpleicons.org/ethereum" width="44">
 
 <br><br>
 
 <b>BLOCKCHAIN</b>
 
-<br>
+<br><br>
 
 ×
 
-<br>
+<br><br>
 
-<img src="https://cdn.simpleicons.org/kalilinux" width="42">
+<img src="https://cdn.simpleicons.org/kalilinux" width="44">
 
 <br><br>
 
@@ -8522,22 +6244,26 @@ Attack Analysis
 </tr>
 </table>
 
+</p>
+
 <br>
 
 <p align="center">
 
-## 🧠 Questions that drive exploration
+<b>QUESTIONS THAT DRIVE EXPLORATION</b>
 
-</p>
+<br><br>
 
-<p align="center">
-
-<table>
+<table align="center">
 <tr>
 
-<td align="center" width="33%">
+<td align="center">
 
-❓ <b>HOW DOES IT WORK?</b>
+<img src="https://cdn.simpleicons.org/google" width="38">
+
+<br><br>
+
+<b>HOW DOES IT WORK?</b>
 
 <br><br>
 
@@ -8546,20 +6272,28 @@ behind the abstraction.
 
 </td>
 
-<td align="center" width="33%">
+<td align="center">
 
-❓ <b>WHY DOES IT WORK?</b>
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="38">
 
 <br><br>
 
-Identify the principles,<br>
+<b>WHY DOES IT WORK?</b>
+
+<br><br>
+
+Identify principles,<br>
 assumptions and foundations.
 
 </td>
 
-<td align="center" width="33%">
+<td align="center">
 
-❓ <b>WHERE DOES IT BREAK?</b>
+<img src="https://cdn.simpleicons.org/bugcrowd" width="38">
+
+<br><br>
+
+<b>WHERE DOES IT BREAK?</b>
 
 <br><br>
 
@@ -8574,7 +6308,11 @@ failure modes and edge cases.
 
 <td align="center">
 
-❓ <b>CAN I REPRODUCE IT?</b>
+<img src="https://cdn.simpleicons.org/python" width="38">
+
+<br><br>
+
+<b>CAN I REPRODUCE IT?</b>
 
 <br><br>
 
@@ -8585,7 +6323,11 @@ from first principles.
 
 <td align="center">
 
-❓ <b>CAN I IMPROVE IT?</b>
+<img src="https://cdn.simpleicons.org/githubactions" width="38">
+
+<br><br>
+
+<b>CAN I IMPROVE IT?</b>
 
 <br><br>
 
@@ -8596,7 +6338,11 @@ approaches and designs.
 
 <td align="center">
 
-❓ <b>WHERE CAN IT BE APPLIED?</b>
+<img src="https://cdn.simpleicons.org/docker" width="38">
+
+<br><br>
+
+<b>WHERE CAN IT BE APPLIED?</b>
 
 <br><br>
 
@@ -8614,51 +6360,144 @@ real-world systems.
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔭 FROM RESEARCH TO REAL-WORLD SYSTEMS</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-🔍 <b>QUESTION</b>
-&nbsp; → &nbsp;
-📚 <b>KNOWLEDGE</b>
-&nbsp; → &nbsp;
-🧠 <b>MODEL</b>
-&nbsp; → &nbsp;
-💻 <b>PROTOTYPE</b>
+<b>FROM RESEARCH TO REAL-WORLD SYSTEMS</b>
 
 <br><br>
 
-⬇️
+<table align="center">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/google" width="38">
 
 <br><br>
 
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-📊 <b>EVIDENCE</b>
-&nbsp; → &nbsp;
-🔬 <b>ANALYSIS</b>
-&nbsp; → &nbsp;
-🛠️ <b>REFINEMENT</b>
+<b>QUESTION</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="38">
 
 <br><br>
 
-⬇️
+<b>KNOWLEDGE</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="38">
 
 <br><br>
 
-🏗️ <b>ARCHITECTURE</b>
-&nbsp; → &nbsp;
-⚙️ <b>SYSTEM</b>
-&nbsp; → &nbsp;
-🌐 <b>APPLICATION</b>
-&nbsp; → &nbsp;
-🚀 <b>IMPACT</b>
+<b>MODEL</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="38">
 
 <br><br>
-╚══════════════════════════════════════════════════════════════════════════════╝
+
+<b>PROTOTYPE</b>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="38">
+
+<br><br>
+
+<b>EXPERIMENT</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/pandas" width="38">
+
+<br><br>
+
+<b>EVIDENCE</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/google" width="38">
+
+<br><br>
+
+<b>ANALYSIS</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/githubactions" width="38">
+
+<br><br>
+
+<b>REFINEMENT</b>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/docker" width="38">
+
+<br><br>
+
+<b>ARCHITECTURE</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/linux" width="38">
+
+<br><br>
+
+<b>SYSTEM</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="38">
+
+<br><br>
+
+<b>APPLICATION</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/githubactions" width="38">
+
+<br><br>
+
+<b>IMPACT</b>
+
+</td>
+
+</tr>
+
+</table>
 
 </p>
 
@@ -8666,39 +6505,55 @@ real-world systems.
 
 <p align="center">
 
-## 📡 Research horizon
+<b>RESEARCH HORIZON</b>
+
+<br><br>
 
 <table align="center">
 <tr>
 
 <td align="center">
 
-🔬 <b>NOW</b>
+<img src="https://cdn.simpleicons.org/jupyter" width="46">
+
 <br><br>
+
+<b>NOW</b>
+
+<br><br>
+
 Current concepts<br>
 Experiments<br>
 Implementations
 
 </td>
 
-<td align="center">→</td>
-
 <td align="center">
 
-🧭 <b>NEXT</b>
+<img src="https://cdn.simpleicons.org/google" width="46">
+
 <br><br>
+
+<b>NEXT</b>
+
+<br><br>
+
 Open questions<br>
 New techniques<br>
 Deeper investigation
 
 </td>
 
-<td align="center">→</td>
-
 <td align="center">
 
-🚀 <b>FUTURE</b>
+<img src="https://cdn.simpleicons.org/qiskit" width="46">
+
 <br><br>
+
+<b>FUTURE</b>
+
+<br><br>
+
 Emerging technology<br>
 New architectures<br>
 Unexplored applications
@@ -8708,13 +6563,13 @@ Unexplored applications
 </tr>
 </table>
 
-</p>
-
 <br>
 
-<p align="center">
+<img src="https://cdn.simpleicons.org/github" width="42">
 
-<b>🔬 RESEARCH MINDSET</b>
+<br><br>
+
+<b>RESEARCH MINDSET</b>
 
 <br><br>
 
@@ -8722,36 +6577,39 @@ Unexplored applications
 
 <br><br>
 
-<b>Research starts with curiosity.</b>
-<br>
-<b>Engineering turns understanding into something that can be tested.</b>
-<br>
-<b>Experimentation turns assumptions into evidence.</b>
+Research starts with curiosity.<br>
+Engineering turns understanding into something that can be tested.<br>
+Experimentation turns assumptions into evidence.
 
 </p>
 
 ---
 
-# 🧠 My learning philosophy
+# My learning philosophy
 
 <p align="center">
 
-<table>
+<table align="center">
 <tr>
-<td align="center" colspan="7">
+
+<td align="center" colspan="4">
 
 <img src="https://cdn.simpleicons.org/brain" width="65">
 
-<h1>🧠 FIRST-PRINCIPLES LEARNING SYSTEM</h1>
+<br><br>
 
-<b>QUESTION • UNDERSTAND • DECONSTRUCT • BUILD • BREAK • REBUILD</b>
+<h1>FIRST-PRINCIPLES LEARNING SYSTEM</h1>
+
+<b>QUESTION → UNDERSTAND → DECONSTRUCT → BUILD → BREAK → REBUILD</b>
 
 <br><br>
 
 <code>DON'T MEMORIZE THE SYSTEM — UNDERSTAND THE MECHANISM</code>
 
 </td>
+
 </tr>
+
 </table>
 
 </p>
@@ -8760,24 +6618,22 @@ Unexplored applications
 
 <p align="center">
 
-## 🔬 The core principle
-
-</p>
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center" width="30%">
-
-❓
+<b>THE CORE PRINCIPLE</b>
 
 <br><br>
 
-<h3>ASK WHY?</h3>
+<table align="center">
+<tr>
 
-<br>
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/google" width="48">
+
+<br><br>
+
+<b>ASK WHY?</b>
+
+<br><br>
 
 Why does it work?<br>
 Why was it designed this way?<br>
@@ -8785,21 +6641,15 @@ What problem does it solve?
 
 </td>
 
-<td align="center" width="5%">
+<td align="center">
 
-→
-
-</td>
-
-<td align="center" width="30%">
-
-🧮
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="48">
 
 <br><br>
 
-<h3>FIND THE FOUNDATION</h3>
+<b>FIND THE FOUNDATION</b>
 
-<br>
+<br><br>
 
 Mathematics<br>
 Logic<br>
@@ -8808,24 +6658,18 @@ Principles
 
 </td>
 
-<td align="center" width="5%">
+<td align="center">
 
-→
-
-</td>
-
-<td align="center" width="30%">
-
-🧠
+<img src="https://cdn.simpleicons.org/python" width="48">
 
 <br><br>
 
-<h3>UNDERSTAND THE MECHANISM</h3>
+<b>UNDERSTAND THE MECHANISM</b>
 
-<br>
+<br><br>
 
 What happens underneath?<br>
-How do the components interact?<br>
+How do components interact?<br>
 What are the assumptions?
 
 </td>
@@ -8839,83 +6683,91 @@ What are the assumptions?
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>⚙️ MY LEARNING OPERATING SYSTEM</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-                         ❓ <b>WHY?</b>
-<br>
-                          │
-<br>
-                          ▼
-<br>
-                   🧮 <b>FUNDAMENTALS</b>
-<br>
-                          │
-<br>
-                          ▼
-<br>
-                   🧠 <b>UNDERSTAND</b>
-<br>
-                          │
-<br>
-                          ▼
-<br>
-                   🔬 <b>DECONSTRUCT</b>
-<br>
-                          │
-<br>
-                          ▼
-<br>
-                   💻 <b>IMPLEMENT</b>
-<br>
-                          │
-<br>
-                          ▼
-<br>
-                   🧪 <b>EXPERIMENT</b>
-<br>
-                          │
-<br>
-                    ┌─────┴─────┐
-                    │           │
-                    ▼           ▼
-<br>
-                ✅ WORKS     ❌ BREAKS
-                    │           │
-                    │           ▼
-                    │       🔍 <b>INVESTIGATE</b>
-                    │           │
-                    │           ▼
-                    │       🐞 <b>DEBUG</b>
-                    │           │
-                    │           ▼
-                    │       🔧 <b>REBUILD</b>
-                    │           │
-                    └─────┬─────┘
-                          ▼
-<br>
-                    📊 <b>ANALYZE</b>
-                          │
-                          ▼
-<br>
-                    📝 <b>DOCUMENT</b>
-                          │
-                          ▼
-<br>
-                    🚀 <b>IMPROVE</b>
-                          │
-                          ▼
-<br>
-                    ❓ <b>ASK A BETTER QUESTION</b>
-                          │
-                          └──────────────→ 🔬
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="42">
 
 <br><br>
-╚══════════════════════════════════════════════════════════════════════════════╝
+
+<b>FUNDAMENTALS</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/python" width="42">
+
+<br><br>
+
+<b>UNDERSTAND</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/github" width="42">
+
+<br><br>
+
+<b>DECONSTRUCT</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/python" width="42">
+
+<br><br>
+
+<b>IMPLEMENT</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/jupyter" width="42">
+
+<br><br>
+
+<b>EXPERIMENT</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/bugcrowd" width="42">
+
+<br><br>
+
+<b>INVESTIGATE</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/githubactions" width="42">
+
+<br><br>
+
+<b>REBUILD</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/pandas" width="42">
+
+<br><br>
+
+<b>ANALYZE</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/bookstack" width="42">
+
+<br><br>
+
+<b>DOCUMENT</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/github" width="42">
+
+<br><br>
+
+<b>IMPROVE</b>
+
+<br><br>
+
+<img src="https://cdn.simpleicons.org/google" width="42">
+
+<br><br>
+
+<b>ASK A BETTER QUESTION</b>
 
 </p>
 
@@ -8923,9 +6775,9 @@ What are the assumptions?
 
 <p align="center">
 
-## 🧩 What I try to understand
+<b>WHAT I TRY TO UNDERSTAND</b>
 
-</p>
+<br><br>
 
 <table align="center">
 <tr>
@@ -8934,9 +6786,9 @@ What are the assumptions?
 
 <img src="https://cdn.simpleicons.org/wolframmathematica" width="52">
 
-<h3>FOUNDATIONS</h3>
+<br><br>
 
-<b>WHY?</b>
+<b>FOUNDATIONS</b>
 
 <br><br>
 
@@ -8952,9 +6804,9 @@ Computer Science
 
 <img src="https://cdn.simpleicons.org/python" width="52">
 
-<h3>IMPLEMENTATION</h3>
+<br><br>
 
-<b>HOW?</b>
+<b>IMPLEMENTATION</b>
 
 <br><br>
 
@@ -8970,9 +6822,9 @@ Systems
 
 <img src="https://cdn.simpleicons.org/jupyter" width="52">
 
-<h3>EXPERIMENTATION</h3>
+<br><br>
 
-<b>WHAT IF?</b>
+<b>EXPERIMENTATION</b>
 
 <br><br>
 
@@ -8988,9 +6840,9 @@ Validate
 
 <img src="https://cdn.simpleicons.org/github" width="52">
 
-<h3>APPLICATION</h3>
+<br><br>
 
-<b>CAN I BUILD IT?</b>
+<b>APPLICATION</b>
 
 <br><br>
 
@@ -9003,27 +6855,32 @@ Iteration
 </td>
 
 </tr>
+
 </table>
+
+</p>
 
 <br>
 
 <p align="center">
 
-## 🔍 The five questions behind every technology
+<b>THE FIVE QUESTIONS BEHIND EVERY TECHNOLOGY</b>
 
-</p>
+<br><br>
 
-<p align="center">
-
-<table>
+<table align="center">
 <tr>
 
 <td align="center">
 
-<b>01</b>
+<img src="https://cdn.simpleicons.org/google" width="40">
+
 <br><br>
-❓ <b>WHY?</b>
+
+<b>WHY?</b>
+
 <br><br>
+
 What problem<br>
 does it solve?
 
@@ -9031,10 +6888,14 @@ does it solve?
 
 <td align="center">
 
-<b>02</b>
+<img src="https://cdn.simpleicons.org/python" width="40">
+
 <br><br>
-🧠 <b>HOW?</b>
+
+<b>HOW?</b>
+
 <br><br>
+
 What mechanism<br>
 makes it work?
 
@@ -9042,21 +6903,29 @@ makes it work?
 
 <td align="center">
 
-<b>03</b>
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="40">
+
 <br><br>
-🧩 <b>WHAT'S UNDERNEATH?</b>
+
+<b>WHAT'S UNDERNEATH?</b>
+
 <br><br>
+
 What abstractions<br>
-hide the complexity?
+hide complexity?
 
 </td>
 
 <td align="center">
 
-<b>04</b>
+<img src="https://cdn.simpleicons.org/bugcrowd" width="40">
+
 <br><br>
-🧪 <b>WHERE DOES IT BREAK?</b>
+
+<b>WHERE DOES IT BREAK?</b>
+
 <br><br>
+
 What are the limits<br>
 and failure modes?
 
@@ -9064,16 +6933,21 @@ and failure modes?
 
 <td align="center">
 
-<b>05</b>
+<img src="https://cdn.simpleicons.org/github" width="40">
+
 <br><br>
-🏗️ <b>CAN I BUILD IT?</b>
+
+<b>CAN I BUILD IT?</b>
+
 <br><br>
+
 Can I reproduce<br>
 the idea myself?
 
 </td>
 
 </tr>
+
 </table>
 
 </p>
@@ -9082,46 +6956,124 @@ the idea myself?
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 LEARNING THROUGH FAILURE</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
+<b>LEARNING THROUGH FAILURE</b>
+
+<br><br>
+
+<table align="center">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="42">
+
 <br><br>
 
 <b>BUILD</b>
-&nbsp; → &nbsp;
-<b>TEST</b>
-&nbsp; → &nbsp;
-<b>FAIL</b>
-&nbsp; → &nbsp;
-<b>INVESTIGATE</b>
-&nbsp; → &nbsp;
-<b>UNDERSTAND</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="42">
 
 <br><br>
 
-⬇️
+<b>TEST</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/bugcrowd" width="42">
+
+<br><br>
+
+<b>FAIL</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/google" width="42">
+
+<br><br>
+
+<b>INVESTIGATE</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="42">
+
+<br><br>
+
+<b>UNDERSTAND</b>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/githubactions" width="42">
 
 <br><br>
 
 <b>FIX</b>
-&nbsp; → &nbsp;
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="42">
+
+<br><br>
+
 <b>RETEST</b>
-&nbsp; → &nbsp;
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/pandas" width="42">
+
+<br><br>
+
 <b>MEASURE</b>
-&nbsp; → &nbsp;
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="42">
+
+<br><br>
+
 <b>DOCUMENT</b>
-&nbsp; → &nbsp;
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="42">
+
+<br><br>
+
 <b>IMPROVE</b>
 
-<br><br>
+</td>
+
+</tr>
+
+</table>
+
+<br>
 
 <code>FAILURE → FEEDBACK → UNDERSTANDING → BETTER IMPLEMENTATION</code>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
 
 </p>
 
@@ -9129,16 +7081,20 @@ the idea myself?
 
 <p align="center">
 
-## 🧠 From memorization to mastery
+<b>FROM MEMORIZATION TO MASTERY</b>
 
-</p>
+<br><br>
 
 <table align="center">
 <tr>
 
 <td align="center">
 
-📖 <b>MEMORIZE</b>
+<img src="https://cdn.simpleicons.org/bookstack" width="42">
+
+<br><br>
+
+<b>MEMORIZE</b>
 
 <br><br>
 
@@ -9147,11 +7103,13 @@ the syntax
 
 </td>
 
-<td align="center">→</td>
-
 <td align="center">
 
-🧠 <b>UNDERSTAND</b>
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="42">
+
+<br><br>
+
+<b>UNDERSTAND</b>
 
 <br><br>
 
@@ -9160,11 +7118,13 @@ the concept
 
 </td>
 
-<td align="center">→</td>
-
 <td align="center">
 
-💻 <b>IMPLEMENT</b>
+<img src="https://cdn.simpleicons.org/python" width="42">
+
+<br><br>
+
+<b>IMPLEMENT</b>
 
 <br><br>
 
@@ -9173,11 +7133,13 @@ from scratch
 
 </td>
 
-<td align="center">→</td>
-
 <td align="center">
 
-🧪 <b>EXPERIMENT</b>
+<img src="https://cdn.simpleicons.org/jupyter" width="42">
+
+<br><br>
+
+<b>EXPERIMENT</b>
 
 <br><br>
 
@@ -9186,104 +7148,110 @@ and test it
 
 </td>
 
-<td align="center">→</td>
-
 <td align="center">
 
-🏗️ <b>MASTER</b>
+<img src="https://cdn.simpleicons.org/github" width="42">
+
+<br><br>
+
+<b>MASTER</b>
 
 <br><br>
 
 Explain it<br>
-build with it
+and build with it
 
 </td>
 
 </tr>
+
 </table>
+
+</p>
 
 <br>
 
 <p align="center">
 
-## 🌐 How the philosophy connects everything
+<b>HOW THE PHILOSOPHY CONNECTS EVERYTHING</b>
 
-</p>
+<br><br>
 
-<p align="center">
-
-<table>
+<table align="center">
 <tr>
 
 <td align="center">
 
-🧮
-<br>
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="40">
+
+<br><br>
+
 <b>MATHEMATICS</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-💻
-<br>
+<img src="https://cdn.simpleicons.org/python" width="40">
+
+<br><br>
+
 <b>COMPUTATION</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-📊
-<br>
+<img src="https://cdn.simpleicons.org/postgresql" width="40">
+
+<br><br>
+
 <b>DATA</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-🤖
-<br>
+<img src="https://cdn.simpleicons.org/tensorflow" width="40">
+
+<br><br>
+
 <b>INTELLIGENCE</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-🛡️
-<br>
+<img src="https://cdn.simpleicons.org/kalilinux" width="40">
+
+<br><br>
+
 <b>SECURITY</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-☁️
-<br>
+<img src="https://cdn.simpleicons.org/docker" width="40">
+
+<br><br>
+
 <b>SCALE</b>
 
 </td>
 
-<td>→</td>
-
 <td align="center">
 
-⚛️
-<br>
+<img src="https://cdn.simpleicons.org/qiskit" width="40">
+
+<br><br>
+
 <b>EMERGING SYSTEMS</b>
 
 </td>
 
 </tr>
+
 </table>
 
 <br>
@@ -9296,11 +7264,12 @@ build with it
 
 <p align="center">
 
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🚀 PERSONAL LEARNING DOCTRINE</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
+<img src="https://cdn.simpleicons.org/github" width="50">
+
+<br><br>
+
+<b>PERSONAL LEARNING DOCTRINE</b>
+
 <br><br>
 
 <b>I do not want to only know WHAT a technology does.</b>
@@ -9312,37 +7281,140 @@ WHERE it fails, WHAT is underneath it, and HOW to build with it.</b>
 
 <br><br>
 
-❓ <b>QUESTION</b>
-&nbsp; → &nbsp;
-🧮 <b>FOUNDATION</b>
-&nbsp; → &nbsp;
-🧠 <b>UNDERSTANDING</b>
-&nbsp; → &nbsp;
-💻 <b>IMPLEMENTATION</b>
+<table align="center">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/google" width="36">
 
 <br><br>
 
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-🔍 <b>INVESTIGATE</b>
-&nbsp; → &nbsp;
-📊 <b>ANALYZE</b>
-&nbsp; → &nbsp;
-📝 <b>DOCUMENT</b>
+<b>QUESTION</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/wolframmathematica" width="36">
 
 <br><br>
 
-🚀 <b>IMPROVE</b>
-&nbsp; → &nbsp;
-🏗️ <b>BUILD</b>
-&nbsp; → &nbsp;
-🔗 <b>CONNECT</b>
-&nbsp; → &nbsp;
-❓ <b>QUESTION AGAIN</b>
+<b>FOUNDATION</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/python" width="36">
 
 <br><br>
 
-╚══════════════════════════════════════════════════════════════════════════════╝
+<b>UNDERSTANDING</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="36">
+
+<br><br>
+
+<b>IMPLEMENTATION</b>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/jupyter" width="36">
+
+<br><br>
+
+<b>EXPERIMENT</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/google" width="36">
+
+<br><br>
+
+<b>INVESTIGATE</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/pandas" width="36">
+
+<br><br>
+
+<b>ANALYZE</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/bookstack" width="36">
+
+<br><br>
+
+<b>DOCUMENT</b>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/githubactions" width="36">
+
+<br><br>
+
+<b>IMPROVE</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/github" width="36">
+
+<br><br>
+
+<b>BUILD</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/linkedin" width="36">
+
+<br><br>
+
+<b>CONNECT</b>
+
+</td>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/google" width="36">
+
+<br><br>
+
+<b>QUESTION AGAIN</b>
+
+</td>
+
+</tr>
+
+</table>
 
 </p>
 
@@ -9350,13 +7422,17 @@ WHERE it fails, WHAT is underneath it, and HOW to build with it.</b>
 
 <p align="center">
 
-<b>🧠 DON'T JUST LEARN HOW TO USE A TECHNOLOGY.</b>
+<img src="https://cdn.simpleicons.org/brain" width="48">
+
+<br><br>
+
+<b>DON'T JUST LEARN HOW TO USE A TECHNOLOGY.</b>
 
 <br><br>
 
 <b>UNDERSTAND WHY IT WORKS.</b>
 
-<br>
+<br><br>
 
 <code>QUESTION → UNDERSTAND → BUILD → BREAK → REBUILD → MASTER</code>
 
@@ -9364,1005 +7440,488 @@ WHERE it fails, WHAT is underneath it, and HOW to build with it.</b>
 
 ---
 
-## 🧠 My core philosophy
+# My core philosophy
 
 <p align="center">
-
-<table>
-<tr>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="52">
-
-<br><br>
-
-<b>FUNDAMENTALS</b>
-
-<br><br>
-
-🧠
-
-<br>
-
-<b>&gt; TOOLS</b>
-
-<br><br>
-
-<sub>Understand the<br>foundation first.</sub>
-
-</td>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/brain" width="52">
-
-<br><br>
-
-<b>UNDERSTANDING</b>
-
-<br><br>
-
-🔍
-
-<br>
-
-<b>&gt; MEMORIZATION</b>
-
-<br><br>
-
-<sub>Know why it works,<br>not only what it does.</sub>
-
-</td>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/python" width="52">
-
-<br><br>
-
-<b>IMPLEMENTATION</b>
-
-<br><br>
-
-💻
-
-<br>
-
-<b>&gt; PASSIVE LEARNING</b>
-
-<br><br>
-
-<sub>Turn concepts into<br>working systems.</sub>
-
-</td>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/jupyter" width="52">
-
-<br><br>
-
-<b>EXPERIMENTATION</b>
-
-<br><br>
-
-🧪
-
-<br>
-
-<b>&gt; THEORY ALONE</b>
-
-<br><br>
-
-<sub>Test ideas and<br>discover their limits.</sub>
-
-</td>
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/github" width="52">
-
-<br><br>
-
-<b>DOCUMENTATION</b>
-
-<br><br>
-
-📚
-
-<br>
-
-<b>&gt; TEMPORARY KNOWLEDGE</b>
-
-<br><br>
-
-<sub>Convert learning into<br>reusable knowledge.</sub>
-
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center" colspan="5">
-
-<h3>⚙️ THE PRINCIPLE STACK</h3>
-
-<code>FOUNDATION → UNDERSTANDING → IMPLEMENTATION → EXPERIMENTATION → KNOWLEDGE</code>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-
-🧮
-<br><br>
-<b>FOUNDATION</b>
-<br><br>
-What is it built on?
-
-</td>
-
-<td align="center">
-
-🧠
-<br><br>
-<b>UNDERSTANDING</b>
-<br><br>
-Why does it work?
-
-</td>
-
-<td align="center">
-
-💻
-<br><br>
-<b>IMPLEMENTATION</b>
-<br><br>
-Can I build it?
-
-</td>
-
-<td align="center">
-
-🧪
-<br><br>
-<b>EXPERIMENTATION</b>
-<br><br>
-What happens if I change it?
-
-</td>
-
-<td align="center">
-
-📚
-<br><br>
-<b>KNOWLEDGE</b>
-<br><br>
-Can I explain and reuse it?
-
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🔬 HOW I APPROACH TECHNOLOGY</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-❓ <b>QUESTION</b>
-&nbsp; → &nbsp;
-🧮 <b>UNDERSTAND THE FOUNDATION</b>
-&nbsp; → &nbsp;
-🧩 <b>BREAK DOWN THE MECHANISM</b>
-
-<br><br>
-
-💻 <b>IMPLEMENT</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-🐞 <b>BREAK IT</b>
-&nbsp; → &nbsp;
-🔍 <b>INVESTIGATE</b>
-
-<br><br>
-
-📊 <b>ANALYZE</b>
-&nbsp; → &nbsp;
-📝 <b>DOCUMENT</b>
-&nbsp; → &nbsp;
-🔄 <b>REVISIT</b>
-&nbsp; → &nbsp;
-🚀 <b>IMPROVE</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-> **🧠 I don't want to simply know how to use a technology. I want to understand the principles, mechanisms, trade-offs and limitations behind it.**
-
----
-
-# 🧠 Things I understand better now
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center" colspan="4">
-
-<img src="https://cdn.simpleicons.org/brain" width="58">
-
-<h2>🧠 EVOLVING UNDERSTANDING</h2>
-
-<b>FROM INDIVIDUAL CONCEPTS → TO INTERCONNECTED SYSTEMS</b>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="55">
-
-<h3>🧮 MATHEMATICAL FOUNDATIONS</h3>
-
-<br>
-
-🔢 Mathematical Reasoning<br>
-🧩 Algorithms<br>
-⏱️ Complexity<br>
-🔐 Cryptographic Foundations<br>
-📊 Statistics<br>
-⚙️ Computational Thinking
-
-<br><br>
-
-<code>WHY THE COMPUTATION WORKS</code>
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/linux" width="55">
-
-<h3>⚙️ SYSTEMS THINKING</h3>
-
-<br>
-
-🏗️ Architecture<br>
-🌐 Distributed Systems<br>
-📈 Scalability<br>
-🔄 Reliability<br>
-☁️ Infrastructure<br>
-🐧 Operating Systems
-
-<br><br>
-
-<code>HOW COMPONENTS WORK TOGETHER</code>
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="55">
-
-<h3>🤖 ARTIFICIAL INTELLIGENCE</h3>
-
-<br>
-
-🧠 Machine Learning<br>
-🔗 Deep Learning<br>
-💬 LLM Architecture<br>
-🔎 RAG<br>
-🤝 AI Agents<br>
-📊 Model Evaluation
-
-<br><br>
-
-<code>HOW INTELLIGENT SYSTEMS ARE BUILT</code>
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="55">
-
-<h3>🛡️ SECURITY</h3>
-
-<br>
-
-🔐 Cryptography<br>
-🎯 Threat Modeling<br>
-🏗️ Secure Architecture<br>
-🤖 AI Security<br>
-🔍 Security Analysis<br>
-⚛️ Post-Quantum Security
-
-<br><br>
-
-<code>HOW SYSTEMS EARN TRUST</code>
-
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-## 🔗 From concepts to systems
-
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="52">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/brain" width="52">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python" width="52">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/jupyter" width="52">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="52">
 </p>
 
 <p align="center">
-
-<table>
-<tr>
-
-<td align="center">
-
-🧮
-<br>
-<b>ALGORITHMS</b>
-<br><br>
-Complexity<br>
-Efficiency<br>
-Optimization
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-⚙️
-<br>
-<b>ARCHITECTURE</b>
-<br><br>
-Components<br>
-Interfaces<br>
-Dependencies
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🛡️
-<br>
-<b>SECURITY</b>
-<br><br>
-Trust<br>
-Threats<br>
-Resilience
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-📈
-<br>
-<b>SCALABILITY</b>
-<br><br>
-Performance<br>
-Distribution<br>
-Reliability
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center">
-
-🌐
-<br>
-<b>REAL SYSTEMS</b>
-<br><br>
-Applications<br>
-Products<br>
-Infrastructure
-
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>📈 HOW MY UNDERSTANDING HAS EVOLVED</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-<b>BEFORE</b>
-
-<br><br>
-
-Technology → Feature → Tool → Usage
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-<b>NOW</b>
-
-<br><br>
-
-Foundation → Mechanism → Architecture → Security → Scale → Application
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-<b>DEEPER VIEW</b>
-
-<br><br>
-
-Concept → Interaction → Trade-off → Failure Mode → Optimization → System
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
-
-</p>
-
-<br>
-
-> **📚 The goal is not to know more technologies. The goal is to understand more deeply how technologies connect, interact and become real systems.**
-
----
-
-# 💭 Ideas, questions & continuous exploration
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center" colspan="7">
-
-<img src="https://cdn.simpleicons.org/github" width="55">
-
-<h2>💭 EXPLORATION RADAR</h2>
-
-<b>OBSERVE • QUESTION • INVESTIGATE • CONNECT • EXPERIMENT • APPLY</b>
-
-<br><br>
-
-<code>EVERY ANSWER CREATES A BETTER QUESTION</code>
-
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<table>
-<tr>
-
-<td align="center" width="25%">
-
-🔎
-
-<br><br>
-
-<h3>OBSERVE</h3>
-
-What changed?<br>
-What is happening?<br>
-What pattern do I see?
-
-</td>
-
-<td align="center" width="25%">
-
-❓
-
-<br><br>
-
-<h3>QUESTION</h3>
-
-Why did it change?<br>
-What drives it?<br>
-What assumption is involved?
-
-</td>
-
-<td align="center" width="25%">
-
-🧠
-
-<br><br>
-
-<h3>INVESTIGATE</h3>
-
-What is underneath?<br>
-What evidence exists?<br>
-What are the alternatives?
-
-</td>
-
-<td align="center" width="25%">
-
-🧪
-
-<br><br>
-
-<h3>EXPERIMENT</h3>
-
-Can I reproduce it?<br>
-Can I modify it?<br>
-Where does it fail?
-
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-## 🎯 The exploration radar
-
+  <b>FUNDAMENTALS</b>
+  &nbsp;&nbsp;→&nbsp;&nbsp;
+  <b>UNDERSTANDING</b>
+  &nbsp;&nbsp;→&nbsp;&nbsp;
+  <b>IMPLEMENTATION</b>
+  &nbsp;&nbsp;→&nbsp;&nbsp;
+  <b>EXPERIMENTATION</b>
+  &nbsp;&nbsp;→&nbsp;&nbsp;
+  <b>KNOWLEDGE</b>
 </p>
 
 <p align="center">
-
-<pre>
-                              💭 EXPLORATION
-                                     │
-                    ┌────────────────┼────────────────┐
-                    │                │                │
-                    ▼                ▼                ▼
-              🔎 WHAT CHANGED?   ❓ WHY?         🎯 WHAT PROBLEM?
-                    │                │                │
-                    └────────────────┼────────────────┘
-                                     ▼
-                            🧠 WHAT DRIVES IT?
-                                     │
-                                     ▼
-                            🧩 WHAT'S UNDERNEATH?
-                                     │
-                         ┌───────────┴───────────┐
-                         │                       │
-                         ▼                       ▼
-                    ⚠️ WHAT CAN FAIL?       📈 WHAT CAN SCALE?
-                         │                       │
-                         └───────────┬───────────┘
-                                     ▼
-                              💻 CAN I BUILD IT?
-                                     │
-                                     ▼
-                              🧪 CAN I TEST IT?
-                                     │
-                                     ▼
-                              🛡️ CAN I SECURE IT?
-                                     │
-                                     ▼
-                              🌐 WHERE CAN IT APPLY?
-                                     │
-                                     ▼
-                              🚀 WHAT COMES NEXT?
-                                     │
-                                     └──────────→ 💭
-</pre>
-
+  <sub>
+    Understand the foundation → understand why it works → build it → test it → document it
+  </sub>
 </p>
 
-<br>
-
 <p align="center">
-
-## 🌐 Exploration domains
-
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="34">
+  <br>
+  <b>FOUNDATION</b>
+  <br>
+  <sub>What is it built on?</sub>
 </p>
 
-<table align="center">
-
-<tr>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="48">
-
-<br><br>
-
-<b>🤖 INTELLIGENCE</b>
-
-<br><br>
-
-LLMs<br>
-RAG<br>
-Agents<br>
-Reasoning<br>
-AI Evaluation<br>
-AI Security
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="48">
-
-<br><br>
-
-<b>🛡️ TRUST</b>
-
-<br><br>
-
-Cybersecurity<br>
-Cryptography<br>
-Threat Modeling<br>
-Secure AI<br>
-PQC<br>
-Resilience
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/docker" width="48">
-
-<br><br>
-
-<b>☁️ SCALE</b>
-
-<br><br>
-
-Cloud<br>
-Distributed Systems<br>
-Containers<br>
-Architecture<br>
-Reliability<br>
-Infrastructure
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="48">
-
-<br><br>
-
-<b>⚛️ EMERGING</b>
-
-<br><br>
-
-Quantum<br>
-Blockchain<br>
-IoT<br>
-New Architectures<br>
-Future Security<br>
-Emerging Systems
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
 <p align="center">
-
-## 🔥 The question engine
-
+  <img src="https://cdn.simpleicons.org/brain" width="34">
+  <br>
+  <b>UNDERSTANDING</b>
+  <br>
+  <sub>Why does it work?</sub>
 </p>
 
-<table align="center">
-
-<tr>
-
-<td align="center" width="20%">
-
-❓
-
-<br><br>
-
-<b>WHAT?</b>
-
-<br><br>
-
-What is it?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center" width="20%">
-
-🧠
-
-<br><br>
-
-<b>WHY?</b>
-
-<br><br>
-
-Why does it exist?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center" width="20%">
-
-⚙️
-
-<br><br>
-
-<b>HOW?</b>
-
-<br><br>
-
-How does it work?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center" width="20%">
-
-⚠️
-
-<br><br>
-
-<b>WHAT IF?</b>
-
-<br><br>
-
-What happens when conditions change?
-
-</td>
-
-<td align="center">→</td>
-
-<td align="center" width="20%">
-
-🏗️
-
-<br><br>
-
-<b>NOW WHAT?</b>
-
-<br><br>
-
-What can be built with it?
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
 <p align="center">
-
-╔══════════════════════════════════════════════════════════════════════════════╗
-<br>
-<b>🚀 FROM CURIOSITY TO CREATION</b>
-<br>
-╠══════════════════════════════════════════════════════════════════════════════╣
-<br><br>
-
-💭 <b>IDEA</b>
-&nbsp; → &nbsp;
-❓ <b>QUESTION</b>
-&nbsp; → &nbsp;
-🔍 <b>INVESTIGATION</b>
-&nbsp; → &nbsp;
-📚 <b>KNOWLEDGE</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🧠 <b>UNDERSTANDING</b>
-&nbsp; → &nbsp;
-💻 <b>PROTOTYPE</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-📊 <b>EVIDENCE</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-🛡️ <b>SECURE</b>
-&nbsp; → &nbsp;
-📈 <b>SCALE</b>
-&nbsp; → &nbsp;
-🌐 <b>APPLY</b>
-&nbsp; → &nbsp;
-🚀 <b>CREATE</b>
-
-<br><br>
-
-⬇️
-
-<br><br>
-
-❓ <b>NEW QUESTION</b>
-&nbsp; → &nbsp;
-🔄 <b>EXPLORE AGAIN</b>
-
-<br><br>
-
-╚══════════════════════════════════════════════════════════════════════════════╝
-
+  <img src="https://cdn.simpleicons.org/python" width="34">
+  <br>
+  <b>IMPLEMENTATION</b>
+  <br>
+  <sub>Can I build it?</sub>
 </p>
 
-<br>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/jupyter" width="34">
+  <br>
+  <b>EXPERIMENTATION</b>
+  <br>
+  <sub>What happens if I change it?</sub>
+</p>
 
 <p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="34">
+  <br>
+  <b>KNOWLEDGE</b>
+  <br>
+  <sub>Can I explain and reuse it?</sub>
+</p>
 
-<b>💭 I FOLLOW QUESTIONS, NOT JUST CURRICULUM.</b>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/brain" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/python" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="30">
+</p>
 
-<br><br>
+<p align="center">
+  <b>QUESTION</b>
+  &nbsp;→&nbsp;
+  <b>UNDERSTAND</b>
+  &nbsp;→&nbsp;
+  <b>IMPLEMENT</b>
+  &nbsp;→&nbsp;
+  <b>EXPERIMENT</b>
+  &nbsp;→&nbsp;
+  <b>ANALYZE</b>
+  &nbsp;→&nbsp;
+  <b>DOCUMENT</b>
+  &nbsp;→&nbsp;
+  <b>IMPROVE</b>
+</p>
 
-<code>QUESTION → UNDERSTAND → EXPERIMENT → CONNECT → BUILD → DISCOVER → QUESTION AGAIN</code>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="30">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/jupyter" width="30">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="30">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/readthedocs" width="30">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/githubactions" width="30">
+</p>
 
+<p align="center">
+  <b>I do not want to simply know how to use a technology.</b>
+  <br>
+  <sub>
+    I want to understand the principles, mechanisms, trade-offs and limitations behind it.
+  </sub>
 </p>
 
 ---
 
-# ✍️ Technical writing
+# Things I understand better now
 
 <p align="center">
-<img src="https://cdn.simpleicons.org/github" height="28">
-<img src="https://cdn.simpleicons.org/python" height="28">
-<img src="https://cdn.simpleicons.org/tensorflow" height="28">
-<img src="https://cdn.simpleicons.org/linux" height="28">
-<img src="https://cdn.simpleicons.org/docker" height="28">
-<img src="https://cdn.simpleicons.org/qiskit" height="28">
-<img src="https://cdn.simpleicons.org/ethereum" height="28">
+  <img src="https://cdn.simpleicons.org/brain" width="58">
 </p>
 
 <p align="center">
-<b>TECHNICAL COMMUNICATION • RESEARCH • STRATEGY</b>
+  <b>FROM INDIVIDUAL CONCEPTS TO INTERCONNECTED SYSTEMS</b>
 </p>
 
 <p align="center">
-<pre>
-┌──────────────────────────────────────────────────────────────────────┐
-│                                                                      │
-│                    ✍️ TECHNICAL WRITING                              │
-│                                                                      │
-│        Turning complex technology into clear, useful knowledge       │
-│                                                                      │
-├───────────────────┬───────────────────┬──────────────────────────────┤
-│                   │                   │                              │
-│   🤖 TECHNOLOGY   │   🛡️ SECURITY    │      🏢 STRATEGY             │
-│                   │                   │                              │
-│   AI / GenAI      │   Cybersecurity   │   Technology Strategy       │
-│   Enterprise AI   │   Cryptography    │   Digital Transformation    │
-│   Cloud           │   AI Security     │   Business + Technology     │
-│   Blockchain      │   PQC             │   Enterprise Technology     │
-│   Quantum         │   Trust Systems   │   Innovation                 │
-│                   │                   │                              │
-└───────────────────┴───────────────────┴──────────────────────────────┘
-                                │
-                                ▼
-                    ┌─────────────────────────┐
-                    │   COMPLEX INFORMATION   │
-                    └─────────────────────────┘
-                                │
-                                ▼
-                    ┌─────────────────────────┐
-                    │     DECOMPOSE           │
-                    │  Concepts • Systems     │
-                    │  Mechanisms • Context   │
-                    └─────────────────────────┘
-                                │
-                                ▼
-                    ┌─────────────────────────┐
-                    │      SYNTHESIZE         │
-                    │  Research • Evidence    │
-                    │  Examples • Insights    │
-                    └─────────────────────────┘
-                                │
-                                ▼
-                    ┌─────────────────────────┐
-                    │       COMMUNICATE       │
-                    │  Clear • Structured     │
-                    │  Precise • Accessible   │
-                    └─────────────────────────┘
-                                │
-                                ▼
-                    ┌─────────────────────────┐
-                    │     REAL-WORLD IMPACT   │
-                    │                         │
-                    │  Understand → Decide    │
-                    │  Design → Build → Apply │
-                    └─────────────────────────┘
-</pre>
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="48">
 </p>
 
 <p align="center">
-<b>Research → Understand → Simplify → Communicate → Apply</b>
+  <b>MATHEMATICAL FOUNDATIONS</b>
+  <br>
+  <sub>
+    Mathematical reasoning • Algorithms • Complexity • Cryptography • Statistics • Computational thinking
+  </sub>
+  <br><br>
+  <code>WHY THE COMPUTATION WORKS</code>
 </p>
-
-<table align="center">
-<tr>
-<td align="center"><b>📚 Research</b><br>Study the subject deeply</td>
-<td align="center"><b>🧠 Understand</b><br>Identify the underlying mechanisms</td>
-<td align="center"><b>🔍 Simplify</b><br>Break complexity into clear ideas</td>
-</tr>
-<tr>
-<td align="center"><b>✍️ Explain</b><br>Communicate with precision</td>
-<td align="center"><b>🌐 Contextualize</b><br>Connect technology with reality</td>
-<td align="center"><b>💡 Apply</b><br>Turn knowledge into decisions and systems</td>
-</tr>
-</table>
 
 <p align="center">
-<sub>
-Writing about technology, security, systems, artificial intelligence,
-emerging computing and the intersection of technology with business.
-</sub>
+  <img src="https://cdn.simpleicons.org/linux" width="48">
 </p>
 
-# 📊 GitHub statistics
+<p align="center">
+  <b>SYSTEMS THINKING</b>
+  <br>
+  <sub>
+    Architecture • Distributed systems • Scalability • Reliability • Infrastructure • Operating systems
+  </sub>
+  <br><br>
+  <code>HOW COMPONENTS WORK TOGETHER</code>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="48">
+</p>
+
+<p align="center">
+  <b>ARTIFICIAL INTELLIGENCE</b>
+  <br>
+  <sub>
+    Machine learning • Deep learning • LLM architecture • RAG • AI agents • Model evaluation
+  </sub>
+  <br><br>
+  <code>HOW INTELLIGENT SYSTEMS ARE BUILT</code>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/kalilinux" width="48">
+</p>
+
+<p align="center">
+  <b>SECURITY</b>
+  <br>
+  <sub>
+    Cryptography • Threat modeling • Secure architecture • AI security • Security analysis • Post-quantum security
+  </sub>
+  <br><br>
+  <code>HOW SYSTEMS EARN TRUST</code>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/linux" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/kalilinux" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/docker" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="30">
+</p>
+
+<p align="center">
+  <b>ALGORITHMS → ARCHITECTURE → SECURITY → SCALABILITY → REAL SYSTEMS</b>
+</p>
+
+<p align="center">
+  <sub>
+    Complexity • Interfaces • Trust • Performance • Distribution • Applications • Infrastructure
+  </sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="28">
+  <b>FOUNDATION</b>
+  →
+  <img src="https://cdn.simpleicons.org/brain" width="28">
+  <b>MECHANISM</b>
+  →
+  <img src="https://cdn.simpleicons.org/python" width="28">
+  <b>ARCHITECTURE</b>
+  →
+  <img src="https://cdn.simpleicons.org/kalilinux" width="28">
+  <b>SECURITY</b>
+  →
+  <img src="https://cdn.simpleicons.org/docker" width="28">
+  <b>SCALE</b>
+  →
+  <img src="https://cdn.simpleicons.org/github" width="28">
+  <b>APPLICATION</b>
+</p>
+
+<p align="center">
+  <sub>
+    The goal is not to know more technologies. The goal is to understand more deeply how technologies connect, interact and become real systems.
+  </sub>
+</p>
+
+---
+
+# Ideas, questions & continuous exploration
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="54">
+</p>
+
+<p align="center">
+  <b>EXPLORATION RADAR</b>
+  <br>
+  <sub>OBSERVE • QUESTION • INVESTIGATE • CONNECT • EXPERIMENT • APPLY</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="34">
+  <br>
+  <b>OBSERVE</b>
+  <br>
+  <sub>What changed?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/brain" width="34">
+  <br>
+  <b>QUESTION</b>
+  <br>
+  <sub>Why did it change?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/arxiv" width="34">
+  <br>
+  <b>INVESTIGATE</b>
+  <br>
+  <sub>What is underneath?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/jupyter" width="34">
+  <br>
+  <b>EXPERIMENT</b>
+  <br>
+  <sub>Can I reproduce it?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/arxiv" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/docker" width="30">
+</p>
+
+<p align="center">
+  <b>QUESTION → INVESTIGATE → UNDERSTAND → BUILD → TEST → SECURE → APPLY</b>
+</p>
+
+## Exploration domains
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="48">
+</p>
+
+<p align="center">
+  <b>INTELLIGENCE</b>
+  <br>
+  <sub>LLMs • RAG • Agents • Reasoning • AI Evaluation • AI Security</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/kalilinux" width="48">
+</p>
+
+<p align="center">
+  <b>TRUST</b>
+  <br>
+  <sub>Cybersecurity • Cryptography • Threat Modeling • Secure AI • PQC • Resilience</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/docker" width="48">
+</p>
+
+<p align="center">
+  <b>SCALE</b>
+  <br>
+  <sub>Cloud • Distributed systems • Containers • Architecture • Reliability • Infrastructure</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="48">
+</p>
+
+<p align="center">
+  <b>EMERGING</b>
+  <br>
+  <sub>Quantum • Blockchain • IoT • New architectures • Future security • Emerging systems</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/brain" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/python" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="30">
+  →
+  <img src="https://cdn.simpleicons.org/docker" width="30">
+</p>
+
+<p align="center">
+  <b>WHAT?</b>
+  →
+  <b>WHY?</b>
+  →
+  <b>HOW?</b>
+  →
+  <b>WHAT IF?</b>
+  →
+  <b>NOW WHAT?</b>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/brain" width="32">
+  →
+  <img src="https://cdn.simpleicons.org/arxiv" width="32">
+  →
+  <img src="https://cdn.simpleicons.org/python" width="32">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="32">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="32">
+</p>
+
+<p align="center">
+  <b>FROM CURIOSITY TO CREATION</b>
+  <br><br>
+  IDEA → QUESTION → INVESTIGATION → KNOWLEDGE
+  <br>
+  UNDERSTANDING → PROTOTYPE → EXPERIMENT → EVIDENCE
+  <br>
+  SECURITY → SCALE → APPLICATION → CREATION
+  <br>
+  NEW QUESTION → EXPLORE AGAIN
+</p>
+
+<p align="center">
+  <b>I FOLLOW QUESTIONS, NOT JUST CURRICULUM.</b>
+</p>
+
+<p align="center">
+  <code>QUESTION → UNDERSTAND → EXPERIMENT → CONNECT → BUILD → DISCOVER</code>
+</p>
+
+---
+
+# Technical writing
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" height="30">
+  <img src="https://cdn.simpleicons.org/python" height="30">
+  <img src="https://cdn.simpleicons.org/tensorflow" height="30">
+  <img src="https://cdn.simpleicons.org/linux" height="30">
+  <img src="https://cdn.simpleicons.org/docker" height="30">
+  <img src="https://cdn.simpleicons.org/qiskit" height="30">
+  <img src="https://cdn.simpleicons.org/ethereum" height="30">
+</p>
+
+<p align="center">
+  <b>TECHNICAL COMMUNICATION • RESEARCH • STRATEGY</b>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/arxiv" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="42">
+</p>
+
+<p align="center">
+  <b>TECHNOLOGY</b>
+  <br>
+  <sub>AI / GenAI • Enterprise AI • Cloud • Blockchain • Quantum</sub>
+</p>
+
+<p align="center">
+  <b>SECURITY</b>
+  <br>
+  <sub>Cybersecurity • Cryptography • AI Security • PQC • Trust Systems</sub>
+</p>
+
+<p align="center">
+  <b>STRATEGY</b>
+  <br>
+  <sub>Technology strategy • Digital transformation • Business + technology • Innovation</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/arxiv" width="32">
+  →
+  <img src="https://cdn.simpleicons.org/brain" width="32">
+  →
+  <img src="https://cdn.simpleicons.org/readthedocs" width="32">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="32">
+</p>
+
+<p align="center">
+  <b>RESEARCH → UNDERSTAND → SIMPLIFY → COMMUNICATE → APPLY</b>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/arxiv" width="30">
+  <b>RESEARCH</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/brain" width="30">
+  <b>UNDERSTAND</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/readthedocs" width="30">
+  <b>SIMPLIFY</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="30">
+  <b>COMMUNICATE</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/python" width="30">
+  <b>APPLY</b>
+</p>
+
+<p align="center">
+  <sub>
+    Writing about technology, security, systems, artificial intelligence, emerging computing and the intersection of technology with business.
+  </sub>
+</p>
+
+---
+
+# GitHub statistics
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&hide_border=true" height="180">
@@ -10387,124 +7946,135 @@ emerging computing and the intersection of technology with business.
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ATULPANDEYIITR&utcOffset=5.5" height="170">
 </p>
 
----
-
-### 🟢 Live GitHub activity
+## Live GitHub activity
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ATULPANDEYIITR&hide_border=true&area=true" width="95%">
 </p>
 
 <p align="center">
+  <sub>Contributions • Commits • Repository activity • Coding patterns • Languages</sub>
+</p>
+
+## What the dashboard represents
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  <br>
+  <b>REPOSITORIES</b>
+  <br>
+  <sub>Projects • Experiments • Research</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  <br>
+  <b>STARS</b>
+  <br>
+  <sub>Interest • Visibility</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  <br>
+  <b>STREAK</b>
+  <br>
+  <sub>Contribution consistency</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="32">
+  <br>
+  <b>LANGUAGES</b>
+  <br>
+  <sub>Technology usage</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/githubactions" width="32">
+  <br>
+  <b>CONTRIBUTIONS</b>
+  <br>
+  <sub>Development activity</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/git" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/readthedocs" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/githubactions" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="28">
+</p>
+
+<p align="center">
+  <b>LEARN → BUILD → COMMIT → DOCUMENT → SHARE → IMPROVE → REPEAT</b>
+</p>
+
+<p align="center">
   <sub>
-    Contributions • Commits • Repository activity • Coding patterns • Languages
+    This section is intentionally dynamic. Statistics, contribution patterns, languages and repository metrics change with GitHub activity.
   </sub>
+</p>
+
+## Learning activity map
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="40">
+  <br>
+  <b>PYTHON</b>
+  <br>
+  <sub>Repositories • Commits • Code</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="40">
+  <br>
+  <b>AI / ML</b>
+  <br>
+  <sub>Projects • Models • Experiments</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/kalilinux" width="40">
+  <br>
+  <b>SECURITY</b>
+  <br>
+  <sub>Security • Linux • Research</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/postgresql" width="40">
+  <br>
+  <b>DATA</b>
+  <br>
+  <sub>SQL • Databases • Analytics</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/docker" width="40">
+  <br>
+  <b>CLOUD & SYSTEMS</b>
+  <br>
+  <sub>Containers • Infrastructure • Deployment</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="40">
+  <br>
+  <b>QUANTUM</b>
+  <br>
+  <sub>Circuits • Algorithms • Research</sub>
 </p>
 
 ---
 
-### 📈 What the dashboard represents
-
-<table align="center">
-<tr>
-<td align="center">
-<img src="https://cdn.simpleicons.org/github" width="30"><br>
-<b>Repositories</b><br>
-<sub>Projects, experiments & research</sub>
-</td>
-
-<td align="center">
-⭐<br>
-<b>Stars</b><br>
-<sub>Project interest & visibility</sub>
-</td>
-
-<td align="center">
-🔥<br>
-<b>Streak</b><br>
-<sub>Consistency of contributions</sub>
-</td>
-
-<td align="center">
-💻<br>
-<b>Languages</b><br>
-<sub>Technology usage across repositories</sub>
-</td>
-
-<td align="center">
-📊<br>
-<b>Contributions</b><br>
-<sub>Development activity over time</sub>
-</td>
-</tr>
-</table>
-
----
-
-### ⚡ GitHub activity cycle
-
-<p align="center">
-  <b>LEARN</b> → 
-  <b>BUILD</b> → 
-  <b>COMMIT</b> → 
-  <b>DOCUMENT</b> → 
-  <b>SHARE</b> → 
-  <b>IMPROVE</b> → 
-  <b>REPEAT</b>
-</p>
-
-<p align="center">
-  <sub>
-    This section is intentionally dynamic. As my GitHub activity changes,
-    the statistics, contribution patterns, languages and repository metrics change with it.
-  </sub>
-</p>
-
-### 🧭 Learning activity map
-
-<table align="center">
-<tr>
-
-<td align="center" width="16%">
-<img src="https://cdn.simpleicons.org/python" width="38"><br>
-<b>Python</b><br>
-<sub>Repositories + commits + code</sub>
-</td>
-
-<td align="center" width="16%">
-<img src="https://cdn.simpleicons.org/tensorflow" width="38"><br>
-<b>AI / ML</b><br>
-<sub>Projects + implementation</sub>
-</td>
-
-<td align="center" width="16%">
-<img src="https://cdn.simpleicons.org/kalilinux" width="38"><br>
-<b>Security</b><br>
-<sub>Security-focused activity</sub>
-</td>
-
-<td align="center" width="16%">
-<img src="https://cdn.simpleicons.org/postgresql" width="38"><br>
-<b>Data</b><br>
-<sub>Data + database projects</sub>
-</td>
-
-<td align="center" width="16%">
-<img src="https://cdn.simpleicons.org/docker" width="38"><br>
-<b>Cloud</b><br>
-<sub>Infrastructure + deployment</sub>
-</td>
-
-<td align="center" width="16%">
-<img src="https://cdn.simpleicons.org/qiskit" width="38"><br>
-<b>Quantum</b><br>
-<sub>Emerging technology</sub>
-</td>
-
-</tr>
-</table>
-
-# 📈 Learning progress
+# Learning progress
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&custom_title=Learning%20Activity" width="48%">
@@ -10515,74 +8085,36 @@ emerging computing and the intersection of technology with business.
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ATULPANDEYIITR&hide_border=true&area=true&custom_title=Learning%20Activity%20Over%20Time" width="95%">
 </p>
 
-### 🧭 Learning activity map
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="42">
+</p>
 
-<table align="center">
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/python" width="42"><br>
-<b>Python</b><br>
-<sub>Code • Projects • Commits</sub>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/tensorflow" width="42"><br>
-<b>AI / ML</b><br>
-<sub>Models • Experiments • Projects</sub>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/kalilinux" width="42"><br>
-<b>Security</b><br>
-<sub>Security • Linux • Research</sub>
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/postgresql" width="42"><br>
-<b>Data</b><br>
-<sub>SQL • Databases • Analytics</sub>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/docker" width="42"><br>
-<b>Cloud & Systems</b><br>
-<sub>Containers • Infrastructure • Deployment</sub>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/qiskit" width="42"><br>
-<b>Quantum</b><br>
-<sub>Circuits • Algorithms • Research</sub>
-</td>
-
-</tr>
-</table>
-
-### 🔄 Evidence of progress
+<p align="center">
+  <b>PYTHON • AI / ML • SECURITY • DATA • CLOUD • QUANTUM</b>
+</p>
 
 <p align="center">
   <img src="https://cdn.simpleicons.org/github" width="28">
-  <b>Repositories</b>
-  &nbsp;→&nbsp;
+  →
   <img src="https://cdn.simpleicons.org/git" width="28">
-  <b>Commits</b>
-  &nbsp;→&nbsp;
+  →
   <img src="https://cdn.simpleicons.org/jupyter" width="28">
-  <b>Experiments</b>
-  &nbsp;→&nbsp;
+  →
   <img src="https://cdn.simpleicons.org/readthedocs" width="28">
-  <b>Documentation</b>
-  &nbsp;→&nbsp;
+  →
   <img src="https://cdn.simpleicons.org/githubactions" width="28">
-  <b>Build</b>
-  &nbsp;→&nbsp;
+  →
   <img src="https://cdn.simpleicons.org/github" width="28">
-  <b>Publish</b>
 </p>
 
 <p align="center">
@@ -10591,416 +8123,312 @@ emerging computing and the intersection of technology with business.
 
 <p align="center">
   <sub>
-    Learning progress is reflected through observable GitHub activity,
-    including repositories, commits, languages, experiments and contributions.
+    Learning progress is reflected through observable GitHub activity, including repositories, commits, languages, experiments and contributions.
   </sub>
 </p>
 
 ---
 
-# 🎯 What I am working toward
+# What I am working toward
 
 <p align="center">
   <b>BUILDING TECHNICAL DEPTH ACROSS THE COMPUTING ECOSYSTEM</b>
 </p>
 
-<table align="center">
-<tr>
-
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="42"><br>
-<b>Mathematics</b><br>
-<sub>Logic • Probability • Statistics • Optimization</sub>
-</td>
-
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/cplusplus" width="42"><br>
-<b>Computer Science</b><br>
-<sub>Algorithms • Systems • Computing</sub>
-</td>
-
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/python" width="42"><br>
-<b>Software Engineering</b><br>
-<sub>Programming • Architecture • Development</sub>
-</td>
-
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/tensorflow" width="42"><br>
-<b>Artificial Intelligence</b><br>
-<sub>ML • DL • GenAI • Intelligent Systems</sub>
-</td>
-
-<td align="center" width="20%">
-<img src="https://cdn.simpleicons.org/kalilinux" width="42"><br>
-<b>Cybersecurity</b><br>
-<sub>Security • Cryptography • Trust</sub>
-</td>
-
-</tr>
-</table>
-
 <p align="center">
-  ↓
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
-<img src="https://cdn.simpleicons.org/docker" width="42"><br>
-<b>Cloud & Distributed Systems</b><br>
-<sub>Infrastructure • Containers • Scalability</sub>
-</td>
-
-<td align="center" width="25%">
-<img src="https://cdn.simpleicons.org/qiskit" width="42"><br>
-<b>Emerging Technology</b><br>
-<sub>Quantum • Blockchain • IoT</sub>
-</td>
-
-<td align="center" width="25%">
-<img src="https://cdn.simpleicons.org/github" width="42"><br>
-<b>Real Systems</b><br>
-<sub>Projects • Platforms • Applications</sub>
-</td>
-
-<td align="center" width="25%">
-<img src="https://cdn.simpleicons.org/arxiv" width="42"><br>
-<b>Research & Innovation</b><br>
-<sub>Investigation • Experimentation • Discovery</sub>
-</td>
-
-</tr>
-</table>
-
----
-
-### 🧠 My long-term technical direction
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/wolframmathematica" width="30">
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="44">
+  <br>
   <b>MATHEMATICS</b>
-  →
-  <img src="https://cdn.simpleicons.org/cplusplus" width="30">
+  <br>
+  <sub>Logic • Probability • Statistics • Optimization</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/cplusplus" width="44">
+  <br>
   <b>COMPUTER SCIENCE</b>
-  →
-  <img src="https://cdn.simpleicons.org/python" width="30">
-  <b>ENGINEERING</b>
+  <br>
+  <sub>Algorithms • Systems • Computing</sub>
 </p>
 
 <p align="center">
-  ↓
+  <img src="https://cdn.simpleicons.org/python" width="44">
+  <br>
+  <b>SOFTWARE ENGINEERING</b>
+  <br>
+  <sub>Programming • Architecture • Development</sub>
 </p>
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/tensorflow" width="30">
-  <b>AI</b>
-  →
-  <img src="https://cdn.simpleicons.org/kalilinux" width="30">
-  <b>SECURITY</b>
-  →
-  <img src="https://cdn.simpleicons.org/docker" width="30">
-  <b>CLOUD</b>
-  →
-  <img src="https://cdn.simpleicons.org/qiskit" width="30">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="44">
+  <br>
+  <b>ARTIFICIAL INTELLIGENCE</b>
+  <br>
+  <sub>ML • DL • GenAI • Intelligent systems</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/kalilinux" width="44">
+  <br>
+  <b>CYBERSECURITY</b>
+  <br>
+  <sub>Security • Cryptography • Trust</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/docker" width="44">
+  <br>
+  <b>CLOUD & DISTRIBUTED SYSTEMS</b>
+  <br>
+  <sub>Infrastructure • Containers • Scalability</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="44">
+  <br>
   <b>EMERGING TECHNOLOGY</b>
+  <br>
+  <sub>Quantum • Blockchain • IoT</sub>
 </p>
 
 <p align="center">
-  ↓
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="30">
+  <img src="https://cdn.simpleicons.org/github" width="44">
+  <br>
   <b>REAL SYSTEMS</b>
-  →
-  <img src="https://cdn.simpleicons.org/arxiv" width="30">
-  <b>RESEARCH</b>
-  →
-  <b>🚀 INNOVATION</b>
+  <br>
+  <sub>Projects • Platforms • Applications</sub>
 </p>
 
----
-
-### 🔗 The direction
-
-<table align="center">
-<tr>
-<td align="center"><b>FOUNDATION</b><br><sub>Mathematics + Computer Science</sub></td>
-<td align="center">→</td>
-<td align="center"><b>ENGINEERING</b><br><sub>Software + Systems</sub></td>
-<td align="center">→</td>
-<td align="center"><b>INTELLIGENCE</b><br><sub>AI + Data</sub></td>
-</tr>
-
-<tr>
-<td align="center"><b>TRUST</b><br><sub>Security + Cryptography</sub></td>
-<td align="center">→</td>
-<td align="center"><b>SCALE</b><br><sub>Cloud + Distributed Systems</sub></td>
-<td align="center">→</td>
-<td align="center"><b>EMERGENCE</b><br><sub>Quantum + New Computing</sub></td>
-</tr>
-</table>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/arxiv" width="44">
+  <br>
+  <b>RESEARCH & INNOVATION</b>
+  <br>
+  <sub>Investigation • Experimentation • Discovery</sub>
+</p>
 
 <p align="center">
-  <b>LEARN → CONNECT → BUILD → RESEARCH → EXPERIMENT → INNOVATE</b>
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/cplusplus" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/python" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/tensorflow" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/kalilinux" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/docker" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/qiskit" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/arxiv" width="28">
+</p>
+
+<p align="center">
+  <b>MATHEMATICS → COMPUTER SCIENCE → ENGINEERING → AI → SECURITY → CLOUD → EMERGING TECHNOLOGY → REAL SYSTEMS → RESEARCH</b>
 </p>
 
 <p align="center">
   <sub>
-    My long-term direction is to develop technical depth across interconnected areas of computing,
-    understanding how foundational concepts evolve into secure, intelligent and scalable systems.
+    My long-term direction is to develop technical depth across interconnected areas of computing, understanding how foundational concepts evolve into secure, intelligent and scalable systems.
   </sub>
 </p>
 
-# 🎮 My other pursuits
+---
+
+# My other pursuits
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="34">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/python" width="34">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/jupyter" width="34">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/linux" width="34">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/docker" width="34">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/qiskit" width="34">
+  <img src="https://cdn.simpleicons.org/github" width="38">
+  <img src="https://cdn.simpleicons.org/python" width="38">
+  <img src="https://cdn.simpleicons.org/jupyter" width="38">
+  <img src="https://cdn.simpleicons.org/linux" width="38">
+  <img src="https://cdn.simpleicons.org/docker" width="38">
+  <img src="https://cdn.simpleicons.org/qiskit" width="38">
 </p>
 
 <p align="center">
   <b>WHEN I'M NOT WRITING CODE, I'M PROBABLY TRYING TO UNDERSTAND SOMETHING.</b>
 </p>
 
----
-
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
-
-### 📚 The rabbit hole
-
-<img src="https://cdn.simpleicons.org/arxiv" width="46">
-
-**One question becomes ten.**
-
-Start with a concept.
-
-↓
-
-Find a paper.
-
-↓
-
-Open another tab.
-
-↓
-
-Discover an entirely different field.
-
-↓
-
-Repeat.
-
-</td>
-
-<td align="center" width="25%">
-
-### 🔍 The experiment
-
-<img src="https://cdn.simpleicons.org/jupyter" width="46">
-
-**Theory needs a playground.**
-
-Read it.
-
-↓
-
-Code it.
-
-↓
-
-Break it.
-
-↓
-
-Change it.
-
-↓
-
-See what happens.
-
-</td>
-
-<td align="center" width="25%">
-
-### 🧩 The puzzle
-
-<img src="https://cdn.simpleicons.org/github" width="46">
-
-**Complexity is an invitation.**
-
-Big problem
-
-↓
-
-Small components
-
-↓
-
-Understand each part
-
-↓
-
-Connect everything
-
-↓
-
-Build the system
-
-</td>
-
-<td align="center" width="25%">
-
-### ☕ The debugger
-
-<img src="https://cdn.simpleicons.org/linux" width="46">
-
-**The program says it works.**
-
-The program is lying.
-
-↓
-
-Read the error.
-
-↓
-
-Question everything.
-
-↓
-
-Find the real problem.
-
-↓
-
-Fix it.
-
-↓
-
-Coffee.
-
-</td>
-
-</tr>
-</table>
-
----
-
-## 🎭 Outside the terminal
+<p align="center">
+  <img src="https://cdn.simpleicons.org/arxiv" width="46">
+</p>
 
 <p align="center">
-<pre>
-             ┌──────────────────────────────────────────────────┐
-             │                                                  │
-             │          THE "JUST ONE MORE THING" LOOP          │
-             │                                                  │
-             │                                                  │
-             │       📖 READ                                    │
-             │         │                                        │
-             │         ▼                                        │
-             │       🤔 "WHY DOES THIS WORK?"                   │
-             │         │                                        │
-             │         ▼                                        │
-             │       🔎 INVESTIGATE                             │
-             │         │                                        │
-             │         ▼                                        │
-             │       💻 BUILD                                   │
-             │         │                                        │
-             │         ▼                                        │
-             │       🧪 EXPERIMENT                              │
-             │         │                                        │
-             │         ▼                                        │
-             │       🐛 SOMETHING BREAKS                        │
-             │         │                                        │
-             │         ▼                                        │
-             │       ☕ DEBUG                                   │
-             │         │                                        │
-             │         ▼                                        │
-             │       💡 "OK... NOW I UNDERSTAND."               │
-             │         │                                        │
-             │         └───────────────────↺────────────────────┘
-             │                                                  │
-             └──────────────────────────────────────────────────┘
-</pre>
+  <b>THE RABBIT HOLE</b>
+  <br>
+  <sub>One question becomes ten.</sub>
+  <br>
+  <sub>Concept → Paper → New field → Repeat</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/jupyter" width="46">
+</p>
+
+<p align="center">
+  <b>THE EXPERIMENT</b>
+  <br>
+  <sub>Theory needs a playground.</sub>
+  <br>
+  <sub>Read → Code → Break → Change → Observe</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="46">
+</p>
+
+<p align="center">
+  <b>THE PUZZLE</b>
+  <br>
+  <sub>Complexity is an invitation.</sub>
+  <br>
+  <sub>Problem → Components → Connections → System</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/linux" width="46">
+</p>
+
+<p align="center">
+  <b>THE DEBUGGER</b>
+  <br>
+  <sub>Question everything. Find the real problem. Fix it.</sub>
 </p>
 
 ---
 
-### 🛠️ Things that tend to steal my attention
-
-<table align="center">
-<tr>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/python" width="38"><br>
-<b>Building</b><br>
-<sub>Turning ideas into working systems</sub>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/qiskit" width="38"><br>
-<b>Exploring</b><br>
-<sub>New computing paradigms</sub>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/letsencrypt" width="38"><br>
-<b>Understanding</b><br>
-<sub>Security and trust mechanisms</sub>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/docker" width="38"><br>
-<b>Experimenting</b><br>
-<sub>Systems, infrastructure and scale</sub>
-</td>
-
-<td align="center">
-<img src="https://cdn.simpleicons.org/jupyter" width="38"><br>
-<b>Investigating</b><br>
-<sub>Data, models and experiments</sub>
-</td>
-
-</tr>
-</table>
-
----
-
-## 🧠 A few recurring side quests
+## Outside the terminal
 
 <p align="center">
+  <img src="https://cdn.simpleicons.org/arxiv" width="38">
+  →
+  <img src="https://cdn.simpleicons.org/brain" width="38">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="38">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="38">
+  →
+  <img src="https://cdn.simpleicons.org/linux" width="38">
+  →
+  <img src="https://cdn.simpleicons.org/python" width="38">
+</p>
 
-<table align="center">
-<tr>
-<td align="center">🧩<br><b>First principles</b><br><sub>"What's underneath this?"</sub></td>
-<td align="center">🔬<br><b>Experiments</b><br><sub>"What happens if I change this?"</sub></td>
-<td align="center">🌐<br><b>Connections</b><br><sub>"Where else does this idea apply?"</sub></td>
-</tr>
-
-<tr>
-<td align="center">📚<br><b>Documentation</b><br><sub>"Can I explain this clearly?"</sub></td>
-<td align="center">🛠️<br><b>Projects</b><br><sub>"Can I actually build it?"</sub></td>
-<td align="center">🚀<br><b>Emerging tech</b><br><sub>"What's coming next?"</sub></td>
-</tr>
-</table>
-
+<p align="center">
+  <b>READ</b>
+  →
+  <b>QUESTION</b>
+  →
+  <b>INVESTIGATE</b>
+  →
+  <b>BUILD</b>
+  →
+  <b>EXPERIMENT</b>
+  →
+  <b>DEBUG</b>
+  →
+  <b>UNDERSTAND</b>
 </p>
 
 ---
+
+## Things that tend to steal my attention
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="40">
+  <br>
+  <b>BUILDING</b>
+  <br>
+  <sub>Turning ideas into working systems</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="40">
+  <br>
+  <b>EXPLORING</b>
+  <br>
+  <sub>New computing paradigms</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/letsencrypt" width="40">
+  <br>
+  <b>UNDERSTANDING</b>
+  <br>
+  <sub>Security and trust mechanisms</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/docker" width="40">
+  <br>
+  <b>EXPERIMENTING</b>
+  <br>
+  <sub>Systems, infrastructure and scale</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/jupyter" width="40">
+  <br>
+  <b>INVESTIGATING</b>
+  <br>
+  <sub>Data, models and experiments</sub>
+</p>
+
+---
+
+## A few recurring side quests
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/wolframmathematica" width="34">
+  <br>
+  <b>FIRST PRINCIPLES</b>
+  <br>
+  <sub>What's underneath this?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/jupyter" width="34">
+  <br>
+  <b>EXPERIMENTS</b>
+  <br>
+  <sub>What happens if I change this?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="34">
+  <br>
+  <b>CONNECTIONS</b>
+  <br>
+  <sub>Where else does this idea apply?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/readthedocs" width="34">
+  <br>
+  <b>DOCUMENTATION</b>
+  <br>
+  <sub>Can I explain this clearly?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="34">
+  <br>
+  <b>PROJECTS</b>
+  <br>
+  <sub>Can I actually build it?</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="34">
+  <br>
+  <b>EMERGING TECHNOLOGY</b>
+  <br>
+  <sub>What's coming next?</sub>
+</p>
 
 <p align="center">
   <b>THE SIDE QUEST OFTEN BECOMES THE NEXT PROJECT.</b>
@@ -11018,306 +8446,272 @@ Coffee.
   <img src="https://img.shields.io/badge/CURIOSITY-ACTIVE-111827?style=for-the-badge">
 </p>
 
-# 🧪 My digital laboratory
+---
+
+# My digital laboratory
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/python" width="48">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/jupyter" width="48">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/github" width="48">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/docker" width="48">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/linux" width="48">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/qiskit" width="48">
+  <img src="https://cdn.simpleicons.org/python" width="50">
+  <img src="https://cdn.simpleicons.org/jupyter" width="50">
+  <img src="https://cdn.simpleicons.org/github" width="50">
+  <img src="https://cdn.simpleicons.org/docker" width="50">
+  <img src="https://cdn.simpleicons.org/linux" width="50">
+  <img src="https://cdn.simpleicons.org/qiskit" width="50">
 </p>
 
 <p align="center">
   <b>WHERE IDEAS GET TESTED</b>
 </p>
 
-<table align="center">
-<tr>
-<td width="25%" align="center">
-
-### 🔬 EXPLORE
-
-Research concepts  
-Read documentation  
-Study mechanisms  
-Ask better questions  
-
-</td>
-
-<td width="25%" align="center">
-
-### 💻 BUILD
-
-Write code  
-Create prototypes  
-Connect technologies  
-Turn theory into practice  
-
-</td>
-
-<td width="25%" align="center">
-
-### 🧪 EXPERIMENT
-
-Change assumptions  
-Run experiments  
-Test edge cases  
-Push things until they break  
-
-</td>
-
-<td width="25%" align="center">
-
-### 📊 LEARN
-
-Observe results  
-Analyze failures  
-Document findings  
-Improve the next version  
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<table align="center">
-<tr>
-<td align="center">
-<b>🧠 THINK</b><br>
-<sub>What is happening?</sub>
-</td>
-<td align="center">
-<b>🔍 QUESTION</b><br>
-<sub>Why does it work?</sub>
-</td>
-<td align="center">
-<b>🛠️ EXPERIMENT</b><br>
-<sub>What happens if I change it?</sub>
-</td>
-<td align="center">
-<b>📖 DOCUMENT</b><br>
-<sub>What did I actually learn?</sub>
-</td>
-</tr>
-</table>
-
-<br>
-
 <p align="center">
-  <code>PYTHON</code> · <code>DATA</code> · <code>AI/ML</code> · <code>SECURITY</code> · <code>SYSTEMS</code> · <code>CLOUD</code> · <code>QUANTUM</code>
+  <img src="https://cdn.simpleicons.org/arxiv" width="40">
+  <br>
+  <b>EXPLORE</b>
+  <br>
+  <sub>Research • Documentation • Mechanisms • Questions</sub>
 </p>
 
 <p align="center">
-  <b>Not just a place to write code.</b><br>
-  A place to question assumptions, test ideas, study failures, and turn curiosity into working systems.
+  <img src="https://cdn.simpleicons.org/python" width="40">
+  <br>
+  <b>BUILD</b>
+  <br>
+  <sub>Code • Prototypes • Integrations • Systems</sub>
 </p>
 
 <p align="center">
-  <i>Research → Experiment → Evidence → Understanding → Better Systems</i>
+  <img src="https://cdn.simpleicons.org/jupyter" width="40">
+  <br>
+  <b>EXPERIMENT</b>
+  <br>
+  <sub>Assumptions • Edge cases • Tests • Failures</sub>
 </p>
 
-# 🤝 Collaboration
+<p align="center">
+  <img src="https://cdn.simpleicons.org/readthedocs" width="40">
+  <br>
+  <b>LEARN</b>
+  <br>
+  <sub>Results • Analysis • Findings • Improvement</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/brain" width="34">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="34">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="34">
+  →
+  <img src="https://cdn.simpleicons.org/readthedocs" width="34">
+</p>
+
+<p align="center">
+  <b>THINK → QUESTION → EXPERIMENT → DOCUMENT</b>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="28">
+  <b>PYTHON</b>
+  &nbsp;·&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="28">
+  <b>DATA</b>
+  &nbsp;·&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="28">
+  <b>AI / ML</b>
+  &nbsp;·&nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="28">
+  <b>SECURITY</b>
+  &nbsp;·&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="28">
+  <b>SYSTEMS</b>
+  &nbsp;·&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="28">
+  <b>QUANTUM</b>
+</p>
+
+<p align="center">
+  <b>Not just a place to write code.</b>
+  <br>
+  <sub>
+    A place to question assumptions, test ideas, study failures, and turn curiosity into working systems.
+  </sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/arxiv" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/brain" width="28">
+</p>
+
+<p align="center">
+  <b>RESEARCH → EXPERIMENT → EVIDENCE → UNDERSTANDING → BETTER SYSTEMS</b>
+</p>
+
+# Collaboration
 
 <p align="center">
   <b>BUILDING BETTER THINGS THROUGH SHARED KNOWLEDGE</b>
 </p>
 
-<table align="center">
-<tr>
-<td width="25%" align="center">
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="48">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="48">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="48">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="48">
+</p>
 
-<img src="https://cdn.simpleicons.org/python" width="42">
+<p align="center">
+  <b>SOFTWARE</b>
+  &nbsp;&nbsp;&nbsp;
+  <b>AI & DATA</b>
+  &nbsp;&nbsp;&nbsp;
+  <b>SECURITY</b>
+  &nbsp;&nbsp;&nbsp;
+  <b>SYSTEMS</b>
+</p>
 
-### Software
-
-Python · APIs  
-Algorithms · Open Source  
-Engineering Practices
-
-</td>
-
-<td width="25%" align="center">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="42">
-
-### AI & data
-
-GenAI · LLMs  
-RAG · Agents  
-ML experimentation
-
-</td>
-
-<td width="25%" align="center">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="42">
-
-### Security
-
-Cybersecurity  
-Cryptography  
-AI Security · Threat Modeling
-
-</td>
-
-<td width="25%" align="center">
-
-<img src="https://cdn.simpleicons.org/docker" width="42">
-
-### Systems
-
-Cloud Infrastructure  
-Distributed Systems  
-Deployment & Scale
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<table align="center">
-<tr>
-<td align="center">
-<b>💡 SHARE</b><br>
-<sub>Ideas, knowledge & perspectives</sub>
-</td>
-<td align="center">
-<b>🧠 CHALLENGE</b><br>
-<sub>Question assumptions & approaches</sub>
-</td>
-<td align="center">
-<b>🧪 EXPERIMENT</b><br>
-<sub>Build, test & validate together</sub>
-</td>
-<td align="center">
-<b>🚀 CREATE</b><br>
-<sub>Turn collaboration into real systems</sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  Python · APIs · Algorithms · Open Source
+  <br>
+  GenAI · LLMs · RAG · Agents
+  <br>
+  Cybersecurity · Cryptography · AI Security
+  <br>
+  Cloud · Infrastructure · Distributed Systems
+</p>
 
 <br>
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="32">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/qiskit" width="32">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/arduino" width="32">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/postgresql" width="32">
+  <img src="https://cdn.simpleicons.org/github" width="34">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="34">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/arduino" width="34">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="34">
 </p>
 
 <p align="center">
-  <b>AI × Security × Software × Data × Infrastructure × Emerging Technology</b>
+  <b>SHARE</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>CHALLENGE</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>EXPERIMENT</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>CREATE</b>
 </p>
 
 <p align="center">
-  <i>I value collaboration that combines different perspectives, challenges ideas constructively, and turns shared knowledge into something useful.</i>
+  Ideas · Knowledge · Perspectives
+  <br>
+  Questions · Experiments · Validation
+  <br>
+  Projects · Systems · Applications
 </p>
 
-# 🌱 Open to learning
+<p align="center">
+  <b>AI · SECURITY · SOFTWARE · DATA · INFRASTRUCTURE · EMERGING TECHNOLOGY</b>
+</p>
+
+<p align="center">
+  <i>I value collaboration that combines different perspectives, challenges ideas constructively, and turns shared knowledge into useful systems.</i>
+</p>
+
+<br><br>
+
+# Open to learning
 
 <p align="center">
   <b>CURIOUS BY DEFAULT · OPEN TO PERSPECTIVES · ALWAYS LEARNING</b>
 </p>
 
-<table align="center">
-<tr>
-<td width="50%" valign="top">
+<p align="center">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="44">
+</p>
 
-### 🤖 Artificial intelligence
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="28" align="left">&nbsp;&nbsp;
-GenAI · LLMs · RAG · Agents
-
-<br><br>
-
-Interested in understanding how intelligent systems are designed, evaluated, secured, and applied to real problems.
-
-</td>
-
-<td width="50%" valign="top">
-
-### 🛡️ Security & trust
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="28" align="left">&nbsp;&nbsp;
-Cybersecurity · Cryptography · AI Security
-
-<br><br>
-
-Open to discussions around secure systems, threat models, privacy, cryptographic mechanisms, and responsible engineering.
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### ☁️ Infrastructure & scale
-
-<img src="https://cdn.simpleicons.org/docker" width="28" align="left">&nbsp;&nbsp;
-Cloud · Distributed Systems · DevOps
-
-<br><br>
-
-Interested in learning how systems move from prototypes to reliable, scalable, production environments.
-
-</td>
-
-<td width="50%" valign="top">
-
-### ⚛️ Emerging computing
-
-<img src="https://cdn.simpleicons.org/qiskit" width="28" align="left">&nbsp;&nbsp;
-Quantum · IoT · New Computing Paradigms
-
-<br><br>
-
-Curious about technologies that are still evolving and the engineering questions they may unlock.
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <b>ARTIFICIAL INTELLIGENCE</b>
+  <br>
+  GenAI · LLMs · RAG · Agents
+  <br>
+  <sub>Intelligent systems · Evaluation · Applications</sub>
+</p>
 
 <br>
 
-<table align="center">
-<tr>
-<td align="center">
-<img src="https://cdn.simpleicons.org/github" width="36"><br>
-<b>OPEN SOURCE</b><br>
-<sub>Learn in public · contribute · build</sub>
-</td>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/kalilinux" width="44">
+</p>
 
-<td align="center">
-<img src="https://cdn.simpleicons.org/jupyter" width="36"><br>
-<b>EXPERIMENTATION</b><br>
-<sub>Test ideas · investigate · improve</sub>
-</td>
+<p align="center">
+  <b>SECURITY & TRUST</b>
+  <br>
+  Cybersecurity · Cryptography · AI Security
+  <br>
+  <sub>Threat models · Privacy · Secure engineering</sub>
+</p>
 
-<td align="center">
-<img src="https://cdn.simpleicons.org/python" width="36"><br>
-<b>TECHNICAL LEARNING</b><br>
-<sub>Code · understand · apply</sub>
-</td>
+<br>
 
-<td align="center">
-<img src="https://cdn.simpleicons.org/arxiv" width="36"><br>
-<b>RESEARCH</b><br>
-<sub>Read · question · explore</sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/docker" width="44">
+</p>
+
+<p align="center">
+  <b>INFRASTRUCTURE & SCALE</b>
+  <br>
+  Cloud · Distributed Systems · DevOps
+  <br>
+  <sub>Deployment · Reliability · Production systems</sub>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="44">
+</p>
+
+<p align="center">
+  <b>EMERGING COMPUTING</b>
+  <br>
+  Quantum · IoT · New Computing Paradigms
+  <br>
+  <sub>Exploration · Experimentation · Future systems</sub>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="38">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/jupyter" width="38">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python" width="38">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/arxiv" width="38">
+</p>
+
+<p align="center">
+  <b>OPEN SOURCE</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>EXPERIMENTATION</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>TECHNICAL LEARNING</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>RESEARCH</b>
+</p>
+
+<p align="center">
+  Learn in public · Test ideas · Code · Investigate · Document
+</p>
 
 <br>
 
@@ -11326,101 +8720,82 @@ Curious about technologies that are still evolving and the engineering questions
 </p>
 
 <p align="center">
-  <code>CURIOUS QUESTIONS</code>
-  &nbsp; <code>HONEST DISCUSSION</code>
-  &nbsp; <code>KNOWLEDGE SHARING</code>
-  &nbsp; <code>CONSTRUCTIVE FEEDBACK</code>
-  &nbsp; <code>COLLABORATIVE BUILDING</code>
+  CURIOUS QUESTIONS
+  <br>
+  HONEST DISCUSSION
+  <br>
+  KNOWLEDGE SHARING
+  <br>
+  CONSTRUCTIVE FEEDBACK
+  <br>
+  COLLABORATIVE BUILDING
 </p>
 
-<br>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="32">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/jupyter" width="32">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/arxiv" width="32">
+</p>
 
-<table align="center">
-<tr>
-<td align="center">🧠 <b>Teach me something</b></td>
-<td align="center">🔍 <b>Challenge my thinking</b></td>
-<td align="center">💻 <b>Build something together</b></td>
-<td align="center">📚 <b>Share what you know</b></td>
-</tr>
-</table>
+<p align="center">
+  <b>TEACH · CHALLENGE · BUILD · SHARE</b>
+</p>
 
 <p align="center">
   <i>I am open to conversations with people who are curious, technical, experimental, and willing to learn from each other.</i>
 </p>
 
-# 📚 Knowledge → Practice → Projects
+<br><br>
+
+# Knowledge to practice to projects
 
 <p align="center">
   <b>FROM LEARNING CONCEPTS TO BUILDING REAL SYSTEMS</b>
 </p>
 
-<table align="center">
-<tr>
-<td align="center" width="180">
+<p align="center">
+  <img src="https://cdn.simpleicons.org/jupyter" width="42">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python" width="42">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="42">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="42">
+</p>
 
-### 📚
-<b>KNOWLEDGE</b><br>
-<sub>Concepts · Theory · Foundations</sub>
+<p align="center">
+  <b>KNOWLEDGE</b>
+  &nbsp; · &nbsp;
+  <b>UNDERSTANDING</b>
+  &nbsp; · &nbsp;
+  <b>PRACTICE</b>
+  &nbsp; · &nbsp;
+  <b>EXPERIMENT</b>
+</p>
 
-</td>
-<td align="center" width="180">
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="42">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="42">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="42">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="42">
+</p>
 
-### 🧠
-<b>UNDERSTANDING</b><br>
-<sub>Mechanisms · Principles · Context</sub>
-
-</td>
-<td align="center" width="180">
-
-### 💻
-<b>PRACTICE</b><br>
-<sub>Code · Problems · Exercises</sub>
-
-</td>
-<td align="center" width="180">
-
-### 🧪
-<b>EXPERIMENT</b><br>
-<sub>Test · Modify · Investigate</sub>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<table align="center">
-<tr>
-<td align="center" width="180">
-
-### 🏗️
-<b>BUILD</b><br>
-<sub>Prototype · Implement · Integrate</sub>
-
-</td>
-<td align="center" width="180">
-
-### 🔬
-<b>RESEARCH</b><br>
-<sub>Explore · Compare · Question</sub>
-
-</td>
-<td align="center" width="180">
-
-### 📖
-<b>DOCUMENT</b><br>
-<sub>Record · Explain · Share</sub>
-
-</td>
-<td align="center" width="180">
-
-### 🚀
-<b>PROJECTS</b><br>
-<sub>Create · Deploy · Apply</sub>
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <b>BUILD</b>
+  &nbsp; · &nbsp;
+  <b>RESEARCH</b>
+  &nbsp; · &nbsp;
+  <b>DOCUMENT</b>
+  &nbsp; · &nbsp;
+  <b>PROJECTS</b>
+</p>
 
 <br>
 
@@ -11441,735 +8816,617 @@ Curious about technologies that are still evolving and the engineering questions
 </p>
 
 <p align="center">
-  <code>LEARN</code>
-  &nbsp;→&nbsp;
-  <code>UNDERSTAND</code>
-  &nbsp;→&nbsp;
-  <code>PRACTICE</code>
-  &nbsp;→&nbsp;
-  <code>EXPERIMENT</code>
-  &nbsp;→&nbsp;
-  <code>BUILD</code>
-  &nbsp;→&nbsp;
-  <code>DOCUMENT</code>
-  &nbsp;→&nbsp;
-  <code>CREATE</code>
+  <b>LEARN</b>
+  &nbsp; · &nbsp;
+  <b>UNDERSTAND</b>
+  &nbsp; · &nbsp;
+  <b>PRACTICE</b>
+  &nbsp; · &nbsp;
+  <b>EXPERIMENT</b>
+  &nbsp; · &nbsp;
+  <b>BUILD</b>
+  &nbsp; · &nbsp;
+  <b>DOCUMENT</b>
+  &nbsp; · &nbsp;
+  <b>CREATE</b>
 </p>
 
-<table align="center">
-<tr>
-<td align="center">
-<b>FOUNDATIONS</b><br>
-<sub>Mathematics · Computer Science · Algorithms</sub>
-</td>
-<td align="center">
-<b>ENGINEERING</b><br>
-<sub>Software · Data · Systems · Cloud</sub>
-</td>
-<td align="center">
-<b>INTELLIGENCE</b><br>
-<sub>AI · ML · Intelligent Systems</sub>
-</td>
-<td align="center">
-<b>EMERGING</b><br>
-<sub>Security · Quantum · New Technologies</sub>
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="36">
+</p>
+
+<p align="center">
+  <b>FOUNDATIONS</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>ENGINEERING</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>INTELLIGENCE</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>EMERGING</b>
+</p>
+
+<p align="center">
+  Mathematics · Computer Science · Algorithms
+  <br>
+  Software · Data · Systems · Cloud
+  <br>
+  AI · ML · Intelligent Systems
+  <br>
+  Security · Quantum · Emerging Technologies
+</p>
 
 <p align="center">
   <i>Knowledge becomes valuable when it can be understood, practiced, tested, built, and applied to meaningful problems.</i>
 </p>
 
-# 🌐 My technology ecosystem
+<br><br>
+
+# My technology ecosystem
 
 <p align="center">
   <b>ONE ECOSYSTEM · MANY DISCIPLINES · CONNECTED THINKING</b>
 </p>
 
-<table align="center">
-<tr>
-<td align="center" width="20%">
-
-### 🧮
-
-<b>MATHEMATICS</b>
-
-<sub>
-Logic<br>
-Probability<br>
-Statistics<br>
-Optimization
-</sub>
-
-</td>
-
-<td align="center" width="20%">
-
-### ⚙️
-
-<b>COMPUTING</b>
-
-<sub>
-Algorithms<br>
-Data Structures<br>
-Computer Science<br>
-Systems
-</sub>
-
-</td>
-
-<td align="center" width="20%">
-
-### 💻
-
-<b>SOFTWARE</b>
-
-<sub>
-Python<br>
-APIs<br>
-Databases<br>
-Engineering
-</sub>
-
-</td>
-
-<td align="center" width="20%">
-
-### ☁️
-
-<b>INFRASTRUCTURE</b>
-
-<sub>
-Linux<br>
-Cloud<br>
-Containers<br>
-Distributed Systems
-</sub>
-
-</td>
-
-<td align="center" width="20%">
-
-### 🚀
-
-<b>APPLICATION</b>
-
-<sub>
-Products<br>
-Platforms<br>
-Automation<br>
-Real Systems
-</sub>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<table align="center">
-<tr>
-<td align="center" colspan="2">
-
-## 🔗 Core connections
-
-</td>
-</tr>
-
-<tr>
-<td align="center" width="50%">
-
-<img src="https://cdn.simpleicons.org/python" width="34">
-
-**COMPUTATION**
-
-Python · Algorithms · Data  
-↓  
-Software Engineering  
-↓  
-Systems & Applications
-
-</td>
-
-<td align="center" width="50%">
-
-<img src="https://cdn.simpleicons.org/postgresql" width="34">
-
-**DATA**
-
-Databases · Statistics · Analytics  
-↓  
-Machine Learning  
-↓  
-Intelligent Systems
-
-</td>
-</tr>
-
-<tr>
-<td align="center" width="50%">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="34">
-
-**TRUST**
-
-Cryptography · Cybersecurity  
-↓  
-AI Security · Privacy  
-↓  
-Secure Systems
-
-</td>
-
-<td align="center" width="50%">
-
-<img src="https://cdn.simpleicons.org/docker" width="34">
-
-**SCALE**
-
-Cloud · Containers · Networks  
-↓  
-Distributed Systems  
-↓  
-Reliable Infrastructure
-
-</td>
-</tr>
-
-<tr>
-<td align="center" width="50%">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="34">
-
-**EMERGING COMPUTING**
-
-Quantum Computing · PQC  
-↓  
-New Algorithms  
-↓  
-Future Computing Systems
-
-</td>
-
-<td align="center" width="50%">
-
-<img src="https://cdn.simpleicons.org/github" width="34">
-
-**ENGINEERING**
-
-Code · Experiments · Research  
-↓  
-Projects · Open Source  
-↓  
-Real-World Applications
-
-</td>
-</tr>
-</table>
-
-<br>
-
 <p align="center">
-  <b>THE ECOSYSTEM IS CONNECTED</b>
+  <img src="https://cdn.simpleicons.org/python" width="46">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/cplusplus" width="46">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="46">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/linux" width="46">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="46">
 </p>
 
 <p align="center">
-  <code>MATHEMATICS</code>
-  ×
-  <code>COMPUTING</code>
-  ×
-  <code>SOFTWARE</code>
-  ×
-  <code>DATA</code>
-  ×
-  <code>SECURITY</code>
-  ×
-  <code>CLOUD</code>
-  ×
-  <code>AI</code>
-  ×
-  <code>EMERGING TECHNOLOGY</code>
+  <b>MATHEMATICS</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>COMPUTING</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>SOFTWARE</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>INFRASTRUCTURE</b>
+</p>
+
+<p align="center">
+  Logic · Probability · Statistics · Optimization
+  <br>
+  Algorithms · Data Structures · Computer Science · Systems
+  <br>
+  Python · APIs · Databases · Engineering
+  <br>
+  Linux · Cloud · Containers · Distributed Systems
 </p>
 
 <br>
 
-<table align="center">
-<tr>
-<td align="center">
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="38">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="38">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="38">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="38">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="38">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="38">
+</p>
 
-<b>FOUNDATION</b><br>
-<sub>Mathematics · Logic · Computer Science</sub>
+<p align="center">
+  <b>COMPUTATION</b>
+  <br>
+  Python · Algorithms · Data · Software Engineering
+</p>
 
-</td>
-<td align="center">+</td>
-<td align="center">
+<p align="center">
+  <b>DATA</b>
+  <br>
+  Databases · Statistics · Analytics · Machine Learning
+</p>
 
-<b>ENGINEERING</b><br>
-<sub>Software · Data · Infrastructure</sub>
+<p align="center">
+  <b>TRUST</b>
+  <br>
+  Cryptography · Cybersecurity · AI Security · Privacy
+</p>
 
-</td>
-<td align="center">+</td>
-<td align="center">
+<p align="center">
+  <b>SCALE</b>
+  <br>
+  Cloud · Containers · Networks · Distributed Systems
+</p>
 
-<b>INTELLIGENCE</b><br>
-<sub>AI · ML · Analytics</sub>
+<p align="center">
+  <b>EMERGING COMPUTING</b>
+  <br>
+  Quantum Computing · PQC · New Algorithms
+</p>
 
-</td>
-<td align="center">+</td>
-<td align="center">
+<p align="center">
+  <b>ENGINEERING</b>
+  <br>
+  Code · Experiments · Research · Open Source
+</p>
 
-<b>TRUST</b><br>
-<sub>Security · Cryptography · Privacy</sub>
+<br>
 
-</td>
-<td align="center">+</td>
-<td align="center">
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="32">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="32">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="32">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="32">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="32">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="32">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="32">
+</p>
 
-<b>EMERGENCE</b><br>
-<sub>Quantum · PQC · New Systems</sub>
+<p align="center">
+  <b>MATHEMATICS</b>
+  &nbsp; · &nbsp;
+  <b>COMPUTING</b>
+  &nbsp; · &nbsp;
+  <b>SOFTWARE</b>
+  &nbsp; · &nbsp;
+  <b>DATA</b>
+  &nbsp; · &nbsp;
+  <b>SECURITY</b>
+  &nbsp; · &nbsp;
+  <b>CLOUD</b>
+  &nbsp; · &nbsp;
+  <b>AI</b>
+  &nbsp; · &nbsp;
+  <b>EMERGING TECHNOLOGY</b>
+</p>
 
-</td>
-</tr>
-</table>
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="36">
+</p>
+
+<p align="center">
+  <b>FOUNDATION</b>
+  <br>
+  Mathematics · Logic · Computer Science
+  <br><br>
+  <b>ENGINEERING</b>
+  <br>
+  Software · Data · Infrastructure
+  <br><br>
+  <b>INTELLIGENCE</b>
+  <br>
+  AI · ML · Analytics
+  <br><br>
+  <b>TRUST</b>
+  <br>
+  Security · Cryptography · Privacy
+  <br><br>
+  <b>EMERGENCE</b>
+  <br>
+  Quantum · PQC · New Systems
+</p>
 
 <p align="center">
   <i>I see technology as an interconnected ecosystem where mathematics supports computing, computing enables engineering, engineering creates systems, and different disciplines combine to solve real problems.</i>
 </p>
 
-# 🔭 Looking ahead
+<br><br>
+
+# Looking ahead
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="40">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="40">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/ethereum" width="40">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="40">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="40">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="40">
+</p>
+
+<p align="center">
+  <b>FUTURE SYSTEMS · INTELLIGENCE · SECURITY · SCALE</b>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="48">
+</p>
+
+<p align="center">
+  <b>AI × CYBERSECURITY</b>
+  <br>
+  AI Security · Adversarial ML · Model Security · Trusted AI
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="48">
+</p>
+
+<p align="center">
+  <b>CRYPTO × QUANTUM</b>
+  <br>
+  Post-Quantum Cryptography · Quantum Algorithms
+  <br>
+  Cryptographic Resilience · Future Security
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/docker" width="48">
+</p>
+
+<p align="center">
+  <b>AI × CLOUD</b>
+  <br>
+  AI Infrastructure · Distributed Computing
+  <br>
+  Scalable Systems · Production AI
+</p>
+
+<br>
 
 <p align="center">
   <img src="https://cdn.simpleicons.org/tensorflow" width="34">
   &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/openai" width="34">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="34">
+  &nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/kalilinux" width="34">
   &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="34">
+  &nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/ethereum" width="34">
+</p>
+
+<p align="center">
+  <b>AI / ML</b>
+  &nbsp; · &nbsp;
+  <b>LLMs</b>
+  &nbsp; · &nbsp;
+  <b>CLOUD</b>
+  &nbsp; · &nbsp;
+  <b>SECURITY</b>
+  &nbsp; · &nbsp;
+  <b>QUANTUM</b>
+  &nbsp; · &nbsp;
+  <b>BLOCKCHAIN</b>
+</p>
+
+<p align="center">
+  Intelligence · Foundation Models · AI Infrastructure
+  <br>
+  AI Security · Quantum Computing · Decentralized Systems
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/openai" width="38">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="38">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="38">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/letsencrypt" width="38">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="38">
+</p>
+
+<p align="center">
+  <b>LLMs</b>
+  &nbsp; · &nbsp;
+  <b>RAG</b>
+  &nbsp; · &nbsp;
+  <b>AI AGENTS</b>
+  &nbsp; · &nbsp;
+  <b>AUTOMATION</b>
+  &nbsp; · &nbsp;
+  <b>ENTERPRISE SYSTEMS</b>
+</p>
+
+<p align="center">
+  <b>MODELS</b>
+  &nbsp; · &nbsp;
+  <b>EVALUATION</b>
+  &nbsp; · &nbsp;
+  <b>SECURITY</b>
+  &nbsp; · &nbsp;
+  <b>DEPLOYMENT</b>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="38">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/letsencrypt" width="38">
+</p>
+
+<p align="center">
+  <b>QUANTUM COMPUTING</b>
+  &nbsp; · &nbsp;
+  <b>CRYPTOGRAPHY</b>
+</p>
+
+<p align="center">
+  <b>PQC</b>
+  &nbsp; · &nbsp;
+  <b>AI SECURITY</b>
+  &nbsp; · &nbsp;
+  <b>SECURE INFRASTRUCTURE</b>
+  &nbsp; · &nbsp;
+  <b>TRUSTED SYSTEMS</b>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="34">
   &nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/qiskit" width="34">
   &nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/docker" width="34">
   &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/openai" width="34">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/ethereum" width="34">
+</p>
+
+<p align="center">
+  <b>AI + CYBERSECURITY</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>QUANTUM + SECURITY</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>AI + CLOUD</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>LLMs + ENTERPRISE</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>BLOCKCHAIN + CRYPTO</b>
+</p>
+
+<br><br>
+
+# My guiding principle
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/jupyter" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="36">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="36">
+</p>
+
+<p align="center">
+  <b>FUNDAMENTALS</b>
+  &nbsp; · &nbsp;
+  <b>BUILD</b>
+  &nbsp; · &nbsp;
+  <b>QUESTION</b>
+  &nbsp; · &nbsp;
+  <b>EXPERIMENT</b>
+  &nbsp; · &nbsp;
+  <b>DOCUMENT</b>
+  &nbsp; · &nbsp;
+  <b>EXPLORE</b>
+</p>
+
+<br>
+
+<p align="center">
+  <b>UNDERSTAND</b>
+  <br>
+  Foundations first
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="34">
+</p>
+
+<p align="center">
+  <b>BUILD</b>
+  <br>
+  Turn concepts into systems
+</p>
+
+<p align="center">
   <img src="https://cdn.simpleicons.org/github" width="34">
 </p>
 
 <p align="center">
-  <b>FUTURE SYSTEMS • INTELLIGENCE • SECURITY • SCALE</b>
-</p>
-
-<table align="center">
-<tr>
-<td width="33%" align="center">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="42">
-
-### AI × Cybersecurity
-
-**AI Security**  
-Adversarial ML  
-Model Security  
-Trusted AI Systems
-
-</td>
-
-<td width="33%" align="center">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="42">
-
-### Crypto × Quantum
-
-**Post-Quantum Cryptography**  
-Quantum Algorithms  
-Cryptographic Resilience  
-Future Security
-
-</td>
-
-<td width="33%" align="center">
-
-<img src="https://cdn.simpleicons.org/docker" width="42">
-
-### AI × Cloud
-
-**AI Infrastructure**  
-Distributed Computing  
-Scalable Systems  
-Production AI
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-  <b>◈ FUTURE TECHNOLOGY STACK ◈</b>
-</p>
-
-<table align="center">
-<tr>
-<td align="center" width="16%">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="36"><br>
-<b>AI / ML</b><br>
-<sub>Intelligence</sub>
-
-</td>
-
-<td align="center" width="16%">
-
-<img src="https://cdn.simpleicons.org/openai" width="36"><br>
-<b>LLMs</b><br>
-<sub>Foundation Models</sub>
-
-</td>
-
-<td align="center" width="16%">
-
-<img src="https://cdn.simpleicons.org/docker" width="36"><br>
-<b>CLOUD</b><br>
-<sub>AI Infrastructure</sub>
-
-</td>
-
-<td align="center" width="16%">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="36"><br>
-<b>SECURITY</b><br>
-<sub>AI Security</sub>
-
-</td>
-
-<td align="center" width="16%">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="36"><br>
-<b>QUANTUM</b><br>
-<sub>Quantum Computing</sub>
-
-</td>
-
-<td align="center" width="16%">
-
-<img src="https://cdn.simpleicons.org/ethereum" width="36"><br>
-<b>BLOCKCHAIN</b><br>
-<sub>Decentralized Systems</sub>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<table align="center">
-<tr>
-<td align="center" width="50%">
-
-## 🧠 Intelligent systems
-
-<img src="https://cdn.simpleicons.org/openai" width="30">
-
-**LLMs**
-
-&nbsp; → &nbsp;
-
-**RAG**
-
-&nbsp; → &nbsp;
-
-**AI Agents**
-
-&nbsp; → &nbsp;
-
-**Automation**
-
-&nbsp; → &nbsp;
-
-**Enterprise Systems**
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="30">
-
-**Models** → **Evaluation** → **Security** → **Deployment**
-
-</td>
-
-<td align="center" width="50%">
-
-## 🔐 Future security
-
-<img src="https://cdn.simpleicons.org/qiskit" width="30">
-
-**Quantum Computing**
-
-&nbsp; × &nbsp;
-
-<img src="https://cdn.simpleicons.org/letsencrypt" width="30">
-
-**Cryptography**
-
-<br><br>
-
-**PQC** → **AI Security** → **Secure Infrastructure** → **Trusted Systems**
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-  <b>◈ EXPLORATION TARGETS ◈</b>
-</p>
-
-<table align="center">
-<tr>
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="30"><br>
-AI + Cybersecurity
-
-</td>
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="30"><br>
-Quantum + Security
-
-</td>
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/docker" width="30"><br>
-AI + Cloud
-
-</td>
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/openai" width="30"><br>
-LLMs + Enterprise
-
-</td>
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/ethereum" width="30"><br>
-Blockchain + Crypto
-
-</td>
-</tr>
-</table>
-
-<br>
-
-# 📌 My guiding principle
-
-<p align="center">
-  <b>FUNDAMENTALS</b>
-  &nbsp; ◈ &nbsp;
-  <b>BUILD</b>
-  &nbsp; ◈ &nbsp;
   <b>QUESTION</b>
-  &nbsp; ◈ &nbsp;
-  <b>EXPERIMENT</b>
-  &nbsp; ◈ &nbsp;
-  <b>DOCUMENT</b>
-  &nbsp; ◈ &nbsp;
-  <b>EXPLORE</b>
+  <br>
+  Challenge assumptions
 </p>
 
-<table align="center">
-<tr>
-<td align="center" width="16%">
+<p align="center">
+  <img src="https://cdn.simpleicons.org/jupyter" width="34">
+</p>
 
-<b>01</b><br>
-UNDERSTAND<br>
-<sub>Foundations first</sub>
+<p align="center">
+  <b>EXPERIMENT</b>
+  <br>
+  Test possibilities
+</p>
 
-</td>
-<td align="center">◆</td>
-<td align="center" width="16%">
+<p align="center">
+  <img src="https://cdn.simpleicons.org/docker" width="34">
+</p>
 
-<b>02</b><br>
-BUILD<br>
-<sub>Turn concepts into systems</sub>
-
-</td>
-<td align="center">◆</td>
-<td align="center" width="16%">
-
-<b>03</b><br>
-QUESTION<br>
-<sub>Challenge assumptions</sub>
-
-</td>
-<td align="center">◆</td>
-<td align="center" width="16%">
-
-<b>04</b><br>
-EXPERIMENT<br>
-<sub>Test possibilities</sub>
-
-</td>
-<td align="center">◆</td>
-<td align="center" width="16%">
-
-<b>05</b><br>
-DOCUMENT<br>
-<sub>Make knowledge reusable</sub>
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <b>DOCUMENT</b>
+  <br>
+  Make knowledge reusable
+</p>
 
 <br>
 
 <p align="center">
-  <b>╔════════════════════════════════════════════════════════════╗</b><br>
-  <b>UNDERSTAND THE FUNDAMENTALS</b><br>
-  <b>BUILD WITH THEM</b><br>
-  <b>QUESTION HOW THEY WORK</b><br>
-  <b>EXPERIMENT WITH WHAT THEY CAN BECOME</b><br>
-  <b>DOCUMENT WHAT IS LEARNED</b><br>
-  <b>KEEP EXPLORING WHAT COMES NEXT</b><br>
-  <b>╚════════════════════════════════════════════════════════════╝</b>
+  <img src="https://cdn.simpleicons.org/python" width="32">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/jupyter" width="32">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="32">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="32">
+</p>
+
+<p align="center">
+  <b>UNDERSTAND THE FUNDAMENTALS</b>
+  <br>
+  <b>BUILD WITH THEM</b>
+  <br>
+  <b>QUESTION HOW THEY WORK</b>
+  <br>
+  <b>EXPERIMENT WITH WHAT THEY CAN BECOME</b>
+  <br>
+  <b>DOCUMENT WHAT IS LEARNED</b>
+  <br>
+  <b>KEEP EXPLORING WHAT COMES NEXT</b>
 </p>
 
 <p align="center">
   <i>Building toward intelligent, secure, scalable and emerging technology systems.</i>
 </p>
 
-# 📫 Connect with me
+<br><br>
+
+# Connect with me
 
 <p align="center">
-  <b>LET'S CONNECT • EXCHANGE IDEAS • BUILD SOMETHING MEANINGFUL</b>
+  <b>LET'S CONNECT · EXCHANGE IDEAS · BUILD SOMETHING MEANINGFUL</b>
 </p>
 
 <br>
 
-<table align="center">
-<tr>
-
-<td align="center" width="33%">
-
-<a href="mailto:atulpandey.iitr@gmail.com">
-  <img src="https://cdn.simpleicons.org/gmail" width="55">
-</a>
-
-<br><br>
-
-<b>EMAIL</b>
-
-<br>
-
-<a href="mailto:atulpandey.iitr@gmail.com">
-  atulpandey.iitr@gmail.com
-</a>
-
-</td>
-
-<td align="center" width="33%">
-
-<a href="https://linkedin.com/in/atul---pandey">
-  <img src="https://cdn.simpleicons.org/linkedin" width="55">
-</a>
-
-<br><br>
-
-<b>LINKEDIN</b>
-
-<br>
-
-<a href="https://linkedin.com/in/atul---pandey">
-  Professional Network
-</a>
-
-</td>
-
-<td align="center" width="33%">
-
-<a href="https://github.com/ATULPANDEYIITR">
-  <img src="https://cdn.simpleicons.org/github" width="55">
-</a>
-
-<br><br>
-
-<b>GITHUB</b>
-
-<br>
-
-<a href="https://github.com/ATULPANDEYIITR">
-  Projects & Experiments
-</a>
-
-</td>
-
-</tr>
-</table>
-
-<br>
+<p align="center">
+  <a href="mailto:atulpandey.iitr@gmail.com">
+    <img src="https://cdn.simpleicons.org/gmail" width="58">
+  </a>
+</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/OPEN_TO-TECHNICAL_CONVERSATIONS-00D9FF?style=for-the-badge">
-  <img src="https://img.shields.io/badge/OPEN_TO-COLLABORATION-0077B5?style=for-the-badge">
-  <img src="https://img.shields.io/badge/OPEN_TO-NEW_IDEAS-6C63FF?style=for-the-badge">
+  <b>EMAIL</b>
+  <br>
+  <a href="mailto:atulpandey.iitr@gmail.com">atulpandey.iitr@gmail.com</a>
 </p>
 
 <br>
 
-<table align="center">
-<tr>
-<td align="center">
+<p align="center">
+  <a href="https://linkedin.com/in/atul---pandey">
+    <img src="https://cdn.simpleicons.org/linkedin" width="58">
+  </a>
+</p>
 
-<img src="https://cdn.simpleicons.org/github" width="32">
-
-<b>Explore my work</b>
-
-</td>
-
-<td align="center">◈</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/linkedin" width="32">
-
-<b>Connect professionally</b>
-
-</td>
-
-<td align="center">◈</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/gmail" width="32">
-
-<b>Start a conversation</b>
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <b>LINKEDIN</b>
+  <br>
+  <a href="https://linkedin.com/in/atul---pandey">Professional Network</a>
+</p>
 
 <br>
 
-# ⭐ Thanks for Visiting
+<p align="center">
+  <a href="https://github.com/ATULPANDEYIITR">
+    <img src="https://cdn.simpleicons.org/github" width="58">
+  </a>
+</p>
 
 <p align="center">
+  <b>GITHUB</b>
+  <br>
+  <a href="https://github.com/ATULPANDEYIITR">Projects & Experiments</a>
+</p>
 
-<b>THANK YOU FOR STOPPING BY</b>
+<br>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/linkedin" width="32">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/gmail" width="32">
+</p>
+
+<p align="center">
+  <b>EXPLORE MY WORK</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>CONNECT PROFESSIONALLY</b>
+  &nbsp;&nbsp; · &nbsp;&nbsp;
+  <b>START A CONVERSATION</b>
+</p>
 
 <br><br>
 
-<img src="https://cdn.simpleicons.org/github" width="38">
-&nbsp;&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/linkedin" width="38">
-&nbsp;&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/gmail" width="38">
+# Thanks for visiting
 
-<br><br>
+<p align="center">
+  <b>THANK YOU FOR STOPPING BY</b>
+</p>
 
-<i>Ideas are better when shared.<br>
-Projects are better when built together.<br>
-Knowledge is better when it keeps moving.</i>
+<br>
 
-<br><br>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="42">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/linkedin" width="42">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/gmail" width="42">
+</p>
 
-<b>SEE YOU AROUND THE TECH ECOSYSTEM</b>
+<br>
 
+<p align="center">
+  <i>
+    Ideas are better when shared.
+    <br>
+    Projects are better when built together.
+    <br>
+    Knowledge is better when it keeps moving.
+  </i>
+</p>
+
+<br>
+
+<p align="center">
+  <b>SEE YOU AROUND THE TECH ECOSYSTEM</b>
 </p>
