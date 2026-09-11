@@ -156,597 +156,331 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
 </p>
 
-# ⚡ MY TECHNICAL LEARNING UNIVERSE
+<!-- =========================
+     MY TECHNICAL UNIVERSE
+     ========================= -->
+
+<h2 align="center">
+  <span style="color:#39FF14;">⚡ MY TECHNICAL UNIVERSE ⚡</span>
+</h2>
 
 <p align="center">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="48">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/c/7A00FF" width="48">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/python/FF00E5" width="48">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/leetcode/00F0FF" width="48">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/postgresql/7A00FF" width="48">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-<img src="https://cdn.simpleicons.org/tensorflow/FF00E5" width="48">
-
+  <span style="color:#39FF14;">
+    LEARN → BUILD → EXPERIMENT → CONNECT
+  </span>
 </p>
 
 <p align="center">
-<sub>◈ THINK → COMPUTE → BUILD → OPTIMIZE → CONNECT → INTELLIGENCE ◈</sub>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=39FF14&height=3&section=header">
 </p>
+
+
+<!-- =========================
+     CORE
+     ========================= -->
+
+<table align="center" width="100%">
+<tr>
+
+<td align="center" width="100%">
+
+<img src="https://cdn.simpleicons.org/github/39FF14" width="110">
+
+<br>
+
+<h2>
+  <span style="color:#39FF14;">GITHUB • ENGINEERING CORE</span>
+</h2>
+
+<p>
+  <span style="color:#39FF14;">
+    CODE • OPEN SOURCE • COLLABORATION • SYSTEMS
+  </span>
+</p>
+
+</td>
+
+</tr>
+</table>
+
+
+<!-- =========================
+     PROGRAMMING MAP
+     ========================= -->
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3">
+  <span style="color:#39FF14;">━━━━━━━━━━ PROGRAMMING ━━━━━━━━━━</span>
 </p>
 
-
-<!-- ====================================================== -->
-<!--                     CENTRAL CORE                       -->
-<!-- ====================================================== -->
-
-<table width="100%" align="center">
-
+<table align="center" width="100%">
 <tr>
 
-<td align="center" colspan="5">
+<td align="center" width="33%">
 
-<img src="https://cdn.simpleicons.org/github/00F0FF" width="70">
+<img src="https://cdn.simpleicons.org/python/39FF14" width="100">
 
-<br>
+<h3>
+  <span style="color:#39FF14;">PYTHON</span>
+</h3>
 
-### ◈ ENGINEERING CORE ◈
+<small>
+  <span style="color:#39FF14;">AI • DATA • AUTOMATION</span>
+</small>
 
-<sub>
-MATHEMATICS + COMPUTER SCIENCE + PROGRAMMING
-</sub>
+</td>
 
-<br><br>
+<td align="center" width="33%">
 
-<b>THINK → DESIGN → IMPLEMENT</b>
+<img src="https://cdn.simpleicons.org/cplusplus/39FF14" width="100">
+
+<h3>
+  <span style="color:#39FF14;">C++</span>
+</h3>
+
+<small>
+  <span style="color:#39FF14;">PERFORMANCE • SYSTEMS</span>
+</small>
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/c/39FF14" width="100">
+
+<h3>
+  <span style="color:#39FF14;">C</span>
+</h3>
+
+<small>
+  <span style="color:#39FF14;">LOW LEVEL • MEMORY</span>
+</small>
 
 </td>
 
 </tr>
-
-<tr>
-
-<td align="center" colspan="5">
-
-<sub>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-▼
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-▼
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-▼
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-▼
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-▼
-</sub>
-
-</td>
-
-</tr>
-
-<!-- ====================================================== -->
-<!--                  FIRST KNOWLEDGE LAYER                 -->
-<!-- ====================================================== -->
-
-<tr>
-
-<!-- MATHEMATICS -->
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="72">
-
-<br><br>
-
-<b>MATHEMATICS</b>
-
-<br>
-
-<sub>
-Numbers<br>
-Logic<br>
-Patterns
-</sub>
-
-<br><br>
-
-<sub>∑ ∞ ∂ √</sub>
-
-</td>
-
-
-<!-- COMPUTER SCIENCE -->
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/c/7A00FF" width="72">
-
-<br><br>
-
-<b>COMPUTER SCIENCE</b>
-
-<br>
-
-<sub>
-Abstraction<br>
-Computation<br>
-Systems
-</sub>
-
-<br><br>
-
-<sub>λ ◈ ∞ ⌘</sub>
-
-</td>
-
-
-<!-- PROGRAMMING -->
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/python/FF00E5" width="72">
-
-<br><br>
-
-<b>PROGRAMMING</b>
-
-<br>
-
-<sub>
-Code<br>
-Logic<br>
-Implementation
-</sub>
-
-<br><br>
-
-<sub>&lt;/&gt; {} ⚡ ⌁</sub>
-
-</td>
-
-
-<!-- ALGORITHMS -->
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/leetcode/00F0FF" width="72">
-
-<br><br>
-
-<b>ALGORITHMS</b>
-
-<br>
-
-<sub>
-Solve<br>
-Optimize<br>
-Complexity
-</sub>
-
-<br><br>
-
-<sub>◇ → ∞ ⚙</sub>
-
-</td>
-
-
-<!-- DATA -->
-
-<td align="center" width="20%">
-
-<img src="https://cdn.simpleicons.org/postgresql/7A00FF" width="72">
-
-<br><br>
-
-<b>DATA</b>
-
-<br>
-
-<sub>
-Store<br>
-Analyze<br>
-Connect
-</sub>
-
-<br><br>
-
-<sub>▦ ◉ ∞ ⌁</sub>
-
-</td>
-
-</tr>
-
-
-<!-- ====================================================== -->
-<!--                    CONNECTION MAP                      -->
-<!-- ====================================================== -->
-
-<tr>
-
-<td align="center" colspan="5">
-
-<sub>
-
-MATHEMATICS
-&nbsp; ──→ ──→ &nbsp;
-COMPUTATION
-&nbsp; ──→ ──→ &nbsp;
-CODE
-&nbsp; ──→ ──→ &nbsp;
-ALGORITHMS
-&nbsp; ──→ ──→ &nbsp;
-DATA
-
-</sub>
-
-</td>
-
-</tr>
-
-
-<!-- ====================================================== -->
-<!--                  SECOND KNOWLEDGE LAYER                -->
-<!-- ====================================================== -->
-
-<tr>
-
-<!-- AI -->
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/tensorflow/FF00E5" width="72">
-
-<br><br>
-
-<b>AI / ML</b>
-
-<br>
-
-<sub>
-Learn<br>
-Predict<br>
-Experiment
-</sub>
-
-<br><br>
-
-<sub>✦ ∿ ◉ ⚡</sub>
-
-</td>
-
-
-<!-- CYBERSECURITY -->
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/kali/7A00FF" width="72">
-
-<br><br>
-
-<b>CYBERSECURITY</b>
-
-<br>
-
-<sub>
-Attack<br>
-Defense<br>
-Detection
-</sub>
-
-<br><br>
-
-<sub>⌬ ⚠ ◈ ⛨</sub>
-
-</td>
-
-
-<!-- CLOUD -->
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/amazonwebservices/00F0FF" width="72">
-
-<br><br>
-
-<b>CLOUD</b>
-
-<br>
-
-<sub>
-Infrastructure<br>
-Networks<br>
-Scale
-</sub>
-
-<br><br>
-
-<sub>☁ ⇄ ∞ ◇</sub>
-
-</td>
-
-
-<!-- DISTRIBUTED -->
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/docker/FF00E5" width="72">
-
-<br><br>
-
-<b>DISTRIBUTED</b>
-
-<br>
-
-<sub>
-Nodes<br>
-Services<br>
-Systems
-</sub>
-
-<br><br>
-
-<sub>⇄ ◈ ⌁ ∞</sub>
-
-</td>
-
-
-<!-- EMERGING -->
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/ethereum/7A00FF" width="72">
-
-<br><br>
-
-<b>EMERGING TECH</b>
-
-<br>
-
-<sub>
-Research<br>
-Innovation<br>
-Future
-</sub>
-
-<br><br>
-
-<sub>✧ ◇ ⚡ ∞</sub>
-
-</td>
-
-</tr>
-
 </table>
 
 
 <p align="center">
-
-<sub>
-&nbsp;&nbsp;↙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-↘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-↙&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-↘&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-↙
-</sub>
-
+  <span style="color:#39FF14; font-size:25px;">↓</span>
 </p>
 
+
+<!-- =========================
+     DATA + AI
+     ========================= -->
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=FF00E5&height=3">
+  <span style="color:#39FF14;">━━━━━━━━━━ DATA + INTELLIGENCE ━━━━━━━━━━</span>
 </p>
 
-
-<!-- ====================================================== -->
-<!--                  KNOWLEDGE PIPELINE                    -->
-<!-- ====================================================== -->
-
-<table width="100%" align="center">
-
+<table align="center" width="100%">
 <tr>
 
-<td align="center" width="20%">
+<td align="center" width="33%">
 
-<b>01</b>
+<img src="https://cdn.simpleicons.org/postgresql/39FF14" width="100">
 
-<br>
+<h3>
+  <span style="color:#39FF14;">DATABASE</span>
+</h3>
 
-<sub>UNDERSTAND</sub>
-
-<br>
-
-∑ ◈ λ
-
-</td>
-
-<td align="center" width="20%">
-
-<b>02</b>
-
-<br>
-
-<sub>IMPLEMENT</sub>
-
-<br>
-
-&lt;/&gt; ⚡
+<small>
+  <span style="color:#39FF14;">DATA • SQL • STORAGE</span>
+</small>
 
 </td>
 
-<td align="center" width="20%">
+<td align="center" width="33%">
 
-<b>03</b>
+<img src="https://cdn.simpleicons.org/tensorflow/39FF14" width="100">
 
-<br>
+<h3>
+  <span style="color:#39FF14;">MACHINE LEARNING</span>
+</h3>
 
-<sub>EXPERIMENT</sub>
-
-<br>
-
-∿ ◉ ✦
-
-</td>
-
-<td align="center" width="20%">
-
-<b>04</b>
-
-<br>
-
-<sub>BREAK / FIX</sub>
-
-<br>
-
-⚠ ⛨ ⚙
+<small>
+  <span style="color:#39FF14;">MODELS • TRAINING • DATA</span>
+</small>
 
 </td>
 
-<td align="center" width="20%">
+<td align="center" width="33%">
 
-<b>05</b>
+<img src="https://cdn.simpleicons.org/pytorch/39FF14" width="100">
 
-<br>
+<h3>
+  <span style="color:#39FF14;">DEEP LEARNING</span>
+</h3>
 
-<sub>BUILD / SCALE</sub>
-
-<br>
-
-∞ ☁ ⇄
+<small>
+  <span style="color:#39FF14;">NEURAL NETWORKS • AI</span>
+</small>
 
 </td>
 
 </tr>
-
 </table>
 
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3">
+  <span style="color:#39FF14; font-size:25px;">↓</span>
 </p>
 
 
-<!-- ====================================================== -->
-<!--                  LIVE LEARNING HEATMAP                 -->
-<!-- ====================================================== -->
-
-## ◉ LIVE LEARNING HEATMAP
+<!-- =========================
+     DEVELOPMENT ECOSYSTEM
+     ========================= -->
 
 <p align="center">
-
-<sub>
-ACTIVITY INTENSITY • CONSISTENCY • MOMENTUM • GROWTH
-</sub>
-
+  <span style="color:#39FF14;">━━━━━━━━━━ DEVELOPMENT ECOSYSTEM ━━━━━━━━━━</span>
 </p>
 
+<table align="center" width="100%">
+<tr>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/git/39FF14" width="100">
+
+<h3>
+  <span style="color:#39FF14;">GIT</span>
+</h3>
+
+<small>
+  <span style="color:#39FF14;">VERSION CONTROL</span>
+</small>
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/docker/39FF14" width="100">
+
+<h3>
+  <span style="color:#39FF14;">DOCKER</span>
+</h3>
+
+<small>
+  <span style="color:#39FF14;">CONTAINERS • DEPLOYMENT</span>
+</small>
+
+</td>
+
+<td align="center" width="33%">
+
+<img src="https://cdn.simpleicons.org/kubernetes/39FF14" width="100">
+
+<h3>
+  <span style="color:#39FF14;">KUBERNETES</span>
+</h3>
+
+<small>
+  <span style="color:#39FF14;">ORCHESTRATION • SCALE</span>
+</small>
+
+</td>
+
+</tr>
+</table>
+
+
 <p align="center">
-
-<img
-src="https://gh-heat.anishroy.com/api/YOUR_GITHUB_USERNAME/svg?theme=purple&darkMode=true&shape=circle&shadow=true&transparent=true"
-width="100%"
->
-
-</p>
-
-<p align="center">
-
-<sub>
-░ LOW &nbsp;&nbsp; ▒ ACTIVE &nbsp;&nbsp; ▓ DEEP WORK &nbsp;&nbsp; █ PEAK
-</sub>
-
-</p>
-
-
-<!-- ====================================================== -->
-<!--                LIVE ACTIVITY GRAPH                    -->
-<!-- ====================================================== -->
-
-<p align="center">
-
-<img
-src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&bg_color=0D1117&color=00F0FF&line=FF00E5&point=7A00FF&area=true&hide_border=true"
-width="100%"
->
-
-</p>
-
-
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=7A00FF&height=3">
-</p>
-
-
-<!-- ====================================================== -->
-<!--                  TECHNOLOGY CONSTELLATION              -->
-<!-- ====================================================== -->
-
-<p align="center">
-
-<img src="https://cdn.simpleicons.org/python/00F0FF" width="40">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-
-<img src="https://cdn.simpleicons.org/linux/FF00E5" width="40">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-
-<img src="https://cdn.simpleicons.org/git/7A00FF" width="40">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-
-<img src="https://cdn.simpleicons.org/github/00F0FF" width="40">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-
-<img src="https://cdn.simpleicons.org/docker/FF00E5" width="40">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-
-<img src="https://cdn.simpleicons.org/kubernetes/7A00FF" width="40">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-
-<img src="https://cdn.simpleicons.org/pytorch/00F0FF" width="40">
-&nbsp;&nbsp;✦&nbsp;&nbsp;
-
-<img src="https://cdn.simpleicons.org/postgresql/FF00E5" width="40">
-
+  <span style="color:#39FF14; font-size:25px;">↓</span>
 </p>
 
 
+<!-- =========================
+     SYSTEM FOUNDATION
+     ========================= -->
+
 <p align="center">
+  <span style="color:#39FF14;">━━━━━━━━━━ SYSTEM FOUNDATION ━━━━━━━━━━</span>
+</p>
 
-<sub>
-PYTHON • LINUX • GIT • GITHUB • DOCKER • KUBERNETES • PYTORCH • POSTGRESQL
-</sub>
+<table align="center" width="100%">
+<tr>
 
+<td align="center" width="50%">
+
+<img src="https://cdn.simpleicons.org/linux/39FF14" width="100">
+
+<h3>
+  <span style="color:#39FF14;">LINUX</span>
+</h3>
+
+<small>
+  <span style="color:#39FF14;">OS • TERMINAL • SYSTEMS</span>
+</small>
+
+</td>
+
+<td align="center" width="50%">
+
+<img src="https://cdn.simpleicons.org/github/39FF14" width="100">
+
+<h3>
+  <span style="color:#39FF14;">OPEN SOURCE</span>
+</h3>
+
+<small>
+  <span style="color:#39FF14;">REPOSITORIES • PROJECTS • COMMUNITY</span>
+</small>
+
+</td>
+
+</tr>
+</table>
+
+
+<!-- =========================
+     CONNECTION MAP
+     ========================= -->
+
+<p align="center">
+  <span style="color:#39FF14;">
+    ▲
+    <br>
+    <b>CODE</b>
+    <br>
+    │
+    <br>
+    ▼
+    <br>
+    <b>DATA</b>
+    <br>
+    │
+    <br>
+    ▼
+    <br>
+    <b>ML / DEEP LEARNING</b>
+    <br>
+    │
+    <br>
+    ▼
+    <br>
+    <b>SYSTEMS</b>
+    <br>
+    │
+    <br>
+    ▼
+    <b>DEPLOYMENT</b>
+  </span>
 </p>
 
 
-<!-- ====================================================== -->
-<!--                    FINAL MAP                            -->
-<!-- ====================================================== -->
+<!-- =========================
+     FINAL LINE
+     ========================= -->
 
 <p align="center">
-
-<b>
-∑ → COMPUTE → &lt;/&gt; → ⚙ → DATA → AI → ☁ → ∞
-</b>
-
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=39FF14&height=3&section=footer">
 </p>
 
 <p align="center">
-
-<sub>
-◈ THINK DEEPLY &nbsp; • &nbsp; BUILD SYSTEMS &nbsp; • &nbsp; BREAK THINGS &nbsp; • &nbsp; FIX THEM &nbsp; • &nbsp; CONNECT EVERYTHING ◈
-</sub>
-
-</p>
-
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=FF00E5&height=3">
+  <span style="color:#39FF14;">
+    <b>PYTHON • C++ • C • DATABASE • ML • DEEP LEARNING • GIT • DOCKER • LINUX • GITHUB</b>
+  </span>
 </p>
 
 ## The Questions Behind Everything
