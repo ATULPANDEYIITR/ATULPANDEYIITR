@@ -1,8 +1,22 @@
 # 👋 Hi, I'm Atul Pandey
 
-### 💻 Technology | 🤖 AI | 🛡️ Cybersecurity | 🔐 Cryptography | ☁️ Cloud Computing | ⚛️ Quantum Computing
+### Technology | AI | Cybersecurity | Cryptography | Cloud Computing | Quantum Computing
 
-## 💻 My Favorite Tools and Technologies
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github/00F0FF" width="42">
+</p>
+
+<p align="center">
+  <b>TECHNOLOGY • AI • SECURITY • SYSTEMS • COMPUTING</b>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=120&section=header&text=ATUL%20PANDEY&fontSize=34&fontColor=000000&fontAlignY=38">
+</p>
+
+---
+
+## My Favorite Tools and Technologies
 
 <table>
 <tr>
@@ -138,190 +152,485 @@
 </tr>
 </table>
 
-<h2 align="center">🧠 Technology Ecosystem</h2>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
+</p>
+
+## Technology Ecosystem
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python/00F0FF" width="42">
+  <img src="https://cdn.simpleicons.org/tensorflow/FF00E5" width="42">
+  <img src="https://cdn.simpleicons.org/linux/7A00FF" width="42">
+  <img src="https://cdn.simpleicons.org/postgresql/00F0FF" width="42">
+  <img src="https://cdn.simpleicons.org/docker/FF00E5" width="42">
+  <img src="https://cdn.simpleicons.org/github/7A00FF" width="42">
+</p>
 
 <table align="center">
 <tr>
 
 <td align="center" width="250">
 
-<h3>💻 Technology</h3>
+<img src="https://cdn.simpleicons.org/python/00F0FF" width="55">
 
-🐍 Python<br>
-🧮 Algorithms<br>
-🗄️ Databases<br>
-🌐 Networks
+### Technology
 
-</td>
-
-<td align="center" width="250">
-
-<h3>🤖 Artificial AI</h3>
-
-🧠 Machine Learning<br>
-✨ Generative AI<br>
-🧠 LLMs<br>
-🔎 RAG
+Programming  
+Algorithms  
+Databases  
+Networks
 
 </td>
 
 <td align="center" width="250">
 
-<h3>🛡️ Security</h3>
+<img src="https://cdn.simpleicons.org/tensorflow/FF00E5" width="55">
 
-🔐 Cryptography<br>
-🛡️ Cybersecurity<br>
-🔑 Security<br>
-🔒 Privacy
+### Artificial Intelligence
+
+Machine Learning  
+Generative AI  
+LLMs  
+RAG
+
+</td>
+
+<td align="center" width="250">
+
+<img src="https://cdn.simpleicons.org/kali/7A00FF" width="55">
+
+### Security
+
+Cryptography  
+Cybersecurity  
+Security  
+Privacy
 
 </td>
 
 </tr>
 
 <tr>
-<td colspan="3" align="center">
 
-<h3>☁️ Cloud Computing</h3>
+<td align="center" colspan="3">
+
+<img src="https://cdn.simpleicons.org/amazonwebservices/00F0FF" width="55">
+
+### Cloud Computing
 
 Cloud Architecture • Cloud Infrastructure • Distributed Systems
 
 </td>
+
 </tr>
 
 <tr>
-<td colspan="3" align="center">
 
-<h3>⚛️ Emerging Technology</h3>
+<td align="center" colspan="3">
 
-⛓️ Blockchain &nbsp;&nbsp;&nbsp; ⚛️ Quantum Computing &nbsp;&nbsp;&nbsp; 📡 IoT
+<img src="https://cdn.simpleicons.org/ethereum/FF00E5" width="48">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/quantconnect/7A00FF" width="48">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/arduino/00F0FF" width="48">
+
+### Emerging Technology
+
+Blockchain • Quantum Computing • IoT
 
 </td>
+
 </tr>
 </table>
 
-## 🧪 My GitHub Digital Laboratory
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=7A00FF&height=3&section=header">
+</p>
+
+## My GitHub Digital Laboratory
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github/00F0FF" width="60">
+</p>
+
+<p align="center">
+  <b>LEARN</b>
+  &nbsp; → &nbsp;
+  <b>UNDERSTAND</b>
+  &nbsp; → &nbsp;
+  <b>IMPLEMENT</b>
+  &nbsp; → &nbsp;
+  <b>EXPERIMENT</b>
+  &nbsp; → &nbsp;
+  <b>DOCUMENT</b>
+  &nbsp; → &nbsp;
+  <b>BUILD</b>
+  &nbsp; → &nbsp;
+  <b>EXPLORE</b>
+  &nbsp; → &nbsp;
+  <b>REPEAT</b>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github/FF00E5" width="32">
+</p>
+
+<p align="center">
+  <b>Learning is continuous. Building is continuous. Exploration never stops.</b>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
+</p>
+
+## About Me
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github/00F0FF" width="45">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python/FF00E5" width="45">
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/linux/7A00FF" width="45">
+</p>
+
+<p align="center">
+  <b>I UNDERSTAND → I IMPLEMENT → I EXPLORE → I EXPERIMENT</b>
+</p>
+
+<p align="center">
+  <b>I DOCUMENT → I BUILD → I APPLY</b>
+</p>
+
+<p align="center">
+  <b>
+  From foundations to implementation.<br>
+  From experiments to systems.<br>
+  From learning to real-world applications.
+  </b>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=FF00E5&height=3&section=header">
+</p>
+
+## My Technical Learning Universe
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="48">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python/FF00E5" width="48">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/leetcode/7A00FF" width="48">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql/00F0FF" width="48">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow/FF00E5" width="48">
+</p>
+
+<p align="center">
+  <sub>A little curiosity turned into a whole universe of technology</sub>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
+</p>
+
+<table align="center">
+<tr>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="65">
+
+### MATHEMATICS
+
+Numbers  
+Logic  
+Patterns  
+Structures
+
+<b>WHY?</b>
+
+</td>
+
+<td align="center" width="5%">
+
+<img src="https://cdn.simpleicons.org/arrowright/FF00E5" width="35">
+
+</td>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/c/7A00FF" width="65">
+
+### COMPUTER SCIENCE
+
+Concepts  
+Foundations  
+Computation  
+Thinking
+
+<b>HOW?</b>
+
+</td>
+
+<td align="center" width="5%">
+
+<img src="https://cdn.simpleicons.org/arrowright/FF00E5" width="35">
+
+</td>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/python/00F0FF" width="65">
+
+### PROGRAMMING
+
+Code  
+Logic  
+Implementation  
+Software
+
+<b>BUILD!</b>
+
+</td>
+
+</tr>
+</table>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=7A00FF&height=3&section=header">
+</p>
+
+<table align="center">
+<tr>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/leetcode/FF00E5" width="65">
+
+### ALGORITHMS
+
+Algorithms  
+Systems  
+Optimization  
+Complexity
+
+<b>THINK!</b>
+
+</td>
+
+<td align="center" width="5%">
+
+<img src="https://cdn.simpleicons.org/arrowright/00F0FF" width="35">
+
+</td>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/postgresql/7A00FF" width="65">
+
+### DATA
+
+Data  
+Databases  
+Analysis  
+Information
+
+<b>CONNECT!</b>
+
+</td>
+
+<td align="center" width="5%">
+
+<img src="https://cdn.simpleicons.org/arrowright/00F0FF" width="35">
+
+</td>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/tensorflow/FF00E5" width="65">
+
+### ARTIFICIAL INTELLIGENCE
+
+Machine Learning  
+AI  
+Experiments  
+Models
+
+<b>EXPLORE!</b>
+
+</td>
+
+</tr>
+</table>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=FF00E5&height=3&section=header">
+</p>
+
+<table align="center">
+<tr>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/kali/7A00FF" width="65">
+
+### CYBERSECURITY
+
+Security  
+Threats  
+Defense  
+Detection
+
+<b>WHAT CAN BREAK?</b>
+
+</td>
+
+<td align="center" width="5%">
+
+<img src="https://cdn.simpleicons.org/arrowright/00F0FF" width="35">
+
+</td>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/amazonwebservices/00F0FF" width="65">
+
+### CLOUD + DISTRIBUTED
+
+Cloud  
+Networks  
+Servers  
+Distributed Systems
+
+<b>SCALE!</b>
+
+</td>
+
+<td align="center" width="5%">
+
+<img src="https://cdn.simpleicons.org/arrowright/00F0FF" width="35">
+
+</td>
+
+<td align="center" width="30%">
+
+<img src="https://cdn.simpleicons.org/ethereum/FF00E5" width="65">
+
+### EMERGING TECHNOLOGY
+
+New Ideas  
+Innovation  
+Research  
+Future Systems
+
+<b>WHAT'S NEXT?</b>
+
+</td>
+
+</tr>
+</table>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
+</p>
 
 <p align="center">
 
-<strong>
-🧠 LEARN
-&nbsp;→&nbsp;
-🔍 UNDERSTAND
-&nbsp;→&nbsp;
-💻 IMPLEMENT
-&nbsp;→&nbsp;
-🧪 EXPERIMENT
-&nbsp;→&nbsp;
-📚 DOCUMENT
-&nbsp;→&nbsp;
-🏗️ BUILD
-&nbsp;→&nbsp;
-🚀 EXPLORE
-&nbsp;→&nbsp;
-🔄 REPEAT
-</strong>
+<img src="https://cdn.simpleicons.org/python/00F0FF" width="42">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/linux/FF00E5" width="42">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github/7A00FF" width="42">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/docker/00F0FF" width="42">
+&nbsp;&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow/FF00E5" width="42">
 
 </p>
 
 <p align="center">
-<b>Learning is continuous. Building is continuous. Exploration never stops.</b>
-</p>
-```
-
-
----
-
-# 👨‍💻 About Me
-
-<p align="center">
-
-<b>
-🧠 I UNDERSTAND → 💻 I IMPLEMENT → 🔬 I EXPLORE → 🧪 I EXPERIMENT
-</b>
-
-<br>
-
-<b>
-📚 I DOCUMENT → 🏗️ I BUILD → 🌐 I APPLY
-</b>
-
+  <b>UNDERSTAND → IMPLEMENT → EXPERIMENT → BREAK IT → FIX IT → BUILD IT → CONNECT IT</b>
 </p>
 
 <p align="center">
-
-<strong>
-From foundations to implementation.<br>
-From experiments to systems.<br>
-From learning to real-world applications.
-</strong>
-
-</p>
-```
-
-# 🧠 My Technical Learning Universe
-
-<p align="center">
-
-<sub>🎨 A little curiosity turned into a whole universe of technology</sub>
-
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=7A00FF&height=3&section=header">
 </p>
 
-<br>
+## The Questions Behind Everything
 
 <table align="center">
 <tr>
 
 <td align="center" width="20%">
 
-### 🧮
-## MATHEMATICS
+<img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="48">
 
-🧩 Numbers  
-📐 Logic  
-∞ Patterns  
-∑ Structures
+### WHY?
 
-💬 **"WHY?"**
+Understand the idea
 
-</td>
-
-<td align="center" width="5%">
-
-### ➡️
+Foundations  
+Mathematics  
+Concepts
 
 </td>
 
 <td align="center" width="20%">
 
-### 🧠
-## COMPUTER SCIENCE
+<img src="https://cdn.simpleicons.org/python/FF00E5" width="48">
 
-💡 Concepts  
-🧱 Foundations  
-🔄 Computation  
-🧠 Thinking
+### HOW?
 
-💬 **"HOW?"**
+Understand the mechanism
 
-</td>
-
-<td align="center" width="5%">
-
-### ➡️
+Internals  
+Algorithms  
+Implementation
 
 </td>
 
 <td align="center" width="20%">
 
-### 💻
-## PROGRAMMING
+<img src="https://cdn.simpleicons.org/kali/7A00FF" width="48">
 
-⌨️ Code  
-🐍 Python  
-⚡ Logic  
-🛠️ Implementation
+### FAIL!
 
-💬 **"BUILD!"**
+Find the limits
+
+Bugs  
+Edge Cases  
+Failure Modes
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/github/00F0FF" width="48">
+
+### BUILD!
+
+Turn knowledge into systems
+
+Projects  
+Experiments  
+Applications
+
+</td>
+
+<td align="center" width="20%">
+
+<img src="https://cdn.simpleicons.org/docker/FF00E5" width="48">
+
+### CONNECT!
+
+Combine everything
+
+Systems  
+Technologies  
+New Ideas
 
 </td>
 
@@ -329,327 +638,119 @@ From learning to real-world applications.
 </table>
 
 <p align="center">
-
-⬇️ &nbsp; 🌀 &nbsp; ⬇️
-
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=FF00E5&height=3&section=header">
 </p>
 
-<table align="center">
-<tr>
+<p align="center">
+  <img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="40">
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/c/FF00E5" width="40">
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/python/7A00FF" width="40">
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/leetcode/00F0FF" width="40">
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql/FF00E5" width="40">
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow/7A00FF" width="40">
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/kali/00F0FF" width="40">
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/amazonwebservices/FF00E5" width="40">
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/ethereum/7A00FF" width="40">
+</p>
 
-<td align="center" width="20%">
+<p align="center">
+  <b>
+  MATHEMATICS → COMPUTER SCIENCE → PROGRAMMING → ALGORITHMS → DATA → AI → SECURITY → CLOUD → EMERGING TECHNOLOGY
+  </b>
+</p>
 
-### ⚙️
-## ALGORITHMS
-
-🔀 Algorithms  
-⚙️ Systems  
-🧩 Optimization  
-📊 Complexity
-
-💬 **"THINK!"**
-
-</td>
-
-<td align="center" width="5%">
-
-### ➡️
-
-</td>
-
-<td align="center" width="20%">
-
-### 🗄️
-## DATA
-
-📦 Data  
-🗃️ Databases  
-🔎 Analysis  
-📈 Information
-
-💬 **"CONNECT!"**
-
-</td>
-
-<td align="center" width="5%">
-
-### ➡️
-
-</td>
-
-<td align="center" width="20%">
-
-### 🤖
-## ARTIFICIAL INTELLIGENCE
-
-🧠 ML  
-🤖 AI  
-🔬 Experiments  
-🧪 Models
-
-💬 **"EXPLORE!"**
-
-</td>
-
-</tr>
-</table>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
+</p>
 
 <p align="center">
 
-✨ ━━━━━━━ 💥 ━━━━━━━ ✨
-
-</p>
-
-<table align="center">
-<tr>
-
-<td align="center" width="20%">
-
-### 🛡️
-## CYBERSECURITY
-
-🔐 Security  
-🕵️ Threats  
-🛡️ Defense  
-🔍 Detection
-
-💬 **"WHAT CAN BREAK?"**
-
-</td>
-
-<td align="center" width="5%">
-
-### ➡️
-
-</td>
-
-<td align="center" width="20%">
-
-### ☁️
-## CLOUD + DISTRIBUTED
-
-☁️ Cloud  
-🌐 Networks  
-🖥️ Servers  
-🔗 Distributed Systems
-
-💬 **"SCALE!"**
-
-</td>
-
-<td align="center" width="5%">
-
-### ➡️
-
-</td>
-
-<td align="center" width="20%">
-
-### ⚛️
-## EMERGING TECH
-
-🚀 New Ideas  
-🧬 Innovation  
-🔭 Research  
-🌌 Future Systems
-
-💬 **"WHAT'S NEXT?"**
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-╭──────────────────────────────────────────────────────╮  
-│                                                      │  
-│        🧠 <b>UNDERSTAND</b>                           │  
-│                 ↓                                    │  
-│        💻 <b>IMPLEMENT</b>                            │  
-│                 ↓                                    │  
-│        🧪 <b>EXPERIMENT</b>                           │  
-│                 ↓                                    │  
-│        💥 <b>BREAK IT</b>                             │  
-│                 ↓                                    │  
-│        🔧 <b>FIX IT</b>                               │  
-│                 ↓                                    │  
-│        🏗️ <b>BUILD IT</b>                            │  
-│                 ↓                                    │  
-│        🌐 <b>CONNECT IT</b>                          │  
-│                                                      │  
-╰──────────────────────────────────────────────────────╯
-
-</p>
-
-<br>
-
-## 🎭 The Questions Behind Everything
-
-<p align="center">
-
-💭 <b>WHY?</b>  
-&nbsp;&nbsp;➜&nbsp;&nbsp;
-⚙️ <b>HOW?</b>  
-&nbsp;&nbsp;➜&nbsp;&nbsp;
-💥 <b>WHERE DOES IT FAIL?</b>  
-&nbsp;&nbsp;➜&nbsp;&nbsp;
-🛠️ <b>CAN I BUILD IT?</b>  
-&nbsp;&nbsp;➜&nbsp;&nbsp;
-🧩 <b>HOW DOES IT CONNECT?</b>  
-&nbsp;&nbsp;➜&nbsp;&nbsp;
-🚀 <b>WHAT CAN I CREATE?</b>
-
-</p>
-
-<br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-### 💭 WHY?
-
-**Understand the idea**
-
-📚 Foundations  
-🧮 Mathematics  
-🧠 Concepts
-
-</td>
-
-<td align="center">
-
-### ⚙️ HOW?
-
-**Understand the mechanism**
-
-🔬 Internals  
-⚙️ Algorithms  
-💻 Implementation
-
-</td>
-
-<td align="center">
-
-### 💥 FAIL!
-
-**Find the limits**
-
-🐛 Bugs  
-⚠️ Edge Cases  
-📉 Failure Modes
-
-</td>
-
-<td align="center">
-
-### 🛠️ BUILD!
-
-**Turn knowledge into systems**
-
-🏗️ Projects  
-🧪 Experiments  
-🚀 Applications
-
-</td>
-
-<td align="center">
-
-### 🧩 CONNECT!
-
-**Combine everything**
-
-🌐 Systems  
-🔗 Technologies  
-💡 New Ideas
-
-</td>
-
-</tr>
-</table>
-
-<br>
-
-<p align="center">
-
-🎪 ──────────────── 🧠 ──────────────── 🎪
+<img src="https://cdn.simpleicons.org/bookstack/00F0FF" width="38">
+&nbsp;&nbsp;
+<b>LEARN</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python/FF00E5" width="38">
+&nbsp;&nbsp;
+<b>UNDERSTAND</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github/7A00FF" width="38">
+&nbsp;&nbsp;
+<b>IMPLEMENT</b>
 
 </p>
 
 <p align="center">
 
-<b>
-🧮 Mathematics
-→
-🧠 Computer Science
-→
-💻 Programming
-→
-⚙️ Algorithms
-→
-🗄️ Data
-→
-🤖 AI
-→
-🛡️ Security
-→
-☁️ Cloud
-→
-⚛️ Emerging Technology
-</b>
+<img src="https://cdn.simpleicons.org/jupyter/00F0FF" width="38">
+&nbsp;&nbsp;
+<b>EXPERIMENT</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/kali/FF00E5" width="38">
+&nbsp;&nbsp;
+<b>BREAK</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/linux/7A00FF" width="38">
+&nbsp;&nbsp;
+<b>FIX</b>
 
 </p>
 
 <p align="center">
 
-<br>
-
-🎨 <b>LEARN</b> → 🔍 <b>UNDERSTAND</b> → 💻 <b>IMPLEMENT</b>  
-<br>
-🧪 <b>EXPERIMENT</b> → 💥 <b>BREAK</b> → 🔧 <b>FIX</b>  
-<br>
-🏗️ <b>BUILD</b> → 🧩 <b>CONNECT</b> → 🚀 <b>EXPLORE</b>
-
-</p>
-
-<br>
-
-<p align="center">
-
-### 🗯️ <i>"Don't just use the technology. Open it up. Understand it. Break it. Build it."</i>
+<img src="https://cdn.simpleicons.org/docker/00F0FF" width="38">
+&nbsp;&nbsp;
+<b>BUILD</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/amazonwebservices/FF00E5" width="38">
+&nbsp;&nbsp;
+<b>CONNECT</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github/7A00FF" width="38">
+&nbsp;&nbsp;
+<b>EXPLORE</b>
 
 </p>
 
 <p align="center">
-
-⭐ 🧠 💻 ⚙️ 🧪 🤖 🛡️ ☁️ 🚀 ⭐
-
+  <img src="https://cdn.simpleicons.org/github/00F0FF" width="38">
+  &nbsp;&nbsp;
+  <b>Don't just use the technology. Open it up. Understand it. Break it. Build it.</b>
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/github/FF00E5" width="38">
 </p>
-
-# 🎓 Education / Background
 
 <p align="center">
-
-🪄 <b>MY ACADEMIC JOURNEY</b> 🪄
-
-<br>
-
-<i>From business and computing to artificial intelligence, cybersecurity, and systems.</i>
-
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=7A00FF&height=3&section=header">
 </p>
 
-<br>
+## Education / Background
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/academia/00F0FF" width="50">
+</p>
+
+<p align="center">
+  <b>MY ACADEMIC JOURNEY</b>
+</p>
+
+<p align="center">
+  <i>From business and computing to artificial intelligence, cybersecurity, and systems.</i>
+</p>
 
 <table align="center">
 <tr>
 
 <td align="center" width="33%">
 
-🎓
+<img src="https://cdn.simpleicons.org/academia/00F0FF" width="65">
 
 ### Master of Science
 
@@ -657,61 +758,67 @@ From learning to real-world applications.
 
 **M.S. A.I & C.S.**
 
-🏛️  
-**Indian Institute of Technology, Patna**  
+**Indian Institute of Technology, Patna**
+
 India
 
-💬 <b>"EXPLORE!"</b>
+<b>EXPLORE!</b>
 
 </td>
 
 <td align="center" width="33%">
 
-💼
+<img src="https://cdn.simpleicons.org/academia/FF00E5" width="65">
 
 ### Master of Business Administration
 
 **M.B.A.**
 
-🏛️  
-**Indian Institute of Technology, Roorkee**  
+**Indian Institute of Technology, Roorkee**
+
 India
 
-💬 <b>"THINK BIG!"</b>
+<b>THINK BIG!</b>
 
 </td>
 
 <td align="center" width="33%">
 
-💻
+<img src="https://cdn.simpleicons.org/academia/7A00FF" width="65">
 
 ### Master of Computer Applications
 
 **M.C.A.**
 
-🏛️  
-**Uttar Pradesh Rajarshi Tandon Open University**  
+**Uttar Pradesh Rajarshi Tandon Open University**
+
 India
 
-💬 <b>"BUILD!"</b>
+<b>BUILD!</b>
 
 </td>
 
 </tr>
 </table>
 
-<br>
-
 <p align="center">
-
-🎓━━━━━━━━━━🧠━━━━━━━━━━💻━━━━━━━━━━🚀
-
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
 </p>
 
 <p align="center">
+  <img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/c/FF00E5" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/linux/7A00FF" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/python/00F0FF" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/github/FF00E5" width="42">
+</p>
 
-### 🧠 From Degrees → Knowledge → Systems
-
+<p align="center">
+  <b>FROM DEGREES → KNOWLEDGE → SYSTEMS</b>
 </p>
 
 <table align="center">
@@ -719,172 +826,218 @@ India
 
 <td align="center" width="20%">
 
-🧮
+<img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="50">
 
 ### MATHEMATICS
 
-🔢 Number Theory  
-🧩 Logic  
-📐 Complexity
+Number Theory  
+Logic  
+Complexity
 
-💭 <b>"WHY?"</b>
+<b>WHY?</b>
 
 </td>
 
 <td align="center" width="20%">
 
-💻
+<img src="https://cdn.simpleicons.org/c/FF00E5" width="50">
 
 ### COMPUTER SCIENCE
 
-🧠 Algorithms  
-🗂️ Data Structures  
-⌨️ Programming
+Algorithms  
+Data Structures  
+Programming
 
-⚙️ <b>"HOW?"</b>
+<b>HOW?</b>
 
 </td>
 
 <td align="center" width="20%">
 
-⚙️
+<img src="https://cdn.simpleicons.org/linux/7A00FF" width="50">
 
 ### SYSTEMS
 
-🏗️ Architecture  
-💿 Operating Systems  
-🌐 Networks
+Architecture  
+Operating Systems  
+Networks
 
-🔧 <b>"BUILD!"</b>
+<b>BUILD!</b>
 
 </td>
 
 <td align="center" width="20%">
 
-🧠
+<img src="https://cdn.simpleicons.org/python/00F0FF" width="50">
 
 ### COMPUTATIONAL THINKING
 
-🔍 Problem Solving  
-🧩 Abstraction  
-⚡ Optimization
+Problem Solving  
+Abstraction  
+Optimization
 
-💥 <b>"WHAT IF?"</b>
+<b>WHAT IF?</b>
 
 </td>
 
 <td align="center" width="20%">
 
-🚀
+<img src="https://cdn.simpleicons.org/tensorflow/FF00E5" width="50">
 
 ### TECHNOLOGY
 
-🤖 AI  
-🛡️ Cybersecurity  
-☁️ Emerging Tech
+AI  
+Cybersecurity  
+Emerging Tech
 
-🌎 <b>"EXPLORE!"</b>
+<b>EXPLORE!</b>
 
 </td>
 
 </tr>
 </table>
 
-<br>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=FF00E5&height=3&section=header">
+</p>
 
 <p align="center">
 
-🧮 <b>MATHEMATICS</b>
-&nbsp; ➜ &nbsp;
-💻 <b>COMPUTER SCIENCE</b>
-&nbsp; ➜ &nbsp;
-⚙️ <b>SYSTEMS</b>
-&nbsp; ➜ &nbsp;
-🧠 <b>COMPUTATIONAL THINKING</b>
-&nbsp; ➜ &nbsp;
-🚀 <b>TECHNOLOGY EXPLORATION</b>
+<img src="https://cdn.simpleicons.org/academia/00F0FF" width="38">
+&nbsp;
+<b>EDUCATION</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/wolframmathematica/FF00E5" width="38">
+&nbsp;
+<b>MATHEMATICS FOR COMPUTING</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/c/7A00FF" width="38">
+&nbsp;
+<b>COMPUTER SCIENCE</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/python/00F0FF" width="38">
+&nbsp;
+<b>ALGORITHMS</b>
 
 </p>
 
-<br>
-
 <p align="center">
 
-╭────────────────────────────────────────────────────────────╮
-<br>
-🎓 <b>EDUCATION</b>
-<br>
-⬇️
-<br>
-🧮 <b>Mathematics for Computing</b>
-<br>
-⬇️
-<br>
-💻 <b>Computer Science</b>
-<br>
-⬇️
-<br>
-🧠 <b>Algorithms & Computational Thinking</b>
-<br>
-⬇️
-<br>
-⚙️ <b>Software Engineering</b>
-<br>
-⬇️
-<br>
-🗄️ <b>Data & Databases</b>
-<br>
-⬇️
-<br>
-🤖 <b>Artificial Intelligence</b>
-<br>
-⬇️
-<br>
-🛡️ <b>Cybersecurity</b>
-<br>
-⬇️
-<br>
-🌐 <b>Emerging Technologies</b>
-<br>
-⬇️
-<br>
-🚀 <b>BUILD • EXPERIMENT • EXPLORE</b>
-<br>
-╰────────────────────────────────────────────────────────────╯
+<img src="https://cdn.simpleicons.org/github/FF00E5" width="38">
+&nbsp;
+<b>SOFTWARE ENGINEERING</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/postgresql/7A00FF" width="38">
+&nbsp;
+<b>DATA & DATABASES</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/tensorflow/00F0FF" width="38">
+&nbsp;
+<b>ARTIFICIAL INTELLIGENCE</b>
 
 </p>
 
-<br>
-
 <p align="center">
 
-🎭 <b>THE LEARNING LOOP</b>
-
-<br><br>
-
-❓ <b>WHY?</b>
-&nbsp; → &nbsp;
-⚙️ <b>HOW?</b>
-&nbsp; → &nbsp;
-🧪 <b>EXPERIMENT</b>
-&nbsp; → &nbsp;
-💥 <b>BREAK</b>
-&nbsp; → &nbsp;
-🔧 <b>FIX</b>
-&nbsp; → &nbsp;
-🏗️ <b>BUILD</b>
-&nbsp; → &nbsp;
-🚀 <b>EXPLORE</b>
+<img src="https://cdn.simpleicons.org/kali/FF00E5" width="38">
+&nbsp;
+<b>CYBERSECURITY</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/amazonwebservices/7A00FF" width="38">
+&nbsp;
+<b>EMERGING TECHNOLOGIES</b>
+&nbsp;→&nbsp;
+<img src="https://cdn.simpleicons.org/github/00F0FF" width="38">
+&nbsp;
+<b>BUILD • EXPERIMENT • EXPLORE</b>
 
 </p>
 
-<br>
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
+</p>
 
 <p align="center">
+  <img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="35">
+  &nbsp;
+  <b>WHY?</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/python/FF00E5" width="35">
+  &nbsp;
+  <b>HOW?</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/jupyter/7A00FF" width="35">
+  &nbsp;
+  <b>EXPERIMENT</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/kali/00F0FF" width="35">
+  &nbsp;
+  <b>BREAK</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/linux/FF00E5" width="35">
+  &nbsp;
+  <b>FIX</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/github/7A00FF" width="35">
+  &nbsp;
+  <b>BUILD</b>
+  &nbsp;→&nbsp;
+  <img src="https://cdn.simpleicons.org/amazonwebservices/00F0FF" width="35">
+  &nbsp;
+  <b>EXPLORE</b>
+</p>
 
-💡 <i>My education is not a collection of degrees.<br>
-It is the foundation through which I understand, build, experiment, and explore technology.</i>
+<p align="center">
+  <i>My education is not a collection of degrees.<br>
+  It is the foundation through which I understand, build, experiment, and explore technology.</i>
+</p>
 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=7A00FF&height=3&section=header">
+</p>
+
+## GitHub Statistics
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github/00F0FF" width="70">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=false&hide_border=true&include_all_commits=true&count_private=true&bg_color=00F0FF&title_color=000000&text_color=000000&icon_color=000000">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ATULPANDEYIITR&layout=compact&hide_border=true&langs_count=10&bg_color=FF00E5&title_color=000000&text_color=000000">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ATULPANDEYIITR&hide_border=true&background=000000&ring=00F0FF&fire=FF00E5&currStreakLabel=00F0FF&sideLabels=00F0FF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=AAAAAA">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=FF00E5&height=3&section=header">
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github/00F0FF" width="38">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python/FF00E5" width="38">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow/7A00FF" width="38">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/kali/00F0FF" width="38">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/docker/FF00E5" width="38">
+  &nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/amazonwebservices/7A00FF" width="38">
+</p>
+
+<p align="center">
+  <b>LEARN • UNDERSTAND • IMPLEMENT • EXPERIMENT • DOCUMENT • BUILD • EXPLORE</b>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=100&section=footer">
 </p>
 
 ### 📚 Continuous Learning
