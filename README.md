@@ -158,6 +158,7 @@
 
 <!-- =========================================================
      📊 GITHUB STATS & ACTIVITY
+     FULL-WIDTH VERTICAL LAYOUT
      ========================================================= -->
 
 <h2 align="center">
@@ -170,121 +171,167 @@
 
 <br>
 
-<!-- ===================== ROW 1 ===================== -->
+<!-- =========================================================
+     ⚡ GITHUB STATISTICS
+     ========================================================= -->
 
-<table width="100%">
-<tr>
+<h3 align="center">
+  ⚡ GitHub Statistics
+</h3>
 
-<td width="50%" align="center" valign="top">
-
-<h3>⚡ GitHub Statistics</h3>
-
-<img
-  src="./assets/overview.dark.svg"
-  width="92%"
-  alt="ATULPANDEYIITR GitHub Statistics"
-/>
-
-</td>
-
-<td width="50%" align="center" valign="top">
-
-<h3>🔥 Contribution Activity</h3>
-
-<img
-  src="./assets/contributions.dark.svg"
-  width="92%"
-  alt="ATULPANDEYIITR Contribution Activity"
-/>
-
-</td>
-
-</tr>
-</table>
+<p align="center">
+  <img
+    src="./assets/overview.dark.svg"
+    width="100%"
+    alt="ATULPANDEYIITR GitHub Statistics"
+  />
+</p>
 
 <br>
 
-<!-- ===================== ROW 2 ===================== -->
 
-<table width="100%">
-<tr>
+<!-- =========================================================
+     🔥 CONTRIBUTION ACTIVITY
+     ========================================================= -->
 
-<td width="50%" align="center" valign="top">
+<h3 align="center">
+  🔥 Contribution Activity
+</h3>
 
-<h3>💻 Most Used Languages</h3>
-
-<img
-  src="./assets/languages.dark.svg"
-  width="88%"
-  alt="ATULPANDEYIITR Most Used Languages"
-/>
-
-</td>
-
-<td width="50%" align="center" valign="top">
-
-<h3>🧠 Contribution Composition</h3>
-
-<img
-  src="./assets/composition.dark.svg"
-  width="88%"
-  alt="ATULPANDEYIITR Contribution Composition"
-/>
-
-</td>
-
-</tr>
-</table>
+<p align="center">
+  <img
+    src="./assets/contributions.dark.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Contribution Activity"
+  />
+</p>
 
 <br>
 
-<!-- ===================== ROW 3 ===================== -->
 
-<table width="100%">
-<tr>
+<!-- =========================================================
+     💻 MOST USED LANGUAGES
+     ========================================================= -->
 
-<td width="50%" align="center" valign="top">
+<h3 align="center">
+  💻 Most Used Languages
+</h3>
 
-<h3>📈 Activity Rhythm</h3>
-
-<img
-  src="./assets/rhythm.dark.svg"
-  width="88%"
-  alt="ATULPANDEYIITR Activity Rhythm"
-/>
-
-</td>
-
-<td width="50%" align="center" valign="top">
-
-<h3>📚 Contribution History</h3>
-
-<img
-  src="./assets/lifetime.dark.svg"
-  width="88%"
-  alt="ATULPANDEYIITR Contribution History"
-/>
-
-</td>
-
-</tr>
-</table>
+<p align="center">
+  <img
+    src="./assets/languages.dark.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Most Used Languages"
+  />
+</p>
 
 <br>
 
-<!-- ===================== REPOSITORIES ===================== -->
+
+<!-- =========================================================
+     🧠 CONTRIBUTION COMPOSITION
+     ========================================================= -->
+
+<h3 align="center">
+  🧠 Contribution Composition
+</h3>
+
+<p align="center">
+  <img
+    src="./assets/composition.dark.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Contribution Composition"
+  />
+</p>
+
+<br>
+
+
+<!-- =========================================================
+     📈 ACTIVITY RHYTHM
+     ========================================================= -->
+
+<h3 align="center">
+  📈 Activity Rhythm
+</h3>
+
+<p align="center">
+  <img
+    src="./assets/rhythm.dark.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Activity Rhythm"
+  />
+</p>
+
+<br>
+
+
+<!-- =========================================================
+     📚 CONTRIBUTION HISTORY
+     ========================================================= -->
+
+<h3 align="center">
+  📚 Contribution History
+</h3>
+
+<p align="center">
+  <img
+    src="./assets/lifetime.dark.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Contribution History"
+  />
+</p>
+
+<br>
+
+
+<!-- =========================================================
+     🗂️ TOP REPOSITORIES
+     ========================================================= -->
 
 <h3 align="center">
   🗂️ Top Repositories
 </h3>
 
 <p align="center">
+  <img
+    src="./assets/repositories.dark.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Top Repositories"
+  />
+</p>
 
-<img
-  src="./assets/repositories.dark.svg"
-  width="88%"
-  alt="ATULPANDEYIITR Top Repositories"
-/>
+<br>
+
+
+<!-- =========================================================
+     ⭐ LIVE PROFILE METRICS
+     ========================================================= -->
+
+<h3 align="center">
+  ⭐ Live Profile Metrics
+</h3>
+
+<p align="center">
+
+  <img
+    src="https://img.shields.io/github/stars/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=STARS&labelColor=0D1117&color=00D9A5"
+    alt="GitHub Stars"
+  />
+
+  &nbsp;
+
+  <img
+    src="https://img.shields.io/github/followers/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=FOLLOWERS&labelColor=0D1117&color=FF4F81"
+    alt="GitHub Followers"
+  />
+
+  &nbsp;
+
+  <img
+    src="https://img.shields.io/github/repos/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=REPOSITORIES&labelColor=0D1117&color=00D9A5"
+    alt="GitHub Repositories"
+  />
 
 </p>
 
