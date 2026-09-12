@@ -382,16 +382,12 @@
 
 # ✦ Ending is the new beginning
 
-# ✦ Thanks for visiting
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:1e1b4b,75:4c1d95,100:7c3aed&height=130&section=header&text=THANK%20YOU%20FOR%20STOPPING%20BY&fontSize=26&fontColor=ffffff&animation=twinkling&fontAlignY=65" width="100%">
 </p>
 
 <p align="center">
-  <i>
-    ✨ Welcome to my corner of the technology ecosystem. ✨
-  </i>
+  <i>✨ Welcome to my corner of the technology ecosystem. ✨</i>
 </p>
 
 <p align="center">
@@ -404,29 +400,13 @@
 
 <br>
 
+<!-- TECHNICAL ICON ROW -->
+
 <p align="center">
-  <a href="https://github.com/ATULPANDEYIITR">
-    <img src="https://cdn.simpleicons.org/github/FFFFFF" width="42" height="42" alt="GitHub">
-  </a>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;
-
-  <a href="https://linkedin.com/in/atul---pandey">
-    <img src="https://img.icons8.com/fluency/96/linkedin.png" width="42" height="42" alt="LinkedIn">
-  </a>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;
-
-  <a href="mailto:atulpandey.iitr@gmail.com">
-    <img src="https://img.icons8.com/fluency/96/gmail-new.png" width="42" height="42" alt="Gmail">
-  </a>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;
-
-  <img src="https://cdn.simpleicons.org/python/3776AB" width="42" height="42" alt="Python">
-
-  &nbsp;&nbsp;&nbsp;&nbsp;
-
+  <a href="https://github.com/ATULPANDEYIITR"><img src="https://cdn.simpleicons.org/github/FFFFFF" width="42" height="42" alt="GitHub"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://linkedin.com/in/atul---pandey"><img src="https://img.icons8.com/fluency/96/linkedin.png" width="42" height="42" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:atulpandey.iitr@gmail.com"><img src="https://img.icons8.com/fluency/96/gmail-new.png" width="42" height="42" alt="Gmail"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python/3776AB" width="42" height="42" alt="Python">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://cdn.simpleicons.org/git/F05032" width="42" height="42" alt="Git">
 </p>
 
@@ -441,7 +421,7 @@
       <br>
       ✦ Every algorithm turns an idea into something measurable.
       <br>
-      ✦ Every repository is a record of continuous learning.
+      ✦ Every repository represents continuous learning.
     </span>
   </i>
 </p>
@@ -478,7 +458,7 @@
 
 <p align="center">
   <i>
-    <span style="color:#a855f7;">
+    <span style="color:#c084fc;">
       ✧ CODE &nbsp;•&nbsp; DATA &nbsp;•&nbsp; AI &nbsp;•&nbsp; RESEARCH
       &nbsp;•&nbsp; SYSTEMS &nbsp;•&nbsp; INNOVATION ✧
     </span>
@@ -498,9 +478,7 @@
 </p>
 
 <p align="center">
-  <i>
-    <b>SEE YOU AROUND THE TECH ECOSYSTEM</b>
-  </i>
+  <i><b>SEE YOU AROUND THE TECH ECOSYSTEM</b></i>
 </p>
 
 <p align="center">
@@ -516,4 +494,3 @@
 <p align="center">
   ✦ &nbsp; ✧ &nbsp; ✦ &nbsp; ✧ &nbsp; ✦
 </p>
-
