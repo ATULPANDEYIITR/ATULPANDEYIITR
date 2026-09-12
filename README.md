@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Atul Pandey
 
-### Technology | AI | Cybersecurity | Cryptography | Cloud Computing | Quantum Computing
+# Technology | AI | Cybersecurity | Cryptography | Cloud Computing | Quantum Computing
 
 <p align="center">
   <img src="https://cdn.simpleicons.org/github/00F0FF" width="42">
