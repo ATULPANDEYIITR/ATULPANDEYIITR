@@ -158,332 +158,81 @@
 
 ## Education / Background
 
-<p align="center">
+<!-- =========================================================
+     MY ACADEMIC JOURNEY
+     ========================================================= -->
 
 <h2 align="center">
-  <b>MY ACADEMIC JOURNEY</b>
+  <span style="color:#00F0FF;">⚡ MY ACADEMIC JOURNEY ⚡</span>
 </h2>
 
 <p align="center">
-  <i>From business and computing to artificial intelligence, cybersecurity, history, philosophy, and systems.</i>
+  <i>
+    From business and computing to artificial intelligence,
+    cybersecurity, history, philosophy, and education.
+  </i>
 </p>
 
 <br>
 
-<style>
-.academic-grid {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 12px;
-}
+<!-- =========================================================
+     ACADEMIC DEGREE WALL
+     6 COLUMNS × 2 ROWS
+     ========================================================= -->
 
-.academic-card {
-  width: 16.66%;
-  min-width: 150px;
-  height: 285px;
-  padding: 18px 10px;
-  text-align: center;
-  vertical-align: middle;
-  border: 2px solid #00F0FF;
-  border-radius: 14px;
-  background: linear-gradient(145deg, #050505, #101020);
-  box-shadow:
-    0 0 8px #00F0FF,
-    0 0 20px rgba(0,240,255,0.25),
-    inset 0 0 15px rgba(0,240,255,0.08);
-  transition: transform 0.5s ease;
-}
-
-.academic-card:hover {
-  transform: translateY(-8px) scale(1.03);
-}
-
-.degree-icon {
-  display: inline-block;
-  margin-bottom: 12px;
-  animation: slowRotate 12s linear infinite;
-  transform-style: preserve-3d;
-}
-
-.degree-icon img {
-  width: 62px;
-  height: 62px;
-}
-
-@keyframes slowRotate {
-  0% {
-    transform: perspective(500px) rotateY(0deg);
-  }
-  50% {
-    transform: perspective(500px) rotateY(180deg);
-  }
-  100% {
-    transform: perspective(500px) rotateY(360deg);
-  }
-}
-
-.degree-title {
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-}
-
-.degree-name {
-  font-size: 14px;
-  font-weight: 800;
-}
-
-.degree-institute {
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.degree-country {
-  font-size: 11px;
-  opacity: 0.85;
-}
-
-.neon-cyan {
-  color: #00F0FF;
-  border-color: #00F0FF;
-}
-
-.neon-pink {
-  color: #FF00E5;
-  border-color: #FF00E5;
-}
-
-.neon-purple {
-  color: #7A00FF;
-  border-color: #7A00FF;
-}
-
-.neon-green {
-  color: #39FF14;
-  border-color: #39FF14;
-}
-
-.neon-orange {
-  color: #FF8A00;
-  border-color: #FF8A00;
-}
-
-.neon-yellow {
-  color: #FFE600;
-  border-color: #FFE600;
-}
-
-</style>
-
-<table class="academic-grid" align="center">
+<table align="center" width="100%">
 <tr>
 
 <!-- =========================
-     TOP ROW — 6 DEGREES
+     ROW 1
      ========================= -->
 
-<td class="academic-card neon-cyan">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/00F0FF">
-</div>
-
-<div class="degree-title">
-MASTER OF SCIENCE
-</div>
-
-<br>
-
-<div class="degree-name">
-ARTIFICIAL INTELLIGENCE &amp; CYBERSECURITY
-</div>
-
-<br>
-
-<div class="degree-name">
-M.S. A.I. &amp; C.S.
-</div>
-
-<br>
-
-<div class="degree-institute">
-Indian Institute of Technology, Patna
-</div>
-
-<br>
-
-<div class="degree-country">
-INDIA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/01-ms-ai-cybersecurity.svg"
+    width="180"
+    alt="Master of Science in Artificial Intelligence and Cybersecurity"
+  >
 </td>
 
-<td class="academic-card neon-pink">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/FF00E5">
-</div>
-
-<div class="degree-title">
-MASTER OF BUSINESS ADMINISTRATION
-</div>
-
-<br>
-
-<div class="degree-name">
-M.B.A.
-</div>
-
-<br>
-
-<div class="degree-institute">
-Indian Institute of Technology, Roorkee
-</div>
-
-<br>
-
-<div class="degree-country">
-INDIA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/02-mba.svg"
+    width="180"
+    alt="Master of Business Administration"
+  >
 </td>
 
-<td class="academic-card neon-purple">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/7A00FF">
-</div>
-
-<div class="degree-title">
-MASTER OF COMPUTER APPLICATIONS
-</div>
-
-<br>
-
-<div class="degree-name">
-M.C.A.
-</div>
-
-<br>
-
-<div class="degree-institute">
-Uttar Pradesh Rajarshi Tandon Open University
-</div>
-
-<br>
-
-<div class="degree-country">
-INDIA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/03-mca.svg"
+    width="180"
+    alt="Master of Computer Applications"
+  >
 </td>
 
-<td class="academic-card neon-green">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/39FF14">
-</div>
-
-<div class="degree-title">
-MASTER OF ARTS
-</div>
-
-<br>
-
-<div class="degree-name">
-HISTORY
-</div>
-
-<br>
-
-<div class="degree-name">
-M.A. HISTORY
-</div>
-
-<br>
-
-<div class="degree-institute">
-Uttar Pradesh Rajarshi Tandon Open University
-</div>
-
-<br>
-
-<div class="degree-country">
-INDIA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/04-ma-philosophy.svg"
+    width="180"
+    alt="Master of Arts in Philosophy"
+  >
 </td>
 
-<td class="academic-card neon-orange">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/FF8A00">
-</div>
-
-<div class="degree-title">
-MASTER OF ARTS
-</div>
-
-<br>
-
-<div class="degree-name">
-PHILOSOPHY
-</div>
-
-<br>
-
-<div class="degree-name">
-M.A. PHILOSOPHY
-</div>
-
-<br>
-
-<div class="degree-institute">
-Indira Gandhi National Open University
-</div>
-
-<br>
-
-<div class="degree-country">
-INDIA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/05-ma-history.svg"
+    width="180"
+    alt="Master of Arts in History"
+  >
 </td>
 
-<td class="academic-card neon-yellow">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/FFE600">
-</div>
-
-<div class="degree-title">
-BACHELOR OF ARTS
-</div>
-
-<br>
-
-<div class="degree-name">
-HISTORY • POLITICAL SCIENCE • SOCIOLOGY
-</div>
-
-<br>
-
-<div class="degree-name">
-B.A.
-</div>
-
-<br>
-
-<div class="degree-institute">
-Uttar Pradesh Rajarshi Tandon Open University
-</div>
-
-<br>
-
-<div class="degree-country">
-INDIA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/06-ba.svg"
+    width="180"
+    alt="Bachelor of Arts in History Political Science and Sociology"
+  >
 </td>
 
 </tr>
@@ -491,151 +240,55 @@ INDIA
 <tr>
 
 <!-- =========================
-     BOTTOM ROW — 6 DIPLOMAS
+     ROW 2
      ========================= -->
 
-<td class="academic-card neon-cyan">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/00F0FF">
-</div>
-
-<div class="degree-title">
-POST GRADUATE DIPLOMA
-</div>
-
-<br>
-
-<div class="degree-name">
-FINANCIAL MANAGEMENT
-</div>
-
-<br>
-
-<div class="degree-name">
-P.G. DIPLOMA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/07-pg-financial-management.svg"
+    width="180"
+    alt="Post Graduate Diploma in Financial Management"
+  >
 </td>
 
-<td class="academic-card neon-pink">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/FF00E5">
-</div>
-
-<div class="degree-title">
-POST GRADUATE DIPLOMA
-</div>
-
-<br>
-
-<div class="degree-name">
-FOLKLORE &amp; CULTURAL STUDIES
-</div>
-
-<br>
-
-<div class="degree-name">
-P.G. DIPLOMA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/08-pg-folklore-cultural-studies.svg"
+    width="180"
+    alt="Post Graduate Diploma in Folklore and Cultural Studies"
+  >
 </td>
 
-<td class="academic-card neon-purple">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/7A00FF">
-</div>
-
-<div class="degree-title">
-POST GRADUATE DIPLOMA
-</div>
-
-<br>
-
-<div class="degree-name">
-HIGHER EDUCATION
-</div>
-
-<br>
-
-<div class="degree-name">
-P.G. DIPLOMA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/09-pg-higher-education.svg"
+    width="180"
+    alt="Post Graduate Diploma in Higher Education"
+  >
 </td>
 
-<td class="academic-card neon-green">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/39FF14">
-</div>
-
-<div class="degree-title">
-POST GRADUATE DIPLOMA
-</div>
-
-<br>
-
-<div class="degree-name">
-EDUCATIONAL MANAGEMENT &amp; ADMINISTRATION
-</div>
-
-<br>
-
-<div class="degree-name">
-P.G. DIPLOMA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/10-pg-educational-management.svg"
+    width="180"
+    alt="Post Graduate Diploma in Educational Management and Administration"
+  >
 </td>
 
-<td class="academic-card neon-orange">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/FF8A00">
-</div>
-
-<div class="degree-title">
-POST GRADUATE DIPLOMA
-</div>
-
-<br>
-
-<div class="degree-name">
-BUSINESS STUDIES
-</div>
-
-<br>
-
-<div class="degree-name">
-P.G. DIPLOMA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/11-pg-business-studies.svg"
+    width="180"
+    alt="Post Graduate Diploma in Business Studies"
+  >
 </td>
 
-<td class="academic-card neon-yellow">
-
-<div class="degree-icon">
-<img src="https://cdn.simpleicons.org/academia/FFE600">
-</div>
-
-<div class="degree-title">
-DIPLOMA
-</div>
-
-<br>
-
-<div class="degree-name">
-COMPUTER IN OFFICE MANAGEMENT
-</div>
-
-<br>
-
-<div class="degree-name">
-DIPLOMA
-</div>
-
+<td align="center" width="16.66%">
+  <img
+    src="./academic_degree_cards_v2/12-diploma-computer-office-management.svg"
+    width="180"
+    alt="Diploma in Computer in Office Management"
+  >
 </td>
 
 </tr>
@@ -643,20 +296,69 @@ DIPLOMA
 
 <br>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
-</p>
+<!-- =========================================================
+     ACADEMIC DIVIDER
+     ========================================================= -->
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/c/FF00E5" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/linux/7A00FF" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/python/00F0FF" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/github/FF00E5" width="42">
+  <img
+    src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header"
+    width="90%"
+  >
+</p>
+
+<br>
+
+<!-- =========================================================
+     ACADEMIC TECHNOLOGY SIGNATURE
+     ========================================================= -->
+
+<p align="center">
+
+  <img
+    src="https://cdn.simpleicons.org/wolframmathematica/00F0FF"
+    width="42"
+    alt="Wolfram Mathematica"
+  >
+
+  &nbsp;&nbsp;
+
+  <img
+    src="https://cdn.simpleicons.org/c/FF00E5"
+    width="42"
+    alt="C"
+  >
+
+  &nbsp;&nbsp;
+
+  <img
+    src="https://cdn.simpleicons.org/linux/7A00FF"
+    width="42"
+    alt="Linux"
+  >
+
+  &nbsp;&nbsp;
+
+  <img
+    src="https://cdn.simpleicons.org/python/00F0FF"
+    width="42"
+    alt="Python"
+  >
+
+  &nbsp;&nbsp;
+
+  <img
+    src="https://cdn.simpleicons.org/github/FF00E5"
+    width="42"
+    alt="GitHub"
+  >
+
+</p>
+
+<br>
+
+<p align="center">
+  <b>⚡ KNOWLEDGE • TECHNOLOGY • SYSTEMS • INTELLIGENCE ⚡</b>
 </p>
 
 # GitHub statistics
