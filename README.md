@@ -165,12 +165,6 @@
 </h2>
 
 <p align="center">
-  <span style="color:#39FF14;">
-    LEARN → BUILD → EXPERIMENT → CONNECT
-  </span>
-</p>
-
-<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=39FF14&height=3&section=header">
 </p>
 
@@ -437,50 +431,156 @@
      CONNECTION MAP
      ========================= -->
 
+
+<!-- CODE -->
+
 <p align="center">
-  <span style="color:#39FF14;">
-    ▲
-    <br>
-    <b>CODE</b>
-    <br>
+  <span style="color:#39FF14; font-size:24px;">▲</span>
+</p>
+
+<table align="center" width="60%">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/visualstudiocode/39FF14" width="90">
+
+<h2>
+  <span style="color:#39FF14;">CODE</span>
+</h2>
+
+</td>
+
+</tr>
+</table>
+
+
+<!-- CONNECTION -->
+
+<p align="center">
+  <span style="color:#39FF14; font-size:24px;">
     │
     <br>
     ▼
-    <br>
-    <b>DATA</b>
-    <br>
-    │
-    <br>
-    ▼
-    <br>
-    <b>ML / DEEP LEARNING</b>
-    <br>
-    │
-    <br>
-    ▼
-    <br>
-    <b>SYSTEMS</b>
-    <br>
-    │
-    <br>
-    ▼
-    <b>DEPLOYMENT</b>
   </span>
 </p>
 
 
+<!-- DATA -->
+
+<table align="center" width="60%">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/postgresql/39FF14" width="90">
+
+<h2>
+  <span style="color:#39FF14;">DATA</span>
+</h2>
+
+</td>
+
+</tr>
+</table>
+
+
+<!-- CONNECTION -->
+
+<p align="center">
+  <span style="color:#39FF14; font-size:24px;">
+    │
+    <br>
+    ▼
+  </span>
+</p>
+
+
+<!-- ML / DEEP LEARNING -->
+
+<table align="center" width="60%">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/pytorch/39FF14" width="90">
+
+<h2>
+  <span style="color:#39FF14;">ML / DEEP LEARNING</span>
+</h2>
+
+</td>
+
+</tr>
+</table>
+
+
+<!-- CONNECTION -->
+
+<p align="center">
+  <span style="color:#39FF14; font-size:24px;">
+    │
+    <br>
+    ▼
+  </span>
+</p>
+
+
+<!-- SYSTEMS -->
+
+<table align="center" width="60%">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/linux/39FF14" width="90">
+
+<h2>
+  <span style="color:#39FF14;">SYSTEMS</span>
+</h2>
+
+</td>
+
+</tr>
+</table>
+
+
+<!-- CONNECTION -->
+
+<p align="center">
+  <span style="color:#39FF14; font-size:24px;">
+    │
+    <br>
+    ▼
+  </span>
+</p>
+
+
+<!-- DEPLOYMENT -->
+
+<table align="center" width="60%">
+<tr>
+
+<td align="center">
+
+<img src="https://cdn.simpleicons.org/docker/39FF14" width="90">
+
+<h2>
+  <span style="color:#39FF14;">DEPLOYMENT</span>
+</h2>
+
+</td>
+
+</tr>
+</table>
+
+
 <!-- =========================
-     FINAL LINE
+     FOOTER
      ========================= -->
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=39FF14&height=3&section=footer">
-</p>
-
-<p align="center">
-  <span style="color:#39FF14;">
-    <b>PYTHON • C++ • C • DATABASE • ML • DEEP LEARNING • GIT • DOCKER • LINUX • GITHUB</b>
-  </span>
 </p>
 
 ## The Questions Behind Everything
