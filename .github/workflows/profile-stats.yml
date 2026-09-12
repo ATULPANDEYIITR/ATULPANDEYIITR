@@ -1,0 +1,103 @@
+name: 🚀 Update GitHub Profile Stats
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "47 21 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-profile-stats
+  cancel-in-progress: false
+
+jobs:
+  generate-profile:
+
+    name: Generate Profile Statistics
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 📦 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 📊 Generate GitHub profile cards
+        uses: seijikohara/profile-cards-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: ATULPANDEYIITR
+
+          cards: >
+            overview,
+            lifetime,
+            contributions,
+            composition,
+            rhythm,
+            cadence,
+            repositories,
+            languages
+
+          output-dir: assets
+
+          themes: dark,light
+
+          language-limit: 8
+
+          commit: true
+
+          commit-message: "chore(profile): update GitHub statistics [skip ci]"name: 🚀 Update GitHub Profile Stats
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "47 21 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: github-profile-stats
+  cancel-in-progress: false
+
+jobs:
+  generate-profile:
+
+    name: Generate Profile Statistics
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 📦 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 📊 Generate GitHub profile cards
+        uses: seijikohara/profile-cards-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: ATULPANDEYIITR
+
+          cards: >
+            overview,
+            lifetime,
+            contributions,
+            composition,
+            rhythm,
+            cadence,
+            repositories,
+            languages
+
+          output-dir: assets
+
+          themes: dark,light
+
+          language-limit: 8
+
+          commit: true
+
+          commit-message: "chore(profile): update GitHub statistics [skip ci]"
