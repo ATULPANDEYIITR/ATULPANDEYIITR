@@ -228,14 +228,6 @@
   <img src="https://cdn.simpleicons.org/gmail" width="32">
 </p>
 
-<p align="center">
-  <b>EXPLORE MY WORK</b>
-  &nbsp;&nbsp; · &nbsp;&nbsp;
-  <b>CONNECT PROFESSIONALLY</b>
-  &nbsp;&nbsp; · &nbsp;&nbsp;
-  <b>START A CONVERSATION</b>
-</p>
-
 <br><br>
 
 # Thanks for visiting
