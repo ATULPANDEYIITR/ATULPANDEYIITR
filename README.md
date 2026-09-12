@@ -154,22 +154,7 @@
 
 # Education / Background
 
-# 📊 GITHUB STATS & ACTIVITY
-
-<!-- =========================================================
-     📊 GITHUB STATS & ACTIVITY
-     FULL-WIDTH VERTICAL LAYOUT
-     ========================================================= -->
-
-<h2 align="center">
-  📊 GitHub Stats & Activity
-</h2>
-
-<p align="center">
-  <b>ATULPANDEYIITR</b>
-</p>
-
-<br>
+# 📊 Statistics and activity
 
 <!-- =========================================================
      ⚡ GITHUB STATISTICS
