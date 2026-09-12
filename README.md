@@ -173,7 +173,7 @@
 
 <p align="center">
   <img
-    src="./academic/academic-journey.gif"
+    src="./academic-journey.gif"
     width="100%"
     alt="My Academic Journey — degrees and diplomas"
   >
