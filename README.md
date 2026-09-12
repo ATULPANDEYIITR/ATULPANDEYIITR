@@ -156,9 +156,7 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
 </p>
 
-<!-- =========================
      MY TECHNICAL UNIVERSE
-     ========================= -->
 
 <h2 align="center">
   <span style="color:#39FF14;">⚡ MY TECHNICAL UNIVERSE ⚡</span>
@@ -168,10 +166,6 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=39FF14&height=3&section=header">
 </p>
 
-
-<!-- =========================
-     CORE
-     ========================= -->
 
 <table align="center" width="100%">
 <tr>
@@ -197,10 +191,6 @@
 </tr>
 </table>
 
-
-<!-- =========================
-     PROGRAMMING MAP
-     ========================= -->
 
 <p align="center">
   <span style="color:#39FF14;">━━━━━━━━━━ PROGRAMMING ━━━━━━━━━━</span>
