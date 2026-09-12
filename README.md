@@ -156,29 +156,157 @@
 
 # GitHub statistics
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ATULPANDEYIITR&hide_border=true" width="70%">
-</p>
+<!-- =========================================================
+     📊 GITHUB STATS & ACTIVITY
+     ATULPANDEYIITR
+     ========================================================= -->
+
+<h2 align="center">
+  📊 GitHub Stats & Activity
+</h2>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ATULPANDEYIITR" width="95%">
+  <img
+    src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=2"
+    width="100%"
+  />
 </p>
+
+
+<!-- =========================================================
+     🧠 MAIN GITHUB DASHBOARD
+     
+     Contains:
+     • Total Stars
+     • Total Commits
+     • Total PRs
+     • Total Issues
+     • GitHub Rank
+     ========================================================= -->
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ATULPANDEYIITR" height="170">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ATULPANDEYIITR" height="170">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=true&include_all_commits=true&count_private=false&hide=contribs&hide_title=true&rank_icon=percentile&theme=transparent&bg_color=0D1117&border_color=30363D&title_color=00D9A5&text_color=8B949E&icon_color=00D9A5"
+    width="96%"
+    alt="ATULPANDEYIITR GitHub Statistics"
+  />
 </p>
+
+
+<!-- =========================================================
+     🔥 CONTRIBUTION STREAK DASHBOARD
+     
+     Contains:
+     • Total Contributions
+     • Current Streak
+     • Longest Streak
+     ========================================================= -->
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ATULPANDEYIITR" height="170">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ATULPANDEYIITR&utcOffset=5.5" height="170">
+  <img
+    src="https://streak-stats.demolab.com/?user=ATULPANDEYIITR&hide_border=true&background=0D1117&border=30363D&stroke=30363D&ring=00D9A5&fire=FF4F81&currStreakNum=00D9A5&sideNums=00D9A5&currStreakLabel=00D9A5&sideLabels=8B949E&dates=6E7681"
+    width="96%"
+    alt="ATULPANDEYIITR Contribution Streak"
+  />
 </p>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- =========================================================
+     💻 LANGUAGE UNIVERSE
+     ========================================================= -->
+
+<h3 align="center">
+  💻 Most Used Languages
+</h3>
+
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=ATULPANDEYIITR&layout=compact&langs_count=8&hide_border=true&theme=transparent&bg_color=0D1117&border_color=30363D&title_color=00D9A5&text_color=8B949E&icon_color=FF4F81"
+    width="55%"
+    alt="ATULPANDEYIITR Most Used Languages"
+  />
+</p>
+
+
+<!-- =========================================================
+     📈 LIVE CONTRIBUTION ACTIVITY
+     ========================================================= -->
+
+<h3 align="center">
+  📈 Contribution Activity
+</h3>
+
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=ATULPANDEYIITR&bg_color=0D1117&color=00D9A5&line=00D9A5&point=FF4F81&area_color=00D9A5&area=true&hide_border=true&title_color=00D9A5&custom_title=ATULPANDEYIITR%20%E2%80%94%20GitHub%20Activity&radius=8"
+    width="98%"
+    alt="ATULPANDEYIITR GitHub Activity Graph"
+  />
+</p>
+
+
+<!-- =========================================================
+     ⏱️ CODING ACTIVITY
+     ========================================================= -->
+
+<p align="center">
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ATULPANDEYIITR&utcOffset=5.5&theme=github_dark"
+    width="48%"
+    alt="ATULPANDEYIITR Productive Coding Time"
+  />
+</p>
+
+
+<!-- =========================================================
+     👤 PROFILE DETAILS
+     ========================================================= -->
+
+<p align="center">
+  <img
+    src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ATULPANDEYIITR&theme=github_dark"
+    width="98%"
+    alt="ATULPANDEYIITR GitHub Profile Details"
+  />
+</p>
+
+
+<!-- =========================================================
+     ⭐ LIVE PROFILE COUNTERS
+     ========================================================= -->
+
+<p align="center">
+
+  <img
+    src="https://img.shields.io/github/stars/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=STARS&labelColor=0D1117&color=00D9A5"
+    alt="GitHub Stars"
+  />
+
+  <img
+    src="https://img.shields.io/github/followers/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=FOLLOWERS&labelColor=0D1117&color=FF4F81"
+    alt="GitHub Followers"
+  />
+
+  <img
+    src="https://img.shields.io/github/repos/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=REPOSITORIES&labelColor=0D1117&color=00D9A5"
+    alt="GitHub Repositories"
+  />
+
+</p>
+
+
+<!-- =========================================================
+     🔗 PROFILE
+     ========================================================= -->
+
+<p align="center">
+  <a href="https://github.com/ATULPANDEYIITR">
+    <img
+      src="https://img.shields.io/badge/GITHUB_PROFILE-0D1117?style=for-the-badge&logo=github&logoColor=00D9A5&labelColor=0D1117&color=30363D"
+      alt="GitHub Profile"
+    />
+  </a>
+</p>
 
 # 🌐 My digital profiles
 
