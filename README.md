@@ -241,45 +241,213 @@ India
 
 <img src="https://cdn.simpleicons.org/wolframmathematica/00F0FF" width="50">
 
-## GitHub Statistics
+# GitHub statistics
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/github/00F0FF" width="70">
+  <img src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&hide_border=true" height="180">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ATULPANDEYIITR&layout=compact&langs_count=10&hide_border=true" height="180">
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=false&hide_border=true&include_all_commits=true&count_private=true&bg_color=00F0FF&title_color=000000&text_color=000000&icon_color=000000">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ATULPANDEYIITR&hide_border=true" width="70%">
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ATULPANDEYIITR&layout=compact&hide_border=true&langs_count=10&bg_color=FF00E5&title_color=000000&text_color=000000">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ATULPANDEYIITR" width="95%">
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ATULPANDEYIITR&hide_border=true&background=000000&ring=00F0FF&fire=FF00E5&currStreakLabel=00F0FF&sideLabels=00F0FF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=AAAAAA">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ATULPANDEYIITR" height="170">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ATULPANDEYIITR" height="170">
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=FF00E5&height=3&section=header">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ATULPANDEYIITR" height="170">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ATULPANDEYIITR&utcOffset=5.5" height="170">
+</p>
+
+## Live GitHub activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ATULPANDEYIITR&hide_border=true&area=true" width="95%">
 </p>
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/github/00F0FF" width="38">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/python/FF00E5" width="38">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/tensorflow/7A00FF" width="38">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/kali/00F0FF" width="38">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/docker/FF00E5" width="38">
-  &nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/amazonwebservices/7A00FF" width="38">
+  <sub>Contributions • Commits • Repository activity • Coding patterns • Languages</sub>
+</p>
+
+## What the dashboard represents
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  <br>
+  <b>REPOSITORIES</b>
+  <br>
+  <sub>Projects • Experiments • Research</sub>
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=100&section=footer">
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  <br>
+  <b>STARS</b>
+  <br>
+  <sub>Interest • Visibility</sub>
 </p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="32">
+  <br>
+  <b>STREAK</b>
+  <br>
+  <sub>Contribution consistency</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="32">
+  <br>
+  <b>LANGUAGES</b>
+  <br>
+  <sub>Technology usage</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/githubactions" width="32">
+  <br>
+  <b>CONTRIBUTIONS</b>
+  <br>
+  <sub>Development activity</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/git" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/readthedocs" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/githubactions" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="28">
+</p>
+
+<p align="center">
+  <b>LEARN → BUILD → COMMIT → DOCUMENT → SHARE → IMPROVE → REPEAT</b>
+</p>
+
+<p align="center">
+  <sub>
+    This section is intentionally dynamic. Statistics, contribution patterns, languages and repository metrics change with GitHub activity.
+  </sub>
+</p>
+
+## Learning activity map
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="40">
+  <br>
+  <b>PYTHON</b>
+  <br>
+  <sub>Repositories • Commits • Code</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/tensorflow" width="40">
+  <br>
+  <b>AI / ML</b>
+  <br>
+  <sub>Projects • Models • Experiments</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/kalilinux" width="40">
+  <br>
+  <b>SECURITY</b>
+  <br>
+  <sub>Security • Linux • Research</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/postgresql" width="40">
+  <br>
+  <b>DATA</b>
+  <br>
+  <sub>SQL • Databases • Analytics</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/docker" width="40">
+  <br>
+  <b>CLOUD & SYSTEMS</b>
+  <br>
+  <sub>Containers • Infrastructure • Deployment</sub>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/qiskit" width="40">
+  <br>
+  <b>QUANTUM</b>
+  <br>
+  <sub>Circuits • Algorithms • Research</sub>
+</p>
+
+---
+
+# Learning progress
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&custom_title=Learning%20Activity" width="48%">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ATULPANDEYIITR&layout=compact&langs_count=12&hide_border=true&custom_title=Technology%20Usage" width="40%">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ATULPANDEYIITR&hide_border=true&area=true&custom_title=Learning%20Activity%20Over%20Time" width="95%">
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/python" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/tensorflow" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/kalilinux" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/postgresql" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/docker" width="42">
+  &nbsp;
+  <img src="https://cdn.simpleicons.org/qiskit" width="42">
+</p>
+
+<p align="center">
+  <b>PYTHON • AI / ML • SECURITY • DATA • CLOUD • QUANTUM</b>
+</p>
+
+<p align="center">
+  <img src="https://cdn.simpleicons.org/github" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/git" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/jupyter" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/readthedocs" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/githubactions" width="28">
+  →
+  <img src="https://cdn.simpleicons.org/github" width="28">
+</p>
+
+<p align="center">
+  <b>ACTIVITY → PRACTICE → PROJECTS → DOCUMENTATION → CONTRIBUTIONS</b>
+</p>
+
+<p align="center">
+  <sub>
+    Learning progress is reflected through observable GitHub activity, including repositories, commits, languages, experiments and contributions.
+  </sub>
+</p>
+
+---
 
 # Active Exploration
 
@@ -3343,1550 +3511,6 @@ Research starts with curiosity.<br>
 Engineering turns understanding into something that can be tested.<br>
 Experimentation turns assumptions into evidence.
 
-</p>
-
----
-
-# My learning philosophy
-
-<p align="center">
-
-<table align="center">
-<tr>
-
-<td align="center" colspan="4">
-
-<img src="https://cdn.simpleicons.org/brain" width="65">
-
-<br><br>
-
-<h1>FIRST-PRINCIPLES LEARNING SYSTEM</h1>
-
-<b>QUESTION → UNDERSTAND → DECONSTRUCT → BUILD → BREAK → REBUILD</b>
-
-<br><br>
-
-<code>DON'T MEMORIZE THE SYSTEM — UNDERSTAND THE MECHANISM</code>
-
-</td>
-
-</tr>
-
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>THE CORE PRINCIPLE</b>
-
-<br><br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/google" width="48">
-
-<br><br>
-
-<b>ASK WHY?</b>
-
-<br><br>
-
-Why does it work?<br>
-Why was it designed this way?<br>
-What problem does it solve?
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="48">
-
-<br><br>
-
-<b>FIND THE FOUNDATION</b>
-
-<br><br>
-
-Mathematics<br>
-Logic<br>
-Algorithms<br>
-Principles
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/python" width="48">
-
-<br><br>
-
-<b>UNDERSTAND THE MECHANISM</b>
-
-<br><br>
-
-What happens underneath?<br>
-How do components interact?<br>
-What are the assumptions?
-
-</td>
-
-</tr>
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="42">
-
-<br><br>
-
-<b>FUNDAMENTALS</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/python" width="42">
-
-<br><br>
-
-<b>UNDERSTAND</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/github" width="42">
-
-<br><br>
-
-<b>DECONSTRUCT</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/python" width="42">
-
-<br><br>
-
-<b>IMPLEMENT</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/jupyter" width="42">
-
-<br><br>
-
-<b>EXPERIMENT</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/bugcrowd" width="42">
-
-<br><br>
-
-<b>INVESTIGATE</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/githubactions" width="42">
-
-<br><br>
-
-<b>REBUILD</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/pandas" width="42">
-
-<br><br>
-
-<b>ANALYZE</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/bookstack" width="42">
-
-<br><br>
-
-<b>DOCUMENT</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/github" width="42">
-
-<br><br>
-
-<b>IMPROVE</b>
-
-<br><br>
-
-<img src="https://cdn.simpleicons.org/google" width="42">
-
-<br><br>
-
-<b>ASK A BETTER QUESTION</b>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>WHAT I TRY TO UNDERSTAND</b>
-
-<br><br>
-
-<table align="center">
-<tr>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="52">
-
-<br><br>
-
-<b>FOUNDATIONS</b>
-
-<br><br>
-
-Mathematics<br>
-Logic<br>
-Algorithms<br>
-Complexity<br>
-Computer Science
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/python" width="52">
-
-<br><br>
-
-<b>IMPLEMENTATION</b>
-
-<br><br>
-
-Programming<br>
-Data Structures<br>
-APIs<br>
-Databases<br>
-Systems
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/jupyter" width="52">
-
-<br><br>
-
-<b>EXPERIMENTATION</b>
-
-<br><br>
-
-Test<br>
-Measure<br>
-Compare<br>
-Break<br>
-Validate
-
-</td>
-
-<td align="center" width="25%">
-
-<img src="https://cdn.simpleicons.org/github" width="52">
-
-<br><br>
-
-<b>APPLICATION</b>
-
-<br><br>
-
-Projects<br>
-Systems<br>
-Documentation<br>
-Deployment<br>
-Iteration
-
-</td>
-
-</tr>
-
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>THE FIVE QUESTIONS BEHIND EVERY TECHNOLOGY</b>
-
-<br><br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/google" width="40">
-
-<br><br>
-
-<b>WHY?</b>
-
-<br><br>
-
-What problem<br>
-does it solve?
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/python" width="40">
-
-<br><br>
-
-<b>HOW?</b>
-
-<br><br>
-
-What mechanism<br>
-makes it work?
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="40">
-
-<br><br>
-
-<b>WHAT'S UNDERNEATH?</b>
-
-<br><br>
-
-What abstractions<br>
-hide complexity?
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/bugcrowd" width="40">
-
-<br><br>
-
-<b>WHERE DOES IT BREAK?</b>
-
-<br><br>
-
-What are the limits<br>
-and failure modes?
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/github" width="40">
-
-<br><br>
-
-<b>CAN I BUILD IT?</b>
-
-<br><br>
-
-Can I reproduce<br>
-the idea myself?
-
-</td>
-
-</tr>
-
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>LEARNING THROUGH FAILURE</b>
-
-<br><br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/python" width="42">
-
-<br><br>
-
-<b>BUILD</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/jupyter" width="42">
-
-<br><br>
-
-<b>TEST</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/bugcrowd" width="42">
-
-<br><br>
-
-<b>FAIL</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/google" width="42">
-
-<br><br>
-
-<b>INVESTIGATE</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="42">
-
-<br><br>
-
-<b>UNDERSTAND</b>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/githubactions" width="42">
-
-<br><br>
-
-<b>FIX</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/jupyter" width="42">
-
-<br><br>
-
-<b>RETEST</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/pandas" width="42">
-
-<br><br>
-
-<b>MEASURE</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/bookstack" width="42">
-
-<br><br>
-
-<b>DOCUMENT</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/github" width="42">
-
-<br><br>
-
-<b>IMPROVE</b>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<code>FAILURE → FEEDBACK → UNDERSTANDING → BETTER IMPLEMENTATION</code>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>FROM MEMORIZATION TO MASTERY</b>
-
-<br><br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/bookstack" width="42">
-
-<br><br>
-
-<b>MEMORIZE</b>
-
-<br><br>
-
-Remember<br>
-the syntax
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="42">
-
-<br><br>
-
-<b>UNDERSTAND</b>
-
-<br><br>
-
-Understand<br>
-the concept
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/python" width="42">
-
-<br><br>
-
-<b>IMPLEMENT</b>
-
-<br><br>
-
-Write it<br>
-from scratch
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/jupyter" width="42">
-
-<br><br>
-
-<b>EXPERIMENT</b>
-
-<br><br>
-
-Change it<br>
-and test it
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/github" width="42">
-
-<br><br>
-
-<b>MASTER</b>
-
-<br><br>
-
-Explain it<br>
-and build with it
-
-</td>
-
-</tr>
-
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<b>HOW THE PHILOSOPHY CONNECTS EVERYTHING</b>
-
-<br><br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="40">
-
-<br><br>
-
-<b>MATHEMATICS</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/python" width="40">
-
-<br><br>
-
-<b>COMPUTATION</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/postgresql" width="40">
-
-<br><br>
-
-<b>DATA</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/tensorflow" width="40">
-
-<br><br>
-
-<b>INTELLIGENCE</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/kalilinux" width="40">
-
-<br><br>
-
-<b>SECURITY</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/docker" width="40">
-
-<br><br>
-
-<b>SCALE</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/qiskit" width="40">
-
-<br><br>
-
-<b>EMERGING SYSTEMS</b>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
-<code>UNDERSTAND THE FOUNDATION → CONNECT THE CONCEPT → BUILD THE SYSTEM</code>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<img src="https://cdn.simpleicons.org/github" width="50">
-
-<br><br>
-
-<b>PERSONAL LEARNING DOCTRINE</b>
-
-<br><br>
-
-<b>I do not want to only know WHAT a technology does.</b>
-
-<br><br>
-
-<b>I want to understand WHY it exists, HOW it works,<br>
-WHERE it fails, WHAT is underneath it, and HOW to build with it.</b>
-
-<br><br>
-
-<table align="center">
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/google" width="36">
-
-<br><br>
-
-<b>QUESTION</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/wolframmathematica" width="36">
-
-<br><br>
-
-<b>FOUNDATION</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/python" width="36">
-
-<br><br>
-
-<b>UNDERSTANDING</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/github" width="36">
-
-<br><br>
-
-<b>IMPLEMENTATION</b>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/jupyter" width="36">
-
-<br><br>
-
-<b>EXPERIMENT</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/google" width="36">
-
-<br><br>
-
-<b>INVESTIGATE</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/pandas" width="36">
-
-<br><br>
-
-<b>ANALYZE</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/bookstack" width="36">
-
-<br><br>
-
-<b>DOCUMENT</b>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/githubactions" width="36">
-
-<br><br>
-
-<b>IMPROVE</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/github" width="36">
-
-<br><br>
-
-<b>BUILD</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/linkedin" width="36">
-
-<br><br>
-
-<b>CONNECT</b>
-
-</td>
-
-<td align="center">
-
-<img src="https://cdn.simpleicons.org/google" width="36">
-
-<br><br>
-
-<b>QUESTION AGAIN</b>
-
-</td>
-
-</tr>
-
-</table>
-
-</p>
-
-<br>
-
-<p align="center">
-
-<img src="https://cdn.simpleicons.org/brain" width="48">
-
-<br><br>
-
-<b>DON'T JUST LEARN HOW TO USE A TECHNOLOGY.</b>
-
-<br><br>
-
-<b>UNDERSTAND WHY IT WORKS.</b>
-
-<br><br>
-
-<code>QUESTION → UNDERSTAND → BUILD → BREAK → REBUILD → MASTER</code>
-
-</p>
-
----
-
-# My core philosophy
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/wolframmathematica" width="52">
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/brain" width="52">
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/python" width="52">
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/jupyter" width="52">
-  &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/github" width="52">
-</p>
-
-<p align="center">
-  <b>FUNDAMENTALS</b>
-  &nbsp;&nbsp;→&nbsp;&nbsp;
-  <b>UNDERSTANDING</b>
-  &nbsp;&nbsp;→&nbsp;&nbsp;
-  <b>IMPLEMENTATION</b>
-  &nbsp;&nbsp;→&nbsp;&nbsp;
-  <b>EXPERIMENTATION</b>
-  &nbsp;&nbsp;→&nbsp;&nbsp;
-  <b>KNOWLEDGE</b>
-</p>
-
-<p align="center">
-  <sub>
-    Understand the foundation → understand why it works → build it → test it → document it
-  </sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/wolframmathematica" width="34">
-  <br>
-  <b>FOUNDATION</b>
-  <br>
-  <sub>What is it built on?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/brain" width="34">
-  <br>
-  <b>UNDERSTANDING</b>
-  <br>
-  <sub>Why does it work?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/python" width="34">
-  <br>
-  <b>IMPLEMENTATION</b>
-  <br>
-  <sub>Can I build it?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/jupyter" width="34">
-  <br>
-  <b>EXPERIMENTATION</b>
-  <br>
-  <sub>What happens if I change it?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="34">
-  <br>
-  <b>KNOWLEDGE</b>
-  <br>
-  <sub>Can I explain and reuse it?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/wolframmathematica" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/brain" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/python" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/jupyter" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/github" width="30">
-</p>
-
-<p align="center">
-  <b>QUESTION</b>
-  &nbsp;→&nbsp;
-  <b>UNDERSTAND</b>
-  &nbsp;→&nbsp;
-  <b>IMPLEMENT</b>
-  &nbsp;→&nbsp;
-  <b>EXPERIMENT</b>
-  &nbsp;→&nbsp;
-  <b>ANALYZE</b>
-  &nbsp;→&nbsp;
-  <b>DOCUMENT</b>
-  &nbsp;→&nbsp;
-  <b>IMPROVE</b>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/python" width="30">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/jupyter" width="30">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/github" width="30">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/readthedocs" width="30">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/githubactions" width="30">
-</p>
-
-<p align="center">
-  <b>I do not want to simply know how to use a technology.</b>
-  <br>
-  <sub>
-    I want to understand the principles, mechanisms, trade-offs and limitations behind it.
-  </sub>
-</p>
-
----
-
-# Things I understand better now
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/brain" width="58">
-</p>
-
-<p align="center">
-  <b>FROM INDIVIDUAL CONCEPTS TO INTERCONNECTED SYSTEMS</b>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/wolframmathematica" width="48">
-</p>
-
-<p align="center">
-  <b>MATHEMATICAL FOUNDATIONS</b>
-  <br>
-  <sub>
-    Mathematical reasoning • Algorithms • Complexity • Cryptography • Statistics • Computational thinking
-  </sub>
-  <br><br>
-  <code>WHY THE COMPUTATION WORKS</code>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/linux" width="48">
-</p>
-
-<p align="center">
-  <b>SYSTEMS THINKING</b>
-  <br>
-  <sub>
-    Architecture • Distributed systems • Scalability • Reliability • Infrastructure • Operating systems
-  </sub>
-  <br><br>
-  <code>HOW COMPONENTS WORK TOGETHER</code>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/tensorflow" width="48">
-</p>
-
-<p align="center">
-  <b>ARTIFICIAL INTELLIGENCE</b>
-  <br>
-  <sub>
-    Machine learning • Deep learning • LLM architecture • RAG • AI agents • Model evaluation
-  </sub>
-  <br><br>
-  <code>HOW INTELLIGENT SYSTEMS ARE BUILT</code>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/kalilinux" width="48">
-</p>
-
-<p align="center">
-  <b>SECURITY</b>
-  <br>
-  <sub>
-    Cryptography • Threat modeling • Secure architecture • AI security • Security analysis • Post-quantum security
-  </sub>
-  <br><br>
-  <code>HOW SYSTEMS EARN TRUST</code>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/wolframmathematica" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/linux" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/kalilinux" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/docker" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/github" width="30">
-</p>
-
-<p align="center">
-  <b>ALGORITHMS → ARCHITECTURE → SECURITY → SCALABILITY → REAL SYSTEMS</b>
-</p>
-
-<p align="center">
-  <sub>
-    Complexity • Interfaces • Trust • Performance • Distribution • Applications • Infrastructure
-  </sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/wolframmathematica" width="28">
-  <b>FOUNDATION</b>
-  →
-  <img src="https://cdn.simpleicons.org/brain" width="28">
-  <b>MECHANISM</b>
-  →
-  <img src="https://cdn.simpleicons.org/python" width="28">
-  <b>ARCHITECTURE</b>
-  →
-  <img src="https://cdn.simpleicons.org/kalilinux" width="28">
-  <b>SECURITY</b>
-  →
-  <img src="https://cdn.simpleicons.org/docker" width="28">
-  <b>SCALE</b>
-  →
-  <img src="https://cdn.simpleicons.org/github" width="28">
-  <b>APPLICATION</b>
-</p>
-
-<p align="center">
-  <sub>
-    The goal is not to know more technologies. The goal is to understand more deeply how technologies connect, interact and become real systems.
-  </sub>
-</p>
-
----
-
-# Ideas, questions & continuous exploration
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="54">
-</p>
-
-<p align="center">
-  <b>EXPLORATION RADAR</b>
-  <br>
-  <sub>OBSERVE • QUESTION • INVESTIGATE • CONNECT • EXPERIMENT • APPLY</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="34">
-  <br>
-  <b>OBSERVE</b>
-  <br>
-  <sub>What changed?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/brain" width="34">
-  <br>
-  <b>QUESTION</b>
-  <br>
-  <sub>Why did it change?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/arxiv" width="34">
-  <br>
-  <b>INVESTIGATE</b>
-  <br>
-  <sub>What is underneath?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/jupyter" width="34">
-  <br>
-  <b>EXPERIMENT</b>
-  <br>
-  <sub>Can I reproduce it?</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/python" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/arxiv" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/jupyter" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/github" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/docker" width="30">
-</p>
-
-<p align="center">
-  <b>QUESTION → INVESTIGATE → UNDERSTAND → BUILD → TEST → SECURE → APPLY</b>
-</p>
-
-## Exploration domains
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/tensorflow" width="48">
-</p>
-
-<p align="center">
-  <b>INTELLIGENCE</b>
-  <br>
-  <sub>LLMs • RAG • Agents • Reasoning • AI Evaluation • AI Security</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/kalilinux" width="48">
-</p>
-
-<p align="center">
-  <b>TRUST</b>
-  <br>
-  <sub>Cybersecurity • Cryptography • Threat Modeling • Secure AI • PQC • Resilience</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/docker" width="48">
-</p>
-
-<p align="center">
-  <b>SCALE</b>
-  <br>
-  <sub>Cloud • Distributed systems • Containers • Architecture • Reliability • Infrastructure</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/qiskit" width="48">
-</p>
-
-<p align="center">
-  <b>EMERGING</b>
-  <br>
-  <sub>Quantum • Blockchain • IoT • New architectures • Future security • Emerging systems</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/brain" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/python" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/jupyter" width="30">
-  →
-  <img src="https://cdn.simpleicons.org/docker" width="30">
-</p>
-
-<p align="center">
-  <b>WHAT?</b>
-  →
-  <b>WHY?</b>
-  →
-  <b>HOW?</b>
-  →
-  <b>WHAT IF?</b>
-  →
-  <b>NOW WHAT?</b>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/brain" width="32">
-  →
-  <img src="https://cdn.simpleicons.org/arxiv" width="32">
-  →
-  <img src="https://cdn.simpleicons.org/python" width="32">
-  →
-  <img src="https://cdn.simpleicons.org/jupyter" width="32">
-  →
-  <img src="https://cdn.simpleicons.org/github" width="32">
-</p>
-
-<p align="center">
-  <b>FROM CURIOSITY TO CREATION</b>
-  <br><br>
-  IDEA → QUESTION → INVESTIGATION → KNOWLEDGE
-  <br>
-  UNDERSTANDING → PROTOTYPE → EXPERIMENT → EVIDENCE
-  <br>
-  SECURITY → SCALE → APPLICATION → CREATION
-  <br>
-  NEW QUESTION → EXPLORE AGAIN
-</p>
-
-<p align="center">
-  <b>I FOLLOW QUESTIONS, NOT JUST CURRICULUM.</b>
-</p>
-
-<p align="center">
-  <code>QUESTION → UNDERSTAND → EXPERIMENT → CONNECT → BUILD → DISCOVER</code>
-</p>
-
----
-
-# Technical writing
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" height="30">
-  <img src="https://cdn.simpleicons.org/python" height="30">
-  <img src="https://cdn.simpleicons.org/tensorflow" height="30">
-  <img src="https://cdn.simpleicons.org/linux" height="30">
-  <img src="https://cdn.simpleicons.org/docker" height="30">
-  <img src="https://cdn.simpleicons.org/qiskit" height="30">
-  <img src="https://cdn.simpleicons.org/ethereum" height="30">
-</p>
-
-<p align="center">
-  <b>TECHNICAL COMMUNICATION • RESEARCH • STRATEGY</b>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/arxiv" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/tensorflow" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/kalilinux" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/docker" width="42">
-</p>
-
-<p align="center">
-  <b>TECHNOLOGY</b>
-  <br>
-  <sub>AI / GenAI • Enterprise AI • Cloud • Blockchain • Quantum</sub>
-</p>
-
-<p align="center">
-  <b>SECURITY</b>
-  <br>
-  <sub>Cybersecurity • Cryptography • AI Security • PQC • Trust Systems</sub>
-</p>
-
-<p align="center">
-  <b>STRATEGY</b>
-  <br>
-  <sub>Technology strategy • Digital transformation • Business + technology • Innovation</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/arxiv" width="32">
-  →
-  <img src="https://cdn.simpleicons.org/brain" width="32">
-  →
-  <img src="https://cdn.simpleicons.org/readthedocs" width="32">
-  →
-  <img src="https://cdn.simpleicons.org/github" width="32">
-</p>
-
-<p align="center">
-  <b>RESEARCH → UNDERSTAND → SIMPLIFY → COMMUNICATE → APPLY</b>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/arxiv" width="30">
-  <b>RESEARCH</b>
-  &nbsp;→&nbsp;
-  <img src="https://cdn.simpleicons.org/brain" width="30">
-  <b>UNDERSTAND</b>
-  &nbsp;→&nbsp;
-  <img src="https://cdn.simpleicons.org/readthedocs" width="30">
-  <b>SIMPLIFY</b>
-  &nbsp;→&nbsp;
-  <img src="https://cdn.simpleicons.org/github" width="30">
-  <b>COMMUNICATE</b>
-  &nbsp;→&nbsp;
-  <img src="https://cdn.simpleicons.org/python" width="30">
-  <b>APPLY</b>
-</p>
-
-<p align="center">
-  <sub>
-    Writing about technology, security, systems, artificial intelligence, emerging computing and the intersection of technology with business.
-  </sub>
-</p>
-
----
-
-# GitHub statistics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&hide_border=true" height="180">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ATULPANDEYIITR&layout=compact&langs_count=10&hide_border=true" height="180">
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ATULPANDEYIITR&hide_border=true" width="70%">
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ATULPANDEYIITR" width="95%">
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ATULPANDEYIITR" height="170">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ATULPANDEYIITR" height="170">
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ATULPANDEYIITR" height="170">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ATULPANDEYIITR&utcOffset=5.5" height="170">
-</p>
-
-## Live GitHub activity
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ATULPANDEYIITR&hide_border=true&area=true" width="95%">
-</p>
-
-<p align="center">
-  <sub>Contributions • Commits • Repository activity • Coding patterns • Languages</sub>
-</p>
-
-## What the dashboard represents
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="32">
-  <br>
-  <b>REPOSITORIES</b>
-  <br>
-  <sub>Projects • Experiments • Research</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="32">
-  <br>
-  <b>STARS</b>
-  <br>
-  <sub>Interest • Visibility</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="32">
-  <br>
-  <b>STREAK</b>
-  <br>
-  <sub>Contribution consistency</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/python" width="32">
-  <br>
-  <b>LANGUAGES</b>
-  <br>
-  <sub>Technology usage</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/githubactions" width="32">
-  <br>
-  <b>CONTRIBUTIONS</b>
-  <br>
-  <sub>Development activity</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/git" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/jupyter" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/readthedocs" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/githubactions" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/github" width="28">
-</p>
-
-<p align="center">
-  <b>LEARN → BUILD → COMMIT → DOCUMENT → SHARE → IMPROVE → REPEAT</b>
-</p>
-
-<p align="center">
-  <sub>
-    This section is intentionally dynamic. Statistics, contribution patterns, languages and repository metrics change with GitHub activity.
-  </sub>
-</p>
-
-## Learning activity map
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/python" width="40">
-  <br>
-  <b>PYTHON</b>
-  <br>
-  <sub>Repositories • Commits • Code</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/tensorflow" width="40">
-  <br>
-  <b>AI / ML</b>
-  <br>
-  <sub>Projects • Models • Experiments</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/kalilinux" width="40">
-  <br>
-  <b>SECURITY</b>
-  <br>
-  <sub>Security • Linux • Research</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/postgresql" width="40">
-  <br>
-  <b>DATA</b>
-  <br>
-  <sub>SQL • Databases • Analytics</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/docker" width="40">
-  <br>
-  <b>CLOUD & SYSTEMS</b>
-  <br>
-  <sub>Containers • Infrastructure • Deployment</sub>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/qiskit" width="40">
-  <br>
-  <b>QUANTUM</b>
-  <br>
-  <sub>Circuits • Algorithms • Research</sub>
-</p>
-
----
-
-# Learning progress
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ATULPANDEYIITR&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&custom_title=Learning%20Activity" width="48%">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ATULPANDEYIITR&layout=compact&langs_count=12&hide_border=true&custom_title=Technology%20Usage" width="40%">
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ATULPANDEYIITR&hide_border=true&area=true&custom_title=Learning%20Activity%20Over%20Time" width="95%">
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/python" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/tensorflow" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/kalilinux" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/postgresql" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/docker" width="42">
-  &nbsp;
-  <img src="https://cdn.simpleicons.org/qiskit" width="42">
-</p>
-
-<p align="center">
-  <b>PYTHON • AI / ML • SECURITY • DATA • CLOUD • QUANTUM</b>
-</p>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/git" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/jupyter" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/readthedocs" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/githubactions" width="28">
-  →
-  <img src="https://cdn.simpleicons.org/github" width="28">
-</p>
-
-<p align="center">
-  <b>ACTIVITY → PRACTICE → PROJECTS → DOCUMENTATION → CONTRIBUTIONS</b>
-</p>
-
-<p align="center">
-  <sub>
-    Learning progress is reflected through observable GitHub activity, including repositories, commits, languages, experiments and contributions.
-  </sub>
 </p>
 
 ---
