@@ -180,7 +180,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```markdown
 # 🌐 My digital profiles
 
 A collection of my professional, academic, research, technology, programming, writing, business, social and public workspace profiles.
