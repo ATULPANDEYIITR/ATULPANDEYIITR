@@ -16,7 +16,7 @@
 
 ---
 
-## My Favorite Tools and Technologies
+# My Favorite Tools and Technologies
 
 <table>
 <tr>
@@ -156,7 +156,7 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
 </p>
 
-## Education / Background
+# Education / Background
 
 # GitHub statistics
 
