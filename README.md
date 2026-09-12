@@ -214,17 +214,15 @@
 <td align="center"><a href="YOUR_ZENODO_URL"><img src="https://cdn.simpleicons.org/zenodo/1682D4" width="42" height="42" alt="Zenodo"></a><br><sub>Zenodo</sub></td>
 <td align="center"><a href="YOUR_FIGSHARE_URL"><img src="https://cdn.simpleicons.org/figshare/4D4D4D" width="42" height="42" alt="Figshare"></a><br><sub>Figshare</sub></td>
 </tr>
+</table>
+
+<table align="center">
 <tr>
-<td></td>
-<td></td>
 <td align="center"><a href="YOUR_SCOPUS_URL"><img src="https://cdn.simpleicons.org/scopus/E9711C" width="42" height="42" alt="Scopus"></a><br><sub>Scopus</sub></td>
 <td align="center"><a href="YOUR_WEB_OF_SCIENCE_URL"><img src="https://cdn.simpleicons.org/clarivate/3B3B3B" width="42" height="42" alt="Web of Science"></a><br><sub>Web of Science</sub></td>
 <td align="center"><a href="YOUR_OPENALEX_URL"><img src="https://cdn.simpleicons.org/openaccess/0085CA" width="42" height="42" alt="OpenAlex"></a><br><sub>OpenAlex</sub></td>
 <td align="center"><a href="YOUR_ABDC_URL"><img src="https://cdn.simpleicons.org/acm/0085CA" width="42" height="42" alt="ABDC"></a><br><sub>ABDC</sub></td>
 <td align="center"><a href="YOUR_SCIENCEDIRECT_URL"><img src="https://cdn.simpleicons.org/elsevier/FF6C00" width="42" height="42" alt="ScienceDirect"></a><br><sub>ScienceDirect</sub></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </table>
 
@@ -261,17 +259,14 @@
 <td align="center"><a href="YOUR_TOPCODER_URL"><img src="https://cdn.simpleicons.org/topcoder/29A8E0" width="42" height="42" alt="Topcoder"></a><br><sub>Topcoder</sub></td>
 <td align="center"><a href="YOUR_CODINGAME_URL"><img src="https://cdn.simpleicons.org/codingame/F2BB13" width="42" height="42" alt="CodinGame"></a><br><sub>CodinGame</sub></td>
 </tr>
+</table>
+
+<table align="center">
 <tr>
-<td></td>
-<td></td>
-<td></td>
 <td align="center"><a href="YOUR_PROJECT_EULER_URL"><img src="https://cdn.simpleicons.org/projecteuler/000000" width="42" height="42" alt="Project Euler"></a><br><sub>Project Euler</sub></td>
 <td align="center"><a href="YOUR_KAGGLE_URL"><img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="42" height="42" alt="Kaggle"></a><br><sub>Kaggle</sub></td>
 <td align="center"><a href="YOUR_STACK_OVERFLOW_URL"><img src="https://cdn.simpleicons.org/stackoverflow/F58025" width="42" height="42" alt="Stack Overflow"></a><br><sub>Stack Overflow</sub></td>
 <td align="center"><a href="YOUR_STACK_EXCHANGE_URL"><img src="https://cdn.simpleicons.org/stackexchange/1E5397" width="42" height="42" alt="Stack Exchange"></a><br><sub>Stack Exchange</sub></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </table>
 
@@ -362,7 +357,7 @@
 <table align="center">
 <tr>
 <td align="center"><a href="mailto:YOUR_EMAIL_1"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="42" height="42" alt="Gmail"></a><br><sub>Gmail</sub></td>
-<td align="center"><a href="mailto:YOUR_EMAIL_2"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="42" height="42" alt="Gmail"></a><br><sub>Gmail 2</sub></td>
+<td align="center"><a href="mailto:YOUR_EMAIL_2"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="42" height="42" alt="Gmail 2"></a><br><sub>Gmail 2</sub></td>
 <td align="center"><a href="mailto:YOUR_OUTLOOK_EMAIL"><img src="https://cdn.simpleicons.org/microsoftoutlook/0078D4" width="42" height="42" alt="Outlook"></a><br><sub>Outlook</sub></td>
 <td align="center"><a href="YOUR_TELEGRAM_URL"><img src="https://cdn.simpleicons.org/telegram/26A5E4" width="42" height="42" alt="Telegram"></a><br><sub>Telegram</sub></td>
 <td align="center"><a href="YOUR_DISCORD_URL"><img src="https://cdn.simpleicons.org/discord/5865F2" width="42" height="42" alt="Discord"></a><br><sub>Discord</sub></td>
