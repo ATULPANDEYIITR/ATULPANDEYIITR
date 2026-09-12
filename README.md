@@ -154,7 +154,44 @@
 
 # Education / Background
 
+<!-- =========================
+     MY ACADEMIC JOURNEY
+     ========================= -->
 
+<p align="center">
+  <b>⚡ MY ACADEMIC JOURNEY ⚡</b>
+</p>
+
+<p align="center">
+  <i>
+    From business and computing to artificial intelligence,
+    cybersecurity, history, philosophy, education, and systems.
+  </i>
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="./academic/academic-journey.gif"
+    width="100%"
+    alt="My Academic Journey — degrees and diplomas"
+  >
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header"
+    width="95%"
+    alt=""
+  >
+</p>
+
+<p align="center">
+  <b>⚡ KNOWLEDGE • TECHNOLOGY • SYSTEMS • INTELLIGENCE ⚡</b>
+</p>
 
 # 📊 Statistics and activity
 
