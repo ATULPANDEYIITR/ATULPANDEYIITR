@@ -176,10 +176,6 @@
 
 # Connect with me
 
-<p align="center">
-  <b>LET'S CONNECT · EXCHANGE IDEAS · BUILD SOMETHING MEANINGFUL</b>
-</p>
-
 <br>
 
 <p align="center">
