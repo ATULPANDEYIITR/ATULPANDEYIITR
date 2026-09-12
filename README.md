@@ -180,9 +180,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-## 🌐 My digital profiles
+# 🌐 My digital profiles
 
-### 💼 Professional & career
+## 💼 Professional & career
 
 <table align="center">
 <tr>
@@ -199,7 +199,7 @@
 </tr>
 </table>
 
-### 🎓 Academic & research
+## 🎓 Academic & research
 
 <table align="center">
 <tr>
@@ -226,7 +226,7 @@
 </tr>
 </table>
 
-### ✍️ Writing & publishing
+## ✍️ Writing & publishing
 
 <table align="center">
 <tr>
@@ -244,7 +244,7 @@
 </tr>
 </table>
 
-### 💻 Programming & competitive coding
+## 💻 Programming & competitive coding
 
 <table align="center">
 <tr>
@@ -270,7 +270,7 @@
 </tr>
 </table>
 
-### 🤖 AI / ML / data
+## 🤖 AI / ML / data
 
 <table align="center">
 <tr>
@@ -286,7 +286,7 @@
 </tr>
 </table>
 
-### 🛠️ Developer & open source
+## 🛠️ Developer & open source
 
 <table align="center">
 <tr>
@@ -305,7 +305,7 @@
 </tr>
 </table>
 
-### 🚀 Product, startup & business
+## 🚀 Product, startup & business
 
 <table align="center">
 <tr>
@@ -320,7 +320,7 @@
 </tr>
 </table>
 
-### 🧠 Knowledge & community
+## 🧠 Knowledge & community
 
 <table align="center">
 <tr>
@@ -335,7 +335,7 @@
 </tr>
 </table>
 
-### 📱 Social media
+## 📱 Social media
 
 <table align="center">
 <tr>
@@ -352,7 +352,7 @@
 </tr>
 </table>
 
-### 📧 Communication & contact
+## 📧 Communication & contact
 
 <table align="center">
 <tr>
@@ -364,7 +364,7 @@
 </tr>
 </table>
 
-### 🗂️ Productivity & public workspace
+## 🗂️ Productivity & public workspace
 
 <table align="center">
 <tr>
@@ -379,7 +379,6 @@
 <td align="center"><a href="YOUR_VERCEL_URL"><img src="https://cdn.simpleicons.org/vercel/000000" width="42" height="42" alt="Vercel"></a><br><sub>Vercel</sub></td>
 </tr>
 </table>
-```
 
 # Thanks for visiting
 
