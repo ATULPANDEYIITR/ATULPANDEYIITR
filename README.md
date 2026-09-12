@@ -156,7 +156,137 @@
 
 # 📊 GITHUB STATS & ACTIVITY
 
+<!-- =========================================================
+     📊 GITHUB STATS & ACTIVITY
+     ========================================================= -->
 
+<h2 align="center">
+  📊 GitHub Stats & Activity
+</h2>
+
+<p align="center">
+  <b>ATULPANDEYIITR</b>
+</p>
+
+<br>
+
+<!-- ===================== ROW 1 ===================== -->
+
+<table width="100%">
+<tr>
+
+<td width="50%" align="center" valign="top">
+
+<h3>⚡ GitHub Statistics</h3>
+
+<img
+  src="./assets/overview.dark.svg"
+  width="92%"
+  alt="ATULPANDEYIITR GitHub Statistics"
+/>
+
+</td>
+
+<td width="50%" align="center" valign="top">
+
+<h3>🔥 Contribution Activity</h3>
+
+<img
+  src="./assets/contributions.dark.svg"
+  width="92%"
+  alt="ATULPANDEYIITR Contribution Activity"
+/>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<!-- ===================== ROW 2 ===================== -->
+
+<table width="100%">
+<tr>
+
+<td width="50%" align="center" valign="top">
+
+<h3>💻 Most Used Languages</h3>
+
+<img
+  src="./assets/languages.dark.svg"
+  width="88%"
+  alt="ATULPANDEYIITR Most Used Languages"
+/>
+
+</td>
+
+<td width="50%" align="center" valign="top">
+
+<h3>🧠 Contribution Composition</h3>
+
+<img
+  src="./assets/composition.dark.svg"
+  width="88%"
+  alt="ATULPANDEYIITR Contribution Composition"
+/>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<!-- ===================== ROW 3 ===================== -->
+
+<table width="100%">
+<tr>
+
+<td width="50%" align="center" valign="top">
+
+<h3>📈 Activity Rhythm</h3>
+
+<img
+  src="./assets/rhythm.dark.svg"
+  width="88%"
+  alt="ATULPANDEYIITR Activity Rhythm"
+/>
+
+</td>
+
+<td width="50%" align="center" valign="top">
+
+<h3>📚 Contribution History</h3>
+
+<img
+  src="./assets/lifetime.dark.svg"
+  width="88%"
+  alt="ATULPANDEYIITR Contribution History"
+/>
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<!-- ===================== REPOSITORIES ===================== -->
+
+<h3 align="center">
+  🗂️ Top Repositories
+</h3>
+
+<p align="center">
+
+<img
+  src="./assets/repositories.dark.svg"
+  width="88%"
+  alt="ATULPANDEYIITR Top Repositories"
+/>
+
+</p>
 
 # 🌐 My digital profiles
 
