@@ -380,10 +380,12 @@
 </tr>
 </table>
 
+# ✦ Ending is the new beginning
+
 # ✦ Thanks for visiting
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:312e81,100:7c3aed&height=120&section=header&text=THANK%20YOU%20FOR%20STOPPING%20BY&fontSize=26&fontColor=ffffff&animation=twinkling&fontAlignY=65" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:1e1b4b,75:4c1d95,100:7c3aed&height=130&section=header&text=THANK%20YOU%20FOR%20STOPPING%20BY&fontSize=26&fontColor=ffffff&animation=twinkling&fontAlignY=65" width="100%">
 </p>
 
 <p align="center">
@@ -394,37 +396,53 @@
 
 <p align="center">
   <i>
-    This space represents a continuous journey through
+    A space where ideas are transformed into
     <br>
-    <b>code, systems, data, artificial intelligence, research, and innovation.</b>
+    <b>code, systems, data, research, artificial intelligence, and practical solutions.</b>
   </i>
 </p>
 
 <br>
 
 <p align="center">
-  <img src="https://cdn.simpleicons.org/github/ffffff" width="40">
+  <a href="https://github.com/ATULPANDEYIITR">
+    <img src="https://cdn.simpleicons.org/github/FFFFFF" width="42" height="42" alt="GitHub">
+  </a>
+
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="40">
+
+  <a href="https://linkedin.com/in/atul---pandey">
+    <img src="https://img.icons8.com/fluency/96/linkedin.png" width="42" height="42" alt="LinkedIn">
+  </a>
+
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/python/3776AB" width="40">
+
+  <a href="mailto:atulpandey.iitr@gmail.com">
+    <img src="https://img.icons8.com/fluency/96/gmail-new.png" width="42" height="42" alt="Gmail">
+  </a>
+
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/git/F05032" width="40">
+
+  <img src="https://cdn.simpleicons.org/python/3776AB" width="42" height="42" alt="Python">
+
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/openai/ffffff" width="40">
+
+  <img src="https://cdn.simpleicons.org/git/F05032" width="42" height="42" alt="Git">
 </p>
 
 <br>
 
 <p align="center">
   <i>
-    <font color="#C084FC">
-      ✦ Every project starts with a question.
+    <span style="color:#c084fc;">
+      ✦ Every project begins with a question.
       <br>
-      ✦ Every experiment creates a new insight.
+      ✦ Every experiment produces an insight.
       <br>
-      ✦ Every line of code is an opportunity to build something better.
-    </font>
+      ✦ Every algorithm turns an idea into something measurable.
+      <br>
+      ✦ Every repository is a record of continuous learning.
+    </span>
   </i>
 </p>
 
@@ -432,11 +450,13 @@
 
 <p align="center">
   <i>
-    <b>Thank you for exploring my work.</b>
+    Thank you for taking the time to explore my work.
     <br>
-    Whether you arrived through a project, a repository, a technical discussion,
+    Whether you discovered a project, studied a repository,
     <br>
-    or simple curiosity, I hope you found something worth exploring.
+    or simply stopped by out of curiosity,
+    <br>
+    <b>I hope you found something useful, interesting, or worth building upon.</b>
   </i>
 </p>
 
@@ -444,34 +464,56 @@
 
 <p align="center">
   <i>
-    Keep learning. Keep experimenting. Keep building.
+    Technology is not only about writing code.
     <br>
-    <b>Technology evolves when knowledge is shared and ideas are implemented.</b>
+    It is about understanding systems, solving problems,
+    <br>
+    testing assumptions, learning from failure,
+    <br>
+    and continuously improving what we build.
   </i>
 </p>
 
 <br>
 
 <p align="center">
-  ✧ ───────────────────────────────── ✧
+  <i>
+    <span style="color:#a855f7;">
+      ✧ CODE &nbsp;•&nbsp; DATA &nbsp;•&nbsp; AI &nbsp;•&nbsp; RESEARCH
+      &nbsp;•&nbsp; SYSTEMS &nbsp;•&nbsp; INNOVATION ✧
+    </span>
+  </i>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=20&duration=2800&pause=800&color=C084FC&center=true&vCenter=true&width=700&lines=Keep+Learning.;Keep+Experimenting.;Keep+Building.;Keep+Exploring.;Keep+Innovating." alt="Technical message">
+</p>
+
+<br>
+
+<p align="center">
+  ✦ ───────────────────────────────────────── ✦
 </p>
 
 <p align="center">
   <i>
-    <font color="#A855F7">
-      CODE • RESEARCH • DATA • AI • SYSTEMS • INNOVATION
-    </font>
+    <b>SEE YOU AROUND THE TECH ECOSYSTEM</b>
   </i>
 </p>
 
 <p align="center">
-  <b>⚡ SEE YOU AROUND THE TECH ECOSYSTEM ⚡</b>
+  <i>
+    Build something meaningful.
+    <br>
+    Share what you learn.
+    <br>
+    Leave something useful behind.
+  </i>
 </p>
 
 <p align="center">
-  <i>Build something meaningful. Leave something useful behind.</i>
+  ✦ &nbsp; ✧ &nbsp; ✦ &nbsp; ✧ &nbsp; ✦
 </p>
 
-<p align="center">
-  ✦ ✧ ✦ ✧ ✦
-</p>
