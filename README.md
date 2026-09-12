@@ -474,10 +474,6 @@
 <br>
 
 <p align="center">
-  ✦ ───────────────────────────────────────── ✦
-</p>
-
-<p align="center">
   <i><b>SEE YOU AROUND THE TECH ECOSYSTEM</b></i>
 </p>
 
