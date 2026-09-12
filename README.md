@@ -380,36 +380,98 @@
 </tr>
 </table>
 
-# Thanks for visiting
+# ✦ Thanks for visiting
 
 <p align="center">
-  <b>THANK YOU FOR STOPPING BY</b>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:312e81,100:7c3aed&height=120&section=header&text=THANK%20YOU%20FOR%20STOPPING%20BY&fontSize=26&fontColor=ffffff&animation=twinkling&fontAlignY=65" width="100%">
 </p>
-
-<br>
-
-<p align="center">
-  <img src="https://cdn.simpleicons.org/github" width="42">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/linkedin" width="42">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/gmail" width="42">
-</p>
-
-<br>
 
 <p align="center">
   <i>
-    Ideas are better when shared.
+    ✨ Welcome to my corner of the technology ecosystem. ✨
+  </i>
+</p>
+
+<p align="center">
+  <i>
+    This space represents a continuous journey through
     <br>
-    Projects are better when built together.
-    <br>
-    Knowledge is better when it keeps moving.
+    <b>code, systems, data, artificial intelligence, research, and innovation.</b>
   </i>
 </p>
 
 <br>
 
 <p align="center">
-  <b>SEE YOU AROUND THE TECH ECOSYSTEM</b>
+  <img src="https://cdn.simpleicons.org/github/ffffff" width="40">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="40">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/python/3776AB" width="40">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/git/F05032" width="40">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/openai/ffffff" width="40">
+</p>
+
+<br>
+
+<p align="center">
+  <i>
+    <font color="#C084FC">
+      ✦ Every project starts with a question.
+      <br>
+      ✦ Every experiment creates a new insight.
+      <br>
+      ✦ Every line of code is an opportunity to build something better.
+    </font>
+  </i>
+</p>
+
+<br>
+
+<p align="center">
+  <i>
+    <b>Thank you for exploring my work.</b>
+    <br>
+    Whether you arrived through a project, a repository, a technical discussion,
+    <br>
+    or simple curiosity, I hope you found something worth exploring.
+  </i>
+</p>
+
+<br>
+
+<p align="center">
+  <i>
+    Keep learning. Keep experimenting. Keep building.
+    <br>
+    <b>Technology evolves when knowledge is shared and ideas are implemented.</b>
+  </i>
+</p>
+
+<br>
+
+<p align="center">
+  ✧ ───────────────────────────────── ✧
+</p>
+
+<p align="center">
+  <i>
+    <font color="#A855F7">
+      CODE • RESEARCH • DATA • AI • SYSTEMS • INNOVATION
+    </font>
+  </i>
+</p>
+
+<p align="center">
+  <b>⚡ SEE YOU AROUND THE TECH ECOSYSTEM ⚡</b>
+</p>
+
+<p align="center">
+  <i>Build something meaningful. Leave something useful behind.</i>
+</p>
+
+<p align="center">
+  ✦ ✧ ✦ ✧ ✦
 </p>
