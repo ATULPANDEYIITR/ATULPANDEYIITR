@@ -152,24 +152,7 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
 </p>
 
-# Education / Background
-
-<!-- =========================
-     MY ACADEMIC JOURNEY
-     ========================= -->
-
-<p align="center">
-  <b>⚡ MY ACADEMIC JOURNEY ⚡</b>
-</p>
-
-<p align="center">
-  <i>
-    From business and computing to artificial intelligence,
-    cybersecurity, history, philosophy, education, and systems.
-  </i>
-</p>
-
-<br>
+<h2>🎓⚡ Education / Background</h2>
 
 <p align="center">
   <img
@@ -187,10 +170,6 @@
     width="95%"
     alt=""
   >
-</p>
-
-<p align="center">
-  <b>⚡ KNOWLEDGE • TECHNOLOGY • SYSTEMS • INTELLIGENCE ⚡</b>
 </p>
 
 # 📊 Statistics and activity
