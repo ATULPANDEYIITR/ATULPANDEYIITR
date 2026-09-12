@@ -180,206 +180,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-# 🌐 My digital profiles
+## 🌐 My digital profiles
 
-A collection of my professional, academic, research, technology, programming, writing, business, social and public workspace profiles.
-
-> **Note:** Replace every `YOUR_..._URL` with your actual profile URL before publishing.
-
-## 💼 Professional & career
+### 💼 Professional & career
 
 <table align="center">
 <tr>
-<td align="center"><a href="YOUR_LINKEDIN_URL" title="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/linkedin.svg" width="45" alt="LinkedIn"><br><b>LinkedIn</b></a></td>
-<td align="center"><a href="https://github.com/ATULPANDEYIITR" title="GitHub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/github.svg" width="45" alt="GitHub"><br><b>GitHub</b></a></td>
-<td align="center"><a href="YOUR_GITLAB_URL" title="GitLab"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/gitlab.svg" width="45" alt="GitLab"><br><b>GitLab</b></a></td>
-<td align="center"><a href="YOUR_WEBSITE_URL" title="Personal Website"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/googlechrome.svg" width="45" alt="Website"><br><b>Website</b></a></td>
-<td align="center"><a href="YOUR_PORTFOLIO_URL" title="Portfolio"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/vercel.svg" width="45" alt="Portfolio"><br><b>Portfolio</b></a></td>
-<td align="center"><a href="YOUR_RESUME_URL" title="Resume / CV"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/adobeacrobatreader.svg" width="45" alt="Resume"><br><b>Resume / CV</b></a></td>
-<td align="center"><a href="YOUR_INDEED_URL" title="Indeed"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/indeed.svg" width="45" alt="Indeed"><br><b>Indeed</b></a></td>
-<td align="center"><a href="YOUR_WELLFOUND_URL" title="Wellfound"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/angellist.svg" width="45" alt="Wellfound"><br><b>Wellfound</b></a></td>
-<td align="center"><a href="YOUR_ANGELLIST_URL" title="AngelList"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/angellist.svg" width="45" alt="AngelList"><br><b>AngelList</b></a></td>
-<td align="center"><a href="YOUR_MICROSOFT_LEARN_URL" title="Microsoft Learn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/microsoft.svg" width="45" alt="Microsoft Learn"><br><b>Microsoft Learn</b></a></td>
+<td align="center"><a href="YOUR_LINKEDIN_URL"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="42" height="42" alt="LinkedIn"></a><br><sub>LinkedIn</sub></td>
+<td align="center"><a href="https://github.com/ATULPANDEYIITR"><img src="https://cdn.simpleicons.org/github/181717" width="42" height="42" alt="GitHub"></a><br><sub>GitHub</sub></td>
+<td align="center"><a href="YOUR_GITLAB_URL"><img src="https://cdn.simpleicons.org/gitlab/FC6D26" width="42" height="42" alt="GitLab"></a><br><sub>GitLab</sub></td>
+<td align="center"><a href="YOUR_PERSONAL_WEBSITE_URL"><img src="https://cdn.simpleicons.org/googlechrome/4285F4" width="42" height="42" alt="Personal Website"></a><br><sub>Website</sub></td>
+<td align="center"><a href="YOUR_PORTFOLIO_URL"><img src="https://cdn.simpleicons.org/aboutdotme/000000" width="42" height="42" alt="Portfolio"></a><br><sub>Portfolio</sub></td>
+<td align="center"><a href="YOUR_RESUME_URL"><img src="https://cdn.simpleicons.org/readthedocs/8CA1AF" width="42" height="42" alt="Resume"></a><br><sub>Resume/CV</sub></td>
+<td align="center"><a href="YOUR_INDEED_URL"><img src="https://cdn.simpleicons.org/indeed/2164F3" width="42" height="42" alt="Indeed"></a><br><sub>Indeed</sub></td>
+<td align="center"><a href="YOUR_WELLFOUND_URL"><img src="https://cdn.simpleicons.org/wellfound/000000" width="42" height="42" alt="Wellfound"></a><br><sub>Wellfound</sub></td>
+<td align="center"><a href="YOUR_ANGELLIST_URL"><img src="https://cdn.simpleicons.org/angellist/000000" width="42" height="42" alt="AngelList"></a><br><sub>AngelList</sub></td>
+<td align="center"><a href="YOUR_MICROSOFT_LEARN_URL"><img src="https://cdn.simpleicons.org/microsoft/5E5E5E" width="42" height="42" alt="Microsoft Learn"></a><br><sub>Microsoft Learn</sub></td>
 </tr>
 </table>
 
-## 🎓 Academic & research
+### 🎓 Academic & research
 
 <table align="center">
 <tr>
-<td align="center"><a href="YOUR_GOOGLE_SCHOLAR_URL" title="Google Scholar"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/googlescholar.svg" width="45" alt="Google Scholar"><br><b>Google Scholar</b></a></td>
-<td align="center"><a href="YOUR_ACADEMIA_URL" title="Academia.edu"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/academia.svg" width="45" alt="Academia.edu"><br><b>Academia.edu</b></a></td>
-<td align="center"><a href="YOUR_SSRN_URL" title="SSRN"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/ssrn.svg" width="45" alt="SSRN"><br><b>SSRN</b></a></td>
-<td align="center"><a href="YOUR_RESEARCHGATE_URL" title="ResearchGate"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/researchgate.svg" width="45" alt="ResearchGate"><br><b>ResearchGate</b></a></td>
-<td align="center"><a href="YOUR_ORCID_URL" title="ORCID"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/orcid.svg" width="45" alt="ORCID"><br><b>ORCID</b></a></td>
-<td align="center"><a href="YOUR_ARXIV_URL" title="arXiv"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/arxiv.svg" width="45" alt="arXiv"><br><b>arXiv</b></a></td>
-<td align="center"><a href="YOUR_SEMANTIC_SCHOLAR_URL" title="Semantic Scholar"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/semanticscholar.svg" width="45" alt="Semantic Scholar"><br><b>Semantic Scholar</b></a></td>
-<td align="center"><a href="YOUR_MENDELEY_URL" title="Mendeley"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/mendeley.svg" width="45" alt="Mendeley"><br><b>Mendeley</b></a></td>
-<td align="center"><a href="YOUR_ZENODO_URL" title="Zenodo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/zenodo.svg" width="45" alt="Zenodo"><br><b>Zenodo</b></a></td>
-<td align="center"><a href="YOUR_FIGSHARE_URL" title="Figshare"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/figshare.svg" width="45" alt="Figshare"><br><b>Figshare</b></a></td>
+<td align="center"><a href="YOUR_GOOGLE_SCHOLAR_URL"><img src="https://cdn.simpleicons.org/googlescholar/4285F4" width="42" height="42" alt="Google Scholar"></a><br><sub>Google Scholar</sub></td>
+<td align="center"><a href="YOUR_ACADEMIA_URL"><img src="https://cdn.simpleicons.org/academia/41454A" width="42" height="42" alt="Academia"></a><br><sub>Academia</sub></td>
+<td align="center"><a href="YOUR_SSRN_URL"><img src="https://cdn.simpleicons.org/ssrn/154734" width="42" height="42" alt="SSRN"></a><br><sub>SSRN</sub></td>
+<td align="center"><a href="YOUR_RESEARCHGATE_URL"><img src="https://cdn.simpleicons.org/researchgate/00CCBB" width="42" height="42" alt="ResearchGate"></a><br><sub>ResearchGate</sub></td>
+<td align="center"><a href="YOUR_ORCID_URL"><img src="https://cdn.simpleicons.org/orcid/A6CE39" width="42" height="42" alt="ORCID"></a><br><sub>ORCID</sub></td>
+<td align="center"><a href="YOUR_ARXIV_URL"><img src="https://cdn.simpleicons.org/arxiv/B31B1B" width="42" height="42" alt="arXiv"></a><br><sub>arXiv</sub></td>
+<td align="center"><a href="YOUR_SEMANTIC_SCHOLAR_URL"><img src="https://cdn.simpleicons.org/semanticscholar/1857B6" width="42" height="42" alt="Semantic Scholar"></a><br><sub>Semantic Scholar</sub></td>
+<td align="center"><a href="YOUR_MENDELEY_URL"><img src="https://cdn.simpleicons.org/mendeley/9D1620" width="42" height="42" alt="Mendeley"></a><br><sub>Mendeley</sub></td>
+<td align="center"><a href="YOUR_ZENODO_URL"><img src="https://cdn.simpleicons.org/zenodo/1682D4" width="42" height="42" alt="Zenodo"></a><br><sub>Zenodo</sub></td>
+<td align="center"><a href="YOUR_FIGSHARE_URL"><img src="https://cdn.simpleicons.org/figshare/4D4D4D" width="42" height="42" alt="Figshare"></a><br><sub>Figshare</sub></td>
 </tr>
-
 <tr>
 <td></td>
 <td></td>
-<td></td>
-<td align="center"><a href="YOUR_SCOPUS_URL" title="Scopus Author ID"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/scopus.svg" width="45" alt="Scopus"><br><b>Scopus</b></a></td>
-<td align="center"><a href="YOUR_WEB_OF_SCIENCE_URL" title="Web of Science Researcher Profile"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/clarivate.svg" width="45" alt="Web of Science"><br><b>Web of Science</b></a></td>
-<td align="center"><a href="YOUR_OPENALEX_URL" title="OpenAlex"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/openaccess.svg" width="45" alt="OpenAlex"><br><b>OpenAlex</b></a></td>
-<td align="center"><a href="YOUR_ABDC_URL" title="ABDC"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/academia.svg" width="45" alt="ABDC"><br><b>ABDC</b></a></td>
-<td align="center"><a href="YOUR_SCIENCEDIRECT_URL" title="ScienceDirect"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/elsevier.svg" width="45" alt="ScienceDirect"><br><b>ScienceDirect</b></a></td>
-<td></td>
-<td></td>
-</tr>
-</table>
-
-## ✍️ Writing & publishing
-
-<table align="center">
-<tr>
-<td align="center"><a href="YOUR_BLOG_URL" title="Personal Blog"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/blogger.svg" width="45" alt="Personal Blog"><br><b>Personal Blog</b></a></td>
-<td align="center"><a href="YOUR_MEDIUM_URL" title="Medium"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/medium.svg" width="45" alt="Medium"><br><b>Medium</b></a></td>
-<td align="center"><a href="YOUR_SUBSTACK_URL" title="Substack"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/substack.svg" width="45" alt="Substack"><br><b>Substack</b></a></td>
-<td align="center"><a href="YOUR_DEVTO_URL" title="Dev.to"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/devdotto.svg" width="45" alt="Dev.to"><br><b>Dev.to</b></a></td>
-<td align="center"><a href="YOUR_HASHNODE_URL" title="Hashnode"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/hashnode.svg" width="45" alt="Hashnode"><br><b>Hashnode</b></a></td>
-<td align="center"><a href="YOUR_WORDPRESS_URL" title="WordPress"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/wordpress.svg" width="45" alt="WordPress"><br><b>WordPress</b></a></td>
-<td align="center"><a href="YOUR_BLOGGER_URL" title="Blogger"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/blogger.svg" width="45" alt="Blogger"><br><b>Blogger</b></a></td>
-<td align="center"><a href="YOUR_GHOST_URL" title="Ghost"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/ghost.svg" width="45" alt="Ghost"><br><b>Ghost</b></a></td>
-<td align="center"><a href="YOUR_QUORA_URL" title="Quora"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/quora.svg" width="45" alt="Quora"><br><b>Quora</b></a></td>
-<td align="center"><a href="YOUR_QUORA_SPACES_URL" title="Quora Spaces"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/quora.svg" width="45" alt="Quora Spaces"><br><b>Quora Spaces</b></a></td>
-<td align="center"><a href="YOUR_HACKERNOON_URL" title="HackerNoon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/hackernoon.svg" width="45" alt="HackerNoon"><br><b>HackerNoon</b></a></td>
-</tr>
-</table>
-
-## 💻 Programming & competitive coding
-
-<table align="center">
-<tr>
-<td align="center"><a href="YOUR_HACKERRANK_URL" title="HackerRank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/hackerrank.svg" width="45" alt="HackerRank"><br><b>HackerRank</b></a></td>
-<td align="center"><a href="YOUR_LEETCODE_URL" title="LeetCode"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/leetcode.svg" width="45" alt="LeetCode"><br><b>LeetCode</b></a></td>
-<td align="center"><a href="YOUR_CODECHEF_URL" title="CodeChef"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/codechef.svg" width="45" alt="CodeChef"><br><b>CodeChef</b></a></td>
-<td align="center"><a href="YOUR_CODEFORCES_URL" title="Codeforces"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/codeforces.svg" width="45" alt="Codeforces"><br><b>Codeforces</b></a></td>
-<td align="center"><a href="YOUR_ATCODER_URL" title="AtCoder"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/atcoder.svg" width="45" alt="AtCoder"><br><b>AtCoder</b></a></td>
-<td align="center"><a href="YOUR_GFG_URL" title="GeeksforGeeks"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/geeksforgeeks.svg" width="45" alt="GeeksforGeeks"><br><b>GeeksforGeeks</b></a></td>
-<td align="center"><a href="YOUR_HACKEREARTH_URL" title="HackerEarth"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/hackerearth.svg" width="45" alt="HackerEarth"><br><b>HackerEarth</b></a></td>
-<td align="center"><a href="YOUR_EXERCISM_URL" title="Exercism"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/exercism.svg" width="45" alt="Exercism"><br><b>Exercism</b></a></td>
-<td align="center"><a href="YOUR_TOPCODER_URL" title="Topcoder"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/topcoder.svg" width="45" alt="Topcoder"><br><b>Topcoder</b></a></td>
-<td align="center"><a href="YOUR_CODINGAME_URL" title="CodinGame"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/codingame.svg" width="45" alt="CodinGame"><br><b>CodinGame</b></a></td>
-</tr>
-
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td align="center"><a href="YOUR_PROJECT_EULER_URL" title="Project Euler"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/projecteuler.svg" width="45" alt="Project Euler"><br><b>Project Euler</b></a></td>
-<td align="center"><a href="YOUR_KAGGLE_URL" title="Kaggle"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/kaggle.svg" width="45" alt="Kaggle"><br><b>Kaggle</b></a></td>
-<td align="center"><a href="YOUR_STACKOVERFLOW_URL" title="Stack Overflow"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/stackoverflow.svg" width="45" alt="Stack Overflow"><br><b>Stack Overflow</b></a></td>
-<td align="center"><a href="YOUR_STACKEXCHANGE_URL" title="Stack Exchange"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/stackexchange.svg" width="45" alt="Stack Exchange"><br><b>Stack Exchange</b></a></td>
+<td align="center"><a href="YOUR_SCOPUS_URL"><img src="https://cdn.simpleicons.org/scopus/E9711C" width="42" height="42" alt="Scopus"></a><br><sub>Scopus</sub></td>
+<td align="center"><a href="YOUR_WEB_OF_SCIENCE_URL"><img src="https://cdn.simpleicons.org/clarivate/3B3B3B" width="42" height="42" alt="Web of Science"></a><br><sub>Web of Science</sub></td>
+<td align="center"><a href="YOUR_OPENALEX_URL"><img src="https://cdn.simpleicons.org/openaccess/0085CA" width="42" height="42" alt="OpenAlex"></a><br><sub>OpenAlex</sub></td>
+<td align="center"><a href="YOUR_ABDC_URL"><img src="https://cdn.simpleicons.org/acm/0085CA" width="42" height="42" alt="ABDC"></a><br><sub>ABDC</sub></td>
+<td align="center"><a href="YOUR_SCIENCEDIRECT_URL"><img src="https://cdn.simpleicons.org/elsevier/FF6C00" width="42" height="42" alt="ScienceDirect"></a><br><sub>ScienceDirect</sub></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 </table>
 
-## 🤖 AI / ML / data
+### ✍️ Writing & publishing
 
 <table align="center">
 <tr>
-<td align="center"><a href="YOUR_HUGGINGFACE_URL" title="Hugging Face"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/huggingface.svg" width="45" alt="Hugging Face"><br><b>Hugging Face</b></a></td>
-<td align="center"><a href="YOUR_NVIDIA_DEVELOPER_URL" title="NVIDIA Developer"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/nvidia.svg" width="45" alt="NVIDIA Developer"><br><b>NVIDIA Developer</b></a></td>
-<td align="center"><a href="YOUR_GOOGLE_COLAB_URL" title="Google Colab"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/googlecolab.svg" width="45" alt="Google Colab"><br><b>Google Colab</b></a></td>
-<td align="center"><a href="YOUR_PAPERS_WITH_CODE_URL" title="Papers With Code"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/paperswithcode.svg" width="45" alt="Papers With Code"><br><b>Papers With Code</b></a></td>
-<td align="center"><a href="YOUR_TENSORFLOW_URL" title="TensorFlow"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/tensorflow.svg" width="45" alt="TensorFlow"><br><b>TensorFlow</b></a></td>
-<td align="center"><a href="YOUR_PYTORCH_URL" title="PyTorch"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/pytorch.svg" width="45" alt="PyTorch"><br><b>PyTorch</b></a></td>
-<td align="center"><a href="YOUR_GOOGLE_CLOUD_SKILLS_URL" title="Google Cloud Skills"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/googlecloud.svg" width="45" alt="Google Cloud Skills"><br><b>Google Cloud</b></a></td>
-<td align="center"><a href="YOUR_AWS_BUILDER_CENTER_URL" title="AWS Builder Center"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/amazonaws.svg" width="45" alt="AWS Builder Center"><br><b>AWS Builder</b></a></td>
+<td align="center"><a href="YOUR_PERSONAL_BLOG_URL"><img src="https://cdn.simpleicons.org/googlechrome/4285F4" width="42" height="42" alt="Personal Blog"></a><br><sub>Blog</sub></td>
+<td align="center"><a href="YOUR_MEDIUM_URL"><img src="https://cdn.simpleicons.org/medium/000000" width="42" height="42" alt="Medium"></a><br><sub>Medium</sub></td>
+<td align="center"><a href="YOUR_SUBSTACK_URL"><img src="https://cdn.simpleicons.org/substack/FF6719" width="42" height="42" alt="Substack"></a><br><sub>Substack</sub></td>
+<td align="center"><a href="YOUR_DEVTO_URL"><img src="https://cdn.simpleicons.org/devdotto/0A0A0A" width="42" height="42" alt="Dev.to"></a><br><sub>Dev.to</sub></td>
+<td align="center"><a href="YOUR_HASHNODE_URL"><img src="https://cdn.simpleicons.org/hashnode/2962FF" width="42" height="42" alt="Hashnode"></a><br><sub>Hashnode</sub></td>
+<td align="center"><a href="YOUR_WORDPRESS_URL"><img src="https://cdn.simpleicons.org/wordpress/21759B" width="42" height="42" alt="WordPress"></a><br><sub>WordPress</sub></td>
+<td align="center"><a href="YOUR_BLOGGER_URL"><img src="https://cdn.simpleicons.org/blogger/FF5722" width="42" height="42" alt="Blogger"></a><br><sub>Blogger</sub></td>
+<td align="center"><a href="YOUR_GHOST_URL"><img src="https://cdn.simpleicons.org/ghost/15171A" width="42" height="42" alt="Ghost"></a><br><sub>Ghost</sub></td>
+<td align="center"><a href="YOUR_QUORA_URL"><img src="https://cdn.simpleicons.org/quora/B92B27" width="42" height="42" alt="Quora"></a><br><sub>Quora</sub></td>
+<td align="center"><a href="YOUR_QUORA_SPACES_URL"><img src="https://cdn.simpleicons.org/quora/B92B27" width="42" height="42" alt="Quora Spaces"></a><br><sub>Quora Spaces</sub></td>
+<td align="center"><a href="YOUR_HACKERNOON_URL"><img src="https://cdn.simpleicons.org/hackernoon/00FEFF" width="42" height="42" alt="HackerNoon"></a><br><sub>HackerNoon</sub></td>
 </tr>
 </table>
 
-## 🧑‍💻 Developer & open source
+### 💻 Programming & competitive coding
 
 <table align="center">
 <tr>
-<td align="center"><a href="YOUR_BITBUCKET_URL" title="Bitbucket"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/bitbucket.svg" width="45" alt="Bitbucket"><br><b>Bitbucket</b></a></td>
-<td align="center"><a href="YOUR_SOURCEFORGE_URL" title="SourceForge"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/sourceforge.svg" width="45" alt="SourceForge"><br><b>SourceForge</b></a></td>
-<td align="center"><a href="YOUR_CODEPEN_URL" title="CodePen"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/codepen.svg" width="45" alt="CodePen"><br><b>CodePen</b></a></td>
-<td align="center"><a href="YOUR_JSFIDDLE_URL" title="JSFiddle"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/jsfiddle.svg" width="45" alt="JSFiddle"><br><b>JSFiddle</b></a></td>
-<td align="center"><a href="YOUR_REPLIT_URL" title="Replit"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/replit.svg" width="45" alt="Replit"><br><b>Replit</b></a></td>
-<td align="center"><a href="YOUR_CODESANDBOX_URL" title="CodeSandbox"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/codesandbox.svg" width="45" alt="CodeSandbox"><br><b>CodeSandbox</b></a></td>
-<td align="center"><a href="YOUR_NPM_URL" title="npm"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/npm.svg" width="45" alt="npm"><br><b>npm</b></a></td>
-<td align="center"><a href="YOUR_PYPI_URL" title="PyPI"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/pypi.svg" width="45" alt="PyPI"><br><b>PyPI</b></a></td>
-<td align="center"><a href="YOUR_DOCKERHUB_URL" title="Docker Hub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/docker.svg" width="45" alt="Docker Hub"><br><b>Docker Hub</b></a></td>
+<td align="center"><a href="YOUR_HACKERRANK_URL"><img src="https://cdn.simpleicons.org/hackerrank/00EA64" width="42" height="42" alt="HackerRank"></a><br><sub>HackerRank</sub></td>
+<td align="center"><a href="YOUR_LEETCODE_URL"><img src="https://cdn.simpleicons.org/leetcode/FFA116" width="42" height="42" alt="LeetCode"></a><br><sub>LeetCode</sub></td>
+<td align="center"><a href="YOUR_CODECHEF_URL"><img src="https://cdn.simpleicons.org/codechef/5B4638" width="42" height="42" alt="CodeChef"></a><br><sub>CodeChef</sub></td>
+<td align="center"><a href="YOUR_CODEFORCES_URL"><img src="https://cdn.simpleicons.org/codeforces/1F8ACB" width="42" height="42" alt="Codeforces"></a><br><sub>Codeforces</sub></td>
+<td align="center"><a href="YOUR_ATCODER_URL"><img src="https://cdn.simpleicons.org/atcoder/000000" width="42" height="42" alt="AtCoder"></a><br><sub>AtCoder</sub></td>
+<td align="center"><a href="YOUR_GEEKSFORGEEKS_URL"><img src="https://cdn.simpleicons.org/geeksforgeeks/2F8D46" width="42" height="42" alt="GeeksforGeeks"></a><br><sub>GeeksforGeeks</sub></td>
+<td align="center"><a href="YOUR_HACKEREARTH_URL"><img src="https://cdn.simpleicons.org/hackerearth/2C3454" width="42" height="42" alt="HackerEarth"></a><br><sub>HackerEarth</sub></td>
+<td align="center"><a href="YOUR_EXERCISM_URL"><img src="https://cdn.simpleicons.org/exercism/009CAB" width="42" height="42" alt="Exercism"></a><br><sub>Exercism</sub></td>
+<td align="center"><a href="YOUR_TOPCODER_URL"><img src="https://cdn.simpleicons.org/topcoder/29A8E0" width="42" height="42" alt="Topcoder"></a><br><sub>Topcoder</sub></td>
+<td align="center"><a href="YOUR_CODINGAME_URL"><img src="https://cdn.simpleicons.org/codingame/F2BB13" width="42" height="42" alt="CodinGame"></a><br><sub>CodinGame</sub></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td align="center"><a href="YOUR_PROJECT_EULER_URL"><img src="https://cdn.simpleicons.org/projecteuler/000000" width="42" height="42" alt="Project Euler"></a><br><sub>Project Euler</sub></td>
+<td align="center"><a href="YOUR_KAGGLE_URL"><img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="42" height="42" alt="Kaggle"></a><br><sub>Kaggle</sub></td>
+<td align="center"><a href="YOUR_STACK_OVERFLOW_URL"><img src="https://cdn.simpleicons.org/stackoverflow/F58025" width="42" height="42" alt="Stack Overflow"></a><br><sub>Stack Overflow</sub></td>
+<td align="center"><a href="YOUR_STACK_EXCHANGE_URL"><img src="https://cdn.simpleicons.org/stackexchange/1E5397" width="42" height="42" alt="Stack Exchange"></a><br><sub>Stack Exchange</sub></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </table>
 
-## 🚀 Product, startup & business
+### 🤖 AI / ML / data
 
 <table align="center">
 <tr>
-<td align="center"><a href="YOUR_PRODUCTHUNT_URL" title="Product Hunt"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/producthunt.svg" width="45" alt="Product Hunt"><br><b>Product Hunt</b></a></td>
-<td align="center"><a href="YOUR_INDIHACKERS_URL" title="Indie Hackers"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/indiehackers.svg" width="45" alt="Indie Hackers"><br><b>Indie Hackers</b></a></td>
-<td align="center"><a href="YOUR_F6S_URL" title="F6S"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/f6s.svg" width="45" alt="F6S"><br><b>F6S</b></a></td>
-<td align="center"><a href="YOUR_CRUNCHBASE_URL" title="Crunchbase"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/crunchbase.svg" width="45" alt="Crunchbase"><br><b>Crunchbase</b></a></td>
-<td align="center"><a href="YOUR_DEVPOST_URL" title="Devpost"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/devpost.svg" width="45" alt="Devpost"><br><b>Devpost</b></a></td>
-<td align="center"><a href="YOUR_BETALIST_URL" title="BetaList"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/betalist.svg" width="45" alt="BetaList"><br><b>BetaList</b></a></td>
-<td align="center"><a href="YOUR_ANGELLIST_URL" title="AngelList"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/angellist.svg" width="45" alt="AngelList"><br><b>AngelList</b></a></td>
+<td align="center"><a href="YOUR_HUGGING_FACE_URL"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" width="42" height="42" alt="Hugging Face"></a><br><sub>Hugging Face</sub></td>
+<td align="center"><a href="YOUR_KAGGLE_URL"><img src="https://cdn.simpleicons.org/kaggle/20BEFF" width="42" height="42" alt="Kaggle"></a><br><sub>Kaggle</sub></td>
+<td align="center"><a href="YOUR_NVIDIA_DEVELOPER_URL"><img src="https://cdn.simpleicons.org/nvidia/76B900" width="42" height="42" alt="NVIDIA Developer"></a><br><sub>NVIDIA</sub></td>
+<td align="center"><a href="YOUR_GOOGLE_COLAB_URL"><img src="https://cdn.simpleicons.org/googlecolab/F9AB00" width="42" height="42" alt="Google Colab"></a><br><sub>Colab</sub></td>
+<td align="center"><a href="YOUR_PAPERS_WITH_CODE_URL"><img src="https://cdn.simpleicons.org/paperswithcode/21CBCE" width="42" height="42" alt="Papers With Code"></a><br><sub>Papers With Code</sub></td>
+<td align="center"><a href="YOUR_TENSORFLOW_URL"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" width="42" height="42" alt="TensorFlow"></a><br><sub>TensorFlow</sub></td>
+<td align="center"><a href="YOUR_PYTORCH_URL"><img src="https://cdn.simpleicons.org/pytorch/EE4C2C" width="42" height="42" alt="PyTorch"></a><br><sub>PyTorch</sub></td>
+<td align="center"><a href="YOUR_GOOGLE_CLOUD_SKILLS_URL"><img src="https://cdn.simpleicons.org/googlecloud/4285F4" width="42" height="42" alt="Google Cloud Skills"></a><br><sub>Google Cloud</sub></td>
+<td align="center"><a href="YOUR_AWS_BUILDER_CENTER_URL"><img src="https://cdn.simpleicons.org/amazonwebservices/232F3E" width="42" height="42" alt="AWS Builder Center"></a><br><sub>AWS</sub></td>
 </tr>
 </table>
 
-## 👥 Knowledge & community
+### 🛠️ Developer & open source
 
 <table align="center">
 <tr>
-<td align="center"><a href="YOUR_REDDIT_URL" title="Reddit"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/reddit.svg" width="45" alt="Reddit"><br><b>Reddit</b></a></td>
-<td align="center"><a href="YOUR_DISCORD_URL" title="Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" width="45" alt="Discord"><br><b>Discord</b></a></td>
-<td align="center"><a href="YOUR_TELEGRAM_URL" title="Telegram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" width="45" alt="Telegram"><br><b>Telegram</b></a></td>
-<td align="center"><a href="YOUR_FACEBOOK_GROUPS_URL" title="Facebook Groups"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/facebook.svg" width="45" alt="Facebook Groups"><br><b>Facebook Groups</b></a></td>
-<td align="center"><a href="YOUR_GITHUB_DISCUSSIONS_URL" title="GitHub Discussions"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/github.svg" width="45" alt="GitHub Discussions"><br><b>GitHub Discussions</b></a></td>
+<td align="center"><a href="https://github.com/ATULPANDEYIITR"><img src="https://cdn.simpleicons.org/github/181717" width="42" height="42" alt="GitHub"></a><br><sub>GitHub</sub></td>
+<td align="center"><a href="YOUR_GITLAB_URL"><img src="https://cdn.simpleicons.org/gitlab/FC6D26" width="42" height="42" alt="GitLab"></a><br><sub>GitLab</sub></td>
+<td align="center"><a href="YOUR_BITBUCKET_URL"><img src="https://cdn.simpleicons.org/bitbucket/0052CC" width="42" height="42" alt="Bitbucket"></a><br><sub>Bitbucket</sub></td>
+<td align="center"><a href="YOUR_STACK_OVERFLOW_URL"><img src="https://cdn.simpleicons.org/stackoverflow/F58025" width="42" height="42" alt="Stack Overflow"></a><br><sub>Stack Overflow</sub></td>
+<td align="center"><a href="YOUR_SOURCEFORGE_URL"><img src="https://cdn.simpleicons.org/sourceforge/FF6600" width="42" height="42" alt="SourceForge"></a><br><sub>SourceForge</sub></td>
+<td align="center"><a href="YOUR_CODEPEN_URL"><img src="https://cdn.simpleicons.org/codepen/000000" width="42" height="42" alt="CodePen"></a><br><sub>CodePen</sub></td>
+<td align="center"><a href="YOUR_JSFIDDLE_URL"><img src="https://cdn.simpleicons.org/jsfiddle/0084FF" width="42" height="42" alt="JSFiddle"></a><br><sub>JSFiddle</sub></td>
+<td align="center"><a href="YOUR_REPLIT_URL"><img src="https://cdn.simpleicons.org/replit/F26207" width="42" height="42" alt="Replit"></a><br><sub>Replit</sub></td>
+<td align="center"><a href="YOUR_CODESANDBOX_URL"><img src="https://cdn.simpleicons.org/codesandbox/151515" width="42" height="42" alt="CodeSandbox"></a><br><sub>CodeSandbox</sub></td>
+<td align="center"><a href="YOUR_NPM_URL"><img src="https://cdn.simpleicons.org/npm/CB3837" width="42" height="42" alt="npm"></a><br><sub>npm</sub></td>
+<td align="center"><a href="YOUR_PYPI_URL"><img src="https://cdn.simpleicons.org/pypi/3775A9" width="42" height="42" alt="PyPI"></a><br><sub>PyPI</sub></td>
+<td align="center"><a href="YOUR_DOCKER_HUB_URL"><img src="https://cdn.simpleicons.org/docker/2496ED" width="42" height="42" alt="Docker Hub"></a><br><sub>Docker Hub</sub></td>
 </tr>
 </table>
 
-## 📱 Social media
+### 🚀 Product, startup & business
 
 <table align="center">
 <tr>
-<td align="center"><a href="YOUR_INSTAGRAM_URL" title="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/instagram.svg" width="45" alt="Instagram"><br><b>Instagram</b></a></td>
-<td align="center"><a href="YOUR_FACEBOOK_URL" title="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/facebook.svg" width="45" alt="Facebook"><br><b>Facebook</b></a></td>
-<td align="center"><a href="YOUR_X_URL" title="X / Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/x.svg" width="45" alt="X / Twitter"><br><b>X / Twitter</b></a></td>
-<td align="center"><a href="YOUR_THREADS_URL" title="Threads"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/threads.svg" width="45" alt="Threads"><br><b>Threads</b></a></td>
-<td align="center"><a href="YOUR_BLUESKY_URL" title="Bluesky"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/bluesky.svg" width="45" alt="Bluesky"><br><b>Bluesky</b></a></td>
-<td align="center"><a href="YOUR_MASTODON_URL" title="Mastodon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/mastodon.svg" width="45" alt="Mastodon"><br><b>Mastodon</b></a></td>
-<td align="center"><a href="YOUR_YOUTUBE_URL" title="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/youtube.svg" width="45" alt="YouTube"><br><b>YouTube</b></a></td>
-<td align="center"><a href="YOUR_TIKTOK_URL" title="TikTok"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/tiktok.svg" width="45" alt="TikTok"><br><b>TikTok</b></a></td>
-<td align="center"><a href="YOUR_SNAPCHAT_URL" title="Snapchat"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/snapchat.svg" width="45" alt="Snapchat"><br><b>Snapchat</b></a></td>
-<td align="center"><a href="YOUR_PINTEREST_URL" title="Pinterest"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/pinterest.svg" width="45" alt="Pinterest"><br><b>Pinterest</b></a></td>
+<td align="center"><a href="YOUR_PRODUCT_HUNT_URL"><img src="https://cdn.simpleicons.org/producthunt/DA552F" width="42" height="42" alt="Product Hunt"></a><br><sub>Product Hunt</sub></td>
+<td align="center"><a href="YOUR_WELLFOUND_URL"><img src="https://cdn.simpleicons.org/wellfound/000000" width="42" height="42" alt="Wellfound"></a><br><sub>Wellfound</sub></td>
+<td align="center"><a href="YOUR_INDIE_HACKERS_URL"><img src="https://cdn.simpleicons.org/indiehackers/0E0E0E" width="42" height="42" alt="Indie Hackers"></a><br><sub>Indie Hackers</sub></td>
+<td align="center"><a href="YOUR_F6S_URL"><img src="https://cdn.simpleicons.org/f6s/000000" width="42" height="42" alt="F6S"></a><br><sub>F6S</sub></td>
+<td align="center"><a href="YOUR_CRUNCHBASE_URL"><img src="https://cdn.simpleicons.org/crunchbase/0288D1" width="42" height="42" alt="Crunchbase"></a><br><sub>Crunchbase</sub></td>
+<td align="center"><a href="YOUR_DEVPOST_URL"><img src="https://cdn.simpleicons.org/devpost/003E54" width="42" height="42" alt="Devpost"></a><br><sub>Devpost</sub></td>
+<td align="center"><a href="YOUR_BETALIST_URL"><img src="https://cdn.simpleicons.org/betalist/000000" width="42" height="42" alt="BetaList"></a><br><sub>BetaList</sub></td>
+<td align="center"><a href="YOUR_ANGELLIST_URL"><img src="https://cdn.simpleicons.org/angellist/000000" width="42" height="42" alt="AngelList"></a><br><sub>AngelList</sub></td>
 </tr>
 </table>
 
-## 📧 Communication & contact
+### 🧠 Knowledge & community
 
 <table align="center">
 <tr>
-<td align="center"><a href="mailto:YOUR_GMAIL_1@example.com" title="Gmail 1"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/gmail.svg" width="45" alt="Gmail"><br><b>Gmail 1</b></a></td>
-<td align="center"><a href="mailto:YOUR_GMAIL_2@example.com" title="Gmail 2"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/gmail.svg" width="45" alt="Gmail"><br><b>Gmail 2</b></a></td>
-<td align="center"><a href="mailto:YOUR_OUTLOOK@example.com" title="Outlook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/microsoftoutlook.svg" width="45" alt="Outlook"><br><b>Outlook</b></a></td>
-<td align="center"><a href="YOUR_TELEGRAM_URL" title="Telegram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/telegram.svg" width="45" alt="Telegram"><br><b>Telegram</b></a></td>
-<td align="center"><a href="YOUR_DISCORD_URL" title="Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/discord.svg" width="45" alt="Discord"><br><b>Discord</b></a></td>
+<td align="center"><a href="YOUR_QUORA_URL"><img src="https://cdn.simpleicons.org/quora/B92B27" width="42" height="42" alt="Quora"></a><br><sub>Quora</sub></td>
+<td align="center"><a href="YOUR_QUORA_SPACES_URL"><img src="https://cdn.simpleicons.org/quora/B92B27" width="42" height="42" alt="Quora Spaces"></a><br><sub>Quora Spaces</sub></td>
+<td align="center"><a href="YOUR_REDDIT_URL"><img src="https://cdn.simpleicons.org/reddit/FF4500" width="42" height="42" alt="Reddit"></a><br><sub>Reddit</sub></td>
+<td align="center"><a href="YOUR_STACK_EXCHANGE_URL"><img src="https://cdn.simpleicons.org/stackexchange/1E5397" width="42" height="42" alt="Stack Exchange"></a><br><sub>Stack Exchange</sub></td>
+<td align="center"><a href="YOUR_DISCORD_URL"><img src="https://cdn.simpleicons.org/discord/5865F2" width="42" height="42" alt="Discord"></a><br><sub>Discord</sub></td>
+<td align="center"><a href="YOUR_TELEGRAM_URL"><img src="https://cdn.simpleicons.org/telegram/26A5E4" width="42" height="42" alt="Telegram"></a><br><sub>Telegram</sub></td>
+<td align="center"><a href="YOUR_FACEBOOK_GROUPS_URL"><img src="https://cdn.simpleicons.org/facebook/1877F2" width="42" height="42" alt="Facebook Groups"></a><br><sub>Facebook Groups</sub></td>
+<td align="center"><a href="YOUR_GITHUB_DISCUSSIONS_URL"><img src="https://cdn.simpleicons.org/github/181717" width="42" height="42" alt="GitHub Discussions"></a><br><sub>GitHub Discussions</sub></td>
 </tr>
 </table>
 
-## 🧩 Productivity & public workspace
+### 📱 Social media
 
 <table align="center">
 <tr>
-<td align="center"><a href="YOUR_NOTION_URL" title="Notion"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/notion.svg" width="45" alt="Notion"><br><b>Notion</b></a></td>
-<td align="center"><a href="YOUR_GOOGLE_DRIVE_URL" title="Google Drive"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/googledrive.svg" width="45" alt="Google Drive"><br><b>Google Drive</b></a></td>
-<td align="center"><a href="YOUR_GOOGLE_SITES_URL" title="Google Sites"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/googlesites.svg" width="45" alt="Google Sites"><br><b>Google Sites</b></a></td>
-<td align="center"><a href="YOUR_ONEDRIVE_URL" title="Microsoft OneDrive"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/microsoftonedrive.svg" width="45" alt="OneDrive"><br><b>OneDrive</b></a></td>
-<td align="center"><a href="YOUR_SWAY_URL" title="Microsoft Sway"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/microsoft.svg" width="45" alt="Microsoft Sway"><br><b>Microsoft Sway</b></a></td>
-<td align="center"><a href="YOUR_TRELLO_URL" title="Trello"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/trello.svg" width="45" alt="Trello"><br><b>Trello</b></a></td>
-<td align="center"><a href="YOUR_MIRO_URL" title="Miro"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/miro.svg" width="45" alt="Miro"><br><b>Miro</b></a></td>
-<td align="center"><a href="YOUR_FIGMA_URL" title="Figma"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/figma.svg" width="45" alt="Figma"><br><b>Figma</b></a></td>
-<td align="center"><a href="YOUR_VERCEL_URL" title="Vercel"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/vercel.svg" width="45" alt="Vercel"><br><b>Vercel</b></a></td>
+<td align="center"><a href="YOUR_INSTAGRAM_URL"><img src="https://cdn.simpleicons.org/instagram/E4405F" width="42" height="42" alt="Instagram"></a><br><sub>Instagram</sub></td>
+<td align="center"><a href="YOUR_FACEBOOK_URL"><img src="https://cdn.simpleicons.org/facebook/1877F2" width="42" height="42" alt="Facebook"></a><br><sub>Facebook</sub></td>
+<td align="center"><a href="YOUR_X_URL"><img src="https://cdn.simpleicons.org/x/000000" width="42" height="42" alt="X"></a><br><sub>X</sub></td>
+<td align="center"><a href="YOUR_THREADS_URL"><img src="https://cdn.simpleicons.org/threads/000000" width="42" height="42" alt="Threads"></a><br><sub>Threads</sub></td>
+<td align="center"><a href="YOUR_BLUESKY_URL"><img src="https://cdn.simpleicons.org/bluesky/0285FF" width="42" height="42" alt="Bluesky"></a><br><sub>Bluesky</sub></td>
+<td align="center"><a href="YOUR_MASTODON_URL"><img src="https://cdn.simpleicons.org/mastodon/6364FF" width="42" height="42" alt="Mastodon"></a><br><sub>Mastodon</sub></td>
+<td align="center"><a href="YOUR_YOUTUBE_URL"><img src="https://cdn.simpleicons.org/youtube/FF0000" width="42" height="42" alt="YouTube"></a><br><sub>YouTube</sub></td>
+<td align="center"><a href="YOUR_TIKTOK_URL"><img src="https://cdn.simpleicons.org/tiktok/000000" width="42" height="42" alt="TikTok"></a><br><sub>TikTok</sub></td>
+<td align="center"><a href="YOUR_SNAPCHAT_URL"><img src="https://cdn.simpleicons.org/snapchat/FFFC00" width="42" height="42" alt="Snapchat"></a><br><sub>Snapchat</sub></td>
+<td align="center"><a href="YOUR_PINTEREST_URL"><img src="https://cdn.simpleicons.org/pinterest/BD081C" width="42" height="42" alt="Pinterest"></a><br><sub>Pinterest</sub></td>
+</tr>
+</table>
+
+### 📧 Communication & contact
+
+<table align="center">
+<tr>
+<td align="center"><a href="mailto:YOUR_EMAIL_1"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="42" height="42" alt="Gmail"></a><br><sub>Gmail</sub></td>
+<td align="center"><a href="mailto:YOUR_EMAIL_2"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="42" height="42" alt="Gmail"></a><br><sub>Gmail 2</sub></td>
+<td align="center"><a href="mailto:YOUR_OUTLOOK_EMAIL"><img src="https://cdn.simpleicons.org/microsoftoutlook/0078D4" width="42" height="42" alt="Outlook"></a><br><sub>Outlook</sub></td>
+<td align="center"><a href="YOUR_TELEGRAM_URL"><img src="https://cdn.simpleicons.org/telegram/26A5E4" width="42" height="42" alt="Telegram"></a><br><sub>Telegram</sub></td>
+<td align="center"><a href="YOUR_DISCORD_URL"><img src="https://cdn.simpleicons.org/discord/5865F2" width="42" height="42" alt="Discord"></a><br><sub>Discord</sub></td>
+</tr>
+</table>
+
+### 🗂️ Productivity & public workspace
+
+<table align="center">
+<tr>
+<td align="center"><a href="YOUR_NOTION_URL"><img src="https://cdn.simpleicons.org/notion/000000" width="42" height="42" alt="Notion"></a><br><sub>Notion</sub></td>
+<td align="center"><a href="YOUR_GOOGLE_DRIVE_URL"><img src="https://cdn.simpleicons.org/googledrive/4285F4" width="42" height="42" alt="Google Drive"></a><br><sub>Google Drive</sub></td>
+<td align="center"><a href="YOUR_GOOGLE_SITES_URL"><img src="https://cdn.simpleicons.org/googlesites/4285F4" width="42" height="42" alt="Google Sites"></a><br><sub>Google Sites</sub></td>
+<td align="center"><a href="YOUR_ONEDRIVE_URL"><img src="https://cdn.simpleicons.org/microsoftonedrive/0078D4" width="42" height="42" alt="Microsoft OneDrive"></a><br><sub>OneDrive</sub></td>
+<td align="center"><a href="YOUR_MICROSOFT_SWAY_URL"><img src="https://cdn.simpleicons.org/microsoftsway/008272" width="42" height="42" alt="Microsoft Sway"></a><br><sub>Sway</sub></td>
+<td align="center"><a href="YOUR_TRELLO_URL"><img src="https://cdn.simpleicons.org/trello/0052CC" width="42" height="42" alt="Trello"></a><br><sub>Trello</sub></td>
+<td align="center"><a href="YOUR_MIRO_URL"><img src="https://cdn.simpleicons.org/miro/050038" width="42" height="42" alt="Miro"></a><br><sub>Miro</sub></td>
+<td align="center"><a href="YOUR_FIGMA_URL"><img src="https://cdn.simpleicons.org/figma/F24E1E" width="42" height="42" alt="Figma"></a><br><sub>Figma</sub></td>
+<td align="center"><a href="YOUR_VERCEL_URL"><img src="https://cdn.simpleicons.org/vercel/000000" width="42" height="42" alt="Vercel"></a><br><sub>Vercel</sub></td>
 </tr>
 </table>
 ```
