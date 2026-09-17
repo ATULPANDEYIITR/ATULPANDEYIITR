@@ -172,7 +172,7 @@
   >
 </p>
 
-# 📊 Statistics and activity
+# 📊 Statistics and Activity
 
 <!-- =========================================================
      ⚡ GITHUB STATISTICS
@@ -192,7 +192,6 @@
 
 <br>
 
-
 <!-- =========================================================
      🔥 CONTRIBUTION ACTIVITY
      ========================================================= -->
@@ -210,7 +209,6 @@
 </p>
 
 <br>
-
 
 <!-- =========================================================
      💻 MOST USED LANGUAGES
@@ -230,7 +228,6 @@
 
 <br>
 
-
 <!-- =========================================================
      🧠 CONTRIBUTION COMPOSITION
      ========================================================= -->
@@ -248,7 +245,6 @@
 </p>
 
 <br>
-
 
 <!-- =========================================================
      📈 ACTIVITY RHYTHM
@@ -268,7 +264,6 @@
 
 <br>
 
-
 <!-- =========================================================
      📚 CONTRIBUTION HISTORY
      ========================================================= -->
@@ -286,7 +281,6 @@
 </p>
 
 <br>
-
 
 <!-- =========================================================
      🗂️ TOP REPOSITORIES
@@ -306,33 +300,145 @@
 
 <br>
 
+<!-- =========================================================
+     ⭐ LIVE PROFILE METRICS
+     ========================================================= -->
 
 <h3 align="center">
   ⭐ Live Profile Metrics
 </h3>
 
 <p align="center">
-
   <img
-    src="https://img.shields.io/github/stars/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=STARS&labelColor=0D1117&color=00D9A5"
-    alt="GitHub Stars"
+    src="./assets/live-metrics.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Live GitHub Metrics"
   />
+</p>
 
-  &nbsp;
+<br>
 
+<!-- =========================================================
+     🧠 CONTRIBUTION BREAKDOWN
+     ========================================================= -->
+
+<h3 align="center">
+  🧠 Contribution Breakdown
+</h3>
+
+<p align="center">
   <img
-    src="https://img.shields.io/github/followers/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=FOLLOWERS&labelColor=0D1117&color=FF4F81"
-    alt="GitHub Followers"
+    src="./assets/contribution-breakdown.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Contribution Breakdown"
   />
+</p>
 
-  &nbsp;
+<br>
 
+<!-- =========================================================
+     🔥 CONTRIBUTION STREAK
+     ========================================================= -->
+
+<h3 align="center">
+  🔥 Contribution Streak
+</h3>
+
+<p align="center">
   <img
-    src="https://img.shields.io/github/repos/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=REPOSITORIES&labelColor=0D1117&color=00D9A5"
-    alt="GitHub Repositories"
+    src="./assets/contribution-streak.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Contribution Streak"
   />
+</p>
+
+<br>
+
+<!-- =========================================================
+     📝 RECENT COMMITS
+     ========================================================= -->
+
+<h3 align="center">
+  📝 Recent Commits
+</h3>
+
+<p align="center">
+  <img
+    src="./assets/recent-commits.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Recent Commits"
+  />
+</p>
+
+<br>
+
+<!-- =========================================================
+     🚀 RECENT GITHUB ACTIVITY
+     ========================================================= -->
+
+<h3 align="center">
+  🚀 Recent GitHub Activity
+</h3>
+
+<p align="center">
+  <img
+    src="./assets/recent-activity.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Recent GitHub Activity"
+  />
+</p>
+
+<br>
+
+<!-- =========================================================
+     📅 YEARLY CONTRIBUTION SUMMARY
+     ========================================================= -->
+
+<h3 align="center">
+  📅 Yearly Contribution Summary
+</h3>
+
+<p align="center">
+  <img
+    src="./assets/yearly-contributions.svg"
+    width="100%"
+    alt="ATULPANDEYIITR Yearly Contribution Summary"
+  />
+</p>
+
+<br>
+
+<!-- =========================================================
+     📊 GITHUB COUNTERS
+     ========================================================= -->
+
+<h3 align="center">
+  📊 GitHub Counters
+</h3>
+
+<p align="center">
+
+<img
+ src="https://img.shields.io/github/stars/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=STARS&labelColor=0D1117&color=00D9A5"
+ alt="GitHub Stars"
+/>
+
+ 
+
+<img
+ src="https://img.shields.io/github/followers/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=FOLLOWERS&labelColor=0D1117&color=FF4F81"
+ alt="GitHub Followers"
+/>
+
+ 
+
+<img
+ src="https://img.shields.io/github/repos/ATULPANDEYIITR?style=for-the-badge&logo=github&logoColor=FFFFFF&label=REPOSITORIES&labelColor=00D9A5"
+ alt="GitHub Repositories"
+/>
 
 </p>
+
 
 # 🌐 My digital profiles
 
