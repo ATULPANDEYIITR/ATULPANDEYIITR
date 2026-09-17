@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v5
 
@@ -29,13 +30,16 @@ jobs:
           themes: "dark,light"
           language-limit: 8
           commit: false
-                - name: Set up Python
+
+      - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-                - name: Install Python package
+
+      - name: Install Python package
         run: pip install requests
-              - name: Generate Dynamic GitHub Activity
+
+      - name: Generate Dynamic GitHub Activity
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ATULPANDEYIITR
@@ -57,21 +61,31 @@ jobs:
             user(login: $login) {
               login
               name
+
               followers {
                 totalCount
               }
+
               following {
                 totalCount
               }
-              repositories(first: 20, ownerAffiliations: OWNER, orderBy: {field: UPDATED_AT, direction: DESC}) {
+
+              repositories(
+                first: 20
+                ownerAffiliations: OWNER
+                orderBy: {field: UPDATED_AT, direction: DESC}
+              ) {
                 totalCount
+
                 nodes {
                   name
                   stargazerCount
                   forkCount
+
                   watchers {
                     totalCount
                   }
+
                   defaultBranchRef {
                     target {
                       ... on Commit {
@@ -87,9 +101,11 @@ jobs:
                   }
                 }
               }
+
               contributionsCollection {
                 contributionCalendar {
                   totalContributions
+
                   weeks {
                     contributionDays {
                       contributionCount
@@ -98,9 +114,11 @@ jobs:
                   }
                 }
               }
+
               pullRequests(first: 1) {
                 totalCount
               }
+
               issues(first: 1) {
                 totalCount
               }
@@ -110,7 +128,12 @@ jobs:
 
           response = requests.post(
               "https://api.github.com/graphql",
-              json={"query": query, "variables": {"login": USERNAME}},
+              json={
+                  "query": query,
+                  "variables": {
+                      "login": USERNAME
+                  }
+              },
               headers=headers
           )
 
@@ -123,23 +146,29 @@ jobs:
 
           user = data["data"]["user"]
 
-          print(f"GitHub activity data collected for {user['login']}")
-          print(f"Followers: {user['followers']['totalCount']}")
-          print(f"Repositories: {user['repositories']['totalCount']}")
-          print(
-              f"Contributions: "
-              f"{user['contributionsCollection']['contributionCalendar']['totalContributions']}"
+          contributions = (
+              user["contributionsCollection"]
+              ["contributionCalendar"]
+              ["totalContributions"]
           )
 
-          print("Dynamic activity data collected successfully.")
+          print(f"GitHub activity data collected for {user['login']}")
+          print(f"Followers: {user['followers']['totalCount']}")
+          print(f"Following: {user['following']['totalCount']}")
+          print(f"Repositories: {user['repositories']['totalCount']}")
+          print(f"Pull Requests: {user['pullRequests']['totalCount']}")
+          print(f"Issues: {user['issues']['totalCount']}")
+          print(f"Contributions: {contributions}")
+
+          print("Dynamic GitHub activity data collected successfully.")
           PYTHON
 
           python generate_profile.py
-                - name: Save updated profile
+
+      - name: Save updated profile
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
           git diff --cached --quiet || git commit -m "Update GitHub profile statistics"
           git push
-          commit-message: "Update GitHub profile statistics"
