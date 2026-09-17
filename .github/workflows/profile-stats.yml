@@ -135,4 +135,11 @@ jobs:
           PYTHON
 
           python generate_profile.py
+                - name: Save updated profile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "Update GitHub profile statistics"
+          git push
           commit-message: "Update GitHub profile statistics"
