@@ -8,8 +8,6 @@ on:
 
 permissions:
   contents: write
-  issues: read
-  pull-requests: read
 
 jobs:
   generate-profile:
@@ -47,18 +45,23 @@ jobs:
           cat > generate_profile.py <<'PYTHON'
           import os
           import requests
+          from datetime import datetime, timezone
+          from html import escape
 
           TOKEN = os.environ["GITHUB_TOKEN"]
           USERNAME = os.environ["GITHUB_USERNAME"]
 
-          headers = {
+          HEADERS = {
               "Authorization": f"Bearer {TOKEN}",
               "Accept": "application/vnd.github+json"
           }
 
-          query = """
+          os.makedirs("assets", exist_ok=True)
+
+          QUERY = """
           query($login: String!) {
             user(login: $login) {
+
               login
               name
 
@@ -75,10 +78,12 @@ jobs:
                 ownerAffiliations: OWNER
                 orderBy: {field: UPDATED_AT, direction: DESC}
               ) {
+
                 totalCount
 
                 nodes {
                   name
+                  url
                   stargazerCount
                   forkCount
 
@@ -103,7 +108,14 @@ jobs:
               }
 
               contributionsCollection {
+
+                totalCommitContributions
+                totalPullRequestContributions
+                totalIssueContributions
+                totalRepositoryContributions
+
                 contributionCalendar {
+
                   totalContributions
 
                   weeks {
@@ -126,15 +138,18 @@ jobs:
           }
           """
 
+          print("Collecting GitHub activity data...")
+
           response = requests.post(
               "https://api.github.com/graphql",
               json={
-                  "query": query,
+                  "query": QUERY,
                   "variables": {
                       "login": USERNAME
                   }
               },
-              headers=headers
+              headers=HEADERS,
+              timeout=30
           )
 
           response.raise_for_status()
@@ -146,21 +161,511 @@ jobs:
 
           user = data["data"]["user"]
 
-          contributions = (
-              user["contributionsCollection"]
-              ["contributionCalendar"]
-              ["totalContributions"]
+          contributions_collection = user["contributionsCollection"]
+          calendar = contributions_collection["contributionCalendar"]
+
+          followers = user["followers"]["totalCount"]
+          following = user["following"]["totalCount"]
+          repository_count = user["repositories"]["totalCount"]
+          pull_requests = user["pullRequests"]["totalCount"]
+          issues = user["issues"]["totalCount"]
+
+          total_contributions = calendar["totalContributions"]
+
+          commit_contributions = (
+              contributions_collection["totalCommitContributions"]
           )
 
-          print(f"GitHub activity data collected for {user['login']}")
-          print(f"Followers: {user['followers']['totalCount']}")
-          print(f"Following: {user['following']['totalCount']}")
-          print(f"Repositories: {user['repositories']['totalCount']}")
-          print(f"Pull Requests: {user['pullRequests']['totalCount']}")
-          print(f"Issues: {user['issues']['totalCount']}")
-          print(f"Contributions: {contributions}")
+          pr_contributions = (
+              contributions_collection["totalPullRequestContributions"]
+          )
 
-          print("Dynamic GitHub activity data collected successfully.")
+          issue_contributions = (
+              contributions_collection["totalIssueContributions"]
+          )
+
+          repository_contributions = (
+              contributions_collection["totalRepositoryContributions"]
+          )
+
+          repositories = user["repositories"]["nodes"]
+
+          contribution_days = []
+
+          for week in calendar["weeks"]:
+              for day in week["contributionDays"]:
+                  contribution_days.append(day)
+
+          contribution_days.sort(
+              key=lambda item: item["date"]
+          )
+
+          current_streak = 0
+
+          for day in reversed(contribution_days):
+
+              if day["contributionCount"] > 0:
+                  current_streak += 1
+              else:
+                  break
+
+          best_streak = 0
+          running_streak = 0
+
+          for day in contribution_days:
+
+              if day["contributionCount"] > 0:
+                  running_streak += 1
+                  best_streak = max(
+                      best_streak,
+                      running_streak
+                  )
+              else:
+                  running_streak = 0
+
+          top_repositories = sorted(
+              repositories,
+              key=lambda repo: repo["stargazerCount"],
+              reverse=True
+          )[:6]
+
+          recent_commits = []
+
+          for repo in repositories:
+
+              branch = repo.get("defaultBranchRef")
+
+              if not branch:
+                  continue
+
+              target = branch.get("target")
+
+              if not target:
+                  continue
+
+              history = target.get("history")
+
+              if not history:
+                  continue
+
+              for commit in history["nodes"]:
+
+                  recent_commits.append({
+                      "repo": repo["name"],
+                      "message": commit["messageHeadline"],
+                      "date": commit["committedDate"],
+                      "url": commit["url"]
+                  })
+
+          recent_commits.sort(
+              key=lambda item: item["date"],
+              reverse=True
+          )
+
+          recent_commits = recent_commits[:8]
+
+          activity_response = requests.get(
+              f"https://api.github.com/users/{USERNAME}/events/public?per_page=20",
+              headers=HEADERS,
+              timeout=30
+          )
+
+          activity = []
+
+          if activity_response.ok:
+              activity = activity_response.json()
+
+          def svg_start(title, width, height):
+              title = escape(title)
+
+              return f'''<svg xmlns="http://www.w3.org/2000/svg"
+              width="{width}"
+              height="{height}"
+              viewBox="0 0 {width} {height}">
+              <rect width="100%" height="100%" rx="18" fill="#0D1117"/>
+              <text x="40" y="55"
+                    fill="#FFFFFF"
+                    font-size="28"
+                    font-family="Arial"
+                    font-weight="bold">{title}</text>
+              '''
+
+          def svg_end():
+              return "</svg>"
+
+          def save_svg(filename, content):
+              path = os.path.join("assets", filename)
+
+              with open(
+                  path,
+                  "w",
+                  encoding="utf-8"
+              ) as file:
+                  file.write(content)
+
+              print(f"Created: {path}")
+
+          # ---------------------------------------------------------
+          # LIVE METRICS
+          # ---------------------------------------------------------
+
+          svg = svg_start(
+              "Live GitHub Metrics",
+              1000,
+              300
+          )
+
+          metrics = [
+              ("Followers", followers),
+              ("Repositories", repository_count),
+              ("Contributions", total_contributions),
+              ("Pull Requests", pull_requests),
+              ("Issues", issues)
+          ]
+
+          positions = [50, 240, 430, 620, 810]
+
+          for (label, value), x in zip(
+              metrics,
+              positions
+          ):
+
+              svg += f'''
+              <rect x="{x}" y="100"
+                    width="150" height="130"
+                    rx="14"
+                    fill="#161B22"
+                    stroke="#30363D"/>
+
+              <text x="{x + 75}" y="155"
+                    text-anchor="middle"
+                    fill="#00D9A5"
+                    font-size="30"
+                    font-family="Arial"
+                    font-weight="bold">{value}</text>
+
+              <text x="{x + 75}" y="195"
+                    text-anchor="middle"
+                    fill="#8B949E"
+                    font-size="15"
+                    font-family="Arial">{escape(label)}</text>
+              '''
+
+          svg += svg_end()
+
+          save_svg(
+              "live-metrics.svg",
+              svg
+          )
+
+          # ---------------------------------------------------------
+          # CONTRIBUTION BREAKDOWN
+          # ---------------------------------------------------------
+
+          svg = svg_start(
+              "Contribution Breakdown",
+              1000,
+              350
+          )
+
+          breakdown = [
+              ("Commits", commit_contributions),
+              ("Pull Requests", pr_contributions),
+              ("Issues", issue_contributions),
+              ("Repositories", repository_contributions)
+          ]
+
+          maximum = max(
+              [value for _, value in breakdown] + [1]
+          )
+
+          y = 115
+
+          for label, value in breakdown:
+
+              bar_width = int(
+                  550 * value / maximum
+              )
+
+              svg += f'''
+              <text x="70" y="{y}"
+                    fill="#FFFFFF"
+                    font-size="18"
+                    font-family="Arial">{escape(label)}</text>
+
+              <rect x="260" y="{y - 20}"
+                    width="550" height="24"
+                    rx="12"
+                    fill="#161B22"/>
+
+              <rect x="260" y="{y - 20}"
+                    width="{bar_width}" height="24"
+                    rx="12"
+                    fill="#00D9A5"/>
+
+              <text x="840" y="{y}"
+                    fill="#FFFFFF"
+                    font-size="18"
+                    font-family="Arial">{value}</text>
+              '''
+
+              y += 55
+
+          svg += svg_end()
+
+          save_svg(
+              "contribution-breakdown.svg",
+              svg
+          )
+
+          # ---------------------------------------------------------
+          # CONTRIBUTION STREAK
+          # ---------------------------------------------------------
+
+          svg = svg_start(
+              "Contribution Streak",
+              1000,
+              300
+          )
+
+          svg += f'''
+          <text x="500" y="145"
+                text-anchor="middle"
+                fill="#FF4F81"
+                font-size="58"
+                font-family="Arial"
+                font-weight="bold">{current_streak} days</text>
+
+          <text x="500" y="190"
+                text-anchor="middle"
+                fill="#8B949E"
+                font-size="18"
+                font-family="Arial">
+            Current contribution streak
+          </text>
+
+          <text x="500" y="235"
+                text-anchor="middle"
+                fill="#FFFFFF"
+                font-size="18"
+                font-family="Arial">
+            Best streak: {best_streak} days
+          </text>
+          '''
+
+          svg += svg_end()
+
+          save_svg(
+              "contribution-streak.svg",
+              svg
+          )
+
+          # ---------------------------------------------------------
+          # TOP REPOSITORIES
+          # ---------------------------------------------------------
+
+          svg = svg_start(
+              "Most Starred Repositories",
+              1000,
+              430
+          )
+
+          y = 105
+
+          for repo in top_repositories:
+
+              name = escape(repo["name"])
+              stars = repo["stargazerCount"]
+              forks = repo["forkCount"]
+
+              svg += f'''
+              <text x="55" y="{y}"
+                    fill="#FFFFFF"
+                    font-size="19"
+                    font-family="Arial"
+                    font-weight="bold">{name}</text>
+
+              <text x="600" y="{y}"
+                    fill="#FFD166"
+                    font-size="16"
+                    font-family="Arial">
+                Stars: {stars}
+              </text>
+
+              <text x="730" y="{y}"
+                    fill="#8B949E"
+                    font-size="16"
+                    font-family="Arial">
+                Forks: {forks}
+              </text>
+              '''
+
+              y += 50
+
+          svg += svg_end()
+
+          save_svg(
+              "top-repositories.svg",
+              svg
+          )
+
+          # ---------------------------------------------------------
+          # RECENT COMMITS
+          # ---------------------------------------------------------
+
+          svg = svg_start(
+              "Recent Commits",
+              1000,
+              500
+          )
+
+          y = 105
+
+          for commit in recent_commits:
+
+              repo_name = escape(
+                  commit["repo"]
+              )
+
+              message = escape(
+                  commit["message"]
+              )
+
+              if len(message) > 65:
+                  message = message[:62] + "..."
+
+              svg += f'''
+              <text x="55" y="{y}"
+                    fill="#00D9A5"
+                    font-size="15"
+                    font-family="Arial"
+                    font-weight="bold">{repo_name}</text>
+
+              <text x="250" y="{y}"
+                    fill="#FFFFFF"
+                    font-size="15"
+                    font-family="Arial">{message}</text>
+              '''
+
+              y += 45
+
+          svg += svg_end()
+
+          save_svg(
+              "recent-commits.svg",
+              svg
+          )
+
+          # ---------------------------------------------------------
+          # RECENT GITHUB ACTIVITY
+          # ---------------------------------------------------------
+
+          svg = svg_start(
+              "Recent GitHub Activity",
+              1000,
+              500
+          )
+
+          y = 105
+
+          for event in activity[:8]:
+
+              event_type = event.get(
+                  "type",
+                  "Activity"
+              )
+
+              repo_name = (
+                  event.get("repo", {})
+                  .get("name", "")
+              )
+
+              label = event_type.replace(
+                  "Event",
+                  ""
+              )
+
+              text = f"{label} - {repo_name}"
+
+              if len(text) > 80:
+                  text = text[:77] + "..."
+
+              svg += f'''
+              <text x="55" y="{y}"
+                    fill="#FFFFFF"
+                    font-size="16"
+                    font-family="Arial">{escape(text)}</text>
+              '''
+
+              y += 45
+
+          svg += svg_end()
+
+          save_svg(
+              "recent-activity.svg",
+              svg
+          )
+
+          # ---------------------------------------------------------
+          # YEARLY CONTRIBUTIONS
+          # ---------------------------------------------------------
+
+          current_year = datetime.now(
+              timezone.utc
+          ).year
+
+          yearly_total = sum(
+              day["contributionCount"]
+              for day in contribution_days
+              if day["date"].startswith(
+                  str(current_year)
+              )
+          )
+
+          svg = svg_start(
+              f"{current_year} Contribution Summary",
+              1000,
+              300
+          )
+
+          svg += f'''
+          <text x="500" y="145"
+                text-anchor="middle"
+                fill="#00D9A5"
+                font-size="60"
+                font-family="Arial"
+                font-weight="bold">{yearly_total}</text>
+
+          <text x="500" y="195"
+                text-anchor="middle"
+                fill="#8B949E"
+                font-size="18"
+                font-family="Arial">
+            Contributions in {current_year}
+          </text>
+          '''
+
+          svg += svg_end()
+
+          save_svg(
+              "yearly-contributions.svg",
+              svg
+          )
+
+          print("")
+          print("========================================")
+          print(" GitHub Profile Data Updated Successfully")
+          print("========================================")
+          print(f"Followers: {followers}")
+          print(f"Repositories: {repository_count}")
+          print(f"Contributions: {total_contributions}")
+          print(f"Pull Requests: {pull_requests}")
+          print(f"Issues: {issues}")
+          print(f"Current Streak: {current_streak}")
+          print(f"Best Streak: {best_streak}")
+          print(f"{current_year} Contributions: {yearly_total}")
+          print("========================================")
+
           PYTHON
 
           python generate_profile.py
@@ -169,6 +674,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add assets/
           git diff --cached --quiet || git commit -m "Update GitHub profile statistics"
           git push
