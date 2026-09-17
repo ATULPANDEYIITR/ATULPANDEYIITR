@@ -22,7 +22,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           username: ATULPANDEYIITR
-          cards: "overview,lifetime,contributions,composition,rhythm,cadence,repositories,languages"
+          cards: "overview,contributions,repositories,languages"
           output-dir: assets
           themes: "dark,light"
           language-limit: 8
