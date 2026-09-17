@@ -310,7 +310,7 @@
 
 <p align="center">
   <img
-    src="./assets/live-metrics.svg"
+   src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/live-metrics.svg"
     width="100%"
     alt="ATULPANDEYIITR Live GitHub Metrics"
   />
@@ -328,7 +328,7 @@
 
 <p align="center">
   <img
-    src="./assets/contribution-breakdown.svg"
+    src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/live-metrics.svg"
     width="100%"
     alt="ATULPANDEYIITR Contribution Breakdown"
   />
@@ -346,7 +346,7 @@
 
 <p align="center">
   <img
-    src="./assets/contribution-streak.svg"
+    src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/live-metrics.svg"
     width="100%"
     alt="ATULPANDEYIITR Contribution Streak"
   />
@@ -364,7 +364,7 @@
 
 <p align="center">
   <img
-    src="./assets/recent-commits.svg"
+    src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/live-metrics.svg"
     width="100%"
     alt="ATULPANDEYIITR Recent Commits"
   />
@@ -382,7 +382,7 @@
 
 <p align="center">
   <img
-    src="./assets/recent-activity.svg"
+    src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/live-metrics.svg"
     width="100%"
     alt="ATULPANDEYIITR Recent GitHub Activity"
   />
@@ -400,7 +400,7 @@
 
 <p align="center">
   <img
-    src="./assets/yearly-contributions.svg"
+    src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/live-metrics.svg"
     width="100%"
     alt="ATULPANDEYIITR Yearly Contribution Summary"
   />
