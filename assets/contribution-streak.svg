@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="1000"
+    height="300"
+    viewBox="0 0 1000 300">
+    <rect width="100%" height="100%" rx="18" fill="#0D1117"/>
+    <text x="40" y="55"
+          fill="#FFFFFF"
+          font-size="28"
+          font-family="Arial"
+          font-weight="bold">Contribution Streak</text>
+    
+<text x="500" y="145"
+      text-anchor="middle"
+      fill="#FF4F81"
+      font-size="58"
+      font-family="Arial"
+      font-weight="bold">21 days</text>
+
+<text x="500" y="190"
+      text-anchor="middle"
+      fill="#8B949E"
+      font-size="18"
+      font-family="Arial">
+  Current contribution streak
+</text>
+
+<text x="500" y="235"
+      text-anchor="middle"
+      fill="#FFFFFF"
+      font-size="18"
+      font-family="Arial">
+  Best streak: 21 days
+</text>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="1000"
+    height="430"
+    viewBox="0 0 1000 430">
+    <rect width="100%" height="100%" rx="18" fill="#0D1117"/>
+    <text x="40" y="55"
+          fill="#FFFFFF"
+          font-size="28"
+          font-family="Arial"
+          font-weight="bold">Most Starred Repositories</text>
+    
+    <text x="55" y="105"
+          fill="#FFFFFF"
+          font-size="19"
+          font-family="Arial"
+          font-weight="bold">ATULPANDEYIITR</text>
+
+    <text x="600" y="105"
+          fill="#FFD166"
+          font-size="16"
+          font-family="Arial">
+      Stars: 0
+    </text>
+
+    <text x="730" y="105"
+          fill="#8B949E"
+          font-size="16"
+          font-family="Arial">
+      Forks: 0
+    </text>
+    
+    <text x="55" y="155"
+          fill="#FFFFFF"
+          font-size="19"
+          font-family="Arial"
+          font-weight="bold">cryptography-blockchain-and-decentralized-technologies-learning-journey</text>
+
+    <text x="600" y="155"
+          fill="#FFD166"
+          font-size="16"
+          font-family="Arial">
+      Stars: 0
+    </text>
+
+    <text x="730" y="155"
+          fill="#8B949E"
+          font-size="16"
+          font-family="Arial">
+      Forks: 0
+    </text>
+    
+    <text x="55" y="205"
+          fill="#FFFFFF"
+          font-size="19"
+          font-family="Arial"
+          font-weight="bold">python-beginner-journey</text>
+
+    <text x="600" y="205"
+          fill="#FFD166"
+          font-size="16"
+          font-family="Arial">
+      Stars: 0
+    </text>
+
+    <text x="730" y="205"
+          fill="#8B949E"
+          font-size="16"
+          font-family="Arial">
+      Forks: 0
+    </text>
+    
+    <text x="55" y="255"
+          fill="#FFFFFF"
+          font-size="19"
+          font-family="Arial"
+          font-weight="bold">quantum-computing-and-allied-technologies-learning-journey</text>
+
+    <text x="600" y="255"
+          fill="#FFD166"
+          font-size="16"
+          font-family="Arial">
+      Stars: 0
+    </text>
+
+    <text x="730" y="255"
+          fill="#8B949E"
+          font-size="16"
+          font-family="Arial">
+      Forks: 0
+    </text>
+    
+    <text x="55" y="305"
+          fill="#FFFFFF"
+          font-size="19"
+          font-family="Arial"
+          font-weight="bold">cloud-computing-infrastructure-learning-journey</text>
+
+    <text x="600" y="305"
+          fill="#FFD166"
+          font-size="16"
+          font-family="Arial">
+      Stars: 0
+    </text>
+
+    <text x="730" y="305"
+          fill="#8B949E"
+          font-size="16"
+          font-family="Arial">
+      Forks: 0
+    </text>
+    
+    <text x="55" y="355"
+          fill="#FFFFFF"
+          font-size="19"
+          font-family="Arial"
+          font-weight="bold">database-engineering-systems-learning-journey</text>
+
+    <text x="600" y="355"
+          fill="#FFD166"
+          font-size="16"
+          font-family="Arial">
+      Stars: 0
+    </text>
+
+    <text x="730" y="355"
+          fill="#8B949E"
+          font-size="16"
+          font-family="Arial">
+      Forks: 0
+    </text>
+    </svg>

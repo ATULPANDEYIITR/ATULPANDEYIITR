@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="1000"
+    height="500"
+    viewBox="0 0 1000 500">
+    <rect width="100%" height="100%" rx="18" fill="#0D1117"/>
+    <text x="40" y="55"
+          fill="#FFFFFF"
+          font-size="28"
+          font-family="Arial"
+          font-weight="bold">Recent Commits</text>
+    
+    <text x="55" y="105"
+          fill="#00D9A5"
+          font-size="15"
+          font-family="Arial"
+          font-weight="bold">ATULPANDEYIITR</text>
+
+    <text x="250" y="105"
+          fill="#FFFFFF"
+          font-size="15"
+          font-family="Arial">Update profile-stats.yml</text>
+    
+    <text x="55" y="150"
+          fill="#00D9A5"
+          font-size="15"
+          font-family="Arial"
+          font-weight="bold">ATULPANDEYIITR</text>
+
+    <text x="250" y="150"
+          fill="#FFFFFF"
+          font-size="15"
+          font-family="Arial">Update GitHub profile statistics</text>
+    
+    <text x="55" y="195"
+          fill="#00D9A5"
+          font-size="15"
+          font-family="Arial"
+          font-weight="bold">ATULPANDEYIITR</text>
+
+    <text x="250" y="195"
+          fill="#FFFFFF"
+          font-size="15"
+          font-family="Arial">Update GitHub profile statistics</text>
+    
+    <text x="55" y="240"
+          fill="#00D9A5"
+          font-size="15"
+          font-family="Arial"
+          font-weight="bold">ATULPANDEYIITR</text>
+
+    <text x="250" y="240"
+          fill="#FFFFFF"
+          font-size="15"
+          font-family="Arial">Update profile-stats.yml</text>
+    
+    <text x="55" y="285"
+          fill="#00D9A5"
+          font-size="15"
+          font-family="Arial"
+          font-weight="bold">ATULPANDEYIITR</text>
+
+    <text x="250" y="285"
+          fill="#FFFFFF"
+          font-size="15"
+          font-family="Arial">Update README.md</text>
+    
+    <text x="55" y="330"
+          fill="#00D9A5"
+          font-size="15"
+          font-family="Arial"
+          font-weight="bold">cryptography-blockchain-and-decentralized-technologies-learning-journey</text>
+
+    <text x="250" y="330"
+          fill="#FFFFFF"
+          font-size="15"
+          font-family="Arial">Create README.md</text>
+    
+    <text x="55" y="375"
+          fill="#00D9A5"
+          font-size="15"
+          font-family="Arial"
+          font-weight="bold">cryptography-blockchain-and-decentralized-technologies-learning-journey</text>
+
+    <text x="250" y="375"
+          fill="#FFFFFF"
+          font-size="15"
+          font-family="Arial">Create day_17_combinations_and_permutations.cpp</text>
+    
+    <text x="55" y="420"
+          fill="#00D9A5"
+          font-size="15"
+          font-family="Arial"
+          font-weight="bold">cryptography-blockchain-and-decentralized-technologies-learning-journey</text>
+
+    <text x="250" y="420"
+          fill="#FFFFFF"
+          font-size="15"
+          font-family="Arial">Create day_17_combinations_and_permutations.js</text>
+    </svg>
