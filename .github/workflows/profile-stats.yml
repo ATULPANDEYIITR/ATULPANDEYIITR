@@ -28,5 +28,5 @@ jobs:
           output-dir: assets
           themes: "dark,light"
           language-limit: 8
-          commit: true
+          commit: false
           commit-message: "Update GitHub profile statistics"
