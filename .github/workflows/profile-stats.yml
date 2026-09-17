@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate GitHub profile cards
-        uses: seijikohara/profile-cards-action@v1
+        uses: seijikohara/profile-cards-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           username: ATULPANDEYIITR
