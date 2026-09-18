@@ -172,78 +172,50 @@
   >
 </p>
 
-## 🟢 GITHUB ACTIVITY AND STATISTICS
+## 🎮 GitHub Activity Dashboard
 
 <p align="center">
-  <img src="./assets/github-developer-telemetry.png" width="100%">
+  <img src="assets/bar_chart.png" width="48%" />
+  <img src="assets/line_graph.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="./assets/github-activity-summary.png" width="100%">
+  <img src="assets/pie_chart.png" width="48%" />
+  <img src="assets/histogram.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="./assets/github-contribution-analytics.png" width="100%">
+  <img src="assets/scatter_plot.png" width="48%" />
+  <img src="assets/box_plot.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="./assets/github-commit-analytics.png" width="100%">
+  <img src="assets/area_chart.png" width="48%" />
+  <img src="assets/bubble_chart.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="./assets/github-contribution-trend.png" width="100%">
+  <img src="assets/heatmap.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src="./assets/github-collaboration-analytics.png" width="100%">
+  <img src="assets/donut_chart.png" width="48%" />
+  <img src="assets/radar_chart.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="./assets/github-repository-analytics.png" width="100%">
+  <img src="assets/waterfall_chart.png" width="48%" />
+  <img src="assets/funnel_chart.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="./assets/github-open-source-footprint.png" width="100%">
+  <img src="assets/treemap.png" width="48%" />
+  <img src="assets/sankey_diagram.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="./assets/github-streak-system.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-contribution-heatmap.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-language-analytics.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-development-rhythm.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-annual-activity.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-repository-timeline.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-domain-matrix.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-developer-activity.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-contribution-breakdown.png" width="100%">
-</p>
-
-<p align="center">
-  <img src="./assets/github-milestones.png" width="100%">
+  <img src="assets/streak.png" width="48%" />
+  <img src="assets/telemetry.png" width="48%" />
 </p>
 
 # 🌐 My digital profiles
