@@ -15,9 +15,20 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+
   generate-profile:
+
     name: Generate GitHub Profile Dashboard
+
     runs-on: ubuntu-latest
+
+    timeout-minutes: 15
+
+    env:
+      GITHUB_USERNAME: ATULPANDEYIITR
+      MPLBACKEND: Agg
+      MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
+      PYTHONUNBUFFERED: "1"
 
     steps:
 
@@ -26,76 +37,125 @@ jobs:
       # ============================================================
 
       - name: Checkout repository
+
         uses: actions/checkout@v6
+
         with:
           fetch-depth: 1
+          ref: ${{ github.event.repository.default_branch }}
 
       # ============================================================
       # 2. PYTHON
+      #
+      # IMPORTANT:
+      # Do NOT use cache: pip here.
+      #
+      # setup-python cache expects a dependency file such as
+      # requirements.txt or pyproject.toml.
+      #
+      # This workflow installs dependencies directly.
       # ============================================================
 
       - name: Set up Python
+
         uses: actions/setup-python@v6
+
         with:
           python-version: "3.12"
-          cache: "pip"
 
       # ============================================================
       # 3. INSTALL DEPENDENCIES
       # ============================================================
 
       - name: Install Python packages
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install requests matplotlib numpy
 
-      # ============================================================
-      # 4. GENERATE DASHBOARD
-      # ============================================================
-
-      - name: Generate GitHub Activity Dashboard
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: ATULPANDEYIITR
-          MPLBACKEND: Agg
         shell: bash
+
         run: |
 
           set -Eeuo pipefail
 
+          python -m pip install --upgrade pip
+
+          python -m pip install \
+            requests \
+            matplotlib \
+            numpy
+
+          echo ""
+          echo "Installed Python packages:"
+          python -m pip show requests matplotlib numpy
+
+      # ============================================================
+      # 4. PREPARE MATPLOTLIB
+      # ============================================================
+
+      - name: Prepare Matplotlib environment
+
+        shell: bash
+
+        run: |
+
+          set -Eeuo pipefail
+
+          mkdir -p "$MPLCONFIGDIR"
+
+          echo "Matplotlib configuration directory:"
+          echo "$MPLCONFIGDIR"
+
+      # ============================================================
+      # 5. GENERATE DASHBOARD
+      # ============================================================
+
+      - name: Generate GitHub Activity Dashboard
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        shell: bash
+
+        run: |
+
+          set -Eeuo pipefail
+
+          echo ""
           echo "============================================================"
           echo "GITHUB PROFILE DASHBOARD GENERATOR"
           echo "============================================================"
-          echo "Repository: $GITHUB_REPOSITORY"
-          echo "User:       $GITHUB_USERNAME"
-          echo "Python:     $(python --version)"
+          echo "Repository : $GITHUB_REPOSITORY"
+          echo "User       : $GITHUB_USERNAME"
+          echo "Branch     : ${{ github.event.repository.default_branch }}"
+          echo "Python     : $(python --version)"
           echo "============================================================"
           echo ""
 
-          # ----------------------------------------------------------
+          # --------------------------------------------------------
           # Create Python generator
-          # ----------------------------------------------------------
+          # --------------------------------------------------------
 
           cat > generate_profile.py <<'PYTHON'
 
+          import math
           import os
           import sys
-          import math
-          from datetime import datetime, timedelta, timezone
+          import time
+          from datetime import date
+          from datetime import datetime
+          from datetime import timedelta
+          from datetime import timezone
           from pathlib import Path
 
-          import requests
-          import numpy as np
-
           import matplotlib
+
           matplotlib.use("Agg")
 
           import matplotlib.pyplot as plt
+          import numpy as np
+          import requests
 
           from matplotlib.patches import FancyBboxPatch
+          from matplotlib.patches import FancyArrowPatch
           from matplotlib.patches import Rectangle
-          from matplotlib.path import Path as MplPath
-          from matplotlib.patches import PathPatch
 
 
           # ============================================================
@@ -143,8 +203,6 @@ jobs:
           VIOLET_LIGHT = "#B266FF"
           MAGENTA_LIGHT = "#FF4DA6"
 
-          DARK_CELL = "#25314A"
-
 
           # ============================================================
           # FONT SIZES
@@ -162,7 +220,7 @@ jobs:
 
 
           # ============================================================
-          # MATPLOTLIB
+          # MATPLOTLIB CONFIGURATION
           # ============================================================
 
           plt.rcParams.update({
@@ -176,6 +234,9 @@ jobs:
               "figure.dpi": 180,
               "savefig.dpi": 180,
               "axes.grid": False,
+              "axes.facecolor": "none",
+              "figure.facecolor": "none",
+              "savefig.facecolor": "none",
           })
 
 
@@ -189,12 +250,127 @@ jobs:
               "Accept": "application/vnd.github+json",
               "Authorization": f"Bearer {TOKEN}",
               "X-GitHub-Api-Version": "2022-11-28",
-              "User-Agent": "ATULPANDEYIITR-GitHub-Profile-Dashboard",
+              "User-Agent": (
+                  "ATULPANDEYIITR-GitHub-Profile-Dashboard"
+              ),
           })
 
 
           # ============================================================
-          # API HELPERS
+          # GENERAL API REQUEST WITH RETRIES
+          # ============================================================
+
+          RETRY_STATUS_CODES = {
+              429,
+              500,
+              502,
+              503,
+              504,
+          }
+
+
+          def request_with_retry(
+              method,
+              url,
+              **kwargs,
+          ):
+
+              last_error = None
+
+              for attempt in range(1, 4):
+
+                  try:
+
+                      response = SESSION.request(
+                          method,
+                          url,
+                          timeout=30,
+                          **kwargs,
+                      )
+
+                      if (
+                          response.status_code
+                          in RETRY_STATUS_CODES
+                      ):
+
+                          if attempt < 3:
+
+                              retry_after = (
+                                  response.headers.get(
+                                      "Retry-After"
+                                  )
+                              )
+
+                              try:
+                                  delay = float(
+                                      retry_after
+                                  )
+                              except (
+                                  TypeError,
+                                  ValueError,
+                              ):
+                                  delay = (
+                                      2 ** attempt
+                                  )
+
+                              print(
+                                  f"Temporary GitHub API "
+                                  f"response "
+                                  f"{response.status_code}. "
+                                  f"Retrying in "
+                                  f"{delay:.1f} seconds..."
+                              )
+
+                              time.sleep(
+                                  min(
+                                      delay,
+                                      10,
+                                  )
+                              )
+
+                              continue
+
+                      return response
+
+                  except requests.RequestException as error:
+
+                      last_error = error
+
+                      if attempt < 3:
+
+                          delay = (
+                              2 ** attempt
+                          )
+
+                          print(
+                              f"Network error: "
+                              f"{error}"
+                          )
+
+                          print(
+                              f"Retrying in "
+                              f"{delay} seconds..."
+                          )
+
+                          time.sleep(
+                              delay
+                          )
+
+                          continue
+
+                      raise
+
+              if last_error:
+
+                  raise last_error
+
+              raise RuntimeError(
+                  "GitHub API request failed."
+              )
+
+
+          # ============================================================
+          # REST API
           # ============================================================
 
           def rest_get(
@@ -202,26 +378,48 @@ jobs:
               params=None,
           ):
 
-              response = SESSION.get(
+              response = request_with_retry(
+                  "GET",
                   url,
                   params=params,
-                  timeout=30,
               )
 
               if not response.ok:
 
                   print("")
-                  print("GITHUB REST API ERROR")
-                  print("---------------------")
                   print(
-                      f"URL: {url}"
+                      "=================================================="
                   )
                   print(
-                      f"HTTP: {response.status_code}"
+                      "GITHUB REST API ERROR"
                   )
+                  print(
+                      "=================================================="
+                  )
+
+                  print(
+                      f"URL: "
+                      f"{url}"
+                  )
+
+                  print(
+                      f"HTTP STATUS: "
+                      f"{response.status_code}"
+                  )
+
+                  print(
+                      "RATE LIMIT REMAINING: "
+                      f"{response.headers.get('X-RateLimit-Remaining', 'unknown')}"
+                  )
+
+                  print(
+                      "RESPONSE:"
+                  )
+
                   print(
                       response.text[:5000]
                   )
+
                   print("")
 
                   response.raise_for_status()
@@ -234,50 +432,100 @@ jobs:
               params=None,
           ):
 
-              return rest_get(
+              response = rest_get(
                   url,
                   params,
-              ).json()
+              )
 
+              try:
+
+                  return response.json()
+
+              except ValueError as error:
+
+                  raise RuntimeError(
+                      "GitHub REST API returned invalid JSON."
+                  ) from error
+
+
+          # ============================================================
+          # GRAPHQL API
+          # ============================================================
 
           def graphql(
               query,
               variables,
           ):
 
-              response = SESSION.post(
+              response = request_with_retry(
+                  "POST",
                   GRAPHQL_URL,
                   json={
                       "query": query,
                       "variables": variables,
                   },
-                  timeout=30,
               )
 
               if not response.ok:
 
                   print("")
-                  print("GITHUB GRAPHQL HTTP ERROR")
-                  print("--------------------------")
                   print(
-                      f"HTTP: {response.status_code}"
+                      "=================================================="
                   )
+                  print(
+                      "GITHUB GRAPHQL HTTP ERROR"
+                  )
+                  print(
+                      "=================================================="
+                  )
+
+                  print(
+                      f"HTTP STATUS: "
+                      f"{response.status_code}"
+                  )
+
+                  print(
+                      "RATE LIMIT REMAINING: "
+                      f"{response.headers.get('X-RateLimit-Remaining', 'unknown')}"
+                  )
+
                   print(
                       response.text[:5000]
                   )
+
                   print("")
 
                   response.raise_for_status()
 
-              payload = response.json()
+              try:
 
-              if payload.get("errors"):
+                  payload = response.json()
+
+              except ValueError as error:
+
+                  raise RuntimeError(
+                      "GitHub GraphQL returned invalid JSON."
+                  ) from error
+
+              errors = payload.get(
+                  "errors",
+                  [],
+              )
+
+              if errors:
 
                   print("")
-                  print("GITHUB GRAPHQL API ERROR")
-                  print("------------------------")
+                  print(
+                      "=================================================="
+                  )
+                  print(
+                      "GITHUB GRAPHQL API ERROR"
+                  )
+                  print(
+                      "=================================================="
+                  )
 
-                  for error in payload["errors"]:
+                  for error in errors:
 
                       print(
                           error
@@ -302,15 +550,25 @@ jobs:
               return data
 
 
+          # ============================================================
+          # HELPERS
+          # ============================================================
+
           def safe_int(
               value,
           ):
 
               try:
+
                   return int(
                       value or 0
                   )
-              except Exception:
+
+              except (
+                  TypeError,
+                  ValueError,
+              ):
+
                   return 0
 
 
@@ -318,11 +576,46 @@ jobs:
               value,
           ):
 
-              return f"{safe_int(value):,}"
+              return (
+                  f"{safe_int(value):,}"
+              )
+
+
+          def month_start(
+              value,
+          ):
+
+              return date(
+                  value.year,
+                  value.month,
+                  1,
+              )
+
+
+          def previous_month(
+              value,
+          ):
+
+              if value.month == 1:
+
+                  return date(
+                      value.year - 1,
+                      12,
+                      1,
+                  )
+
+              return date(
+                  value.year,
+                  value.month - 1,
+                  1,
+              )
 
 
           # ============================================================
-          # GRAPHQL CONTRIBUTION QUERY
+          # CONTRIBUTION QUERY
+          #
+          # One GraphQL request is used for the complete rolling
+          # 365-day contribution dataset.
           # ============================================================
 
           CONTRIBUTION_QUERY = """
@@ -350,8 +643,6 @@ jobs:
 
                 totalPullRequestContributions
 
-                totalRepositoryContributions
-
                 contributionCalendar {
 
                   totalContributions
@@ -365,17 +656,22 @@ jobs:
                       date
 
                     }
+
                   }
+
                 }
+
               }
+
             }
+
           }
 
           """
 
 
           # ============================================================
-          # CONTRIBUTION FETCHER
+          # FETCH CONTRIBUTIONS
           # ============================================================
 
           def get_contributions(
@@ -399,12 +695,19 @@ jobs:
               if not user:
 
                   raise RuntimeError(
-                      f"GitHub user '{USERNAME}' was not found."
+                      f"GitHub user "
+                      f"'{USERNAME}' was not found."
                   )
 
-              collection = user[
+              collection = user.get(
                   "contributionsCollection"
-              ]
+              )
+
+              if not collection:
+
+                  raise RuntimeError(
+                      "GitHub returned no contribution collection."
+                  )
 
               days = {}
 
@@ -418,17 +721,19 @@ jobs:
                   [],
               ):
 
-                  for day in week.get(
+                  for contribution_day in week.get(
                       "contributionDays",
                       [],
                   ):
 
-                      date_string = day.get(
-                          "date"
+                      date_string = (
+                          contribution_day.get(
+                              "date"
+                          )
                       )
 
-                      count = safe_int(
-                          day.get(
+                      contribution_count = safe_int(
+                          contribution_day.get(
                               "contributionCount"
                           )
                       )
@@ -437,7 +742,7 @@ jobs:
 
                           days[
                               date_string
-                          ] = count
+                          ] = contribution_count
 
               return {
                   "total": safe_int(
@@ -460,17 +765,12 @@ jobs:
                           "totalPullRequestContributions"
                       )
                   ),
-                  "repositories": safe_int(
-                      collection.get(
-                          "totalRepositoryContributions"
-                      )
-                  ),
                   "days": days,
               }
 
 
           # ============================================================
-          # CURRENT DATE RANGE
+          # DATE RANGE
           # ============================================================
 
           now = datetime.now(
@@ -495,7 +795,7 @@ jobs:
 
 
           # ============================================================
-          # FETCH CURRENT 365 DAYS
+          # FETCH 365 DAYS
           # ============================================================
 
           print(
@@ -529,52 +829,79 @@ jobs:
 
 
           # ============================================================
-          # BUILD EXACT 365-DAY ARRAY
+          # EXACT 365-DAY ARRAY
           # ============================================================
 
           dates = [
               first_day
-              + timedelta(days=i)
-              for i in range(365)
+              + timedelta(
+                  days=index
+              )
+              for index in range(365)
+          ]
+
+          daily = [
+              safe_int(
+                  current["days"].get(
+                      current_date.isoformat(),
+                      0,
+                  )
+              )
+              for current_date in dates
           ]
 
 
-          daily = []
+          # ============================================================
+          # LAST 12 MONTHS
+          # ============================================================
 
-          for date in dates:
+          month_starts = [
+              month_start(today)
+          ]
 
-              key = date.isoformat()
+          for _ in range(11):
 
-              daily.append(
-                  safe_int(
-                      current["days"].get(
-                          key,
-                          0,
-                      )
+              month_starts.append(
+                  previous_month(
+                      month_starts[-1]
                   )
               )
 
-
-          # ============================================================
-          # MONTHLY DATA
-          # ============================================================
-
-          monthly = [
-              0
-              for _ in range(12)
-          ]
+          month_starts.reverse()
 
 
-          for date, value in zip(
-              dates,
-              daily,
-          ):
+          monthly = []
 
-              if date.year == today.year:
+          month_labels = []
 
-                  monthly[
-                      date.month - 1
-                  ] += value
+
+          for selected_month in month_starts:
+
+              month_total = sum(
+                  value
+                  for current_date, value
+                  in zip(
+                      dates,
+                      daily,
+                  )
+                  if (
+                      current_date.year
+                      == selected_month.year
+                      and
+                      current_date.month
+                      == selected_month.month
+                  )
+              )
+
+              monthly.append(
+                  month_total
+              )
+
+              month_labels.append(
+                  selected_month.strftime(
+                      "%b %y"
+                  )
+              )
 
 
           # ============================================================
@@ -586,14 +913,13 @@ jobs:
               for _ in range(7)
           ]
 
-
-          for date, value in zip(
+          for current_date, value in zip(
               dates,
               daily,
           ):
 
               weekdays[
-                  date.weekday()
+                  current_date.weekday()
               ] += value
 
 
@@ -609,7 +935,7 @@ jobs:
 
 
           # ============================================================
-          # STREAK CALCULATION
+          # STREAKS
           # ============================================================
 
           active_days = sum(
@@ -623,10 +949,11 @@ jobs:
 
           streak_day = today
 
-          if not current["days"].get(
+
+          if current["days"].get(
               streak_day.isoformat(),
               0,
-          ):
+          ) == 0:
 
               streak_day -= timedelta(
                   days=1
@@ -635,7 +962,8 @@ jobs:
 
           while (
               streak_day >= first_day
-              and current["days"].get(
+              and
+              current["days"].get(
                   streak_day.isoformat(),
                   0,
               ) > 0
@@ -649,6 +977,7 @@ jobs:
 
 
           longest_streak = 0
+
           running_streak = 0
 
 
@@ -669,11 +998,11 @@ jobs:
 
 
           # ============================================================
-          # PROFILE DATA
+          # PROFILE
           # ============================================================
 
           print(
-              "Fetching GitHub profile data..."
+              "Fetching GitHub profile..."
           )
 
           profile = rest_json(
@@ -701,7 +1030,7 @@ jobs:
 
 
           # ============================================================
-          # REPOSITORIES WITH PAGINATION
+          # PAGINATED REPOSITORY FETCH
           # ============================================================
 
           print(
@@ -714,7 +1043,7 @@ jobs:
 
           while True:
 
-              response = rest_get(
+              batch = rest_json(
                   f"{REST_URL}/users/{USERNAME}/repos",
                   params={
                       "per_page": 100,
@@ -724,17 +1053,23 @@ jobs:
                   },
               )
 
-              batch = response.json()
-
               if not isinstance(
                   batch,
                   list,
               ):
 
-                  break
+                  raise RuntimeError(
+                      "GitHub repository API "
+                      "returned unexpected data."
+                  )
 
               repositories.extend(
                   batch
+              )
+
+              print(
+                  f"Repository page {page}: "
+                  f"{len(batch)} repositories"
               )
 
               if len(batch) < 100:
@@ -743,13 +1078,12 @@ jobs:
 
               page += 1
 
-              if page > 10:
+              if page > 100:
 
-                  print(
-                      "Repository pagination limit reached."
+                  raise RuntimeError(
+                      "Repository pagination exceeded "
+                      "100 pages."
                   )
-
-                  break
 
 
           print(
@@ -784,9 +1118,6 @@ jobs:
 
           # ============================================================
           # LANGUAGE DATA
-          #
-          # Uses repository primary language instead of making
-          # one API request per repository.
           # ============================================================
 
           language_counts = {}
@@ -821,81 +1152,14 @@ jobs:
           if not language_counts:
 
               language_counts = {
-                  "Python": 1,
+                  "No language data": 1,
               }
 
 
           # ============================================================
-          # YEARLY DATA
-          # ============================================================
-
-          yearly = []
-
-
-          for year in range(
-              today.year - 3,
-              today.year + 1,
-          ):
-
-              year_start = datetime(
-                  year,
-                  1,
-                  1,
-                  tzinfo=timezone.utc,
-              )
-
-              if year == today.year:
-
-                  year_end = now
-
-              else:
-
-                  year_end = datetime(
-                      year + 1,
-                      1,
-                      1,
-                      tzinfo=timezone.utc,
-                  ) - timedelta(
-                      seconds=1
-                  )
-
-              try:
-
-                  year_result = get_contributions(
-                      year_start,
-                      year_end,
-                  )
-
-                  yearly.append(
-                      (
-                          year,
-                          year_result[
-                              "total"
-                          ],
-                      )
-                  )
-
-              except Exception as error:
-
-                  print(
-                      f"WARNING: "
-                      f"Year {year} could not be read."
-                  )
-
-                  print(
-                      str(error)
-                  )
-
-                  yearly.append(
-                      (
-                          year,
-                          0,
-                      )
-                  )
-
-
-          # ============================================================
           # COMMON METRICS
+          #
+          # "Repositories" here means owned public repositories.
           # ============================================================
 
           metric_names = [
@@ -910,7 +1174,7 @@ jobs:
               current["commits"],
               current["pull_requests"],
               current["issues"],
-              current["repositories"],
+              public_repositories,
           ]
 
 
@@ -952,6 +1216,20 @@ jobs:
                   figure
               )
 
+              if not output_path.is_file():
+
+                  raise RuntimeError(
+                      f"Failed to create "
+                      f"{output_path}"
+                  )
+
+              if output_path.stat().st_size <= 0:
+
+                  raise RuntimeError(
+                      f"Created empty file: "
+                      f"{output_path}"
+                  )
+
               print(
                   f"CREATED: "
                   f"{output_path}"
@@ -985,12 +1263,12 @@ jobs:
 
           def chart_title(
               axis,
-              main,
+              title,
               subtitle=None,
           ):
 
               axis.set_title(
-                  main,
+                  title,
                   fontsize=TITLE_SIZE,
                   fontweight="bold",
                   color=ICE_WHITE,
@@ -1109,7 +1387,7 @@ jobs:
           chart_title(
               axis,
               "MONTHLY CONTRIBUTION MOMENTUM",
-              "Current calendar year",
+              "Rolling 12-month contribution activity",
           )
 
           axis.set_xticks(
@@ -1117,20 +1395,7 @@ jobs:
           )
 
           axis.set_xticklabels(
-              [
-                  "Jan",
-                  "Feb",
-                  "Mar",
-                  "Apr",
-                  "May",
-                  "Jun",
-                  "Jul",
-                  "Aug",
-                  "Sep",
-                  "Oct",
-                  "Nov",
-                  "Dec",
-              ],
+              month_labels,
               fontsize=LABEL_SIZE,
               color=ICE_WHITE,
           )
@@ -1185,42 +1450,62 @@ jobs:
               dtype=float,
           )
 
-          if pie_values.sum() == 0:
+          has_pie_activity = (
+              pie_values.sum() > 0
+          )
 
-              pie_values = np.ones(
-                  len(metric_values)
+          display_pie_values = (
+              pie_values
+              if has_pie_activity
+              else np.ones(
+                  len(pie_values)
               )
+          )
 
 
           figure, axis = plt.subplots(
               figsize=(10, 8)
           )
 
-          wedges, _, percentage_text = axis.pie(
-              pie_values,
-              colors=metric_colors,
-              startangle=90,
-              autopct="%1.0f%%",
-              pctdistance=0.68,
-              wedgeprops={
-                  "linewidth": 2,
-                  "edgecolor": "none",
-              },
-          )
 
+          if has_pie_activity:
 
-          for text in percentage_text:
-
-              text.set_color(
-                  ICE_WHITE
+              wedges, _, percentage_text = axis.pie(
+                  display_pie_values,
+                  colors=metric_colors,
+                  startangle=90,
+                  autopct="%1.0f%%",
+                  pctdistance=0.68,
+                  wedgeprops={
+                      "linewidth": 2,
+                      "edgecolor": "none",
+                  },
               )
 
-              text.set_fontsize(
-                  VALUE_SIZE
-              )
+              for text in percentage_text:
 
-              text.set_fontweight(
-                  "bold"
+                  text.set_color(
+                      ICE_WHITE
+                  )
+
+                  text.set_fontsize(
+                      VALUE_SIZE
+                  )
+
+                  text.set_fontweight(
+                      "bold"
+                  )
+
+          else:
+
+              wedges, _ = axis.pie(
+                  display_pie_values,
+                  colors=metric_colors,
+                  startangle=90,
+                  wedgeprops={
+                      "linewidth": 2,
+                      "edgecolor": "none",
+                  },
               )
 
 
@@ -1548,7 +1833,7 @@ jobs:
           chart_title(
               axis,
               "CUMULATIVE CONTRIBUTION GROWTH",
-              "Current calendar year",
+              "Rolling 12-month activity",
           )
 
           axis.set_xticks(
@@ -1556,20 +1841,7 @@ jobs:
           )
 
           axis.set_xticklabels(
-              [
-                  "Jan",
-                  "Feb",
-                  "Mar",
-                  "Apr",
-                  "May",
-                  "Jun",
-                  "Jul",
-                  "Aug",
-                  "Sep",
-                  "Oct",
-                  "Nov",
-                  "Dec",
-              ],
+              month_labels,
               fontsize=LABEL_SIZE,
               color=ICE_WHITE,
           )
@@ -1650,20 +1922,7 @@ jobs:
           )
 
           axis.set_xticklabels(
-              [
-                  "Jan",
-                  "Feb",
-                  "Mar",
-                  "Apr",
-                  "May",
-                  "Jun",
-                  "Jul",
-                  "Aug",
-                  "Sep",
-                  "Oct",
-                  "Nov",
-                  "Dec",
-              ],
+              month_labels,
               fontsize=LABEL_SIZE,
               color=ICE_WHITE,
           )
@@ -1748,11 +2007,12 @@ jobs:
 
 
           def heat_color(
-              value
+              value,
           ):
 
               if value <= 0:
-                  return DARK_CELL
+
+                  return STEEL_GREY
 
               ratio = (
                   value
@@ -1760,15 +2020,29 @@ jobs:
               )
 
               if ratio < 0.25:
+
                   return BLUE_LIGHT
 
               if ratio < 0.50:
+
                   return ELECTRIC_BLUE
 
               if ratio < 0.75:
+
                   return ELECTRIC_VIOLET
 
               return ACID_GREEN
+
+
+          def heat_alpha(
+              value,
+          ):
+
+              if value <= 0:
+
+                  return 0.12
+
+              return 0.92
 
 
           for index in range(
@@ -1803,6 +2077,9 @@ jobs:
                   s=200,
                   marker="s",
                   color=heat_color(
+                      value
+                  ),
+                  alpha=heat_alpha(
                       value
                   ),
               )
@@ -1855,11 +2132,17 @@ jobs:
               dtype=float,
           )
 
-          if donut_values.sum() == 0:
+          has_donut_activity = (
+              donut_values.sum() > 0
+          )
 
-              donut_values = np.ones(
-                  len(metric_values)
+          display_donut_values = (
+              donut_values
+              if has_donut_activity
+              else np.ones(
+                  len(donut_values)
               )
+          )
 
 
           figure, axis = plt.subplots(
@@ -1867,32 +2150,46 @@ jobs:
           )
 
 
-          wedges, _, texts = axis.pie(
-              donut_values,
-              colors=metric_colors,
-              startangle=90,
-              autopct="%1.0f%%",
-              pctdistance=0.80,
-              wedgeprops={
-                  "width": 0.38,
-                  "linewidth": 2,
-                  "edgecolor": "none",
-              },
-          )
+          if has_donut_activity:
 
-
-          for text in texts:
-
-              text.set_color(
-                  ICE_WHITE
+              wedges, _, percentage_text = axis.pie(
+                  display_donut_values,
+                  colors=metric_colors,
+                  startangle=90,
+                  autopct="%1.0f%%",
+                  pctdistance=0.80,
+                  wedgeprops={
+                      "width": 0.38,
+                      "linewidth": 2,
+                      "edgecolor": "none",
+                  },
               )
 
-              text.set_fontsize(
-                  VALUE_SIZE
-              )
+              for text in percentage_text:
 
-              text.set_fontweight(
-                  "bold"
+                  text.set_color(
+                      ICE_WHITE
+                  )
+
+                  text.set_fontsize(
+                      VALUE_SIZE
+                  )
+
+                  text.set_fontweight(
+                      "bold"
+                  )
+
+          else:
+
+              wedges, _ = axis.pie(
+                  display_donut_values,
+                  colors=metric_colors,
+                  startangle=90,
+                  wedgeprops={
+                      "width": 0.38,
+                      "linewidth": 2,
+                      "edgecolor": "none",
+                  },
               )
 
 
@@ -1954,7 +2251,7 @@ jobs:
               current["commits"],
               current["pull_requests"],
               current["issues"],
-              current["repositories"],
+              public_repositories,
               active_days,
           ]
 
@@ -2071,30 +2368,19 @@ jobs:
           # 12. WATERFALL CHART
           # ============================================================
 
-          years = [
-              year
-              for year, value in yearly
-          ]
+          monthly_changes = []
+
+          previous_value = 0
 
 
-          year_values = [
-              value
-              for year, value in yearly
-          ]
+          for value in monthly:
 
-
-          changes = []
-
-          previous = 0
-
-
-          for value in year_values:
-
-              changes.append(
-                  value - previous
+              monthly_changes.append(
+                  value
+                  - previous_value
               )
 
-              previous = value
+              previous_value = value
 
 
           figure, axis = plt.subplots(
@@ -2104,31 +2390,34 @@ jobs:
 
           running = 0
 
-
           maximum_change = max(
               [
                   abs(value)
-                  for value in changes
+                  for value in monthly_changes
               ]
               + [1]
           )
 
 
           for index, change in enumerate(
-              changes
+              monthly_changes
           ):
 
-              if change >= 0:
+              start_value = running
 
-                  bottom = running
+              end_value = (
+                  running
+                  + change
+              )
 
-              else:
+              bottom = min(
+                  start_value,
+                  end_value,
+              )
 
-                  bottom = (
-                      running
-                      + change
-                  )
-
+              height = abs(
+                  change
+              )
 
               color = (
                   ACID_GREEN
@@ -2139,50 +2428,65 @@ jobs:
 
               axis.bar(
                   index,
-                  change,
+                  height,
                   bottom=bottom,
                   width=0.58,
                   color=color,
               )
 
 
-              running += change
+              label_offset = (
+                  0.06
+                  * maximum_change
+              )
+
+
+              if change >= 0:
+
+                  label_position = (
+                      end_value
+                      + label_offset
+                  )
+
+              else:
+
+                  label_position = (
+                      end_value
+                      - label_offset
+                  )
 
 
               axis.text(
                   index,
-                  running
-                  + (
-                      0.06
-                      * maximum_change
-                  ),
+                  label_position,
                   f"{change:+,}",
                   ha="center",
+                  va="center",
                   fontsize=VALUE_SIZE,
                   fontweight="bold",
                   color=ICE_WHITE,
               )
 
 
+              running = end_value
+
+
           chart_title(
               axis,
-              "YEARLY CONTRIBUTION CHANGE",
-              "Year-over-year activity movement",
+              "MONTHLY CONTRIBUTION CHANGE",
+              "Month-over-month activity movement",
           )
 
 
           axis.set_xticks(
               range(
-                  len(years)
+                  len(month_labels)
               )
           )
 
 
           axis.set_xticklabels(
-              [
-                  str(year)
-                  for year in years
-              ],
+              month_labels,
               fontsize=LABEL_SIZE,
               fontweight="bold",
               color=ICE_WHITE,
@@ -2216,7 +2520,7 @@ jobs:
               current["commits"],
               current["pull_requests"],
               current["issues"],
-              current["repositories"],
+              public_repositories,
           ]
 
 
@@ -2335,8 +2639,6 @@ jobs:
           )
 
 
-          # Keep the visualization readable.
-          # Everything after the first 7 languages is grouped.
           if len(language_items) > 8:
 
               top_languages = (
@@ -2361,12 +2663,6 @@ jobs:
               language_items = (
                   top_languages
               )
-
-
-          language_names = [
-              item[0]
-              for item in language_items
-          ]
 
 
           language_values = [
@@ -2521,7 +2817,7 @@ jobs:
               current["commits"],
               current["pull_requests"],
               current["issues"],
-              current["repositories"],
+              public_repositories,
           ]
 
 
@@ -2540,12 +2836,10 @@ jobs:
               1,
           )
 
-
           axis.set_ylim(
               0,
               1,
           )
-
 
           axis.axis("off")
 
@@ -2599,20 +2893,15 @@ jobs:
 
 
           for (
-              index,
-              (
-                  name,
-                  value,
-                  ypos,
-                  color,
-              ),
-          ) in enumerate(
-              zip(
-                  source_names,
-                  source_values,
-                  source_y,
-                  sankey_colors,
-              )
+              name,
+              value,
+              ypos,
+              color,
+          ) in zip(
+              source_names,
+              source_values,
+              source_y,
+              sankey_colors,
           ):
 
               source_x = 0.05
@@ -2649,52 +2938,27 @@ jobs:
 
 
               start_x = 0.21
-              start_y = ypos
 
               end_x = destination_x
+
+              start_y = ypos
+
               end_y = 0.50
 
-              curve = 0.24
 
-
-              vertices = [
+              arrow = FancyArrowPatch(
                   (
                       start_x,
                       start_y,
                   ),
                   (
-                      start_x + curve,
-                      start_y,
-                  ),
-                  (
-                      end_x - curve,
-                      end_y,
-                  ),
-                  (
                       end_x,
                       end_y,
                   ),
-              ]
-
-
-              codes = [
-                  MplPath.MOVETO,
-                  MplPath.CURVE4,
-                  MplPath.CURVE4,
-                  MplPath.CURVE4,
-              ]
-
-
-              path = MplPath(
-                  vertices,
-                  codes,
-              )
-
-
-              patch = PathPatch(
-                  path,
-                  facecolor="none",
-                  edgecolor=color,
+                  connectionstyle=(
+                      "arc3,rad=0.18"
+                  ),
+                  arrowstyle="-",
                   linewidth=(
                       3
                       + 8
@@ -2703,12 +2967,13 @@ jobs:
                           / maximum
                       )
                   ),
+                  color=color,
                   alpha=0.65,
               )
 
 
               axis.add_patch(
-                  patch
+                  arrow
               )
 
 
@@ -2860,7 +3125,7 @@ jobs:
               current["commits"],
               current["pull_requests"],
               current["issues"],
-              current["repositories"],
+              public_repositories,
               active_days,
           ]
 
@@ -3088,7 +3353,7 @@ jobs:
 
 
           # ============================================================
-          # FINAL OUTPUT
+          # FINAL SUMMARY
           # ============================================================
 
           print("")
@@ -3123,7 +3388,7 @@ jobs:
           )
 
           print(
-              f"Repositories:      {fmt(current['repositories'])}"
+              f"Public Repos:      {fmt(public_repositories)}"
           )
 
           print(
@@ -3132,6 +3397,14 @@ jobs:
 
           print(
               f"Forks:             {fmt(total_forks)}"
+          )
+
+          print(
+              f"Followers:         {fmt(followers)}"
+          )
+
+          print(
+              f"Following:         {fmt(following)}"
           )
 
           print(
@@ -3153,7 +3426,7 @@ jobs:
           PYTHON
 
           # ----------------------------------------------------------
-          # Validate Python before execution
+          # Python syntax validation
           # ----------------------------------------------------------
 
           echo ""
@@ -3173,11 +3446,13 @@ jobs:
           python generate_profile.py
 
           # ----------------------------------------------------------
-          # Validate output files again from shell
+          # Shell-level validation
           # ----------------------------------------------------------
 
           echo ""
-          echo "Final shell validation..."
+          echo "============================================================"
+          echo "FINAL SHELL VALIDATION"
+          echo "============================================================"
 
           required_files=(
             "assets/github-area-chart.png"
@@ -3202,8 +3477,13 @@ jobs:
           for file in "${required_files[@]}"; do
 
             if [ ! -s "$file" ]; then
-              echo "ERROR: Missing or empty file: $file"
+
+              echo ""
+              echo "ERROR: Missing or empty file:"
+              echo "$file"
+
               exit 1
+
             fi
 
             echo "OK: $file"
@@ -3214,36 +3494,59 @@ jobs:
           echo "ALL 17 DASHBOARD IMAGES ARE VALID."
 
       # ============================================================
-      # 5. COMMIT GENERATED IMAGES
+      # 6. COMMIT GENERATED IMAGES
       # ============================================================
 
       - name: Commit updated dashboard images
+
         shell: bash
+
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+
         run: |
 
           set -Eeuo pipefail
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo ""
+          echo "============================================================"
+          echo "COMMITTING DASHBOARD IMAGES"
+          echo "============================================================"
+
+          git config user.name \
+            "github-actions[bot]"
+
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add assets/
 
           if git diff --cached --quiet; then
 
+            echo ""
             echo "No dashboard image changes detected."
 
           else
 
+            echo ""
             echo "Dashboard images changed."
+
+            git status --short
 
             git commit \
               -m "Update GitHub activity dashboard"
 
-            git push
+            echo ""
+            echo "Pushing to:"
+            echo "$DEFAULT_BRANCH"
+
+            git push \
+              origin \
+              "HEAD:${DEFAULT_BRANCH}"
 
           fi
 
           echo ""
           echo "============================================================"
-          echo "WORKFLOW COMPLETED"
+          echo "WORKFLOW COMPLETED SUCCESSFULLY"
           echo "============================================================"
