@@ -172,42 +172,66 @@
   >
 </p>
 
-## 📊 GitHub Analytics
+## 🟢 GitHub Engineering Observatory
 
 <p align="center">
-  <img src="./assets/contribution-breakdown.png" width="90%">
+  <img src="./assets/github-engineering-control-panel.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/contribution-heatmap.png" width="90%">
+  <img src="./assets/3d-contribution-surface.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/coding-momentum.png" width="90%">
+  <img src="./assets/3d-red-contribution-heatmap.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/technology-distribution.png" width="90%">
+  <img src="./assets/github-activity-barcode.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/repository-portfolio.png" width="90%">
+  <img src="./assets/red-activity-spectrum.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/open-source-footprint.png" width="90%">
+  <img src="./assets/3d-coding-momentum.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/yearly-engineering-progress.png" width="90%">
+  <img src="./assets/3d-development-rhythm.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/development-rhythm.png" width="90%">
+  <img src="./assets/3d-technology-distribution.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/github-profile-snapshot.png" width="90%">
+  <img src="./assets/3d-repository-activity.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/3d-open-source-footprint.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/3d-development-streak.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/3d-repository-scale-matrix.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/repository-intelligence-matrix.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/3d-all-repository-updates.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/3d-contribution-intelligence.png" width="100%">
 </p>
 
 # 🌐 My digital profiles
