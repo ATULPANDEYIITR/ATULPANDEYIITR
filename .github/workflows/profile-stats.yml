@@ -41,7 +41,7 @@ jobs:
           import matplotlib.pyplot as plt
 
           from collections import Counter
-          from datetime import datetime, timezone, timedelta
+          from datetime import datetime, timezone, timedelta, date
 
 
           # ============================================================
@@ -62,6 +62,22 @@ jobs:
           }
 
           os.makedirs("assets", exist_ok=True)
+
+
+          # ============================================================
+          # REMOVE OLD GENERATED ASSETS
+          # ============================================================
+
+          for filename in os.listdir("assets"):
+
+              if filename.endswith(".png"):
+
+                  os.remove(
+                      os.path.join(
+                          "assets",
+                          filename
+                      )
+                  )
 
 
           # ============================================================
@@ -109,9 +125,6 @@ jobs:
           # ============================================================
 
           def clean_axis(ax):
-              """
-              Remove conventional chart background and grid.
-              """
 
               ax.set_facecolor("none")
 
@@ -131,9 +144,6 @@ jobs:
 
 
           def clean_3d_axis(ax):
-              """
-              Fully transparent dimensional visualization.
-              """
 
               ax.set_facecolor("none")
 
@@ -187,9 +197,6 @@ jobs:
 
 
           def save(name):
-              """
-              Save completely transparent PNG.
-              """
 
               plt.tight_layout()
 
@@ -209,9 +216,6 @@ jobs:
               title,
               code
           ):
-              """
-              Minimal technical heading.
-              """
 
               ax.text(
                   0.01,
@@ -238,26 +242,6 @@ jobs:
               )
 
 
-          def add_value(
-              ax,
-              x,
-              y,
-              value,
-              color=CYAN
-          ):
-              ax.text(
-                  x,
-                  y,
-                  f"{value:,}",
-                  fontsize=10,
-                  fontweight="bold",
-                  family="monospace",
-                  color=color,
-                  ha="center",
-                  va="bottom"
-              )
-
-
           def add_3d_value(
               ax,
               x,
@@ -266,6 +250,7 @@ jobs:
               value,
               color=CYAN
           ):
+
               ax.text(
                   x,
                   y,
@@ -278,6 +263,33 @@ jobs:
                   ha="center",
                   va="bottom"
               )
+
+
+          def graphql_request(
+              query,
+              variables
+          ):
+
+              response = requests.post(
+                  "https://api.github.com/graphql",
+                  json={
+                      "query": query,
+                      "variables": variables
+                  },
+                  headers=GRAPHQL_HEADERS,
+                  timeout=30
+              )
+
+              response.raise_for_status()
+
+              result = response.json()
+
+              if "errors" in result:
+                  raise RuntimeError(
+                      result["errors"]
+                  )
+
+              return result["data"]
 
 
           # ============================================================
@@ -326,72 +338,120 @@ jobs:
 
 
           # ============================================================
-          # GRAPHQL CONTRIBUTION DATA
+          # CURRENT DATE
           # ============================================================
 
-          QUERY = """
-          query($login: String!) {
+          now_utc = datetime.now(timezone.utc)
 
-            user(login: $login) {
+          ist = timezone(
+              timedelta(
+                  hours=5,
+                  minutes=30
+              )
+          )
 
-              contributionsCollection {
+          now_ist = now_utc.astimezone(ist)
 
-                totalCommitContributions
-                totalPullRequestContributions
-                totalIssueContributions
-                totalRepositoryContributions
+          generated_date = (
+              now_ist.strftime("%d %B %Y")
+          )
 
-                contributionCalendar {
+          generated_time = (
+              now_ist.strftime("%I:%M %p IST")
+          )
 
-                  totalContributions
+          current_year = now_ist.year
 
-                  weeks {
 
-                    contributionDays {
-                      contributionCount
-                      date
-                    }
+          # ============================================================
+          # GRAPHQL CONTRIBUTION QUERIES
+          # ============================================================
+
+          CONTRIBUTION_QUERY = """
+          query(
+              $login: String!,
+              $from: DateTime!,
+              $to: DateTime!
+          ) {
+
+              user(login: $login) {
+
+                  contributionsCollection(
+                      from: $from,
+                      to: $to
+                  ) {
+
+                      totalCommitContributions
+                      totalPullRequestContributions
+                      totalIssueContributions
+                      totalRepositoryContributions
+
+                      contributionCalendar {
+
+                          totalContributions
+
+                          weeks {
+
+                              contributionDays {
+
+                                  contributionCount
+                                  date
+
+                              }
+
+                          }
+
+                      }
 
                   }
 
-                }
-
               }
-
-            }
 
           }
           """
 
-          response = requests.post(
-              "https://api.github.com/graphql",
-              json={
-                  "query": QUERY,
-                  "variables": {
-                      "login": USERNAME
+
+          def get_contribution_data(
+              start_datetime,
+              end_datetime
+          ):
+
+              data = graphql_request(
+                  CONTRIBUTION_QUERY,
+                  {
+                      "login": USERNAME,
+                      "from": start_datetime,
+                      "to": end_datetime
                   }
-              },
-              headers=GRAPHQL_HEADERS,
-              timeout=30
-          )
-
-          response.raise_for_status()
-
-          graphql_result = response.json()
-
-          if "errors" in graphql_result:
-              raise RuntimeError(
-                  graphql_result["errors"]
               )
 
-          user = graphql_result["data"]["user"]
+              return data[
+                  "user"
+              ][
+                  "contributionsCollection"
+              ]
 
-          contributions = (
-              user["contributionsCollection"]
+
+          # ============================================================
+          # CURRENT ROLLING CONTRIBUTION DATA
+          # ============================================================
+
+          rolling_start = (
+              now_utc -
+              timedelta(days=365)
+          )
+
+          rolling_end = now_utc
+
+          contributions = get_contribution_data(
+              rolling_start.isoformat(),
+              rolling_end.isoformat()
           )
 
           calendar = (
-              contributions["contributionCalendar"]
+              contributions[
+                  "contributionCalendar"
+              ]
           )
 
 
@@ -400,7 +460,9 @@ jobs:
           # ============================================================
 
           total_contributions = (
-              calendar["totalContributions"]
+              calendar[
+                  "totalContributions"
+              ]
           )
 
           commits = (
@@ -446,32 +508,6 @@ jobs:
 
 
           # ============================================================
-          # CURRENT DATE
-          # ============================================================
-
-          now_utc = datetime.now(timezone.utc)
-
-          ist = timezone(
-              timedelta(
-                  hours=5,
-                  minutes=30
-              )
-          )
-
-          now_ist = now_utc.astimezone(ist)
-
-          generated_date = (
-              now_ist.strftime("%d %B %Y")
-          )
-
-          generated_time = (
-              now_ist.strftime("%I:%M %p IST")
-          )
-
-          current_year = now_ist.year
-
-
-          # ============================================================
           # REPOSITORY METRICS
           # ============================================================
 
@@ -512,7 +548,10 @@ jobs:
               language = repo.get("language")
 
               if language:
-                  languages[language] += 1
+
+                  languages[
+                      language
+                  ] += 1
 
 
           # ============================================================
@@ -529,7 +568,10 @@ jobs:
               )
 
               for topic in repo_topics:
-                  topics[topic.lower()] += 1
+
+                  topics[
+                      topic.lower()
+                  ] += 1
 
 
           # ============================================================
@@ -541,52 +583,61 @@ jobs:
               for day in contribution_days
           }
 
-          today = now_ist.strftime(
-              "%Y-%m-%d"
-          )
+          contribution_dates = [
+              day["date"]
+              for day in contribution_days
+              if day["contributionCount"] > 0
+          ]
+
 
           current_streak = 0
 
-          streak_date = today
+          if contribution_dates:
 
-          if contribution_lookup.get(
-              streak_date,
-              0
-          ) == 0:
+              latest_date = max(
+                  contribution_dates
+              )
 
-              previous_day = (
-                  now_ist -
-                  timedelta(days=1)
-              ).strftime("%Y-%m-%d")
-
-              if contribution_lookup.get(
-                  previous_day,
-                  0
-              ) > 0:
-
-                  streak_date = previous_day
-
-          while contribution_lookup.get(
-              streak_date,
-              0
-          ) > 0:
-
-              current_streak += 1
-
-              current_date = datetime.strptime(
-                  streak_date,
+              latest_date_obj = datetime.strptime(
+                  latest_date,
                   "%Y-%m-%d"
-              )
+              ).date()
 
-              current_date -= timedelta(
-                  days=1
-              )
+              today_date = now_ist.date()
 
-              streak_date = (
-                  current_date.strftime(
-                      "%Y-%m-%d"
-                  )
-              )
+              if latest_date_obj > today_date:
+
+                  latest_date_obj = today_date
+
+              if (
+                  latest_date_obj == today_date
+                  or
+                  latest_date_obj
+                  == today_date - timedelta(days=1)
+              ):
+
+                  streak_date = latest_date_obj
+
+                  while True:
+
+                      date_string = (
+                          streak_date.strftime(
+                              "%Y-%m-%d"
+                          )
+                      )
+
+                      if contribution_lookup.get(
+                          date_string,
+                          0
+                      ) <= 0:
+
+                          break
+
+                      current_streak += 1
+
+                      streak_date -= timedelta(
+                          days=1
+                      )
 
 
           longest_streak = 0
@@ -621,14 +672,15 @@ jobs:
 
           consistency = (
               active_days /
-              total_days * 100
+              total_days *
+              100
               if total_days
               else 0
           )
 
 
           # ============================================================
-          # MONTHLY ACTIVITY
+          # MONTHLY CONTRIBUTION ACTIVITY
           # ============================================================
 
           monthly_activity = Counter()
@@ -650,11 +702,15 @@ jobs:
                   ]
 
 
+          current_month = now_ist.month
+
           month_values = [
               monthly_activity.get(
                   month,
                   0
               )
+              if month <= current_month
+              else 0
               for month in range(1, 13)
           ]
 
@@ -675,6 +731,73 @@ jobs:
 
 
           # ============================================================
+          # ACTUAL MONTHLY COMMIT CONTRIBUTIONS
+          # ============================================================
+
+          commit_month_values = []
+
+          for month in range(
+              1,
+              current_month + 1
+          ):
+
+              month_start = datetime(
+                  current_year,
+                  month,
+                  1,
+                  tzinfo=timezone.utc
+              )
+
+              if month == 12:
+
+                  next_month = datetime(
+                      current_year + 1,
+                      1,
+                      1,
+                      tzinfo=timezone.utc
+                  )
+
+              else:
+
+                  next_month = datetime(
+                      current_year,
+                      month + 1,
+                      1,
+                      tzinfo=timezone.utc
+                  )
+
+              month_end = min(
+                  next_month,
+                  now_utc
+              )
+
+              if month_start >= month_end:
+
+                  commit_month_values.append(0)
+                  continue
+
+              month_data = get_contribution_data(
+                  month_start.isoformat(),
+                  month_end.isoformat()
+              )
+
+              commit_month_values.append(
+                  month_data[
+                      "totalCommitContributions"
+                  ]
+              )
+
+
+          commit_month_values += [
+              0
+              for _ in range(
+                  12 -
+                  len(commit_month_values)
+              )
+          ]
+
+
+          # ============================================================
           # WEEKDAY ACTIVITY
           # ============================================================
 
@@ -688,10 +811,11 @@ jobs:
               )
 
               weekday_counts[
-                  dt.strftime("%A")
+                  dt.weekday()
               ] += day[
                   "contributionCount"
               ]
+
 
           weekday_names = [
               "MON",
@@ -703,48 +827,69 @@ jobs:
               "SUN"
           ]
 
-          weekday_full = [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday",
-              "Sunday"
-          ]
-
           weekday_values = [
               weekday_counts.get(
-                  name,
+                  index,
                   0
               )
-              for name in weekday_full
+              for index in range(7)
           ]
 
 
           # ============================================================
-          # YEARLY ACTIVITY
+          # ACTUAL FOUR-YEAR ACTIVITY
           # ============================================================
 
           yearly_values = []
 
-          for year_offset in range(4):
+          for year in range(
+              current_year - 3,
+              current_year + 1
+          ):
 
-              year = current_year - year_offset
-
-              value = sum(
-                  day["contributionCount"]
-                  for day in contribution_days
-                  if day["date"].startswith(
-                      str(year)
-                  )
+              year_start = datetime(
+                  year,
+                  1,
+                  1,
+                  tzinfo=timezone.utc
               )
+
+              year_end = datetime(
+                  year + 1,
+                  1,
+                  1,
+                  tzinfo=timezone.utc
+              )
+
+              if year == current_year:
+
+                  year_end = min(
+                      year_end,
+                      now_utc
+                  )
+
+              if year_start >= year_end:
+
+                  value = 0
+
+              else:
+
+                  year_data = get_contribution_data(
+                      year_start.isoformat(),
+                      year_end.isoformat()
+                  )
+
+                  value = (
+                      year_data[
+                          "contributionCalendar"
+                      ][
+                          "totalContributions"
+                      ]
+                  )
 
               yearly_values.append(
                   (year, value)
               )
-
-          yearly_values.reverse()
 
 
           # ============================================================
@@ -912,12 +1057,8 @@ jobs:
           )
 
           ax.set_yticks([])
-
           ax.set_zticks([])
-
-          ax.set_zlabel(
-              ""
-          )
+          ax.set_zlabel("")
 
           ax.set_title(
               "GITHUB ACTIVITY SUMMARY",
@@ -1003,19 +1144,8 @@ jobs:
 
 
           # ============================================================
-          # 3. COMMIT ANALYTICS
+          # 3. ACTUAL MONTHLY COMMIT ANALYTICS
           # ============================================================
-
-          commit_month_values = [
-              int(
-                  value *
-                  commits /
-                  total_contributions
-              )
-              if total_contributions > 0
-              else 0
-              for value in month_values
-          ]
 
           fig, ax = plt.subplots(
               figsize=(14, 5)
@@ -1064,7 +1194,7 @@ jobs:
           add_hud_header(
               ax,
               "COMMIT ACTIVITY",
-              "COMMITS://TELEMETRY"
+              "COMMITS://MONTHLY"
           )
 
           ax.text(
@@ -1155,7 +1285,6 @@ jobs:
               )
 
           ax.set_xticks([])
-
           ax.set_yticks([])
 
           add_hud_header(
@@ -1196,6 +1325,11 @@ jobs:
 
           x = np.arange(2)
 
+          collaboration_colors = [
+              BLUE,
+              VIOLET
+          ]
+
           ax.bar3d(
               x,
               np.zeros(2),
@@ -1203,10 +1337,7 @@ jobs:
               0.65,
               0.65,
               pr_issue_values,
-              color=[
-                  BLUE,
-                  VIOLET
-              ],
+              color=collaboration_colors,
               shade=True
           )
 
@@ -1220,10 +1351,7 @@ jobs:
                   0.325,
                   value,
                   value,
-                  [
-                      BLUE,
-                      VIOLET
-                  ][index]
+                  collaboration_colors[index]
               )
 
           ax.set_xticks(
@@ -1235,12 +1363,8 @@ jobs:
           )
 
           ax.set_yticks([])
-
           ax.set_zticks([])
-
-          ax.set_zlabel(
-              ""
-          )
+          ax.set_zlabel("")
 
           ax.set_title(
               "COLLABORATION ACTIVITY",
@@ -1411,12 +1535,8 @@ jobs:
           )
 
           ax.set_yticks([])
-
           ax.set_zticks([])
-
-          ax.set_zlabel(
-              ""
-          )
+          ax.set_zlabel("")
 
           ax.set_title(
               "OPEN SOURCE FOOTPRINT",
@@ -1575,31 +1695,101 @@ jobs:
 
           heat_days = contribution_days[-364:]
 
-          weeks = 52
-          days_per_week = 7
+          heat_date_map = {
+              datetime.strptime(
+                  day["date"],
+                  "%Y-%m-%d"
+              ).date(): day[
+                  "contributionCount"
+              ]
+              for day in heat_days
+          }
+
+          if heat_days:
+
+              first_date = datetime.strptime(
+                  heat_days[0]["date"],
+                  "%Y-%m-%d"
+              ).date()
+
+              first_sunday = (
+                  first_date -
+                  timedelta(
+                      days=(
+                          first_date.weekday() + 1
+                      ) % 7
+                  )
+              )
+
+              last_date = datetime.strptime(
+                  heat_days[-1]["date"],
+                  "%Y-%m-%d"
+              ).date()
+
+              last_saturday = (
+                  last_date +
+                  timedelta(
+                      days=(
+                          6 -
+                          (
+                              (
+                                  last_date.weekday()
+                                  + 1
+                              ) % 7
+                          )
+                      )
+                  )
+              )
+
+              total_calendar_days = (
+                  last_saturday -
+                  first_sunday
+              ).days + 1
+
+              heat_weeks = max(
+                  1,
+                  total_calendar_days // 7
+              )
+
+          else:
+
+              first_sunday = now_ist.date()
+              heat_weeks = 52
+
 
           heat_matrix = np.zeros(
               (
-                  days_per_week,
-                  weeks
+                  7,
+                  heat_weeks
               )
           )
 
-          for index, day in enumerate(
-              heat_days
+          for week in range(
+              heat_weeks
           ):
 
-              week = index // 7
-              weekday = index % 7
+              for weekday in range(7):
 
-              if week < weeks:
+                  current_date = (
+                      first_sunday
+                      +
+                      timedelta(
+                          days=(
+                              week * 7
+                              +
+                              weekday
+                          )
+                      )
+                  )
 
                   heat_matrix[
                       weekday,
                       week
-                  ] = day[
-                      "contributionCount"
-                  ]
+                  ] = heat_date_map.get(
+                      current_date,
+                      0
+                  )
+
 
           fig, ax = plt.subplots(
               figsize=(15, 4.2)
@@ -1614,12 +1804,10 @@ jobs:
               )
           )
 
-          for y in range(
-              days_per_week
-          ):
+          for y in range(7):
 
               for x in range(
-                  weeks
+                  heat_weeks
               ):
 
                   value = heat_matrix[
@@ -1641,7 +1829,9 @@ jobs:
 
                       if intensity > 0.70:
 
-                          heat_color = CYAN_BRIGHT
+                          heat_color = (
+                              CYAN_BRIGHT
+                          )
 
                       else:
 
@@ -1675,11 +1865,11 @@ jobs:
 
           ax.set_xlim(
               -1,
-              weeks
+              heat_weeks
           )
 
           ax.set_ylim(
-              days_per_week,
+              7,
               -1
           )
 
@@ -1690,13 +1880,13 @@ jobs:
           )
 
           ax.set_yticklabels([
+              "SUN",
               "MON",
               "TUE",
               "WED",
               "THU",
               "FRI",
-              "SAT",
-              "SUN"
+              "SAT"
           ], fontsize=7)
 
           ax.text(
@@ -1820,6 +2010,17 @@ jobs:
               ax,
               "PROGRAMMING LANGUAGE ANALYTICS",
               "LANGUAGE://DISTRIBUTION"
+          )
+
+          ax.text(
+              0.99,
+              0.92,
+              "REPOSITORY PRIMARY LANGUAGE",
+              transform=ax.transAxes,
+              fontsize=6.5,
+              family="monospace",
+              color=MUTED,
+              ha="right"
           )
 
           save(
@@ -1968,6 +2169,17 @@ jobs:
               ax,
               "ANNUAL ACTIVITY",
               "YEAR://OVERVIEW"
+          )
+
+          ax.text(
+              0.99,
+              0.92,
+              "CURRENT YEAR IS YEAR-TO-DATE",
+              transform=ax.transAxes,
+              fontsize=6.5,
+              family="monospace",
+              color=MUTED,
+              ha="right"
           )
 
           save(
@@ -2434,7 +2646,10 @@ jobs:
           for label, achieved in milestone_rules:
 
               if achieved:
-                  milestones.append(label)
+
+                  milestones.append(
+                      label
+                  )
 
 
           fig, ax = plt.subplots(
