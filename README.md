@@ -175,23 +175,19 @@
 ## 🎮 GitHub Activity Command Center
 
 <p align="center">
-  <img src="assets/github-bar-chart.png" width="48%" />
-  <img src="assets/github-line-graph.png" width="48%" />
+  <img src="assets/github-developer-telemetry.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/github-pie-chart.png" width="48%" />
-  <img src="assets/github-histogram.png" width="48%" />
+  <img src="assets/github-bar-chart.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/github-scatter-plot.png" width="48%" />
-  <img src="assets/github-box-plot.png" width="48%" />
+  <img src="assets/github-line-graph.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/github-area-chart.png" width="48%" />
-  <img src="assets/github-bubble-chart.png" width="48%" />
+  <img src="assets/github-area-chart.png" width="100%" />
 </p>
 
 <p align="center">
@@ -199,24 +195,53 @@
 </p>
 
 <p align="center">
-  <img src="assets/github-donut-chart.png" width="48%" />
-  <img src="assets/github-radar-chart.png" width="48%" />
+  <img src="assets/github-histogram.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/github-waterfall-chart.png" width="48%" />
-  <img src="assets/github-funnel-chart.png" width="48%" />
+  <img src="assets/github-scatter-plot.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/github-treemap.png" width="48%" />
-  <img src="assets/github-sankey-diagram.png" width="48%" />
+  <img src="assets/github-box-plot.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/github-streak-system.png" width="48%" />
-  <img src="assets/github-developer-telemetry.png" width="48%" />
+  <img src="assets/github-bubble-chart.png" width="100%" />
 </p>
+
+<p align="center">
+  <img src="assets/github-pie-chart.png" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/github-donut-chart.png" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/github-radar-chart.png" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/github-funnel-chart.png" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/github-waterfall-chart.png" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/github-treemap.png" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/github-sankey-diagram.png" width="100%" />
+</p>
+
+<p align="center">
+  <img src="assets/github-streak-system.png" width="100%" />
+</p>
+
 
 # 🌐 My digital profiles
 
