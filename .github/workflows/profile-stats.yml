@@ -36,7 +36,8 @@ jobs:
 
       - name: Install packages
         run: |
-          pip install requests matplotlib
+          pip install requests matplotlib numpy
+
       - name: Generate GitHub Analytics Images
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -1183,9 +1184,6 @@ jobs:
                   dtype=float
               )
 
-              # Log scaling makes small repositories
-              # visible beside larger ones.
-
               repo_matrix = np.log1p(
                   repo_matrix
               )
@@ -1619,7 +1617,6 @@ jobs:
 
           python generate_profile.py
 
-        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
