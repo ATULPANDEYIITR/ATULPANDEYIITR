@@ -175,47 +175,47 @@
 ## 🎮 GitHub Activity Dashboard
 
 <p align="center">
-  <img src="assets/bar_chart.png" width="48%" />
-  <img src="assets/line_graph.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/bar_chart.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/line_graph.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="assets/pie_chart.png" width="48%" />
-  <img src="assets/histogram.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/pie_chart.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/histogram.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="assets/scatter_plot.png" width="48%" />
-  <img src="assets/box_plot.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/scatter_plot.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/box_plot.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="assets/area_chart.png" width="48%" />
-  <img src="assets/bubble_chart.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/area_chart.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/bubble_chart.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="assets/heatmap.png" width="100%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/heatmap.png" width="100%" />
 </p>
 
 <p align="center">
-  <img src="assets/donut_chart.png" width="48%" />
-  <img src="assets/radar_chart.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/donut_chart.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/radar_chart.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="assets/waterfall_chart.png" width="48%" />
-  <img src="assets/funnel_chart.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/waterfall_chart.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/funnel_chart.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="assets/treemap.png" width="48%" />
-  <img src="assets/sankey_diagram.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/treemap.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/sankey_diagram.png" width="48%" />
 </p>
 
 <p align="center">
-  <img src="assets/streak.png" width="48%" />
-  <img src="assets/telemetry.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/streak.png" width="48%" />
+  <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/telemetry.png" width="48%" />
 </p>
 
 # 🌐 My digital profiles
