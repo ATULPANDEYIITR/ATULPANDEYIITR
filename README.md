@@ -172,66 +172,78 @@
   >
 </p>
 
-## 🟢 GitHub Engineering Observatory
+## 🟢 GITHUB ACTIVITY AND STATISTICS
 
 <p align="center">
-  <img src="./assets/github-engineering-control-panel.png" width="100%">
+  <img src="./assets/github-developer-telemetry.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-contribution-surface.png" width="100%">
+  <img src="./assets/github-activity-summary.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-red-contribution-heatmap.png" width="100%">
+  <img src="./assets/github-contribution-analytics.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/github-activity-barcode.png" width="100%">
+  <img src="./assets/github-commit-analytics.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/red-activity-spectrum.png" width="100%">
+  <img src="./assets/github-contribution-trend.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-coding-momentum.png" width="100%">
+  <img src="./assets/github-collaboration-analytics.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-development-rhythm.png" width="100%">
+  <img src="./assets/github-repository-analytics.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-technology-distribution.png" width="100%">
+  <img src="./assets/github-open-source-footprint.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-repository-activity.png" width="100%">
+  <img src="./assets/github-streak-system.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-open-source-footprint.png" width="100%">
+  <img src="./assets/github-contribution-heatmap.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-development-streak.png" width="100%">
+  <img src="./assets/github-language-analytics.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-repository-scale-matrix.png" width="100%">
+  <img src="./assets/github-development-rhythm.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/repository-intelligence-matrix.png" width="100%">
+  <img src="./assets/github-annual-activity.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-all-repository-updates.png" width="100%">
+  <img src="./assets/github-repository-timeline.png" width="100%">
 </p>
 
 <p align="center">
-  <img src="./assets/3d-contribution-intelligence.png" width="100%">
+  <img src="./assets/github-domain-matrix.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/github-developer-activity.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/github-contribution-breakdown.png" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/github-milestones.png" width="100%">
 </p>
 
 # 🌐 My digital profiles
