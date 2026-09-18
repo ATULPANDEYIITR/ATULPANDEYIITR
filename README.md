@@ -172,7 +172,43 @@
   >
 </p>
 
+## 📊 GitHub Analytics
 
+<p align="center">
+  <img src="./assets/contribution-breakdown.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./assets/contribution-heatmap.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./assets/coding-momentum.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./assets/technology-distribution.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./assets/repository-portfolio.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./assets/open-source-footprint.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./assets/yearly-engineering-progress.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./assets/development-rhythm.png" width="90%">
+</p>
+
+<p align="center">
+  <img src="./assets/github-profile-snapshot.png" width="90%">
+</p>
 
 # 🌐 My digital profiles
 
