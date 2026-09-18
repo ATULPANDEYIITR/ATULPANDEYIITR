@@ -34,19 +34,23 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install Python package
-        run: pip install requests
+      - name: Install packages
+        run: |
+          pip install requests matplotlib
 
-      - name: Generate Dynamic GitHub Activity
+      - name: Generate GitHub Analytics Images
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ATULPANDEYIITR
         run: |
+
           cat > generate_profile.py <<'PYTHON'
+
           import os
           import requests
+          import matplotlib.pyplot as plt
+          from collections import Counter
           from datetime import datetime, timezone
-          from html import escape
 
           TOKEN = os.environ["GITHUB_TOKEN"]
           USERNAME = os.environ["GITHUB_USERNAME"]
@@ -58,23 +62,17 @@ jobs:
 
           os.makedirs("assets", exist_ok=True)
 
+          # ------------------------------------------------
+          # GET GITHUB DATA
+          # ------------------------------------------------
+
           QUERY = """
           query($login: String!) {
+
             user(login: $login) {
 
-              login
-              name
-
-              followers {
-                totalCount
-              }
-
-              following {
-                totalCount
-              }
-
               repositories(
-                first: 20
+                first: 100
                 ownerAffiliations: OWNER
                 orderBy: {field: UPDATED_AT, direction: DESC}
               ) {
@@ -82,10 +80,16 @@ jobs:
                 totalCount
 
                 nodes {
+
                   name
-                  url
                   stargazerCount
                   forkCount
+                  isFork
+                  isPrivate
+
+                  primaryLanguage {
+                    name
+                  }
 
                   watchers {
                     totalCount
@@ -93,18 +97,25 @@ jobs:
 
                   defaultBranchRef {
                     target {
+
                       ... on Commit {
-                        history(first: 5) {
+
+                        history(first: 30) {
+
                           nodes {
                             messageHeadline
                             committedDate
-                            url
                           }
+
                         }
+
                       }
+
                     }
                   }
+
                 }
+
               }
 
               contributionsCollection {
@@ -119,12 +130,26 @@ jobs:
                   totalContributions
 
                   weeks {
+
                     contributionDays {
+
                       contributionCount
                       date
+
                     }
+
                   }
+
                 }
+
+              }
+
+              followers {
+                totalCount
+              }
+
+              following {
+                totalCount
               }
 
               pullRequests(first: 1) {
@@ -134,11 +159,13 @@ jobs:
               issues(first: 1) {
                 totalCount
               }
+
             }
+
           }
           """
 
-          print("Collecting GitHub activity data...")
+          print("Collecting GitHub data...")
 
           response = requests.post(
               "https://api.github.com/graphql",
@@ -154,465 +181,443 @@ jobs:
 
           response.raise_for_status()
 
-          data = response.json()
+          result = response.json()
 
-          if "errors" in data:
-              raise RuntimeError(data["errors"])
+          if "errors" in result:
+              raise RuntimeError(result["errors"])
 
-          user = data["data"]["user"]
+          user = result["data"]["user"]
 
-          contributions_collection = user["contributionsCollection"]
-          calendar = contributions_collection["contributionCalendar"]
+          repositories = user["repositories"]["nodes"]
+
+          contributions = user["contributionsCollection"]
+
+          calendar = contributions["contributionCalendar"]
+
+          # ------------------------------------------------
+          # BASIC DATA
+          # ------------------------------------------------
 
           followers = user["followers"]["totalCount"]
+
           following = user["following"]["totalCount"]
-          repository_count = user["repositories"]["totalCount"]
+
+          repository_total = user["repositories"]["totalCount"]
+
           pull_requests = user["pullRequests"]["totalCount"]
+
           issues = user["issues"]["totalCount"]
 
           total_contributions = calendar["totalContributions"]
 
-          commit_contributions = (
-              contributions_collection["totalCommitContributions"]
-          )
+          commits = contributions[
+              "totalCommitContributions"
+          ]
 
-          pr_contributions = (
-              contributions_collection["totalPullRequestContributions"]
-          )
+          prs = contributions[
+              "totalPullRequestContributions"
+          ]
 
-          issue_contributions = (
-              contributions_collection["totalIssueContributions"]
-          )
+          issue_contributions = contributions[
+              "totalIssueContributions"
+          ]
 
-          repository_contributions = (
-              contributions_collection["totalRepositoryContributions"]
-          )
+          repository_contributions = contributions[
+              "totalRepositoryContributions"
+          ]
 
-          repositories = user["repositories"]["nodes"]
+          # ------------------------------------------------
+          # CONTRIBUTION DAYS
+          # ------------------------------------------------
 
           contribution_days = []
 
           for week in calendar["weeks"]:
+
               for day in week["contributionDays"]:
+
                   contribution_days.append(day)
 
           contribution_days.sort(
-              key=lambda item: item["date"]
+              key=lambda x: x["date"]
           )
 
-          current_streak = 0
-
-          for day in reversed(contribution_days):
-
-              if day["contributionCount"] > 0:
-                  current_streak += 1
-              else:
-                  break
-
-          best_streak = 0
-          running_streak = 0
-
-          for day in contribution_days:
-
-              if day["contributionCount"] > 0:
-                  running_streak += 1
-                  best_streak = max(
-                      best_streak,
-                      running_streak
-                  )
-              else:
-                  running_streak = 0
-
-          top_repositories = sorted(
-              repositories,
-              key=lambda repo: repo["stargazerCount"],
-              reverse=True
-          )[:6]
-
-          recent_commits = []
-
-          for repo in repositories:
-
-              branch = repo.get("defaultBranchRef")
-
-              if not branch:
-                  continue
-
-              target = branch.get("target")
-
-              if not target:
-                  continue
-
-              history = target.get("history")
-
-              if not history:
-                  continue
-
-              for commit in history["nodes"]:
-
-                  recent_commits.append({
-                      "repo": repo["name"],
-                      "message": commit["messageHeadline"],
-                      "date": commit["committedDate"],
-                      "url": commit["url"]
-                  })
-
-          recent_commits.sort(
-              key=lambda item: item["date"],
-              reverse=True
-          )
-
-          recent_commits = recent_commits[:8]
-
-          activity_response = requests.get(
-              f"https://api.github.com/users/{USERNAME}/events/public?per_page=20",
-              headers=HEADERS,
-              timeout=30
-          )
-
-          activity = []
-
-          if activity_response.ok:
-              activity = activity_response.json()
-
-          def svg_start(title, width, height):
-              title = escape(title)
-
-              return f'''<svg xmlns="http://www.w3.org/2000/svg"
-              width="{width}"
-              height="{height}"
-              viewBox="0 0 {width} {height}">
-              <rect width="100%" height="100%" rx="18" fill="#0D1117"/>
-              <text x="40" y="55"
-                    fill="#FFFFFF"
-                    font-size="28"
-                    font-family="Arial"
-                    font-weight="bold">{title}</text>
-              '''
-
-          def svg_end():
-              return "</svg>"
-
-          def save_svg(filename, content):
-              path = os.path.join("assets", filename)
-
-              with open(
-                  path,
-                  "w",
-                  encoding="utf-8"
-              ) as file:
-                  file.write(content)
-
-              print(f"Created: {path}")
-
-          # ---------------------------------------------------------
-          # LIVE METRICS
-          # ---------------------------------------------------------
-
-          svg = svg_start(
-              "Live GitHub Metrics",
-              1000,
-              300
-          )
-
-          metrics = [
-              ("Followers", followers),
-              ("Repositories", repository_count),
-              ("Contributions", total_contributions),
-              ("Pull Requests", pull_requests),
-              ("Issues", issues)
-          ]
-
-          positions = [50, 240, 430, 620, 810]
-
-          for (label, value), x in zip(
-              metrics,
-              positions
-          ):
-
-              svg += f'''
-              <rect x="{x}" y="100"
-                    width="150" height="130"
-                    rx="14"
-                    fill="#161B22"
-                    stroke="#30363D"/>
-
-              <text x="{x + 75}" y="155"
-                    text-anchor="middle"
-                    fill="#00D9A5"
-                    font-size="30"
-                    font-family="Arial"
-                    font-weight="bold">{value}</text>
-
-              <text x="{x + 75}" y="195"
-                    text-anchor="middle"
-                    fill="#8B949E"
-                    font-size="15"
-                    font-family="Arial">{escape(label)}</text>
-              '''
-
-          svg += svg_end()
-
-          save_svg(
-              "live-metrics.svg",
-              svg
-          )
-
-          # ---------------------------------------------------------
-          # CONTRIBUTION BREAKDOWN
-          # ---------------------------------------------------------
-
-          svg = svg_start(
-              "Contribution Breakdown",
-              1000,
-              350
-          )
-
-          breakdown = [
-              ("Commits", commit_contributions),
-              ("Pull Requests", pr_contributions),
-              ("Issues", issue_contributions),
-              ("Repositories", repository_contributions)
-          ]
-
-          maximum = max(
-              [value for _, value in breakdown] + [1]
-          )
-
-          y = 115
-
-          for label, value in breakdown:
-
-              bar_width = int(
-                  550 * value / maximum
-              )
-
-              svg += f'''
-              <text x="70" y="{y}"
-                    fill="#FFFFFF"
-                    font-size="18"
-                    font-family="Arial">{escape(label)}</text>
-
-              <rect x="260" y="{y - 20}"
-                    width="550" height="24"
-                    rx="12"
-                    fill="#161B22"/>
-
-              <rect x="260" y="{y - 20}"
-                    width="{bar_width}" height="24"
-                    rx="12"
-                    fill="#00D9A5"/>
-
-              <text x="840" y="{y}"
-                    fill="#FFFFFF"
-                    font-size="18"
-                    font-family="Arial">{value}</text>
-              '''
-
-              y += 55
-
-          svg += svg_end()
-
-          save_svg(
-              "contribution-breakdown.svg",
-              svg
-          )
-
-          # ---------------------------------------------------------
-          # CONTRIBUTION STREAK
-          # ---------------------------------------------------------
-
-          svg = svg_start(
-              "Contribution Streak",
-              1000,
-              300
-          )
-
-          svg += f'''
-          <text x="500" y="145"
-                text-anchor="middle"
-                fill="#FF4F81"
-                font-size="58"
-                font-family="Arial"
-                font-weight="bold">{current_streak} days</text>
-
-          <text x="500" y="190"
-                text-anchor="middle"
-                fill="#8B949E"
-                font-size="18"
-                font-family="Arial">
-            Current contribution streak
-          </text>
-
-          <text x="500" y="235"
-                text-anchor="middle"
-                fill="#FFFFFF"
-                font-size="18"
-                font-family="Arial">
-            Best streak: {best_streak} days
-          </text>
-          '''
-
-          svg += svg_end()
-
-          save_svg(
-              "contribution-streak.svg",
-              svg
-          )
-
-          # ---------------------------------------------------------
-          # TOP REPOSITORIES
-          # ---------------------------------------------------------
-
-          svg = svg_start(
-              "Most Starred Repositories",
-              1000,
-              430
-          )
-
-          y = 105
-
-          for repo in top_repositories:
-
-              name = escape(repo["name"])
-              stars = repo["stargazerCount"]
-              forks = repo["forkCount"]
-
-              svg += f'''
-              <text x="55" y="{y}"
-                    fill="#FFFFFF"
-                    font-size="19"
-                    font-family="Arial"
-                    font-weight="bold">{name}</text>
-
-              <text x="600" y="{y}"
-                    fill="#FFD166"
-                    font-size="16"
-                    font-family="Arial">
-                Stars: {stars}
-              </text>
-
-              <text x="730" y="{y}"
-                    fill="#8B949E"
-                    font-size="16"
-                    font-family="Arial">
-                Forks: {forks}
-              </text>
-              '''
-
-              y += 50
-
-          svg += svg_end()
-
-          save_svg(
-              "top-repositories.svg",
-              svg
-          )
-
-          # ---------------------------------------------------------
-          # RECENT COMMITS
-          # ---------------------------------------------------------
-
-          svg = svg_start(
-              "Recent Commits",
-              1000,
-              500
-          )
-
-          y = 105
-
-          for commit in recent_commits:
-
-              repo_name = escape(
-                  commit["repo"]
-              )
-
-              message = escape(
-                  commit["message"]
-              )
-
-              if len(message) > 65:
-                  message = message[:62] + "..."
-
-              svg += f'''
-              <text x="55" y="{y}"
-                    fill="#00D9A5"
-                    font-size="15"
-                    font-family="Arial"
-                    font-weight="bold">{repo_name}</text>
-
-              <text x="250" y="{y}"
-                    fill="#FFFFFF"
-                    font-size="15"
-                    font-family="Arial">{message}</text>
-              '''
-
-              y += 45
-
-          svg += svg_end()
-
-          save_svg(
-              "recent-commits.svg",
-              svg
-          )
-
-          # ---------------------------------------------------------
-          # RECENT GITHUB ACTIVITY
-          # ---------------------------------------------------------
-
-          svg = svg_start(
-              "Recent GitHub Activity",
-              1000,
-              500
-          )
-
-          y = 105
-
-          for event in activity[:8]:
-
-              event_type = event.get(
-                  "type",
-                  "Activity"
-              )
-
-              repo_name = (
-                  event.get("repo", {})
-                  .get("name", "")
-              )
-
-              label = event_type.replace(
-                  "Event",
-                  ""
-              )
-
-              text = f"{label} - {repo_name}"
-
-              if len(text) > 80:
-                  text = text[:77] + "..."
-
-              svg += f'''
-              <text x="55" y="{y}"
-                    fill="#FFFFFF"
-                    font-size="16"
-                    font-family="Arial">{escape(text)}</text>
-              '''
-
-              y += 45
-
-          svg += svg_end()
-
-          save_svg(
-              "recent-activity.svg",
-              svg
-          )
-
-          # ---------------------------------------------------------
-          # YEARLY CONTRIBUTIONS
-          # ---------------------------------------------------------
+          # ------------------------------------------------
+          # YEAR
+          # ------------------------------------------------
 
           current_year = datetime.now(
               timezone.utc
           ).year
+
+          # ------------------------------------------------
+          # 1. CONTRIBUTION BREAKDOWN
+          # ------------------------------------------------
+
+          labels = [
+              "Commits",
+              "Pull Requests",
+              "Issues",
+              "Repositories"
+          ]
+
+          values = [
+              commits,
+              prs,
+              issue_contributions,
+              repository_contributions
+          ]
+
+          plt.figure(figsize=(12, 5))
+
+          plt.barh(
+              labels,
+              values
+          )
+
+          plt.title(
+              "Contribution Breakdown"
+          )
+
+          plt.xlabel(
+              "Contribution Count"
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/contribution-breakdown.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
+
+          # ------------------------------------------------
+          # 2. CONTRIBUTION HEATMAP
+          # ------------------------------------------------
+
+          recent_days = contribution_days[-365:]
+
+          matrix = []
+
+          for week in range(53):
+
+              row = []
+
+              for day in range(7):
+
+                  index = (
+                      week * 7 +
+                      day
+                  )
+
+                  if index < len(recent_days):
+
+                      row.append(
+                          recent_days[index][
+                              "contributionCount"
+                          ]
+                      )
+
+                  else:
+
+                      row.append(0)
+
+              matrix.append(row)
+
+          plt.figure(figsize=(13, 4))
+
+          plt.imshow(
+              matrix,
+              aspect="auto"
+          )
+
+          plt.title(
+              "Contribution Heatmap - Last 365 Days"
+          )
+
+          plt.xlabel(
+              "Day of Week"
+          )
+
+          plt.ylabel(
+              "Week"
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/contribution-heatmap.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
+
+          # ------------------------------------------------
+          # 3. MONTHLY CODING MOMENTUM
+          # ------------------------------------------------
+
+          monthly = Counter()
+
+          for day in contribution_days:
+
+              if day["date"].startswith(
+                  str(current_year)
+              ):
+
+                  month = int(
+                      day["date"][5:7]
+                  )
+
+                  monthly[month] += (
+                      day["contributionCount"]
+                  )
+
+          months = list(range(1, 13))
+
+          monthly_values = [
+              monthly.get(
+                  month,
+                  0
+              )
+              for month in months
+          ]
+
+          plt.figure(figsize=(12, 5))
+
+          plt.plot(
+              months,
+              monthly_values,
+              marker="o",
+              linewidth=3
+          )
+
+          plt.title(
+              f"{current_year} Coding Momentum"
+          )
+
+          plt.xlabel(
+              "Month"
+          )
+
+          plt.ylabel(
+              "Contributions"
+          )
+
+          plt.xticks(
+              months
+          )
+
+          plt.grid(
+              True,
+              alpha=0.25
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/coding-momentum.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
+
+          # ------------------------------------------------
+          # 4. TECHNOLOGY DISTRIBUTION
+          # ------------------------------------------------
+
+          languages = Counter()
+
+          for repo in repositories:
+
+              language = repo.get(
+                  "primaryLanguage"
+              )
+
+              if language:
+
+                  languages[
+                      language["name"]
+                  ] += 1
+
+          top_languages = (
+              languages
+              .most_common(10)
+          )
+
+          language_names = [
+              item[0]
+              for item in top_languages
+          ]
+
+          language_values = [
+              item[1]
+              for item in top_languages
+          ]
+
+          plt.figure(figsize=(12, 6))
+
+          plt.bar(
+              language_names,
+              language_values
+          )
+
+          plt.title(
+              "Technology Distribution Across Repositories"
+          )
+
+          plt.xlabel(
+              "Programming Language"
+          )
+
+          plt.ylabel(
+              "Repositories"
+          )
+
+          plt.xticks(
+              rotation=35,
+              ha="right"
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/technology-distribution.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
+
+          # ------------------------------------------------
+          # 5. REPOSITORY PORTFOLIO
+          # ------------------------------------------------
+
+          top_repositories = sorted(
+              repositories,
+              key=lambda repo: (
+                  repo["stargazerCount"]
+              ),
+              reverse=True
+          )[:10]
+
+          repo_names = [
+              repo["name"]
+              for repo in top_repositories
+          ]
+
+          repo_stars = [
+              repo["stargazerCount"]
+              for repo in top_repositories
+          ]
+
+          plt.figure(figsize=(12, 6))
+
+          plt.barh(
+              repo_names[::-1],
+              repo_stars[::-1]
+          )
+
+          plt.title(
+              "Repository Portfolio - Stars"
+          )
+
+          plt.xlabel(
+              "Stars"
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/repository-portfolio.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
+
+          # ------------------------------------------------
+          # 6. OPEN SOURCE FOOTPRINT
+          # ------------------------------------------------
+
+          total_stars = sum(
+              repo["stargazerCount"]
+              for repo in repositories
+          )
+
+          total_forks = sum(
+              repo["forkCount"]
+              for repo in repositories
+          )
+
+          total_watchers = sum(
+              repo["watchers"]["totalCount"]
+              for repo in repositories
+          )
+
+          public_repositories = sum(
+              1
+              for repo in repositories
+              if not repo["isPrivate"]
+          )
+
+          original_repositories = sum(
+              1
+              for repo in repositories
+              if not repo["isFork"]
+          )
+
+          labels = [
+              "Stars",
+              "Forks",
+              "Watchers",
+              "Public Repos",
+              "Original Repos"
+          ]
+
+          values = [
+              total_stars,
+              total_forks,
+              total_watchers,
+              public_repositories,
+              original_repositories
+          ]
+
+          plt.figure(figsize=(12, 5))
+
+          plt.bar(
+              labels,
+              values
+          )
+
+          plt.title(
+              "Open Source Footprint"
+          )
+
+          plt.ylabel(
+              "Count"
+          )
+
+          plt.xticks(
+              rotation=20
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/open-source-footprint.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
+
+          # ------------------------------------------------
+          # 7. YEARLY PROGRESS
+          # ------------------------------------------------
 
           yearly_total = sum(
               day["contributionCount"]
@@ -622,49 +627,176 @@ jobs:
               )
           )
 
-          svg = svg_start(
-              f"{current_year} Contribution Summary",
-              1000,
-              300
+          active_days = sum(
+              1
+              for day in contribution_days
+              if (
+                  day["date"].startswith(
+                      str(current_year)
+                  )
+                  and
+                  day["contributionCount"] > 0
+              )
           )
 
-          svg += f'''
-          <text x="500" y="145"
-                text-anchor="middle"
-                fill="#00D9A5"
-                font-size="60"
-                font-family="Arial"
-                font-weight="bold">{yearly_total}</text>
+          plt.figure(figsize=(12, 5))
 
-          <text x="500" y="195"
-                text-anchor="middle"
-                fill="#8B949E"
-                font-size="18"
-                font-family="Arial">
-            Contributions in {current_year}
-          </text>
-          '''
-
-          svg += svg_end()
-
-          save_svg(
-              "yearly-contributions.svg",
-              svg
+          plt.bar(
+              [
+                  "Contributions",
+                  "Active Days",
+                  "Repositories"
+              ],
+              [
+                  yearly_total,
+                  active_days,
+                  repository_total
+              ]
           )
+
+          plt.title(
+              f"{current_year} Engineering Progress"
+          )
+
+          plt.ylabel(
+              "Count"
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/yearly-engineering-progress.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
+
+          # ------------------------------------------------
+          # 8. DEVELOPMENT RHYTHM
+          # ------------------------------------------------
+
+          weekday_counts = Counter()
+
+          for day in contribution_days:
+
+              date = datetime.strptime(
+                  day["date"],
+                  "%Y-%m-%d"
+              )
+
+              weekday_counts[
+                  date.strftime("%A")
+              ] += day["contributionCount"]
+
+          weekday_names = [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+          ]
+
+          weekday_values = [
+              weekday_counts.get(
+                  day,
+                  0
+              )
+              for day in weekday_names
+          ]
+
+          plt.figure(figsize=(12, 5))
+
+          plt.bar(
+              weekday_names,
+              weekday_values
+          )
+
+          plt.title(
+              "Development Rhythm"
+          )
+
+          plt.xlabel(
+              "Day"
+          )
+
+          plt.ylabel(
+              "Contributions"
+          )
+
+          plt.xticks(
+              rotation=25
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/development-rhythm.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
+
+          # ------------------------------------------------
+          # 9. PROFILE SNAPSHOT
+          # ------------------------------------------------
+
+          plt.figure(figsize=(12, 5))
+
+          labels = [
+              "Followers",
+              "Following",
+              "Repositories",
+              "Pull Requests",
+              "Issues"
+          ]
+
+          values = [
+              followers,
+              following,
+              repository_total,
+              pull_requests,
+              issues
+          ]
+
+          plt.bar(
+              labels,
+              values
+          )
+
+          plt.title(
+              "GitHub Profile Snapshot"
+          )
+
+          plt.ylabel(
+              "Count"
+          )
+
+          plt.tight_layout()
+
+          plt.savefig(
+              "assets/github-profile-snapshot.png",
+              dpi=150,
+              bbox_inches="tight"
+          )
+
+          plt.close()
 
           print("")
-          print("========================================")
-          print(" GitHub Profile Data Updated Successfully")
-          print("========================================")
+          print("======================================")
+          print(" GitHub Analytics Generated")
+          print("======================================")
           print(f"Followers: {followers}")
-          print(f"Repositories: {repository_count}")
+          print(f"Repositories: {repository_total}")
           print(f"Contributions: {total_contributions}")
-          print(f"Pull Requests: {pull_requests}")
-          print(f"Issues: {issues}")
-          print(f"Current Streak: {current_streak}")
-          print(f"Best Streak: {best_streak}")
+          print(f"Stars: {total_stars}")
+          print(f"Forks: {total_forks}")
+          print(f"Languages: {len(languages)}")
           print(f"{current_year} Contributions: {yearly_total}")
-          print("========================================")
+          print("======================================")
 
           PYTHON
 
@@ -674,6 +806,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add assets/
-          git diff --cached --quiet || git commit -m "Update GitHub profile statistics"
+
+          git diff --cached --quiet || git commit -m "Update GitHub analytics images"
+
           git push
