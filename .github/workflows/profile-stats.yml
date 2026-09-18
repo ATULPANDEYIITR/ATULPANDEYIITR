@@ -65,18 +65,26 @@ jobs:
 
 
           # ============================================================
-          # PREMIUM TRANSPARENT GREEN VISUAL SYSTEM
+          # CYAN + BLUE + VIOLET VISUAL SYSTEM
           # ============================================================
 
-          GREEN = "#174D32"
-          GREEN_LIGHT = "#247A4D"
-          GREEN_BRIGHT = "#2F9E63"
-          GREEN_NEON = "#45C77A"
-          GREEN_SOFT = "#78D99E"
+          # Primary data
+          CYAN = "#00E5FF"
+          CYAN_LIGHT = "#00B8D4"
+          CYAN_BRIGHT = "#18FFFF"
 
-          TEXT = "#174D32"
-          TEXT_LIGHT = "#3E6650"
-          MUTED = "#789181"
+          # Secondary data
+          BLUE = "#2979FF"
+          BLUE_LIGHT = "#448AFF"
+
+          # Highlights / peaks
+          VIOLET = "#7C4DFF"
+          VIOLET_LIGHT = "#B388FF"
+
+          # Supporting information
+          TEXT = "#00B8D4"
+          TEXT_LIGHT = "#4DB6AC"
+          MUTED = "#78909C"
 
           TRANSPARENT = True
 
@@ -85,10 +93,10 @@ jobs:
               "font.size": 9,
               "text.color": TEXT,
               "axes.labelcolor": TEXT,
-              "axes.titlecolor": GREEN,
+              "axes.titlecolor": CYAN,
               "xtick.color": TEXT_LIGHT,
               "ytick.color": TEXT_LIGHT,
-              "axes.edgecolor": GREEN,
+              "axes.edgecolor": CYAN,
               "figure.facecolor": "none",
               "axes.facecolor": "none",
               "savefig.facecolor": "none",
@@ -104,6 +112,7 @@ jobs:
               """
               Remove conventional chart background and grid.
               """
+
               ax.set_facecolor("none")
 
               try:
@@ -114,11 +123,18 @@ jobs:
               for spine in ax.spines.values():
                   spine.set_visible(False)
 
+              ax.tick_params(
+                  axis="both",
+                  which="both",
+                  length=0
+              )
+
 
           def clean_3d_axis(ax):
               """
-              Transparent 3D visualization with no grid structure.
+              Fully transparent dimensional visualization.
               """
+
               ax.set_facecolor("none")
 
               try:
@@ -134,9 +150,11 @@ jobs:
                   ax.xaxis.pane.set_edgecolor(
                       (0, 0, 0, 0)
                   )
+
                   ax.yaxis.pane.set_edgecolor(
                       (0, 0, 0, 0)
                   )
+
                   ax.zaxis.pane.set_edgecolor(
                       (0, 0, 0, 0)
                   )
@@ -147,11 +165,22 @@ jobs:
                   ax.xaxis._axinfo["grid"]["color"] = (
                       0, 0, 0, 0
                   )
+
                   ax.yaxis._axinfo["grid"]["color"] = (
                       0, 0, 0, 0
                   )
+
                   ax.zaxis._axinfo["grid"]["color"] = (
                       0, 0, 0, 0
+                  )
+              except Exception:
+                  pass
+
+              try:
+                  ax.tick_params(
+                      axis="both",
+                      which="both",
+                      length=0
                   )
               except Exception:
                   pass
@@ -161,6 +190,7 @@ jobs:
               """
               Save completely transparent PNG.
               """
+
               plt.tight_layout()
 
               plt.savefig(
@@ -182,6 +212,7 @@ jobs:
               """
               Minimal technical heading.
               """
+
               ax.text(
                   0.01,
                   1.04,
@@ -189,7 +220,7 @@ jobs:
                   transform=ax.transAxes,
                   fontsize=16,
                   fontweight="bold",
-                  color=GREEN,
+                  color=CYAN,
                   ha="left",
                   va="bottom"
               )
@@ -212,7 +243,7 @@ jobs:
               x,
               y,
               value,
-              color=GREEN
+              color=CYAN
           ):
               ax.text(
                   x,
@@ -232,7 +263,8 @@ jobs:
               x,
               y,
               z,
-              value
+              value,
+              color=CYAN
           ):
               ax.text(
                   x,
@@ -242,7 +274,7 @@ jobs:
                   fontsize=9,
                   fontweight="bold",
                   family="monospace",
-                  color=GREEN,
+                  color=color,
                   ha="center",
                   va="bottom"
               )
@@ -747,8 +779,6 @@ jobs:
           # MOST ACTIVE MONTH
           # ============================================================
 
-          most_active_month = None
-
           if any(month_values):
 
               index = int(
@@ -823,6 +853,15 @@ jobs:
               total_stars
           ]
 
+          bar_colors = [
+              CYAN,
+              CYAN,
+              BLUE,
+              BLUE,
+              CYAN_LIGHT,
+              VIOLET
+          ]
+
           fig = plt.figure(
               figsize=(15, 6)
           )
@@ -845,8 +884,8 @@ jobs:
               0.58,
               0.62,
               values,
-              color=GREEN,
-              alpha=0.90,
+              color=bar_colors,
+              alpha=0.92,
               shade=True
           )
 
@@ -857,7 +896,8 @@ jobs:
                   index + 0.29,
                   0.31,
                   value,
-                  value
+                  value,
+                  bar_colors[index]
               )
 
           ax.set_xticks(
@@ -873,16 +913,17 @@ jobs:
 
           ax.set_yticks([])
 
+          ax.set_zticks([])
+
           ax.set_zlabel(
-              "ACTIVITY",
-              color=GREEN
+              ""
           )
 
           ax.set_title(
               "GITHUB ACTIVITY SUMMARY",
               fontsize=17,
               fontweight="bold",
-              color=GREEN,
+              color=CYAN,
               pad=18
           )
 
@@ -907,7 +948,7 @@ jobs:
               x,
               month_values,
               width=0.58,
-              color=GREEN,
+              color=CYAN,
               alpha=0.90
           )
 
@@ -928,7 +969,7 @@ jobs:
                       fontsize=8,
                       fontweight="bold",
                       family="monospace",
-                      color=GREEN
+                      color=CYAN
                   )
 
           ax.set_xticks(x)
@@ -988,7 +1029,7 @@ jobs:
               x,
               commit_month_values,
               width=0.58,
-              color=GREEN_LIGHT,
+              color=BLUE,
               alpha=0.95
           )
 
@@ -1009,7 +1050,7 @@ jobs:
                       fontsize=8,
                       fontweight="bold",
                       family="monospace",
-                      color=GREEN
+                      color=CYAN
                   )
 
           ax.set_xticks(x)
@@ -1033,7 +1074,7 @@ jobs:
               transform=ax.transAxes,
               fontsize=8,
               family="monospace",
-              color=GREEN,
+              color=CYAN,
               ha="right"
           )
 
@@ -1066,15 +1107,15 @@ jobs:
               ax.plot(
                   x,
                   activity_values,
-                  color=GREEN,
-                  linewidth=1.7
+                  color=CYAN,
+                  linewidth=1.8
               )
 
               ax.fill_between(
                   x,
                   activity_values,
                   0,
-                  color=GREEN,
+                  color=CYAN,
                   alpha=0.08
               )
 
@@ -1093,8 +1134,8 @@ jobs:
               ax.scatter(
                   [peak_index],
                   [peak_value],
-                  s=35,
-                  color=GREEN_NEON,
+                  s=45,
+                  color=VIOLET,
                   zorder=5
               )
 
@@ -1110,7 +1151,7 @@ jobs:
                   fontsize=9,
                   fontweight="bold",
                   family="monospace",
-                  color=GREEN
+                  color=VIOLET
               )
 
           ax.set_xticks([])
@@ -1162,7 +1203,10 @@ jobs:
               0.65,
               0.65,
               pr_issue_values,
-              color=GREEN_LIGHT,
+              color=[
+                  BLUE,
+                  VIOLET
+              ],
               shade=True
           )
 
@@ -1175,7 +1219,11 @@ jobs:
                   index + 0.325,
                   0.325,
                   value,
-                  value
+                  value,
+                  [
+                      BLUE,
+                      VIOLET
+                  ][index]
               )
 
           ax.set_xticks(
@@ -1188,11 +1236,17 @@ jobs:
 
           ax.set_yticks([])
 
+          ax.set_zticks([])
+
+          ax.set_zlabel(
+              ""
+          )
+
           ax.set_title(
               "COLLABORATION ACTIVITY",
               fontsize=16,
               fontweight="bold",
-              color=GREEN,
+              color=CYAN,
               pad=18
           )
 
@@ -1235,8 +1289,8 @@ jobs:
               x,
               repository_growth,
               width=0.58,
-              color=GREEN,
-              alpha=0.9
+              color=CYAN_LIGHT,
+              alpha=0.92
           )
 
           for bar, value in zip(
@@ -1256,7 +1310,7 @@ jobs:
                       fontsize=8,
                       fontweight="bold",
                       family="monospace",
-                      color=GREEN
+                      color=CYAN
                   )
 
           ax.set_xticks(x)
@@ -1280,7 +1334,7 @@ jobs:
               transform=ax.transAxes,
               fontsize=8,
               family="monospace",
-              color=GREEN,
+              color=CYAN,
               ha="right"
           )
 
@@ -1318,6 +1372,12 @@ jobs:
 
           x = np.arange(3)
 
+          star_colors = [
+              VIOLET,
+              BLUE,
+              CYAN
+          ]
+
           ax.bar3d(
               x,
               np.zeros(3),
@@ -1325,7 +1385,7 @@ jobs:
               0.62,
               0.62,
               star_fork_values,
-              color=GREEN_LIGHT,
+              color=star_colors,
               shade=True
           )
 
@@ -1338,7 +1398,8 @@ jobs:
                   index + 0.31,
                   0.31,
                   value,
-                  value
+                  value,
+                  star_colors[index]
               )
 
           ax.set_xticks(
@@ -1351,11 +1412,17 @@ jobs:
 
           ax.set_yticks([])
 
+          ax.set_zticks([])
+
+          ax.set_zlabel(
+              ""
+          )
+
           ax.set_title(
               "OPEN SOURCE FOOTPRINT",
               fontsize=16,
               fontweight="bold",
-              color=GREEN,
+              color=CYAN,
               pad=18
           )
 
@@ -1396,10 +1463,16 @@ jobs:
               0.70
           ]
 
-          for position, label, value in zip(
+          streak_colors = [
+              CYAN,
+              VIOLET
+          ]
+
+          for position, label, value, bar_color in zip(
               positions,
               streak_labels,
-              streak_values
+              streak_values,
+              streak_colors
           ):
 
               ax.text(
@@ -1410,7 +1483,7 @@ jobs:
                   fontsize=28,
                   fontweight="bold",
                   family="monospace",
-                  color=GREEN,
+                  color=bar_color,
                   ha="center"
               )
 
@@ -1437,7 +1510,7 @@ jobs:
                   ],
                   [0.36, 0.36],
                   transform=ax.transAxes,
-                  color=GREEN_LIGHT,
+                  color=BLUE_LIGHT,
                   linewidth=3,
                   solid_capstyle="round"
               )
@@ -1450,7 +1523,7 @@ jobs:
                   ],
                   [0.36, 0.36],
                   transform=ax.transAxes,
-                  color=GREEN_NEON,
+                  color=bar_color,
                   linewidth=4,
                   solid_capstyle="round"
               )
@@ -1477,7 +1550,7 @@ jobs:
               transform=ax.transAxes,
               fontsize=16,
               fontweight="bold",
-              color=GREEN
+              color=CYAN
           )
 
           ax.text(
@@ -1557,24 +1630,28 @@ jobs:
                   if value > 0:
 
                       intensity = (
-                          0.25
+                          0.35
                           +
-                          0.70 *
+                          0.65 *
                           (
                               value /
                               maximum
                           )
                       )
 
+                      if intensity > 0.70:
+
+                          heat_color = CYAN_BRIGHT
+
+                      else:
+
+                          heat_color = BLUE
+
                       ax.scatter(
                           x,
                           y,
                           s=58,
-                          color=(
-                              GREEN_NEON
-                              if intensity > 0.70
-                              else GREEN_LIGHT
-                          ),
+                          color=heat_color,
                           alpha=min(
                               1.0,
                               intensity
@@ -1590,7 +1667,7 @@ jobs:
                                   int(value)
                               ),
                               fontsize=4.5,
-                              color=GREEN,
+                              color=VIOLET,
                               ha="center",
                               va="center",
                               family="monospace"
@@ -1629,7 +1706,7 @@ jobs:
               transform=ax.transAxes,
               fontsize=16,
               fontweight="bold",
-              color=GREEN
+              color=CYAN
           )
 
           ax.text(
@@ -1695,15 +1772,27 @@ jobs:
               y,
               language_values,
               height=0.52,
-              color=GREEN,
-              alpha=0.90
+              color=BLUE,
+              alpha=0.92
           )
 
-          for bar, value, percentage in zip(
-              bars,
-              language_values,
-              language_percentages
+          for index, (
+              bar,
+              value,
+              percentage
+          ) in enumerate(
+              zip(
+                  bars,
+                  language_values,
+                  language_percentages
+              )
           ):
+
+              label_color = (
+                  CYAN
+                  if index % 2 == 0
+                  else VIOLET
+              )
 
               ax.text(
                   bar.get_width(),
@@ -1714,7 +1803,7 @@ jobs:
                   fontsize=8,
                   fontweight="bold",
                   family="monospace",
-                  color=GREEN
+                  color=label_color
               )
 
           ax.set_yticks(y)
@@ -1754,16 +1843,27 @@ jobs:
               x,
               weekday_values,
               width=0.56,
-              color=GREEN_LIGHT,
+              color=CYAN_LIGHT,
               alpha=0.92
           )
 
-          for bar, value in zip(
-              bars,
-              weekday_values
+          for index, (
+              bar,
+              value
+          ) in enumerate(
+              zip(
+                  bars,
+                  weekday_values
+              )
           ):
 
               if value > 0:
+
+                  number_color = (
+                      CYAN
+                      if index % 2 == 0
+                      else VIOLET
+                  )
 
                   ax.text(
                       bar.get_x()
@@ -1775,7 +1875,7 @@ jobs:
                       fontsize=8,
                       fontweight="bold",
                       family="monospace",
-                      color=GREEN
+                      color=number_color
                   )
 
           ax.set_xticks(x)
@@ -1825,13 +1925,18 @@ jobs:
               x,
               annual_values,
               width=0.58,
-              color=GREEN,
-              alpha=0.9
+              color=CYAN,
+              alpha=0.92
           )
 
-          for bar, value in zip(
-              bars,
-              annual_values
+          for index, (
+              bar,
+              value
+          ) in enumerate(
+              zip(
+                  bars,
+                  annual_values
+              )
           ):
 
               ax.text(
@@ -1844,7 +1949,11 @@ jobs:
                   fontsize=9,
                   fontweight="bold",
                   family="monospace",
-                  color=GREEN
+                  color=(
+                      VIOLET
+                      if index == len(bars) - 1
+                      else CYAN
+                  )
               )
 
           ax.set_xticks(x)
@@ -1912,14 +2021,14 @@ jobs:
               ax.plot(
                   x,
                   timeline_values,
-                  color=GREEN,
+                  color=CYAN,
                   linewidth=2
               )
 
               ax.scatter(
                   x,
                   timeline_values,
-                  color=GREEN_NEON,
+                  color=VIOLET,
                   s=45,
                   zorder=5
               )
@@ -1936,7 +2045,7 @@ jobs:
                       fontsize=8,
                       fontweight="bold",
                       family="monospace",
-                      color=GREEN,
+                      color=CYAN,
                       ha="center",
                       va="bottom"
                   )
@@ -2073,6 +2182,13 @@ jobs:
                   .most_common()
               )
 
+              domain_colors = [
+                  CYAN,
+                  BLUE,
+                  VIOLET,
+                  CYAN_LIGHT
+              ]
+
               for index, (
                   domain,
                   value
@@ -2089,13 +2205,20 @@ jobs:
                       index // 4
                   )
 
+                  domain_color = (
+                      domain_colors[
+                          index %
+                          len(domain_colors)
+                      ]
+                  )
+
                   ax.text(
                       x_position,
                       y_position,
                       f"[ {domain.upper()} ]",
                       fontsize=8,
                       family="monospace",
-                      color=GREEN,
+                      color=domain_color,
                       ha="center",
                       va="center"
                   )
@@ -2152,7 +2275,7 @@ jobs:
 
 
           # ============================================================
-          # 15. DEVELOPER ACTIVITY XP
+          # 15. DEVELOPER ACTIVITY INDICATOR
           # ============================================================
 
           activity_components = [
@@ -2218,7 +2341,7 @@ jobs:
               transform=ax.transAxes,
               fontsize=15,
               fontweight="bold",
-              color=GREEN
+              color=CYAN
           )
 
           ax.text(
@@ -2228,7 +2351,7 @@ jobs:
               transform=ax.transAxes,
               fontsize=19,
               family="monospace",
-              color=GREEN
+              color=BLUE
           )
 
           ax.text(
@@ -2238,7 +2361,7 @@ jobs:
               transform=ax.transAxes,
               fontsize=8,
               family="monospace",
-              color=MUTED,
+              color=VIOLET,
               ha="right"
           )
 
@@ -2322,6 +2445,12 @@ jobs:
 
           if milestones:
 
+              milestone_colors = [
+                  CYAN,
+                  BLUE,
+                  VIOLET
+              ]
+
               for index, label in enumerate(
                   milestones
               ):
@@ -2335,6 +2464,13 @@ jobs:
                       index // 5
                   )
 
+                  milestone_color = (
+                      milestone_colors[
+                          index %
+                          len(milestone_colors)
+                      ]
+                  )
+
                   ax.text(
                       x,
                       y,
@@ -2342,7 +2478,7 @@ jobs:
                       fontsize=8,
                       family="monospace",
                       fontweight="bold",
-                      color=GREEN
+                      color=milestone_color
                   )
 
               rows = (
@@ -2403,7 +2539,7 @@ jobs:
               "SYSTEM STATUS: ONLINE",
               fontsize=14,
               fontweight="bold",
-              color=GREEN
+              color=CYAN
           )
 
           ax.text(
@@ -2415,7 +2551,7 @@ jobs:
               "GITHUB ACTIVITY: IDLE",
               fontsize=9,
               family="monospace",
-              color=GREEN
+              color=BLUE
           )
 
           ax.text(
@@ -2424,7 +2560,7 @@ jobs:
               "DATA: UPDATED",
               fontsize=9,
               family="monospace",
-              color=GREEN
+              color=VIOLET
           )
 
           ax.text(
@@ -2500,6 +2636,13 @@ jobs:
               repository_contributions
           ]
 
+          breakdown_colors = [
+              CYAN,
+              BLUE,
+              VIOLET,
+              CYAN_LIGHT
+          ]
+
           fig, ax = plt.subplots(
               figsize=(14, 5)
           )
@@ -2516,13 +2659,18 @@ jobs:
               x,
               breakdown_values,
               width=0.55,
-              color=GREEN,
-              alpha=0.9
+              color=breakdown_colors,
+              alpha=0.92
           )
 
-          for bar, value in zip(
-              bars,
-              breakdown_values
+          for index, (
+              bar,
+              value
+          ) in enumerate(
+              zip(
+                  bars,
+                  breakdown_values
+              )
           ):
 
               ax.text(
@@ -2535,7 +2683,7 @@ jobs:
                   fontsize=9,
                   fontweight="bold",
                   family="monospace",
-                  color=GREEN
+                  color=breakdown_colors[index]
               )
 
           ax.set_xticks(x)
@@ -2563,12 +2711,15 @@ jobs:
           # ============================================================
 
           print("")
+
           print(
               "================================================"
           )
+
           print(
               " GITHUB DEVELOPER COMMAND CENTER GENERATED"
           )
+
           print(
               "================================================"
           )
