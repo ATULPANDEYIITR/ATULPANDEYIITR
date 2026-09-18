@@ -18,17 +18,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Generate GitHub profile cards
-        uses: seijikohara/profile-cards-action@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          username: ATULPANDEYIITR
-          cards: "overview,contributions,composition,rhythm,lifetime,repositories,languages"
-          output-dir: assets
-          themes: "dark,light"
-          language-limit: 8
-          commit: false
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
@@ -38,7 +27,7 @@ jobs:
         run: |
           pip install requests matplotlib numpy
 
-      - name: Generate GitHub Analytics Images
+      - name: Generate GitHub Activity Dashboard
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ATULPANDEYIITR
@@ -48,69 +37,222 @@ jobs:
 
           import os
           import requests
-          import matplotlib.pyplot as plt
           import numpy as np
+          import matplotlib.pyplot as plt
 
           from collections import Counter
           from datetime import datetime, timezone, timedelta
-          from mpl_toolkits.mplot3d import Axes3D
+
+
+          # ============================================================
+          # CONFIGURATION
+          # ============================================================
 
           TOKEN = os.environ["GITHUB_TOKEN"]
           USERNAME = os.environ["GITHUB_USERNAME"]
 
-          HEADERS = {
+          API_HEADERS = {
               "Authorization": f"Bearer {TOKEN}",
               "Accept": "application/vnd.github+json"
           }
 
+          GRAPHQL_HEADERS = {
+              "Authorization": f"Bearer {TOKEN}",
+              "Content-Type": "application/json"
+          }
+
           os.makedirs("assets", exist_ok=True)
 
+
           # ============================================================
-          # NEON SCIENTIFIC DESIGN
+          # PREMIUM TRANSPARENT GREEN VISUAL SYSTEM
           # ============================================================
 
-          BG = "#020403"
-          PANEL = "#07100B"
-          GREEN = "#39FF88"
-          GREEN2 = "#00FF41"
-          DARK_GREEN = "#0B3D25"
-          RED = "#FF1744"
-          RED2 = "#FF0033"
-          CYAN = "#00E5FF"
-          PURPLE = "#B967FF"
-          ORANGE = "#FFB300"
-          WHITE = "#EFFFF4"
-          GREY = "#6E8578"
-          GRID = "#163324"
+          GREEN = "#174D32"
+          GREEN_LIGHT = "#247A4D"
+          GREEN_BRIGHT = "#2F9E63"
+          GREEN_NEON = "#45C77A"
+          GREEN_SOFT = "#78D99E"
+
+          TEXT = "#174D32"
+          TEXT_LIGHT = "#3E6650"
+          MUTED = "#789181"
+
+          TRANSPARENT = True
 
           plt.rcParams.update({
-              "figure.facecolor": BG,
-              "axes.facecolor": PANEL,
-              "axes.edgecolor": GRID,
-              "axes.labelcolor": WHITE,
-              "axes.titlecolor": GREEN,
-              "xtick.color": GREY,
-              "ytick.color": GREY,
-              "text.color": WHITE,
+              "font.family": "DejaVu Sans",
               "font.size": 9,
-              "savefig.facecolor": BG
+              "text.color": TEXT,
+              "axes.labelcolor": TEXT,
+              "axes.titlecolor": GREEN,
+              "xtick.color": TEXT_LIGHT,
+              "ytick.color": TEXT_LIGHT,
+              "axes.edgecolor": GREEN,
+              "figure.facecolor": "none",
+              "axes.facecolor": "none",
+              "savefig.facecolor": "none",
+              "savefig.edgecolor": "none"
           })
 
+
+          # ============================================================
+          # HELPER FUNCTIONS
+          # ============================================================
+
+          def clean_axis(ax):
+              """
+              Remove conventional chart background and grid.
+              """
+              ax.set_facecolor("none")
+
+              try:
+                  ax.grid(False)
+              except Exception:
+                  pass
+
+              for spine in ax.spines.values():
+                  spine.set_visible(False)
+
+
+          def clean_3d_axis(ax):
+              """
+              Transparent 3D visualization with no grid structure.
+              """
+              ax.set_facecolor("none")
+
+              try:
+                  ax.grid(False)
+              except Exception:
+                  pass
+
+              try:
+                  ax.xaxis.pane.fill = False
+                  ax.yaxis.pane.fill = False
+                  ax.zaxis.pane.fill = False
+
+                  ax.xaxis.pane.set_edgecolor(
+                      (0, 0, 0, 0)
+                  )
+                  ax.yaxis.pane.set_edgecolor(
+                      (0, 0, 0, 0)
+                  )
+                  ax.zaxis.pane.set_edgecolor(
+                      (0, 0, 0, 0)
+                  )
+              except Exception:
+                  pass
+
+              try:
+                  ax.xaxis._axinfo["grid"]["color"] = (
+                      0, 0, 0, 0
+                  )
+                  ax.yaxis._axinfo["grid"]["color"] = (
+                      0, 0, 0, 0
+                  )
+                  ax.zaxis._axinfo["grid"]["color"] = (
+                      0, 0, 0, 0
+                  )
+              except Exception:
+                  pass
+
+
           def save(name):
+              """
+              Save completely transparent PNG.
+              """
               plt.tight_layout()
+
               plt.savefig(
                   f"assets/{name}.png",
                   dpi=190,
                   bbox_inches="tight",
-                  facecolor=BG
+                  transparent=True,
+                  pad_inches=0.12
               )
+
               plt.close()
+
+
+          def add_hud_header(
+              ax,
+              title,
+              code
+          ):
+              """
+              Minimal technical heading.
+              """
+              ax.text(
+                  0.01,
+                  1.04,
+                  title,
+                  transform=ax.transAxes,
+                  fontsize=16,
+                  fontweight="bold",
+                  color=GREEN,
+                  ha="left",
+                  va="bottom"
+              )
+
+              ax.text(
+                  0.99,
+                  1.045,
+                  code,
+                  transform=ax.transAxes,
+                  fontsize=7,
+                  family="monospace",
+                  color=MUTED,
+                  ha="right",
+                  va="bottom"
+              )
+
+
+          def add_value(
+              ax,
+              x,
+              y,
+              value,
+              color=GREEN
+          ):
+              ax.text(
+                  x,
+                  y,
+                  f"{value:,}",
+                  fontsize=10,
+                  fontweight="bold",
+                  family="monospace",
+                  color=color,
+                  ha="center",
+                  va="bottom"
+              )
+
+
+          def add_3d_value(
+              ax,
+              x,
+              y,
+              z,
+              value
+          ):
+              ax.text(
+                  x,
+                  y,
+                  z,
+                  f"{value:,}",
+                  fontsize=9,
+                  fontweight="bold",
+                  family="monospace",
+                  color=GREEN,
+                  ha="center",
+                  va="bottom"
+              )
+
 
           # ============================================================
           # GET ALL REPOSITORIES
           # ============================================================
 
-          print("Collecting ALL repositories...")
+          print("Collecting repository data...")
 
           repositories = []
 
@@ -118,14 +260,9 @@ jobs:
 
           while True:
 
-              url = (
-                  f"https://api.github.com/users/"
-                  f"{USERNAME}/repos"
-              )
-
               response = requests.get(
-                  url,
-                  headers=HEADERS,
+                  f"https://api.github.com/users/{USERNAME}/repos",
+                  headers=API_HEADERS,
                   params={
                       "per_page": 100,
                       "page": page,
@@ -155,6 +292,7 @@ jobs:
               f"{len(repositories)}"
           )
 
+
           # ============================================================
           # GRAPHQL CONTRIBUTION DATA
           # ============================================================
@@ -163,22 +301,6 @@ jobs:
           query($login: String!) {
 
             user(login: $login) {
-
-              followers {
-                totalCount
-              }
-
-              following {
-                totalCount
-              }
-
-              pullRequests(first: 1) {
-                totalCount
-              }
-
-              issues(first: 1) {
-                totalCount
-              }
 
               contributionsCollection {
 
@@ -217,18 +339,20 @@ jobs:
                       "login": USERNAME
                   }
               },
-              headers=HEADERS,
+              headers=GRAPHQL_HEADERS,
               timeout=30
           )
 
           response.raise_for_status()
 
-          result = response.json()
+          graphql_result = response.json()
 
-          if "errors" in result:
-              raise RuntimeError(result["errors"])
+          if "errors" in graphql_result:
+              raise RuntimeError(
+                  graphql_result["errors"]
+              )
 
-          user = result["data"]["user"]
+          user = graphql_result["data"]["user"]
 
           contributions = (
               user["contributionsCollection"]
@@ -238,21 +362,10 @@ jobs:
               contributions["contributionCalendar"]
           )
 
-          followers = (
-              user["followers"]["totalCount"]
-          )
 
-          following = (
-              user["following"]["totalCount"]
-          )
-
-          pull_requests = (
-              user["pullRequests"]["totalCount"]
-          )
-
-          issues = (
-              user["issues"]["totalCount"]
-          )
+          # ============================================================
+          # CORE CONTRIBUTION VALUES
+          # ============================================================
 
           total_contributions = (
               calendar["totalContributions"]
@@ -282,6 +395,11 @@ jobs:
               ]
           )
 
+
+          # ============================================================
+          # CONTRIBUTION DAYS
+          # ============================================================
+
           contribution_days = []
 
           for week in calendar["weeks"]:
@@ -291,17 +409,21 @@ jobs:
                   contribution_days.append(day)
 
           contribution_days.sort(
-              key=lambda x: x["date"]
+              key=lambda item: item["date"]
           )
 
+
           # ============================================================
-          # CURRENT DATE / TIME
+          # CURRENT DATE
           # ============================================================
 
           now_utc = datetime.now(timezone.utc)
 
           ist = timezone(
-              timedelta(hours=5, minutes=30)
+              timedelta(
+                  hours=5,
+                  minutes=30
+              )
           )
 
           now_ist = now_utc.astimezone(ist)
@@ -311,10 +433,11 @@ jobs:
           )
 
           generated_time = (
-              now_ist.strftime("%I:%M:%S %p IST")
+              now_ist.strftime("%I:%M %p IST")
           )
 
           current_year = now_ist.year
+
 
           # ============================================================
           # REPOSITORY METRICS
@@ -322,6 +445,12 @@ jobs:
 
           repository_count = len(
               repositories
+          )
+
+          public_repositories = sum(
+              1
+              for repo in repositories
+              if not repo["private"]
           )
 
           total_stars = sum(
@@ -339,27 +468,6 @@ jobs:
               for repo in repositories
           )
 
-          total_size = sum(
-              repo.get("size", 0)
-              for repo in repositories
-          )
-
-          public_repositories = sum(
-              1
-              for repo in repositories
-              if not repo["private"]
-          )
-
-          forked_repositories = sum(
-              1
-              for repo in repositories
-              if repo["fork"]
-          )
-
-          original_repositories = (
-              repository_count -
-              forked_repositories
-          )
 
           # ============================================================
           # LANGUAGE ANALYSIS
@@ -369,247 +477,129 @@ jobs:
 
           for repo in repositories:
 
-              language = repo.get(
-                  "language"
-              )
+              language = repo.get("language")
 
               if language:
                   languages[language] += 1
 
+
           # ============================================================
-          # REPOSITORY UPDATE DATA
+          # TOPICS / DOMAIN DATA
           # ============================================================
 
-          update_dates = []
+          topics = Counter()
 
           for repo in repositories:
 
-              updated = repo.get(
-                  "updated_at"
+              repo_topics = repo.get(
+                  "topics",
+                  []
               )
 
-              if updated:
+              for topic in repo_topics:
+                  topics[topic.lower()] += 1
 
-                  dt = datetime.fromisoformat(
-                      updated.replace(
-                          "Z",
-                          "+00:00"
-                      )
+
+          # ============================================================
+          # STREAK ANALYSIS
+          # ============================================================
+
+          contribution_lookup = {
+              day["date"]: day["contributionCount"]
+              for day in contribution_days
+          }
+
+          today = now_ist.strftime(
+              "%Y-%m-%d"
+          )
+
+          current_streak = 0
+
+          streak_date = today
+
+          if contribution_lookup.get(
+              streak_date,
+              0
+          ) == 0:
+
+              previous_day = (
+                  now_ist -
+                  timedelta(days=1)
+              ).strftime("%Y-%m-%d")
+
+              if contribution_lookup.get(
+                  previous_day,
+                  0
+              ) > 0:
+
+                  streak_date = previous_day
+
+          while contribution_lookup.get(
+              streak_date,
+              0
+          ) > 0:
+
+              current_streak += 1
+
+              current_date = datetime.strptime(
+                  streak_date,
+                  "%Y-%m-%d"
+              )
+
+              current_date -= timedelta(
+                  days=1
+              )
+
+              streak_date = (
+                  current_date.strftime(
+                      "%Y-%m-%d"
+                  )
+              )
+
+
+          longest_streak = 0
+          running_streak = 0
+
+          for day in contribution_days:
+
+              if day["contributionCount"] > 0:
+
+                  running_streak += 1
+
+                  longest_streak = max(
+                      longest_streak,
+                      running_streak
                   )
 
-                  update_dates.append(
-                      (
-                          repo["name"],
-                          dt
-                      )
-                  )
+              else:
 
-          update_dates.sort(
-              key=lambda x: x[1]
+                  running_streak = 0
+
+
+          active_days = sum(
+              1
+              for day in contribution_days
+              if day["contributionCount"] > 0
           )
+
+
+          total_days = len(
+              contribution_days
+          )
+
+          consistency = (
+              active_days /
+              total_days * 100
+              if total_days
+              else 0
+          )
+
 
           # ============================================================
-          # 1. 3D CONTRIBUTION SURFACE
+          # MONTHLY ACTIVITY
           # ============================================================
 
-          recent_days = contribution_days[-364:]
-
-          weeks = 52
-          days = 7
-
-          matrix = np.zeros(
-              (days, weeks)
-          )
-
-          for index, day in enumerate(
-              recent_days
-          ):
-
-              week = index // 7
-              weekday = index % 7
-
-              if week < weeks:
-
-                  matrix[
-                      weekday,
-                      week
-                  ] = day[
-                      "contributionCount"
-                  ]
-
-          X, Y = np.meshgrid(
-              np.arange(weeks),
-              np.arange(days)
-          )
-
-          Z = matrix
-
-          fig = plt.figure(
-              figsize=(15, 8)
-          )
-
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
-          )
-
-          surface = ax.plot_surface(
-              X,
-              Y,
-              Z,
-              cmap="winter",
-              edgecolor=GREEN,
-              linewidth=0.15,
-              alpha=0.95
-          )
-
-          ax.set_title(
-              "3D CONTRIBUTION ACTIVITY SURFACE",
-              fontsize=18,
-              fontweight="bold",
-              color=GREEN,
-              pad=20
-          )
-
-          ax.set_xlabel("WEEKS")
-          ax.set_ylabel("DAY CYCLE")
-          ax.set_zlabel("CONTRIBUTIONS")
-
-          save(
-              "3d-contribution-surface"
-          )
-
-          # ============================================================
-          # 2. RED 3D CONTRIBUTION HEATMAP
-          # ============================================================
-
-          fig = plt.figure(
-              figsize=(15, 8)
-          )
-
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
-          )
-
-          xpos = []
-          ypos = []
-          zpos = []
-
-          dx = []
-          dy = []
-          dz = []
-
-          for y in range(days):
-
-              for x in range(weeks):
-
-                  xpos.append(x)
-                  ypos.append(y)
-                  zpos.append(0)
-
-                  dx.append(0.85)
-                  dy.append(0.85)
-                  dz.append(
-                      matrix[y][x]
-                  )
-
-          ax.bar3d(
-              xpos,
-              ypos,
-              zpos,
-              dx,
-              dy,
-              dz,
-              color=RED,
-              alpha=0.90,
-              shade=True
-          )
-
-          ax.set_title(
-              "3D RED CONTRIBUTION HEATMAP",
-              fontsize=18,
-              fontweight="bold",
-              color=RED,
-              pad=20
-          )
-
-          ax.set_xlabel("WEEKS")
-          ax.set_ylabel("DAY")
-          ax.set_zlabel("ACTIVITY")
-
-          save(
-              "3d-red-contribution-heatmap"
-          )
-
-          # ============================================================
-          # 3. CONTRIBUTION BREAKDOWN 3D
-          # ============================================================
-
-          labels = [
-              "COMMITS",
-              "PULL REQUESTS",
-              "ISSUES",
-              "REPOSITORIES"
-          ]
-
-          values = [
-              commits,
-              prs,
-              issue_contributions,
-              repository_contributions
-          ]
-
-          fig = plt.figure(
-              figsize=(14, 7)
-          )
-
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
-          )
-
-          x = np.arange(
-              len(labels)
-          )
-
-          ax.bar3d(
-              x,
-              np.zeros(len(labels)),
-              np.zeros(len(labels)),
-              0.6,
-              0.7,
-              values,
-              color=GREEN,
-              shade=True
-          )
-
-          ax.set_xticks(x)
-          ax.set_xticklabels(
-              labels,
-              rotation=18
-          )
-
-          ax.set_title(
-              "3D CONTRIBUTION INTELLIGENCE",
-              fontsize=18,
-              fontweight="bold",
-              color=GREEN
-          )
-
-          ax.set_zlabel(
-              "COUNT"
-          )
-
-          save(
-              "3d-contribution-intelligence"
-          )
-
-          # ============================================================
-          # 4. CODING MOMENTUM 3D
-          # ============================================================
-
-          monthly = Counter()
+          monthly_activity = Counter()
 
           for day in contribution_days:
 
@@ -621,58 +611,39 @@ jobs:
                       day["date"][5:7]
                   )
 
-                  monthly[
+                  monthly_activity[
                       month
                   ] += day[
                       "contributionCount"
                   ]
 
+
           month_values = [
-              monthly.get(
+              monthly_activity.get(
                   month,
                   0
               )
               for month in range(1, 13)
           ]
 
-          fig = plt.figure(
-              figsize=(14, 7)
-          )
+          month_labels = [
+              "JAN",
+              "FEB",
+              "MAR",
+              "APR",
+              "MAY",
+              "JUN",
+              "JUL",
+              "AUG",
+              "SEP",
+              "OCT",
+              "NOV",
+              "DEC"
+          ]
 
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
-          )
-
-          x = np.arange(12)
-
-          ax.bar3d(
-              x,
-              np.zeros(12),
-              np.zeros(12),
-              0.65,
-              0.65,
-              month_values,
-              color=CYAN,
-              shade=True
-          )
-
-          ax.set_title(
-              f"{current_year} 3D CODING MOMENTUM",
-              fontsize=18,
-              fontweight="bold",
-              color=CYAN
-          )
-
-          ax.set_xlabel("MONTH")
-          ax.set_zlabel("CONTRIBUTIONS")
-
-          save(
-              "3d-coding-momentum"
-          )
 
           # ============================================================
-          # 5. DEVELOPMENT RHYTHM 3D
+          # WEEKDAY ACTIVITY
           # ============================================================
 
           weekday_counts = Counter()
@@ -712,14 +683,148 @@ jobs:
 
           weekday_values = [
               weekday_counts.get(
-                  day,
+                  name,
                   0
               )
-              for day in weekday_full
+              for name in weekday_full
+          ]
+
+
+          # ============================================================
+          # YEARLY ACTIVITY
+          # ============================================================
+
+          yearly_values = []
+
+          for year_offset in range(4):
+
+              year = current_year - year_offset
+
+              value = sum(
+                  day["contributionCount"]
+                  for day in contribution_days
+                  if day["date"].startswith(
+                      str(year)
+                  )
+              )
+
+              yearly_values.append(
+                  (year, value)
+              )
+
+          yearly_values.reverse()
+
+
+          # ============================================================
+          # REPOSITORY TIMELINE
+          # ============================================================
+
+          repository_dates = []
+
+          for repo in repositories:
+
+              created = repo.get(
+                  "created_at"
+              )
+
+              if created:
+
+                  dt = datetime.fromisoformat(
+                      created.replace(
+                          "Z",
+                          "+00:00"
+                      )
+                  )
+
+                  repository_dates.append(
+                      dt
+                  )
+
+          repository_dates.sort()
+
+
+          # ============================================================
+          # MOST ACTIVE MONTH
+          # ============================================================
+
+          most_active_month = None
+
+          if any(month_values):
+
+              index = int(
+                  np.argmax(
+                      month_values
+                  )
+              )
+
+              most_active_month = (
+                  month_labels[index]
+              )
+
+              most_active_month_value = (
+                  month_values[index]
+              )
+
+          else:
+
+              most_active_month = "N/A"
+              most_active_month_value = 0
+
+
+          # ============================================================
+          # MOST ACTIVE WEEKDAY
+          # ============================================================
+
+          if any(weekday_values):
+
+              weekday_index = int(
+                  np.argmax(
+                      weekday_values
+                  )
+              )
+
+              most_active_weekday = (
+                  weekday_names[
+                      weekday_index
+                  ]
+              )
+
+              most_active_weekday_value = (
+                  weekday_values[
+                      weekday_index
+                  ]
+              )
+
+          else:
+
+              most_active_weekday = "N/A"
+              most_active_weekday_value = 0
+
+
+          # ============================================================
+          # 1. GITHUB ACTIVITY SUMMARY
+          # ============================================================
+
+          labels = [
+              "COMMITS",
+              "CONTRIBUTIONS",
+              "PULL REQUESTS",
+              "ISSUES",
+              "REPOSITORIES",
+              "STARS"
+          ]
+
+          values = [
+              commits,
+              total_contributions,
+              prs,
+              issue_contributions,
+              repository_count,
+              total_stars
           ]
 
           fig = plt.figure(
-              figsize=(14, 7)
+              figsize=(15, 6)
           )
 
           ax = fig.add_subplot(
@@ -727,46 +832,828 @@ jobs:
               projection="3d"
           )
 
-          x = np.arange(7)
+          clean_3d_axis(ax)
+
+          x = np.arange(
+              len(labels)
+          )
 
           ax.bar3d(
               x,
-              np.zeros(7),
-              np.zeros(7),
-              0.65,
-              0.65,
-              weekday_values,
-              color=PURPLE,
+              np.zeros(len(x)),
+              np.zeros(len(x)),
+              0.58,
+              0.62,
+              values,
+              color=GREEN,
+              alpha=0.90,
               shade=True
           )
 
-          ax.set_xticks(x)
+          for index, value in enumerate(values):
+
+              add_3d_value(
+                  ax,
+                  index + 0.29,
+                  0.31,
+                  value,
+                  value
+              )
+
+          ax.set_xticks(
+              x + 0.29
+          )
+
           ax.set_xticklabels(
-              weekday_names
+              labels,
+              rotation=18,
+              ha="right",
+              fontsize=8
+          )
+
+          ax.set_yticks([])
+
+          ax.set_zlabel(
+              "ACTIVITY",
+              color=GREEN
           )
 
           ax.set_title(
-              "3D DEVELOPMENT RHYTHM",
-              fontsize=18,
+              "GITHUB ACTIVITY SUMMARY",
+              fontsize=17,
               fontweight="bold",
-              color=PURPLE
-          )
-
-          ax.set_zlabel(
-              "ACTIVITY"
+              color=GREEN,
+              pad=18
           )
 
           save(
-              "3d-development-rhythm"
+              "github-activity-summary"
           )
 
+
           # ============================================================
-          # 6. TECHNOLOGY DISTRIBUTION 3D
+          # 2. MONTHLY CONTRIBUTION ANALYTICS
+          # ============================================================
+
+          fig, ax = plt.subplots(
+              figsize=(14, 5)
+          )
+
+          clean_axis(ax)
+
+          x = np.arange(12)
+
+          bars = ax.bar(
+              x,
+              month_values,
+              width=0.58,
+              color=GREEN,
+              alpha=0.90
+          )
+
+          for bar, value in zip(
+              bars,
+              month_values
+          ):
+
+              if value > 0:
+
+                  ax.text(
+                      bar.get_x()
+                      + bar.get_width() / 2,
+                      bar.get_height(),
+                      f"{value:,}",
+                      ha="center",
+                      va="bottom",
+                      fontsize=8,
+                      fontweight="bold",
+                      family="monospace",
+                      color=GREEN
+                  )
+
+          ax.set_xticks(x)
+
+          ax.set_xticklabels(
+              month_labels
+          )
+
+          ax.set_yticks([])
+
+          add_hud_header(
+              ax,
+              "CONTRIBUTION ACTIVITY",
+              "ACTIVITY://MONTHLY"
+          )
+
+          ax.text(
+              0.99,
+              0.92,
+              f"YEAR://{current_year}",
+              transform=ax.transAxes,
+              fontsize=7,
+              family="monospace",
+              color=MUTED,
+              ha="right"
+          )
+
+          save(
+              "github-contribution-analytics"
+          )
+
+
+          # ============================================================
+          # 3. COMMIT ANALYTICS
+          # ============================================================
+
+          commit_month_values = [
+              int(
+                  value *
+                  commits /
+                  total_contributions
+              )
+              if total_contributions > 0
+              else 0
+              for value in month_values
+          ]
+
+          fig, ax = plt.subplots(
+              figsize=(14, 5)
+          )
+
+          clean_axis(ax)
+
+          x = np.arange(12)
+
+          bars = ax.bar(
+              x,
+              commit_month_values,
+              width=0.58,
+              color=GREEN_LIGHT,
+              alpha=0.95
+          )
+
+          for bar, value in zip(
+              bars,
+              commit_month_values
+          ):
+
+              if value > 0:
+
+                  ax.text(
+                      bar.get_x()
+                      + bar.get_width() / 2,
+                      bar.get_height(),
+                      f"{value:,}",
+                      ha="center",
+                      va="bottom",
+                      fontsize=8,
+                      fontweight="bold",
+                      family="monospace",
+                      color=GREEN
+                  )
+
+          ax.set_xticks(x)
+
+          ax.set_xticklabels(
+              month_labels
+          )
+
+          ax.set_yticks([])
+
+          add_hud_header(
+              ax,
+              "COMMIT ACTIVITY",
+              "COMMITS://TELEMETRY"
+          )
+
+          ax.text(
+              0.99,
+              0.92,
+              f"TOTAL://{commits:,}",
+              transform=ax.transAxes,
+              fontsize=8,
+              family="monospace",
+              color=GREEN,
+              ha="right"
+          )
+
+          save(
+              "github-commit-analytics"
+          )
+
+
+          # ============================================================
+          # 4. CONTRIBUTION TREND
+          # ============================================================
+
+          activity_values = np.array([
+              day["contributionCount"]
+              for day in contribution_days
+          ])
+
+          fig, ax = plt.subplots(
+              figsize=(15, 5)
+          )
+
+          clean_axis(ax)
+
+          if len(activity_values) > 0:
+
+              x = np.arange(
+                  len(activity_values)
+              )
+
+              ax.plot(
+                  x,
+                  activity_values,
+                  color=GREEN,
+                  linewidth=1.7
+              )
+
+              ax.fill_between(
+                  x,
+                  activity_values,
+                  0,
+                  color=GREEN,
+                  alpha=0.08
+              )
+
+              peak_index = int(
+                  np.argmax(
+                      activity_values
+                  )
+              )
+
+              peak_value = int(
+                  activity_values[
+                      peak_index
+                  ]
+              )
+
+              ax.scatter(
+                  [peak_index],
+                  [peak_value],
+                  s=35,
+                  color=GREEN_NEON,
+                  zorder=5
+              )
+
+              ax.annotate(
+                  f"{peak_value:,}",
+                  (
+                      peak_index,
+                      peak_value
+                  ),
+                  xytext=(0, 10),
+                  textcoords="offset points",
+                  ha="center",
+                  fontsize=9,
+                  fontweight="bold",
+                  family="monospace",
+                  color=GREEN
+              )
+
+          ax.set_xticks([])
+
+          ax.set_yticks([])
+
+          add_hud_header(
+              ax,
+              "CONTRIBUTION VELOCITY",
+              "ACTIVITY://TIMELINE"
+          )
+
+          save(
+              "github-contribution-trend"
+          )
+
+
+          # ============================================================
+          # 5. PULL REQUEST + ISSUE ANALYTICS
+          # ============================================================
+
+          pr_issue_labels = [
+              "PULL REQUESTS",
+              "ISSUES"
+          ]
+
+          pr_issue_values = [
+              prs,
+              issue_contributions
+          ]
+
+          fig = plt.figure(
+              figsize=(11, 5)
+          )
+
+          ax = fig.add_subplot(
+              111,
+              projection="3d"
+          )
+
+          clean_3d_axis(ax)
+
+          x = np.arange(2)
+
+          ax.bar3d(
+              x,
+              np.zeros(2),
+              np.zeros(2),
+              0.65,
+              0.65,
+              pr_issue_values,
+              color=GREEN_LIGHT,
+              shade=True
+          )
+
+          for index, value in enumerate(
+              pr_issue_values
+          ):
+
+              add_3d_value(
+                  ax,
+                  index + 0.325,
+                  0.325,
+                  value,
+                  value
+              )
+
+          ax.set_xticks(
+              x + 0.325
+          )
+
+          ax.set_xticklabels(
+              pr_issue_labels
+          )
+
+          ax.set_yticks([])
+
+          ax.set_title(
+              "COLLABORATION ACTIVITY",
+              fontsize=16,
+              fontweight="bold",
+              color=GREEN,
+              pad=18
+          )
+
+          save(
+              "github-collaboration-analytics"
+          )
+
+
+          # ============================================================
+          # 6. REPOSITORY ANALYTICS
+          # ============================================================
+
+          repository_months = Counter()
+
+          for dt in repository_dates:
+
+              if dt.year == current_year:
+
+                  repository_months[
+                      dt.month
+                  ] += 1
+
+          repository_growth = [
+              repository_months.get(
+                  month,
+                  0
+              )
+              for month in range(1, 13)
+          ]
+
+          fig, ax = plt.subplots(
+              figsize=(14, 5)
+          )
+
+          clean_axis(ax)
+
+          x = np.arange(12)
+
+          bars = ax.bar(
+              x,
+              repository_growth,
+              width=0.58,
+              color=GREEN,
+              alpha=0.9
+          )
+
+          for bar, value in zip(
+              bars,
+              repository_growth
+          ):
+
+              if value > 0:
+
+                  ax.text(
+                      bar.get_x()
+                      + bar.get_width() / 2,
+                      bar.get_height(),
+                      f"{value:,}",
+                      ha="center",
+                      va="bottom",
+                      fontsize=8,
+                      fontweight="bold",
+                      family="monospace",
+                      color=GREEN
+                  )
+
+          ax.set_xticks(x)
+
+          ax.set_xticklabels(
+              month_labels
+          )
+
+          ax.set_yticks([])
+
+          add_hud_header(
+              ax,
+              "REPOSITORY ACTIVITY",
+              "REPOSITORIES://GROWTH"
+          )
+
+          ax.text(
+              0.99,
+              0.92,
+              f"PUBLIC://{public_repositories:,}",
+              transform=ax.transAxes,
+              fontsize=8,
+              family="monospace",
+              color=GREEN,
+              ha="right"
+          )
+
+          save(
+              "github-repository-analytics"
+          )
+
+
+          # ============================================================
+          # 7. STARS + FORKS
+          # ============================================================
+
+          star_fork_labels = [
+              "STARS",
+              "FORKS",
+              "WATCHERS"
+          ]
+
+          star_fork_values = [
+              total_stars,
+              total_forks,
+              total_watchers
+          ]
+
+          fig = plt.figure(
+              figsize=(13, 5)
+          )
+
+          ax = fig.add_subplot(
+              111,
+              projection="3d"
+          )
+
+          clean_3d_axis(ax)
+
+          x = np.arange(3)
+
+          ax.bar3d(
+              x,
+              np.zeros(3),
+              np.zeros(3),
+              0.62,
+              0.62,
+              star_fork_values,
+              color=GREEN_LIGHT,
+              shade=True
+          )
+
+          for index, value in enumerate(
+              star_fork_values
+          ):
+
+              add_3d_value(
+                  ax,
+                  index + 0.31,
+                  0.31,
+                  value,
+                  value
+              )
+
+          ax.set_xticks(
+              x + 0.31
+          )
+
+          ax.set_xticklabels(
+              star_fork_labels
+          )
+
+          ax.set_yticks([])
+
+          ax.set_title(
+              "OPEN SOURCE FOOTPRINT",
+              fontsize=16,
+              fontweight="bold",
+              color=GREEN,
+              pad=18
+          )
+
+          save(
+              "github-open-source-footprint"
+          )
+
+
+          # ============================================================
+          # 8. STREAK SYSTEM
+          # ============================================================
+
+          streak_labels = [
+              "CURRENT",
+              "LONGEST"
+          ]
+
+          streak_values = [
+              current_streak,
+              longest_streak
+          ]
+
+          fig, ax = plt.subplots(
+              figsize=(13, 4.5)
+          )
+
+          clean_axis(ax)
+
+          max_streak = max(
+              streak_values
+          )
+
+          if max_streak == 0:
+              max_streak = 1
+
+          positions = [
+              0.25,
+              0.70
+          ]
+
+          for position, label, value in zip(
+              positions,
+              streak_labels,
+              streak_values
+          ):
+
+              ax.text(
+                  position,
+                  0.78,
+                  f"{value:,}",
+                  transform=ax.transAxes,
+                  fontsize=28,
+                  fontweight="bold",
+                  family="monospace",
+                  color=GREEN,
+                  ha="center"
+              )
+
+              ax.text(
+                  position,
+                  0.55,
+                  label,
+                  transform=ax.transAxes,
+                  fontsize=9,
+                  family="monospace",
+                  color=MUTED,
+                  ha="center"
+              )
+
+              progress = (
+                  value /
+                  max_streak
+              )
+
+              ax.plot(
+                  [
+                      position - 0.14,
+                      position + 0.14
+                  ],
+                  [0.36, 0.36],
+                  transform=ax.transAxes,
+                  color=GREEN_LIGHT,
+                  linewidth=3,
+                  solid_capstyle="round"
+              )
+
+              ax.plot(
+                  [
+                      position - 0.14,
+                      position - 0.14
+                      + 0.28 * progress
+                  ],
+                  [0.36, 0.36],
+                  transform=ax.transAxes,
+                  color=GREEN_NEON,
+                  linewidth=4,
+                  solid_capstyle="round"
+              )
+
+          ax.text(
+              0.5,
+              0.08,
+              (
+                  f"ACTIVE DAYS {active_days:,}"
+                  f"   •   "
+                  f"CONSISTENCY {consistency:.1f}%"
+              ),
+              transform=ax.transAxes,
+              fontsize=8,
+              family="monospace",
+              color=TEXT_LIGHT,
+              ha="center"
+          )
+
+          ax.text(
+              0.01,
+              1.05,
+              "DEVELOPER CONSISTENCY",
+              transform=ax.transAxes,
+              fontsize=16,
+              fontweight="bold",
+              color=GREEN
+          )
+
+          ax.text(
+              0.99,
+              1.055,
+              "STREAK://SYSTEM",
+              transform=ax.transAxes,
+              fontsize=7,
+              family="monospace",
+              color=MUTED,
+              ha="right"
+          )
+
+          save(
+              "github-streak-system"
+          )
+
+
+          # ============================================================
+          # 9. CONTRIBUTION HEATMAP
+          # ============================================================
+
+          heat_days = contribution_days[-364:]
+
+          weeks = 52
+          days_per_week = 7
+
+          heat_matrix = np.zeros(
+              (
+                  days_per_week,
+                  weeks
+              )
+          )
+
+          for index, day in enumerate(
+              heat_days
+          ):
+
+              week = index // 7
+              weekday = index % 7
+
+              if week < weeks:
+
+                  heat_matrix[
+                      weekday,
+                      week
+                  ] = day[
+                      "contributionCount"
+                  ]
+
+          fig, ax = plt.subplots(
+              figsize=(15, 4.2)
+          )
+
+          clean_axis(ax)
+
+          maximum = max(
+              1,
+              np.max(
+                  heat_matrix
+              )
+          )
+
+          for y in range(
+              days_per_week
+          ):
+
+              for x in range(
+                  weeks
+              ):
+
+                  value = heat_matrix[
+                      y,
+                      x
+                  ]
+
+                  if value > 0:
+
+                      intensity = (
+                          0.25
+                          +
+                          0.70 *
+                          (
+                              value /
+                              maximum
+                          )
+                      )
+
+                      ax.scatter(
+                          x,
+                          y,
+                          s=58,
+                          color=(
+                              GREEN_NEON
+                              if intensity > 0.70
+                              else GREEN_LIGHT
+                          ),
+                          alpha=min(
+                              1.0,
+                              intensity
+                          )
+                      )
+
+                      if value >= 5:
+
+                          ax.text(
+                              x,
+                              y,
+                              str(
+                                  int(value)
+                              ),
+                              fontsize=4.5,
+                              color=GREEN,
+                              ha="center",
+                              va="center",
+                              family="monospace"
+                          )
+
+          ax.set_xlim(
+              -1,
+              weeks
+          )
+
+          ax.set_ylim(
+              days_per_week,
+              -1
+          )
+
+          ax.set_xticks([])
+
+          ax.set_yticks(
+              range(7)
+          )
+
+          ax.set_yticklabels([
+              "MON",
+              "TUE",
+              "WED",
+              "THU",
+              "FRI",
+              "SAT",
+              "SUN"
+          ], fontsize=7)
+
+          ax.text(
+              0.01,
+              1.08,
+              "CONTRIBUTION HEATMAP",
+              transform=ax.transAxes,
+              fontsize=16,
+              fontweight="bold",
+              color=GREEN
+          )
+
+          ax.text(
+              0.99,
+              1.085,
+              "365D://ACTIVITY",
+              transform=ax.transAxes,
+              fontsize=7,
+              family="monospace",
+              color=MUTED,
+              ha="right"
+          )
+
+          save(
+              "github-contribution-heatmap"
+          )
+
+
+          # ============================================================
+          # 10. LANGUAGE ANALYTICS
           # ============================================================
 
           top_languages = (
-              languages
-              .most_common(15)
+              languages.most_common(12)
           )
 
           language_names = [
@@ -779,773 +1666,900 @@ jobs:
               for item in top_languages
           ]
 
-          fig = plt.figure(
-              figsize=(15, 8)
+          language_total = sum(
+              language_values
           )
 
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
+          language_percentages = [
+              (
+                  value /
+                  language_total *
+                  100
+              )
+              if language_total
+              else 0
+              for value in language_values
+          ]
+
+          fig, ax = plt.subplots(
+              figsize=(14, 6)
           )
 
-          x = np.arange(
+          clean_axis(ax)
+
+          y = np.arange(
               len(language_names)
           )
 
-          ax.bar3d(
-              x,
-              np.zeros(len(x)),
-              np.zeros(len(x)),
-              0.65,
-              0.65,
+          bars = ax.barh(
+              y,
               language_values,
-              color=GREEN2,
-              shade=True
+              height=0.52,
+              color=GREEN,
+              alpha=0.90
           )
 
-          ax.set_xticks(x)
-          ax.set_xticklabels(
-              language_names,
-              rotation=35,
-              ha="right"
-          )
-
-          ax.set_title(
-              "3D TECHNOLOGY DISTRIBUTION",
-              fontsize=18,
-              fontweight="bold",
-              color=GREEN2
-          )
-
-          ax.set_zlabel(
-              "REPOSITORIES"
-          )
-
-          save(
-              "3d-technology-distribution"
-          )
-
-          # ============================================================
-          # 7. ALL REPOSITORIES UPDATE TIMELINE
-          # ============================================================
-
-          repo_positions = np.arange(
-              len(update_dates)
-          )
-
-          timestamps = np.array([
-              item[1].timestamp()
-              for item in update_dates
-          ])
-
-          if len(timestamps) > 0:
-
-              normalized_time = (
-                  timestamps -
-                  timestamps.min()
-              )
-
-          else:
-
-              normalized_time = np.array([])
-
-          fig = plt.figure(
-              figsize=(16, 9)
-          )
-
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
-          )
-
-          if len(repo_positions) > 0:
-
-              z_values = np.ones(
-                  len(repo_positions)
-              )
-
-              ax.scatter(
-                  repo_positions,
-                  normalized_time,
-                  z_values,
-                  c=normalized_time,
-                  cmap="winter",
-                  s=45,
-                  depthshade=True
-              )
-
-          ax.set_title(
-              f"3D REPOSITORY UPDATE TIMELINE | "
-              f"{repository_count} REPOSITORIES",
-              fontsize=18,
-              fontweight="bold",
-              color=GREEN
-          )
-
-          ax.set_xlabel(
-              "REPOSITORY INDEX"
-          )
-
-          ax.set_ylabel(
-              "UPDATE TIMESTAMP"
-          )
-
-          ax.set_zlabel(
-              "ACTIVITY LAYER"
-          )
-
-          save(
-              "3d-all-repository-updates"
-          )
-
-          # ============================================================
-          # 8. REPOSITORY ACTIVITY 3D
-          # ============================================================
-
-          repository_activity = []
-
-          for repo in repositories:
-
-              activity_score = (
-                  repo["stargazers_count"] +
-                  repo["forks_count"] * 2 +
-                  repo["watchers_count"] +
-                  repo.get("size", 0) / 1000
-              )
-
-              repository_activity.append(
-                  (
-                      repo["name"],
-                      activity_score
-                  )
-              )
-
-          repository_activity.sort(
-              key=lambda x: x[1],
-              reverse=True
-          )
-
-          top_activity = (
-              repository_activity[:30]
-          )
-
-          names = [
-              item[0]
-              for item in top_activity
-          ]
-
-          scores = [
-              item[1]
-              for item in top_activity
-          ]
-
-          fig = plt.figure(
-              figsize=(16, 9)
-          )
-
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
-          )
-
-          x = np.arange(
-              len(names)
-          )
-
-          ax.bar3d(
-              x,
-              np.zeros(len(x)),
-              np.zeros(len(x)),
-              0.7,
-              0.7,
-              scores,
-              color=ORANGE,
-              shade=True
-          )
-
-          ax.set_xticks(x)
-          ax.set_xticklabels(
-              names,
-              rotation=70,
-              fontsize=6
-          )
-
-          ax.set_title(
-              "3D REPOSITORY ACTIVITY ENGINE",
-              fontsize=18,
-              fontweight="bold",
-              color=ORANGE
-          )
-
-          ax.set_zlabel(
-              "ACTIVITY SCORE"
-          )
-
-          save(
-              "3d-repository-activity"
-          )
-
-          # ============================================================
-          # 9. OPEN SOURCE FOOTPRINT 3D
-          # ============================================================
-
-          labels = [
-              "STARS",
-              "FORKS",
-              "WATCHERS",
-              "PUBLIC",
-              "ORIGINAL"
-          ]
-
-          values = [
-              total_stars,
-              total_forks,
-              total_watchers,
-              public_repositories,
-              original_repositories
-          ]
-
-          fig = plt.figure(
-              figsize=(14, 7)
-          )
-
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
-          )
-
-          x = np.arange(
-              len(labels)
-          )
-
-          ax.bar3d(
-              x,
-              np.zeros(len(x)),
-              np.zeros(len(x)),
-              0.7,
-              0.7,
-              values,
-              color=CYAN,
-              shade=True
-          )
-
-          ax.set_xticks(x)
-          ax.set_xticklabels(
-              labels
-          )
-
-          ax.set_title(
-              "3D OPEN SOURCE FOOTPRINT",
-              fontsize=18,
-              fontweight="bold",
-              color=CYAN
-          )
-
-          ax.set_zlabel(
-              "COUNT"
-          )
-
-          save(
-              "3d-open-source-footprint"
-          )
-
-          # ============================================================
-          # 10. STREAK OBSERVATORY
-          # ============================================================
-
-          today = now_ist.strftime(
-              "%Y-%m-%d"
-          )
-
-          reversed_days = list(
-              reversed(
-                  contribution_days
-              )
-          )
-
-          current_streak = 0
-
-          start_index = 0
-
-          if (
-              reversed_days
-              and
-              reversed_days[0]["date"]
-              == today
-              and
-              reversed_days[0][
-                  "contributionCount"
-              ] == 0
+          for bar, value, percentage in zip(
+              bars,
+              language_values,
+              language_percentages
           ):
 
-              start_index = 1
+              ax.text(
+                  bar.get_width(),
+                  bar.get_y()
+                  + bar.get_height() / 2,
+                  f"  {value:,}  |  {percentage:.1f}%",
+                  va="center",
+                  fontsize=8,
+                  fontweight="bold",
+                  family="monospace",
+                  color=GREEN
+              )
 
-          for day in reversed_days[
-              start_index:
-          ]:
+          ax.set_yticks(y)
 
-              if day[
-                  "contributionCount"
-              ] > 0:
-
-                  current_streak += 1
-
-              else:
-
-                  break
-
-          longest_streak = 0
-          running = 0
-
-          for day in contribution_days:
-
-              if day[
-                  "contributionCount"
-              ] > 0:
-
-                  running += 1
-
-                  longest_streak = max(
-                      longest_streak,
-                      running
-                  )
-
-              else:
-
-                  running = 0
-
-          fig = plt.figure(
-              figsize=(15, 5)
+          ax.set_yticklabels(
+              language_names
           )
 
-          ax = fig.add_subplot(
-              111,
-              projection="3d"
-          )
+          ax.invert_yaxis()
 
-          values = [
-              current_streak,
-              longest_streak
-          ]
+          ax.set_xticks([])
 
-          x = np.arange(2)
-
-          ax.bar3d(
-              x,
-              [0, 0],
-              [0, 0],
-              [0.7, 0.7],
-              [0.7, 0.7],
-              values,
-              color=GREEN,
-              shade=True
-          )
-
-          ax.set_xticks(x)
-          ax.set_xticklabels([
-              "CURRENT",
-              "LONGEST"
-          ])
-
-          ax.set_title(
-              "3D DEVELOPMENT STREAK OBSERVATORY",
-              fontsize=18,
-              fontweight="bold",
-              color=GREEN
-          )
-
-          ax.set_zlabel(
-              "DAYS"
+          add_hud_header(
+              ax,
+              "PROGRAMMING LANGUAGE ANALYTICS",
+              "LANGUAGE://DISTRIBUTION"
           )
 
           save(
-              "3d-development-streak"
+              "github-language-analytics"
           )
 
-          # ============================================================
-          # 11. REPOSITORY SCALE MATRIX
-          # ============================================================
-
-          repo_metrics = []
-
-          for repo in repositories:
-
-              repo_metrics.append([
-                  repo["stargazers_count"],
-                  repo["forks_count"],
-                  repo["watchers_count"],
-                  repo.get("size", 0)
-              ])
-
-          if repo_metrics:
-
-              repo_matrix = np.array(
-                  repo_metrics,
-                  dtype=float
-              )
-
-              repo_matrix = np.log1p(
-                  repo_matrix
-              )
-
-              fig = plt.figure(
-                  figsize=(16, 8)
-              )
-
-              ax = fig.add_subplot(
-                  111,
-                  projection="3d"
-              )
-
-              x = np.arange(
-                  len(repo_matrix)
-              )
-
-              ax.scatter(
-                  x,
-                  repo_matrix[:, 0],
-                  repo_matrix[:, 1],
-                  c=repo_matrix[:, 3],
-                  cmap="autumn",
-                  s=35,
-                  depthshade=True
-              )
-
-              ax.set_title(
-                  "3D REPOSITORY SCALE MATRIX",
-                  fontsize=18,
-                  fontweight="bold",
-                  color=RED
-              )
-
-              ax.set_xlabel(
-                  "REPOSITORY INDEX"
-              )
-
-              ax.set_ylabel(
-                  "STARS / LOG SCALE"
-              )
-
-              ax.set_zlabel(
-                  "FORKS / LOG SCALE"
-              )
-
-              save(
-                  "3d-repository-scale-matrix"
-              )
 
           # ============================================================
-          # 12. ACTIVITY BARCODE
+          # 11. ACTIVITY BY WEEKDAY
           # ============================================================
-
-          barcode_days = contribution_days[-365:]
-
-          barcode = np.array([
-              1
-              if day["contributionCount"] > 0
-              else 0
-              for day in barcode_days
-          ])
 
           fig, ax = plt.subplots(
-              figsize=(16, 2.8)
+              figsize=(13, 4.8)
           )
 
-          ax.imshow(
-              barcode.reshape(
-                  1,
-                  -1
-              ),
-              aspect="auto",
-              cmap="RdYlGn",
-              interpolation="nearest"
+          clean_axis(ax)
+
+          x = np.arange(7)
+
+          bars = ax.bar(
+              x,
+              weekday_values,
+              width=0.56,
+              color=GREEN_LIGHT,
+              alpha=0.92
+          )
+
+          for bar, value in zip(
+              bars,
+              weekday_values
+          ):
+
+              if value > 0:
+
+                  ax.text(
+                      bar.get_x()
+                      + bar.get_width() / 2,
+                      bar.get_height(),
+                      f"{value:,}",
+                      ha="center",
+                      va="bottom",
+                      fontsize=8,
+                      fontweight="bold",
+                      family="monospace",
+                      color=GREEN
+                  )
+
+          ax.set_xticks(x)
+
+          ax.set_xticklabels(
+              weekday_names
           )
 
           ax.set_yticks([])
 
-          ax.set_xticks(
-              np.linspace(
+          add_hud_header(
+              ax,
+              "DEVELOPMENT RHYTHM",
+              "ACTIVITY://WEEKDAY"
+          )
+
+          save(
+              "github-development-rhythm"
+          )
+
+
+          # ============================================================
+          # 12. ANNUAL VIEW
+          # ============================================================
+
+          years = [
+              str(item[0])
+              for item in yearly_values
+          ]
+
+          annual_values = [
+              item[1]
+              for item in yearly_values
+          ]
+
+          fig, ax = plt.subplots(
+              figsize=(12, 4.5)
+          )
+
+          clean_axis(ax)
+
+          x = np.arange(
+              len(years)
+          )
+
+          bars = ax.bar(
+              x,
+              annual_values,
+              width=0.58,
+              color=GREEN,
+              alpha=0.9
+          )
+
+          for bar, value in zip(
+              bars,
+              annual_values
+          ):
+
+              ax.text(
+                  bar.get_x()
+                  + bar.get_width() / 2,
+                  bar.get_height(),
+                  f"{value:,}",
+                  ha="center",
+                  va="bottom",
+                  fontsize=9,
+                  fontweight="bold",
+                  family="monospace",
+                  color=GREEN
+              )
+
+          ax.set_xticks(x)
+
+          ax.set_xticklabels(
+              years
+          )
+
+          ax.set_yticks([])
+
+          add_hud_header(
+              ax,
+              "ANNUAL ACTIVITY",
+              "YEAR://OVERVIEW"
+          )
+
+          save(
+              "github-annual-activity"
+          )
+
+
+          # ============================================================
+          # 13. REPOSITORY CREATION TIMELINE
+          # ============================================================
+
+          if repository_dates:
+
+              timeline_counts = Counter()
+
+              for dt in repository_dates:
+
+                  timeline_counts[
+                      dt.year
+                  ] += 1
+
+              timeline_years = sorted(
+                  timeline_counts.keys()
+              )
+
+              timeline_values = [
+                  timeline_counts[
+                      year
+                  ]
+                  for year in timeline_years
+              ]
+
+          else:
+
+              timeline_years = []
+              timeline_values = []
+
+
+          fig, ax = plt.subplots(
+              figsize=(14, 4.5)
+          )
+
+          clean_axis(ax)
+
+          if timeline_years:
+
+              x = np.arange(
+                  len(timeline_years)
+              )
+
+              ax.plot(
+                  x,
+                  timeline_values,
+                  color=GREEN,
+                  linewidth=2
+              )
+
+              ax.scatter(
+                  x,
+                  timeline_values,
+                  color=GREEN_NEON,
+                  s=45,
+                  zorder=5
+              )
+
+              for position, value in zip(
+                  x,
+                  timeline_values
+              ):
+
+                  ax.text(
+                      position,
+                      value,
+                      f"{value:,}",
+                      fontsize=8,
+                      fontweight="bold",
+                      family="monospace",
+                      color=GREEN,
+                      ha="center",
+                      va="bottom"
+                  )
+
+              ax.set_xticks(x)
+
+              ax.set_xticklabels(
+                  timeline_years
+              )
+
+          else:
+
+              ax.text(
+                  0.5,
+                  0.5,
+                  "NO REPOSITORY TIMELINE DATA",
+                  transform=ax.transAxes,
+                  ha="center",
+                  va="center",
+                  color=MUTED,
+                  family="monospace"
+              )
+
+          ax.set_yticks([])
+
+          add_hud_header(
+              ax,
+              "REPOSITORY CREATION TIMELINE",
+              "REPOSITORY://HISTORY"
+          )
+
+          save(
+              "github-repository-timeline"
+          )
+
+
+          # ============================================================
+          # 14. TECHNOLOGY DOMAIN MATRIX
+          # ============================================================
+
+          domain_aliases = {
+              "artificial-intelligence": [
+                  "ai",
+                  "artificial-intelligence",
+                  "machine-learning",
+                  "deep-learning",
+                  "llm",
+                  "llms",
+                  "generative-ai"
+              ],
+              "cybersecurity": [
+                  "cybersecurity",
+                  "cyber-security",
+                  "security",
+                  "infosec"
+              ],
+              "cryptography": [
+                  "cryptography",
+                  "crypto",
+                  "post-quantum-cryptography"
+              ],
+              "cloud-computing": [
+                  "cloud",
+                  "cloud-computing",
+                  "aws",
+                  "azure",
+                  "gcp"
+              ],
+              "quantum-computing": [
+                  "quantum",
+                  "quantum-computing"
+              ],
+              "blockchain": [
+                  "blockchain",
+                  "web3",
+                  "smart-contracts"
+              ],
+              "distributed-systems": [
+                  "distributed-systems",
+                  "distributed-computing"
+              ],
+              "python": [
+                  "python"
+              ],
+              "data-engineering": [
+                  "data-engineering",
+                  "data-science",
+                  "analytics"
+              ],
+              "rag": [
+                  "rag",
+                  "retrieval-augmented-generation"
+              ],
+              "ai-agents": [
+                  "agents",
+                  "ai-agents",
+                  "agentic-ai"
+              ]
+          }
+
+          domain_counts = Counter()
+
+          normalized_topics = set(
+              topics.keys()
+          )
+
+          for domain, aliases in domain_aliases.items():
+
+              count = 0
+
+              for alias in aliases:
+
+                  if alias in normalized_topics:
+
+                      count += topics[alias]
+
+              if count > 0:
+
+                  domain_counts[
+                      domain
+                  ] = count
+
+
+          fig, ax = plt.subplots(
+              figsize=(15, 5)
+          )
+
+          clean_axis(ax)
+
+          if domain_counts:
+
+              domain_items = (
+                  domain_counts
+                  .most_common()
+              )
+
+              for index, (
+                  domain,
+                  value
+              ) in enumerate(
+                  domain_items
+              ):
+
+                  x_position = (
+                      index %
+                      4
+                  )
+
+                  y_position = -(
+                      index // 4
+                  )
+
+                  ax.text(
+                      x_position,
+                      y_position,
+                      f"[ {domain.upper()} ]",
+                      fontsize=8,
+                      family="monospace",
+                      color=GREEN,
+                      ha="center",
+                      va="center"
+                  )
+
+                  ax.text(
+                      x_position,
+                      y_position - 0.38,
+                      f"{value:,} REPOSITORIES",
+                      fontsize=6.5,
+                      family="monospace",
+                      color=MUTED,
+                      ha="center"
+                  )
+
+              rows = (
+                  len(domain_items) + 3
+              ) // 4
+
+              ax.set_xlim(
+                  -0.6,
+                  3.6
+              )
+
+              ax.set_ylim(
+                  -rows + 0.2,
+                  0.7
+              )
+
+          else:
+
+              ax.text(
+                  0.5,
+                  0.5,
+                  "DOMAIN DATA NOT AVAILABLE FROM REPOSITORY TOPICS",
+                  transform=ax.transAxes,
+                  ha="center",
+                  va="center",
+                  fontsize=8,
+                  family="monospace",
+                  color=MUTED
+              )
+
+          ax.axis("off")
+
+          add_hud_header(
+              ax,
+              "TECHNOLOGY DOMAIN MATRIX",
+              "TOPICS://OBSERVED"
+          )
+
+          save(
+              "github-domain-matrix"
+          )
+
+
+          # ============================================================
+          # 15. DEVELOPER ACTIVITY XP
+          # ============================================================
+
+          activity_components = [
+              commits,
+              total_contributions,
+              prs,
+              issue_contributions,
+              repository_count
+          ]
+
+          activity_total = sum(
+              activity_components
+          )
+
+          if activity_total > 0:
+
+              normalized = min(
+                  100,
+                  (
+                      total_contributions /
+                      max(
+                          total_contributions,
+                          commits,
+                          1
+                      )
+                  ) * 100
+              )
+
+          else:
+
+              normalized = 0
+
+          filled = int(
+              normalized /
+              100 *
+              24
+          )
+
+          filled = min(
+              24,
+              max(
                   0,
-                  len(barcode) - 1,
-                  12
+                  filled
               )
           )
 
-          ax.set_xticklabels([
-              "PERIOD 1",
-              "PERIOD 2",
-              "PERIOD 3",
-              "PERIOD 4",
-              "PERIOD 5",
-              "PERIOD 6",
-              "PERIOD 7",
-              "PERIOD 8",
-              "PERIOD 9",
-              "PERIOD 10",
-              "PERIOD 11",
-              "PERIOD 12"
-          ], rotation=35)
+          bar_text = (
+              "█" * filled
+              +
+              "░" * (24 - filled)
+          )
 
-          ax.set_title(
-              "GITHUB ACTIVITY BARCODE | 365 DAYS",
-              fontsize=17,
+          fig, ax = plt.subplots(
+              figsize=(14, 3.8)
+          )
+
+          clean_axis(ax)
+
+          ax.text(
+              0.02,
+              0.67,
+              "DEVELOPER ACTIVITY",
+              transform=ax.transAxes,
+              fontsize=15,
               fontweight="bold",
               color=GREEN
           )
 
-          save(
-              "github-activity-barcode"
+          ax.text(
+              0.02,
+              0.36,
+              bar_text,
+              transform=ax.transAxes,
+              fontsize=19,
+              family="monospace",
+              color=GREEN
           )
 
-          # ============================================================
-          # 13. RED ACTIVITY SPECTRUM
-          # ============================================================
-
-          activity_values = np.array([
-              day["contributionCount"]
-              for day in contribution_days
-          ])
-
-          fig, ax = plt.subplots(
-              figsize=(16, 4)
+          ax.text(
+              0.98,
+              0.36,
+              f"{total_contributions:,} CONTRIBUTIONS",
+              transform=ax.transAxes,
+              fontsize=8,
+              family="monospace",
+              color=MUTED,
+              ha="right"
           )
 
-          ax.fill_between(
-              range(
-                  len(activity_values)
-              ),
-              activity_values,
-              color=RED,
-              alpha=0.45
-          )
-
-          ax.plot(
-              activity_values,
-              color=RED2,
-              linewidth=1.5
-          )
-
-          ax.set_title(
-              "RED ACTIVITY SPECTRUM",
-              fontsize=17,
-              fontweight="bold",
-              color=RED
-          )
-
-          ax.set_xlabel(
-              "CONTRIBUTION DAY INDEX"
-          )
-
-          ax.set_ylabel(
-              "ACTIVITY"
-          )
-
-          ax.grid(
-              alpha=0.25
-          )
-
-          save(
-              "red-activity-spectrum"
-          )
-
-          # ============================================================
-          # 14. ENGINEERING PROFILE HUD
-          # ============================================================
-
-          fig = plt.figure(
-              figsize=(15, 6)
-          )
-
-          ax = fig.add_subplot(
-              111
+          ax.text(
+              0.02,
+              0.10,
+              "VISUAL ACTIVITY INDICATOR • NOT AN OFFICIAL GITHUB SCORE",
+              transform=ax.transAxes,
+              fontsize=6.5,
+              family="monospace",
+              color=MUTED
           )
 
           ax.axis("off")
 
-          metrics = [
+          save(
+              "github-developer-activity"
+          )
+
+
+          # ============================================================
+          # 16. MILESTONES
+          # ============================================================
+
+          milestones = []
+
+          milestone_rules = [
               (
-                  "REPOSITORIES",
-                  repository_count,
-                  GREEN
+                  "FIRST REPOSITORY",
+                  repository_count >= 1
               ),
               (
-                  "CONTRIBUTIONS",
-                  total_contributions,
-                  CYAN
+                  "100 CONTRIBUTIONS",
+                  total_contributions >= 100
               ),
               (
-                  "COMMITS",
-                  commits,
-                  GREEN2
+                  "500 CONTRIBUTIONS",
+                  total_contributions >= 500
               ),
               (
-                  "PULL REQUESTS",
-                  prs,
-                  PURPLE
+                  "1000 CONTRIBUTIONS",
+                  total_contributions >= 1000
               ),
               (
-                  "ISSUES",
-                  issue_contributions,
-                  ORANGE
+                  "100 COMMITS",
+                  commits >= 100
               ),
               (
-                  "STARS",
-                  total_stars,
-                  RED
+                  "500 COMMITS",
+                  commits >= 500
+              ),
+              (
+                  "1000 COMMITS",
+                  commits >= 1000
+              ),
+              (
+                  "FIRST PR",
+                  prs >= 1
+              ),
+              (
+                  "FIRST ISSUE",
+                  issue_contributions >= 1
+              ),
+              (
+                  "FIRST STAR",
+                  total_stars >= 1
               )
           ]
 
-          positions = np.linspace(
-              0.08,
-              0.92,
-              len(metrics)
+          for label, achieved in milestone_rules:
+
+              if achieved:
+                  milestones.append(label)
+
+
+          fig, ax = plt.subplots(
+              figsize=(15, 4.5)
           )
 
-          for position, item in zip(
-              positions,
-              metrics
-          ):
+          clean_axis(ax)
 
-              label, value, color = item
+          if milestones:
 
-              ax.text(
-                  position,
-                  0.58,
-                  f"{value:,}",
-                  fontsize=25,
-                  fontweight="bold",
-                  color=color,
-                  ha="center"
+              for index, label in enumerate(
+                  milestones
+              ):
+
+                  x = (
+                      index %
+                      5
+                  )
+
+                  y = -(
+                      index // 5
+                  )
+
+                  ax.text(
+                      x,
+                      y,
+                      f"◆ {label}",
+                      fontsize=8,
+                      family="monospace",
+                      fontweight="bold",
+                      color=GREEN
+                  )
+
+              rows = (
+                  len(milestones) + 4
+              ) // 5
+
+              ax.set_xlim(
+                  -0.3,
+                  4.3
               )
 
-              ax.text(
-                  position,
-                  0.30,
-                  label,
-                  fontsize=8,
-                  color=WHITE,
-                  ha="center"
+              ax.set_ylim(
+                  -rows + 0.2,
+                  0.7
               )
+
+          else:
+
+              ax.text(
+                  0.5,
+                  0.5,
+                  "NO MILESTONES RECORDED",
+                  transform=ax.transAxes,
+                  ha="center",
+                  va="center",
+                  family="monospace",
+                  color=MUTED
+              )
+
+          ax.axis("off")
+
+          add_hud_header(
+              ax,
+              "DEVELOPER MILESTONES",
+              "MILESTONES://VERIFIED"
+          )
+
+          save(
+              "github-milestones"
+          )
+
+
+          # ============================================================
+          # 17. SYSTEM STATUS / TELEMETRY
+          # ============================================================
+
+          fig, ax = plt.subplots(
+              figsize=(15, 4.2)
+          )
+
+          clean_axis(ax)
+
+          ax.axis("off")
 
           ax.text(
-              0.5,
-              0.05,
-              (
-                  f"LAST GENERATED: "
-                  f"{generated_date} | "
-                  f"{generated_time}"
-              ),
-              fontsize=9,
-              color=GREY,
-              ha="center"
-          )
-
-          ax.set_title(
-              "GITHUB ENGINEERING CONTROL PANEL",
-              fontsize=19,
+              0.02,
+              0.78,
+              "SYSTEM STATUS: ONLINE",
+              fontsize=14,
               fontweight="bold",
               color=GREEN
           )
 
-          save(
-              "github-engineering-control-panel"
+          ax.text(
+              0.02,
+              0.57,
+              "GITHUB ACTIVITY: ACTIVE"
+              if total_contributions > 0
+              else
+              "GITHUB ACTIVITY: IDLE",
+              fontsize=9,
+              family="monospace",
+              color=GREEN
           )
 
-          # ============================================================
-          # 15. REPOSITORY INTELLIGENCE MATRIX
-          # ============================================================
+          ax.text(
+              0.02,
+              0.40,
+              "DATA: UPDATED",
+              fontsize=9,
+              family="monospace",
+              color=GREEN
+          )
 
-          matrix_repositories = sorted(
-              repositories,
-              key=lambda repo: (
-                  repo["stargazers_count"],
-                  repo["forks_count"],
-                  repo["watchers_count"]
+          ax.text(
+              0.02,
+              0.23,
+              "SYS://GITHUB",
+              fontsize=7,
+              family="monospace",
+              color=MUTED
+          )
+
+          ax.text(
+              0.25,
+              0.23,
+              "ACTIVITY://TELEMETRY",
+              fontsize=7,
+              family="monospace",
+              color=MUTED
+          )
+
+          ax.text(
+              0.53,
+              0.23,
+              "PROFILE://DEVELOPER",
+              fontsize=7,
+              family="monospace",
+              color=MUTED
+          )
+
+          ax.text(
+              0.78,
+              0.23,
+              "DATA://ANALYTICS",
+              fontsize=7,
+              family="monospace",
+              color=MUTED
+          )
+
+          ax.text(
+              0.02,
+              0.06,
+              (
+                  f"UPDATED://"
+                  f"{generated_date}"
+                  f" "
+                  f"{generated_time}"
               ),
-              reverse=True
+              fontsize=7,
+              family="monospace",
+              color=MUTED
           )
 
-          matrix_repositories = (
-              matrix_repositories[:30]
+          save(
+              "github-developer-telemetry"
           )
+
+
+          # ============================================================
+          # 18. CONTRIBUTION BREAKDOWN
+          # ============================================================
+
+          breakdown_labels = [
+              "COMMITS",
+              "PULL REQUESTS",
+              "ISSUES",
+              "REPOSITORIES"
+          ]
+
+          breakdown_values = [
+              commits,
+              prs,
+              issue_contributions,
+              repository_contributions
+          ]
 
           fig, ax = plt.subplots(
-              figsize=(16, 10)
+              figsize=(14, 5)
           )
 
-          ax.axis("off")
+          clean_axis(ax)
 
-          table_data = []
-
-          for repo in matrix_repositories:
-
-              language = (
-                  repo.get("language")
-                  or "-"
+          x = np.arange(
+              len(
+                  breakdown_labels
               )
-
-              updated = repo.get(
-                  "updated_at",
-                  "-"
-              )
-
-              if updated != "-":
-
-                  updated = datetime.fromisoformat(
-                      updated.replace(
-                          "Z",
-                          "+00:00"
-                      )
-                  ).strftime(
-                      "%d-%m-%Y"
-                  )
-
-              table_data.append([
-                  repo["name"][:24],
-                  language[:14],
-                  repo["stargazers_count"],
-                  repo["forks_count"],
-                  repo["watchers_count"],
-                  f"{repo.get('size', 0):,}",
-                  updated
-              ])
-
-          table = ax.table(
-              cellText=table_data,
-              colLabels=[
-                  "REPOSITORY",
-                  "LANGUAGE",
-                  "STARS",
-                  "FORKS",
-                  "WATCHERS",
-                  "SIZE KB",
-                  "UPDATED"
-              ],
-              loc="center",
-              cellLoc="center"
           )
 
-          table.auto_set_font_size(False)
-          table.set_fontsize(7)
-          table.scale(
-              1,
-              1.75
-          )
-
-          ax.set_title(
-              "REPOSITORY INTELLIGENCE MATRIX",
-              fontsize=18,
-              fontweight="bold",
+          bars = ax.bar(
+              x,
+              breakdown_values,
+              width=0.55,
               color=GREEN,
-              pad=20
+              alpha=0.9
+          )
+
+          for bar, value in zip(
+              bars,
+              breakdown_values
+          ):
+
+              ax.text(
+                  bar.get_x()
+                  + bar.get_width() / 2,
+                  bar.get_height(),
+                  f"{value:,}",
+                  ha="center",
+                  va="bottom",
+                  fontsize=9,
+                  fontweight="bold",
+                  family="monospace",
+                  color=GREEN
+              )
+
+          ax.set_xticks(x)
+
+          ax.set_xticklabels(
+              breakdown_labels,
+              rotation=10
+          )
+
+          ax.set_yticks([])
+
+          add_hud_header(
+              ax,
+              "CONTRIBUTION BREAKDOWN",
+              "GITHUB://CONTRIBUTIONS"
           )
 
           save(
-              "repository-intelligence-matrix"
+              "github-contribution-breakdown"
           )
 
+
           # ============================================================
-          # FINAL STATUS
+          # FINAL CONSOLE OUTPUT
           # ============================================================
 
           print("")
@@ -1553,58 +2567,101 @@ jobs:
               "================================================"
           )
           print(
-              " GITHUB ENGINEERING OBSERVATORY GENERATED"
+              " GITHUB DEVELOPER COMMAND CENTER GENERATED"
           )
           print(
               "================================================"
           )
 
           print(
-              f"Repositories        : {repository_count}"
+              f"Repositories       : "
+              f"{repository_count}"
           )
 
           print(
-              f"Contributions       : {total_contributions}"
+              f"Public Repositories: "
+              f"{public_repositories}"
           )
 
           print(
-              f"Commits             : {commits}"
+              f"Contributions      : "
+              f"{total_contributions}"
           )
 
           print(
-              f"Pull Requests       : {prs}"
+              f"Commits            : "
+              f"{commits}"
           )
 
           print(
-              f"Issues              : {issue_contributions}"
+              f"Pull Requests      : "
+              f"{prs}"
           )
 
           print(
-              f"Stars               : {total_stars}"
+              f"Issues             : "
+              f"{issue_contributions}"
           )
 
           print(
-              f"Forks               : {total_forks}"
+              f"Stars              : "
+              f"{total_stars}"
           )
 
           print(
-              f"Watchers            : {total_watchers}"
+              f"Forks              : "
+              f"{total_forks}"
           )
 
           print(
-              f"Languages           : {len(languages)}"
+              f"Watchers           : "
+              f"{total_watchers}"
           )
 
           print(
-              f"Current Streak      : {current_streak}"
+              f"Active Days        : "
+              f"{active_days}"
           )
 
           print(
-              f"Longest Streak      : {longest_streak}"
+              f"Consistency        : "
+              f"{consistency:.1f}%"
           )
 
           print(
-              f"Generated           : "
+              f"Current Streak     : "
+              f"{current_streak}"
+          )
+
+          print(
+              f"Longest Streak     : "
+              f"{longest_streak}"
+          )
+
+          print(
+              f"Most Active Month  : "
+              f"{most_active_month} "
+              f"({most_active_month_value})"
+          )
+
+          print(
+              f"Most Active Day    : "
+              f"{most_active_weekday} "
+              f"({most_active_weekday_value})"
+          )
+
+          print(
+              f"Languages          : "
+              f"{len(languages)}"
+          )
+
+          print(
+              f"Milestones         : "
+              f"{len(milestones)}"
+          )
+
+          print(
+              f"Generated          : "
               f"{generated_date} "
               f"{generated_time}"
           )
@@ -1622,6 +2679,6 @@ jobs:
 
           git add assets/
 
-          git diff --cached --quiet || git commit -m "Update GitHub analytics images"
+          git diff --cached --quiet || git commit -m "Update GitHub developer command center"
 
           git push
