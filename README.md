@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=280&section=header&text=ATUL%20PANDEY%0ATechnology%20%7C%20AI%20%7C%20Cybersecurity%20%7C%20Cryptography%0ACloud%20Computing%20%7C%20Quantum%0AM.Sc.%20Artificial%20Intelligence%20%7C%20IIT%20Patna%0AMBA%20%7C%20IIT%20Roorkee&fontSize=24&fontColor=000000&fontAlignY=42">
-</p>
-
-<p align="center">
   <img src="https://cdn.simpleicons.org/github/00F0FF" width="42">
 </p>
 
