@@ -65,6 +65,9 @@
 </a>
 </td>
 
+</tr>
+</table>
+
 # My Favorite Tools and Technologies
 
 <table>
@@ -198,6 +201,9 @@
 <td align="center"><img src="https://skillicons.dev/icons?i=arch" width="50"><br><b>Arch Linux</b></td>
 <td align="center"><img src="https://skillicons.dev/icons?i=windows" width="50"><br><b>Windows</b></td>
 <td align="center"><img src="https://skillicons.dev/icons?i=latex" width="50"><br><b>LaTeX</b></td>
+
+</tr>
+</table>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
