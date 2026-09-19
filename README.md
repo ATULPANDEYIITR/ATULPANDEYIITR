@@ -1,6 +1,30 @@
-# 👋 Hi, I'm Atul Pandey
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=120&section=header&text=ATUL%20PANDEY&fontSize=34&fontColor=000000&fontAlignY=38">
+</p>
 
-## Technology | AI | Cybersecurity | Cryptography | Cloud Computing | Quantum
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=0:00F0FF,50:7A00FF,100:FF00E5&height=70&section=header&text=Technology%20%7C%20AI%20%7C%20Cybersecurity%20%7C%20Cryptography&fontSize=22&fontColor=00F0FF&fontAlignY=55&animation=twinkling">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=0:00F0FF,50:7A00FF,100:FF00E5&height=70&section=header&text=Cloud%20Computing%20%7C%20Quantum&fontSize=22&fontColor=00F0FF&fontAlignY=55&animation=twinkling">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B3D20,50:0F6B35,100:39FF88&height=85&section=header&text=Master%20of%20Science%20in%20Artificial%20Intelligence&fontSize=20&fontColor=39FF88&fontAlignY=55&animation=twinkling">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=0:0B3D20,50:0F6B35,100:39FF88&height=65&section=header&text=Indian%20Institute%20of%20Technology%20Patna&fontSize=18&fontColor=55D98A&fontAlignY=55&animation=twinkling">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B3D20,50:0F6B35,100:39FF88&height=85&section=header&text=Master%20of%20Business%20Administration&fontSize=22&fontColor=39FF88&fontAlignY=55&animation=twinkling">
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=0:0B3D20,50:0F6B35,100:39FF88&height=65&section=header&text=Indian%20Institute%20of%20Technology%2C%20Roorkee&fontSize=18&fontColor=55D98A&fontAlignY=55&animation=twinkling">
+</p>
 
 <p align="center">
   <img src="https://cdn.simpleicons.org/github/00F0FF" width="42">
