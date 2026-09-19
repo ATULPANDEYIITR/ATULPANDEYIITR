@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=330&section=header&text=ATUL%20PANDEY%0A%0ATechnology%20%7C%20AI%20%7C%20Cybersecurity%20%7C%20Cryptography%0ACloud%20Computing%20%7C%20Quantum%0A%0AMaster%20of%20Science%20in%20Artificial%20Intelligence%0AIndian%20Institute%20of%20Technology%20Patna%0A%0AMaster%20of%20Business%20Administration%0AIndian%20Institute%20of%20Technology%2C%20Roorkee&fontSize=20&fontColor=000000&fontAlignY=38&descAlignY=65">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=180&section=header&text=ATUL%20PANDEY%0ATechnology%20%7C%20AI%20%7C%20Cybersecurity%20%7C%20Cryptography%0ACloud%20%7C%20Quantum%20%7C%20M.Sc.%20AI%20%7C%20MBA&fontSize=24&fontColor=000000&fontAlignY=42&desc=IIT%20Patna%20%7C%20IIT%20Roorkee&descSize=18&descAlignY=68">
 </p>
 
 ---
