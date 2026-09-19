@@ -143,23 +143,7 @@
 
 <h2>🎓⚡ Education / Background</h2>
 
-<p align="center">
-  <img
-    src="./academic-journey.gif"
-    width="100%"
-    alt="My Academic Journey — degrees and diplomas"
-  >
-</p>
 
-<br>
-
-<p align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header"
-    width="95%"
-    alt=""
-  >
-</p>
 
 ## 🎮 GitHub Activity Command Center
 
