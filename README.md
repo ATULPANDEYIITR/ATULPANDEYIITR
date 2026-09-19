@@ -141,8 +141,6 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
 </p>
 
-<h2>🎓⚡ Education / Background</h2>
-
 <h2 align="center">🎓 Academic Journey</h2>
 
 <p align="center">
