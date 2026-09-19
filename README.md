@@ -482,10 +482,6 @@
 </table>
 
 <p align="center">
-  <strong>✦✦✦ Ending is the new beginning ✦✦✦</strong>
-</p>
-
-<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:1e1b4b,75:4c1d95,100:7c3aed&height=130&section=header&text=THANK%20YOU%20FOR%20STOPPING%20BY&fontSize=26&fontColor=ffffff&animation=twinkling&fontAlignY=65" width="100%">
 </p>
 
@@ -592,4 +588,8 @@
 
 <p align="center">
   ✦ &nbsp; ✧ &nbsp; ✦ &nbsp; ✧ &nbsp; ✦
+</p>
+
+<p align="center">
+  <strong>✦✦✦ Ending is the new beginning ✦✦✦</strong>
 </p>
