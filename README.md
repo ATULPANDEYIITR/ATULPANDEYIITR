@@ -25,6 +25,7 @@
 <table align="center">
 <tr>
 
+<!-- NEWSLETTER 1 -->
 <td align="center" width="25%">
 <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7464193348715749376">
 <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-1-COVER.png" width="170" alt="Breaking Down AI Cover">
@@ -35,6 +36,7 @@
 <strong>BREAKING DOWN AI</strong>
 </td>
 
+<!-- NEWSLETTER 2 -->
 <td align="center" width="25%">
 <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7416009284716564480">
 <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-2-COVER.png" width="170" alt="Boardroom Intelligence Cover">
@@ -45,6 +47,7 @@
 <strong>BOARDROOM INTELLIGENCE</strong>
 </td>
 
+<!-- NEWSLETTER 3 -->
 <td align="center" width="25%">
 <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7404263479433519104">
 <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-3-COVER.png" width="170" alt="Green Capital Cover">
@@ -55,6 +58,7 @@
 <strong>GREEN CAPITAL</strong>
 </td>
 
+<!-- NEWSLETTER 4 -->
 <td align="center" width="25%">
 <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7398034893558960128">
 <img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-4-COVER.png" width="170" alt="The Algorithmic Mind Cover">
