@@ -20,63 +20,51 @@
   >
 </p>
 
-<table>
+# 📰 My newsletters on LinkedIn
+
+<table align="center">
 <tr>
-<td align="center" width="25%">
 
+<td align="center" width="25%">
 <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7398034893558960128">
-<img src="YOUR_NEWSLETTER_1_IMAGE_URL" width="100%">
+<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-1-COVER.png" width="170" alt="Breaking Down AI Cover">
+<br><br>
+<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-1-BANNER.png" width="280" alt="Breaking Down AI Banner">
+<br><br>
+<strong style="color:#EA4335;">BREAKING DOWN AI</strong>
 </a>
-
-<br>
-
-<a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7398034893558960128">
-<font color="#4F46E5"><b>BREAKING DOWN AI</b></font>
-</a>
-
 </td>
 
 <td align="center" width="25%">
-
 <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7416009284716564480">
-<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-2-COVER.png" width="100%">
+<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-2-COVER.png" width="170" alt="Boardroom Intelligence Cover">
+<br><br>
+<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-2-BANNER.png" width="280" alt="Boardroom Intelligence Banner">
+<br><br>
+<strong style="color:#808080;">BOARDROOM INTELLIGENCE</strong>
 </a>
-
-<br>
-
-<a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7416009284716564480">
-<font color="#B45309"><b>BOARDROOM INTELLIGENCE</b></font>
-</a>
-
 </td>
 
 <td align="center" width="25%">
-
 <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7404263479433519104">
-<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-3-COVER.png" width="100%">
+<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-3-COVER.png" width="170" alt="Green Capital Cover">
+<br><br>
+<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-3-BANNER.png" width="280" alt="Green Capital Banner">
+<br><br>
+<strong style="color:#34A853;">GREEN CAPITAL</strong>
 </a>
-
-<br>
-
-<a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7404263479433519104">
-<font color="#15803D"><b>GREEN CAPITAL</b></font>
-</a>
-
 </td>
 
 <td align="center" width="25%">
-
 <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7464193348715749376">
-<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-4-COVER.png" width="100%">
+<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-4-COVER.png" width="170" alt="The Algorithmic Mind Cover">
+<br><br>
+<img src="https://raw.githubusercontent.com/ATULPANDEYIITR/ATULPANDEYIITR/main/assets/NEWSLETTER-4-BANNER.png" width="280" alt="The Algorithmic Mind Banner">
+<br><br>
+<strong style="color:#4285F4;">THE ALGORITHMIC MIND</strong>
 </a>
-
-<br>
-
-<a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7464193348715749376">
-<font color="#9333EA"><b>THE ALGORITHMIC MIND</b></font>
-</a>
-
 </td>
+
 </tr>
 </table>
 
