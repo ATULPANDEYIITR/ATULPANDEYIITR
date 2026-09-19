@@ -143,6 +143,25 @@
 
 <h2>🎓⚡ Education / Background</h2>
 
+<h2 align="center">🎓 Academic Journey</h2>
+
+<p align="center">
+  <img
+    src="./assets/Academic.png"
+    width="100%"
+    alt="My Academic Journey"
+  >
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=rect&color=4285F4&height=3&section=header"
+    width="95%"
+    alt=""
+  >
+</p>
 
 
 ## 🎮 GitHub Activity Command Center
