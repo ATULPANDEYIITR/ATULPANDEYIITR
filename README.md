@@ -1,6 +1,6 @@
 <p align="center"><img src="./assets/profile-banner.svg" alt="Atul Pandey Profile Banner" width="100%"></p>
 
-<h2>🎓 Academic Journey</h2>
+# 🎓 Academic Journey</h2>
 
 <p align="center">
   <img
@@ -210,7 +210,7 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=00F0FF&height=3&section=header">
 </p>
 
-## 🎮 GitHub Activity Command Center
+# 🎮 GitHub Activity Command Center
 
 <p align="center">
   <img src="assets/github-developer-telemetry.png" width="100%" />
@@ -283,7 +283,7 @@
 
 # 🌐 My digital profiles
 
-## 💼 Professional & career
+# 💼 Professional & career
 
 <table align="center">
 <tr>
@@ -300,7 +300,7 @@
 </tr>
 </table>
 
-## 🎓 Academic & research
+# 🎓 Academic & research
 
 <table align="center">
 <tr>
@@ -327,7 +327,7 @@
 </tr>
 </table>
 
-## ✍️ Writing & publishing
+# ✍️ Writing & publishing
 
 <table align="center">
 <tr>
@@ -345,7 +345,7 @@
 </tr>
 </table>
 
-## 💻 Programming & competitive coding
+# 💻 Programming & competitive coding
 
 <table align="center">
 <tr>
@@ -371,7 +371,7 @@
 </tr>
 </table>
 
-## 🤖 AI / ML / data
+# 🤖 AI / ML / data
 
 <table align="center">
 <tr>
@@ -387,7 +387,7 @@
 </tr>
 </table>
 
-## 🛠️ Developer & open source
+# 🛠️ Developer & open source
 
 <table align="center">
 <tr>
@@ -406,7 +406,7 @@
 </tr>
 </table>
 
-## 🚀 Product, startup & business
+# 🚀 Product, startup & business
 
 <table align="center">
 <tr>
@@ -421,7 +421,7 @@
 </tr>
 </table>
 
-## 🧠 Knowledge & community
+# 🧠 Knowledge & community
 
 <table align="center">
 <tr>
@@ -436,7 +436,7 @@
 </tr>
 </table>
 
-## 📱 Social media
+# 📱 Social media
 
 <table align="center">
 <tr>
@@ -453,7 +453,7 @@
 </tr>
 </table>
 
-## 📧 Communication & contact
+# 📧 Communication & contact
 
 <table align="center">
 <tr>
@@ -465,7 +465,7 @@
 </tr>
 </table>
 
-## 🗂️ Productivity & public workspace
+# 🗂️ Productivity & public workspace
 
 <table align="center">
 <tr>
@@ -481,7 +481,7 @@
 </tr>
 </table>
 
-# ✦ Ending is the new beginning
+# ✦✦✦ Ending is the new beginning ✦✦✦
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,45:1e1b4b,75:4c1d95,100:7c3aed&height=130&section=header&text=THANK%20YOU%20FOR%20STOPPING%20BY&fontSize=26&fontColor=ffffff&animation=twinkling&fontAlignY=65" width="100%">
