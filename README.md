@@ -68,6 +68,7 @@
 </tr>
 </table>
 
+
 # My Favorite Tools and Technologies
 
 <table>
