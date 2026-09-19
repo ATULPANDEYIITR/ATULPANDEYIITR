@@ -1,5 +1,113 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F0FF,50:7A00FF,100:FF00E5&height=250&section=header&text=Hey,%20this%20is%20Atul%20Pandey%20!!%0AMy%20area%20of%20interest%20lies%20in%0ATechnology%20%7C%20Quantum%20Computing%20%7C%20Artificial%20Intelligence%20%7C%20Cryptography%20%7C%20Cloud%20Computing%20%7C%20Cybersecurity%0AMaster%20of%20Science%20in%20Artificial%20Intelligence%20and%20Cybersecurity,%20Indian%20Institute%20of%20Technology,%20Patna%0AMaster%20of%20Business%20Administration,%20Indian%20Institute%20of%20Technology,%20Roorkee%0AMaster%20of%20Computer%20Application,%20Uttar%20Pradesh%20Rajarshi%20Tandon%20Open%20University,%20India&fontSize=17&fontColor=000000&fontAlignY=45">
+  <svg width="100%" viewBox="0 0 1200 430" xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00F0FF"/>
+        <stop offset="50%" stop-color="#7A00FF"/>
+        <stop offset="100%" stop-color="#FF00E5"/>
+      </linearGradient>
+
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+
+    <rect width="1200" height="430" rx="28" fill="url(#bg)"/>
+
+    <text x="600" y="58"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="32"
+          font-weight="700"
+          fill="#000000"
+          filter="url(#glow)">
+      Hey, this is Atul Pandey !!
+    </text>
+
+    <text x="600" y="105"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="20"
+          font-weight="600"
+          fill="#000000">
+      My area of interest lies in
+    </text>
+
+    <text x="600" y="142"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="18"
+          font-weight="600"
+          fill="#000000">
+      Technology | Quantum Computing | Artificial Intelligence
+    </text>
+
+    <text x="600" y="173"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="18"
+          font-weight="600"
+          fill="#000000">
+      Cryptography | Cloud Computing | Cybersecurity
+    </text>
+
+    <text x="600" y="225"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="17"
+          font-weight="600"
+          fill="#000000">
+      Master of Science in Artificial Intelligence and Cybersecurity
+    </text>
+
+    <text x="600" y="251"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          fill="#000000">
+      Indian Institute of Technology, Patna
+    </text>
+
+    <text x="600" y="299"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="17"
+          font-weight="600"
+          fill="#000000">
+      Master of Business Administration
+    </text>
+
+    <text x="600" y="325"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          fill="#000000">
+      Indian Institute of Technology, Roorkee
+    </text>
+
+    <text x="600" y="373"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="17"
+          font-weight="600"
+          fill="#000000">
+      Master of Computer Application
+    </text>
+
+    <text x="600" y="399"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          fill="#000000">
+      Uttar Pradesh Rajarshi Tandon Open University, India
+    </text>
+
+  </svg>
 </p>
 
 ---
