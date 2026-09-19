@@ -1,4 +1,4 @@
-
+<p align="center"><img src="./assets/profile-banner.svg" alt="Atul Pandey Profile Banner" width="100%"></p>
 ---
 
 # My Favorite Tools and Technologies
