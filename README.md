@@ -20,7 +20,33 @@
   >
 </p>
 
+<h2 align="center">📰 My newsletters on LinkedIn</h2>
 
+<p align="center">
+
+<a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7464193348715749376">
+
+<img
+src="./assets/NEWSLETTER-1-COVER.png"
+width="200"
+alt="Breaking Down AI Cover"
+>
+
+<br><br>
+
+<img
+src="./assets/NEWSLETTER-1-BANNER.png"
+width="500"
+alt="Breaking Down AI Banner"
+>
+
+</a>
+
+<br><br>
+
+<strong>BREAKING DOWN AI</strong>
+
+</p>
 
 # My Favorite Tools and Technologies
 
