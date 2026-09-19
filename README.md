@@ -283,7 +283,7 @@
 
 # 🌐 My digital profiles
 
-# 💼 Professional & career
+### 💼 Professional & career
 
 <table align="center">
 <tr>
@@ -300,7 +300,7 @@
 </tr>
 </table>
 
-# 🎓 Academic & research
+### 🎓 Academic & research
 
 <table align="center">
 <tr>
