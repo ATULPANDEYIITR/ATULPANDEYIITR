@@ -161,7 +161,6 @@
   >
 </p>
 
-
 ## 🎮 GitHub Activity Command Center
 
 <p align="center">
