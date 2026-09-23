@@ -1,4 +1,4 @@
-name: Update GitHub Profile Stats
+﻿name: Update GitHub Profile Stats
 
 on:
   workflow_dispatch:
@@ -59,6 +59,8 @@ jobs:
           TOKEN = os.environ["GITHUB_TOKEN"]
 
           ASSETS = "assets"
+          README = "README.md"
+
           os.makedirs(ASSETS, exist_ok=True)
 
           headers = {
@@ -74,12 +76,15 @@ jobs:
             user(login: $login) {
               login
               name
+
               followers {
                 totalCount
               }
+
               following {
                 totalCount
               }
+
               contributionsCollection(from: $from, to: $to) {
                 totalCommitContributions
                 totalIssueContributions
@@ -89,6 +94,7 @@ jobs:
 
                 contributionCalendar {
                   totalContributions
+
                   weeks {
                     contributionDays {
                       contributionCount
@@ -119,6 +125,7 @@ jobs:
           )
 
           response.raise_for_status()
+
           payload = response.json()
 
           if "errors" in payload:
@@ -127,29 +134,47 @@ jobs:
           user = payload["data"]["user"]
 
           if not user:
-              raise RuntimeError(f"GitHub user not found: {USERNAME}")
+              raise RuntimeError(
+                  f"GitHub user not found: {USERNAME}"
+              )
 
           contributions = user["contributionsCollection"]
           calendar = contributions["contributionCalendar"]
 
           days = []
+
           for week in calendar["weeks"]:
               for day in week["contributionDays"]:
-                  days.append({
-                      "date": day["date"],
-                      "count": day["contributionCount"],
-                  })
+                  days.append(
+                      {
+                          "date": day["date"],
+                          "count": day["contributionCount"],
+                      }
+                  )
 
-          counts = [d["count"] for d in days]
+          days.sort(key=lambda item: item["date"])
+
+          counts = [
+              item["count"]
+              for item in days
+          ]
 
           total_contributions = calendar["totalContributions"]
           commits = contributions["totalCommitContributions"]
           issues = contributions["totalIssueContributions"]
           prs = contributions["totalPullRequestContributions"]
-          contributed_repos = contributions["totalRepositoriesWithContributedCommits"]
-          restricted = contributions["restrictedContributionsCount"]
+          contributed_repos = (
+              contributions[
+                  "totalRepositoriesWithContributedCommits"
+              ]
+          )
+          restricted = contributions[
+              "restrictedContributionsCount"
+          ]
 
-          rest_url = f"https://api.github.com/users/{USERNAME}"
+          rest_url = (
+              f"https://api.github.com/users/{USERNAME}"
+          )
 
           profile_response = requests.get(
               rest_url,
@@ -158,9 +183,13 @@ jobs:
           )
 
           profile_response.raise_for_status()
+
           profile = profile_response.json()
 
-          public_repos = profile.get("public_repos", 0)
+          public_repos = profile.get(
+              "public_repos",
+              0,
+          )
 
           repos = []
 
@@ -178,6 +207,7 @@ jobs:
               )
 
               repo_response.raise_for_status()
+
               page_data = repo_response.json()
 
               if not page_data:
@@ -194,28 +224,97 @@ jobs:
           total_forks = 0
 
           for repo in repos:
+
               if repo.get("fork"):
                   continue
 
-              total_stars += repo.get("stargazers_count", 0)
-              total_forks += repo.get("forks_count", 0)
+              total_stars += repo.get(
+                  "stargazers_count",
+                  0,
+              )
+
+              total_forks += repo.get(
+                  "forks_count",
+                  0,
+              )
 
               language = repo.get("language")
 
               if language:
                   language_counts[language] += 1
 
-          repo_count = len([r for r in repos if not r.get("fork")])
+          repo_count = len(
+              [
+                  repo
+                  for repo in repos
+                  if not repo.get("fork")
+              ]
+          )
 
           if repo_count == 0:
               repo_count = public_repos
 
-          # ------------------------------------------------------------
-          # Helper functions
-          # ------------------------------------------------------------
+          # ============================================================
+          # COLOR SYSTEM
+          # ============================================================
+
+          COLORS = [
+              "#39FF14",   # Green
+              "#00BFFF",   # Blue
+              "#FF3131",   # Red
+              "#FFD700",   # Yellow
+              "#00FFFF",   # Cyan
+              "#BF40BF",   # Purple
+              "#FF8C00",   # Orange
+          ]
+
+          TEXT_COLOR = "#39FF14"
+          SECONDARY_TEXT = "#00BFFF"
+          GRID_COLOR = "#666666"
+
+          def chart_color(index):
+              return COLORS[index % len(COLORS)]
+
+          def style_axis(
+              ax,
+              color="#39FF14",
+              secondary_color="#00BFFF",
+          ):
+              ax.tick_params(
+                  axis="both",
+                  colors=color,
+                  labelcolor=color,
+              )
+
+              for spine in ax.spines.values():
+                  spine.set_color(
+                      secondary_color
+                  )
+                  spine.set_alpha(0.75)
+
+              ax.xaxis.label.set_color(color)
+              ax.yaxis.label.set_color(color)
+
+          def style_title(
+              ax,
+              text,
+              color="#39FF14",
+          ):
+              ax.set_title(
+                  text,
+                  color=color,
+                  fontsize=15,
+                  fontweight="bold",
+                  pad=15,
+              )
 
           def save(fig, filename):
-              path = os.path.join(ASSETS, filename)
+              path = os.path.join(
+                  ASSETS,
+                  filename,
+              )
+
+              fig.patch.set_alpha(0)
 
               fig.savefig(
                   path,
@@ -227,36 +326,128 @@ jobs:
               plt.close(fig)
 
               if not os.path.exists(path):
-                  raise RuntimeError(f"Failed to generate {path}")
+                  raise RuntimeError(
+                      f"Failed to generate {path}"
+                  )
 
               if os.path.getsize(path) < 1000:
-                  raise RuntimeError(f"Generated file is suspiciously small: {path}")
+                  raise RuntimeError(
+                      f"Generated file is suspiciously small: "
+                      f"{path}"
+                  )
 
           def title_text():
-              return f"{USERNAME} | GitHub Activity"
+              return (
+                  f"{USERNAME} | GitHub Activity"
+              )
 
-          # ------------------------------------------------------------
-          # 1. Area chart
-          # ------------------------------------------------------------
+          # ============================================================
+          # STREAK CALCULATION
+          # ============================================================
 
-          fig, ax = plt.subplots(figsize=(14, 5))
+          positive_streaks = []
+
+          running_streak = 0
+
+          for count in counts:
+
+              if count > 0:
+                  running_streak += 1
+
+              else:
+                  if running_streak > 0:
+                      positive_streaks.append(
+                          running_streak
+                      )
+
+                  running_streak = 0
+
+          if running_streak > 0:
+              positive_streaks.append(
+                  running_streak
+              )
+
+          highest_streak = (
+              max(positive_streaks)
+              if positive_streaks
+              else 0
+          )
+
+          lowest_streak = (
+              min(positive_streaks)
+              if positive_streaks
+              else 0
+          )
+
+          current_streak = 0
+
+          for count in reversed(counts):
+
+              if count > 0:
+                  current_streak += 1
+
+              else:
+                  break
+
+          # ============================================================
+          # 1. AREA CHART
+          # ============================================================
+
+          fig, ax = plt.subplots(
+              figsize=(14, 5)
+          )
 
           x = np.arange(len(counts))
 
-          ax.fill_between(x, counts, alpha=0.35)
-          ax.plot(x, counts, linewidth=1.5)
+          color = chart_color(0)
 
-          ax.set_title(title_text() + " | Contribution Area")
-          ax.set_xlabel("Contribution days")
-          ax.set_ylabel("Contributions")
+          ax.fill_between(
+              x,
+              counts,
+              alpha=0.20,
+              color=color,
+          )
 
-          ax.grid(alpha=0.2)
+          ax.plot(
+              x,
+              counts,
+              linewidth=2,
+              color=color,
+          )
 
-          save(fig, "github-area-chart.png")
+          style_title(
+              ax,
+              title_text() + " | Contribution Area",
+              color,
+          )
 
-          # ------------------------------------------------------------
-          # 2. Bar chart
-          # ------------------------------------------------------------
+          ax.set_xlabel(
+              "Contribution days"
+          )
+
+          ax.set_ylabel(
+              "Contributions"
+          )
+
+          style_axis(
+              ax,
+              color,
+              chart_color(1),
+          )
+
+          ax.grid(
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          save(
+              fig,
+              "github-area-chart.png",
+          )
+
+          # ============================================================
+          # 2. BAR CHART
+          # ============================================================
 
           categories = [
               "Commits",
@@ -272,62 +463,188 @@ jobs:
               total_contributions,
           ]
 
-          fig, ax = plt.subplots(figsize=(12, 6))
+          fig, ax = plt.subplots(
+              figsize=(12, 6)
+          )
 
-          ax.bar(categories, values)
+          colors = [
+              COLORS[0],
+              COLORS[1],
+              COLORS[2],
+              COLORS[3],
+          ]
 
-          ax.set_title(title_text() + " | Activity Breakdown")
-          ax.set_ylabel("Count")
+          bars = ax.bar(
+              categories,
+              values,
+              color=colors,
+              alpha=0.85,
+          )
 
-          ax.tick_params(axis="x", rotation=20)
-          ax.grid(axis="y", alpha=0.2)
+          for bar, color in zip(
+              bars,
+              colors,
+          ):
+              bar.set_edgecolor(color)
 
-          save(fig, "github-bar-chart.png")
+          style_title(
+              ax,
+              title_text() + " | Activity Breakdown",
+              COLORS[0],
+          )
 
-          # ------------------------------------------------------------
-          # 3. Box plot
-          # ------------------------------------------------------------
+          ax.set_ylabel(
+              "Count"
+          )
 
-          fig, ax = plt.subplots(figsize=(10, 6))
+          ax.tick_params(
+              axis="x",
+              rotation=20,
+          )
 
-          ax.boxplot(counts)
+          style_axis(
+              ax,
+              COLORS[0],
+              COLORS[1],
+          )
 
-          ax.set_title(title_text() + " | Contribution Distribution")
-          ax.set_ylabel("Daily Contributions")
+          ax.grid(
+              axis="y",
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
 
-          ax.grid(axis="y", alpha=0.2)
+          save(
+              fig,
+              "github-bar-chart.png",
+          )
 
-          save(fig, "github-box-plot.png")
+          # ============================================================
+          # 3. BOX PLOT
+          # ============================================================
 
-          # ------------------------------------------------------------
-          # 4. Bubble chart
-          # ------------------------------------------------------------
+          fig, ax = plt.subplots(
+              figsize=(10, 6)
+          )
 
-          x_values = np.arange(len(categories))
-          bubble_sizes = [max(v, 1) * 20 for v in values]
+          ax.boxplot(
+              counts,
+              patch_artist=True,
+              boxprops={
+                  "facecolor": "none",
+                  "edgecolor": COLORS[1],
+                  "linewidth": 2,
+              },
+              whiskerprops={
+                  "color": COLORS[0],
+                  "linewidth": 2,
+              },
+              capprops={
+                  "color": COLORS[2],
+                  "linewidth": 2,
+              },
+              medianprops={
+                  "color": COLORS[3],
+                  "linewidth": 2,
+              },
+              flierprops={
+                  "markeredgecolor": COLORS[4],
+                  "markerfacecolor": "none",
+              },
+          )
 
-          fig, ax = plt.subplots(figsize=(12, 7))
+          style_title(
+              ax,
+              title_text() + " | Contribution Distribution",
+              COLORS[1],
+          )
+
+          ax.set_ylabel(
+              "Daily Contributions"
+          )
+
+          style_axis(
+              ax,
+              COLORS[1],
+              COLORS[2],
+          )
+
+          ax.grid(
+              axis="y",
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          save(
+              fig,
+              "github-box-plot.png",
+          )
+
+          # ============================================================
+          # 4. BUBBLE CHART
+          # ============================================================
+
+          x_values = np.arange(
+              len(categories)
+          )
+
+          bubble_sizes = [
+              max(value, 1) * 20
+              for value in values
+          ]
+
+          fig, ax = plt.subplots(
+              figsize=(12, 7)
+          )
 
           ax.scatter(
               x_values,
               values,
               s=bubble_sizes,
-              alpha=0.6,
+              c=COLORS[:len(categories)],
+              alpha=0.70,
+              edgecolors=COLORS[4],
+              linewidths=1.5,
           )
 
-          ax.set_xticks(x_values)
-          ax.set_xticklabels(categories, rotation=20)
+          ax.set_xticks(
+              x_values
+          )
 
-          ax.set_title(title_text() + " | Activity Bubble Map")
-          ax.set_ylabel("Activity")
+          ax.set_xticklabels(
+              categories,
+              rotation=20,
+          )
 
-          ax.grid(alpha=0.2)
+          style_title(
+              ax,
+              title_text() + " | Activity Bubble Map",
+              COLORS[4],
+          )
 
-          save(fig, "github-bubble-chart.png")
+          ax.set_ylabel(
+              "Activity"
+          )
 
-          # ------------------------------------------------------------
-          # 5. Developer telemetry
-          # ------------------------------------------------------------
+          style_axis(
+              ax,
+              COLORS[4],
+              COLORS[5],
+          )
+
+          ax.grid(
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          save(
+              fig,
+              "github-bubble-chart.png",
+          )
+
+          # ============================================================
+          # 5. DEVELOPER TELEMETRY
+          # ============================================================
 
           telemetry_labels = [
               "Commits",
@@ -347,26 +664,55 @@ jobs:
               total_forks,
           ]
 
-          fig, ax = plt.subplots(figsize=(14, 6))
+          fig, ax = plt.subplots(
+              figsize=(14, 6)
+          )
 
           ax.plot(
               telemetry_labels,
               telemetry_values,
               marker="o",
-              linewidth=2,
+              linewidth=2.5,
+              color=COLORS[1],
+              markerfacecolor=COLORS[0],
+              markeredgecolor=COLORS[2],
+              markersize=8,
           )
 
-          ax.set_title(title_text() + " | Developer Telemetry")
-          ax.set_ylabel("Value")
+          style_title(
+              ax,
+              title_text() + " | Developer Telemetry",
+              COLORS[1],
+          )
 
-          ax.tick_params(axis="x", rotation=25)
-          ax.grid(alpha=0.2)
+          ax.set_ylabel(
+              "Value"
+          )
 
-          save(fig, "github-developer-telemetry.png")
+          ax.tick_params(
+              axis="x",
+              rotation=25,
+          )
 
-          # ------------------------------------------------------------
-          # 6. Donut chart
-          # ------------------------------------------------------------
+          style_axis(
+              ax,
+              COLORS[1],
+              COLORS[0],
+          )
+
+          ax.grid(
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          save(
+              fig,
+              "github-developer-telemetry.png",
+          )
+
+          # ============================================================
+          # 6. DONUT CHART
+          # ============================================================
 
           donut_labels = [
               "Commits",
@@ -381,24 +727,47 @@ jobs:
           ]
 
           if sum(donut_values) == 0:
-              donut_values = [1, 1, 1]
+              donut_values = [
+                  1,
+                  1,
+                  1,
+              ]
 
-          fig, ax = plt.subplots(figsize=(8, 8))
+          fig, ax = plt.subplots(
+              figsize=(8, 8)
+          )
 
           ax.pie(
               donut_values,
               labels=donut_labels,
               autopct="%1.1f%%",
-              wedgeprops={"width": 0.4},
+              colors=COLORS[:3],
+              textprops={
+                  "color": COLORS[0],
+                  "fontsize": 11,
+                  "fontweight": "bold",
+              },
+              wedgeprops={
+                  "width": 0.4,
+                  "edgecolor": COLORS[5],
+                  "linewidth": 1.5,
+              },
           )
 
-          ax.set_title(title_text() + " | Contribution Composition")
+          style_title(
+              ax,
+              title_text() + " | Contribution Composition",
+              COLORS[0],
+          )
 
-          save(fig, "github-donut-chart.png")
+          save(
+              fig,
+              "github-donut-chart.png",
+          )
 
-          # ------------------------------------------------------------
-          # 7. Funnel chart
-          # ------------------------------------------------------------
+          # ============================================================
+          # 7. FUNNEL CHART
+          # ============================================================
 
           funnel_labels = [
               "Repositories",
@@ -414,109 +783,255 @@ jobs:
               issues,
           ]
 
-          fig, ax = plt.subplots(figsize=(11, 7))
+          fig, ax = plt.subplots(
+              figsize=(11, 7)
+          )
 
-          y = np.arange(len(funnel_labels))
+          y = np.arange(
+              len(funnel_labels)
+          )
 
-          ax.barh(y, funnel_values)
+          bars = ax.barh(
+              y,
+              funnel_values,
+              color=COLORS[:4],
+              alpha=0.85,
+          )
+
+          for bar, color in zip(
+              bars,
+              COLORS[:4],
+          ):
+              bar.set_edgecolor(color)
 
           ax.set_yticks(y)
-          ax.set_yticklabels(funnel_labels)
+
+          ax.set_yticklabels(
+              funnel_labels
+          )
 
           ax.invert_yaxis()
 
-          ax.set_title(title_text() + " | Activity Funnel")
-          ax.set_xlabel("Count")
+          style_title(
+              ax,
+              title_text() + " | Activity Funnel",
+              COLORS[2],
+          )
 
-          ax.grid(axis="x", alpha=0.2)
+          ax.set_xlabel(
+              "Count"
+          )
 
-          save(fig, "github-funnel-chart.png")
+          style_axis(
+              ax,
+              COLORS[2],
+              COLORS[3],
+          )
 
-          # ------------------------------------------------------------
-          # 8. Heatmap
-          # ------------------------------------------------------------
+          ax.grid(
+              axis="x",
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
 
-          heatmap = np.zeros((7, 53))
+          save(
+              fig,
+              "github-funnel-chart.png",
+          )
+
+          # ============================================================
+          # 8. HEATMAP
+          # ============================================================
+
+          heatmap = np.zeros(
+              (7, 53)
+          )
 
           for index, item in enumerate(days):
+
               week = index // 7
               weekday = index % 7
 
               if week < 53:
-                  heatmap[weekday, week] = item["count"]
+                  heatmap[
+                      weekday,
+                      week
+                  ] = item["count"]
 
-          fig, ax = plt.subplots(figsize=(16, 6))
+          fig, ax = plt.subplots(
+              figsize=(16, 6)
+          )
 
           image = ax.imshow(
               heatmap,
               aspect="auto",
               interpolation="nearest",
+              cmap="turbo",
           )
 
-          ax.set_title(title_text() + " | Contribution Heatmap")
-          ax.set_xlabel("Weeks")
-          ax.set_ylabel("Day of week")
+          style_title(
+              ax,
+              title_text() + " | Contribution Heatmap",
+              COLORS[3],
+          )
 
-          ax.set_yticks(range(7))
-          ax.set_yticklabels([
-              "Mon",
-              "Tue",
-              "Wed",
-              "Thu",
-              "Fri",
-              "Sat",
-              "Sun",
-          ])
+          ax.set_xlabel(
+              "Weeks"
+          )
 
-          fig.colorbar(image, ax=ax, label="Contributions")
+          ax.set_ylabel(
+              "Day of week"
+          )
 
-          save(fig, "github-heatmap.png")
+          ax.set_yticks(
+              range(7)
+          )
 
-          # ------------------------------------------------------------
-          # 9. Histogram
-          # ------------------------------------------------------------
+          ax.set_yticklabels(
+              [
+                  "Mon",
+                  "Tue",
+                  "Wed",
+                  "Thu",
+                  "Fri",
+                  "Sat",
+                  "Sun",
+              ]
+          )
 
-          fig, ax = plt.subplots(figsize=(12, 6))
+          style_axis(
+              ax,
+              COLORS[3],
+              COLORS[1],
+          )
 
-          bins = max(5, min(30, int(math.sqrt(len(counts)))))
+          colorbar = fig.colorbar(
+              image,
+              ax=ax,
+              label="Contributions",
+          )
+
+          colorbar.ax.yaxis.label.set_color(
+              COLORS[0]
+          )
+
+          colorbar.ax.tick_params(
+              colors=COLORS[0]
+          )
+
+          save(
+              fig,
+              "github-heatmap.png",
+          )
+
+          # ============================================================
+          # 9. HISTOGRAM
+          # ============================================================
+
+          fig, ax = plt.subplots(
+              figsize=(12, 6)
+          )
+
+          bins = max(
+              5,
+              min(
+                  30,
+                  int(
+                      math.sqrt(
+                          len(counts)
+                      )
+                  ),
+              ),
+          )
 
           ax.hist(
               counts,
               bins=bins,
-              edgecolor="black",
+              color=COLORS[4],
+              edgecolor=COLORS[3],
+              alpha=0.75,
+              linewidth=1.2,
           )
 
-          ax.set_title(title_text() + " | Daily Contribution Histogram")
-          ax.set_xlabel("Daily Contributions")
-          ax.set_ylabel("Number of Days")
+          style_title(
+              ax,
+              title_text() + " | Daily Contribution Histogram",
+              COLORS[4],
+          )
 
-          ax.grid(axis="y", alpha=0.2)
+          ax.set_xlabel(
+              "Daily Contributions"
+          )
 
-          save(fig, "github-histogram.png")
+          ax.set_ylabel(
+              "Number of Days"
+          )
 
-          # ------------------------------------------------------------
-          # 10. Line graph
-          # ------------------------------------------------------------
+          style_axis(
+              ax,
+              COLORS[4],
+              COLORS[3],
+          )
 
-          fig, ax = plt.subplots(figsize=(14, 6))
+          ax.grid(
+              axis="y",
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          save(
+              fig,
+              "github-histogram.png",
+          )
+
+          # ============================================================
+          # 10. LINE GRAPH
+          # ============================================================
+
+          fig, ax = plt.subplots(
+              figsize=(14, 6)
+          )
 
           ax.plot(
               x,
               counts,
-              linewidth=2,
+              linewidth=2.5,
+              color=COLORS[2],
           )
 
-          ax.set_title(title_text() + " | Contribution Trend")
-          ax.set_xlabel("Days")
-          ax.set_ylabel("Contributions")
+          style_title(
+              ax,
+              title_text() + " | Contribution Trend",
+              COLORS[2],
+          )
 
-          ax.grid(alpha=0.2)
+          ax.set_xlabel(
+              "Days"
+          )
 
-          save(fig, "github-line-graph.png")
+          ax.set_ylabel(
+              "Contributions"
+          )
 
-          # ------------------------------------------------------------
-          # 11. Pie chart
-          # ------------------------------------------------------------
+          style_axis(
+              ax,
+              COLORS[2],
+              COLORS[0],
+          )
+
+          ax.grid(
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          save(
+              fig,
+              "github-line-graph.png",
+          )
+
+          # ============================================================
+          # 11. PIE CHART
+          # ============================================================
 
           pie_labels = [
               "Commits",
@@ -533,23 +1048,47 @@ jobs:
           ]
 
           if sum(pie_values) == 0:
-              pie_values = [1, 1, 1, 1]
+              pie_values = [
+                  1,
+                  1,
+                  1,
+                  1,
+              ]
 
-          fig, ax = plt.subplots(figsize=(8, 8))
+          fig, ax = plt.subplots(
+              figsize=(8, 8)
+          )
 
           ax.pie(
               pie_values,
               labels=pie_labels,
               autopct="%1.1f%%",
+              colors=COLORS[:4],
+              textprops={
+                  "color": COLORS[0],
+                  "fontsize": 10,
+                  "fontweight": "bold",
+              },
+              wedgeprops={
+                  "edgecolor": COLORS[1],
+                  "linewidth": 1.5,
+              },
           )
 
-          ax.set_title(title_text() + " | Activity Distribution")
+          style_title(
+              ax,
+              title_text() + " | Activity Distribution",
+              COLORS[3],
+          )
 
-          save(fig, "github-pie-chart.png")
+          save(
+              fig,
+              "github-pie-chart.png",
+          )
 
-          # ------------------------------------------------------------
-          # 12. Radar chart
-          # ------------------------------------------------------------
+          # ============================================================
+          # 12. RADAR CHART
+          # ============================================================
 
           radar_labels = [
               "Commits",
@@ -560,18 +1099,26 @@ jobs:
               "Forks",
           ]
 
-          radar_values = np.array([
-              commits,
-              prs,
-              issues,
-              repo_count,
-              total_stars,
-              total_forks,
-          ], dtype=float)
+          radar_values = np.array(
+              [
+                  commits,
+                  prs,
+                  issues,
+                  repo_count,
+                  total_stars,
+                  total_forks,
+              ],
+              dtype=float,
+          )
 
-          max_value = max(radar_values.max(), 1)
+          max_value = max(
+              radar_values.max(),
+              1,
+          )
 
-          radar_values = radar_values / max_value
+          radar_values = (
+              radar_values / max_value
+          )
 
           angles = np.linspace(
               0,
@@ -580,33 +1127,80 @@ jobs:
               endpoint=False,
           )
 
-          radar_values = np.concatenate([
-              radar_values,
-              [radar_values[0]],
-          ])
+          radar_values = np.concatenate(
+              [
+                  radar_values,
+                  [
+                      radar_values[0]
+                  ],
+              ]
+          )
 
-          angles = np.concatenate([
+          angles = np.concatenate(
+              [
+                  angles,
+                  [
+                      angles[0]
+                  ],
+              ]
+          )
+
+          fig = plt.figure(
+              figsize=(8, 8)
+          )
+
+          ax = fig.add_subplot(
+              111,
+              polar=True,
+          )
+
+          ax.plot(
               angles,
-              [angles[0]],
-          ])
+              radar_values,
+              linewidth=2.5,
+              color=COLORS[5],
+          )
 
-          fig = plt.figure(figsize=(8, 8))
+          ax.fill(
+              angles,
+              radar_values,
+              color=COLORS[5],
+              alpha=0.18,
+          )
 
-          ax = fig.add_subplot(111, polar=True)
+          ax.set_xticks(
+              angles[:-1]
+          )
 
-          ax.plot(angles, radar_values, linewidth=2)
-          ax.fill(angles, radar_values, alpha=0.25)
+          ax.set_xticklabels(
+              radar_labels,
+              color=COLORS[0],
+          )
 
-          ax.set_xticks(angles[:-1])
-          ax.set_xticklabels(radar_labels)
+          ax.tick_params(
+              axis="y",
+              colors=COLORS[1],
+          )
 
-          ax.set_title(title_text() + " | Developer Radar")
+          ax.grid(
+              color=COLORS[1],
+              alpha=0.20,
+          )
 
-          save(fig, "github-radar-chart.png")
+          style_title(
+              ax,
+              title_text() + " | Developer Radar",
+              COLORS[5],
+          )
 
-          # ------------------------------------------------------------
-          # 13. Sankey-style diagram
-          # ------------------------------------------------------------
+          save(
+              fig,
+              "github-radar-chart.png",
+          )
+
+          # ============================================================
+          # 13. SANKEY-STYLE DIAGRAM
+          # ============================================================
 
           source_labels = [
               "Repositories",
@@ -622,7 +1216,9 @@ jobs:
               issues,
           ]
 
-          fig, ax = plt.subplots(figsize=(12, 7))
+          fig, ax = plt.subplots(
+              figsize=(12, 7)
+          )
 
           left_x = 0
           right_x = 1
@@ -633,11 +1229,20 @@ jobs:
               len(source_labels),
           )
 
-          for y_pos, label, value in zip(
-              left_positions,
-              source_labels,
-              source_values,
+          for index, (
+              y_pos,
+              label,
+              value,
+          ) in enumerate(
+              zip(
+                  left_positions,
+                  source_labels,
+                  source_values,
+              )
           ):
+
+              color = chart_color(index)
+
               ax.text(
                   left_x,
                   y_pos,
@@ -645,6 +1250,8 @@ jobs:
                   ha="center",
                   va="center",
                   fontsize=10,
+                  fontweight="bold",
+                  color=color,
               )
 
           ax.text(
@@ -655,70 +1262,99 @@ jobs:
               va="center",
               fontsize=12,
               fontweight="bold",
+              color=COLORS[3],
           )
 
-          for y_pos in left_positions:
+          for index, y_pos in enumerate(
+              left_positions
+          ):
+
               ax.plot(
                   [0.12, 0.88],
                   [y_pos, 0.5],
                   linewidth=2,
-                  alpha=0.5,
+                  alpha=0.45,
+                  color=chart_color(index),
               )
 
-          ax.set_xlim(-0.1, 1.1)
-          ax.set_ylim(0, 1)
+          ax.set_xlim(
+              -0.1,
+              1.1,
+          )
+
+          ax.set_ylim(
+              0,
+              1,
+          )
+
           ax.axis("off")
 
-          ax.set_title(title_text() + " | Activity Flow")
+          style_title(
+              ax,
+              title_text() + " | Activity Flow",
+              COLORS[1],
+          )
 
-          save(fig, "github-sankey-diagram.png")
+          save(
+              fig,
+              "github-sankey-diagram.png",
+          )
 
-          # ------------------------------------------------------------
-          # 14. Scatter plot
-          # ------------------------------------------------------------
+          # ============================================================
+          # 14. SCATTER PLOT
+          # ============================================================
 
-          cumulative = np.cumsum(counts)
+          cumulative = np.cumsum(
+              counts
+          )
 
-          fig, ax = plt.subplots(figsize=(12, 7))
+          fig, ax = plt.subplots(
+              figsize=(12, 7)
+          )
 
           ax.scatter(
               counts,
               cumulative,
               alpha=0.65,
+              s=35,
+              c=COLORS[1],
+              edgecolors=COLORS[0],
+              linewidths=0.6,
           )
 
-          ax.set_title(title_text() + " | Contribution Scatter")
-          ax.set_xlabel("Daily Contributions")
-          ax.set_ylabel("Cumulative Contributions")
+          style_title(
+              ax,
+              title_text() + " | Contribution Scatter",
+              COLORS[1],
+          )
 
-          ax.grid(alpha=0.2)
+          ax.set_xlabel(
+              "Daily Contributions"
+          )
 
-          save(fig, "github-scatter-plot.png")
+          ax.set_ylabel(
+              "Cumulative Contributions"
+          )
 
-          # ------------------------------------------------------------
-          # 15. Streak system
-          # ------------------------------------------------------------
+          style_axis(
+              ax,
+              COLORS[1],
+              COLORS[0],
+          )
 
-          longest_streak = 0
-          current_streak = 0
+          ax.grid(
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
 
-          for count in counts:
-              if count > 0:
-                  current_streak += 1
-                  longest_streak = max(
-                      longest_streak,
-                      current_streak,
-                  )
-              else:
-                  current_streak = 0
+          save(
+              fig,
+              "github-scatter-plot.png",
+          )
 
-          current_streak = 0
-
-          for count in reversed(counts):
-              if count > 0:
-                  current_streak += 1
-              else:
-                  break
+          # ============================================================
+          # 15. EXISTING STREAK SYSTEM
+          # ============================================================
 
           streak_labels = [
               "Current streak",
@@ -727,61 +1363,166 @@ jobs:
 
           streak_values = [
               current_streak,
-              longest_streak,
+              highest_streak,
           ]
 
-          fig, ax = plt.subplots(figsize=(10, 6))
-
-          ax.bar(
-              streak_labels,
-              streak_values,
+          fig, ax = plt.subplots(
+              figsize=(10, 6)
           )
 
-          ax.set_title(title_text() + " | Streak System")
-          ax.set_ylabel("Days")
+          bars = ax.bar(
+              streak_labels,
+              streak_values,
+              color=[
+                  COLORS[0],
+                  COLORS[1],
+              ],
+              alpha=0.85,
+          )
 
-          ax.grid(axis="y", alpha=0.2)
+          for bar, color in zip(
+              bars,
+              [
+                  COLORS[0],
+                  COLORS[1],
+              ],
+          ):
+              bar.set_edgecolor(
+                  color
+              )
 
-          save(fig, "github-streak-system.png")
+          style_title(
+              ax,
+              title_text() + " | Streak System",
+              COLORS[0],
+          )
 
-          # ------------------------------------------------------------
-          # 16. Treemap-style chart
-          # ------------------------------------------------------------
+          ax.set_ylabel(
+              "Days"
+          )
 
-          top_languages = language_counts.most_common(10)
+          style_axis(
+              ax,
+              COLORS[0],
+              COLORS[1],
+          )
+
+          ax.grid(
+              axis="y",
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          for bar, value in zip(
+              bars,
+              streak_values,
+          ):
+              ax.text(
+                  bar.get_x()
+                  + bar.get_width() / 2,
+                  value,
+                  str(value),
+                  ha="center",
+                  va="bottom",
+                  color=COLORS[3],
+                  fontsize=12,
+                  fontweight="bold",
+              )
+
+          save(
+              fig,
+              "github-streak-system.png",
+          )
+
+          # ============================================================
+          # 16. TREEMAP-STYLE CHART
+          # ============================================================
+
+          top_languages = (
+              language_counts.most_common(10)
+          )
 
           if not top_languages:
-              top_languages = [("No language data", 1)]
+              top_languages = [
+                  (
+                      "No language data",
+                      1,
+                  )
+              ]
 
           labels = [
               f"{name}\n{count}"
-              for name, count in top_languages
+              for name, count
+              in top_languages
           ]
 
           sizes = [
               count
-              for _, count in top_languages
+              for _, count
+              in top_languages
           ]
 
-          fig, ax = plt.subplots(figsize=(14, 7))
+          language_colors = [
+              chart_color(index)
+              for index in range(
+                  len(labels)
+              )
+          ]
 
-          ax.bar(
-              labels,
-              sizes,
+          fig, ax = plt.subplots(
+              figsize=(14, 7)
           )
 
-          ax.set_title(title_text() + " | Repository Language Landscape")
-          ax.set_ylabel("Repositories")
+          bars = ax.bar(
+              labels,
+              sizes,
+              color=language_colors,
+              alpha=0.80,
+          )
 
-          ax.tick_params(axis="x", rotation=35)
+          for bar, color in zip(
+              bars,
+              language_colors,
+          ):
+              bar.set_edgecolor(
+                  color
+              )
 
-          ax.grid(axis="y", alpha=0.2)
+          style_title(
+              ax,
+              title_text() + " | Repository Language Landscape",
+              COLORS[4],
+          )
 
-          save(fig, "github-treemap.png")
+          ax.set_ylabel(
+              "Repositories"
+          )
 
-          # ------------------------------------------------------------
-          # 17. Waterfall chart
-          # ------------------------------------------------------------
+          ax.tick_params(
+              axis="x",
+              rotation=35,
+          )
+
+          style_axis(
+              ax,
+              COLORS[4],
+              COLORS[1],
+          )
+
+          ax.grid(
+              axis="y",
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          save(
+              fig,
+              "github-treemap.png",
+          )
+
+          # ============================================================
+          # 17. WATERFALL CHART
+          # ============================================================
 
           waterfall_labels = [
               "Repositories",
@@ -801,34 +1542,177 @@ jobs:
               total_forks,
           ]
 
-          cumulative_values = np.cumsum(waterfall_values)
+          cumulative_values = np.cumsum(
+              waterfall_values
+          )
 
-          fig, ax = plt.subplots(figsize=(14, 7))
+          fig, ax = plt.subplots(
+              figsize=(14, 7)
+          )
 
-          ax.bar(
+          bars = ax.bar(
               waterfall_labels,
               waterfall_values,
+              color=[
+                  COLORS[index]
+                  for index in range(
+                      len(waterfall_labels)
+                  )
+              ],
+              alpha=0.80,
           )
+
+          for index, bar in enumerate(
+              bars
+          ):
+              bar.set_edgecolor(
+                  chart_color(index)
+              )
 
           ax.plot(
               waterfall_labels,
               cumulative_values,
               marker="o",
-              linewidth=2,
+              linewidth=2.5,
+              color=COLORS[3],
+              markerfacecolor=COLORS[0],
+              markeredgecolor=COLORS[2],
           )
 
-          ax.set_title(title_text() + " | Developer Metrics Waterfall")
-          ax.set_ylabel("Value")
+          style_title(
+              ax,
+              title_text() + " | Developer Metrics Waterfall",
+              COLORS[3],
+          )
 
-          ax.tick_params(axis="x", rotation=25)
+          ax.set_ylabel(
+              "Value"
+          )
 
-          ax.grid(axis="y", alpha=0.2)
+          ax.tick_params(
+              axis="x",
+              rotation=25,
+          )
 
-          save(fig, "github-waterfall-chart.png")
+          style_axis(
+              ax,
+              COLORS[3],
+              COLORS[1],
+          )
 
-          # ------------------------------------------------------------
-          # Final validation inside Python
-          # ------------------------------------------------------------
+          ax.grid(
+              axis="y",
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          save(
+              fig,
+              "github-waterfall-chart.png",
+          )
+
+          # ============================================================
+          # 18. NEW STREAK STATISTICS CHART
+          # ============================================================
+
+          streak_stat_labels = [
+              "Current\nStreak",
+              "Highest\nStreak",
+              "Lowest\nStreak",
+          ]
+
+          streak_stat_values = [
+              current_streak,
+              highest_streak,
+              lowest_streak,
+          ]
+
+          streak_stat_colors = [
+              COLORS[0],
+              COLORS[1],
+              COLORS[2],
+          ]
+
+          fig, ax = plt.subplots(
+              figsize=(12, 7)
+          )
+
+          bars = ax.bar(
+              streak_stat_labels,
+              streak_stat_values,
+              color=streak_stat_colors,
+              alpha=0.85,
+              width=0.60,
+          )
+
+          for bar, color, value in zip(
+              bars,
+              streak_stat_colors,
+              streak_stat_values,
+          ):
+
+              bar.set_edgecolor(
+                  color
+              )
+
+              ax.text(
+                  bar.get_x()
+                  + bar.get_width() / 2,
+                  value,
+                  str(value),
+                  ha="center",
+                  va="bottom",
+                  color=COLORS[3],
+                  fontsize=18,
+                  fontweight="bold",
+              )
+
+          style_title(
+              ax,
+              title_text() + " | Streak Statistics",
+              COLORS[0],
+          )
+
+          ax.set_ylabel(
+              "Days"
+          )
+
+          style_axis(
+              ax,
+              COLORS[0],
+              COLORS[1],
+          )
+
+          ax.grid(
+              axis="y",
+              alpha=0.15,
+              color=GRID_COLOR,
+          )
+
+          ax.text(
+              0.5,
+              -0.15,
+              (
+                  f"Current: {current_streak} days  |  "
+                  f"Highest: {highest_streak} days  |  "
+                  f"Lowest: {lowest_streak} days"
+              ),
+              transform=ax.transAxes,
+              ha="center",
+              va="center",
+              color=COLORS[4],
+              fontsize=10,
+              fontweight="bold",
+          )
+
+          save(
+              fig,
+              "github-streak-statistics.png",
+          )
+
+          # ============================================================
+          # VALIDATION
+          # ============================================================
 
           expected_files = [
               "github-area-chart.png",
@@ -848,42 +1732,174 @@ jobs:
               "github-streak-system.png",
               "github-treemap.png",
               "github-waterfall-chart.png",
+              "github-streak-statistics.png",
           ]
 
           print("")
           print("Generated dashboard files:")
+          print("")
 
           for filename in expected_files:
-              path = os.path.join(ASSETS, filename)
+
+              path = os.path.join(
+                  ASSETS,
+                  filename,
+              )
 
               if not os.path.isfile(path):
                   raise RuntimeError(
-                      f"Expected dashboard file was not generated: {path}"
+                      "Expected dashboard file "
+                      f"was not generated: {path}"
                   )
 
               size = os.path.getsize(path)
 
               if size < 1000:
                   raise RuntimeError(
-                      f"Dashboard file is too small: {path} ({size} bytes)"
+                      "Dashboard file is too small: "
+                      f"{path} ({size} bytes)"
                   )
 
-              print(f"OK  {path}  {size:,} bytes")
+              print(
+                  f"OK  {path}  "
+                  f"{size:,} bytes"
+              )
 
           print("")
-          print(f"GitHub user: {USERNAME}")
-          print(f"Repositories: {repo_count}")
-          print(f"Stars: {total_stars}")
-          print(f"Forks: {total_forks}")
-          print(f"Commits: {commits}")
-          print(f"Pull Requests: {prs}")
-          print(f"Issues: {issues}")
-          print(f"Contributions: {total_contributions}")
-          print(f"Current streak: {current_streak}")
-          print(f"Longest streak: {longest_streak}")
+          print(
+              f"GitHub user: {USERNAME}"
+          )
+
+          print(
+              f"Repositories: {repo_count}"
+          )
+
+          print(
+              f"Stars: {total_stars}"
+          )
+
+          print(
+              f"Forks: {total_forks}"
+          )
+
+          print(
+              f"Commits: {commits}"
+          )
+
+          print(
+              f"Pull Requests: {prs}"
+          )
+
+          print(
+              f"Issues: {issues}"
+          )
+
+          print(
+              f"Contributions: "
+              f"{total_contributions}"
+          )
+
+          print(
+              f"Current streak: "
+              f"{current_streak}"
+          )
+
+          print(
+              f"Highest streak: "
+              f"{highest_streak}"
+          )
+
+          print(
+              f"Lowest streak: "
+              f"{lowest_streak}"
+          )
 
           print("")
-          print("Dashboard generation completed successfully.")
+          print(
+              "Dashboard generation "
+              "completed successfully."
+          )
+          PY
+
+      - name: Add streak statistics to README
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+
+          if [ ! -f "README.md" ]; then
+            echo "README.md not found."
+            exit 0
+          fi
+
+          if grep -q "assets/github-streak-statistics.png" README.md; then
+            echo "Streak statistics chart is already in README.md."
+            exit 0
+          fi
+
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("README.md")
+
+          text = path.read_text(
+              encoding="utf-8"
+          )
+
+          new_chart = """
+          <p align="center">
+            <img src="assets/github-streak-statistics.png" width="100%" />
+          </p>
+          """
+
+          marker = (
+              '<img src="assets/github-streak-system.png"'
+          )
+
+          marker_position = text.find(
+              marker
+          )
+
+          if marker_position != -1:
+
+              closing = text.find(
+                  "</p>",
+                  marker_position
+              )
+
+              if closing != -1:
+
+                  closing += len("</p>")
+
+                  text = (
+                      text[:closing]
+                      + "\n\n"
+                      + new_chart.strip()
+                      + text[closing:]
+                  )
+
+              else:
+                  text += (
+                      "\n\n"
+                      + new_chart.strip()
+                      + "\n"
+                  )
+
+          else:
+              text += (
+                  "\n\n"
+                  + new_chart.strip()
+                  + "\n"
+              )
+
+          path.write_text(
+              text,
+              encoding="utf-8"
+          )
+
+          print(
+              "README.md updated with "
+              "streak statistics chart."
+          )
           PY
 
       - name: Validate generated dashboard
@@ -911,11 +1927,13 @@ jobs:
             "github-streak-system.png"
             "github-treemap.png"
             "github-waterfall-chart.png"
+            "github-streak-statistics.png"
           )
 
           FAILED=0
 
           for FILE in "${EXPECTED_FILES[@]}"; do
+
             PATH_TO_FILE="assets/$FILE"
 
             if [ ! -f "$PATH_TO_FILE" ]; then
@@ -944,23 +1962,30 @@ jobs:
           echo ""
           echo "Dashboard validation successful."
           echo ""
-          echo "Other PNG assets are allowed and will not cause validation failure."
 
-          echo ""
           echo "All PNG assets currently in assets/:"
-          find assets -maxdepth 1 -type f -name "*.png" -print | sort
 
-      - name: Commit updated dashboard images
+          find assets \
+            -maxdepth 1 \
+            -type f \
+            -name "*.png" \
+            -print \
+            | sort
+
+      - name: Commit updated dashboard images and README
         shell: bash
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           set -Eeuo pipefail
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name \
+            "github-actions[bot]"
 
-          git add assets/*.png
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/*.png README.md
 
           echo "Git status:"
           git status --short
@@ -970,6 +1995,9 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update GitHub profile dashboard"
+          git commit \
+            -m "Update GitHub profile dashboard"
 
-          git push origin "HEAD:${DEFAULT_BRANCH}"
+          git push \
+            origin \
+            "HEAD:${DEFAULT_BRANCH}"
