@@ -1,4 +1,4 @@
-name: Update GitHub Profile Stats
+﻿name: Update GitHub Profile Stats
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  generate-profile:
+  generate-profile-dashboard:
     name: Generate GitHub Profile Dashboard
     runs-on: ubuntu-24.04
     timeout-minutes: 15
@@ -30,8 +30,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          ref: ${{ github.event.repository.default_branch }}
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -39,1770 +38,917 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python packages
-        shell: bash
         run: |
-          set -Eeuo pipefail
-
-          mkdir -p "$MPLCONFIGDIR"
-
           python -m pip install --upgrade pip
           python -m pip install requests matplotlib numpy
-
-          echo "Python version:"
-          python --version
-
-          echo "Installed packages:"
-          python -c "import requests, matplotlib, numpy; print('requests:', requests.__version__); print('matplotlib:', matplotlib.__version__); print('numpy:', numpy.__version__)"
 
       - name: Generate GitHub Activity Dashboard
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-        shell: bash
-
         run: |
-          set -Eeuo pipefail
-
-          mkdir -p "$MPLCONFIGDIR"
-          mkdir -p assets
-
-          cat > generate_profile.py <<'PYTHON'
+          python - <<'PY'
           import os
-          import sys
-          import traceback
-          from datetime import datetime, timedelta, timezone
-
-          import numpy as np
+          import math
           import requests
-
-          import matplotlib
-          matplotlib.use("Agg")
-
+          import numpy as np
           import matplotlib.pyplot as plt
-          from matplotlib.patches import FancyArrowPatch, Circle, FancyBboxPatch
-          from matplotlib.path import Path
+          from collections import Counter
+          from datetime import datetime, timezone, timedelta
 
+          USERNAME = os.environ["GITHUB_USERNAME"]
+          TOKEN = os.environ["GITHUB_TOKEN"]
 
-          USERNAME = os.environ.get("GITHUB_USERNAME", "ATULPANDEYIITR")
-          TOKEN = os.environ.get("GITHUB_TOKEN", "").strip()
+          ASSETS = "assets"
+          os.makedirs(ASSETS, exist_ok=True)
 
-          REST_URL = "https://api.github.com"
-          GRAPHQL_URL = "https://api.github.com/graphql"
+          headers = {
+              "Authorization": f"Bearer {TOKEN}",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+          }
 
-          OUTPUT_DIR = "assets"
+          graphql_url = "https://api.github.com/graphql"
 
-          ELECTRIC_BLUE = "#0057FF"
-          ACID_GREEN = "#39FF14"
-          ELECTRIC_VIOLET = "#8A2BE2"
-          HOT_MAGENTA = "#FF007F"
+          query = """
+          query($login: String!, $from: DateTime!, $to: DateTime!) {
+            user(login: $login) {
+              login
+              name
+              followers {
+                totalCount
+              }
+              following {
+                totalCount
+              }
+              contributionsCollection(from: $from, to: $to) {
+                totalCommitContributions
+                totalIssueContributions
+                totalPullRequestContributions
+                totalRepositoriesWithContributedCommits
+                restrictedContributionsCount
 
-          ICE_WHITE = "#E8F1FF"
-          STEEL_GREY = "#7B8CA8"
-          BLUE_LIGHT = "#3D7BFF"
-          GREEN_LIGHT = "#7CFF5B"
-          VIOLET_LIGHT = "#B266FF"
-          MAGENTA_LIGHT = "#FF4DA6"
-
-          COLORS = [
-              ELECTRIC_BLUE,
-              ACID_GREEN,
-              ELECTRIC_VIOLET,
-              HOT_MAGENTA,
-              BLUE_LIGHT,
-              GREEN_LIGHT,
-              VIOLET_LIGHT,
-              MAGENTA_LIGHT,
-          ]
-
-          plt.rcParams.update({
-              "font.family": "DejaVu Sans",
-              "figure.dpi": 150,
-              "savefig.dpi": 180,
-              "axes.titleweight": "bold",
-          })
-
-
-          def fail(message):
-              raise RuntimeError(message)
-
-
-          def request_with_retry(method, url, **kwargs):
-              headers = kwargs.pop("headers", {})
-
-              headers.update({
-                  "Accept": "application/vnd.github+json",
-                  "X-GitHub-Api-Version": "2022-11-28",
-                  "User-Agent": "GitHub-Profile-Dashboard",
-              })
-
-              if TOKEN:
-                  headers["Authorization"] = f"Bearer {TOKEN}"
-
-              last_error = None
-
-              for attempt in range(4):
-                  try:
-                      response = requests.request(
-                          method,
-                          url,
-                          headers=headers,
-                          timeout=60,
-                          **kwargs,
-                      )
-
-                      if response.status_code in {429, 500, 502, 503, 504}:
-                          last_error = RuntimeError(
-                              f"GitHub returned HTTP {response.status_code}"
-                          )
-
-                          if attempt < 3:
-                              import time
-                              time.sleep(2 ** attempt)
-                              continue
-
-                      response.raise_for_status()
-                      return response
-
-                  except requests.RequestException as exc:
-                      last_error = exc
-
-                      if attempt < 3:
-                          import time
-                          time.sleep(2 ** attempt)
-                          continue
-
-              raise RuntimeError(
-                  f"GitHub API request failed after retries: {last_error}"
-              )
-
-
-          def graphql_request(query, variables):
-              response = request_with_retry(
-                  "POST",
-                  GRAPHQL_URL,
-                  json={
-                      "query": query,
-                      "variables": variables,
-                  },
-              )
-
-              payload = response.json()
-
-              if payload.get("errors"):
-                  errors = []
-
-                  for error in payload["errors"]:
-                      message = error.get("message", "Unknown GraphQL error")
-                      error_type = error.get("type", "")
-                      errors.append(
-                          f"{error_type}: {message}" if error_type else message
-                      )
-
-                  raise RuntimeError(
-                      "GitHub GraphQL returned errors:\n"
-                      + "\n".join(errors)
-                  )
-
-              if "data" not in payload:
-                  raise RuntimeError(
-                      "GitHub GraphQL response did not contain data."
-                  )
-
-              return payload["data"]
-
-
-          def get_github_data():
-              if not TOKEN:
-                  fail(
-                      "GITHUB_TOKEN is empty. "
-                      "The GitHub Actions token was not provided."
-                  )
-
-              print(f"Collecting GitHub data for: {USERNAME}")
-
-              query = """
-              query($login: String!, $from: DateTime!, $to: DateTime!) {
-                user(login: $login) {
-                  login
-                  name
-                  followers {
-                    totalCount
-                  }
-                  following {
-                    totalCount
-                  }
-                  contributionsCollection(from: $from, to: $to) {
-                    totalCommitContributions
-                    totalIssueContributions
-                    totalPullRequestContributions
-                    totalRepositoriesWithContributedCommits
-                    restrictedContributionsCount
-                    contributionCalendar {
-                      totalContributions
-                      weeks {
-                        contributionDays {
-                          date
-                          contributionCount
-                        }
-                      }
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      contributionCount
+                      date
                     }
                   }
                 }
               }
-              """
+            }
+          }
+          """
 
-              now = datetime.now(timezone.utc)
-              start = now - timedelta(days=364)
+          now = datetime.now(timezone.utc)
+          from_date = now - timedelta(days=364)
 
-              data = graphql_request(
-                  query,
-                  {
+          response = requests.post(
+              graphql_url,
+              headers=headers,
+              json={
+                  "query": query,
+                  "variables": {
                       "login": USERNAME,
-                      "from": start.isoformat(),
+                      "from": from_date.isoformat(),
                       "to": now.isoformat(),
                   },
+              },
+              timeout=60,
+          )
+
+          response.raise_for_status()
+          payload = response.json()
+
+          if "errors" in payload:
+              raise RuntimeError(payload["errors"])
+
+          user = payload["data"]["user"]
+
+          if not user:
+              raise RuntimeError(f"GitHub user not found: {USERNAME}")
+
+          contributions = user["contributionsCollection"]
+          calendar = contributions["contributionCalendar"]
+
+          days = []
+          for week in calendar["weeks"]:
+              for day in week["contributionDays"]:
+                  days.append({
+                      "date": day["date"],
+                      "count": day["contributionCount"],
+                  })
+
+          counts = [d["count"] for d in days]
+
+          total_contributions = calendar["totalContributions"]
+          commits = contributions["totalCommitContributions"]
+          issues = contributions["totalIssueContributions"]
+          prs = contributions["totalPullRequestContributions"]
+          contributed_repos = contributions["totalRepositoriesWithContributedCommits"]
+          restricted = contributions["restrictedContributionsCount"]
+
+          rest_url = f"https://api.github.com/users/{USERNAME}"
+
+          profile_response = requests.get(
+              rest_url,
+              headers=headers,
+              timeout=60,
+          )
+
+          profile_response.raise_for_status()
+          profile = profile_response.json()
+
+          public_repos = profile.get("public_repos", 0)
+
+          repos = []
+
+          for page in range(1, 21):
+              repo_response = requests.get(
+                  f"https://api.github.com/users/{USERNAME}/repos",
+                  headers=headers,
+                  params={
+                      "per_page": 100,
+                      "page": page,
+                      "sort": "updated",
+                      "direction": "desc",
+                  },
+                  timeout=60,
               )
 
-              user = data.get("user")
+              repo_response.raise_for_status()
+              page_data = repo_response.json()
 
-              if not user:
-                  fail(f"GitHub user '{USERNAME}' was not found.")
+              if not page_data:
+                  break
 
-              contributions = user["contributionsCollection"]
+              repos.extend(page_data)
 
-              days = []
+              if len(page_data) < 100:
+                  break
 
-              for week in contributions["contributionCalendar"]["weeks"]:
-                  for day in week["contributionDays"]:
-                      days.append({
-                          "date": day["date"],
-                          "count": int(day["contributionCount"]),
-                      })
+          language_counts = Counter()
 
-              days.sort(key=lambda item: item["date"])
+          total_stars = 0
+          total_forks = 0
 
-              cutoff = (datetime.now(timezone.utc).date() - timedelta(days=364))
+          for repo in repos:
+              if repo.get("fork"):
+                  continue
 
-              filtered_days = [
-                  item
-                  for item in days
-                  if datetime.fromisoformat(item["date"]).date() >= cutoff
-              ]
+              total_stars += repo.get("stargazers_count", 0)
+              total_forks += repo.get("forks_count", 0)
 
-              while len(filtered_days) < 365:
-                  missing = 365 - len(filtered_days)
+              language = repo.get("language")
 
-                  if filtered_days:
-                      first_date = datetime.fromisoformat(
-                          filtered_days[0]["date"]
-                      ).date()
-                  else:
-                      first_date = datetime.now(timezone.utc).date()
+              if language:
+                  language_counts[language] += 1
 
-                  extra = []
+          repo_count = len([r for r in repos if not r.get("fork")])
 
-                  for index in range(missing):
-                      date_value = first_date - timedelta(days=missing - index)
+          if repo_count == 0:
+              repo_count = public_repos
 
-                      extra.append({
-                          "date": date_value.isoformat(),
-                          "count": 0,
-                      })
-
-                  filtered_days = extra + filtered_days
-
-              filtered_days = filtered_days[-365:]
-
-              rest_user = request_with_retry(
-                  "GET",
-                  f"{REST_URL}/users/{USERNAME}",
-              ).json()
-
-              repos = []
-              page = 1
-
-              while True:
-                  response = request_with_retry(
-                      "GET",
-                      f"{REST_URL}/users/{USERNAME}/repos",
-                      params={
-                          "per_page": 100,
-                          "page": page,
-                          "type": "owner",
-                          "sort": "updated",
-                      },
-                  )
-
-                  batch = response.json()
-
-                  if not batch:
-                      break
-
-                  repos.extend(batch)
-
-                  if len(batch) < 100:
-                      break
-
-                  page += 1
-
-                  if page > 20:
-                      break
-
-              language_counts = {}
-
-              for repo in repos:
-                  language = repo.get("language")
-
-                  if language:
-                      language_counts[language] = (
-                          language_counts.get(language, 0) + 1
-                      )
-
-              total_stars = sum(
-                  int(repo.get("stargazers_count", 0))
-                  for repo in repos
-              )
-
-              total_forks = sum(
-                  int(repo.get("forks_count", 0))
-                  for repo in repos
-              )
-
-              print(f"Repositories: {len(repos)}")
-              print(f"Stars: {total_stars}")
-              print(f"Forks: {total_forks}")
-              print(
-                  f"Total contributions: "
-                  f"{contributions['contributionCalendar']['totalContributions']}"
-              )
-
-              return {
-                  "name": user.get("name") or USERNAME,
-                  "followers": int(
-                      user.get("followers", {}).get("totalCount", 0)
-                  ),
-                  "following": int(
-                      user.get("following", {}).get("totalCount", 0)
-                  ),
-                  "total_contributions": int(
-                      contributions["contributionCalendar"]["totalContributions"]
-                  ),
-                  "commits": int(
-                      contributions["totalCommitContributions"]
-                  ),
-                  "issues": int(
-                      contributions["totalIssueContributions"]
-                  ),
-                  "pull_requests": int(
-                      contributions["totalPullRequestContributions"]
-                  ),
-                  "contributed_repositories": int(
-                      contributions["totalRepositoriesWithContributedCommits"]
-                  ),
-                  "restricted": int(
-                      contributions["restrictedContributionsCount"]
-                  ),
-                  "days": filtered_days,
-                  "repos": len(repos),
-                  "stars": total_stars,
-                  "forks": total_forks,
-                  "languages": language_counts,
-                  "public_repos": int(
-                      rest_user.get("public_repos", len(repos))
-                  ),
-              }
-
+          # ------------------------------------------------------------
+          # Helper functions
+          # ------------------------------------------------------------
 
           def save(fig, filename):
-              path = os.path.join(OUTPUT_DIR, filename)
+              path = os.path.join(ASSETS, filename)
 
               fig.savefig(
                   path,
-                  transparent=True,
+                  dpi=180,
                   bbox_inches="tight",
-                  pad_inches=0.35,
+                  facecolor="white",
               )
 
               plt.close(fig)
 
-              print(f"Created: {path}")
+              if not os.path.exists(path):
+                  raise RuntimeError(f"Failed to generate {path}")
 
+              if os.path.getsize(path) < 1000:
+                  raise RuntimeError(f"Generated file is suspiciously small: {path}")
 
-          def base_figure(title, subtitle=None, width=16, height=8):
-              fig = plt.figure(figsize=(width, height))
-              ax = fig.add_axes([0.055, 0.16, 0.89, 0.70])
+          def title_text():
+              return f"{USERNAME} | GitHub Activity"
 
-              ax.set_facecolor("none")
+          # ------------------------------------------------------------
+          # 1. Area chart
+          # ------------------------------------------------------------
 
-              for spine in ax.spines.values():
-                  spine.set_visible(False)
+          fig, ax = plt.subplots(figsize=(14, 5))
 
-              ax.tick_params(
-                  colors=ICE_WHITE,
-                  labelsize=16,
-                  length=0,
-              )
+          x = np.arange(len(counts))
 
-              ax.set_title(
-                  title,
-                  color=ELECTRIC_BLUE,
-                  fontsize=29,
-                  fontweight="bold",
-                  pad=26,
-              )
+          ax.fill_between(x, counts, alpha=0.35)
+          ax.plot(x, counts, linewidth=1.5)
 
-              if subtitle:
-                  fig.text(
-                      0.5,
-                      0.055,
-                      subtitle,
-                      ha="center",
-                      va="center",
-                      color=STEEL_GREY,
-                      fontsize=17,
-                  )
+          ax.set_title(title_text() + " | Contribution Area")
+          ax.set_xlabel("Contribution days")
+          ax.set_ylabel("Contributions")
 
-              return fig, ax
+          ax.grid(alpha=0.2)
 
+          save(fig, "github-area-chart.png")
 
-          def add_value(ax, x, y, value, color=ICE_WHITE):
+          # ------------------------------------------------------------
+          # 2. Bar chart
+          # ------------------------------------------------------------
+
+          categories = [
+              "Commits",
+              "Pull Requests",
+              "Issues",
+              "Contributions",
+          ]
+
+          values = [
+              commits,
+              prs,
+              issues,
+              total_contributions,
+          ]
+
+          fig, ax = plt.subplots(figsize=(12, 6))
+
+          ax.bar(categories, values)
+
+          ax.set_title(title_text() + " | Activity Breakdown")
+          ax.set_ylabel("Count")
+
+          ax.tick_params(axis="x", rotation=20)
+          ax.grid(axis="y", alpha=0.2)
+
+          save(fig, "github-bar-chart.png")
+
+          # ------------------------------------------------------------
+          # 3. Box plot
+          # ------------------------------------------------------------
+
+          fig, ax = plt.subplots(figsize=(10, 6))
+
+          ax.boxplot(counts)
+
+          ax.set_title(title_text() + " | Contribution Distribution")
+          ax.set_ylabel("Daily Contributions")
+
+          ax.grid(axis="y", alpha=0.2)
+
+          save(fig, "github-box-plot.png")
+
+          # ------------------------------------------------------------
+          # 4. Bubble chart
+          # ------------------------------------------------------------
+
+          x_values = np.arange(len(categories))
+          bubble_sizes = [max(v, 1) * 20 for v in values]
+
+          fig, ax = plt.subplots(figsize=(12, 7))
+
+          ax.scatter(
+              x_values,
+              values,
+              s=bubble_sizes,
+              alpha=0.6,
+          )
+
+          ax.set_xticks(x_values)
+          ax.set_xticklabels(categories, rotation=20)
+
+          ax.set_title(title_text() + " | Activity Bubble Map")
+          ax.set_ylabel("Activity")
+
+          ax.grid(alpha=0.2)
+
+          save(fig, "github-bubble-chart.png")
+
+          # ------------------------------------------------------------
+          # 5. Developer telemetry
+          # ------------------------------------------------------------
+
+          telemetry_labels = [
+              "Commits",
+              "PRs",
+              "Issues",
+              "Repos",
+              "Stars",
+              "Forks",
+          ]
+
+          telemetry_values = [
+              commits,
+              prs,
+              issues,
+              repo_count,
+              total_stars,
+              total_forks,
+          ]
+
+          fig, ax = plt.subplots(figsize=(14, 6))
+
+          ax.plot(
+              telemetry_labels,
+              telemetry_values,
+              marker="o",
+              linewidth=2,
+          )
+
+          ax.set_title(title_text() + " | Developer Telemetry")
+          ax.set_ylabel("Value")
+
+          ax.tick_params(axis="x", rotation=25)
+          ax.grid(alpha=0.2)
+
+          save(fig, "github-developer-telemetry.png")
+
+          # ------------------------------------------------------------
+          # 6. Donut chart
+          # ------------------------------------------------------------
+
+          donut_labels = [
+              "Commits",
+              "PRs",
+              "Issues",
+          ]
+
+          donut_values = [
+              max(commits, 0),
+              max(prs, 0),
+              max(issues, 0),
+          ]
+
+          if sum(donut_values) == 0:
+              donut_values = [1, 1, 1]
+
+          fig, ax = plt.subplots(figsize=(8, 8))
+
+          ax.pie(
+              donut_values,
+              labels=donut_labels,
+              autopct="%1.1f%%",
+              wedgeprops={"width": 0.4},
+          )
+
+          ax.set_title(title_text() + " | Contribution Composition")
+
+          save(fig, "github-donut-chart.png")
+
+          # ------------------------------------------------------------
+          # 7. Funnel chart
+          # ------------------------------------------------------------
+
+          funnel_labels = [
+              "Repositories",
+              "Commits",
+              "Pull Requests",
+              "Issues",
+          ]
+
+          funnel_values = [
+              repo_count,
+              commits,
+              prs,
+              issues,
+          ]
+
+          fig, ax = plt.subplots(figsize=(11, 7))
+
+          y = np.arange(len(funnel_labels))
+
+          ax.barh(y, funnel_values)
+
+          ax.set_yticks(y)
+          ax.set_yticklabels(funnel_labels)
+
+          ax.invert_yaxis()
+
+          ax.set_title(title_text() + " | Activity Funnel")
+          ax.set_xlabel("Count")
+
+          ax.grid(axis="x", alpha=0.2)
+
+          save(fig, "github-funnel-chart.png")
+
+          # ------------------------------------------------------------
+          # 8. Heatmap
+          # ------------------------------------------------------------
+
+          heatmap = np.zeros((7, 53))
+
+          for index, item in enumerate(days):
+              week = index // 7
+              weekday = index % 7
+
+              if week < 53:
+                  heatmap[weekday, week] = item["count"]
+
+          fig, ax = plt.subplots(figsize=(16, 6))
+
+          image = ax.imshow(
+              heatmap,
+              aspect="auto",
+              interpolation="nearest",
+          )
+
+          ax.set_title(title_text() + " | Contribution Heatmap")
+          ax.set_xlabel("Weeks")
+          ax.set_ylabel("Day of week")
+
+          ax.set_yticks(range(7))
+          ax.set_yticklabels([
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun",
+          ])
+
+          fig.colorbar(image, ax=ax, label="Contributions")
+
+          save(fig, "github-heatmap.png")
+
+          # ------------------------------------------------------------
+          # 9. Histogram
+          # ------------------------------------------------------------
+
+          fig, ax = plt.subplots(figsize=(12, 6))
+
+          bins = max(5, min(30, int(math.sqrt(len(counts)))))
+
+          ax.hist(
+              counts,
+              bins=bins,
+              edgecolor="black",
+          )
+
+          ax.set_title(title_text() + " | Daily Contribution Histogram")
+          ax.set_xlabel("Daily Contributions")
+          ax.set_ylabel("Number of Days")
+
+          ax.grid(axis="y", alpha=0.2)
+
+          save(fig, "github-histogram.png")
+
+          # ------------------------------------------------------------
+          # 10. Line graph
+          # ------------------------------------------------------------
+
+          fig, ax = plt.subplots(figsize=(14, 6))
+
+          ax.plot(
+              x,
+              counts,
+              linewidth=2,
+          )
+
+          ax.set_title(title_text() + " | Contribution Trend")
+          ax.set_xlabel("Days")
+          ax.set_ylabel("Contributions")
+
+          ax.grid(alpha=0.2)
+
+          save(fig, "github-line-graph.png")
+
+          # ------------------------------------------------------------
+          # 11. Pie chart
+          # ------------------------------------------------------------
+
+          pie_labels = [
+              "Commits",
+              "Pull Requests",
+              "Issues",
+              "Restricted",
+          ]
+
+          pie_values = [
+              commits,
+              prs,
+              issues,
+              restricted,
+          ]
+
+          if sum(pie_values) == 0:
+              pie_values = [1, 1, 1, 1]
+
+          fig, ax = plt.subplots(figsize=(8, 8))
+
+          ax.pie(
+              pie_values,
+              labels=pie_labels,
+              autopct="%1.1f%%",
+          )
+
+          ax.set_title(title_text() + " | Activity Distribution")
+
+          save(fig, "github-pie-chart.png")
+
+          # ------------------------------------------------------------
+          # 12. Radar chart
+          # ------------------------------------------------------------
+
+          radar_labels = [
+              "Commits",
+              "PRs",
+              "Issues",
+              "Repos",
+              "Stars",
+              "Forks",
+          ]
+
+          radar_values = np.array([
+              commits,
+              prs,
+              issues,
+              repo_count,
+              total_stars,
+              total_forks,
+          ], dtype=float)
+
+          max_value = max(radar_values.max(), 1)
+
+          radar_values = radar_values / max_value
+
+          angles = np.linspace(
+              0,
+              2 * np.pi,
+              len(radar_labels),
+              endpoint=False,
+          )
+
+          radar_values = np.concatenate([
+              radar_values,
+              [radar_values[0]],
+          ])
+
+          angles = np.concatenate([
+              angles,
+              [angles[0]],
+          ])
+
+          fig = plt.figure(figsize=(8, 8))
+
+          ax = fig.add_subplot(111, polar=True)
+
+          ax.plot(angles, radar_values, linewidth=2)
+          ax.fill(angles, radar_values, alpha=0.25)
+
+          ax.set_xticks(angles[:-1])
+          ax.set_xticklabels(radar_labels)
+
+          ax.set_title(title_text() + " | Developer Radar")
+
+          save(fig, "github-radar-chart.png")
+
+          # ------------------------------------------------------------
+          # 13. Sankey-style diagram
+          # ------------------------------------------------------------
+
+          source_labels = [
+              "Repositories",
+              "Commits",
+              "Pull Requests",
+              "Issues",
+          ]
+
+          source_values = [
+              repo_count,
+              commits,
+              prs,
+              issues,
+          ]
+
+          fig, ax = plt.subplots(figsize=(12, 7))
+
+          left_x = 0
+          right_x = 1
+
+          left_positions = np.linspace(
+              0.85,
+              0.15,
+              len(source_labels),
+          )
+
+          for y_pos, label, value in zip(
+              left_positions,
+              source_labels,
+              source_values,
+          ):
               ax.text(
-                  x,
-                  y,
-                  f"{int(value):,}",
+                  left_x,
+                  y_pos,
+                  f"{label}\n{value}",
                   ha="center",
-                  va="bottom",
-                  fontsize=23,
-                  fontweight="bold",
-                  color=color,
+                  va="center",
+                  fontsize=10,
               )
 
+          ax.text(
+              right_x,
+              0.5,
+              f"GitHub Activity\n{total_contributions}",
+              ha="center",
+              va="center",
+              fontsize=12,
+              fontweight="bold",
+          )
 
-          def make_area_chart(days):
-              values = np.array([d["count"] for d in days])
-
-              fig, ax = base_figure(
-                  "GITHUB CONTRIBUTION ACTIVITY",
-                  "365-day contribution history",
-              )
-
-              x = np.arange(len(values))
-
-              ax.fill_between(
-                  x,
-                  values,
-                  alpha=0.20,
-                  color=ELECTRIC_BLUE,
-              )
-
+          for y_pos in left_positions:
               ax.plot(
-                  x,
-                  values,
-                  linewidth=3.5,
-                  color=ELECTRIC_BLUE,
-              )
-
-              ax.plot(
-                  x,
-                  values,
-                  linewidth=1.2,
-                  color=ACID_GREEN,
-                  alpha=0.9,
-              )
-
-              ax.set_xlim(0, len(values) - 1)
-              ax.set_ylabel(
-                  "Contributions",
-                  color=STEEL_GREY,
-                  fontsize=17,
-              )
-
-              ax.set_xticks([])
-
-              save(fig, "github-area-chart.png")
-
-
-          def make_bar_chart(data):
-              labels = [
-                  "Commits",
-                  "Pull Requests",
-                  "Issues",
-                  "Repositories",
-                  "Stars",
-                  "Forks",
-              ]
-
-              values = [
-                  data["commits"],
-                  data["pull_requests"],
-                  data["issues"],
-                  data["repos"],
-                  data["stars"],
-                  data["forks"],
-              ]
-
-              fig, ax = base_figure(
-                  "GITHUB ACTIVITY METRICS",
-                  "Key activity indicators",
-              )
-
-              x = np.arange(len(labels))
-
-              bars = ax.bar(
-                  x,
-                  values,
-                  width=0.62,
-                  color=[
-                      ELECTRIC_BLUE,
-                      ACID_GREEN,
-                      ELECTRIC_VIOLET,
-                      HOT_MAGENTA,
-                      BLUE_LIGHT,
-                      VIOLET_LIGHT,
-                  ],
-                  edgecolor="none",
-              )
-
-              ax.set_xticks(x)
-              ax.set_xticklabels(
-                  labels,
-                  fontsize=17,
-                  color=ICE_WHITE,
-              )
-
-              ax.set_ylim(
-                  0,
-                  max(values + [1]) * 1.25,
-              )
-
-              for bar, value in zip(bars, values):
-                  add_value(
-                      ax,
-                      bar.get_x() + bar.get_width() / 2,
-                      bar.get_height(),
-                      value,
-                  )
-
-              save(fig, "github-bar-chart.png")
-
-
-          def make_box_plot(days):
-              values = np.array([d["count"] for d in days])
-
-              fig, ax = base_figure(
-                  "CONTRIBUTION DISTRIBUTION",
-                  "Daily contribution spread across 365 days",
-              )
-
-              result = ax.boxplot(
-                  values,
-                  vert=False,
-                  patch_artist=True,
-                  widths=0.42,
-                  boxprops={
-                      "facecolor": ELECTRIC_VIOLET,
-                      "edgecolor": VIOLET_LIGHT,
-                      "linewidth": 3,
-                  },
-                  medianprops={
-                      "color": ACID_GREEN,
-                      "linewidth": 4,
-                  },
-                  whiskerprops={
-                      "color": ELECTRIC_BLUE,
-                      "linewidth": 3,
-                  },
-                  capprops={
-                      "color": ELECTRIC_BLUE,
-                      "linewidth": 3,
-                  },
-                  flierprops={
-                      "marker": "o",
-                      "markerfacecolor": HOT_MAGENTA,
-                      "markeredgecolor": HOT_MAGENTA,
-                      "markersize": 8,
-                  },
-              )
-
-              ax.set_yticks([1])
-              ax.set_yticklabels(
-                  ["Daily contributions"],
-                  color=ICE_WHITE,
-                  fontsize=18,
-              )
-
-              save(fig, "github-box-plot.png")
-
-
-          def make_bubble_chart(data):
-              labels = [
-                  "Commits",
-                  "PRs",
-                  "Issues",
-                  "Repos",
-                  "Stars",
-                  "Forks",
-              ]
-
-              values = np.array([
-                  data["commits"],
-                  data["pull_requests"],
-                  data["issues"],
-                  data["repos"],
-                  data["stars"],
-                  data["forks"],
-              ], dtype=float)
-
-              sizes = np.maximum(values, 1)
-              sizes = 500 + (sizes / max(sizes)) * 5000
-
-              fig, ax = base_figure(
-                  "GITHUB ACTIVITY BUBBLE MAP",
-                  "Relative scale of major GitHub metrics",
-              )
-
-              x = np.arange(len(labels))
-              y = np.ones(len(labels))
-
-              ax.scatter(
-                  x,
-                  y,
-                  s=sizes,
-                  c=COLORS[:len(labels)],
-                  alpha=0.78,
-                  edgecolors=ICE_WHITE,
-                  linewidths=1.5,
-              )
-
-              for index, value in enumerate(values):
-                  ax.text(
-                      index,
-                      1,
-                      f"{int(value):,}",
-                      ha="center",
-                      va="center",
-                      color=ICE_WHITE,
-                      fontsize=19,
-                      fontweight="bold",
-                  )
-
-              ax.set_xticks(x)
-              ax.set_xticklabels(
-                  labels,
-                  color=ICE_WHITE,
-                  fontsize=17,
-              )
-
-              ax.set_yticks([])
-              ax.set_xlim(-0.8, len(labels) - 0.2)
-              ax.set_ylim(0.35, 1.65)
-
-              save(fig, "github-bubble-chart.png")
-
-
-          def make_telemetry(data):
-              metrics = {
-                  "Contributions": data["total_contributions"],
-                  "Commits": data["commits"],
-                  "Pull Requests": data["pull_requests"],
-                  "Issues": data["issues"],
-                  "Repositories": data["repos"],
-                  "Stars": data["stars"],
-              }
-
-              labels = list(metrics.keys())
-              values = np.array(list(metrics.values()), dtype=float)
-
-              max_value = max(values.max(), 1)
-
-              fig, ax = base_figure(
-                  "DEVELOPER TELEMETRY",
-                  "Current GitHub activity signal",
-              )
-
-              normalized = values / max_value
-
-              y = np.arange(len(labels))
-
-              ax.barh(
-                  y,
-                  normalized,
-                  height=0.58,
-                  color=[
-                      ELECTRIC_BLUE,
-                      ACID_GREEN,
-                      ELECTRIC_VIOLET,
-                      HOT_MAGENTA,
-                      BLUE_LIGHT,
-                      VIOLET_LIGHT,
-                  ],
-              )
-
-              ax.set_yticks(y)
-              ax.set_yticklabels(
-                  labels,
-                  color=ICE_WHITE,
-                  fontsize=18,
-              )
-
-              ax.set_xlim(0, 1.15)
-              ax.set_xticks([])
-
-              for index, value in enumerate(values):
-                  ax.text(
-                      min(value / max_value + 0.03, 1.04),
-                      index,
-                      f"{int(value):,}",
-                      va="center",
-                      color=ICE_WHITE,
-                      fontsize=20,
-                      fontweight="bold",
-                  )
-
-              ax.invert_yaxis()
-
-              save(fig, "github-developer-telemetry.png")
-
-
-          def make_donut(data):
-              labels = [
-                  "Commits",
-                  "Pull Requests",
-                  "Issues",
-                  "Other",
-              ]
-
-              commits = data["commits"]
-              prs = data["pull_requests"]
-              issues = data["issues"]
-              total = data["total_contributions"]
-
-              other = max(total - commits - prs - issues, 0)
-
-              values = np.array(
-                  [commits, prs, issues, other],
-                  dtype=float,
-              )
-
-              fig = plt.figure(figsize=(16, 8))
-              ax = fig.add_axes([0.05, 0.10, 0.90, 0.80])
-
-              ax.set_facecolor("none")
-              ax.axis("equal")
-              ax.axis("off")
-
-              ax.set_title(
-                  "CONTRIBUTION COMPOSITION",
-                  color=ELECTRIC_BLUE,
-                  fontsize=29,
-                  fontweight="bold",
-                  pad=25,
-              )
-
-              if values.sum() == 0:
-                  ring = Circle(
-                      (0, 0),
-                      0.72,
-                      fill=False,
-                      edgecolor=STEEL_GREY,
-                      linewidth=8,
-                      alpha=0.35,
-                  )
-                  ax.add_patch(ring)
-
-                  ax.text(
-                      0,
-                      0,
-                      "0",
-                      ha="center",
-                      va="center",
-                      fontsize=40,
-                      fontweight="bold",
-                      color=ICE_WHITE,
-                  )
-              else:
-                  ax.pie(
-                      values,
-                      colors=[
-                          ELECTRIC_BLUE,
-                          ACID_GREEN,
-                          ELECTRIC_VIOLET,
-                          HOT_MAGENTA,
-                      ],
-                      startangle=90,
-                      counterclock=False,
-                      wedgeprops={
-                          "width": 0.34,
-                          "edgecolor": "none",
-                      },
-                  )
-
-                  ax.text(
-                      0,
-                      0,
-                      f"{total:,}",
-                      ha="center",
-                      va="center",
-                      fontsize=40,
-                      fontweight="bold",
-                      color=ICE_WHITE,
-                  )
-
-              ax.legend(
-                  labels,
-                  loc="lower center",
-                  bbox_to_anchor=(0.5, -0.08),
-                  ncol=4,
-                  frameon=False,
-                  fontsize=17,
-                  labelcolor=ICE_WHITE,
-              )
-
-              save(fig, "github-donut-chart.png")
-
-
-          def make_funnel(data):
-              labels = [
-                  "Total Contributions",
-                  "Commits",
-                  "Pull Requests",
-                  "Issues",
-                  "Repositories",
-              ]
-
-              values = np.array([
-                  data["total_contributions"],
-                  data["commits"],
-                  data["pull_requests"],
-                  data["issues"],
-                  data["repos"],
-              ], dtype=float)
-
-              values = np.maximum(values, 1)
-
-              fig, ax = base_figure(
-                  "GITHUB ACTIVITY FUNNEL",
-                  "Relative contribution flow",
-              )
-
-              max_value = values.max()
-
-              for index, (label, value) in enumerate(zip(labels, values)):
-                  width = 0.28 + 0.65 * (value / max_value)
-
-                  left = 0.5 - width / 2
-
-                  rect = FancyBboxPatch(
-                      (left, len(labels) - index - 1 - 0.36),
-                      width,
-                      0.72,
-                      boxstyle="round,pad=0.02,rounding_size=0.04",
-                      linewidth=0,
-                      facecolor=COLORS[index],
-                      alpha=0.88,
-                  )
-
-                  ax.add_patch(rect)
-
-                  ax.text(
-                      0.5,
-                      len(labels) - index - 1,
-                      f"{label}   {int(value):,}",
-                      ha="center",
-                      va="center",
-                      fontsize=20,
-                      fontweight="bold",
-                      color=ICE_WHITE,
-                  )
-
-              ax.set_xlim(0, 1)
-              ax.set_ylim(-0.8, len(labels) - 0.1)
-              ax.axis("off")
-
-              save(fig, "github-funnel-chart.png")
-
-
-          def make_heatmap(days):
-              values = {
-                  d["date"]: d["count"]
-                  for d in days
-              }
-
-              start_date = datetime.fromisoformat(
-                  days[0]["date"]
-              ).date()
-
-              end_date = datetime.fromisoformat(
-                  days[-1]["date"]
-              ).date()
-
-              dates = []
-              cursor = start_date
-
-              while cursor <= end_date:
-                  dates.append(cursor)
-                  cursor += timedelta(days=1)
-
-              matrix = np.zeros((7, 53), dtype=int)
-
-              for date_value in dates:
-                  index = (date_value - start_date).days
-                  week = index // 7
-
-                  if week >= 53:
-                      continue
-
-                  weekday = date_value.weekday()
-
-                  matrix[weekday, week] = values.get(
-                      date_value.isoformat(),
-                      0,
-                  )
-
-              fig, ax = plt.subplots(figsize=(16, 8))
-
-              fig.patch.set_alpha(0)
-              ax.set_facecolor("none")
-
-              ax.imshow(
-                  matrix,
-                  aspect="auto",
-                  interpolation="nearest",
-                  cmap="viridis",
-              )
-
-              ax.set_title(
-                  "GITHUB CONTRIBUTION HEATMAP",
-                  color=ELECTRIC_BLUE,
-                  fontsize=29,
-                  fontweight="bold",
-                  pad=25,
-              )
-
-              ax.set_yticks(range(7))
-              ax.set_yticklabels(
-                  [
-                      "Monday",
-                      "Tuesday",
-                      "Wednesday",
-                      "Thursday",
-                      "Friday",
-                      "Saturday",
-                      "Sunday",
-                  ],
-                  color=ICE_WHITE,
-                  fontsize=16,
-              )
-
-              ax.set_xticks([])
-
-              for spine in ax.spines.values():
-                  spine.set_visible(False)
-
-              ax.tick_params(length=0)
-
-              save(fig, "github-heatmap.png")
-
-
-          def make_histogram(days):
-              values = np.array([d["count"] for d in days])
-
-              fig, ax = base_figure(
-                  "DAILY CONTRIBUTION SPREAD",
-                  "Frequency of daily GitHub contributions",
-              )
-
-              ax.hist(
-                  values,
-                  bins=min(18, max(5, len(np.unique(values)))),
-                  color=ELECTRIC_BLUE,
-                  alpha=0.82,
-                  edgecolor=ICE_WHITE,
-                  linewidth=1,
-              )
-
-              ax.set_xlabel(
-                  "Contributions per day",
-                  color=STEEL_GREY,
-                  fontsize=18,
-              )
-
-              ax.set_ylabel(
-                  "Days",
-                  color=STEEL_GREY,
-                  fontsize=18,
-              )
-
-              save(fig, "github-histogram.png")
-
-
-          def make_line_graph(days):
-              values = np.array([d["count"] for d in days])
-
-              window = 14
-
-              if len(values) >= window:
-                  moving = np.convolve(
-                      values,
-                      np.ones(window) / window,
-                      mode="valid",
-                  )
-              else:
-                  moving = values
-
-              fig, ax = base_figure(
-                  "CONTRIBUTION TREND",
-                  "Daily activity with 14-day moving average",
-              )
-
-              x = np.arange(len(values))
-
-              ax.plot(
-                  x,
-                  values,
-                  color=ELECTRIC_BLUE,
+                  [0.12, 0.88],
+                  [y_pos, 0.5],
                   linewidth=2,
-                  alpha=0.45,
+                  alpha=0.5,
               )
 
-              moving_x = np.arange(
-                  window - 1,
-                  window - 1 + len(moving),
-              )
+          ax.set_xlim(-0.1, 1.1)
+          ax.set_ylim(0, 1)
+          ax.axis("off")
 
-              ax.plot(
-                  moving_x,
-                  moving,
-                  color=ACID_GREEN,
-                  linewidth=4,
-              )
+          ax.set_title(title_text() + " | Activity Flow")
 
-              ax.set_xticks([])
+          save(fig, "github-sankey-diagram.png")
 
-              save(fig, "github-line-graph.png")
+          # ------------------------------------------------------------
+          # 14. Scatter plot
+          # ------------------------------------------------------------
 
+          cumulative = np.cumsum(counts)
 
-          def make_pie(data):
-              labels = [
-                  "Commits",
-                  "Pull Requests",
-                  "Issues",
-                  "Other",
-              ]
+          fig, ax = plt.subplots(figsize=(12, 7))
 
-              values = np.array([
-                  data["commits"],
-                  data["pull_requests"],
-                  data["issues"],
-                  max(
-                      data["total_contributions"]
-                      - data["commits"]
-                      - data["pull_requests"]
-                      - data["issues"],
-                      0,
-                  ),
-              ])
+          ax.scatter(
+              counts,
+              cumulative,
+              alpha=0.65,
+          )
 
-              fig = plt.figure(figsize=(16, 8))
-              ax = fig.add_axes([0.05, 0.10, 0.90, 0.80])
+          ax.set_title(title_text() + " | Contribution Scatter")
+          ax.set_xlabel("Daily Contributions")
+          ax.set_ylabel("Cumulative Contributions")
 
-              ax.axis("equal")
-              ax.axis("off")
+          ax.grid(alpha=0.2)
 
-              ax.set_title(
-                  "CONTRIBUTION BREAKDOWN",
-                  color=ELECTRIC_BLUE,
-                  fontsize=29,
-                  fontweight="bold",
-                  pad=25,
-              )
+          save(fig, "github-scatter-plot.png")
 
-              if values.sum() == 0:
-                  ax.text(
-                      0,
-                      0,
-                      "NO CONTRIBUTION DATA",
-                      ha="center",
-                      va="center",
-                      fontsize=24,
-                      color=STEEL_GREY,
-                      fontweight="bold",
+          # ------------------------------------------------------------
+          # 15. Streak system
+          # ------------------------------------------------------------
+
+          longest_streak = 0
+          current_streak = 0
+
+          for count in counts:
+              if count > 0:
+                  current_streak += 1
+                  longest_streak = max(
+                      longest_streak,
+                      current_streak,
                   )
               else:
-                  ax.pie(
-                      values,
-                      labels=labels,
-                      colors=COLORS[:4],
-                      startangle=90,
-                      counterclock=False,
-                      autopct=lambda pct: (
-                          f"{pct:.0f}%"
-                          if pct > 0
-                          else ""
-                      ),
-                      textprops={
-                          "color": ICE_WHITE,
-                          "fontsize": 17,
-                          "fontweight": "bold",
-                      },
+                  current_streak = 0
+
+          current_streak = 0
+
+          for count in reversed(counts):
+              if count > 0:
+                  current_streak += 1
+              else:
+                  break
+
+          streak_labels = [
+              "Current streak",
+              "Longest streak",
+          ]
+
+          streak_values = [
+              current_streak,
+              longest_streak,
+          ]
+
+          fig, ax = plt.subplots(figsize=(10, 6))
+
+          ax.bar(
+              streak_labels,
+              streak_values,
+          )
+
+          ax.set_title(title_text() + " | Streak System")
+          ax.set_ylabel("Days")
+
+          ax.grid(axis="y", alpha=0.2)
+
+          save(fig, "github-streak-system.png")
+
+          # ------------------------------------------------------------
+          # 16. Treemap-style chart
+          # ------------------------------------------------------------
+
+          top_languages = language_counts.most_common(10)
+
+          if not top_languages:
+              top_languages = [("No language data", 1)]
+
+          labels = [
+              f"{name}\n{count}"
+              for name, count in top_languages
+          ]
+
+          sizes = [
+              count
+              for _, count in top_languages
+          ]
+
+          fig, ax = plt.subplots(figsize=(14, 7))
+
+          ax.bar(
+              labels,
+              sizes,
+          )
+
+          ax.set_title(title_text() + " | Repository Language Landscape")
+          ax.set_ylabel("Repositories")
+
+          ax.tick_params(axis="x", rotation=35)
+
+          ax.grid(axis="y", alpha=0.2)
+
+          save(fig, "github-treemap.png")
+
+          # ------------------------------------------------------------
+          # 17. Waterfall chart
+          # ------------------------------------------------------------
+
+          waterfall_labels = [
+              "Repositories",
+              "Commits",
+              "Pull Requests",
+              "Issues",
+              "Stars",
+              "Forks",
+          ]
+
+          waterfall_values = [
+              repo_count,
+              commits,
+              prs,
+              issues,
+              total_stars,
+              total_forks,
+          ]
+
+          cumulative_values = np.cumsum(waterfall_values)
+
+          fig, ax = plt.subplots(figsize=(14, 7))
+
+          ax.bar(
+              waterfall_labels,
+              waterfall_values,
+          )
+
+          ax.plot(
+              waterfall_labels,
+              cumulative_values,
+              marker="o",
+              linewidth=2,
+          )
+
+          ax.set_title(title_text() + " | Developer Metrics Waterfall")
+          ax.set_ylabel("Value")
+
+          ax.tick_params(axis="x", rotation=25)
+
+          ax.grid(axis="y", alpha=0.2)
+
+          save(fig, "github-waterfall-chart.png")
+
+          # ------------------------------------------------------------
+          # Final validation inside Python
+          # ------------------------------------------------------------
+
+          expected_files = [
+              "github-area-chart.png",
+              "github-bar-chart.png",
+              "github-box-plot.png",
+              "github-bubble-chart.png",
+              "github-developer-telemetry.png",
+              "github-donut-chart.png",
+              "github-funnel-chart.png",
+              "github-heatmap.png",
+              "github-histogram.png",
+              "github-line-graph.png",
+              "github-pie-chart.png",
+              "github-radar-chart.png",
+              "github-sankey-diagram.png",
+              "github-scatter-plot.png",
+              "github-streak-system.png",
+              "github-treemap.png",
+              "github-waterfall-chart.png",
+          ]
+
+          print("")
+          print("Generated dashboard files:")
+
+          for filename in expected_files:
+              path = os.path.join(ASSETS, filename)
+
+              if not os.path.isfile(path):
+                  raise RuntimeError(
+                      f"Expected dashboard file was not generated: {path}"
                   )
 
-              save(fig, "github-pie-chart.png")
+              size = os.path.getsize(path)
 
-
-          def make_radar(data):
-              labels = [
-                  "Commits",
-                  "Pull Requests",
-                  "Issues",
-                  "Repositories",
-                  "Stars",
-                  "Forks",
-              ]
-
-              raw = np.array([
-                  data["commits"],
-                  data["pull_requests"],
-                  data["issues"],
-                  data["repos"],
-                  data["stars"],
-                  data["forks"],
-              ], dtype=float)
-
-              max_value = max(raw.max(), 1)
-              values = raw / max_value
-
-              angles = np.linspace(
-                  0,
-                  2 * np.pi,
-                  len(labels),
-                  endpoint=False,
-              )
-
-              values = np.concatenate(
-                  [values, values[:1]]
-              )
-
-              angles = np.concatenate(
-                  [angles, angles[:1]]
-              )
-
-              fig = plt.figure(figsize=(16, 9))
-
-              ax = fig.add_subplot(
-                  111,
-                  polar=True,
-              )
-
-              fig.patch.set_alpha(0)
-              ax.set_facecolor("none")
-
-              ax.plot(
-                  angles,
-                  values,
-                  color=ELECTRIC_BLUE,
-                  linewidth=4,
-              )
-
-              ax.fill(
-                  angles,
-                  values,
-                  color=ELECTRIC_VIOLET,
-                  alpha=0.25,
-              )
-
-              ax.scatter(
-                  angles[:-1],
-                  values[:-1],
-                  color=ACID_GREEN,
-                  s=90,
-                  zorder=5,
-              )
-
-              ax.set_xticks(angles[:-1])
-              ax.set_xticklabels(
-                  labels,
-                  color=ICE_WHITE,
-                  fontsize=16,
-              )
-
-              ax.set_yticklabels([])
-
-              ax.grid(False)
-
-              ax.set_title(
-                  "GITHUB ACTIVITY RADAR",
-                  color=ELECTRIC_BLUE,
-                  fontsize=29,
-                  fontweight="bold",
-                  pad=35,
-              )
-
-              save(fig, "github-radar-chart.png")
-
-
-          def make_sankey(data):
-              sources = [
-                  ("Contributions", data["total_contributions"]),
-                  ("Repositories", data["repos"]),
-              ]
-
-              targets = [
-                  ("Commits", data["commits"]),
-                  ("Pull Requests", data["pull_requests"]),
-                  ("Issues", data["issues"]),
-              ]
-
-              fig, ax = plt.subplots(figsize=(16, 8))
-
-              fig.patch.set_alpha(0)
-              ax.set_facecolor("none")
-
-              ax.set_xlim(0, 10)
-              ax.set_ylim(0, 10)
-              ax.axis("off")
-
-              left_y = [7, 3]
-              right_y = [8, 5, 2]
-
-              for index, (label, value) in enumerate(sources):
-                  ax.text(
-                      1,
-                      left_y[index],
-                      f"{label}\n{int(value):,}",
-                      ha="center",
-                      va="center",
-                      fontsize=19,
-                      color=ICE_WHITE,
-                      fontweight="bold",
-                      bbox={
-                          "boxstyle": "round,pad=0.5",
-                          "facecolor": "none",
-                          "edgecolor": COLORS[index],
-                          "linewidth": 3,
-                      },
+              if size < 1000:
+                  raise RuntimeError(
+                      f"Dashboard file is too small: {path} ({size} bytes)"
                   )
 
-              for index, (label, value) in enumerate(targets):
-                  ax.text(
-                      9,
-                      right_y[index],
-                      f"{label}\n{int(value):,}",
-                      ha="center",
-                      va="center",
-                      fontsize=18,
-                      color=ICE_WHITE,
-                      fontweight="bold",
-                      bbox={
-                          "boxstyle": "round,pad=0.5",
-                          "facecolor": "none",
-                          "edgecolor": COLORS[index + 2],
-                          "linewidth": 3,
-                      },
-                  )
-
-              for index, (_, value) in enumerate(targets):
-                  width = max(
-                      1.5,
-                      min(12, value / max(
-                          data["total_contributions"],
-                          1
-                      ) * 12),
-                  )
-
-                  arrow = FancyArrowPatch(
-                      (1.8, 7),
-                      (8.2, right_y[index]),
-                      arrowstyle="-",
-                      linewidth=width,
-                      color=COLORS[index + 2],
-                      alpha=0.70,
-                      connectionstyle="arc3,rad=0.0",
-                  )
-
-                  ax.add_patch(arrow)
-
-              ax.set_title(
-                  "ACTIVITY FLOW MAP",
-                  color=ELECTRIC_BLUE,
-                  fontsize=29,
-                  fontweight="bold",
-                  pad=20,
-              )
-
-              fig.text(
-                  0.5,
-                  0.04,
-                  "GitHub contribution relationships",
-                  ha="center",
-                  color=STEEL_GREY,
-                  fontsize=17,
-              )
-
-              save(fig, "github-sankey-diagram.png")
-
-
-          def make_scatter(days):
-              weekday_names = [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-              ]
-
-              x = []
-              y = []
-
-              for item in days:
-                  date_value = datetime.fromisoformat(
-                      item["date"]
-                  ).date()
-
-                  x.append(date_value.weekday())
-                  y.append(item["count"])
-
-              x = np.array(x)
-              y = np.array(y)
-
-              fig, ax = base_figure(
-                  "ACTIVITY RELATIONSHIP BY WEEKDAY",
-                  "Daily contributions grouped by weekday",
-              )
-
-              jitter = np.random.default_rng(7).normal(
-                  0,
-                  0.08,
-                  size=len(x),
-              )
-
-              ax.scatter(
-                  x + jitter,
-                  y,
-                  s=70,
-                  color=ELECTRIC_BLUE,
-                  alpha=0.65,
-                  edgecolors=ACID_GREEN,
-                  linewidths=0.8,
-              )
-
-              ax.set_xticks(range(7))
-              ax.set_xticklabels(
-                  weekday_names,
-                  color=ICE_WHITE,
-                  fontsize=16,
-              )
-
-              ax.set_xlabel(
-                  "Weekday",
-                  color=STEEL_GREY,
-                  fontsize=18,
-              )
-
-              ax.set_ylabel(
-                  "Contributions",
-                  color=STEEL_GREY,
-                  fontsize=18,
-              )
-
-              save(fig, "github-scatter-plot.png")
-
-
-          def calculate_streak(days):
-              if not days:
-                  return 0, 0
-
-              ordered = sorted(days, key=lambda x: x["date"])
-
-              today = datetime.now(timezone.utc).date()
-
-              lookup = {
-                  datetime.fromisoformat(
-                      item["date"]
-                  ).date(): item["count"]
-                  for item in ordered
-              }
-
-              current = 0
-              cursor = today
-
-              if lookup.get(cursor, 0) == 0:
-                  cursor = today - timedelta(days=1)
-
-              while lookup.get(cursor, 0) > 0:
-                  current += 1
-                  cursor -= timedelta(days=1)
-
-              best = 0
-              running = 0
-
-              for item in ordered:
-                  if item["count"] > 0:
-                      running += 1
-                      best = max(best, running)
-                  else:
-                      running = 0
-
-              return current, best
-
-
-          def make_streak(data):
-              current, best = calculate_streak(data["days"])
-
-              fig = plt.figure(figsize=(16, 8))
-              ax = fig.add_axes([0, 0, 1, 1])
-              ax.axis("off")
-
-              fig.text(
-                  0.5,
-                  0.80,
-                  "GITHUB CONTRIBUTION STREAK",
-                  ha="center",
-                  fontsize=29,
-                  color=ELECTRIC_BLUE,
-                  fontweight="bold",
-              )
-
-              fig.text(
-                  0.30,
-                  0.48,
-                  f"{current}",
-                  ha="center",
-                  fontsize=55,
-                  color=ACID_GREEN,
-                  fontweight="bold",
-              )
-
-              fig.text(
-                  0.30,
-                  0.34,
-                  "CURRENT STREAK",
-                  ha="center",
-                  fontsize=18,
-                  color=ICE_WHITE,
-                  fontweight="bold",
-              )
-
-              fig.text(
-                  0.70,
-                  0.48,
-                  f"{best}",
-                  ha="center",
-                  fontsize=55,
-                  color=HOT_MAGENTA,
-                  fontweight="bold",
-              )
-
-              fig.text(
-                  0.70,
-                  0.34,
-                  "BEST STREAK",
-                  ha="center",
-                  fontsize=18,
-                  color=ICE_WHITE,
-                  fontweight="bold",
-              )
-
-              fig.text(
-                  0.5,
-                  0.12,
-                  "Consecutive days with at least one contribution",
-                  ha="center",
-                  fontsize=17,
-                  color=STEEL_GREY,
-              )
-
-              save(fig, "github-streak-system.png")
-
-
-          def make_treemap(data):
-              languages = data["languages"]
-
-              if not languages:
-                  languages = {"No language data": 1}
-
-              items = sorted(
-                  languages.items(),
-                  key=lambda item: item[1],
-                  reverse=True,
-              )[:12]
-
-              total = sum(value for _, value in items)
-
-              fig, ax = plt.subplots(figsize=(16, 8))
-
-              fig.patch.set_alpha(0)
-              ax.set_xlim(0, 100)
-              ax.set_ylim(0, 100)
-              ax.axis("off")
-
-              x = 0
-              y = 0
-              row_height = 100
-
-              for index, (language, value) in enumerate(items):
-                  fraction = value / max(total, 1)
-
-                  width = max(
-                      8,
-                      fraction * 100,
-                  )
-
-                  if x + width > 100:
-                      x = 0
-                      y += row_height * 0.35
-                      row_height *= 0.65
-
-                  height = row_height
-
-                  rect = FancyBboxPatch(
-                      (x + 0.7, y + 0.7),
-                      width - 1.2,
-                      height - 1.2,
-                      boxstyle="round,pad=0.01,rounding_size=1.5",
-                      facecolor=COLORS[index % len(COLORS)],
-                      edgecolor="none",
-                      alpha=0.82,
-                  )
-
-                  ax.add_patch(rect)
-
-                  ax.text(
-                      x + width / 2,
-                      y + height / 2,
-                      f"{language}\n{value}",
-                      ha="center",
-                      va="center",
-                      color=ICE_WHITE,
-                      fontsize=18,
-                      fontweight="bold",
-                  )
-
-                  x += width
-
-              ax.text(
-                  50,
-                  103,
-                  "LANGUAGE TREEMAP",
-                  ha="center",
-                  va="bottom",
-                  fontsize=29,
-                  color=ELECTRIC_BLUE,
-                  fontweight="bold",
-              )
-
-              save(fig, "github-treemap.png")
-
-
-          def make_waterfall(data):
-              labels = [
-                  "Contributions",
-                  "Commits",
-                  "PRs",
-                  "Issues",
-                  "Repos",
-                  "Stars",
-                  "Forks",
-              ]
-
-              values = np.array([
-                  data["total_contributions"],
-                  data["commits"],
-                  data["pull_requests"],
-                  data["issues"],
-                  data["repos"],
-                  data["stars"],
-                  data["forks"],
-              ], dtype=float)
-
-              changes = np.diff(
-                  np.concatenate(
-                      ([0], values)
-                  )
-              )
-
-              fig, ax = base_figure(
-                  "GITHUB METRIC WATERFALL",
-                  "Change between successive activity metrics",
-              )
-
-              bottoms = []
-
-              running = 0
-
-              for change in changes:
-                  if change >= 0:
-                      bottoms.append(running)
-                  else:
-                      bottoms.append(running + change)
-
-                  running += change
-
-              colors = [
-                  ELECTRIC_BLUE if value >= 0
-                  else HOT_MAGENTA
-                  for value in changes
-              ]
-
-              bars = ax.bar(
-                  np.arange(len(labels)),
-                  np.abs(changes),
-                  bottom=bottoms,
-                  color=colors,
-                  width=0.62,
-              )
-
-              ax.set_xticks(np.arange(len(labels)))
-              ax.set_xticklabels(
-                  labels,
-                  color=ICE_WHITE,
-                  fontsize=16,
-              )
-
-              for index, value in enumerate(changes):
-                  top = bottoms[index] + abs(value)
-
-                  ax.text(
-                      index,
-                      top,
-                      f"{int(value):+,}",
-                      ha="center",
-                      va="bottom",
-                      fontsize=19,
-                      color=ICE_WHITE,
-                      fontweight="bold",
-                  )
-
-              save(fig, "github-waterfall-chart.png")
-
-
-          def main():
-              print("=" * 80)
-              print("GITHUB PROFILE DASHBOARD GENERATOR")
-              print("=" * 80)
-
-              print(f"Username: {USERNAME}")
-              print(f"Python: {sys.version}")
-              print(f"Matplotlib: {matplotlib.__version__}")
-              print(f"NumPy: {np.__version__}")
-              print(f"Output directory: {OUTPUT_DIR}")
-
-              os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-              data = get_github_data()
-
-              print("\nGenerating charts...")
-
-              make_area_chart(data["days"])
-              make_bar_chart(data)
-              make_box_plot(data["days"])
-              make_bubble_chart(data)
-              make_telemetry(data)
-              make_donut(data)
-              make_funnel(data)
-              make_heatmap(data["days"])
-              make_histogram(data["days"])
-              make_line_graph(data["days"])
-              make_pie(data)
-              make_radar(data)
-              make_sankey(data)
-              make_scatter(data["days"])
-              make_streak(data)
-              make_treemap(data)
-              make_waterfall(data)
-
-              expected = [
-                  "github-area-chart.png",
-                  "github-bar-chart.png",
-                  "github-box-plot.png",
-                  "github-bubble-chart.png",
-                  "github-developer-telemetry.png",
-                  "github-donut-chart.png",
-                  "github-funnel-chart.png",
-                  "github-heatmap.png",
-                  "github-histogram.png",
-                  "github-line-graph.png",
-                  "github-pie-chart.png",
-                  "github-radar-chart.png",
-                  "github-sankey-diagram.png",
-                  "github-scatter-plot.png",
-                  "github-streak-system.png",
-                  "github-treemap.png",
-                  "github-waterfall-chart.png",
-              ]
-
-              print("\nChecking generated files...")
-
-              missing = []
-
-              for filename in expected:
-                  path = os.path.join(OUTPUT_DIR, filename)
-
-                  if not os.path.isfile(path):
-                      missing.append(filename)
-                  else:
-                      size = os.path.getsize(path)
-
-                      if size < 1000:
-                          missing.append(
-                              f"{filename} (file too small)"
-                          )
-                      else:
-                          print(
-                              f"OK: {filename} "
-                              f"({size:,} bytes)"
-                          )
-
-              if missing:
-                  fail(
-                      "Dashboard generation incomplete:\n"
-                      + "\n".join(missing)
-                  )
-
-              print("\nAll 17 dashboard images generated successfully.")
-              print("=" * 80)
-
-
-          if __name__ == "__main__":
-              try:
-                  main()
-
-              except Exception:
-                  print("\n")
-                  print("=" * 80)
-                  print("FATAL ERROR")
-                  print("=" * 80)
-                  traceback.print_exc()
-                  print("=" * 80)
-                  sys.exit(1)
-          PYTHON
-
-          echo "Checking Python syntax..."
-          python -m py_compile generate_profile.py
-
-          echo "Running dashboard generator..."
-          python -u generate_profile.py
+              print(f"OK  {path}  {size:,} bytes")
+
+          print("")
+          print(f"GitHub user: {USERNAME}")
+          print(f"Repositories: {repo_count}")
+          print(f"Stars: {total_stars}")
+          print(f"Forks: {total_forks}")
+          print(f"Commits: {commits}")
+          print(f"Pull Requests: {prs}")
+          print(f"Issues: {issues}")
+          print(f"Contributions: {total_contributions}")
+          print(f"Current streak: {current_streak}")
+          print(f"Longest streak: {longest_streak}")
+
+          print("")
+          print("Dashboard generation completed successfully.")
+          PY
 
       - name: Validate generated dashboard
         shell: bash
         run: |
           set -Eeuo pipefail
 
-          echo "Generated dashboard files:"
-          find assets -maxdepth 1 -type f -name "*.png" -print | sort
+          echo "Validating required GitHub dashboard files..."
 
-          COUNT="$(find assets -maxdepth 1 -type f -name "*.png" | wc -l)"
+          EXPECTED_FILES=(
+            "github-area-chart.png"
+            "github-bar-chart.png"
+            "github-box-plot.png"
+            "github-bubble-chart.png"
+            "github-developer-telemetry.png"
+            "github-donut-chart.png"
+            "github-funnel-chart.png"
+            "github-heatmap.png"
+            "github-histogram.png"
+            "github-line-graph.png"
+            "github-pie-chart.png"
+            "github-radar-chart.png"
+            "github-sankey-diagram.png"
+            "github-scatter-plot.png"
+            "github-streak-system.png"
+            "github-treemap.png"
+            "github-waterfall-chart.png"
+          )
 
-          echo "PNG count: $COUNT"
+          FAILED=0
 
-          if [ "$COUNT" -ne 17 ]; then
-            echo "Expected 17 PNG files but found $COUNT"
+          for FILE in "${EXPECTED_FILES[@]}"; do
+            PATH_TO_FILE="assets/$FILE"
+
+            if [ ! -f "$PATH_TO_FILE" ]; then
+              echo "MISSING: $PATH_TO_FILE"
+              FAILED=1
+              continue
+            fi
+
+            SIZE="$(stat -c%s "$PATH_TO_FILE")"
+
+            if [ "$SIZE" -lt 1000 ]; then
+              echo "TOO SMALL: $PATH_TO_FILE ($SIZE bytes)"
+              FAILED=1
+              continue
+            fi
+
+            echo "OK: $PATH_TO_FILE ($SIZE bytes)"
+          done
+
+          if [ "$FAILED" -ne 0 ]; then
+            echo ""
+            echo "Dashboard validation FAILED."
             exit 1
           fi
 
+          echo ""
           echo "Dashboard validation successful."
+          echo ""
+          echo "Other PNG assets are allowed and will not cause validation failure."
+
+          echo ""
+          echo "All PNG assets currently in assets/:"
+          find assets -maxdepth 1 -type f -name "*.png" -print | sort
 
       - name: Commit updated dashboard images
         shell: bash
@@ -1827,5 +973,3 @@ jobs:
           git commit -m "Update GitHub profile dashboard"
 
           git push origin "HEAD:${DEFAULT_BRANCH}"
-
-          echo "Dashboard images pushed successfully."
