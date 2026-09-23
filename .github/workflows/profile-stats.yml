@@ -221,7 +221,7 @@ jobs:
                   path,
                   dpi=180,
                   bbox_inches="tight",
-                  facecolor="white",
+                  transparent=True,
               )
 
               plt.close(fig)
