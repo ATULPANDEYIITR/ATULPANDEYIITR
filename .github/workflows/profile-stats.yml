@@ -1,4 +1,4 @@
-﻿name: Update GitHub Profile Stats
+name: Update GitHub Profile Stats
 
 on:
   workflow_dispatch:
