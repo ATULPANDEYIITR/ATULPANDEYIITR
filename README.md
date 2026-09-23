@@ -280,6 +280,10 @@
   <img src="assets/github-streak-system.png" width="100%" />
 </p>
 
+<p align="center">
+  <img src="assets/github-streak-statistics.png" width="100%" />
+</p>
+
 
 # 🌐 My digital profiles
 
